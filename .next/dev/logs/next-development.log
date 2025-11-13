@@ -4948,3 +4948,10 @@ https://nextjs.org/docs/messages/module-not-found
 [03:50:53.444] Server  LOG      ✓ Compiled in 109ms
 [03:50:58.827] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [03:51:35.046] Server  LOG      ✓ Compiled in 85ms
+[04:08:32.689] Server  LOG      ✓ Compiled in 1035ms
+[04:14:08.972] Server  LOG      ✓ Compiled in 3.5s
+[04:14:10.016] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:14:41.555] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/doctor.jpg" "received" null
+[04:17:21.359] Server  LOG      ✓ Compiled in 392ms
+[04:18:28.724] Server  LOG      ✓ Compiled in 533ms
+[04:18:47.804] Server  LOG      ✓ Compiled in 235ms
