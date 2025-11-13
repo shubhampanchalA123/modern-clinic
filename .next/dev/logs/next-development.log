@@ -1,0 +1,1705 @@
+[00:00:14.185] Server  LOG      ✓ Ready in 8.8s
+[00:00:17.228] Server  LOG      ○ Compiling / ...
+[00:00:27.446] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:49.598] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:49.605] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:49.617] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:49.635] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:49.653] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:49.672] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:49.686] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:49.700] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:49.709] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:49.727] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:49.791] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:49.848] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:49.864] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:49.875] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:49.886] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:49.892] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:49.900] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:49.904] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.091] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.101] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.109] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.148] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.175] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.191] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.207] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.217] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.221] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.235] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.238] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.246] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.263] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.269] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.272] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.283] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.286] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.293] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.304] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.315] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.318] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.323] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.330] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.334] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.341] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.348] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.351] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.357] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.365] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.369] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.375] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.380] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.384] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.389] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.391] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.397] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.401] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.403] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.405] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.408] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.414] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.417] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.420] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.423] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.427] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.433] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.436] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.439] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.446] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.450] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.453] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.459] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.466] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.470] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.477] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.486] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.493] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.501] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.506] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.508] Server  ERROR    ⨯ ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:03:50.512] Server  LOG      ✓ Compiled in 883ms
+[00:03:51.441] Browser ERROR   ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:09.504] Browser ERROR   ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:10.465] Browser ERROR   ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:10.465] Browser ERROR   ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:10.465] Browser ERROR   ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:10.465] Browser ERROR   ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:13.442] Browser ERROR   ./components/layout/Navbar.jsx:5:1
+Module not found: Can't resolve 'lucide-react'
+  3 | import Link from "next/link";
+  4 | import { useState } from "react";
+> 5 | import { Menu, X } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Navbar() {
+  8 |   const [open, setOpen] = useState(false);
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:18.083] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:33.782] Server  LOG      ✓ Compiled in 227ms
+[00:05:34.721] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:38.070] Server  LOG      ✓ Compiled in 393ms
+[00:05:38.444] Browser ERROR   ./components/layout/Navbar.jsx:1:5
+Parsing ecmascript source code failed
+> 1 | npm install lucide-react
+    |     ^^^^^^^
+  2 |
+
+Expected ';', '}' or <eof>
+
+Import trace:
+  Server Component:
+    ./components/layout/Navbar.jsx
+    ./app/layout.jsx
+[00:05:39.911] Server  LOG      ✓ Compiled in 181ms
+[00:05:46.562] Server  LOG      ✓ Compiled in 331ms
+[00:05:47.568] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:08.444] Browser WARN    Image with src "/images/hero-hair.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:09:01.161] Browser WARN    Image with src "/images/hero-hair.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:09:11.804] Browser WARN    Image with src "/images/hero-hair.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:09:26.954] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:45.155] Browser WARN    Image with src "/images/hero-hair.svg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:11:04.058] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
