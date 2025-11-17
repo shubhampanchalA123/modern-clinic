@@ -21,7 +21,7 @@ export default function Coach() {
   const doctor = {
     name: "Dr. Devendra Rathore",
     bio: "Hair & Wellness Expert guiding root-cause based natural treatments.",
-    img: "/images/doctor.png",
+    img: "/images/doctor1.png",
   };
 
   const detailBox = (label, value) => (
