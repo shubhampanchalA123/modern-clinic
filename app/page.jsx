@@ -44,7 +44,7 @@ export default function Home() {
         <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6 }} className="relative">
           <div className="rounded-2xl overflow-hidden shadow-2xl bg-white">
             <div className="aspect-[4/3] relative">
-              <Image src="/images/hero-hair.svg" alt="hero" fill style={{ objectFit: "cover" }} />
+              <Image src="/images/hero.png" alt="hero" fill style={{ objectFit: "cover" }} />
             </div>
           </div>
         </motion.div>

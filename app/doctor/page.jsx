@@ -17,7 +17,7 @@ export default function DoctorProfile() {
           {/* Doctor Image */}
           <div className="relative w-full h-[380px] rounded-3xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/doctor.png"
+              src="/images/doctor1.png"
               alt="Dr. Devendra Rathore"
               fill
               className="object-cover"
