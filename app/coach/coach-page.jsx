@@ -46,10 +46,7 @@ export default function Coach() {
           <p className="text-sm text-muted-foreground text-center mt-1">
             {doctor.bio}
           </p>
-
-          <button className="mt-5 bg-primary hover:bg-primary-dark transition text-primary-foreground px-6 py-2 rounded-lg w-full shadow-soft">
-            Start Chat
-          </button>
+          
         </div>
 
         {/* Journey + Summary */}

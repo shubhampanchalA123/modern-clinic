@@ -43,7 +43,7 @@ export default function Testimonials() {
       name: "Rohit Kumar",
       treatment: "Advanced Hair Regrowth",
       duration: "10 Sessions",
-      clinic: "Koramangala, Bengaluru",
+      clinic: "Indore",
       feedback:
         "After years of hair thinning, my scalp finally started showing baby hair. The treatment improved density and reduced shedding significantly.",
     },
@@ -53,7 +53,7 @@ export default function Testimonials() {
       name: "Sneha Verma",
       treatment: "Female Pattern Hair Loss",
       duration: "12 Sessions",
-      clinic: "Indiranagar, Bengaluru",
+      clinic: "Indore",
       feedback:
         "My hair volume improved and my hair fall reduced dramatically. I finally feel confident again!",
     },
@@ -63,7 +63,7 @@ export default function Testimonials() {
       name: "Aditya Menon",
       treatment: "Male Pattern Baldness",
       duration: "8 Sessions",
-      clinic: "HSR Layout, Bengaluru",
+      clinic: "Indore",
       feedback:
         "The holistic approach helped me regain my lost hairline. The results were visible much sooner than expected.",
     },
@@ -73,7 +73,7 @@ export default function Testimonials() {
       name: "Siddharth Rao",
       treatment: "Scalp Strengthening Program",
       duration: "6 Sessions",
-      clinic: "Whitefield, Bengaluru",
+      clinic: "Indore",
       feedback:
         "My scalp became healthier and the constant shedding finally stopped. I can see new thickness forming.",
     },
@@ -83,7 +83,7 @@ export default function Testimonials() {
       name: "Pooja Reddy",
       treatment: "PCOS-related Hair Loss",
       duration: "14 Sessions",
-      clinic: "BTM Layout, Bengaluru",
+      clinic: "Indore",
       feedback:
         "Due to hormonal imbalance, my hair was extremely thin. This treatment restored strength and improved overall volume.",
     },
@@ -93,7 +93,7 @@ export default function Testimonials() {
       name: "Vivek Sharma",
       treatment: "Stress & Nutrition Therapy",
       duration: "7 Sessions",
-      clinic: "Jayanagar, Bengaluru",
+      clinic: "Indore",
       feedback:
         "Fixing my sleep and nutrition reduced my shedding by almost 70%. The hair texture also improved significantly.",
     },
@@ -103,7 +103,7 @@ export default function Testimonials() {
       name: "Nikhil Shetty",
       treatment: "Hair Density Booster Program",
       duration: "9 Sessions",
-      clinic: "Marathahalli, Bengaluru",
+      clinic: "Indore",
       feedback:
         "New hair growth started appearing around the crown area. This gave me a huge confidence boost!",
     },
@@ -112,7 +112,7 @@ export default function Testimonials() {
   const showGallery = pathname === "/testimonials";
 
   return (
-    <div className="bg-muted py-12">
+    <div className="bg-background py-12">
       <main className="max-w-7xl mx-auto px-6">
 
         {/* Success Stories */}
@@ -124,7 +124,7 @@ export default function Testimonials() {
           Real transformations from people who healed their hair naturally with our program.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
           {testimonials.map((t, idx) => (
             <motion.div
               key={idx}
@@ -133,35 +133,59 @@ export default function Testimonials() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
               className="
-                bg-card 
-                text-foreground 
-                rounded-2xl 
-                shadow-sm 
-                border border-border 
-                p-5 
-                hover:shadow 
-                hover:-translate-y-1 
-                transition-all
-              "
+        group 
+        rounded-2xl 
+        p-6 
+        bg-secondary/60 
+        backdrop-blur-xl 
+        border border-border
+        shadow-lg 
+        hover:shadow-medium 
+        hover:-translate-y-1
+        transition-all 
+        duration-300
+      "
             >
-              <div className="flex items-center justify-center gap-3 mb-3">
-                <div className="w-24 h-24 rounded-xl overflow-hidden relative">
+              {/* BEFORE/AFTER IMAGE WRAPPER */}
+              <div className="flex items-center justify-center gap-4 mb-5">
+                <div className="w-24 h-24 rounded-xl overflow-hidden shadow-md border border-border relative">
                   <Image src={t.before} alt="before" fill className="object-cover" />
                 </div>
-                <div className="w-24 h-24 rounded-xl overflow-hidden relative">
+                <div className="w-24 h-24 rounded-xl overflow-hidden shadow-md border border-border relative">
                   <Image src={t.after} alt="after" fill className="object-cover" />
                 </div>
               </div>
 
-              <p className="italic text-muted-foreground text-sm">“{t.quote}”</p>
+              {/* QUOTE */}
+              <p className="text-sm text-center italic text-muted-foreground leading-relaxed">
+                “{t.quote}”
+              </p>
 
-              <div className="mt-4">
-                <p className="font-semibold text-foreground">{t.name}</p>
+              {/* NAME + ROLE */}
+              <div className="mt-5 text-center">
+                <p className="font-semibold text-lg text-foreground">{t.name}</p>
                 <p className="text-xs text-muted-foreground">{t.role}</p>
               </div>
+
+              {/* HOVER UNDERLINE ACCENT */}
+              <div
+                className="
+          w-0 
+          group-hover:w-full 
+          h-0.5 
+          bg-gradient-to-r 
+          from-primary 
+          to-accent
+          mx-auto 
+          mt-5 
+          transition-all 
+          duration-500
+        "
+              />
             </motion.div>
           ))}
         </div>
+
 
         {/* Show More Button (Only on home page) */}
         {pathname === "/" && (

@@ -35,9 +35,9 @@ export default function DoctorProfile() {
             </p>
 
             <p className="mt-6 text-foreground/80 leading-relaxed">
-              With years of experience treating complex hair fall cases using a 
-              holistic and medically guided approach, Dr. Rathore focuses on 
-              long-term, natural, and root-cause based recovery combining 
+              With years of experience treating complex hair fall cases using a
+              holistic and medically guided approach, Dr. Rathore focuses on
+              long-term, natural, and root-cause based recovery combining
               Homeopathy, Nutrition, and Lifestyle Medicine.
             </p>
 
@@ -57,21 +57,71 @@ export default function DoctorProfile() {
         <section className="mt-20">
           <h2 className="text-3xl font-bold mb-4 text-foreground">Qualifications</h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
             {[
-              { icon: <FaGraduationCap size={28} />, text: "BHMS - Bachelor of Homeopathic Medicine" },
-              { icon: <MdOutlineMedicalServices size={28} />, text: "Certified Hair Restoration & Wellness Specialist" },
-              { icon: <FaAward size={28} />, text: "Holistic Health & Lifestyle Medicine Training" }
+              { icon: <FaGraduationCap size={24} className="text-background" />, text: "BHMS - Bachelor of Homeopathic Medicine" },
+              { icon: <MdOutlineMedicalServices size={24} className="text-background" />, text: "Certified Hair Restoration & Wellness Specialist" },
+              { icon: <FaAward size={24} className="text-background" />, text: "Holistic Health & Lifestyle Medicine Training" }
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-card p-6 rounded-2xl shadow-soft border border-border hover:shadow-medium transition-all"
+                className="
+        group 
+        p-6 
+        rounded-2xl 
+        bg-secondary/60 
+        backdrop-blur-xl 
+        border border-border 
+        shadow-lg 
+        hover:shadow-medium 
+        transition-all 
+        duration-300 
+        hover:-translate-y-1
+      "
               >
-                <div className="text-primary mb-3">{item.icon}</div>
-                <p className="font-medium text-foreground">{item.text}</p>
+                {/* Gradient Icon Bubble */}
+                <div
+                  className="
+          w-12
+          h-12
+          rounded-xl
+          bg-gradient-to-br
+          from-primary
+          to-accent
+          flex
+          items-center
+          justify-center
+          shadow-md
+          mb-4
+        "
+                >
+                  {item.icon}
+                </div>
+
+                {/* Text */}
+                <p className="font-medium text-foreground leading-relaxed">
+                  {item.text}
+                </p>
+
+                {/* Hover Underline */}
+                <div
+                  className="
+          w-0 
+          group-hover:w-full 
+          h-0.5 
+          bg-gradient-to-r 
+          from-primary 
+          to-accent
+          mx-auto 
+          mt-5 
+          transition-all 
+          duration-500
+        "
+                />
               </div>
             ))}
           </div>
+
         </section>
 
         {/* EXPERIENCE TIMELINE */}
@@ -98,34 +148,88 @@ export default function DoctorProfile() {
         <section className="mt-20">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Holistic Treatment Approach</h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-10 mt-10">
             {[
               {
-                icon: <GiStethoscope size={32} />,
+                icon: <GiStethoscope size={28} className="text-background" />,
                 title: "Homeopathic Diagnosis",
                 desc: "Identifying internal triggers like hormones, stress & metabolism."
               },
               {
-                icon: <FaCheckCircle size={32} />,
+                icon: <FaCheckCircle size={28} className="text-background" />,
                 title: "Nutrition Optimization",
                 desc: "Improving scalp nourishment & correcting deficiencies."
               },
               {
-                icon: <MdSelfImprovement size={32} />,
+                icon: <MdSelfImprovement size={28} className="text-background" />,
                 title: "Stress & Lifestyle Healing",
                 desc: "Balancing cortisol, improving sleep & restoring hair growth cycles."
               }
             ].map((step, index) => (
-              <div 
-                key={index} 
-                className="p-6 bg-card rounded-2xl shadow-soft border border-border hover:shadow-medium transition-all"
+              <div
+                key={index}
+                className="
+        group 
+        p-6 
+        rounded-2xl 
+        bg-secondary/60 
+        backdrop-blur-xl 
+        border border-border 
+        shadow-lg 
+        hover:shadow-medium 
+        transition-all 
+        duration-300 
+        hover:-translate-y-1
+      "
               >
-                <div className="text-accent mb-3">{step.icon}</div>
-                <h4 className="font-semibold text-foreground mb-2">{step.title}</h4>
-                <p className="text-muted-foreground text-sm">{step.desc}</p>
+                {/* Gradient Icon Bubble */}
+                <div
+                  className="
+          w-14 
+          h-14 
+          rounded-xl 
+          bg-gradient-to-br 
+          from-primary 
+          to-accent 
+          flex 
+          items-center 
+          justify-center 
+          shadow-md 
+          mb-5
+        "
+                >
+                  {step.icon}
+                </div>
+
+                {/* Title */}
+                <h4 className="font-semibold text-lg text-foreground mb-2">
+                  {step.title}
+                </h4>
+
+                {/* Description */}
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {step.desc}
+                </p>
+
+                {/* Hover Underline Accent */}
+                <div
+                  className="
+          w-0 
+          group-hover:w-full 
+          h-0.5 
+          bg-gradient-to-r 
+          from-primary 
+          to-accent
+          mx-auto 
+          mt-5 
+          transition-all 
+          duration-500
+        "
+                />
               </div>
             ))}
           </div>
+
         </section>
 
         {/* VIDEO REELS */}
@@ -135,7 +239,7 @@ export default function DoctorProfile() {
         <section className="mt-20 mb-20">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Patient Success Stories</h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-10 mt-10">
             {[
               {
                 name: "Ritika S.",
@@ -150,15 +254,51 @@ export default function DoctorProfile() {
                 quote: "The 3-step program was life-changing. My scalp health improved drastically."
               }
             ].map((t, index) => (
-              <div 
-                key={index} 
-                className="p-6 bg-card rounded-2xl shadow-soft border border-border hover:shadow-medium transition-all"
+              <div
+                key={index}
+                className="
+        group
+        p-6 
+        rounded-2xl 
+        bg-secondary/60 
+        backdrop-blur-xl 
+        border border-border 
+        shadow-lg 
+        hover:shadow-medium 
+        transition-all 
+        duration-300 
+        hover:-translate-y-1
+      "
               >
-                <p className="italic text-foreground/80">“{t.quote}”</p>
-                <p className="mt-3 font-semibold text-primary">{t.name}</p>
+                {/* QUOTE */}
+                <p className="italic text-center text-muted-foreground leading-relaxed">
+                  “{t.quote}”
+                </p>
+
+                {/* NAME */}
+                <p className="mt-4 font-semibold text-center text-foreground">
+                  {t.name}
+                </p>
+
+                {/* ACCENT LINE */}
+                <div
+                  className="
+          w-0 
+          group-hover:w-full 
+          h-0.5 
+          bg-gradient-to-r 
+          from-primary 
+          to-accent 
+          mx-auto 
+          mt-5 
+          transition-all 
+          duration-500
+        "
+                />
               </div>
             ))}
           </div>
+
         </section>
 
       </main>

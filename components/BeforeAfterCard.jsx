@@ -16,7 +16,7 @@ export default function BeforeAfterCard({ data }) {
   const t = data[index];
 
   return (
-    <div className="w-full bg-background-soft rounded-3xl p-6 md:p-10 shadow-soft border border-border">
+    <div className="w-full bg-muted rounded-3xl p-6 md:p-10 shadow-soft border border-border">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
         {/* SLIDER */}

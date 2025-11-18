@@ -243,11 +243,12 @@ function DoctorProfile() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid sm:grid-cols-2 lg:grid-cols-3 gap-6",
+                            className: "grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10",
                             children: [
                                 {
                                     icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaGraduationCap"], {
-                                        size: 28
+                                        size: 24,
+                                        className: "text-background"
                                     }, void 0, false, {
                                         fileName: "[project]/app/doctor/page.jsx",
                                         lineNumber: 62,
@@ -257,7 +258,8 @@ function DoctorProfile() {
                                 },
                                 {
                                     icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$md$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MdOutlineMedicalServices"], {
-                                        size: 28
+                                        size: 24,
+                                        className: "text-background"
                                     }, void 0, false, {
                                         fileName: "[project]/app/doctor/page.jsx",
                                         lineNumber: 63,
@@ -267,7 +269,8 @@ function DoctorProfile() {
                                 },
                                 {
                                     icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaAward"], {
-                                        size: 28
+                                        size: 24,
+                                        className: "text-background"
                                     }, void 0, false, {
                                         fileName: "[project]/app/doctor/page.jsx",
                                         lineNumber: 64,
@@ -276,22 +279,29 @@ function DoctorProfile() {
                                     text: "Holistic Health & Lifestyle Medicine Training"
                                 }
                             ].map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "bg-card p-6 rounded-2xl shadow-soft border border-border hover:shadow-medium transition-all",
+                                    className: "   group    p-6    rounded-2xl    bg-secondary/60    backdrop-blur-xl    border border-border    shadow-lg    hover:shadow-medium    transition-all    duration-300    hover:-translate-y-1   ",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-primary mb-3",
+                                            className: "   w-12   h-12   rounded-xl   bg-gradient-to-br   from-primary   to-accent   flex   items-center   justify-center   shadow-md   mb-4   ",
                                             children: item.icon
                                         }, void 0, false, {
                                             fileName: "[project]/app/doctor/page.jsx",
-                                            lineNumber: 70,
+                                            lineNumber: 83,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "font-medium text-foreground",
+                                            className: "font-medium text-foreground leading-relaxed",
                                             children: item.text
                                         }, void 0, false, {
                                             fileName: "[project]/app/doctor/page.jsx",
-                                            lineNumber: 71,
+                                            lineNumber: 102,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "   w-0    group-hover:w-full    h-0.5    bg-gradient-to-r    from-primary    to-accent   mx-auto    mt-5    transition-all    duration-500   "
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/doctor/page.jsx",
+                                            lineNumber: 107,
                                             columnNumber: 17
                                         }, this)
                                     ]
@@ -319,7 +329,7 @@ function DoctorProfile() {
                             children: "Experience"
                         }, void 0, false, {
                             fileName: "[project]/app/doctor/page.jsx",
-                            lineNumber: 79,
+                            lineNumber: 129,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -344,7 +354,7 @@ function DoctorProfile() {
                                             className: "absolute -left-4 top-1 w-3 h-3 bg-primary rounded-full"
                                         }, void 0, false, {
                                             fileName: "[project]/app/doctor/page.jsx",
-                                            lineNumber: 88,
+                                            lineNumber: 138,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -352,7 +362,7 @@ function DoctorProfile() {
                                             children: item.year
                                         }, void 0, false, {
                                             fileName: "[project]/app/doctor/page.jsx",
-                                            lineNumber: 90,
+                                            lineNumber: 140,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -360,24 +370,24 @@ function DoctorProfile() {
                                             children: item.text
                                         }, void 0, false, {
                                             fileName: "[project]/app/doctor/page.jsx",
-                                            lineNumber: 91,
+                                            lineNumber: 141,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, index, true, {
                                     fileName: "[project]/app/doctor/page.jsx",
-                                    lineNumber: 87,
+                                    lineNumber: 137,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/doctor/page.jsx",
-                            lineNumber: 81,
+                            lineNumber: 131,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/doctor/page.jsx",
-                    lineNumber: 78,
+                    lineNumber: 128,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -388,18 +398,19 @@ function DoctorProfile() {
                             children: "Holistic Treatment Approach"
                         }, void 0, false, {
                             fileName: "[project]/app/doctor/page.jsx",
-                            lineNumber: 99,
+                            lineNumber: 149,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid md:grid-cols-3 gap-8",
+                            className: "grid md:grid-cols-3 gap-10 mt-10",
                             children: [
                                 {
                                     icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$gi$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["GiStethoscope"], {
-                                        size: 32
+                                        size: 28,
+                                        className: "text-background"
                                     }, void 0, false, {
                                         fileName: "[project]/app/doctor/page.jsx",
-                                        lineNumber: 104,
+                                        lineNumber: 154,
                                         columnNumber: 23
                                     }, this),
                                     title: "Homeopathic Diagnosis",
@@ -407,10 +418,11 @@ function DoctorProfile() {
                                 },
                                 {
                                     icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaCheckCircle"], {
-                                        size: 32
+                                        size: 28,
+                                        className: "text-background"
                                     }, void 0, false, {
                                         fileName: "[project]/app/doctor/page.jsx",
-                                        lineNumber: 109,
+                                        lineNumber: 159,
                                         columnNumber: 23
                                     }, this),
                                     title: "Nutrition Optimization",
@@ -418,62 +430,70 @@ function DoctorProfile() {
                                 },
                                 {
                                     icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$md$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MdSelfImprovement"], {
-                                        size: 32
+                                        size: 28,
+                                        className: "text-background"
                                     }, void 0, false, {
                                         fileName: "[project]/app/doctor/page.jsx",
-                                        lineNumber: 114,
+                                        lineNumber: 164,
                                         columnNumber: 23
                                     }, this),
                                     title: "Stress & Lifestyle Healing",
                                     desc: "Balancing cortisol, improving sleep & restoring hair growth cycles."
                                 }
                             ].map((step, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "p-6 bg-card rounded-2xl shadow-soft border border-border hover:shadow-medium transition-all",
+                                    className: "   group    p-6    rounded-2xl    bg-secondary/60    backdrop-blur-xl    border border-border    shadow-lg    hover:shadow-medium    transition-all    duration-300    hover:-translate-y-1   ",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-accent mb-3",
+                                            className: "   w-14    h-14    rounded-xl    bg-gradient-to-br    from-primary    to-accent    flex    items-center    justify-center    shadow-md    mb-5   ",
                                             children: step.icon
                                         }, void 0, false, {
                                             fileName: "[project]/app/doctor/page.jsx",
-                                            lineNumber: 123,
+                                            lineNumber: 186,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                            className: "font-semibold text-foreground mb-2",
+                                            className: "font-semibold text-lg text-foreground mb-2",
                                             children: step.title
                                         }, void 0, false, {
                                             fileName: "[project]/app/doctor/page.jsx",
-                                            lineNumber: 124,
+                                            lineNumber: 205,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-muted-foreground text-sm",
+                                            className: "text-muted-foreground text-sm leading-relaxed",
                                             children: step.desc
                                         }, void 0, false, {
                                             fileName: "[project]/app/doctor/page.jsx",
-                                            lineNumber: 125,
+                                            lineNumber: 210,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "   w-0    group-hover:w-full    h-0.5    bg-gradient-to-r    from-primary    to-accent   mx-auto    mt-5    transition-all    duration-500   "
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/doctor/page.jsx",
+                                            lineNumber: 215,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, index, true, {
                                     fileName: "[project]/app/doctor/page.jsx",
-                                    lineNumber: 119,
+                                    lineNumber: 169,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/doctor/page.jsx",
-                            lineNumber: 101,
+                            lineNumber: 151,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/doctor/page.jsx",
-                    lineNumber: 98,
+                    lineNumber: 148,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$VideoReels$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/doctor/page.jsx",
-                    lineNumber: 132,
+                    lineNumber: 236,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -484,11 +504,11 @@ function DoctorProfile() {
                             children: "Patient Success Stories"
                         }, void 0, false, {
                             fileName: "[project]/app/doctor/page.jsx",
-                            lineNumber: 136,
+                            lineNumber: 240,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid md:grid-cols-3 gap-8",
+                            className: "grid md:grid-cols-3 gap-10 mt-10",
                             children: [
                                 {
                                     name: "Ritika S.",
@@ -503,10 +523,10 @@ function DoctorProfile() {
                                     quote: "The 3-step program was life-changing. My scalp health improved drastically."
                                 }
                             ].map((t, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "p-6 bg-card rounded-2xl shadow-soft border border-border hover:shadow-medium transition-all",
+                                    className: "   group   p-6    rounded-2xl    bg-secondary/60    backdrop-blur-xl    border border-border    shadow-lg    hover:shadow-medium    transition-all    duration-300    hover:-translate-y-1   ",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "italic text-foreground/80",
+                                            className: "italic text-center text-muted-foreground leading-relaxed",
                                             children: [
                                                 "“",
                                                 t.quote,
@@ -514,32 +534,39 @@ function DoctorProfile() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/doctor/page.jsx",
-                                            lineNumber: 157,
+                                            lineNumber: 274,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "mt-3 font-semibold text-primary",
+                                            className: "mt-4 font-semibold text-center text-foreground",
                                             children: t.name
                                         }, void 0, false, {
                                             fileName: "[project]/app/doctor/page.jsx",
-                                            lineNumber: 158,
+                                            lineNumber: 279,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "   w-0    group-hover:w-full    h-0.5    bg-gradient-to-r    from-primary    to-accent    mx-auto    mt-5    transition-all    duration-500   "
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/doctor/page.jsx",
+                                            lineNumber: 284,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, index, true, {
                                     fileName: "[project]/app/doctor/page.jsx",
-                                    lineNumber: 153,
+                                    lineNumber: 257,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/doctor/page.jsx",
-                            lineNumber: 138,
+                            lineNumber: 242,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/doctor/page.jsx",
-                    lineNumber: 135,
+                    lineNumber: 239,
                     columnNumber: 9
                 }, this)
             ]
