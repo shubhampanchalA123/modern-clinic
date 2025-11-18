@@ -24,7 +24,7 @@ export default function VideoReels() {
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-16">
-      <h2 className="text-2xl font-bold text-center mb-8">
+      <h2 className="text-2xl font-bold text-center mb-8 text-foreground">
         Real People. Real Stories.
       </h2>
 
@@ -35,9 +35,10 @@ export default function VideoReels() {
           className="
             swiper-button-prev 
             !left-0 !z-20 !w-12 !h-12
-            !rounded-full !shadow-xl
+            !rounded-full 
+            !shadow-xl 
             !flex !items-center !justify-center
-            after:!text-3xl
+            after:!text-3xl after:!text-foreground
           "
         ></div>
 
@@ -59,7 +60,14 @@ export default function VideoReels() {
                 key={i}
                 className="!w-[260px] sm:!w-[300px] !mr-4"
               >
-                <div className="w-full h-[200px] rounded-xl overflow-hidden shadow-lg bg-black">
+                <div className="
+                  w-full h-[200px] 
+                  rounded-xl 
+                  overflow-hidden 
+                  shadow-lg 
+                  bg-card 
+                  border border-border
+                ">
                   <iframe
                     className="w-full h-full"
                     src={`${src}?rel=0`}
@@ -78,9 +86,10 @@ export default function VideoReels() {
           className="
             swiper-button-next 
             !right-0 !z-20 !w-12 !h-12
-            !rounded-full !shadow-xl
+            !rounded-full 
+            !shadow-xl
             !flex !items-center !justify-center
-            after:!text-3xl
+            after:!text-3xl after:!text-foreground
           "
         ></div>
       </div>

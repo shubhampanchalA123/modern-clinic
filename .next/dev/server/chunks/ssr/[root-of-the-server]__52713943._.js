@@ -48,83 +48,6 @@ __turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$componen
 "[project]/app/testimonials/page.jsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// "use client";
-// import Image from "next/image";
-// import { motion } from "framer-motion";
-// export default function Testimonials() {
-//   const testimonials = [
-//     {
-//       name: "Rahul Mehta",
-//       role: "Hair Transplant Patient",
-//       before: "/images/stages/male-1.svg",
-//       after: "/images/stages/male-3.svg",
-//       quote:
-//         "I had tried everything before coming here. The transplant was smooth and now my hairline looks natural. Totally worth it!",
-//     },
-//     {
-//       name: "Sneha Patil",
-//       role: "Hair Growth Therapy",
-//       before: "/images/stages/female-1.svg",
-//       after: "/images/stages/female-3.svg",
-//       quote:
-//         "The PRP and topical plan really worked for me. I feel confident again, and their coach support is amazing.",
-//     },
-//     {
-//       name: "Amit Sharma",
-//       role: "Non-surgical Plan",
-//       before: "/images/stages/male-2.svg",
-//       after: "/images/stages/male-3.svg",
-//       quote:
-//         "The hair coach explained everything clearly. My shedding reduced in just 2 months.",
-//     },
-//   ];
-//   return (
-//     <div className="min-h-screen bg-gray-50 py-12">
-//       <main className="max-w-6xl mx-auto px-6">
-//         <h2 className="text-3xl font-bold text-center mb-2">Success Stories</h2>
-//         <p className="text-gray-600 text-center mb-10">
-//           Real transformations from our happy clients.
-//         </p>
-//         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-//           {testimonials.map((t, idx) => (
-//             <motion.div
-//               key={idx}
-//               initial={{ opacity: 0, y: 20 }}
-//               whileInView={{ opacity: 1, y: 0 }}
-//               viewport={{ once: true }}
-//               transition={{ duration: 0.5 }}
-//               className="bg-white rounded-2xl shadow p-5"
-//             >
-//               <div className="flex items-center justify-center gap-3 mb-3">
-//                 <div className="w-24 h-24 rounded-xl overflow-hidden relative">
-//                   <Image
-//                     src={t.before}
-//                     alt="before"
-//                     fill
-//                     style={{ objectFit: "cover" }}
-//                   />
-//                 </div>
-//                 <div className="w-24 h-24 rounded-xl overflow-hidden relative">
-//                   <Image
-//                     src={t.after}
-//                     alt="after"
-//                     fill
-//                     style={{ objectFit: "cover" }}
-//                   />
-//                 </div>
-//               </div>
-//               <p className="italic text-gray-700 text-sm">“{t.quote}”</p>
-//               <div className="mt-4">
-//                 <p className="font-semibold">{t.name}</p>
-//                 <p className="text-xs text-gray-500">{t.role}</p>
-//               </div>
-//             </motion.div>
-//           ))}
-//         </div>
-//       </main>
-//     </div>
-//   );
-// }
 __turbopack_context__.s([
     "default",
     ()=>TestimonialsPage
@@ -138,12 +61,12 @@ function TestimonialsPage() {
         className: "min-h-screen bg-gray-50",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Testimonials$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
             fileName: "[project]/app/testimonials/page.jsx",
-            lineNumber: 92,
+            lineNumber: 6,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/testimonials/page.jsx",
-        lineNumber: 91,
+        lineNumber: 5,
         columnNumber: 5
     }, this);
 }

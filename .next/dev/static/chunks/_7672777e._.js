@@ -37,7 +37,7 @@ function ProgressTabs({ step = 0 }) {
                         children: tabs.map((t, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: `
                 px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap
-                ${i <= step ? "bg-emerald-200 text-gray-800" : "bg-gray-100 text-gray-600"}
+                ${i <= step ? "bg-primary/20 text-foreground" : "bg-muted text-muted-foreground"}
               `,
                                 children: t
                             }, t, false, {
@@ -51,14 +51,14 @@ function ProgressTabs({ step = 0 }) {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex-1 text-right text-sm text-gray-600 hidden md:block",
+                        className: "flex-1 text-right text-sm text-muted-foreground hidden md:block",
                         children: [
                             percent,
                             "%"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Register/ProgressTabs.jsx",
-                        lineNumber: 42,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, this)
                 ]
@@ -70,36 +70,36 @@ function ProgressTabs({ step = 0 }) {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "mt-4 w-full",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "h-2 bg-gray-200 rounded-full",
+                    className: "h-2 bg-muted rounded-full",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "h-2 bg-emerald-300 rounded-full transition-all",
+                        className: "h-2 bg-primary rounded-full transition-all",
                         style: {
                             width: `${percent}%`
                         }
                     }, void 0, false, {
                         fileName: "[project]/components/Register/ProgressTabs.jsx",
-                        lineNumber: 50,
+                        lineNumber: 52,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/Register/ProgressTabs.jsx",
-                    lineNumber: 49,
+                    lineNumber: 51,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Register/ProgressTabs.jsx",
-                lineNumber: 48,
+                lineNumber: 50,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "md:hidden text-right text-xs text-gray-500 mt-1",
+                className: "md:hidden text-right text-xs text-muted-foreground mt-1",
                 children: [
                     percent,
                     "%"
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Register/ProgressTabs.jsx",
-                lineNumber: 58,
+                lineNumber: 60,
                 columnNumber: 7
             }, this)
         ]
@@ -130,10 +130,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function QuestionCard({ question, options = [], value, onChange }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "p-6 bg-white rounded-2xl border border-gray-100 shadow-sm",
+        className: "p-6 bg-card rounded-2xl border border-border shadow-soft",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                className: "text-lg font-semibold mb-4",
+                className: "text-lg font-semibold text-foreground mb-4",
                 children: question
             }, void 0, false, {
                 fileName: "[project]/components/Register/QuestionCard.jsx",
@@ -150,29 +150,29 @@ function QuestionCard({ question, options = [], value, onChange }) {
                                 name: question,
                                 checked: value === opt,
                                 onChange: ()=>onChange(opt),
-                                className: "form-radio text-emerald-600 h-4 w-4"
+                                className: "form-radio text-primary h-4 w-4"
                             }, void 0, false, {
                                 fileName: "[project]/components/Register/QuestionCard.jsx",
-                                lineNumber: 12,
+                                lineNumber: 16,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-gray-700",
+                                className: "text-foreground",
                                 children: opt
                             }, void 0, false, {
                                 fileName: "[project]/components/Register/QuestionCard.jsx",
-                                lineNumber: 19,
+                                lineNumber: 23,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, idx, true, {
                         fileName: "[project]/components/Register/QuestionCard.jsx",
-                        lineNumber: 11,
+                        lineNumber: 12,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/Register/QuestionCard.jsx",
-                lineNumber: 9,
+                lineNumber: 10,
                 columnNumber: 7
             }, this)
         ]
@@ -233,33 +233,33 @@ function PhotoUploader({ file, onChange }) {
         className: "flex flex-col items-center gap-4",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-48 h-48 rounded-xl bg-gray-50 flex items-center justify-center overflow-hidden shadow",
+                className: "w-48 h-48 rounded-xl bg-muted flex items-center justify-center overflow-hidden shadow-soft border border-border",
                 children: preview ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                     src: preview,
                     alt: "preview",
                     className: "object-cover w-full h-full"
                 }, void 0, false, {
                     fileName: "[project]/components/Register/PhotoUploader.jsx",
-                    lineNumber: 33,
+                    lineNumber: 35,
                     columnNumber: 11
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "text-center text-gray-400",
+                    className: "text-center text-muted-foreground",
                     children: "No photo yet"
                 }, void 0, false, {
                     fileName: "[project]/components/Register/PhotoUploader.jsx",
-                    lineNumber: 35,
+                    lineNumber: 37,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Register/PhotoUploader.jsx",
-                lineNumber: 31,
+                lineNumber: 33,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex gap-3 w-full justify-center",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                        className: "inline-flex items-center justify-center px-6 py-3 border border-gray-300 rounded text-sm cursor-pointer hover:bg-gray-50",
+                        className: "inline-flex items-center justify-center px-6 py-3 border border-border bg-card rounded text-sm cursor-pointer hover:bg-muted transition",
                         children: [
                             "Upload Scalp Photo",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -272,17 +272,17 @@ function PhotoUploader({ file, onChange }) {
                                 onChange: handleFileChange
                             }, void 0, false, {
                                 fileName: "[project]/components/Register/PhotoUploader.jsx",
-                                lineNumber: 43,
+                                lineNumber: 47,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Register/PhotoUploader.jsx",
-                        lineNumber: 41,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                        className: "inline-flex items-center justify-center px-6 py-3 bg-gray-800 text-white rounded text-sm cursor-pointer hover:opacity-95",
+                        className: "inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded text-sm cursor-pointer hover:opacity-90 transition shadow-soft",
                         children: [
                             "Take a Picture",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -295,35 +295,35 @@ function PhotoUploader({ file, onChange }) {
                                 onChange: handleFileChange
                             }, void 0, false, {
                                 fileName: "[project]/components/Register/PhotoUploader.jsx",
-                                lineNumber: 55,
+                                lineNumber: 59,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Register/PhotoUploader.jsx",
-                        lineNumber: 53,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Register/PhotoUploader.jsx",
-                lineNumber: 39,
+                lineNumber: 42,
                 columnNumber: 7
             }, this),
             preview && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex gap-3",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     onClick: handleRemove,
-                    className: "px-4 py-2 bg-white border rounded shadow-sm text-sm",
+                    className: "px-4 py-2 bg-card border border-border rounded shadow-soft text-sm hover:bg-muted transition",
                     children: "Remove"
                 }, void 0, false, {
                     fileName: "[project]/components/Register/PhotoUploader.jsx",
-                    lineNumber: 67,
+                    lineNumber: 72,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Register/PhotoUploader.jsx",
-                lineNumber: 66,
+                lineNumber: 71,
                 columnNumber: 9
             }, this)
         ]
@@ -375,7 +375,6 @@ function RegisterFlow() {
         age: "",
         gender: "",
         stage: null,
-        // these MUST remain nested
         hair: {},
         internal: {},
         scalpPhoto: null
@@ -428,36 +427,27 @@ function RegisterFlow() {
                 }
             }));
     }
-    //  SUBMIT FUNCTION 
+    // SUBMIT
     function submit() {
         if (!validateStep()) return;
         const params = new URLSearchParams();
-        // Basic fields (name, phone, age, gender, stage)
         Object.entries(form).forEach(([key, val])=>{
             if (key !== "hair" && key !== "internal" && key !== "scalpPhoto") {
                 params.set(key, val);
             }
         });
-        // Flatten Hair Health → hair_family, hair_dandruff, etc.
-        Object.entries(form.hair || {}).forEach(([key, val])=>{
-            params.set("hair_" + key, val);
-        });
-        // Flatten Internal Health
-        Object.entries(form.internal || {}).forEach(([key, val])=>{
-            params.set("internal_" + key, val);
-        });
-        // Photo (only the file name)
+        Object.entries(form.hair || {}).forEach(([key, val])=>params.set("hair_" + key, val));
+        Object.entries(form.internal || {}).forEach(([key, val])=>params.set("internal_" + key, val));
         params.set("scalpPhoto", form.scalpPhoto?.name || "");
         router.push("/coach?" + params.toString());
     }
-    // STATIC DATA 
     const hairQuestions = [
         {
             id: "family",
             q: "Do you have a family history of hair loss?",
             options: [
-                "Mother or anyone from mother's side of the family",
-                "Father or anyone from father's side of the family",
+                "Mother or mother's side",
+                "Father or father's side",
                 "Both",
                 "None"
             ]
@@ -467,9 +457,9 @@ function RegisterFlow() {
             q: "Do you have Dandruff?",
             options: [
                 "No Dandruff",
-                "Mild Dandruff (small white flakes)",
-                "Heavy Dandruff (sticky dandruff found in nails on scratching or visible on clothes)",
-                "Diagnosed with Psoriasis / Seborrheic Dermatitis"
+                "Mild Dandruff",
+                "Heavy Dandruff",
+                "Psoriasis / Seborrheic Dermatitis"
             ]
         }
     ];
@@ -478,54 +468,54 @@ function RegisterFlow() {
             id: "sleep",
             q: "How well do you sleep?",
             options: [
-                "Very peacefully for 6-8 hours",
-                "Disturbed sleep (wake up multiple times at night)",
-                "Difficulty falling asleep"
+                "Peacefully 6-8 hours",
+                "Disturbed sleep",
+                "Difficulty sleeping"
             ]
         },
         {
             id: "stress",
-            q: "How Stressed are you?",
+            q: "How stressed are you?",
             options: [
                 "None",
                 "Low",
-                "Moderate(work, family etc )",
-                "High (Loss of close one, separation, home, illness)"
+                "Moderate",
+                "High"
             ]
         },
         {
             id: "constipation",
-            q: "Do you feel Constipated? (कब्ज़)",
+            q: "Do you feel constipated?",
             options: [
-                "No / Once in a while",
+                "No",
                 "Yes (fewer than 3 stools/week)",
-                "Unsatisfied after passing stools",
-                "Suffering from Irritable Bowel Syndrome (IBS)"
+                "Unsatisfied after stools",
+                "IBS"
             ]
         },
         {
             id: "gas",
-            q: "Do you have Gas, Acidity or Bloating?",
+            q: "Gas, Acidity, or Bloating?",
             options: [
                 "No",
-                "Sometimes (1-2 times a week or when I eat out)",
-                "Often (3+ times a week)"
+                "Sometimes",
+                "Often"
             ]
         },
         {
             id: "energy",
-            q: "How are your energy levels during the day?",
+            q: "How is your energy during the day?",
             options: [
-                "Always high / Normal energy levels throughout the day",
-                "Low when I wake up, then gradually increase",
-                "Very low in the afternoon",
-                "Low by evening/night",
+                "Normal",
+                "Low in morning",
+                "Low afternoon",
+                "Low evening",
                 "Always low"
             ]
         },
         {
             id: "supplements",
-            q: "Are you taking any supplements or vitamins for hair?",
+            q: "Are you taking supplements?",
             options: [
                 "Yes",
                 "No"
@@ -570,79 +560,79 @@ function RegisterFlow() {
     };
     const gender = form.gender || "male";
     const stageImages = stageData[gender];
-    // UI
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "min-h-screen py-8 bg-gray-50",
+        className: "min-h-screen py-8 bg-background-soft",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
             className: "max-w-4xl mx-auto px-6",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex justify-between mb-4 text-sm text-gray-500",
+                    className: "flex justify-between mb-4 text-sm text-muted-foreground",
                     children: [
                         step > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: prev,
                             children: "← Previous"
                         }, void 0, false, {
                             fileName: "[project]/app/register/page.jsx",
-                            lineNumber: 208,
+                            lineNumber: 190,
                             columnNumber: 23
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {}, void 0, false, {
                             fileName: "[project]/app/register/page.jsx",
-                            lineNumber: 208,
+                            lineNumber: 190,
                             columnNumber: 68
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             href: "/",
+                            className: "hover:text-accent",
                             children: "Exit"
                         }, void 0, false, {
                             fileName: "[project]/app/register/page.jsx",
-                            lineNumber: 209,
+                            lineNumber: 191,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/register/page.jsx",
-                    lineNumber: 207,
+                    lineNumber: 189,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Register$2f$ProgressTabs$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     step: step
                 }, void 0, false, {
                     fileName: "[project]/app/register/page.jsx",
-                    lineNumber: 212,
+                    lineNumber: 194,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "bg-white mt-6 rounded-2xl shadow p-6",
+                    className: "bg-card mt-6 rounded-2xl shadow-soft border border-border p-6",
                     children: [
                         step === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-4xl text-center font-bold mb-8",
+                                    className: "text-4xl text-center font-bold mb-8 text-foreground",
                                     children: "Tell us about you"
                                 }, void 0, false, {
                                     fileName: "[project]/app/register/page.jsx",
-                                    lineNumber: 219,
+                                    lineNumber: 202,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "mb-4",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                            className: "font-medium",
+                                            className: "font-medium text-foreground",
                                             children: "Full Name"
                                         }, void 0, false, {
                                             fileName: "[project]/app/register/page.jsx",
-                                            lineNumber: 223,
+                                            lineNumber: 208,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                            className: "w-full border px-3 py-2 rounded mt-1",
+                                            className: "w-full border border-border bg-background px-3 py-2 rounded mt-1 text-foreground",
                                             value: form.name,
                                             onChange: (e)=>updateField("name", e.target.value)
                                         }, void 0, false, {
                                             fileName: "[project]/app/register/page.jsx",
-                                            lineNumber: 224,
+                                            lineNumber: 209,
                                             columnNumber: 17
                                         }, this),
                                         errors.name && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -650,33 +640,33 @@ function RegisterFlow() {
                                             children: errors.name
                                         }, void 0, false, {
                                             fileName: "[project]/app/register/page.jsx",
-                                            lineNumber: 230,
+                                            lineNumber: 215,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/register/page.jsx",
-                                    lineNumber: 222,
+                                    lineNumber: 207,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "mb-4",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                            className: "font-medium",
+                                            className: "font-medium text-foreground",
                                             children: "Phone Number"
                                         }, void 0, false, {
                                             fileName: "[project]/app/register/page.jsx",
-                                            lineNumber: 236,
+                                            lineNumber: 221,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                            className: "w-full border px-3 py-2 rounded mt-1",
+                                            className: "w-full border border-border bg-background px-3 py-2 rounded mt-1 text-foreground",
                                             value: form.phone,
                                             onChange: (e)=>updateField("phone", e.target.value)
                                         }, void 0, false, {
                                             fileName: "[project]/app/register/page.jsx",
-                                            lineNumber: 237,
+                                            lineNumber: 222,
                                             columnNumber: 17
                                         }, this),
                                         errors.phone && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -684,34 +674,34 @@ function RegisterFlow() {
                                             children: errors.phone
                                         }, void 0, false, {
                                             fileName: "[project]/app/register/page.jsx",
-                                            lineNumber: 243,
+                                            lineNumber: 228,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/register/page.jsx",
-                                    lineNumber: 235,
+                                    lineNumber: 220,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "mb-4",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                            className: "font-medium",
+                                            className: "font-medium text-foreground",
                                             children: "Age"
                                         }, void 0, false, {
                                             fileName: "[project]/app/register/page.jsx",
-                                            lineNumber: 249,
+                                            lineNumber: 234,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                             type: "number",
-                                            className: "w-full border px-3 py-2 rounded mt-1",
+                                            className: "w-full border border-border bg-background px-3 py-2 rounded mt-1 text-foreground",
                                             value: form.age,
                                             onChange: (e)=>updateField("age", e.target.value)
                                         }, void 0, false, {
                                             fileName: "[project]/app/register/page.jsx",
-                                            lineNumber: 250,
+                                            lineNumber: 235,
                                             columnNumber: 17
                                         }, this),
                                         errors.age && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -719,23 +709,23 @@ function RegisterFlow() {
                                             children: errors.age
                                         }, void 0, false, {
                                             fileName: "[project]/app/register/page.jsx",
-                                            lineNumber: 257,
+                                            lineNumber: 242,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/register/page.jsx",
-                                    lineNumber: 248,
+                                    lineNumber: 233,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                            className: "font-medium",
+                                            className: "font-medium text-foreground",
                                             children: "Gender"
                                         }, void 0, false, {
                                             fileName: "[project]/app/register/page.jsx",
-                                            lineNumber: 263,
+                                            lineNumber: 248,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -745,16 +735,17 @@ function RegisterFlow() {
                                                 "female"
                                             ].map((g)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     onClick: ()=>updateField("gender", g),
-                                                    className: `px-5 py-2 rounded ${form.gender === g ? "bg-emerald-400" : "bg-gray-100"}`,
+                                                    className: `px-5 py-2 rounded border 
+                        ${form.gender === g ? "bg-primary text-primary-foreground" : "bg-muted text-foreground border-border"}`,
                                                     children: g.toUpperCase()
                                                 }, g, false, {
                                                     fileName: "[project]/app/register/page.jsx",
-                                                    lineNumber: 266,
+                                                    lineNumber: 252,
                                                     columnNumber: 21
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/app/register/page.jsx",
-                                            lineNumber: 264,
+                                            lineNumber: 250,
                                             columnNumber: 17
                                         }, this),
                                         errors.gender && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -762,13 +753,13 @@ function RegisterFlow() {
                                             children: errors.gender
                                         }, void 0, false, {
                                             fileName: "[project]/app/register/page.jsx",
-                                            lineNumber: 277,
+                                            lineNumber: 268,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/register/page.jsx",
-                                    lineNumber: 262,
+                                    lineNumber: 247,
                                     columnNumber: 15
                                 }, this)
                             ]
@@ -776,44 +767,45 @@ function RegisterFlow() {
                         step === 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-4xl text-center font-bold mb-8",
+                                    className: "text-4xl text-center font-bold mb-8 text-foreground",
                                     children: "Hair Health"
                                 }, void 0, false, {
                                     fileName: "[project]/app/register/page.jsx",
-                                    lineNumber: 286,
+                                    lineNumber: 277,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "grid grid-cols-1 md:grid-cols-3 gap-4",
                                     children: stageImages.map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             onClick: ()=>updateField("stage", s.id),
-                                            className: `rounded-xl border p-4 cursor-pointer ${form.stage === s.id ? "ring-2 ring-emerald-400" : "border-gray-200"}`,
+                                            className: `rounded-xl border p-4 cursor-pointer transition 
+                      ${form.stage === s.id ? "ring-2 ring-primary bg-primary/10" : "border-border bg-muted"}`,
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                     src: s.img,
-                                                    className: "w-full mb-3"
+                                                    className: "w-full mb-3 rounded"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/register/page.jsx",
-                                                    lineNumber: 299,
+                                                    lineNumber: 294,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "font-medium",
+                                                    className: "font-medium text-foreground",
                                                     children: s.label
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/register/page.jsx",
-                                                    lineNumber: 300,
+                                                    lineNumber: 295,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, s.id, true, {
                                             fileName: "[project]/app/register/page.jsx",
-                                            lineNumber: 291,
+                                            lineNumber: 284,
                                             columnNumber: 19
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/app/register/page.jsx",
-                                    lineNumber: 289,
+                                    lineNumber: 282,
                                     columnNumber: 15
                                 }, this),
                                 errors.stage && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -821,7 +813,7 @@ function RegisterFlow() {
                                     children: errors.stage
                                 }, void 0, false, {
                                     fileName: "[project]/app/register/page.jsx",
-                                    lineNumber: 306,
+                                    lineNumber: 301,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -833,12 +825,12 @@ function RegisterFlow() {
                                             onChange: (v)=>updateNested("hair", q.id, v)
                                         }, q.id, false, {
                                             fileName: "[project]/app/register/page.jsx",
-                                            lineNumber: 312,
+                                            lineNumber: 307,
                                             columnNumber: 19
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/app/register/page.jsx",
-                                    lineNumber: 310,
+                                    lineNumber: 305,
                                     columnNumber: 15
                                 }, this)
                             ]
@@ -846,11 +838,11 @@ function RegisterFlow() {
                         step === 2 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-4xl text-center font-bold mb-8",
+                                    className: "text-4xl text-center font-bold mb-8 text-foreground",
                                     children: "Internal Health"
                                 }, void 0, false, {
                                     fileName: "[project]/app/register/page.jsx",
-                                    lineNumber: 327,
+                                    lineNumber: 322,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -862,12 +854,12 @@ function RegisterFlow() {
                                             onChange: (v)=>updateNested("internal", q.id, v)
                                         }, q.id, false, {
                                             fileName: "[project]/app/register/page.jsx",
-                                            lineNumber: 331,
+                                            lineNumber: 328,
                                             columnNumber: 19
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/app/register/page.jsx",
-                                    lineNumber: 329,
+                                    lineNumber: 326,
                                     columnNumber: 15
                                 }, this)
                             ]
@@ -875,11 +867,11 @@ function RegisterFlow() {
                         step === 3 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-2xl font-semibold text-center mb-4",
+                                    className: "text-2xl font-semibold text-center mb-4 text-foreground",
                                     children: "Upload your scalp picture"
                                 }, void 0, false, {
                                     fileName: "[project]/app/register/page.jsx",
-                                    lineNumber: 346,
+                                    lineNumber: 343,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Register$2f$PhotoUploader$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -887,7 +879,7 @@ function RegisterFlow() {
                                     onChange: (file)=>updateField("scalpPhoto", file)
                                 }, void 0, false, {
                                     fileName: "[project]/app/register/page.jsx",
-                                    lineNumber: 350,
+                                    lineNumber: 347,
                                     columnNumber: 15
                                 }, this),
                                 errors.scalpPhoto && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -895,7 +887,7 @@ function RegisterFlow() {
                                     children: errors.scalpPhoto
                                 }, void 0, false, {
                                     fileName: "[project]/app/register/page.jsx",
-                                    lineNumber: 356,
+                                    lineNumber: 353,
                                     columnNumber: 17
                                 }, this)
                             ]
@@ -904,45 +896,45 @@ function RegisterFlow() {
                             className: "flex justify-end mt-6",
                             children: step < 3 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: next,
-                                className: "px-6 py-2 bg-emerald-600 text-white rounded",
+                                className: "px-6 py-2 bg-primary text-primary-foreground rounded shadow-soft hover:bg-primary-dark",
                                 children: "Next →"
                             }, void 0, false, {
                                 fileName: "[project]/app/register/page.jsx",
-                                lineNumber: 364,
+                                lineNumber: 361,
                                 columnNumber: 15
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: submit,
-                                className: "px-6 py-2 bg-indigo-600 text-white rounded",
+                                className: "px-6 py-2 bg-accent text-accent-foreground rounded shadow-soft hover:bg-accent/80",
                                 children: "Submit Assessment"
                             }, void 0, false, {
                                 fileName: "[project]/app/register/page.jsx",
-                                lineNumber: 371,
+                                lineNumber: 368,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/register/page.jsx",
-                            lineNumber: 362,
+                            lineNumber: 359,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/register/page.jsx",
-                    lineNumber: 214,
+                    lineNumber: 197,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/register/page.jsx",
-            lineNumber: 206,
+            lineNumber: 186,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/register/page.jsx",
-        lineNumber: 205,
+        lineNumber: 185,
         columnNumber: 5
     }, this);
 }
-_s(RegisterFlow, "rKrt+aNWYFBcCXH/wQPfqeyynzU=", false, function() {
+_s(RegisterFlow, "99eGk3vSzsWsUxPyyJhvbzTJfpY=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];

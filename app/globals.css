@@ -2,15 +2,114 @@
 @tailwind components;
 @tailwind utilities;
 
-body { @apply bg-white text-gray-800; }
-
-
+body {
+  @apply bg-background text-foreground;
+}
 
 /* Hide scrollbar */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+@layer base {
+  :root {
+    /* 🌿 Holistic Wellness & Healing Theme */
+
+    /* BACKGROUND / TEXT */
+    --background: 45 50% 93%;        /* Cream / Off-white (#F6F3E7) */
+    --foreground: 0 0% 18%;          /* Charcoal (#2F2F2F) */
+
+    /* CARD / POPOVER */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 18%;
+
+    /* PRIMARY — Healing Teal (#2A9D8F) */
+    --primary: 174 54% 40%;
+    --primary-foreground: 0 0% 98%;
+
+    /* SECONDARY — Soft Sage (#EAF4F2) */
+    --secondary: 160 30% 93%;
+    --secondary-foreground: 0 0% 18%;
+
+    /* ACCENT — Premium Gold (#C49A3A) */
+    --accent: 43 54% 50%;
+    --accent-foreground: 0 0% 98%;
+
+    /* MUTED */
+    --muted: 160 30% 95%;
+    --muted-foreground: 0 0% 40%;
+
+    /* DESTRUCTIVE */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* BORDERS & UI */
+    --border: 0 0% 80%;
+    --input: 0 0% 75%;
+    --ring: 174 54% 40%;   /* primary teal */
+
+    /* CHART COLORS */
+    --chart-1: 174 54% 40%;
+    --chart-2: 160 30% 50%;
+    --chart-3: 43 54% 60%;
+    --chart-4: 0 0% 35%;
+    --chart-5: 5 80% 60%;
+
+    /* RADIUS */
+    --radius: 0.5rem;
+  }
+
+  /* 🌙 DARK MODE — Soft Medical Calm Theme */
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    /* PRIMARY — Softened teal in dark */
+    --primary: 174 40% 55%;
+    --primary-foreground: 0 0% 10%;
+
+    /* SECONDARY */
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    /* ACCENT — Muted Gold */
+    --accent: 43 40% 50%;
+    --accent-foreground: 0 0% 98%;
+
+    /* MUTED */
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
+
+    /* DESTRUCTIVE */
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* BORDER / INPUT */
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 174 40% 55%;
+
+    --chart-1: 174 40% 55%;
+    --chart-2: 160 30% 55%;
+    --chart-3: 43 50% 55%;
+    --chart-4: 0 0% 50%;
+    --chart-5: 5 80% 55%;
+  }
 }
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }

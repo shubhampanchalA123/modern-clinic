@@ -2,20 +2,20 @@
 
 import Image from "next/image";
 import { FaCheckCircle, FaGraduationCap, FaAward } from "react-icons/fa";
-import { MdOutlineMedicalServices, MdVideoLibrary, MdSelfImprovement  } from "react-icons/md";
+import { MdOutlineMedicalServices, MdSelfImprovement } from "react-icons/md";
 import { GiStethoscope } from "react-icons/gi";
 import VideoReels from "@/components/VideoReels";
 
 export default function DoctorProfile() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-gray-100 py-16">
+    <div className="min-h-screen bg-gradient-to-b from-background via-background-soft to-background-muted py-16">
       <main className="max-w-7xl mx-auto px-6">
 
         {/* HEADER SECTION */}
         <div className="grid lg:grid-cols-2 gap-10 items-center">
-          
+
           {/* Doctor Image */}
-          <div className="relative w-full h-[380px] rounded-3xl overflow-hidden shadow-2xl">
+          <div className="relative w-full h-[380px] rounded-3xl overflow-hidden shadow-medium bg-card">
             <Image
               src="/images/doctor1.png"
               alt="Dr. Devendra Rathore"
@@ -26,12 +26,15 @@ export default function DoctorProfile() {
 
           {/* Doctor Info */}
           <div>
-            <h1 className="text-4xl font-bold">Dr. Devendra Rathore</h1>
-            <p className="text-gray-600 mt-2 text-lg">
+            <h1 className="text-4xl font-bold text-foreground">
+              Dr. Devendra Rathore
+            </h1>
+
+            <p className="text-muted-foreground mt-2 text-lg">
               Hair & Wellness Expert • Root-Cause Hair Fall Specialist
             </p>
 
-            <p className="mt-6 text-gray-700 leading-relaxed">
+            <p className="mt-6 text-foreground/80 leading-relaxed">
               With years of experience treating complex hair fall cases using a 
               holistic and medically guided approach, Dr. Rathore focuses on 
               long-term, natural, and root-cause based recovery combining 
@@ -39,10 +42,10 @@ export default function DoctorProfile() {
             </p>
 
             <div className="mt-6 flex gap-4 flex-wrap">
-              <span className="bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-medium">
+              <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
                 5000+ Patients Treated
               </span>
-              <span className="bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium">
+              <span className="bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-medium">
                 10+ Years Experience
               </span>
             </div>
@@ -52,9 +55,9 @@ export default function DoctorProfile() {
 
         {/* QUALIFICATIONS */}
         <section className="mt-20">
-          <h2 className="text-3xl font-bold mb-4">Qualifications</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h2 className="text-3xl font-bold mb-4 text-foreground">Qualifications</h2>
 
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { icon: <FaGraduationCap size={28} />, text: "BHMS - Bachelor of Homeopathic Medicine" },
               { icon: <MdOutlineMedicalServices size={28} />, text: "Certified Hair Restoration & Wellness Specialist" },
@@ -62,30 +65,30 @@ export default function DoctorProfile() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-all"
+                className="bg-card p-6 rounded-2xl shadow-soft border border-border hover:shadow-medium transition-all"
               >
-                <div className="text-indigo-600 mb-3">{item.icon}</div>
-                <p className="font-medium text-gray-700">{item.text}</p>
+                <div className="text-primary mb-3">{item.icon}</div>
+                <p className="font-medium text-foreground">{item.text}</p>
               </div>
             ))}
-
           </div>
         </section>
 
         {/* EXPERIENCE TIMELINE */}
         <section className="mt-20">
-          <h2 className="text-3xl font-bold mb-4">Experience</h2>
+          <h2 className="text-3xl font-bold mb-4 text-foreground">Experience</h2>
 
-          <div className="space-y-6 border-l-2 border-indigo-300 pl-6">
+          <div className="space-y-6 border-l-2 border-primary/40 pl-6">
             {[
               { year: "2012 - 2015", text: "Worked with leading homeopathic clinics treating chronic hair fall conditions." },
               { year: "2016 - 2019", text: "Specialized in nutrition science & metabolic health for hair restoration." },
               { year: "2020 - Present", text: "Founded an advanced root-cause hair treatment program integrating Homeopathy + Nutrition + Lifestyle medicine." }
             ].map((item, index) => (
               <div key={index} className="relative">
-                <div className="absolute -left-4 top-1 w-3 h-3 bg-indigo-500 rounded-full"></div>
-                <h4 className="font-semibold text-indigo-600">{item.year}</h4>
-                <p className="text-gray-700 mt-1">{item.text}</p>
+                <div className="absolute -left-4 top-1 w-3 h-3 bg-primary rounded-full"></div>
+
+                <h4 className="font-semibold text-primary">{item.year}</h4>
+                <p className="text-muted-foreground mt-1">{item.text}</p>
               </div>
             ))}
           </div>
@@ -93,7 +96,7 @@ export default function DoctorProfile() {
 
         {/* APPROACH SECTION */}
         <section className="mt-20">
-          <h2 className="text-3xl font-bold mb-6">Holistic Treatment Approach</h2>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Holistic Treatment Approach</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -113,42 +116,24 @@ export default function DoctorProfile() {
                 desc: "Balancing cortisol, improving sleep & restoring hair growth cycles."
               }
             ].map((step, index) => (
-              <div key={index} className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition-all">
-                <div className="text-emerald-500 mb-3">{step.icon}</div>
-                <h4 className="font-semibold mb-2">{step.title}</h4>
-                <p className="text-gray-600 text-sm">{step.desc}</p>
+              <div 
+                key={index} 
+                className="p-6 bg-card rounded-2xl shadow-soft border border-border hover:shadow-medium transition-all"
+              >
+                <div className="text-accent mb-3">{step.icon}</div>
+                <h4 className="font-semibold text-foreground mb-2">{step.title}</h4>
+                <p className="text-muted-foreground text-sm">{step.desc}</p>
               </div>
             ))}
           </div>
         </section>
 
-        {/* VIDEO SECTION */}
-        {/* <section className="mt-20">
-          <h2 className="text-3xl font-bold mb-4">Doctor Videos</h2>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-            {[
-              "https://www.youtube.com/embed/i68ljuyMjbk",
-              "https://www.youtube.com/embed/8k-CD4lztEM",
-              "https://www.youtube.com/embed/U1-4SOKMxJs"
-            ].map((url, index) => (
-              <div key={index} className="rounded-2xl overflow-hidden shadow-lg bg-black">
-                <iframe
-                  src={url}
-                  className="w-full h-56"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                ></iframe>
-              </div>
-            ))}
-
-          </div>
-        </section> */}
-        <VideoReels/>
+        {/* VIDEO REELS */}
+        <VideoReels />
 
         {/* SUCCESS STORIES */}
         <section className="mt-20 mb-20">
-          <h2 className="text-3xl font-bold mb-6">Patient Success Stories</h2>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Patient Success Stories</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -165,9 +150,12 @@ export default function DoctorProfile() {
                 quote: "The 3-step program was life-changing. My scalp health improved drastically."
               }
             ].map((t, index) => (
-              <div key={index} className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition-all">
-                <p className="italic text-gray-700">“{t.quote}”</p>
-                <p className="mt-3 font-semibold text-indigo-600">{t.name}</p>
+              <div 
+                key={index} 
+                className="p-6 bg-card rounded-2xl shadow-soft border border-border hover:shadow-medium transition-all"
+              >
+                <p className="italic text-foreground/80">“{t.quote}”</p>
+                <p className="mt-3 font-semibold text-primary">{t.name}</p>
               </div>
             ))}
           </div>

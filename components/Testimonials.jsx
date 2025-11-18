@@ -3,9 +3,12 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
+import BeforeAfterCard from "@/components/BeforeAfterCard";
+import Link from "next/link";
 
 export default function Testimonials() {
   const pathname = usePathname();
+
   const testimonials = [
     {
       name: "Ritika S.",
@@ -33,46 +36,91 @@ export default function Testimonials() {
     },
   ];
 
-  const gallery = [
+  const patientData = [
     {
       before: "/images/before-after/male3-before.png",
       after: "/images/before-after/male3-after.png",
+      name: "Rohit Kumar",
+      treatment: "Advanced Hair Regrowth",
+      duration: "10 Sessions",
+      clinic: "Koramangala, Bengaluru",
+      feedback:
+        "After years of hair thinning, my scalp finally started showing baby hair. The treatment improved density and reduced shedding significantly.",
     },
     {
       before: "/images/before-after/female1-before.png",
       after: "/images/before-after/female1-after.png",
+      name: "Sneha Verma",
+      treatment: "Female Pattern Hair Loss",
+      duration: "12 Sessions",
+      clinic: "Indiranagar, Bengaluru",
+      feedback:
+        "My hair volume improved and my hair fall reduced dramatically. I finally feel confident again!",
     },
     {
       before: "/images/before-after/male1-before.png",
       after: "/images/before-after/male1-after.png",
+      name: "Aditya Menon",
+      treatment: "Male Pattern Baldness",
+      duration: "8 Sessions",
+      clinic: "HSR Layout, Bengaluru",
+      feedback:
+        "The holistic approach helped me regain my lost hairline. The results were visible much sooner than expected.",
     },
     {
       before: "/images/before-after/male2-before.png",
       after: "/images/before-after/male2-after.png",
+      name: "Siddharth Rao",
+      treatment: "Scalp Strengthening Program",
+      duration: "6 Sessions",
+      clinic: "Whitefield, Bengaluru",
+      feedback:
+        "My scalp became healthier and the constant shedding finally stopped. I can see new thickness forming.",
     },
     {
       before: "/images/before-after/female2-before.png",
       after: "/images/before-after/female2-after.png",
+      name: "Pooja Reddy",
+      treatment: "PCOS-related Hair Loss",
+      duration: "14 Sessions",
+      clinic: "BTM Layout, Bengaluru",
+      feedback:
+        "Due to hormonal imbalance, my hair was extremely thin. This treatment restored strength and improved overall volume.",
     },
     {
       before: "/images/before-after/male4-before.png",
       after: "/images/before-after/male4-after.png",
+      name: "Vivek Sharma",
+      treatment: "Stress & Nutrition Therapy",
+      duration: "7 Sessions",
+      clinic: "Jayanagar, Bengaluru",
+      feedback:
+        "Fixing my sleep and nutrition reduced my shedding by almost 70%. The hair texture also improved significantly.",
     },
     {
       before: "/images/before-after/male5-before.png",
       after: "/images/before-after/male5-after.png",
+      name: "Nikhil Shetty",
+      treatment: "Hair Density Booster Program",
+      duration: "9 Sessions",
+      clinic: "Marathahalli, Bengaluru",
+      feedback:
+        "New hair growth started appearing around the crown area. This gave me a huge confidence boost!",
     },
   ];
 
   const showGallery = pathname === "/testimonials";
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
+    <div className="bg-muted py-12">
       <main className="max-w-7xl mx-auto px-6">
 
-        {/* ORIGINAL SUCCESS STORIES SECTION */}
-        <h2 className="text-3xl font-bold text-center mb-2">Success Stories</h2>
-        <p className="text-gray-600 text-center mb-10">
+        {/* Success Stories */}
+        <h2 className="text-3xl font-bold text-center mb-2 text-foreground">
+          Success Stories
+        </h2>
+
+        <p className="text-muted-foreground text-center mb-10">
           Real transformations from people who healed their hair naturally with our program.
         </p>
 
@@ -84,8 +132,17 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="bg-white rounded-2xl shadow p-5 
-              hover:shadow-xl hover:-translate-y-1 transition-all"
+              className="
+                bg-card 
+                text-foreground 
+                rounded-2xl 
+                shadow-sm 
+                border border-border 
+                p-5 
+                hover:shadow 
+                hover:-translate-y-1 
+                transition-all
+              "
             >
               <div className="flex items-center justify-center gap-3 mb-3">
                 <div className="w-24 h-24 rounded-xl overflow-hidden relative">
@@ -96,58 +153,39 @@ export default function Testimonials() {
                 </div>
               </div>
 
-              <p className="italic text-gray-700 text-sm">“{t.quote}”</p>
+              <p className="italic text-muted-foreground text-sm">“{t.quote}”</p>
 
               <div className="mt-4">
-                <p className="font-semibold">{t.name}</p>
-                <p className="text-xs text-gray-500">{t.role}</p>
+                <p className="font-semibold text-foreground">{t.name}</p>
+                <p className="text-xs text-muted-foreground">{t.role}</p>
               </div>
             </motion.div>
           ))}
         </div>
 
-        {/* NEW BEFORE/AFTER GALLERY SECTION */}
+        {/* Show More Button (Only on home page) */}
+        {pathname === "/" && (
+          <div className="flex justify-center mt-10">
+            <Link
+              href="/testimonials"
+              className="text-primary font-semibold hover:underline flex items-center gap-1"
+            >
+              Show More Testimonials
+              <span className="text-lg">→</span>
+            </Link>
+          </div>
+        )}
+
+        {/* Before & After Detailed Slider Section */}
         {showGallery && (
           <>
-            <h2 className="text-2xl font-bold text-center mt-16 mb-6">
+            <h2 className="text-2xl font-bold text-center mt-16 mb-6 text-foreground">
               Before & After Transformations
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {gallery.map((g, i) => (
-                <motion.div
-                  key={i}
-                  className="bg-white rounded-2xl shadow p-5 hover:shadow-xl hover:-translate-y-1 transition-all"
-                  initial={{ opacity: 0, y: 25 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <div className="flex items-center justify-center gap-4">
-
-                    {/* BEFORE */}
-                    <div className="flex flex-col items-center">
-                      <span className="text-xs text-gray-500 mb-1">BEFORE</span>
-                      <div className="w-24 h-24 rounded-lg overflow-hidden relative shadow">
-                        <Image src={g.before} alt="before" fill className="object-cover" />
-                      </div>
-                    </div>
-
-                    {/* AFTER */}
-                    <div className="flex flex-col items-center">
-                      <span className="text-xs text-gray-500 mb-1">AFTER</span>
-                      <div className="w-24 h-24 rounded-lg overflow-hidden relative shadow">
-                        <Image src={g.after} alt="after" fill className="object-cover" />
-                      </div>
-                    </div>
-
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+            <BeforeAfterCard data={patientData} />
           </>
         )}
-
       </main>
     </div>
   );

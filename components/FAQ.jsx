@@ -21,18 +21,35 @@ export default function FAQ() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
+    <div className="bg-muted py-12">
       <main className="max-w-5xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-2">Frequently Asked Questions</h2>
-        <p className="text-gray-600 text-center mb-8">
+        <h2 className="text-3xl font-bold text-center mb-2 text-foreground">
+          Frequently Asked Questions
+        </h2>
+
+        <p className="text-muted-foreground text-center mb-8">
           Answers to the most common concerns about our natural, doctor-guided program.
         </p>
 
         <div className="space-y-4">
           {faqs.map((f, idx) => (
-            <details key={idx} className="p-4 bg-white rounded-2xl shadow cursor-pointer">
-              <summary className="font-semibold text-lg">{f.q}</summary>
-              <p className="text-gray-600 mt-2">{f.a}</p>
+            <details
+              key={idx}
+              className="
+                p-4 
+                bg-card 
+                text-foreground 
+                rounded-2xl 
+                shadow-sm 
+                border 
+                border-border 
+                cursor-pointer
+              "
+            >
+              <summary className="font-semibold text-lg">
+                {f.q}
+              </summary>
+              <p className="text-muted-foreground mt-2">{f.a}</p>
             </details>
           ))}
         </div>

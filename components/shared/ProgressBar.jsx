@@ -6,8 +6,8 @@ export default function ProgressBar({ step = 1 }) {
       {[1, 2, 3].map((s) => (
         <div
           key={s}
-          className={`flex-1 h-2 rounded ${
-            s <= step ? "bg-emerald-500" : "bg-gray-200"
+          className={`flex-1 h-2 rounded transition-all ${
+            s <= step ? "bg-primary" : "bg-muted"
           }`}
         ></div>
       ))}

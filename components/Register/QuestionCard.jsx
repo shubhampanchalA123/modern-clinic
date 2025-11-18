@@ -4,19 +4,23 @@ import React from "react";
 
 export default function QuestionCard({ question, options = [], value, onChange }) {
   return (
-    <div className="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm">
-      <h3 className="text-lg font-semibold mb-4">{question}</h3>
+    <div className="p-6 bg-card rounded-2xl border border-border shadow-soft">
+      <h3 className="text-lg font-semibold text-foreground mb-4">{question}</h3>
+
       <div className="space-y-4">
         {options.map((opt, idx) => (
-          <label key={idx} className="flex items-center gap-4 cursor-pointer">
+          <label
+            key={idx}
+            className="flex items-center gap-4 cursor-pointer"
+          >
             <input
               type="radio"
               name={question}
               checked={value === opt}
               onChange={() => onChange(opt)}
-              className="form-radio text-emerald-600 h-4 w-4"
+              className="form-radio text-primary h-4 w-4"
             />
-            <span className="text-gray-700">{opt}</span>
+            <span className="text-foreground">{opt}</span>
           </label>
         ))}
       </div>

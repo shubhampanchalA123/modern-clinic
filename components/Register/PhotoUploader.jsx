@@ -28,17 +28,21 @@ export default function PhotoUploader({ file, onChange }) {
 
   return (
     <div className="flex flex-col items-center gap-4">
-      <div className="w-48 h-48 rounded-xl bg-gray-50 flex items-center justify-center overflow-hidden shadow">
+      
+      {/* Preview Box */}
+      <div className="w-48 h-48 rounded-xl bg-muted flex items-center justify-center overflow-hidden shadow-soft border border-border">
         {preview ? (
           <img src={preview} alt="preview" className="object-cover w-full h-full" />
         ) : (
-          <div className="text-center text-gray-400">No photo yet</div>
+          <div className="text-center text-muted-foreground">No photo yet</div>
         )}
       </div>
 
+      {/* Upload + Camera Buttons */}
       <div className="flex gap-3 w-full justify-center">
-        {/* Upload button */}
-        <label className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 rounded text-sm cursor-pointer hover:bg-gray-50">
+
+        {/* Upload Button */}
+        <label className="inline-flex items-center justify-center px-6 py-3 border border-border bg-card rounded text-sm cursor-pointer hover:bg-muted transition">
           Upload Scalp Photo
           <input
             ref={inputRef}
@@ -49,8 +53,8 @@ export default function PhotoUploader({ file, onChange }) {
           />
         </label>
 
-        {/* Take picture using capture attribute for mobile */}
-        <label className="inline-flex items-center justify-center px-6 py-3 bg-gray-800 text-white rounded text-sm cursor-pointer hover:opacity-95">
+        {/* Camera / Capture Button */}
+        <label className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded text-sm cursor-pointer hover:opacity-90 transition shadow-soft">
           Take a Picture
           <input
             type="file"
@@ -62,9 +66,15 @@ export default function PhotoUploader({ file, onChange }) {
         </label>
       </div>
 
+      {/* Remove Button */}
       {preview && (
         <div className="flex gap-3">
-          <button onClick={handleRemove} className="px-4 py-2 bg-white border rounded shadow-sm text-sm">Remove</button>
+          <button
+            onClick={handleRemove}
+            className="px-4 py-2 bg-card border border-border rounded shadow-soft text-sm hover:bg-muted transition"
+          >
+            Remove
+          </button>
         </div>
       )}
     </div>

@@ -28,9 +28,11 @@ export default function ProgressTabs({ step = 0 }) {
               key={t}
               className={`
                 px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap
-                ${i <= step
-                  ? "bg-emerald-200 text-gray-800"
-                  : "bg-gray-100 text-gray-600"}
+                ${
+                  i <= step
+                    ? "bg-primary/20 text-foreground"
+                    : "bg-muted text-muted-foreground"
+                }
               `}
             >
               {t}
@@ -39,23 +41,23 @@ export default function ProgressTabs({ step = 0 }) {
         </div>
 
         {/* Right: Percentage */}
-        <div className="flex-1 text-right text-sm text-gray-600 hidden md:block">
+        <div className="flex-1 text-right text-sm text-muted-foreground hidden md:block">
           {percent}%
         </div>
       </div>
 
       {/* Progress Bar */}
       <div className="mt-4 w-full">
-        <div className="h-2 bg-gray-200 rounded-full">
+        <div className="h-2 bg-muted rounded-full">
           <div
-            className="h-2 bg-emerald-300 rounded-full transition-all"
+            className="h-2 bg-primary rounded-full transition-all"
             style={{ width: `${percent}%` }}
           ></div>
         </div>
       </div>
 
       {/* Percent underneath on mobile */}
-      <div className="md:hidden text-right text-xs text-gray-500 mt-1">
+      <div className="md:hidden text-right text-xs text-muted-foreground mt-1">
         {percent}%
       </div>
     </div>

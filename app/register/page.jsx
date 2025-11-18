@@ -19,10 +19,8 @@ export default function RegisterFlow() {
     gender: "",
     stage: null,
 
-    // these MUST remain nested
     hair: {},
     internal: {},
-
     scalpPhoto: null,
   });
 
@@ -71,43 +69,38 @@ export default function RegisterFlow() {
     }));
   }
 
-  //  SUBMIT FUNCTION 
+  // SUBMIT
   function submit() {
     if (!validateStep()) return;
 
     const params = new URLSearchParams();
 
-    // Basic fields (name, phone, age, gender, stage)
     Object.entries(form).forEach(([key, val]) => {
       if (key !== "hair" && key !== "internal" && key !== "scalpPhoto") {
         params.set(key, val);
       }
     });
 
-    // Flatten Hair Health → hair_family, hair_dandruff, etc.
-    Object.entries(form.hair || {}).forEach(([key, val]) => {
-      params.set("hair_" + key, val);
-    });
+    Object.entries(form.hair || {}).forEach(([key, val]) =>
+      params.set("hair_" + key, val)
+    );
 
-    // Flatten Internal Health
-    Object.entries(form.internal || {}).forEach(([key, val]) => {
-      params.set("internal_" + key, val);
-    });
+    Object.entries(form.internal || {}).forEach(([key, val]) =>
+      params.set("internal_" + key, val)
+    );
 
-    // Photo (only the file name)
     params.set("scalpPhoto", form.scalpPhoto?.name || "");
 
     router.push("/coach?" + params.toString());
   }
 
-  // STATIC DATA 
   const hairQuestions = [
     {
       id: "family",
       q: "Do you have a family history of hair loss?",
       options: [
-        "Mother or anyone from mother's side of the family",
-        "Father or anyone from father's side of the family",
+        "Mother or mother's side",
+        "Father or father's side",
         "Both",
         "None",
       ],
@@ -117,9 +110,9 @@ export default function RegisterFlow() {
       q: "Do you have Dandruff?",
       options: [
         "No Dandruff",
-        "Mild Dandruff (small white flakes)",
-        "Heavy Dandruff (sticky dandruff found in nails on scratching or visible on clothes)",
-        "Diagnosed with Psoriasis / Seborrheic Dermatitis",
+        "Mild Dandruff",
+        "Heavy Dandruff",
+        "Psoriasis / Seborrheic Dermatitis",
       ],
     },
   ];
@@ -129,58 +122,46 @@ export default function RegisterFlow() {
       id: "sleep",
       q: "How well do you sleep?",
       options: [
-        "Very peacefully for 6-8 hours",
-        "Disturbed sleep (wake up multiple times at night)",
-        "Difficulty falling asleep",
+        "Peacefully 6-8 hours",
+        "Disturbed sleep",
+        "Difficulty sleeping",
       ],
     },
     {
       id: "stress",
-      q: "How Stressed are you?",
-      options: [
-        "None",
-        "Low",
-        "Moderate(work, family etc )",
-        "High (Loss of close one, separation, home, illness)"
-      ],
+      q: "How stressed are you?",
+      options: ["None", "Low", "Moderate", "High"],
     },
     {
       id: "constipation",
-      q: "Do you feel Constipated? (कब्ज़)",
+      q: "Do you feel constipated?",
       options: [
-        "No / Once in a while",
+        "No",
         "Yes (fewer than 3 stools/week)",
-        "Unsatisfied after passing stools",
-        "Suffering from Irritable Bowel Syndrome (IBS)",
+        "Unsatisfied after stools",
+        "IBS",
       ],
     },
     {
       id: "gas",
-      q: "Do you have Gas, Acidity or Bloating?",
-      options: [
-        "No",
-        "Sometimes (1-2 times a week or when I eat out)",
-        "Often (3+ times a week)"
-      ],
+      q: "Gas, Acidity, or Bloating?",
+      options: ["No", "Sometimes", "Often"],
     },
     {
       id: "energy",
-      q: "How are your energy levels during the day?",
+      q: "How is your energy during the day?",
       options: [
-        "Always high / Normal energy levels throughout the day",
-        "Low when I wake up, then gradually increase",
-        "Very low in the afternoon",
-        "Low by evening/night",
+        "Normal",
+        "Low in morning",
+        "Low afternoon",
+        "Low evening",
         "Always low",
       ],
     },
     {
       id: "supplements",
-      q: "Are you taking any supplements or vitamins for hair?",
-      options: [
-        "Yes",
-        "No"
-      ],
+      q: "Are you taking supplements?",
+      options: ["Yes", "No"],
     },
   ];
 
@@ -200,29 +181,33 @@ export default function RegisterFlow() {
   const gender = form.gender || "male";
   const stageImages = stageData[gender];
 
-  // UI
   return (
-    <div className="min-h-screen py-8 bg-gray-50">
+    <div className="min-h-screen py-8 bg-background-soft">
       <main className="max-w-4xl mx-auto px-6">
-        <div className="flex justify-between mb-4 text-sm text-gray-500">
+
+        {/* Top Bar */}
+        <div className="flex justify-between mb-4 text-sm text-muted-foreground">
           {step > 0 ? <button onClick={prev}>← Previous</button> : <span />}
-          <Link href="/">Exit</Link>
+          <Link href="/" className="hover:text-accent">Exit</Link>
         </div>
 
         <ProgressTabs step={step} />
 
-        <div className="bg-white mt-6 rounded-2xl shadow p-6">
+        {/* CARD WRAPPER */}
+        <div className="bg-card mt-6 rounded-2xl shadow-soft border border-border p-6">
 
           {/* STEP 0 — ABOUT YOU */}
           {step === 0 && (
             <>
-              <h2 className="text-4xl text-center font-bold mb-8">Tell us about you</h2>
+              <h2 className="text-4xl text-center font-bold mb-8 text-foreground">
+                Tell us about you
+              </h2>
 
               {/* Name */}
               <div className="mb-4">
-                <label className="font-medium">Full Name</label>
+                <label className="font-medium text-foreground">Full Name</label>
                 <input
-                  className="w-full border px-3 py-2 rounded mt-1"
+                  className="w-full border border-border bg-background px-3 py-2 rounded mt-1 text-foreground"
                   value={form.name}
                   onChange={(e) => updateField("name", e.target.value)}
                 />
@@ -233,9 +218,9 @@ export default function RegisterFlow() {
 
               {/* Phone */}
               <div className="mb-4">
-                <label className="font-medium">Phone Number</label>
+                <label className="font-medium text-foreground">Phone Number</label>
                 <input
-                  className="w-full border px-3 py-2 rounded mt-1"
+                  className="w-full border border-border bg-background px-3 py-2 rounded mt-1 text-foreground"
                   value={form.phone}
                   onChange={(e) => updateField("phone", e.target.value)}
                 />
@@ -246,10 +231,10 @@ export default function RegisterFlow() {
 
               {/* Age */}
               <div className="mb-4">
-                <label className="font-medium">Age</label>
+                <label className="font-medium text-foreground">Age</label>
                 <input
                   type="number"
-                  className="w-full border px-3 py-2 rounded mt-1"
+                  className="w-full border border-border bg-background px-3 py-2 rounded mt-1 text-foreground"
                   value={form.age}
                   onChange={(e) => updateField("age", e.target.value)}
                 />
@@ -260,19 +245,25 @@ export default function RegisterFlow() {
 
               {/* Gender */}
               <div>
-                <label className="font-medium">Gender</label>
+                <label className="font-medium text-foreground">Gender</label>
+
                 <div className="flex gap-3 mt-2">
                   {["male", "female"].map((g) => (
                     <button
                       key={g}
                       onClick={() => updateField("gender", g)}
-                      className={`px-5 py-2 rounded ${form.gender === g ? "bg-emerald-400" : "bg-gray-100"
+                      className={`px-5 py-2 rounded border 
+                        ${
+                          form.gender === g
+                            ? "bg-primary text-primary-foreground"
+                            : "bg-muted text-foreground border-border"
                         }`}
                     >
                       {g.toUpperCase()}
                     </button>
                   ))}
                 </div>
+
                 {errors.gender && (
                   <p className="text-red-600 text-sm mt-1">{errors.gender}</p>
                 )}
@@ -283,7 +274,9 @@ export default function RegisterFlow() {
           {/* STEP 1 — HAIR HEALTH */}
           {step === 1 && (
             <>
-              <h2 className="text-4xl text-center font-bold mb-8">Hair Health</h2>
+              <h2 className="text-4xl text-center font-bold mb-8 text-foreground">
+                Hair Health
+              </h2>
 
               {/* Stage Selection */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -291,13 +284,15 @@ export default function RegisterFlow() {
                   <div
                     key={s.id}
                     onClick={() => updateField("stage", s.id)}
-                    className={`rounded-xl border p-4 cursor-pointer ${form.stage === s.id
-                        ? "ring-2 ring-emerald-400"
-                        : "border-gray-200"
+                    className={`rounded-xl border p-4 cursor-pointer transition 
+                      ${
+                        form.stage === s.id
+                          ? "ring-2 ring-primary bg-primary/10"
+                          : "border-border bg-muted"
                       }`}
                   >
-                    <img src={s.img} className="w-full mb-3" />
-                    <p className="font-medium">{s.label}</p>
+                    <img src={s.img} className="w-full mb-3 rounded" />
+                    <p className="font-medium text-foreground">{s.label}</p>
                   </div>
                 ))}
               </div>
@@ -324,7 +319,9 @@ export default function RegisterFlow() {
           {/* STEP 2 — INTERNAL HEALTH */}
           {step === 2 && (
             <>
-              <h2 className="text-4xl text-center font-bold mb-8">Internal Health</h2>
+              <h2 className="text-4xl text-center font-bold mb-8 text-foreground">
+                Internal Health
+              </h2>
 
               <div className="space-y-6">
                 {internalQuestions.map((q) => (
@@ -343,7 +340,7 @@ export default function RegisterFlow() {
           {/* STEP 3 — SCALP PHOTO */}
           {step === 3 && (
             <>
-              <h2 className="text-2xl font-semibold text-center mb-4">
+              <h2 className="text-2xl font-semibold text-center mb-4 text-foreground">
                 Upload your scalp picture
               </h2>
 
@@ -363,14 +360,14 @@ export default function RegisterFlow() {
             {step < 3 ? (
               <button
                 onClick={next}
-                className="px-6 py-2 bg-emerald-600 text-white rounded"
+                className="px-6 py-2 bg-primary text-primary-foreground rounded shadow-soft hover:bg-primary-dark"
               >
                 Next →
               </button>
             ) : (
               <button
                 onClick={submit}
-                className="px-6 py-2 bg-indigo-600 text-white rounded"
+                className="px-6 py-2 bg-accent text-accent-foreground rounded shadow-soft hover:bg-accent/80"
               >
                 Submit Assessment
               </button>
@@ -381,4 +378,3 @@ export default function RegisterFlow() {
     </div>
   );
 }
-
