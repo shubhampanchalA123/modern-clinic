@@ -73,3 +73,82 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [00:12:11.005] Server  LOG      ✓ Compiled in 268ms
 [00:12:19.097] Server  LOG      ✓ Compiled in 386ms
+[00:28:35.014] Server  LOG      ✓ Compiled in 1133ms
+[00:28:42.227] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:43.088] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:28:43.088] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:28:43.088] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:28:43.088] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:31:49.669] Server  LOG      ✓ Compiled in 424ms
+[00:31:50.669] Browser ERROR   unhandledRejection: Error: No link element found for chunk /_next/static/chunks/app_globals_71f961d1.css
+[00:31:50.669] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:31:50.669] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:31:53.235] Server  LOG      ✓ Compiled in 760ms
+[00:33:43.445] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:44.043] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:33:44.044] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:33:44.044] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:33:44.044] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:36:51.955] Server  LOG      ✓ Compiled in 244ms
+[00:37:03.620] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:37:03.620] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:37:31.498] Server  LOG      ✓ Compiled in 301ms
+[00:37:40.174] Server  LOG      ✓ Compiled in 241ms
+[00:37:42.289] Server  LOG      ✓ Compiled in 300ms
+[00:37:50.029] Server  LOG      ✓ Compiled in 242ms
+[00:38:03.616] Server  LOG      ✓ Compiled in 319ms
+[00:38:14.204] Server  LOG      ✓ Compiled in 262ms
+[00:38:51.149] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:39:01.970] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:39:02.689] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:39:02.689] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:39:02.689] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:39:02.689] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:39:19.123] Server  LOG      ✓ Compiled in 246ms
+[00:39:20.583] Server  LOG      ✓ Compiled in 266ms
+[00:39:23.079] Server  LOG      ✓ Compiled in 214ms
+[00:39:24.712] Server  LOG      ✓ Compiled in 303ms
+[00:39:25.676] Server  LOG      ✓ Compiled in 225ms
+[00:39:31.371] Server  LOG      ✓ Compiled in 208ms
+[00:39:36.005] Server  LOG      ✓ Compiled in 294ms
+[00:39:39.345] Server  LOG      ✓ Compiled in 375ms
+[00:41:31.562] Server  LOG      ✓ Compiled in 577ms
+[00:41:33.911] Server  LOG      ✓ Compiled in 374ms
+[00:41:40.915] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:41:40.915] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:41:58.140] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:58.856] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:41:58.856] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:41:58.856] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:41:58.856] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:42:20.315] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:42:20.941] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:42:20.941] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:42:20.941] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:42:20.941] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:42:32.289] Server  LOG      ✓ Compiled in 313ms
+[00:42:40.210] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:42:40.210] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:44:20.902] Server  LOG      ✓ Compiled in 433ms
+[00:44:42.887] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:44:43.544] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:44:43.544] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:44:43.544] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:44:43.544] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:45:02.919] Server  LOG      ✓ Compiled in 329ms
+[00:45:06.136] Server  LOG      ✓ Compiled in 308ms
+[00:45:13.722] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:45:13.722] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:45:19.262] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:19.994] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:45:19.994] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:45:19.994] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:45:19.994] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
