@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { FaUserMd, FaRegSmileBeam, FaLeaf, FaWeight } from "react-icons/fa";
 import { MdHealthAndSafety, MdOutlineScience } from "react-icons/md";
 import Slider from "@/components/ui/Slider";
@@ -9,6 +10,14 @@ import FlipCard from "@/components/ui/FlipCard";
 
 
 export default function HomePage() {
+
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    if (!mounted) return null;
 
 
     const heroSlides = [

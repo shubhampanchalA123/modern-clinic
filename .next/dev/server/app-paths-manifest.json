@@ -1,5 +1,7 @@
 {
+  "/HairGrowth/doctor/page": "app/HairGrowth/doctor/page.js",
   "/HairGrowth/page": "app/HairGrowth/page.js",
+  "/HairGrowth/register/page": "app/HairGrowth/register/page.js",
   "/SkinCare/page": "app/SkinCare/page.js",
   "/WeightLoss/page": "app/WeightLoss/page.js",
   "/_not-found/page": "app/_not-found/page.js",
