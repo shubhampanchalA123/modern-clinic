@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-card border-t border-border">
+    <footer id="footer-section" className="bg-card border-t border-border">
       <div className="max-w-7xl mx-auto px-6 py-14 grid md:grid-cols-5 gap-10">
 
         {/* Logo + About */}

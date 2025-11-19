@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { usePathname } from "next/navigation";
-import ThemeToggle from "../ThemeToggle";
+import ThemeToggle from "../../ThemeToggle";
 import { SlArrowDown } from "react-icons/sl";
 
 export default function Navbar() {
