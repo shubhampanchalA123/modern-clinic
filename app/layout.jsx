@@ -3,7 +3,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { ThemeProvider } from "next-themes";
 
-export const metadata = { title: "HairGrowth Clinic", description: "Rediscover Your Confidence" };
+export const metadata = { title: "Modern Clinic", description: "Rediscover Your Confidence" };
 
 export default function RootLayout({ children }) {
   return (

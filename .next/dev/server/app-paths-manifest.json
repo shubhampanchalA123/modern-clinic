@@ -1,17 +1,7 @@
 {
-  "/HairGrowth/coach/page": "app/HairGrowth/coach/page.js",
-  "/HairGrowth/doctor/page": "app/HairGrowth/doctor/page.js",
-  "/HairGrowth/faq/page": "app/HairGrowth/faq/page.js",
   "/HairGrowth/page": "app/HairGrowth/page.js",
-  "/HairGrowth/register/page": "app/HairGrowth/register/page.js",
-  "/HairGrowth/testimonials/page": "app/HairGrowth/testimonials/page.js",
   "/SkinCare/page": "app/SkinCare/page.js",
   "/WeightLoss/page": "app/WeightLoss/page.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/coach/page": "app/coach/page.js",
-  "/doctor/page": "app/doctor/page.js",
-  "/faq/page": "app/faq/page.js",
-  "/page": "app/page.js",
-  "/register/page": "app/register/page.js",
-  "/testimonials/page": "app/testimonials/page.js"
+  "/page": "app/page.js"
 }

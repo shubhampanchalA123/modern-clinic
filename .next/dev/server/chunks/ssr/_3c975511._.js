@@ -90,7 +90,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$them
 ;
 ;
 const metadata = {
-    title: "HairGrowth Clinic",
+    title: "Modern Clinic",
     description: "Rediscover Your Confidence"
 };
 function RootLayout({ children }) {

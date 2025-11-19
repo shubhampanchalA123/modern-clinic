@@ -4,53 +4,113 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaUserMd, FaRegSmileBeam, FaLeaf, FaWeight } from "react-icons/fa";
 import { MdHealthAndSafety, MdOutlineScience } from "react-icons/md";
+import Slider from "@/components/ui/Slider";
+import FlipCard from "@/components/ui/FlipCard";
+
 
 export default function HomePage() {
+
+
+    const heroSlides = [
+        {
+            img: "/images/hero/slide1.jpg",
+            title: "Expert Hair, Skin & Wellness Care",
+            subtitle: "Personalized holistic treatments backed by medical science.",
+        },
+        {
+            img: "/images/hero/slide2.jpg",
+            title: "Hair Growth Treatments That Work",
+            subtitle: "Root-cause healing for long-term results.",
+        },
+        {
+            img: "/images/hero/slide3.jpg",
+            title: "Achieve Healthy, Glowing Skin",
+            subtitle: "Revitalize your skin naturally and safely.",
+        },
+    ];
+
+
+
     return (
         <div className="bg-background text-foreground">
 
-            {/*  HERO SECTION */}
-            <section className="py-20 px-6 md:px-16 lg:px-24">
-                <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/*  HERO SECTION - SLIDER */}
+            <Slider slides={heroSlides} height="h-screen" />
 
-                    {/* HERO TEXT */}
+
+            {/* WHY CHOOSE US (FLIP CARDS) */}
+
+            <section className="py-20 px-6 md:px-16 lg:px-24">
+                <div className="grid md:grid-cols-2 gap-12">
+
+                    {/* LEFT TEXT SIDE */}
                     <div>
-                        <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-                            Your Trusted Clinic for <span className="text-primary">Hair, Skin & Wellness</span> Care
-                        </h1>
-                        <p className="mt-4 text-muted-foreground text-lg">
-                            Holistic, personalized, and medically advanced treatments backed by
-                            qualified specialists — designed to heal you from the root.
+                        <h2 className="text-5xl font-bold mb-8">Why Modern Clinic?</h2>
+
+                        <p className="text-muted-foreground leading-relaxed mb-4">
+                            Our clinic combines medical expertise with holistic healing science.
+                            We focus on treating the root cause and creating truly personalized
+                            wellness programs.
                         </p>
 
-                        <div className="mt-8 flex gap-4">
-                            <button className="px-6 py-3 rounded-xl bg-primary text-primary-foreground font-medium hover:opacity-90 transition">
-                                Book Consultation
-                            </button>
-
-                            <button className="px-6 py-3 rounded-xl bg-secondary text-foreground border border-border hover:bg-secondary/80 transition">
-                                View Treatments
-                            </button>
-                        </div>
+                        <p className="text-muted-foreground leading-relaxed">
+                            With certified specialists, modern diagnostic tools, and thousands
+                            of successful treatments — we ensure safe, natural, and long-lasting
+                            results for hair, skin, and overall wellness.
+                        </p>
                     </div>
 
-                    {/* HERO IMAGE */}
-                    <motion.div
-                        initial={{ opacity: 0, x: 40 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5 }}
-                        className="rounded-2xl overflow-hidden shadow-lg border border-border"
-                    >
-                        <Image
-                            src="/images/hero.png"
-                            width={600}
-                            height={500}
-                            alt="clinic"
-                            className="object-cover w-full h-full"
+                    {/* RIGHT GRID OF FLIP CARDS */}
+                    <div className="grid grid-cols-2 gap-6">
+                        <FlipCard
+                            bg="hsl(var(--secondary))"
+                            front={{
+                                number: "10,000+",
+                                label: "happy patients",
+                            }}
+                            back={{
+                                desc: "Our clinic has helped thousands restore their confidence through holistic treatments tailored to their needs.",
+                            }}
                         />
-                    </motion.div>
+
+                        <FlipCard
+                            bg="hsl(var(--muted))"
+                            front={{
+                                number: "15+",
+                                label: "medical specialists",
+                            }}
+                            back={{
+                                desc: "Experienced doctors, certified therapists and wellness experts working together for your transformation.",
+                            }}
+                        />
+
+                        <FlipCard
+                            bg="hsl(var(--accent) / 0.6)"
+                            front={{
+                                number: "7+",
+                                label: "years of excellence",
+                            }}
+                            back={{
+                                desc: "We combine scientific approaches with holistic healing for long-lasting, natural wellness solutions.",
+                            }}
+                        />
+
+                        <FlipCard
+                            bg="hsl(var(--primary) / 0.25)"
+                            front={{
+                                number: "92%",
+                                label: "success rate",
+                            }}
+                            back={{
+                                desc: "Consistent results backed by detailed assessments, progress tracking and personalized treatment planning.",
+                            }}
+                        />
+                    </div>
+
                 </div>
             </section>
+
+
 
             {/* WHY CHOOSE US (4 CARDS) */}
             <section className="py-20 px-6 md:px-16 lg:px-24">
