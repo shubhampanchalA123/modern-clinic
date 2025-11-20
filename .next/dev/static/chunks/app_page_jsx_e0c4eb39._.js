@@ -6,7 +6,7 @@
   "static/chunks/node_modules_framer-motion_dist_es_181f0f06._.js",
   "static/chunks/node_modules_swiper_eb0fd447._.js",
   "static/chunks/node_modules_96e98583._.js",
-  "static/chunks/_a7f65607._.js",
+  "static/chunks/_33a8abe3._.js",
   "static/chunks/node_modules_swiper_885ac8f6._.css"
 ],
     source: "dynamic"

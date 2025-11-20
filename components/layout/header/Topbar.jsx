@@ -15,7 +15,7 @@ export default function TopBar() {
                     </span>
 
                     <span className="opacity-90 hidden sm:block">
-                        | ISO Certified Clinic
+                        |  ISO Certified Clinic
                     </span>
                 </div>
 

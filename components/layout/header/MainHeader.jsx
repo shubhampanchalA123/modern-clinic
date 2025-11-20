@@ -48,7 +48,7 @@ export default function Navbar() {
                     {/* DESKTOP MENU */}
                     <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
 
-                        {/* ===================== CONDITIONS MEGA MENU ===================== */}
+                        {/* CONDITIONS MEGA MENU */}
                         <div className="relative group">
                             <button className="flex items-center gap-1 hover:text-[#1F4DA0] transition">
                                 Conditions <SlArrowDown className="text-xs" />
@@ -108,7 +108,7 @@ export default function Navbar() {
                             </div>
                         </div>
 
-                        {/* ===================== OUR DOCTORS ===================== */}
+                        {/* OUR DOCTORS */}
                         <div className="relative group">
                             <button className="flex items-center gap-1 hover:text-[#1F4DA0] transition">
                                 Our Doctors <SlArrowDown className="text-xs" />
@@ -129,7 +129,7 @@ export default function Navbar() {
                             </div>
                         </div>
 
-                        {/* ===================== TREATMENT APPROACH ===================== */}
+                        {/* TREATMENT APPROACH */}
                         <div className="relative group">
                             <button className="flex items-center gap-1 hover:text-[#1F4DA0] transition">
                                 Treatment Approach <SlArrowDown className="text-xs" />
@@ -150,7 +150,7 @@ export default function Navbar() {
                             </div>
                         </div>
 
-                        {/* ===================== RESULTS ===================== */}
+                        {/* RESULTS */}
                         <div className="relative group">
                             <button className="flex items-center gap-1 hover:text-[#1F4DA0] transition">
                                 Results <SlArrowDown className="text-xs" />
@@ -170,7 +170,7 @@ export default function Navbar() {
                             </div>
                         </div>
 
-                        {/* ===================== PRICING ===================== */}
+                        {/* PRICING */}
                         <div className="relative group">
                             <button className="flex items-center gap-1 hover:text-[#1F4DA0] transition">
                                 Pricing <SlArrowDown className="text-xs" />
@@ -190,7 +190,7 @@ export default function Navbar() {
                             </div>
                         </div>
 
-                        {/* ===================== CONTACT ===================== */}
+                        {/* CONTACT */}
                         <div className="relative group">
                             <button className="flex items-center gap-1 hover:text-[#1F4DA0] transition">
                                 Contact <SlArrowDown className="text-xs" />
@@ -239,7 +239,7 @@ export default function Navbar() {
 
                 </div>
 
-                {/* ===================== MOBILE MENU ===================== */}
+                {/* MOBILE MENU */}
                 {open && (
                     <div className="md:hidden bg-card border-t border-border shadow-medium">
                         <div className="px-6 py-4 space-y-4 text-sm font-medium text-foreground">

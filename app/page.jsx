@@ -5,10 +5,11 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { FaUserMd, FaRegSmileBeam, FaLeaf, FaWeight } from "react-icons/fa";
 import { MdHealthAndSafety, MdOutlineScience } from "react-icons/md";
-import Slider from "@/components/ui/Slider";
-import FlipCard from "@/components/ui/FlipCard";
+import Slider from "@/components/shared/Slider";
+import FlipCard from "@/components/shared/FlipCard";
 import { FaUsers, FaRegStar, FaChartLine } from "react-icons/fa";
-import CompactHeroSlider from "@/components/ui/CompactHeroSlider";
+import CompactHeroSlider from "@/components/shared/CompactHeroSlider";
+import WhatWeTreat from "@/components/WhatWeTreat";
 
 
 export default function HomePage() {
@@ -49,87 +50,80 @@ export default function HomePage() {
             {/* <Slider slides={heroSlides} height="h-screen" /> */}
             <CompactHeroSlider />
 
+<div className="w-full h-12 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.08)]" />
 
-            {/* WHY CHOOSE US */}
+
+            {/* WHY MODERN CLINIC */}
 
             <section className="py-20 px-6 md:px-16 lg:px-24">
-                <div className="grid md:grid-cols-2 gap-10 items-center">
 
-                    {/* LEFT SIDE */}
-                    <div>
-                        <h2 className="text-4xl  font-bold mb-6 leading-tight">
-                            Why <span className="text-primary">Modern Clinic?</span>
-                        </h2>
+                {/* TOP — TEXT */}
+                <div className="max-w-3xl mx-auto text-center mb-16">
+                    <h2 className="text-4xl font-bold mb-6 leading-tight">
+                        Why <span className="text-primary">Modern Clinic?</span>
+                    </h2>
 
-                        <p className="text-muted-foreground mb-4 leading-relaxed text-md">
-                            Experience a new generation of holistic care where science meets
-                            compassion. We design treatments, not templates.
-                        </p>
+                    <p className="text-muted-foreground mb-4 leading-relaxed text-md">
+                        Experience a new generation of holistic care where science meets
+                        compassion. We design treatments, not templates.
+                    </p>
 
-                        <p className="text-muted-foreground leading-relaxed text-md">
-                            Every plan is fully personalized, trackable, and crafted for long-term
-                            results using medical-grade diagnostics & expert-led strategies.
-                        </p>
-                    </div>
-
-                    {/* RIGHT SIDE PREMIUM FLIPCARDS */}
-                    <div className="grid grid-cols-2 gap-8">
-
-                        <FlipCard
-                            bg="hsl(var(--secondary) / 0.55)"
-                            Icon={FaUsers}
-                            front={{
-                                number: "10,000+",
-                                label: "Happy Patients",
-                            }}
-                            back={{
-                                desc: "Thousands transformed their hair, skin & wellness through holistic science-backed plans.",
-                            }}
-                        />
-
-                        <FlipCard
-                            bg="hsl(var(--muted) / 0.55)"
-                            Icon={FaUserMd}
-                            front={{
-                                number: "15+",
-                                label: "Certified Doctors",
-                            }}
-                            back={{
-                                desc: "A multidisciplinary team including Homeopaths, Nutritionists & Lifestyle Experts.",
-                            }}
-                        />
-
-                        <FlipCard
-                            bg="hsl(var(--accent) / 0.4)"
-                            Icon={FaRegStar}
-                            front={{
-                                number: "7+",
-                                label: "Years of Excellence",
-                            }}
-                            back={{
-                                desc: "Trusted for premium care using modern technology and evidence-based treatment.",
-                            }}
-                        />
-
-                        <FlipCard
-                            bg="hsl(var(--primary) / 0.3)"
-                            Icon={FaChartLine}
-                            front={{
-                                number: "92%",
-                                label: "Success Rate",
-                            }}
-                            back={{
-                                desc: "Results tracked via progress reports to ensure sustainable, long-term improvement.",
-                            }}
-                        />
-
-                    </div>
-
+                    <p className="text-muted-foreground leading-relaxed text-md">
+                        Every plan is fully personalized, trackable, and crafted for long-term
+                        results using medical-grade diagnostics & expert-led strategies.
+                    </p>
                 </div>
+
+                {/* BOTTOM — FLIPCARDS */}
+                <div
+                    className="
+      grid 
+      grid-cols-1 
+      sm:grid-cols-2 
+      lg:grid-cols-4 
+      gap-8 
+      max-w-6xl 
+      mx-auto
+    "
+                >
+                    <FlipCard
+                        bg="hsl(var(--secondary) / 0.55)"
+                        Icon={FaUsers}
+                        front={{ number: "10,000+", label: "Happy Patients" }}
+                        back={{ desc: "Thousands transformed their hair, skin & wellness through holistic science-backed plans." }}
+                    />
+
+                    <FlipCard
+                        bg="hsl(var(--muted) / 0.55)"
+                        Icon={FaUserMd}
+                        front={{ number: "15+", label: "Certified Doctors" }}
+                        back={{ desc: "A multidisciplinary team including Homeopaths, Nutritionists & Lifestyle Experts." }}
+                    />
+
+                    <FlipCard
+                        bg="hsl(var(--accent) / 0.4)"
+                        Icon={FaRegStar}
+                        front={{ number: "7+", label: "Years of Excellence" }}
+                        back={{ desc: "Trusted for premium care using modern technology and evidence-based treatment." }}
+                    />
+
+                    <FlipCard
+                        bg="hsl(var(--primary) / 0.3)"
+                        Icon={FaChartLine}
+                        front={{ number: "92%", label: "Success Rate" }}
+                        back={{ desc: "Results tracked via progress reports to ensure sustainable, long-term improvement." }}
+                    />
+                </div>
+
             </section>
 
+            <div className="w-full h-12 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.08)]" />
 
 
+            {/* WHAT WE TREAT */}
+            <WhatWeTreat />
+
+<div className="w-full h-12 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.08)]" />
 
 
             {/* WHY CHOOSE US (4 CARDS) */}
@@ -164,6 +158,9 @@ export default function HomePage() {
                     ))}
                 </div>
             </section>
+
+<div className="w-full h-12 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.08)]" />
+
 
             {/* OUR TREATMENTS (3 MAIN SERVICES) */}
             <section className="py-20 px-6 md:px-16 lg:px-24">
