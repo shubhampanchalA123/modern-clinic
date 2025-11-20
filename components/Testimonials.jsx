@@ -109,30 +109,54 @@ export default function Testimonials() {
     },
   ];
 
-  const showGallery = pathname === "/HairGrowth/testimonials";
+  const showGallery = pathname === "/testimonials";
 
   return (
     <div className="bg-background py-12">
       <main className="max-w-7xl mx-auto px-6">
 
+        {/* Before & After Detailed Slider Section */}
+        <>
+          <h2 className="text-4xl font-bold text-center mb-6 text-foreground">
+            Before & After Transformations
+          </h2>
+
+          <BeforeAfterCard data={patientData} />
+        </>
+
+        {/* Show More Button (Only on home page) */}
+        {(pathname === "/" || pathname === "/HairGrowth") && (
+          <div className="flex justify-center mt-6 ">
+            <Link
+              href="/testimonials"
+              className="text-primary font-semibold hover:underline flex items-center gap-1"
+            >
+              Show More Testimonials
+              <span className="text-lg">→</span>
+            </Link>
+          </div>
+        )}
+
         {/* Success Stories */}
-        <h2 className="text-3xl font-bold text-center mb-2 text-foreground">
-          Success Stories
-        </h2>
+        {showGallery && (
+          <>
+            <h2 className="text-3xl font-bold text-center mt-10 mb-2 text-foreground">
+              Success Stories
+            </h2>
 
-        <p className="text-muted-foreground text-center mb-10">
-          Real transformations from people who healed their hair naturally with our program.
-        </p>
+            <p className="text-muted-foreground text-center mb-10">
+              Real transformations from people who healed their hair naturally with our program.
+            </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
-          {testimonials.map((t, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 mb-16">
+              {testimonials.map((t, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className="
         group 
         rounded-2xl 
         p-6 
@@ -145,31 +169,31 @@ export default function Testimonials() {
         transition-all 
         duration-300
       "
-            >
-              {/* BEFORE/AFTER IMAGE WRAPPER */}
-              <div className="flex items-center justify-center gap-4 mb-5">
-                <div className="w-24 h-24 rounded-xl overflow-hidden shadow-md border border-border relative">
-                  <Image src={t.before} alt="before" fill className="object-cover" />
-                </div>
-                <div className="w-24 h-24 rounded-xl overflow-hidden shadow-md border border-border relative">
-                  <Image src={t.after} alt="after" fill className="object-cover" />
-                </div>
-              </div>
+                >
+                  {/* BEFORE/AFTER IMAGE WRAPPER */}
+                  <div className="flex items-center justify-center gap-4 mb-5">
+                    <div className="w-24 h-24 rounded-xl overflow-hidden shadow-md border border-border relative">
+                      <Image src={t.before} alt="before" fill className="object-cover" />
+                    </div>
+                    <div className="w-24 h-24 rounded-xl overflow-hidden shadow-md border border-border relative">
+                      <Image src={t.after} alt="after" fill className="object-cover" />
+                    </div>
+                  </div>
 
-              {/* QUOTE */}
-              <p className="text-sm text-center italic text-muted-foreground leading-relaxed">
-                “{t.quote}”
-              </p>
+                  {/* QUOTE */}
+                  <p className="text-sm text-center italic text-muted-foreground leading-relaxed">
+                    “{t.quote}”
+                  </p>
 
-              {/* NAME + ROLE */}
-              <div className="mt-5 text-center">
-                <p className="font-semibold text-lg text-foreground">{t.name}</p>
-                <p className="text-xs text-muted-foreground">{t.role}</p>
-              </div>
+                  {/* NAME + ROLE */}
+                  <div className="mt-5 text-center">
+                    <p className="font-semibold text-lg text-foreground">{t.name}</p>
+                    <p className="text-xs text-muted-foreground">{t.role}</p>
+                  </div>
 
-              {/* HOVER UNDERLINE ACCENT */}
-              <div
-                className="
+                  {/* HOVER UNDERLINE ACCENT */}
+                  <div
+                    className="
           w-0 
           group-hover:w-full 
           h-0.5 
@@ -181,35 +205,14 @@ export default function Testimonials() {
           transition-all 
           duration-500
         "
-              />
-            </motion.div>
-          ))}
-        </div>
-
-
-        {/* Show More Button (Only on home page) */}
-        {pathname === "/HairGrowth" && (
-          <div className="flex justify-center mt-10">
-            <Link
-              href="/HairGrowth/testimonials"
-              className="text-primary font-semibold hover:underline flex items-center gap-1"
-            >
-              Show More Testimonials
-              <span className="text-lg">→</span>
-            </Link>
-          </div>
-        )}
-
-        {/* Before & After Detailed Slider Section */}
-        {showGallery && (
-          <>
-            <h2 className="text-2xl font-bold text-center mt-16 mb-6 text-foreground">
-              Before & After Transformations
-            </h2>
-
-            <BeforeAfterCard data={patientData} />
+                  />
+                </motion.div>
+              ))}
+            </div>
           </>
         )}
+
+
       </main>
     </div>
   );

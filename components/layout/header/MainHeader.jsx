@@ -121,11 +121,11 @@ export default function Navbar() {
                   group-hover:visible transition-all duration-200 p-3 z-50
                 "
                             >
-                                <Link href="#" className="block px-3 py-2 hover:bg-card">Meet Our Specialists</Link>
+                                <Link href="/doctor" className="block px-3 py-2 hover:bg-card">Meet Our Specialists</Link>
                                 <Link href="#" className="block px-3 py-2 hover:bg-card">Qualifications & Expertise</Link>
                                 <Link href="#" className="block px-3 py-2 hover:bg-card">Years of Experience</Link>
                                 <Link href="#" className="block px-3 py-2 hover:bg-card">Certifications</Link>
-                                <Link href="#" className="block px-3 py-2 hover:bg-card">Doctor Videos</Link>
+                                <Link href="/videos" className="block px-3 py-2 hover:bg-card">Doctor Videos</Link>
                             </div>
                         </div>
 
@@ -142,7 +142,7 @@ export default function Navbar() {
                   group-hover:visible transition-all duration-200 p-3 z-50
                 "
                             >
-                                <Link href="#" className="block px-3 py-2 hover:bg-card">How Homeopathy Works</Link>
+                                <Link href="/homeopathy/how-it-works" className="block px-3 py-2 hover:bg-card">How Homeopathy Works</Link>
                                 <Link href="#" className="block px-3 py-2 hover:bg-card">Digital Diagnosis Method</Link>
                                 <Link href="#" className="block px-3 py-2 hover:bg-card">Safety & Research</Link>
                                 <Link href="#" className="block px-3 py-2 hover:bg-card">Custom Programs</Link>
@@ -163,7 +163,7 @@ export default function Navbar() {
                   group-hover:visible transition-all duration-200 p-3 z-50
                 "
                             >
-                                <Link href="#" className="block px-3 py-2 hover:bg-card">Before / After</Link>
+                                <Link href="/testimonials" className="block px-3 py-2 hover:bg-card">Before / After</Link>
                                 <Link href="#" className="block px-3 py-2 hover:bg-card">Case Studies</Link>
                                 <Link href="#" className="block px-3 py-2 hover:bg-card">Google Reviews</Link>
                                 <Link href="#" className="block px-3 py-2 hover:bg-card">Video Testimonials</Link>
@@ -203,10 +203,10 @@ export default function Navbar() {
                   group-hover:visible transition-all duration-200 p-3 z-50
                 "
                             >
-                                <Link href="#" className="block px-3 py-2 hover:bg-card">Book Appointment</Link>
+                                <Link href="/HairGrowth/register" className="block px-3 py-2 hover:bg-card">Book Appointment</Link>
                                 <Link href="#" className="block px-3 py-2 hover:bg-card">Clinic Locator</Link>
                                 <Link href="#" className="block px-3 py-2 hover:bg-card">Emergency Call</Link>
-                                <Link href="#" className="block px-3 py-2 hover:bg-card">WhatsApp Chat</Link>
+                                <Link href="https://wa.me/919770799998" target="_blank" className="block px-3 py-2 hover:bg-card">WhatsApp Chat</Link>
                             </div>
                         </div>
                     </nav>
@@ -300,11 +300,11 @@ export default function Navbar() {
                                     Our Doctors <SlArrowDown className="text-xs" />
                                 </summary>
                                 <div className="ml-4 mt-2 space-y-2 text-muted-foreground">
-                                    <Link href="#" className="block" >Meet Our Specialists</Link>
+                                    <Link href="/doctor" className="block" >Meet Our Specialists</Link>
                                     <Link href="#" className="block" >Qualifications & Expertise</Link>
                                     <Link href="#" className="block" >Years of Experience</Link>
                                     <Link href="#" className="block" >Certifications</Link>
-                                    <Link href="#" className="block" >Doctor Videos</Link>
+                                    <Link href="/videos" className="block" >Doctor Videos</Link>
                                 </div>
                             </details>
 
@@ -314,7 +314,7 @@ export default function Navbar() {
                                     Treatment Approach <SlArrowDown className="text-xs" />
                                 </summary>
                                 <div className="ml-4 mt-2 space-y-2 text-muted-foreground">
-                                    <Link href="#" className="block" >How Homeopathy Works</Link>
+                                    <Link href="/homeopathy/how-it-works" className="block" >How Homeopathy Works</Link>
                                     <Link href="#" className="block" >Digital Diagnosis Method</Link>
                                     <Link href="#" className="block" >Safety & Research</Link>
                                     <Link href="#" className="block" >Custom Programs</Link>
@@ -328,7 +328,7 @@ export default function Navbar() {
                                     Results <SlArrowDown className="text-xs" />
                                 </summary>
                                 <div className="ml-4 mt-2 space-y-2 text-muted-foreground">
-                                    <Link href="#" className="block">Before / After</Link>
+                                    <Link href="/testimonials" className="block">Before / After</Link>
                                     <Link href="#" className="block">Case Studies</Link>
                                     <Link href="#" className="block">Google Reviews</Link>
                                     <Link href="#" className="block">Video Testimonials</Link>
@@ -354,10 +354,10 @@ export default function Navbar() {
                                     Contact <SlArrowDown className="text-xs" />
                                 </summary>
                                 <div className="ml-4 mt-2 space-y-2 text-muted-foreground">
-                                    <Link href="#" className="block" >Book Appointment</Link>
+                                    <Link href="/HairGrowth/register" className="block" >Book Appointment</Link>
                                     <Link href="#" className="block" >Clinic Locator</Link>
                                     <Link href="#" className="block" >Emergency Call</Link>
-                                    <Link href="#" className="block" >WhatsApp Chat</Link>
+                                    <Link href="https://wa.me/919770799998" target="_blank" className="block" >WhatsApp Chat</Link>
                                 </div>
                             </details>
 

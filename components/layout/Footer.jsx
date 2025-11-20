@@ -37,23 +37,8 @@ export default function Footer() {
           <h3 className="text-sm font-semibold text-foreground mb-4">Quick Links</h3>
           <ul className="space-y-3 text-sm text-foreground">
             <li>
-              <Link href="/HairGrowth/doctor" className="hover:text-primary">
+              <Link href="/doctor" className="hover:text-primary">
                 About Dr.
-              </Link>
-            </li>
-            <li>
-              <Link href="/HairGrowth" className="hover:text-primary">
-                Hair Growth
-              </Link>
-            </li>
-            <li>
-              <Link href="/SkinCare" className="hover:text-primary">
-                Skin Care
-              </Link>
-            </li>
-            <li>
-              <Link href="/WeightLoss" className="hover:text-primary">
-                Weight Loss
               </Link>
             </li>
             <li>
@@ -62,12 +47,12 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/HairGrowth/testimonials" className="hover:text-primary">
+              <Link href="/testimonials" className="hover:text-primary">
                 Testimonials
               </Link>
             </li>
             <li>
-              <Link href="/HairGrowth/faq" className="hover:text-primary">
+              <Link href="/faq" className="hover:text-primary">
                 FAQ
               </Link>
             </li>

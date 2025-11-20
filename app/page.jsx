@@ -10,6 +10,7 @@ import FlipCard from "@/components/shared/FlipCard";
 import { FaUsers, FaRegStar, FaChartLine } from "react-icons/fa";
 import CompactHeroSlider from "@/components/shared/CompactHeroSlider";
 import WhatWeTreat from "@/components/WhatWeTreat";
+import Testimonials from "@/components/Testimonials";
 
 
 export default function HomePage() {
@@ -50,7 +51,7 @@ export default function HomePage() {
             {/* <Slider slides={heroSlides} height="h-screen" /> */}
             <CompactHeroSlider />
 
-<div className="w-full h-12 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.08)]" />
+            <div className="w-full h-12 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.08)]" />
 
 
             {/* WHY MODERN CLINIC */}
@@ -123,8 +124,14 @@ export default function HomePage() {
             {/* WHAT WE TREAT */}
             <WhatWeTreat />
 
-<div className="w-full h-12 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.08)]" />
+            <div className="w-full h-12 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.08)]" />
 
+
+            <Testimonials />
+
+            
+            <div className="w-full h-12 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.08)]" />
+            
 
             {/* WHY CHOOSE US (4 CARDS) */}
             <section className="py-20 px-6 md:px-16 lg:px-24">
@@ -159,7 +166,7 @@ export default function HomePage() {
                 </div>
             </section>
 
-<div className="w-full h-12 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.08)]" />
+            <div className="w-full h-12 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.08)]" />
 
 
             {/* OUR TREATMENTS (3 MAIN SERVICES) */}

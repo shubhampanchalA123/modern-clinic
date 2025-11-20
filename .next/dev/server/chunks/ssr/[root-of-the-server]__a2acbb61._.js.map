@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///E:/Jai%20Shree%20Ram/Modern%20Technology/Hair%20Transplant/HairGrowth-Clinic/HairGrowth-Clinic/app/homeopathy/page.jsx"],"sourcesContent":["import HowHomeopathyWorks from \"./HowHomeopathyWorks\";\r\n\r\nexport const metadata = {\r\n  title: \"How Homeopathy Works | Modern Clinic\",\r\n  description: \"Scientific background, principles, research, facts and myths about Homeopathy.\",\r\n};\r\n\r\nexport default function Page() {\r\n  return (\r\n    <section className=\"py-20 px-6 md:px-16 lg:px-24 bg-background\">\r\n      <div className=\"max-w-6xl mx-auto\">\r\n        <h1 className=\"text-4xl font-bold text-foreground mb-10\">\r\n          How <span className=\"text-primary\">Homeopathy</span> Works\r\n        </h1>\r\n\r\n        <HowHomeopathyWorks />\r\n      </div>\r\n    </section>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;;;;;;;;;;AAEO,MAAM,WAAW;IACtB,OAAO;IACP,aAAa;AACf;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAQ,WAAU;kBACjB,cAAA,8OAAC;YAAI,WAAU;;8BACb,8OAAC;oBAAG,WAAU;;wBAA2C;sCACnD,8OAAC;4BAAK,WAAU;sCAAe;;;;;;wBAAiB;;;;;;;8BAGtD,8OAAC;;;;;;;;;;;;;;;;AAIT","debugId":null}}]
+}
