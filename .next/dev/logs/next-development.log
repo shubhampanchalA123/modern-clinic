@@ -2487,3 +2487,171 @@ Import traces:
 [03:36:21.664] Server  LOG      ✓ Compiled in 217ms
 [03:36:34.300] Server  LOG      ✓ Compiled in 193ms
 [03:36:35.380] Server  LOG      ✓ Compiled in 203ms
+[03:46:04.072] Server  LOG      ✓ Compiled in 1769ms
+[03:46:26.639] Server  LOG      ✓ Compiled in 479ms
+[03:47:52.944] Server  LOG      ✓ Compiled in 390ms
+[03:47:56.828] Server  LOG      ✓ Compiled in 1014ms
+[03:47:57.898] Browser ERROR   ./components/layout/Footer.jsx:75:11
+Parsing ecmascript source code failed
+  73 |             </li>
+  74 |             <l
+> 75 |           </ul>
+     |           ^
+  76 |         </div>
+  77 |
+  78 |         {/* Centres Section */}
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:47:57.899] Browser ERROR   ./components/layout/Footer.jsx:75:12
+Parsing ecmascript source code failed
+  73 |             </li>
+  74 |             <l
+> 75 |           </ul>
+     |            ^^^^
+  76 |         </div>
+  77 |
+  78 |         {/* Centres Section */}
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:47:58.896] Browser ERROR   ./components/layout/Footer.jsx:75:11
+Parsing ecmascript source code failed
+  73 |             </li>
+  74 |             <li
+> 75 |           </ul>
+     |           ^
+  76 |         </div>
+  77 |
+  78 |         {/* Centres Section */}
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:47:58.896] Browser ERROR   ./components/layout/Footer.jsx:75:12
+Parsing ecmascript source code failed
+  73 |             </li>
+  74 |             <li
+> 75 |           </ul>
+     |            ^^^^
+  76 |         </div>
+  77 |
+  78 |         {/* Centres Section */}
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:48:00.966] Server  LOG      ✓ Compiled in 184ms
+[03:48:02.476] Server  LOG      ✓ Compiled in 175ms
+[03:48:03.609] Server  LOG      ✓ Compiled in 197ms
+[03:48:04.706] Server  LOG      ✓ Compiled in 161ms
+[03:48:08.979] Server  LOG      ✓ Compiled in 182ms
+[03:48:24.219] Server  LOG      ✓ Compiled in 229ms
+[03:48:27.676] Server  LOG      ✓ Compiled in 244ms
+[03:48:30.586] Server  LOG      ✓ Compiled in 317ms
+[03:48:30.892] Browser ERROR   ./components/layout/Footer.jsx:78:11
+Parsing ecmascript source code failed
+  76 |  </li>
+  77 |  <li
+> 78 |           </ul>
+     |           ^
+  79 |         </div>
+  80 |
+  81 |         {/* Centres Section */}
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:48:30.892] Browser ERROR   ./components/layout/Footer.jsx:78:12
+Parsing ecmascript source code failed
+  76 |  </li>
+  77 |  <li
+> 78 |           </ul>
+     |            ^^^^
+  79 |         </div>
+  80 |
+  81 |         {/* Centres Section */}
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:48:31.890] Browser ERROR   ./components/layout/Footer.jsx:78:11
+Parsing ecmascript source code failed
+  76 |  </li>
+  77 |  <li
+> 78 |           </ul>
+     |           ^
+  79 |         </div>
+  80 |
+  81 |         {/* Centres Section */}
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:48:31.890] Browser ERROR   ./components/layout/Footer.jsx:78:12
+Parsing ecmascript source code failed
+  76 |  </li>
+  77 |  <li
+> 78 |           </ul>
+     |            ^^^^
+  79 |         </div>
+  80 |
+  81 |         {/* Centres Section */}
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:48:37.270] Server  LOG      ✓ Compiled in 206ms
+[03:48:40.894] Server  LOG      ✓ Compiled in 194ms
+[03:48:45.806] Server  LOG      ✓ Compiled in 267ms
+[03:48:48.079] Server  LOG      ✓ Compiled in 209ms
+[03:48:50.872] Server  LOG      ✓ Compiled in 219ms
+[03:48:53.174] Server  LOG      ✓ Compiled in 175ms
+[03:49:00.150] Server  LOG      ✓ Compiled in 175ms
+[03:49:18.103] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[03:51:56.302] Server  LOG      ✓ Compiled in 547ms
+[03:53:30.185] Server  LOG      ✓ Compiled in 708ms
+[03:54:00.750] Server  LOG      ✓ Compiled in 282ms
+[03:54:07.432] Server  LOG      ✓ Compiled in 187ms
+[03:54:10.910] Server  LOG      ✓ Compiled in 211ms
+[03:54:50.189] Server  LOG      ✓ Compiled in 265ms
+[03:54:56.368] Server  LOG      ✓ Compiled in 228ms
+[03:54:57.390] Server  LOG      ✓ Compiled in 215ms
+[03:55:02.288] Server  LOG      ✓ Compiled in 190ms
+[03:57:47.618] Server  LOG      ✓ Compiled in 407ms
+[03:58:04.509] Server  LOG      ✓ Compiled in 846ms
+[03:59:45.931] Server  LOG      ✓ Compiled in 197ms
+[03:59:50.848] Server  LOG      ✓ Compiled in 165ms
+[03:59:55.155] Server  LOG      ✓ Compiled in 175ms
+[03:59:56.753] Server  LOG      ✓ Compiled in 144ms
+[03:59:58.437] Server  LOG      ✓ Compiled in 284ms
+[04:00:01.574] Server  LOG      ✓ Compiled in 153ms
+[04:00:05.544] Server  LOG      ✓ Compiled in 181ms
+[04:00:15.229] Server  LOG      ✓ Compiled in 202ms
+[04:00:22.217] Server  LOG      ✓ Compiled in 177ms

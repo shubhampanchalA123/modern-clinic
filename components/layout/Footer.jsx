@@ -71,6 +71,21 @@ export default function Footer() {
                 FAQ
               </Link>
             </li>
+            <li>
+              <Link href="/privacy-policy">
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link href="/terms-and-conditions">
+                Terms & Conditions
+              </Link>
+            </li>
+            <li>
+              <Link href="/refund-policy">
+                Refund & Cancellation Policy
+              </Link>
+            </li>
           </ul>
         </div>
 
