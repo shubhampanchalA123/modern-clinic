@@ -6,7 +6,7 @@ import { FaUserMd } from "react-icons/fa";
 
 export default function NotFound() {
   return (
-    <div id="not-found" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-secondary/40 px-6">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-secondary/40 px-6">
 
       {/* Floating Animation Wrapper */}
       <motion.div

@@ -19,7 +19,7 @@ export default function Navbar() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    const hideFloating = ["/HairGrowth/register", "/HairGrowth/coach", "#not-found"];
+    const hideFloating = ["/HairGrowth/register", "/HairGrowth/coach"];
 
     return (
         <>
@@ -66,11 +66,11 @@ export default function Navbar() {
                                 <div>
                                     <h4 className="text-[#1F4DA0] font-semibold mb-3">Hair & Skin</h4>
                                     <ul className="space-y-2 text-[#0A2C63]">
-                                        <li><Link href="#">Hair Fall</Link></li>
-                                        <li><Link href="#">Alopecia</Link></li>
-                                        <li><Link href="#">Dandruff</Link></li>
-                                        <li><Link href="#">Acne</Link></li>
-                                        <li><Link href="#">Eczema</Link></li>
+                                        <li><Link href="/conditions/hair-fall">Hair Fall</Link></li>
+                                        <li><Link href="/conditions/alopecia">Alopecia</Link></li>
+                                        <li><Link href="/conditions/dandruff">Dandruff</Link></li>
+                                        <li><Link href="/conditions/acne">Acne</Link></li>
+                                        <li><Link href="/conditions/eczema">Eczema</Link></li>
                                     </ul>
                                 </div>
 
@@ -78,10 +78,10 @@ export default function Navbar() {
                                 <div>
                                     <h4 className="text-[#1F4DA0] font-semibold mb-3">Chronic Health</h4>
                                     <ul className="space-y-2 text-[#0A2C63]">
-                                        <li><Link href="#">Thyroid</Link></li>
-                                        <li><Link href="#">Arthritis</Link></li>
-                                        <li><Link href="#">Sinus</Link></li>
-                                        <li><Link href="#">Migraine</Link></li>
+                                        <li><Link href="/conditions/thyroid">Thyroid</Link></li>
+                                        <li><Link href="/conditions/arthritis">Arthritis</Link></li>
+                                        <li><Link href="/conditions/sinus">Sinus</Link></li>
+                                        <li><Link href="/conditions/migraine">Migraine</Link></li>
                                     </ul>
                                 </div>
 
@@ -89,10 +89,10 @@ export default function Navbar() {
                                 <div>
                                     <h4 className="text-[#1F4DA0] font-semibold mb-3">Emotional & Lifestyle</h4>
                                     <ul className="space-y-2 text-[#0A2C63]">
-                                        <li><Link href="#">Stress</Link></li>
-                                        <li><Link href="#">Anxiety</Link></li>
-                                        <li><Link href="#">Sleep Disturbance</Link></li>
-                                        <li><Link href="#">Immunity</Link></li>
+                                        <li><Link href="/conditions/stress">Stress</Link></li>
+                                        <li><Link href="/conditions/anxiety">Anxiety</Link></li>
+                                        <li><Link href="/conditions/sleep-disturbance">Sleep Disturbance</Link></li>
+                                        <li><Link href="/conditions/immunity">Immunity</Link></li>
                                     </ul>
                                 </div>
 
@@ -100,9 +100,9 @@ export default function Navbar() {
                                 <div>
                                     <h4 className="text-[#1F4DA0] font-semibold mb-3">Child Care</h4>
                                     <ul className="space-y-2 text-[#0A2C63]">
-                                        <li><Link href="#">Allergies</Link></li>
-                                        <li><Link href="#">Low Immunity</Link></li>
-                                        <li><Link href="#">Behavioral Support</Link></li>
+                                        <li><Link href="/conditions/allergies">Allergies</Link></li>
+                                        <li><Link href="/conditions/low-immunity">Low Immunity</Link></li>
+                                        <li><Link href="/conditions/behavioral-support">Behavioral Support</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -122,8 +122,8 @@ export default function Navbar() {
                 "
                             >
                                 <Link href="/doctor" className="block px-3 py-2 hover:bg-card">Meet Our Specialists</Link>
-                                <Link href="#" className="block px-3 py-2 hover:bg-card">Qualifications & Expertise</Link>
-                                <Link href="#" className="block px-3 py-2 hover:bg-card">Years of Experience</Link>
+                                <Link href="#qualification" className="block px-3 py-2 hover:bg-card">Qualifications & Expertise</Link>
+                                <Link href="#experience" className="block px-3 py-2 hover:bg-card">Years of Experience</Link>
                                 <Link href="#" className="block px-3 py-2 hover:bg-card">Certifications</Link>
                                 <Link href="/videos" className="block px-3 py-2 hover:bg-card">Doctor Videos</Link>
                             </div>
@@ -254,40 +254,40 @@ export default function Navbar() {
                                     <div>
                                         <h4 className="text-primary font-semibold mb-1">Hair & Skin</h4>
                                         <ul className="ml-2 space-y-1 text-muted-foreground">
-                                            <li><Link href="#">Hair Fall</Link></li>
-                                            <li><Link href="#">Alopecia</Link></li>
-                                            <li><Link href="#">Dandruff</Link></li>
-                                            <li><Link href="#">Acne</Link></li>
-                                            <li><Link href="#">Eczema</Link></li>
+                                            <li><Link href="/conditions/hair-fall">Hair Fall</Link></li>
+                                            <li><Link href="/conditions/alopecia">Alopecia</Link></li>
+                                            <li><Link href="/conditions/dandruff">Dandruff</Link></li>
+                                            <li><Link href="/conditions/acne">Acne</Link></li>
+                                            <li><Link href="/conditions/eczema">Eczema</Link></li>
                                         </ul>
                                     </div>
 
                                     <div>
                                         <h4 className="text-primary font-semibold mb-1">Chronic Health</h4>
                                         <ul className="ml-2 space-y-1 text-muted-foreground">
-                                            <li><Link href="#">Thyroid</Link></li>
-                                            <li><Link href="#">Arthritis</Link></li>
-                                            <li><Link href="#">Sinus</Link></li>
-                                            <li><Link href="#">Migraine</Link></li>
+                                            <li><Link href="/conditions/thyroid">Thyroid</Link></li>
+                                            <li><Link href="/conditions/arthritis">Arthritis</Link></li>
+                                            <li><Link href="/conditions/sinus">Sinus</Link></li>
+                                            <li><Link href="/conditions/migraine">Migraine</Link></li>
                                         </ul>
                                     </div>
 
                                     <div>
                                         <h4 className="text-primary font-semibold mb-1">Emotional & Lifestyle</h4>
                                         <ul className="ml-2 space-y-1 text-muted-foreground">
-                                            <li><Link href="#">Stress</Link></li>
-                                            <li><Link href="#">Anxiety</Link></li>
-                                            <li><Link href="#">Sleep Disturbance</Link></li>
-                                            <li><Link href="#">Immunity</Link></li>
+                                            <li><Link href="/conditions/stress">Stress</Link></li>
+                                            <li><Link href="/conditions/anxiety">Anxiety</Link></li>
+                                            <li><Link href="/conditions/sleep-disturbance">Sleep Disturbance</Link></li>
+                                            <li><Link href="/conditions/immunity">Immunity</Link></li>
                                         </ul>
                                     </div>
 
                                     <div>
                                         <h4 className="text-primary font-semibold mb-1">Child Care</h4>
                                         <ul className="ml-2 space-y-1 text-muted-foreground">
-                                            <li><Link href="#">Allergies</Link></li>
-                                            <li><Link href="#">Low Immunity</Link></li>
-                                            <li><Link href="#">Behavioral Support</Link></li>
+                                            <li><Link href="/conditions/allergies">Allergies</Link></li>
+                                            <li><Link href="/conditions/low-immunity">Low Immunity</Link></li>
+                                            <li><Link href="/conditions/behavioral-support">Behavioral Support</Link></li>
                                         </ul>
                                     </div>
 
@@ -301,8 +301,8 @@ export default function Navbar() {
                                 </summary>
                                 <div className="ml-4 mt-2 space-y-2 text-muted-foreground">
                                     <Link href="/doctor" className="block" >Meet Our Specialists</Link>
-                                    <Link href="#" className="block" >Qualifications & Expertise</Link>
-                                    <Link href="#" className="block" >Years of Experience</Link>
+                                    <Link href="#qualification" className="block" >Qualifications & Expertise</Link>
+                                    <Link href="#experience" className="block" >Years of Experience</Link>
                                     <Link href="#" className="block" >Certifications</Link>
                                     <Link href="/videos" className="block" >Doctor Videos</Link>
                                 </div>
@@ -386,7 +386,7 @@ export default function Navbar() {
             </header>
 
             {/* FLOATING BUTTONS (remain same) */}
-            {!hideFloating.includes(pathname) && (
+            {/* {!hideFloating.includes(pathname) && (
                 <Link
                     href="/HairGrowth/register"
                     className="
@@ -398,7 +398,7 @@ export default function Navbar() {
                 >
                     Book Consultation
                 </Link>
-            )}
+            )} */}
 
             {!hideFloating.includes(pathname) && (
                 <a

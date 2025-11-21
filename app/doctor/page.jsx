@@ -54,7 +54,7 @@ export default function DoctorProfile() {
         </div>
 
         {/* QUALIFICATIONS */}
-        <section className="mt-20">
+        <section className="mt-20" id="qualification">
           <h2 className="text-3xl font-bold mb-4 text-foreground">Qualifications</h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
@@ -125,7 +125,7 @@ export default function DoctorProfile() {
         </section>
 
         {/* EXPERIENCE TIMELINE */}
-        <section className="mt-20">
+        <section className="mt-20" id="experience">
           <h2 className="text-3xl font-bold mb-4 text-foreground">Experience</h2>
 
           <div className="space-y-6 border-l-2 border-primary/40 pl-6">
