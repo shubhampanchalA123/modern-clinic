@@ -142,11 +142,11 @@ export default function Navbar() {
                   group-hover:visible transition-all duration-200 p-3 z-50
                 "
                             >
-                                <Link href="/homeopathy/how-it-works" className="block px-3 py-2 hover:bg-card">How Homeopathy Works</Link>
-                                <Link href="#" className="block px-3 py-2 hover:bg-card">Digital Diagnosis Method</Link>
-                                <Link href="#" className="block px-3 py-2 hover:bg-card">Safety & Research</Link>
-                                <Link href="#" className="block px-3 py-2 hover:bg-card">Custom Programs</Link>
-                                <Link href="#" className="block px-3 py-2 hover:bg-card">Home vs Clinic Care</Link>
+                                <Link href="/treatment-approach/how-homeopathy-works" className="block px-3 py-2 hover:bg-card">How Homeopathy Works</Link>
+                                <Link href="/treatment-approach/digital-diagnosis-method" className="block px-3 py-2 hover:bg-card">Digital Diagnosis Method</Link>
+                                <Link href="/treatment-approach/safety-and-research" className="block px-3 py-2 hover:bg-card">Safety & Research</Link>
+                                <Link href="/treatment-approach/custom-programs" className="block px-3 py-2 hover:bg-card">Custom Programs</Link>
+                                <Link href="/treatment-approach/home-vs-clinic-care" className="block px-3 py-2 hover:bg-card">Home vs Clinic Care</Link>
                             </div>
                         </div>
 
@@ -314,11 +314,11 @@ export default function Navbar() {
                                     Treatment Approach <SlArrowDown className="text-xs" />
                                 </summary>
                                 <div className="ml-4 mt-2 space-y-2 text-muted-foreground">
-                                    <Link href="/homeopathy/how-it-works" className="block" >How Homeopathy Works</Link>
-                                    <Link href="#" className="block" >Digital Diagnosis Method</Link>
-                                    <Link href="#" className="block" >Safety & Research</Link>
-                                    <Link href="#" className="block" >Custom Programs</Link>
-                                    <Link href="#" className="block" >Home vs Clinic Care</Link>
+                                    <Link href="/treatment-approach/how-homeopathy-works" className="block" >How Homeopathy Works</Link>
+                                    <Link href="/treatment-approach/digital-diagnosis-method" className="block" >Digital Diagnosis Method</Link>
+                                    <Link href="/treatment-approach/safety-and-research" className="block" >Safety & Research</Link>
+                                    <Link href="/treatment-approach/custom-programs" className="block" >Custom Programs</Link>
+                                    <Link href="/treatment-approach/home-vs-clinic-care" className="block" >Home vs Clinic Care</Link>
                                 </div>
                             </details>
 

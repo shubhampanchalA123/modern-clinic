@@ -2284,3 +2284,437 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [04:03:46.034] Browser WARN    Image with src "/images/before-after/male3-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
 [04:04:19.702] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/mnt/data/447e7718-610e-4b26-8bb9-86240b66eb93.png" "received" null
 [04:04:37.899] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/mnt/data/447e7718-610e-4b26-8bb9-86240b66eb93.png" "received" null
+[04:12:22.245] Server  LOG      ✓ Compiled in 445ms
+[04:12:25.304] Server  LOG      ✓ Compiled in 352ms
+[04:12:29.679] Server  LOG      ✓ Compiled in 511ms
+[04:12:43.465] Server  LOG      ✓ Compiled in 407ms
+[04:19:22.588] Server  LOG      ✓ Compiled in 1042ms
+[04:19:35.431] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:19:37.203] Browser WARN    Image with src "/images/before-after/male3-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[04:19:37.203] Browser WARN    Image with src "/images/before-after/male3-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[04:19:39.791] Browser WARN    Image with src "/images/hair-hero.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[04:19:46.168] Server  LOG      ✓ Compiled in 352ms
+[04:20:03.299] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:20:04.711] Browser WARN    Image with src "/images/hair-hero.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[04:20:05.394] Browser WARN    Image with src "/images/hair-hero.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[04:20:07.946] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[04:20:07.946] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[04:20:07.946] Browser WARN    Image with src "/images/conditions/respiratory.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[04:20:07.946] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[04:20:07.946] Browser WARN    Image with src "/images/conditions/skin.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[04:20:07.946] Browser WARN    Image with src "/images/conditions/hair.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[04:20:07.946] Browser WARN    Image with src "/images/conditions/child.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[04:20:09.653] Browser WARN    Image with src "/images/conditions/women.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[04:20:09.653] Browser WARN    Image with src "/images/conditions/mental.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[04:20:09.653] Browser WARN    Image with src "/images/conditions/diabetes.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[04:20:09.653] Browser WARN    Image with src "/images/conditions/weight.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:17:57.179] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:17:58.476] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:17:58.476] Browser WARN    Image with src "/images/conditions/respiratory.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:17:58.476] Browser WARN    Image with src "/images/conditions/skin.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:17:58.476] Browser WARN    Image with src "/images/conditions/hair.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:17:58.476] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:17:58.476] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:17:58.476] Browser WARN    Image with src "/images/conditions/child.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:17:58.476] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:18:25.824] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[05:18:25.967] Browser WARN    Image with src "/images/hair-hero.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:22:02.567] Server  LOG      ✓ Compiled in 1070ms
+[05:22:11.204] Browser WARN    Image with src "/images/before-after/male3-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:22:11.204] Browser WARN    Image with src "/images/before-after/male3-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:22:18.238] Server  LOG      ✓ Compiled in 315ms
+[05:24:14.726] Server  LOG      ✓ Compiled in 2.3s
+[05:25:50.583] Server  LOG      ✓ Compiled in 588ms
+[05:25:56.438] Server  LOG      ✓ Compiled in 360ms
+[05:27:15.919] Server  LOG      ✓ Compiled in 1020ms
+[05:28:17.109] Server  LOG      ✓ Compiled in 631ms
+[05:28:20.768] Server  LOG      ✓ Compiled in 961ms
+[05:28:33.899] Server  LOG      ✓ Compiled in 329ms
+[05:28:46.785] Server  LOG      ✓ Compiled in 522ms
+[05:28:56.667] Server  LOG      ✓ Compiled in 318ms
+[05:31:05.972] Server  LOG      ✓ Compiled in 590ms
+[05:31:28.373] Server  LOG      ✓ Compiled in 616ms
+[05:31:57.710] Server  LOG      ✓ Compiled in 246ms
+[05:32:33.994] Server  LOG      ✓ Compiled in 236ms
+[05:32:36.392] Server  LOG      ✓ Compiled in 343ms
+[05:32:50.572] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:32:53.765] Browser WARN    Image with src "/images/before-after/male3-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:32:53.765] Browser WARN    Image with src "/images/before-after/male3-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:33:00.228] Browser WARN    Image with src "/images/hair-hero.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:33:40.530] Server  LOG      ✓ Compiled in 2.2s
+[05:33:54.301] Server  LOG      ✓ Compiled in 354ms
+[05:36:31.978] Server  LOG      ✓ Compiled in 1352ms
+[05:37:46.283] Server  LOG      ✓ Compiled in 951ms
+[05:37:59.879] Server  LOG      ✓ Compiled in 500ms
+[05:38:08.789] Server  LOG      ✓ Compiled in 374ms
+[05:38:34.619] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:38:34.619] Browser WARN    Image with src "/images/conditions/skin.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:38:34.619] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:38:34.619] Browser WARN    Image with src "/images/conditions/hair.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:38:34.619] Browser WARN    Image with src "/images/conditions/respiratory.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:38:34.619] Browser WARN    Image with src "/images/conditions/child.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:38:34.619] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:40:36.634] Browser WARN    Image with src "/images/conditions/women.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:40:36.634] Browser WARN    Image with src "/images/conditions/mental.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:40:36.634] Browser WARN    Image with src "/images/conditions/diabetes.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:40:36.634] Browser WARN    Image with src "/images/conditions/weight.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:44:07.407] Server  LOG      ✓ Compiled in 1446ms
+[05:44:10.848] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[05:46:25.296] Server  LOG      ✓ Compiled in 469ms
+[05:46:37.311] Server  LOG      ✓ Compiled in 287ms
+[05:46:39.955] Server  LOG      ✓ Compiled in 243ms
+[05:46:42.700] Server  LOG      ✓ Compiled in 216ms
+[05:46:49.518] Server  LOG      ✓ Compiled in 284ms
+[05:46:53.694] Server  LOG      ✓ Compiled in 268ms
+[05:46:54.842] Server  LOG      ✓ Compiled in 268ms
+[05:46:57.035] Server  LOG      ✓ Compiled in 237ms
+[05:47:00.219] Server  LOG      ✓ Compiled in 230ms
+[05:47:11.682] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:47:21.485] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:47:24.737] Browser WARN    Image with src "/images/conditions/skin.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:47:24.738] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:47:24.738] Browser WARN    Image with src "/images/conditions/hair.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:47:24.738] Browser WARN    Image with src "/images/conditions/respiratory.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:47:24.738] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:47:24.738] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:47:24.738] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:47:24.738] Browser WARN    Image with src "/images/conditions/child.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:47:41.441] Server  LOG      ✓ Compiled in 491ms
+[05:47:50.257] Server  LOG      ○ Compiling /treatment-approach/how-homeopathy-works ...
+[05:47:51.916] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[05:53:49.763] Server  LOG      ✓ Compiled in 1387ms
+[05:53:51.842] Browser WARN    Image with src "/images/conditions/diabetes.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:53:51.842] Browser WARN    Image with src "/images/conditions/weight.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:53:51.842] Browser WARN    Image with src "/images/conditions/women.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:53:51.842] Browser WARN    Image with src "/images/conditions/mental.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:53:51.842] Browser WARN    Image with src "/images/before-after/male3-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:53:51.842] Browser WARN    Image with src "/images/before-after/male3-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:54:24.388] Server  LOG      ✓ Compiled in 2.1s
+[05:54:53.403] Server  LOG      ✓ Compiled in 404ms
+[05:54:54.865] Server  LOG      ✓ Compiled in 279ms
+[05:55:08.631] Server  LOG      ✓ Compiled in 260ms
+[05:55:19.293] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:55:22.882] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:55:22.882] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:55:22.882] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:55:22.882] Browser WARN    Image with src "/images/conditions/hair.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:55:22.882] Browser WARN    Image with src "/images/conditions/skin.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:55:22.882] Browser WARN    Image with src "/images/conditions/respiratory.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:55:22.882] Browser WARN    Image with src "/images/conditions/women.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:55:22.882] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:55:22.882] Browser WARN    Image with src "/images/conditions/diabetes.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:55:22.882] Browser WARN    Image with src "/images/conditions/weight.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:55:22.882] Browser WARN    Image with src "/images/conditions/mental.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:55:22.882] Browser WARN    Image with src "/images/conditions/child.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:55:22.882] Browser WARN    Image with src "/images/before-after/male3-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:55:22.882] Browser WARN    Image with src "/images/before-after/male3-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[05:55:35.784] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[05:56:17.498] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:00:27.160] Server  LOG      ✓ Compiled in 899ms
+[06:00:47.715] Server  LOG      ✓ Compiled in 564ms
+[06:01:00.307] Server  LOG      ✓ Compiled in 404ms
+[06:01:15.913] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[06:01:20.460] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/mnt/data/447e7718-610e-4b26-8bb9-86240b66eb93.png" "received" null
+[06:01:31.690] Browser WARN    Image with src "/images/before-after/male3-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[06:01:31.690] Browser WARN    Image with src "/images/before-after/male3-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[06:04:15.017] Server  LOG      ✓ Compiled in 427ms
+[06:04:20.134] Server  LOG      ✓ Compiled in 499ms
+[06:04:21.378] Server  LOG      ✓ Compiled in 442ms
+[06:04:26.143] Server  LOG      ✓ Compiled in 358ms
+[06:10:08.643] Server  LOG      ✓ Compiled in 1248ms
+[06:10:12.239] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/mnt/data/447e7718-610e-4b26-8bb9-86240b66eb93.png" "received" null
+[06:10:33.474] Server  LOG      ✓ Compiled in 720ms
+[06:10:42.693] Server  LOG      ✓ Compiled in 554ms
+[06:11:03.957] Server  LOG      ✓ Compiled in 604ms
+[06:11:18.569] Server  LOG      ○ Compiling /treatment-approach/safety-and-research ...
+[06:12:04.772] Server  ERROR    ⨯ ./app/treatment-approach/safety-and-research/page.jsx:6:1
+Export ClockClockwise doesn't exist in target module
+  4 | import Link from "next/link";
+  5 | import { motion } from "framer-motion";
+> 6 | import { BookOpen, ShieldCheck, FileText, ClockClockwise, Check } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Testimonials from "@/components/Testimonials";
+  8 |
+  9 | export default function SafetyAndResearch() {
+
+The export ClockClockwise was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-client] (ecmascript).
+Did you mean to import ClockCheck?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/treatment-approach/safety-and-research/page.jsx [Client Component Browser]
+    ./app/treatment-approach/safety-and-research/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/treatment-approach/safety-and-research/page.jsx [Client Component SSR]
+    ./app/treatment-approach/safety-and-research/page.jsx [Server Component]
+
+
+
+./app/treatment-approach/safety-and-research/page.jsx:6:1
+Export ClockClockwise doesn't exist in target module
+  4 | import Link from "next/link";
+  5 | import { motion } from "framer-motion";
+> 6 | import { BookOpen, ShieldCheck, FileText, ClockClockwise, Check } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Testimonials from "@/components/Testimonials";
+  8 |
+  9 | export default function SafetyAndResearch() {
+
+The export ClockClockwise was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-ssr] (ecmascript).
+Did you mean to import ClockCheck?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/treatment-approach/safety-and-research/page.jsx [Client Component Browser]
+    ./app/treatment-approach/safety-and-research/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/treatment-approach/safety-and-research/page.jsx [Client Component SSR]
+    ./app/treatment-approach/safety-and-research/page.jsx [Server Component]
+
+
+[06:12:06.171] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:12:06.351] Browser ERROR   ./app/treatment-approach/safety-and-research/page.jsx:6:1
+Export ClockClockwise doesn't exist in target module
+  4 | import Link from "next/link";
+  5 | import { motion } from "framer-motion";
+> 6 | import { BookOpen, ShieldCheck, FileText, ClockClockwise, Check } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Testimonials from "@/components/Testimonials";
+  8 |
+  9 | export default function SafetyAndResearch() {
+
+The export ClockClockwise was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-client] (ecmascript).
+Did you mean to import ClockCheck?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/treatment-approach/safety-and-research/page.jsx [Client Component Browser]
+    ./app/treatment-approach/safety-and-research/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/treatment-approach/safety-and-research/page.jsx [Client Component SSR]
+    ./app/treatment-approach/safety-and-research/page.jsx [Server Component]
+[06:12:06.351] Browser ERROR   ./app/treatment-approach/safety-and-research/page.jsx:6:1
+Export ClockClockwise doesn't exist in target module
+  4 | import Link from "next/link";
+  5 | import { motion } from "framer-motion";
+> 6 | import { BookOpen, ShieldCheck, FileText, ClockClockwise, Check } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Testimonials from "@/components/Testimonials";
+  8 |
+  9 | export default function SafetyAndResearch() {
+
+The export ClockClockwise was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-ssr] (ecmascript).
+Did you mean to import ClockCheck?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/treatment-approach/safety-and-research/page.jsx [Client Component Browser]
+    ./app/treatment-approach/safety-and-research/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/treatment-approach/safety-and-research/page.jsx [Client Component SSR]
+    ./app/treatment-approach/safety-and-research/page.jsx [Server Component]
+[06:12:07.201] Browser ERROR   ./app/treatment-approach/safety-and-research/page.jsx:6:1
+Export ClockClockwise doesn't exist in target module
+  4 | import Link from "next/link";
+  5 | import { motion } from "framer-motion";
+> 6 | import { BookOpen, ShieldCheck, FileText, ClockClockwise, Check } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Testimonials from "@/components/Testimonials";
+  8 |
+  9 | export default function SafetyAndResearch() {
+
+The export ClockClockwise was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-client] (ecmascript).
+Did you mean to import ClockCheck?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/treatment-approach/safety-and-research/page.jsx [Client Component Browser]
+    ./app/treatment-approach/safety-and-research/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/treatment-approach/safety-and-research/page.jsx [Client Component SSR]
+    ./app/treatment-approach/safety-and-research/page.jsx [Server Component]
+[06:12:07.201] Browser ERROR   ./app/treatment-approach/safety-and-research/page.jsx:6:1
+Export ClockClockwise doesn't exist in target module
+  4 | import Link from "next/link";
+  5 | import { motion } from "framer-motion";
+> 6 | import { BookOpen, ShieldCheck, FileText, ClockClockwise, Check } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Testimonials from "@/components/Testimonials";
+  8 |
+  9 | export default function SafetyAndResearch() {
+
+The export ClockClockwise was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-ssr] (ecmascript).
+Did you mean to import ClockCheck?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/treatment-approach/safety-and-research/page.jsx [Client Component Browser]
+    ./app/treatment-approach/safety-and-research/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/treatment-approach/safety-and-research/page.jsx [Client Component SSR]
+    ./app/treatment-approach/safety-and-research/page.jsx [Server Component]
+[06:12:07.399] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/mnt/data/447e7718-610e-4b26-8bb9-86240b66eb93.png" "received" null
+[06:12:07.403] Browser ERROR   ./app/treatment-approach/safety-and-research/page.jsx:6:1
+Export ClockClockwise doesn't exist in target module
+  4 | import Link from "next/link";
+  5 | import { motion } from "framer-motion";
+> 6 | import { BookOpen, ShieldCheck, FileText, ClockClockwise, Check } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Testimonials from "@/components/Testimonials";
+  8 |
+  9 | export default function SafetyAndResearch() {
+
+The export ClockClockwise was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-client] (ecmascript).
+Did you mean to import ClockCheck?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/treatment-approach/safety-and-research/page.jsx [Client Component Browser]
+    ./app/treatment-approach/safety-and-research/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/treatment-approach/safety-and-research/page.jsx [Client Component SSR]
+    ./app/treatment-approach/safety-and-research/page.jsx [Server Component]
+[06:12:07.403] Browser ERROR   ./app/treatment-approach/safety-and-research/page.jsx:6:1
+Export ClockClockwise doesn't exist in target module
+  4 | import Link from "next/link";
+  5 | import { motion } from "framer-motion";
+> 6 | import { BookOpen, ShieldCheck, FileText, ClockClockwise, Check } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Testimonials from "@/components/Testimonials";
+  8 |
+  9 | export default function SafetyAndResearch() {
+
+The export ClockClockwise was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-ssr] (ecmascript).
+Did you mean to import ClockCheck?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/treatment-approach/safety-and-research/page.jsx [Client Component Browser]
+    ./app/treatment-approach/safety-and-research/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/treatment-approach/safety-and-research/page.jsx [Client Component SSR]
+    ./app/treatment-approach/safety-and-research/page.jsx [Server Component]
+[06:12:07.613] Browser ERROR   ./app/treatment-approach/safety-and-research/page.jsx:6:1
+Export ClockClockwise doesn't exist in target module
+  4 | import Link from "next/link";
+  5 | import { motion } from "framer-motion";
+> 6 | import { BookOpen, ShieldCheck, FileText, ClockClockwise, Check } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Testimonials from "@/components/Testimonials";
+  8 |
+  9 | export default function SafetyAndResearch() {
+
+The export ClockClockwise was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-client] (ecmascript).
+Did you mean to import ClockCheck?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/treatment-approach/safety-and-research/page.jsx [Client Component Browser]
+    ./app/treatment-approach/safety-and-research/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/treatment-approach/safety-and-research/page.jsx [Client Component SSR]
+    ./app/treatment-approach/safety-and-research/page.jsx [Server Component]
+[06:12:07.613] Browser ERROR   ./app/treatment-approach/safety-and-research/page.jsx:6:1
+Export ClockClockwise doesn't exist in target module
+  4 | import Link from "next/link";
+  5 | import { motion } from "framer-motion";
+> 6 | import { BookOpen, ShieldCheck, FileText, ClockClockwise, Check } from "lucide-react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import Testimonials from "@/components/Testimonials";
+  8 |
+  9 | export default function SafetyAndResearch() {
+
+The export ClockClockwise was not found in module [project]/node_modules/lucide-react/dist/esm/lucide-react.js [app-ssr] (ecmascript).
+Did you mean to import ClockCheck?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./app/treatment-approach/safety-and-research/page.jsx [Client Component Browser]
+    ./app/treatment-approach/safety-and-research/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./app/treatment-approach/safety-and-research/page.jsx [Client Component SSR]
+    ./app/treatment-approach/safety-and-research/page.jsx [Server Component]
+[06:12:07.613] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/treatment..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.jsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+-                           style={{padding-right:"15px",overflow-x:"hidden",overflow-y:"hidden"}}
+                          >
+                  ...
+
+[06:12:07.613] Browser WARN    Image with src "/mnt/data/447e7718-610e-4b26-8bb9-86240b66eb93.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[06:13:07.301] Server  LOG      ✓ Compiled in 1621ms
+[06:14:32.910] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[06:14:35.216] Browser WARN    Image with src "/images/before-after/male3-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[06:14:35.216] Browser WARN    Image with src "/images/before-after/male3-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[06:14:35.481] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/mnt/data/447e7718-610e-4b26-8bb9-86240b66eb93.png" "received" null
+[06:15:25.925] Server  LOG      ✓ Compiled in 2.1s
+[06:15:45.080] Server  LOG      ✓ Compiled in 794ms
+[06:17:17.436] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:17:22.166] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:17:22.852] Browser WARN    Image with src "/mnt/data/447e7718-610e-4b26-8bb9-86240b66eb93.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[06:17:22.852] Browser WARN    Image with src "/images/before-after/male3-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[06:17:22.852] Browser WARN    Image with src "/images/before-after/male3-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[06:17:37.212] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[06:17:39.293] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/mnt/data/447e7718-610e-4b26-8bb9-86240b66eb93.png" "received" null
+[06:18:07.316] Server  LOG      ✓ Compiled in 793ms
+[06:19:18.533] Server  LOG      ✓ Compiled in 500ms
+[06:19:34.088] Server  LOG      ✓ Compiled in 519ms
+[06:19:48.963] Server  LOG      ✓ Compiled in 1253ms
+[06:19:52.634] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/mnt/data/447e7718-610e-4b26-8bb9-86240b66eb93.png" "received" null
+[06:20:41.661] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/mnt/data/447e7718-610e-4b26-8bb9-86240b66eb93.png" "received" null

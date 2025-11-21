@@ -141,62 +141,105 @@ export default function ConditionPage(props) {
       </section>
 
       {/* SYMPTOMS */}
-      <section className="max-w-7xl mx-auto px-6 py-10">
-        <div className="text-center mb-8">
-          <h3 className="text-3xl font-bold text-foreground">Common Symptoms</h3>
-          <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">Symptoms vary — here are the most commonly reported ones for this condition.</p>
-        </div>
+<section className="max-w-7xl mx-auto px-6 py-10 md:py-16">
+  <div className="text-center mb-12">
+    <h3 className="text-3xl font-bold text-foreground">Common Symptoms</h3>
+    <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
+      Symptoms vary from person to person — here are the most commonly reported ones.
+    </p>
+  </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {(symptoms.length > 0 ? symptoms : ["Symptom 1", "Symptom 2", "Symptom 3", "Symptom 4", "Symptom 5"]).map((s, i) => (
-            <div key={i} className="p-4 bg-card/70 backdrop-blur-xl border border-border rounded-xl text-foreground text-sm">
-              • {s}
-            </div>
-          ))}
-        </div>
-      </section>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    {(symptoms.length > 0 ? symptoms : ["Symptom 1", "Symptom 2", "Symptom 3"])
+      .map((s, i) => (
+        <motion.div
+          key={i}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: i * 0.05 }}
+          viewport={{ once: true }}
+          className="
+            group relative p-5 rounded-2xl bg-card/60 backdrop-blur-xl 
+            border border-border shadow-sm hover:shadow-md 
+            transition-all duration-300 hover:-translate-y-1
+          "
+        >
+          {/* The animated gradient dot */}
+          <div className="
+            w-3 h-3 rounded-full bg-gradient-to-br from-primary to-accent 
+            mb-3 transition-all duration-500 group-hover:scale-110
+          "></div>
 
-      {/* BEFORE & AFTER (optional) */}
-      {beforeAfter && beforeAfter.length > 0 && (
-        <section className="max-w-7xl mx-auto px-6 py-10">
-          <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold text-foreground">Before & After Transformations</h3>
-            <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">Real patient results — outcomes vary by individual.</p>
-          </div>
+          {/* The symptom text */}
+          <h4 className="text-base font-medium text-foreground leading-relaxed">
+            {s}
+          </h4>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {beforeAfter.map((item, i) => (
-              <div key={i} className="rounded-2xl overflow-hidden bg-card border border-border shadow-md">
-                <div className="grid grid-cols-2">
-                  <div className="relative aspect-[4/4]">
-                    <Image src={item.before} alt={item.alt ?? `before-${i}`} fill className="object-cover" />
-                  </div>
-                  <div className="relative aspect-[4/4]">
-                    <Image src={item.after} alt={item.alt ?? `after-${i}`} fill className="object-cover" />
-                  </div>
-                </div>
-                <div className="p-4 text-sm text-muted-foreground">{item.note}</div>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
+          {/* Bottom animated underline */}
+          <div className="
+            w-0 group-hover:w-16 h-0.5 bg-gradient-to-r from-primary to-accent 
+            mt-4 transition-all duration-500
+          "></div>
+        </motion.div>
+      ))}
+  </div>
+</section>
+
+
+      
 
       {/* BENEFITS */}
-      <section className="max-w-7xl mx-auto px-6 py-10 md:py-16">
-        <div className="text-center mb-8">
-          <h3 className="text-3xl font-bold text-foreground">Benefits of Our Approach</h3>
-          <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">Why patients choose our clinic.</p>
-        </div>
+<section className="max-w-7xl mx-auto px-6 py-10 md:py-16">
+  <div className="text-center mb-12">
+    <h3 className="text-3xl font-bold text-foreground">Benefits of Our Approach</h3>
+    <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
+      Why patients trust us for long-term healing.
+    </p>
+  </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {(benefits.length > 0 ? benefits : ["Root-cause treatment", "Safe & non-invasive", "Personalized plan"]).map((b, i) => (
-            <div key={i} className="p-6 bg-secondary/60 backdrop-blur-xl border border-border rounded-2xl text-foreground">
-              <h4 className="font-semibold">{b}</h4>
-            </div>
-          ))}
-        </div>
-      </section>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    {(benefits.length > 0 ? benefits : ["Root-cause treatment", "Safe & non-invasive", "Personalized plan"])
+      .map((b, i) => (
+        <motion.div
+          key={i}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: i * 0.05 }}
+          viewport={{ once: true }}
+          className="
+            group relative p-6 rounded-2xl overflow-hidden 
+            bg-card/60 backdrop-blur-xl border border-border 
+            shadow-sm hover:shadow-md transition-all duration-300 
+            hover:-translate-y-1
+          "
+        >
+          {/* Gradient Accent Top Border */}
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent opacity-70"></div>
+
+          {/* Soft Icon Placeholder */}
+          <div className="
+            w-12 h-12 mb-4 flex items-center justify-center 
+            rounded-xl bg-primary/10 text-primary
+            group-hover:bg-primary/20 transition
+          ">
+            <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8">
+              <circle cx="11" cy="11" r="9" />
+              <path d="M7 12l2 2 5-5" />
+            </svg>
+          </div>
+
+          <h4 className="font-semibold text-lg">{b}</h4>
+
+          {/* Subtle underline animation */}
+          <div className="
+            w-0 group-hover:w-20 h-0.5 bg-gradient-to-r from-primary to-accent 
+            mt-3 transition-all duration-500
+          "></div>
+        </motion.div>
+      ))}
+  </div>
+</section>
+
 
       {/* VIDEOS (optional) */}
       {videos && videos.length > 0 && (

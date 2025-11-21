@@ -1,5 +1,6 @@
 {
   "/HairGrowth/page": "app/HairGrowth/page.js",
+  "/HairGrowth/register/page": "app/HairGrowth/register/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/conditions/acne/page": "app/conditions/acne/page.js",
   "/conditions/allergies/page": "app/conditions/allergies/page.js",
@@ -19,5 +20,10 @@
   "/conditions/thyroid/page": "app/conditions/thyroid/page.js",
   "/doctor/page": "app/doctor/page.js",
   "/faq/page": "app/faq/page.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/treatment-approach/custom-programs/page": "app/treatment-approach/custom-programs/page.js",
+  "/treatment-approach/digital-diagnosis-method/page": "app/treatment-approach/digital-diagnosis-method/page.js",
+  "/treatment-approach/home-vs-clinic-care/page": "app/treatment-approach/home-vs-clinic-care/page.js",
+  "/treatment-approach/how-homeopathy-works/page": "app/treatment-approach/how-homeopathy-works/page.js",
+  "/treatment-approach/safety-and-research/page": "app/treatment-approach/safety-and-research/page.js"
 }
