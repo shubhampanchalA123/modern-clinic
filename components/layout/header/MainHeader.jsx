@@ -183,10 +183,10 @@ export default function Navbar() {
                   group-hover:visible transition-all duration-200 p-3 z-50
                 "
                             >
-                                <Link href="#" className="block px-3 py-2 hover:bg-card">Online Consultation</Link>
-                                <Link href="#" className="block px-3 py-2 hover:bg-card">Clinic Consultation</Link>
-                                <Link href="#" className="block px-3 py-2 hover:bg-card">1 / 3 Month Plans</Link>
-                                <Link href="#" className="block px-3 py-2 hover:bg-card">Family Wellness Plans</Link>
+                                <Link href="/pricing/online-consultation" className="block px-3 py-2 hover:bg-card">Online Consultation</Link>
+                                <Link href="/pricing/clinic-consultation" className="block px-3 py-2 hover:bg-card">Clinic Consultation</Link>
+                                <Link href="/pricing/monthly-plans" className="block px-3 py-2 hover:bg-card">1 / 3 Month Plans</Link>
+                                <Link href="/pricing/family-wellness" className="block px-3 py-2 hover:bg-card">Family Wellness Plans</Link>
                             </div>
                         </div>
 
@@ -341,10 +341,10 @@ export default function Navbar() {
                                     Pricing <SlArrowDown className="text-xs" />
                                 </summary>
                                 <div className="ml-4 mt-2 space-y-2 text-muted-foreground">
-                                    <Link href="#" className="block" >Online Consultation</Link>
-                                    <Link href="#" className="block" >Clinic Consultation</Link>
-                                    <Link href="#" className="block" >1 / 3 Month Plans</Link>
-                                    <Link href="#" className="block" >Family Wellness Plans</Link>
+                                    <Link href="/pricing/online-consultation" className="block" >Online Consultation</Link>
+                                    <Link href="/pricing/clinic-consultation" className="block" >Clinic Consultation</Link>
+                                    <Link href="/pricing/monthly-plans" className="block" >1 / 3 Month Plans</Link>
+                                    <Link href="/pricing/family-wellness" className="block" >Family Wellness Plans</Link>
                                 </div>
                             </details>
 

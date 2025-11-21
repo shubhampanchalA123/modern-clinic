@@ -2901,3 +2901,73 @@ Learn more: https://nextjs.org/docs/messages/invalid-new-link-with-extra-anchor
 [07:28:28.194] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/mnt/data/924498da-20ab-4ed6-9788-e7d6499fabde.png" "received" null
 [07:28:31.593] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/mnt/data/924498da-20ab-4ed6-9788-e7d6499fabde.png" "received" null
 [07:28:31.604] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/mnt/data/447e7718-610e-4b26-8bb9-86240b66eb93.png" "received" null
+[07:31:29.715] Browser WARN    Image with src "/images/conditions/women.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:31:29.715] Browser WARN    Image with src "/images/conditions/weight.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:31:29.715] Browser WARN    Image with src "/images/conditions/mental.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:31:29.715] Browser WARN    Image with src "/images/conditions/diabetes.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:31:29.715] Browser WARN    Image with src "/images/before-after/male3-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:31:29.715] Browser WARN    Image with src "/images/before-after/male3-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:35:53.519] Browser WARN    Image with src "/images/before-after/female1-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:35:53.519] Browser WARN    Image with src "/images/before-after/female1-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:51:14.686] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[07:51:14.691] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[07:51:14.697] Server  LOG      ✓ Compiled in 5.5s
+[07:51:14.743] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[07:51:20.506] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:51:24.872] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:51:24.873] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:51:24.873] Browser WARN    Image with src "/images/conditions/respiratory.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:51:24.873] Browser WARN    Image with src "/images/conditions/skin.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:51:24.873] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[07:51:24.873] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:51:24.873] Browser WARN    Image with src "/images/conditions/hair.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:51:24.873] Browser WARN    Image with src "/images/conditions/child.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:51:30.371] Server  LOG      ✓ Compiled in 2.1s
+[07:51:30.864] Browser WARN    Image with src "/images/conditions/women.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:51:30.864] Browser WARN    Image with src "/images/conditions/weight.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:51:30.864] Browser WARN    Image with src "/images/conditions/diabetes.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:51:30.864] Browser WARN    Image with src "/images/conditions/mental.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:51:30.864] Browser WARN    Image with src "/images/before-after/male3-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:51:30.864] Browser WARN    Image with src "/images/before-after/male3-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:51:53.110] Server  LOG      ✓ Compiled in 6.1s
+[07:52:54.461] Server  LOG      ✓ Compiled in 3.2s
+[07:53:08.056] Server  LOG      ✓ Compiled in 717ms
+[07:55:13.498] Server  LOG      ✓ Compiled in 2.1s
+[07:55:22.815] Server  LOG      ✓ Compiled in 1306ms
+[07:55:42.340] Server  LOG      ✓ Compiled in 646ms
+[07:55:57.634] Server  LOG      ✓ Compiled in 732ms
+[07:56:07.156] Server  LOG      ✓ Compiled in 827ms
+[07:56:08.823] Server  LOG      ✓ Compiled in 927ms
+[07:56:17.503] Server  LOG      ✓ Compiled in 2.5s
+[07:56:21.865] Server  LOG      ✓ Compiled in 3.7s
+[07:56:25.530] Server  LOG      ✓ Compiled in 2.8s
+[07:56:27.102] Server  LOG      ✓ Compiled in 1042ms
+[07:57:08.705] Server  LOG      ✓ Compiled in 739ms
+[07:57:11.518] Server  LOG      ✓ Compiled in 528ms
+[07:57:16.983] Server  LOG      ✓ Compiled in 1103ms
+[07:57:35.350] Server  LOG      ✓ Compiled in 683ms
+[07:58:10.885] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:58:12.293] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[07:58:12.293] Browser WARN    Image with src "/images/conditions/hair.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:58:12.293] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:58:12.293] Browser WARN    Image with src "/images/conditions/respiratory.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:58:12.293] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:58:12.293] Browser WARN    Image with src "/images/conditions/skin.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:58:12.293] Browser WARN    Image with src "/images/conditions/child.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:58:12.293] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:58:33.882] Server  LOG      ○ Compiling /pricing/online-consultation ...
+[07:58:39.125] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[07:58:39.125] Browser WARN    Image with src "/images/before-after/male3-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:58:39.125] Browser WARN    Image with src "/images/before-after/male3-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[07:58:41.636] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/mnt/data/447e7718-610e-4b26-8bb9-86240b66eb93.png" "received" null
+[07:59:44.213] Server  LOG      ✓ Compiled in 2s
+[08:00:57.858] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/mnt/data/447e7718-610e-4b26-8bb9-86240b66eb93.png" "received" null
+[08:01:29.152] Server  LOG      ✓ Compiled in 1150ms
+[08:02:14.856] Server  LOG      ✓ Compiled in 889ms
+[08:02:35.258] Server  LOG      ✓ Compiled in 958ms
+[08:02:43.152] Browser WARN    Image with src "/images/conditions/women.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[08:02:43.152] Browser WARN    Image with src "/images/conditions/mental.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[08:02:43.152] Browser WARN    Image with src "/images/conditions/diabetes.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[08:02:43.152] Browser WARN    Image with src "/images/conditions/weight.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
