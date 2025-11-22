@@ -18,7 +18,7 @@ export default function Navbar() {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
-    
+
 
     const hideFloating = ["/HairGrowth/register", "/HairGrowth/coach"];
 
@@ -51,63 +51,64 @@ export default function Navbar() {
 
                         {/* CONDITIONS MEGA MENU */}
                         <div className="relative group">
-                            <button className="flex items-center gap-1 hover:text-[#1F4DA0] transition">
+                            <button className="flex items-center gap-1 hover:text-primary transition">
                                 Conditions <SlArrowDown className="text-xs" />
                             </button>
 
                             <div
                                 className="
-                  absolute left-0 top-full mt-3 w-[750px]
-                  bg-[#F3F7FF] border border-border shadow-lg rounded-xl
-                  opacity-0 invisible group-hover:opacity-100 group-hover:visible
-                  transition-all duration-300 p-6 grid grid-cols-4 gap-6 z-50
-                "
+      absolute left-0 top-full mt-3 w-[750px]
+      bg-popover border border-border shadow-lg rounded-xl
+      opacity-0 invisible group-hover:opacity-100 group-hover:visible
+      transition-all duration-300 p-6 grid grid-cols-4 gap-6 z-50
+    "
                             >
                                 {/* COLUMN A */}
                                 <div>
-                                    <h4 className="text-[#1F4DA0] font-semibold mb-3">Hair & Skin</h4>
-                                    <ul className="space-y-2 text-[#0A2C63]">
-                                        <li><Link href="/conditions/hair-fall">Hair Fall</Link></li>
-                                        <li><Link href="/conditions/alopecia">Alopecia</Link></li>
-                                        <li><Link href="/conditions/dandruff">Dandruff</Link></li>
-                                        <li><Link href="/conditions/acne">Acne</Link></li>
-                                        <li><Link href="/conditions/eczema">Eczema</Link></li>
+                                    <h4 className="text-primary font-semibold mb-3">Hair & Skin</h4>
+                                    <ul className="space-y-2 text-muted-foreground">
+                                        <li><Link href="/conditions/hair-fall" className="hover:text-foreground transition">Hair Fall</Link></li>
+                                        <li><Link href="/conditions/alopecia" className="hover:text-foreground transition">Alopecia</Link></li>
+                                        <li><Link href="/conditions/dandruff" className="hover:text-foreground transition">Dandruff</Link></li>
+                                        <li><Link href="/conditions/acne" className="hover:text-foreground transition">Acne</Link></li>
+                                        <li><Link href="/conditions/eczema" className="hover:text-foreground transition">Eczema</Link></li>
                                     </ul>
                                 </div>
 
                                 {/* COLUMN B */}
                                 <div>
-                                    <h4 className="text-[#1F4DA0] font-semibold mb-3">Chronic Health</h4>
-                                    <ul className="space-y-2 text-[#0A2C63]">
-                                        <li><Link href="/conditions/thyroid">Thyroid</Link></li>
-                                        <li><Link href="/conditions/arthritis">Arthritis</Link></li>
-                                        <li><Link href="/conditions/sinus">Sinus</Link></li>
-                                        <li><Link href="/conditions/migraine">Migraine</Link></li>
+                                    <h4 className="text-primary font-semibold mb-3">Chronic Health</h4>
+                                    <ul className="space-y-2 text-muted-foreground">
+                                        <li><Link href="/conditions/thyroid" className="hover:text-foreground transition">Thyroid</Link></li>
+                                        <li><Link href="/conditions/arthritis" className="hover:text-foreground transition">Arthritis</Link></li>
+                                        <li><Link href="/conditions/sinus" className="hover:text-foreground transition">Sinus</Link></li>
+                                        <li><Link href="/conditions/migraine" className="hover:text-foreground transition">Migraine</Link></li>
                                     </ul>
                                 </div>
 
                                 {/* COLUMN C */}
                                 <div>
-                                    <h4 className="text-[#1F4DA0] font-semibold mb-3">Emotional & Lifestyle</h4>
-                                    <ul className="space-y-2 text-[#0A2C63]">
-                                        <li><Link href="/conditions/stress">Stress</Link></li>
-                                        <li><Link href="/conditions/anxiety">Anxiety</Link></li>
-                                        <li><Link href="/conditions/sleep-disturbance">Sleep Disturbance</Link></li>
-                                        <li><Link href="/conditions/immunity">Immunity</Link></li>
+                                    <h4 className="text-primary font-semibold mb-3">Emotional & Lifestyle</h4>
+                                    <ul className="space-y-2 text-muted-foreground">
+                                        <li><Link href="/conditions/stress" className="hover:text-foreground transition">Stress</Link></li>
+                                        <li><Link href="/conditions/anxiety" className="hover:text-foreground transition">Anxiety</Link></li>
+                                        <li><Link href="/conditions/sleep-disturbance" className="hover:text-foreground transition">Sleep Disturbance</Link></li>
+                                        <li><Link href="/conditions/immunity" className="hover:text-foreground transition">Immunity</Link></li>
                                     </ul>
                                 </div>
 
                                 {/* COLUMN D */}
                                 <div>
-                                    <h4 className="text-[#1F4DA0] font-semibold mb-3">Child Care</h4>
-                                    <ul className="space-y-2 text-[#0A2C63]">
-                                        <li><Link href="/conditions/allergies">Allergies</Link></li>
-                                        <li><Link href="/conditions/low-immunity">Low Immunity</Link></li>
-                                        <li><Link href="/conditions/behavioral-support">Behavioral Support</Link></li>
+                                    <h4 className="text-primary font-semibold mb-3">Child Care</h4>
+                                    <ul className="space-y-2 text-muted-foreground">
+                                        <li><Link href="/conditions/allergies" className="hover:text-foreground transition">Allergies</Link></li>
+                                        <li><Link href="/conditions/low-immunity" className="hover:text-foreground transition">Low Immunity</Link></li>
+                                        <li><Link href="/conditions/behavioral-support" className="hover:text-foreground transition">Behavioral Support</Link></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
+
 
                         {/* OUR DOCTORS */}
                         <div className="relative group">

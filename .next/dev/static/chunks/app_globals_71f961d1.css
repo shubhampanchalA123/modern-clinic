@@ -2338,6 +2338,10 @@ html {
   color: hsl(var(--primary));
 }
 
+.hover\:text-foreground:hover {
+  color: hsl(var(--foreground));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
