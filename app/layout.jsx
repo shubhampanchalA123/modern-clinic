@@ -4,6 +4,7 @@ import Footer from "@/components/layout/Footer";
 import { ThemeProvider } from "next-themes";
 import TopBar from "@/components/layout/header/Topbar";
 import MainHeader from "@/components/layout/header/MainHeader";
+import ScrollToTop from "./scroll-reset";
 
 export const metadata = { title: "Modern Clinic", description: "Rediscover Your Confidence" };
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
           defaultTheme="light"
           enableSystem={false}
         >
+          <ScrollToTop />
           <TopBar />
           <MainHeader />
           {/* <Navbar /> */}

@@ -2305,6 +2305,10 @@ html {
   background-color: hsl(var(--secondary) / .4);
 }
 
+.hover\:bg-secondary\/70:hover {
+  background-color: hsl(var(--secondary) / .7);
+}
+
 .hover\:text-\[\#1F4DA0\]:hover {
   --tw-text-opacity: 1;
   color: rgb(31 77 160 / var(--tw-text-opacity, 1));
@@ -2725,6 +2729,10 @@ html {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .lg\:px-14 {

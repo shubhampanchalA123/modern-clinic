@@ -11,18 +11,18 @@ const topics = [
     {
         question: "What is Homeopathy?",
         answer: `
-    ### What It Means  
+    **What It Means**  
     Homeopathy is a holistic medical science developed over 200 years ago by Dr. Samuel Hahnemann.  
     It works on the principle of “Like cures like”, meaning:  
-    **a substance that produces symptoms in a healthy person can help treat similar symptoms in an unwell person when given in a highly diluted, potentized form.**
+    #a substance that produces symptoms in a healthy person can help treat similar symptoms in an unwell person when given in a highly diluted, potentized form.**
 
-    ### Key Concepts  
+    **Key Concepts**  
     - Homeopathy treats the root cause, not just symptoms.  
     - Remedies stimulate the body's natural healing mechanism.  
     - Emotional, physical, and lifestyle factors are considered.  
     - Medicines are safe, non-toxic, and suitable for all ages.
 
-    ### Why It Matters  
+    **Why It Matters**  
     Homeopathy aims to restore long-term health by correcting internal imbalances.  
     It is widely used for chronic conditions, allergies, emotional issues, and lifestyle disorders.
 
@@ -32,17 +32,17 @@ const topics = [
     {
         question: "What Homeopathy is NOT",
         answer: `
-    ### Clearing Common Misconceptions  
+    **Clearing Common Misconceptions**  
     Many people confuse homeopathy with other natural systems.  
     Homeopathy is **not** synonymous with Ayurvedic oils, herbal remedies, or dietary supplements.
 
-    ### Homeopathy Is NOT:  
+    **Homeopathy Is NOT:**  
     - **Not Herbal Medicine:** Remedies are potentized, not crude plant extracts.  
     - **Not Ayurvedic or Naturopathic Therapy:** Completely separate philosophy & pharmacology.  
     - **Not Placebo:** Studies show clinical benefits in chronic conditions.  
     - **Not Slow Always:** Acute problems like colds, injuries, allergies respond fast.
 
-    ### Why This Matters  
+    **Why This Matters**  
     Understanding what homeopathy is NOT helps patients recognize its scientific structure and avoid misleading comparisons.
 
   `,
@@ -51,19 +51,19 @@ const topics = [
     {
         question: "Facts & Myths About Homeopathy",
         answer: `
-    ### Common Myths  
+    **Common Myths**  
     - “Homeopathy works slowly” → *False, works fast in acute cases*  
     - “It is only for mild diseases” → *False, proven useful for chronic disorders*  
     - “It has no science behind it” → *Incorrect, nanoparticles & biological activity have been documented*  
     - “It is only placebo” → *Refuted by controlled studies*
 
-    ### Facts  
+    **Facts**  
     - Safe for children, elderly, and during pregnancy  
     - No habit-forming or dependency  
     - Works on root cause, not suppression  
     - Personalized to each patient (mind + body)
 
-    ### Why Clarifying Matters  
+    **Why Clarifying Matters**  
     Correcting misinformation builds better trust between patient and physician, enabling effective healing outcomes.
 
   `,
@@ -72,20 +72,20 @@ const topics = [
     {
         question: "Scientific Homeopathy",
         answer: `
-    ### Scientific Understanding Today  
+    **Scientific Understanding Today**  
     Modern research shows homeopathic remedies contain **nanoparticles** of the original source material even at high dilutions (IIT-Bombay studies).
 
-    These nanoparticles interact with biological systems through:  
+    **These nanoparticles interact with biological systems through:**
     - Modulation of immune responses  
     - Cellular signaling pathways  
     - Regulation of stress proteins  
     - Epigenetic modulation  
 
-    ### Evidence From Studies  
+    **Evidence From Studies**  
     - Research shows effects in allergies, inflammation, and chronic conditions.  
     - Controlled trials demonstrate symptomatic improvement in certain diseases.
 
-    ### Integrative Approach  
+    **Integrative Approach**  
     Scientific homeopathy combines classical principles with modern analytical techniques, making it a credible holistic therapy.
 
   `,
@@ -94,25 +94,25 @@ const topics = [
     {
         question: "Homeopathy Research",
         answer: `
-    ### Global Research Highlights  
+    **Global Research Highlights** 
     Homeopathy is officially recognized and researched in over 80 countries.  
     Research includes clinical trials, observational studies, laboratory experiments, and patient outcome studies.
 
-    ### Areas With Strongest Evidence  
+    **Areas With Strongest Evidence**  
     - Allergies & respiratory issues  
     - Skin diseases (eczema, psoriasis)  
     - Gastrointestinal disorders  
     - Stress, anxiety, sleep issues  
     - Childhood immunity disorders  
 
-    ### Types of Research  
+    **Types of Research**  
     - Randomized Controlled Trials (RCTs)  
     - Meta-analyses & systematic reviews  
     - Cell-line studies  
     - Animal studies  
     - Population-based outcomes
 
-    ### Why This Matters  
+    **Why This Matters**  
     Research helps bridge traditional homeopathic wisdom with modern scientific validation.
 
   `,

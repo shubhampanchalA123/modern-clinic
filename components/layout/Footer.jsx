@@ -5,26 +5,31 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer id="footer-section" className="bg-card border-t border-border">
-      <div className="max-w-7xl mx-auto px-6 py-14 grid md:grid-cols-5 gap-10">
+    <footer id="footer-section" className="bg-card/60 backdrop-blur-xl border-t border-border mt-20">
+      {/* TOP GRADIENT STRIP */}
+      <div className="h-1 w-full bg-gradient-to-r from-primary to-accent opacity-70"></div>
 
-        {/* Logo + About */}
+      <div className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-4 lg:grid-cols-5 gap-10">
+
+        {/* LOGO + ABOUT */}
         <div className="md:col-span-2">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-primary-foreground font-bold shadow-soft">
-              MC
+          <Link href="/">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-primary-foreground font-bold shadow-soft">
+                MC
+              </div>
+              <div>
+                <h1 className="text-xl font-semibold text-foreground">Modern Clinic</h1>
+                <p className="text-xs text-muted-foreground -mt-1">
+                  Doctor-Guided Health & Wellness Care
+                </p>
+              </div>
             </div>
-            <div>
-              <h1 className="text-lg font-semibold text-foreground">Modern Clinic</h1>
-              <p className="text-xs text-muted-foreground -mt-1">
-                Doctor-Guided Hair Regrowth
-              </p>
-            </div>
-          </div>
+          </Link>
 
-          <p className="mt-4 text-muted-foreground text-sm leading-relaxed">
-            A holistic doctor-led program combining Homeopathy, Nutrition &
-            Lifestyle healing to treat hair fall from its root cause.
+          <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+            A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+            to treat chronic and lifestyle-related health problems from the root.
           </p>
 
           <p className="mt-4 text-sm text-muted-foreground">
@@ -32,104 +37,90 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Quick Links */}
+        {/* QUICK LINKS  */}
         <div>
           <h3 className="text-sm font-semibold text-foreground mb-4">Quick Links</h3>
-          <ul className="space-y-3 text-sm text-foreground">
-            <li>
-              <Link href="/doctor" className="hover:text-primary">
-                About Dr.
-              </Link>
-            </li>
-            <li>
-              <Link href="/HairGrowth/register" className="hover:text-primary">
-                Book Assessment
-              </Link>
-            </li>
-            <li>
-              <Link href="/testimonials" className="hover:text-primary">
-                Testimonials
-              </Link>
-            </li>
-            <li>
-              <Link href="/faq" className="hover:text-primary">
-                FAQ
-              </Link>
-            </li>
-            <li>
-              <Link href="/privacy-policy" className="hover:text-primary">
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link href="/terms-and-conditions" className="hover:text-primary">
-                Terms & Conditions
-              </Link>
-            </li>
-            <li>
-              <Link href="/refund-policy" className="hover:text-primary">
-                Refund & Cancellation Policy
-              </Link>
-            </li>
+          <ul className="space-y-3 text-sm">
+            <FooterLink href="/doctor" title="About Dr." />
+            <FooterLink href="/HairGrowth/register" title="Book Assessment" />
+            <FooterLink href="/testimonials" title="Testimonials" />
+            <FooterLink href="/faq" title="FAQ" />
+            <FooterLink href="/privacy-policy" title="Privacy Policy" />
+            <FooterLink href="/terms-and-conditions" title="Terms & Conditions" />
+            <FooterLink href="/refund-policy" title="Refund & Cancellation Policy" />
           </ul>
         </div>
 
-        {/* Centres Section */}
+        {/* CENTRES */}
         <div>
           <h3 className="text-sm font-semibold text-foreground mb-4">Our Centres</h3>
           <ul className="space-y-3 text-sm text-muted-foreground">
-            <li>Mumbai</li>
-            <li>Indore</li>
-            <li>Nagpur</li>
-            <li>Delhi NCR</li>
-            <li>Ujjain</li>
-            <li>Kolkata</li>
+            {["Mumbai", "Indore", "Nagpur", "Delhi NCR", "Ujjain", "Kolkata"].map((city) => (
+              <li key={city} className="hover:text-primary transition">
+                {city}
+              </li>
+            ))}
           </ul>
         </div>
 
-        {/* Contact Info */}
+        {/* CONTACT */}
         <div>
           <h3 className="text-sm font-semibold text-foreground mb-4">Contact</h3>
           <ul className="space-y-3 text-sm text-muted-foreground">
             <li>📞 +91 9770799998</li>
             <li>📧 mhomeo@yahoo.com</li>
             <li>🕒 Mon–Sat: 10 AM – 7 PM</li>
-            <li>📍 202 Bussiness Island, Nipania, Indore</li>
-            <li>📍 121 Orbit Mall, Nipania, Indore</li>
+            <li>📍 202 Business Island, Nipania, Indore</li>
+            <li>📍 121 Orbit Mall, Indore</li>
             <li>📍 India (Online Consultations)</li>
           </ul>
 
-          {/* Social Icons */}
-          <div className="flex items-center gap-4 mt-4">
-            <a href="https://wa.me/919770799998" target="_blank">
-              <FaWhatsapp
-                size={24}
-                className="text-primary hover:scale-110 transition"
-              />
-            </a>
-            <a href="https://www.instagram.com/askdrdevendra" target="_blank">
-              <FaInstagram
-                size={24}
-                className="text-primary hover:scale-110 transition"
-              />
-            </a>
-            <a
+          {/* SOCIAL ICONS */}
+          <div className="flex items-center gap-4 mt-5">
+            <SocialIcon
+              href="https://wa.me/919770799998"
+              icon={<FaWhatsapp size={22} />}
+            />
+            <SocialIcon
+              href="https://www.instagram.com/askdrdevendra"
+              icon={<FaInstagram size={22} />}
+            />
+            <SocialIcon
               href="https://www.youtube.com/@ModernHealthNutrition"
-              target="_blank"
-            >
-              <FaYoutube
-                size={26}
-                className="text-primary hover:scale-110 transition"
-              />
-            </a>
+              icon={<FaYoutube size={24} />}
+            />
           </div>
         </div>
       </div>
 
-      {/* Bottom strip */}
+      {/* Bottom Strip */}
       <div className="border-t border-border py-4 text-center text-sm text-muted-foreground">
         © {new Date().getFullYear()} Modern Clinic — All Rights Reserved.
       </div>
     </footer>
+  );
+}
+
+/* ------------ REUSABLE COMPONENTS ------------ */
+
+function FooterLink({ href, title }) {
+  return (
+    <li>
+      <Link href={href} className="hover:text-primary transition">
+        {title}
+      </Link>
+    </li>
+  );
+}
+
+function SocialIcon({ href, icon }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      className="w-10 h-10 rounded-xl bg-secondary/50 border border-border flex items-center justify-center text-primary hover:bg-secondary/70 transition"
+    >
+      {icon}
+    </a>
   );
 }

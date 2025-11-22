@@ -53,6 +53,8 @@ export default function HomePage() {
             {/* <Slider slides={heroSlides} height="h-screen" /> */}
             <CompactHeroSlider />
 
+
+            {/* Shadow Divider */}
             <div className="w-full h-12 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.08)]" />
 
 
@@ -120,18 +122,23 @@ export default function HomePage() {
 
             </section>
 
+
+            {/* Shadow Divider */}
             <div className="w-full h-12 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.08)]" />
 
 
             {/* WHAT WE TREAT */}
             <WhatWeTreat />
 
+
+            {/* Shadow Divider */}
             <div className="w-full h-12 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.08)]" />
 
 
             <Testimonials />
 
 
+            {/* Shadow Divider */}
             <div className="w-full h-12 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.08)]" />
 
 
@@ -168,6 +175,8 @@ export default function HomePage() {
                 </div>
             </section>
 
+
+            {/* Shadow Divider */}
             <div className="w-full h-12 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.08)]" />
 
 
@@ -220,6 +229,7 @@ export default function HomePage() {
                 </div>
             </section>
 
+            {/* Shadow Divider */}
             <div className="w-full h-12 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.08)]" />
 
             {/* FAQ SECTION */}

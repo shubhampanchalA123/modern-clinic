@@ -452,3 +452,910 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [02:25:51.340] Server  LOG      ✓ Compiled in 203ms
 [02:25:55.766] Server  LOG      ✓ Compiled in 291ms
 [02:26:00.415] Server  LOG      ✓ Compiled in 254ms
+[02:33:33.957] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:33:34.859] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:33:34.859] Browser WARN    Image with src "/images/conditions/hair.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:33:34.859] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:33:34.859] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:33:34.859] Browser WARN    Image with src "/images/conditions/skin.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:33:34.859] Browser WARN    Image with src "/images/conditions/respiratory.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:33:34.859] Browser WARN    Image with src "/images/conditions/child.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:33:34.859] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:33:51.474] Browser WARN    Image with src "/images/conditions/women.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:33:51.474] Browser WARN    Image with src "/images/conditions/weight.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:33:51.474] Browser WARN    Image with src "/images/conditions/mental.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:33:51.474] Browser WARN    Image with src "/images/conditions/diabetes.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[02:47:21.981] Server  LOG      ✓ Compiled in 500ms
+[02:47:29.567] Server  LOG      ✓ Compiled in 227ms
+[02:47:35.245] Server  LOG      ✓ Compiled in 168ms
+[02:47:48.292] Server  LOG      ✓ Compiled in 198ms
+[02:47:55.199] Server  LOG      ✓ Compiled in 226ms
+[02:47:56.202] Server  LOG      ✓ Compiled in 237ms
+[02:48:03.882] Server  LOG      ✓ Compiled in 175ms
+[02:50:22.367] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[02:50:44.039] Server  LOG      ✓ Compiled in 559ms
+[02:50:48.243] Server  LOG      ✓ Compiled in 225ms
+[02:51:03.158] Server  LOG      ✓ Compiled in 256ms
+[02:51:07.052] Server  LOG      ✓ Compiled in 249ms
+[02:51:21.238] Server  LOG      ✓ Compiled in 235ms
+[02:51:23.109] Server  LOG      ✓ Compiled in 519ms
+[02:51:23.922] Server  LOG      ✓ Compiled in 321ms
+[02:51:43.767] Server  LOG      ✓ Compiled in 192ms
+[02:51:46.882] Server  LOG      ✓ Compiled in 314ms
+[02:51:56.608] Server  LOG      ✓ Compiled in 249ms
+[02:52:00.228] Server  LOG      ✓ Compiled in 227ms
+[02:52:01.754] Server  LOG      ✓ Compiled in 248ms
+[02:54:02.857] Server  LOG      ✓ Compiled in 218ms
+[02:54:07.606] Server  LOG      ✓ Compiled in 390ms
+[02:54:23.651] Server  LOG      ✓ Compiled in 211ms
+[02:54:27.306] Server  LOG      ✓ Compiled in 233ms
+[02:54:33.144] Server  LOG      ✓ Compiled in 212ms
+[02:54:36.060] Server  LOG      ✓ Compiled in 302ms
+[02:54:41.456] Server  LOG      ✓ Compiled in 188ms
+[02:54:44.248] Server  LOG      ✓ Compiled in 204ms
+[02:54:45.555] Server  LOG      ✓ Compiled in 457ms
+[02:55:03.588] Server  LOG      ✓ Compiled in 202ms
+[02:55:06.116] Server  LOG      ✓ Compiled in 194ms
+[02:55:10.594] Server  LOG      ✓ Compiled in 222ms
+[02:55:13.639] Server  LOG      ✓ Compiled in 204ms
+[02:55:20.674] Server  LOG      ✓ Compiled in 203ms
+[02:55:23.454] Server  LOG      ✓ Compiled in 231ms
+[02:55:34.944] Server  LOG      ✓ Compiled in 262ms
+[02:55:39.443] Server  LOG      ✓ Compiled in 194ms
+[02:55:52.940] Server  LOG      ✓ Compiled in 217ms
+[02:55:55.858] Server  LOG      ✓ Compiled in 453ms
+[02:56:01.030] Server  LOG      ✓ Compiled in 1143ms
+[02:56:02.775] Server  LOG      ✓ Compiled in 201ms
+[02:56:06.666] Server  LOG      ✓ Compiled in 209ms
+[02:56:09.766] Server  LOG      ✓ Compiled in 237ms
+[02:56:20.906] Server  LOG      ✓ Compiled in 228ms
+[02:56:28.729] Server  LOG      ✓ Compiled in 245ms
+[02:56:32.773] Server  LOG      ✓ Compiled in 244ms
+[02:56:36.022] Server  LOG      ✓ Compiled in 283ms
+[02:56:40.228] Server  LOG      ✓ Compiled in 242ms
+[02:56:43.263] Server  LOG      ✓ Compiled in 232ms
+[02:56:49.400] Server  LOG      ✓ Compiled in 297ms
+[02:56:51.797] Server  LOG      ✓ Compiled in 204ms
+[02:56:55.490] Server  LOG      ✓ Compiled in 213ms
+[02:56:58.506] Server  LOG      ✓ Compiled in 198ms
+[02:57:04.340] Server  LOG      ✓ Compiled in 227ms
+[02:57:07.322] Server  LOG      ✓ Compiled in 221ms
+[02:57:14.783] Server  LOG      ✓ Compiled in 213ms
+[02:57:16.479] Server  LOG      ✓ Compiled in 384ms
+[03:09:06.773] Server  LOG      ✓ Compiled in 1518ms
+[03:10:07.755] Browser WARN    Image with src "/images/before-after/male3-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:10:07.755] Browser WARN    Image with src "/images/before-after/male3-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:10:56.306] Server  LOG      ✓ Compiled in 175ms
+[03:10:58.866] Server  LOG      ✓ Compiled in 239ms
+[03:11:01.892] Server  LOG      ✓ Compiled in 229ms
+[03:11:13.928] Browser WARN    Image with src "/images/hero.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:16:46.723] Server  LOG      ✓ Compiled in 199ms
+[03:16:52.843] Server  LOG      ✓ Compiled in 290ms
+[03:17:13.210] Server  LOG      ✓ Compiled in 381ms
+[03:17:25.663] Server  LOG      ✓ Compiled in 293ms
+[03:17:28.819] Server  LOG      ✓ Compiled in 359ms
+[03:17:29.898] Server  LOG      ✓ Compiled in 407ms
+[03:17:38.667] Server  LOG      ✓ Compiled in 408ms
+[03:17:39.881] Server  LOG      ✓ Compiled in 319ms
+[03:17:41.798] Server  LOG      ✓ Compiled in 663ms
+[03:17:50.768] Server  LOG      ✓ Compiled in 531ms
+[03:21:30.357] Server  LOG      ✓ Compiled in 453ms
+[03:21:48.460] Server  LOG      ✓ Compiled in 282ms
+[03:21:53.625] Server  LOG      ✓ Compiled in 504ms
+[03:26:22.473] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:26:22.473] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:27:05.406] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:27:06.412] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:27:06.412] Browser WARN    Image with src "/images/conditions/respiratory.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:27:06.412] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:27:06.412] Browser WARN    Image with src "/images/conditions/skin.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:27:06.412] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[03:27:06.412] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:27:06.412] Browser WARN    Image with src "/images/conditions/hair.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:27:06.412] Browser WARN    Image with src "/images/conditions/child.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:27:07.711] Browser WARN    Image with src "/images/conditions/diabetes.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:27:07.711] Browser WARN    Image with src "/images/conditions/women.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:27:07.711] Browser WARN    Image with src "/images/conditions/weight.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:27:07.711] Browser WARN    Image with src "/images/conditions/mental.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:27:07.711] Browser WARN    Image with src "/images/before-after/male3-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:27:07.711] Browser WARN    Image with src "/images/before-after/male3-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:32:34.210] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:32:35.276] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:32:35.276] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:32:35.276] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:32:35.276] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[03:32:35.276] Browser WARN    Image with src "/images/conditions/hair.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:32:35.276] Browser WARN    Image with src "/images/conditions/skin.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:32:35.276] Browser WARN    Image with src "/images/conditions/respiratory.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:32:35.276] Browser WARN    Image with src "/images/conditions/child.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:32:38.942] Browser WARN    Image with src "/images/conditions/women.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:32:38.942] Browser WARN    Image with src "/images/conditions/diabetes.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:32:38.942] Browser WARN    Image with src "/images/conditions/mental.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:32:38.942] Browser WARN    Image with src "/images/conditions/weight.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:32:39.184] Browser WARN    Image with src "/images/before-after/male3-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:32:39.184] Browser WARN    Image with src "/images/before-after/male3-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:35:30.405] Server  LOG      ✓ Compiled in 692ms
+[03:35:32.035] Server  LOG      ✓ Compiled in 445ms
+[03:35:32.895] Server  LOG      ✓ Compiled in 269ms
+[03:35:33.362] Browser ERROR   An empty string ("") was passed to the %s attribute. To fix this, either do not render the element at all or pass null to %s instead of an empty string. href href
+[03:35:36.812] Server  LOG      ✓ Compiled in 259ms
+[03:35:44.926] Server  LOG      ✓ Compiled in 1524ms
+[03:35:45.363] Browser ERROR   ./components/layout/Footer.jsx:16:52
+Parsing ecmascript source code failed
+  14 |         {/* LOGO + ABOUT */}
+  15 |         <div className="md:col-span-2">
+> 16 |           <link rel="stylesheet" href="/"></link> />
+     |                                                    ^
+  17 |           <div className="flex items-center gap-3">
+  18 |             <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-primary-foreground font-bold shadow-soft">
+  19 |               MC
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:35:47.353] Server  LOG      ✓ Compiled in 271ms
+[03:35:50.943] Server  LOG      ✓ Compiled in 345ms
+[03:35:51.380] Browser ERROR   ./components/layout/Footer.jsx:37:15
+Parsing ecmascript source code failed
+  35 |             5000+ Patients • 10+ Years Experience
+  36 |           </p>
+> 37 |         </div>
+     |               ^
+> 38 |
+     | ^
+> 39 |         {/* QUICK LINKS  */}
+     | ^^^^^^^^^
+  40 |         <div>
+  41 |           <h3 className="text-sm font-semibold text-foreground mb-4">Quick Links</h3>
+  42 |           <ul className="space-y-3 text-sm">
+
+Expected '</', got 'jsx text (
+
+        )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:35:54.588] Server  LOG      ✓ Compiled in 289ms
+[03:35:55.360] Browser ERROR   uncaughtError: Error: link is a void element tag and must neither have `children` nor use `dangerouslySetInnerHTML`.
+[03:36:02.490] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:36:02.539] Server  LOG      ✓ Compiled in 343ms
+[03:36:04.357] Server  ERROR    ⨯ Error: link is a self-closing tag and must neither have `children` nor use `dangerouslySetInnerHTML`.
+[03:36:04.468] Browser ERROR   uncaughtError: Error: link is a void element tag and must neither have `children` nor use `dangerouslySetInnerHTML`.
+[03:36:05.133] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:36:06.654] Server  LOG      ✓ Compiled in 446ms
+[03:36:06.669] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:36:06.670] Browser ERROR   uncaughtError: Error: link is a void element tag and must neither have `children` nor use `dangerouslySetInnerHTML`.
+[03:36:09.283] Server  ERROR    ⨯ Error: link is a self-closing tag and must neither have `children` nor use `dangerouslySetInnerHTML`.
+[03:36:09.828] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:36:10.352] Browser ERROR   uncaughtError: Error: link is a void element tag and must neither have `children` nor use `dangerouslySetInnerHTML`.
+[03:36:30.477] Server  LOG      ✓ Compiled in 479ms
+[03:36:31.367] Browser ERROR   ./components/layout/Footer.jsx:28:18
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </link>
+     |                  ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:32.371] Browser ERROR   ./components/layout/Footer.jsx:28:18
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </link>
+     |                  ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:35.370] Browser ERROR   ./components/layout/Footer.jsx:28:18
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </link>
+     |                  ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:42.859] Server  LOG      ✓ Compiled in 349ms
+[03:36:42.933] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:36:45.444] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:36:46.264] Server  LOG      ✓ Compiled in 377ms
+[03:36:48.712] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   ./components/layout/Footer.jsx:28:21
+Parsing ecmascript source code failed
+  26 |               </div>
+  27 |             </div>
+> 28 |           </Linkink>
+     |                     ^
+> 29 |
+     | ^
+> 30 |           <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-md">
+     | ^^^^^^^^^^^
+  31 |             A holistic doctor-led program combining Homeopathy, Nutrition & Lifestyle healing
+  32 |             to treat chronic and lifestyle-related health problems from the root.
+  33 |           </p>
+
+Expected '</', got 'jsx text (
+
+          )'
+
+Import trace:
+  Server Component:
+    ./components/layout/Footer.jsx
+    ./app/layout.jsx
+[03:36:48.714] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[03:36:48.714] Browser ERROR   uncaughtError: Error: Could not parse module '[project]/components/layout/Footer.jsx'
+
+Expected '</', got 'jsx text (
+
+          )'
+[03:36:53.088] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:36:54.186] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:36:54.186] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:36:54.186] Browser WARN    Image with src "/images/conditions/respiratory.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:36:54.186] Browser WARN    Image with src "/images/conditions/skin.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:36:54.186] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:36:54.186] Browser WARN    Image with src "/images/conditions/hair.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:36:54.186] Browser WARN    Image with src "/images/conditions/child.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:36:54.186] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[03:36:58.003] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[03:36:58.140] Browser WARN    Image with src "/images/conditions/women.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:36:58.140] Browser WARN    Image with src "/images/conditions/weight.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:36:58.141] Browser WARN    Image with src "/images/conditions/mental.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:36:58.141] Browser WARN    Image with src "/images/conditions/diabetes.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:36:58.301] Browser WARN    Image with src "/images/before-after/male3-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:36:58.301] Browser WARN    Image with src "/images/before-after/male3-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:37:20.260] Browser WARN    Image with src "/images/doctor1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:41:22.396] Browser ERROR   ./app/layout.jsx:20:20
+Parsing ecmascript source code failed
+  18 |         >
+  19 |           <Sc
+> 20 |           <TopBar />
+     |                    ^
+  21 |           <MainHeader />
+  22 |           {/* <Navbar /> */}
+  23 |           {children}
+
+Expression expected
+[03:41:22.396] Browser ERROR   ./app/layout.jsx:25:10
+Parsing ecmascript source code failed
+  23 |           {children}
+  24 |           <Footer />
+> 25 |         </ThemeProvider>
+     |          ^^^^^^^^^^^^^^^
+  26 |       </body>
+  27 |     </html>
+  28 |   );
+
+Unterminated regexp literal
+[03:41:23.364] Browser ERROR   ./app/layout.jsx:20:20
+Parsing ecmascript source code failed
+  18 |         >
+  19 |           <Scr
+> 20 |           <TopBar />
+     |                    ^
+  21 |           <MainHeader />
+  22 |           {/* <Navbar /> */}
+  23 |           {children}
+
+Expression expected
+[03:41:23.364] Browser ERROR   ./app/layout.jsx:25:10
+Parsing ecmascript source code failed
+  23 |           {children}
+  24 |           <Footer />
+> 25 |         </ThemeProvider>
+     |          ^^^^^^^^^^^^^^^
+  26 |       </body>
+  27 |     </html>
+  28 |   );
+
+Unterminated regexp literal
+[03:41:28.363] Browser ERROR   ./app/layout.jsx:21:20
+Parsing ecmascript source code failed
+  19 |         >
+  20 |           <ScrollToTop
+> 21 |           <TopBar />
+     |                    ^
+  22 |           <MainHeader />
+  23 |           {/* <Navbar /> */}
+  24 |           {children}
+
+Expression expected
+[03:41:28.363] Browser ERROR   ./app/layout.jsx:26:10
+Parsing ecmascript source code failed
+  24 |           {children}
+  25 |           <Footer />
+> 26 |         </ThemeProvider>
+     |          ^^^^^^^^^^^^^^^
+  27 |       </body>
+  28 |     </html>
+  29 |   );
+
+Unterminated regexp literal
+[03:41:42.053] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:41:43.056] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:41:43.056] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:41:43.056] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:41:43.056] Browser WARN    Image with src "/images/conditions/skin.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:41:43.056] Browser WARN    Image with src "/images/conditions/hair.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:41:43.056] Browser WARN    Image with src "/images/conditions/respiratory.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:41:43.056] Browser WARN    Image with src "/images/conditions/child.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:41:43.056] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[03:41:53.259] Browser WARN    Image with src "/images/conditions/diabetes.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:41:53.259] Browser WARN    Image with src "/images/conditions/women.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:41:53.259] Browser WARN    Image with src "/images/conditions/mental.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:41:53.259] Browser WARN    Image with src "/images/conditions/weight.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:41:53.775] Browser WARN    Image with src "/images/before-after/male3-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:41:53.775] Browser WARN    Image with src "/images/before-after/male3-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:41:58.032] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[03:42:12.684] Browser WARN    Image with src "/images/before-after/female2-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:42:12.684] Browser WARN    Image with src "/images/before-after/female1-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:42:12.684] Browser WARN    Image with src "/images/before-after/female1-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:42:12.684] Browser WARN    Image with src "/images/before-after/male4-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:42:12.684] Browser WARN    Image with src "/images/before-after/female2-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:42:12.684] Browser WARN    Image with src "/images/before-after/male4-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:42:17.343] Browser WARN    Image with src "/images/doctor1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:43:16.206] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:43:17.623] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:43:17.624] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:43:17.624] Browser WARN    Image with src "/images/conditions/skin.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:43:17.624] Browser WARN    Image with src "/images/conditions/respiratory.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:43:17.624] Browser WARN    Image with src "/images/conditions/child.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:43:17.624] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:43:17.624] Browser WARN    Image with src "/images/conditions/hair.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[03:43:17.624] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
