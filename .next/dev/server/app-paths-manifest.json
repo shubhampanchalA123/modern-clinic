@@ -2,5 +2,12 @@
   "/_not-found/page": "app/_not-found/page.js",
   "/blog/[slug]/page": "app/blog/[slug]/page.js",
   "/blog/page": "app/blog/page.js",
-  "/page": "app/page.js"
+  "/doctor/page": "app/doctor/page.js",
+  "/page": "app/page.js",
+  "/payment-method/clinic/page": "app/payment-method/clinic/page.js",
+  "/payment-method/emi/page": "app/payment-method/emi/page.js",
+  "/payment-method/failed/page": "app/payment-method/failed/page.js",
+  "/payment-method/online/page": "app/payment-method/online/page.js",
+  "/payment-method/page": "app/payment-method/page.js",
+  "/payment-method/success/page": "app/payment-method/success/page.js"
 }

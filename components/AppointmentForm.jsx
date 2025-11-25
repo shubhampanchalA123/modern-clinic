@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import {
     User,
     Mail,
@@ -66,6 +67,7 @@ export default function AppointmentForm() {
     return (
         <motion.div
             {...fade}
+            id="appointment-form"
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto bg-card/70 backdrop-blur-xl border border-border shadow-lg rounded-3xl p-6 md:p-8 mt-10"
             ref={dropdownRef}
@@ -191,9 +193,11 @@ export default function AppointmentForm() {
 
             {/* CTA BUTTON */}
             <div className="mt-6 flex justify-center">
-                <button className="px-6 py-3 rounded-xl bg-primary text-primary-foreground shadow-soft hover:bg-primary-dark transition">
-                    Book Appointment
-                </button>
+                <Link href="/payment-method">
+                    <button className="px-6 py-3 rounded-xl bg-primary text-primary-foreground shadow-soft hover:bg-primary-dark transition">
+                        Book Appointment
+                    </button>
+                </Link>
             </div>
         </motion.div>
     );

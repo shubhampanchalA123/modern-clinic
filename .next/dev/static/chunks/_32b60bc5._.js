@@ -363,7 +363,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$mo
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$modules$2f$pagination$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Pagination$3e$__ = __turbopack_context__.i("[project]/node_modules/swiper/modules/pagination.mjs [app-client] (ecmascript) <export default as Pagination>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/motion.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -415,7 +417,7 @@ function CompactHeroSlider() {
                             children: "Trusted Homeopathy Since 1995"
                         }, void 0, false, {
                             fileName: "[project]/components/shared/CompactHeroSlider.jsx",
-                            lineNumber: 56,
+                            lineNumber: 57,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -427,14 +429,14 @@ function CompactHeroSlider() {
                                     children: " Hair, Skin & Chronic"
                                 }, void 0, false, {
                                     fileName: "[project]/components/shared/CompactHeroSlider.jsx",
-                                    lineNumber: 61,
+                                    lineNumber: 62,
                                     columnNumber: 39
                                 }, this),
                                 " Conditions"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/shared/CompactHeroSlider.jsx",
-                            lineNumber: 60,
+                            lineNumber: 61,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -442,18 +444,25 @@ function CompactHeroSlider() {
                             children: "Our doctors create customized treatment plans based on your symptoms, lifestyle & medical history."
                         }, void 0, false, {
                             fileName: "[project]/components/shared/CompactHeroSlider.jsx",
-                            lineNumber: 64,
+                            lineNumber: 65,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex gap-3 pt-6 flex-wrap",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    className: "px-5 py-3 rounded-xl bg-primary text-primary-foreground hover:opacity-90 transition font-medium",
-                                    children: "Book Consultation"
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    href: "#appointment-form",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        className: "px-5 py-3 rounded-xl bg-primary text-primary-foreground hover:opacity-90 transition font-medium",
+                                        children: "Book Consultation"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/shared/CompactHeroSlider.jsx",
+                                        lineNumber: 72,
+                                        columnNumber: 15
+                                    }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/shared/CompactHeroSlider.jsx",
-                                    lineNumber: 70,
+                                    lineNumber: 71,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -461,19 +470,19 @@ function CompactHeroSlider() {
                                     children: "View Conditions"
                                 }, void 0, false, {
                                     fileName: "[project]/components/shared/CompactHeroSlider.jsx",
-                                    lineNumber: 74,
+                                    lineNumber: 77,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/shared/CompactHeroSlider.jsx",
-                            lineNumber: 69,
+                            lineNumber: 70,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/shared/CompactHeroSlider.jsx",
-                    lineNumber: 44,
+                    lineNumber: 45,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -483,7 +492,7 @@ function CompactHeroSlider() {
                             className: "absolute inset-0 bg-gradient-to-l from-background/40 via-background/10 to-transparent z-30 pointer-events-none"
                         }, void 0, false, {
                             fileName: "[project]/components/shared/CompactHeroSlider.jsx",
-                            lineNumber: 99,
+                            lineNumber: 102,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Swiper"], {
@@ -514,14 +523,14 @@ function CompactHeroSlider() {
                                                 className: "object-cover"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/shared/CompactHeroSlider.jsx",
-                                                lineNumber: 113,
+                                                lineNumber: 116,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "absolute inset-0 bg-gradient-to-r from-black/20 via-black/10 to-transparent z-10"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/shared/CompactHeroSlider.jsx",
-                                                lineNumber: 120,
+                                                lineNumber: 123,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -543,7 +552,7 @@ function CompactHeroSlider() {
                                                         children: slide.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/shared/CompactHeroSlider.jsx",
-                                                        lineNumber: 128,
+                                                        lineNumber: 131,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -551,46 +560,46 @@ function CompactHeroSlider() {
                                                         children: slide.desc
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/shared/CompactHeroSlider.jsx",
-                                                        lineNumber: 132,
+                                                        lineNumber: 135,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/shared/CompactHeroSlider.jsx",
-                                                lineNumber: 122,
+                                                lineNumber: 125,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/shared/CompactHeroSlider.jsx",
-                                        lineNumber: 112,
+                                        lineNumber: 115,
                                         columnNumber: 17
                                     }, this)
                                 }, index, false, {
                                     fileName: "[project]/components/shared/CompactHeroSlider.jsx",
-                                    lineNumber: 111,
+                                    lineNumber: 114,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/shared/CompactHeroSlider.jsx",
-                            lineNumber: 101,
+                            lineNumber: 104,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/shared/CompactHeroSlider.jsx",
-                    lineNumber: 81,
+                    lineNumber: 84,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/shared/CompactHeroSlider.jsx",
-            lineNumber: 41,
+            lineNumber: 42,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/shared/CompactHeroSlider.jsx",
-        lineNumber: 33,
+        lineNumber: 34,
         columnNumber: 5
     }, this);
 }
@@ -1923,6 +1932,7 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/motion.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/user.js [app-client] (ecmascript) <export default as User>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mail.js [app-client] (ecmascript) <export default as Mail>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/phone.js [app-client] (ecmascript) <export default as Phone>");
@@ -1932,6 +1942,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -1992,6 +2003,7 @@ function AppointmentForm() {
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
         ...fade,
+        id: "appointment-form",
         transition: {
             duration: 0.6
         },
@@ -2008,7 +2020,7 @@ function AppointmentForm() {
                                 className: "text-primary"
                             }, void 0, false, {
                                 fileName: "[project]/components/AppointmentForm.jsx",
-                                lineNumber: 76,
+                                lineNumber: 78,
                                 columnNumber: 21
                             }, this),
                             " Book an ",
@@ -2017,14 +2029,14 @@ function AppointmentForm() {
                                 children: "Online"
                             }, void 0, false, {
                                 fileName: "[project]/components/AppointmentForm.jsx",
-                                lineNumber: 76,
+                                lineNumber: 78,
                                 columnNumber: 69
                             }, this),
                             "Appointment"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/AppointmentForm.jsx",
-                        lineNumber: 75,
+                        lineNumber: 77,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2032,13 +2044,13 @@ function AppointmentForm() {
                         children: "Get a consultation with our doctor within 24 hours."
                     }, void 0, false, {
                         fileName: "[project]/components/AppointmentForm.jsx",
-                        lineNumber: 78,
+                        lineNumber: 80,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/AppointmentForm.jsx",
-                lineNumber: 74,
+                lineNumber: 76,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2050,7 +2062,7 @@ function AppointmentForm() {
                             className: "text-primary"
                         }, void 0, false, {
                             fileName: "[project]/components/AppointmentForm.jsx",
-                            lineNumber: 88,
+                            lineNumber: 90,
                             columnNumber: 27
                         }, void 0),
                         label: "Name",
@@ -2060,7 +2072,7 @@ function AppointmentForm() {
                         setForm: setForm
                     }, void 0, false, {
                         fileName: "[project]/components/AppointmentForm.jsx",
-                        lineNumber: 87,
+                        lineNumber: 89,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(InputField, {
@@ -2069,7 +2081,7 @@ function AppointmentForm() {
                             className: "text-primary"
                         }, void 0, false, {
                             fileName: "[project]/components/AppointmentForm.jsx",
-                            lineNumber: 98,
+                            lineNumber: 100,
                             columnNumber: 27
                         }, void 0),
                         label: "Email",
@@ -2080,7 +2092,7 @@ function AppointmentForm() {
                         setForm: setForm
                     }, void 0, false, {
                         fileName: "[project]/components/AppointmentForm.jsx",
-                        lineNumber: 97,
+                        lineNumber: 99,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(InputField, {
@@ -2089,7 +2101,7 @@ function AppointmentForm() {
                             className: "text-primary"
                         }, void 0, false, {
                             fileName: "[project]/components/AppointmentForm.jsx",
-                            lineNumber: 109,
+                            lineNumber: 111,
                             columnNumber: 27
                         }, void 0),
                         label: "Phone",
@@ -2100,7 +2112,7 @@ function AppointmentForm() {
                         setForm: setForm
                     }, void 0, false, {
                         fileName: "[project]/components/AppointmentForm.jsx",
-                        lineNumber: 108,
+                        lineNumber: 110,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2111,7 +2123,7 @@ function AppointmentForm() {
                                 children: "Region"
                             }, void 0, false, {
                                 fileName: "[project]/components/AppointmentForm.jsx",
-                                lineNumber: 120,
+                                lineNumber: 122,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2126,27 +2138,27 @@ function AppointmentForm() {
                                                 className: "text-primary"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/AppointmentForm.jsx",
-                                                lineNumber: 131,
+                                                lineNumber: 133,
                                                 columnNumber: 29
                                             }, this),
                                             form.region || "Select Region"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/AppointmentForm.jsx",
-                                        lineNumber: 130,
+                                        lineNumber: 132,
                                         columnNumber: 25
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
                                         size: 16
                                     }, void 0, false, {
                                         fileName: "[project]/components/AppointmentForm.jsx",
-                                        lineNumber: 134,
+                                        lineNumber: 136,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/AppointmentForm.jsx",
-                                lineNumber: 124,
+                                lineNumber: 126,
                                 columnNumber: 21
                             }, this),
                             openDropdown === "region" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DropdownShell, {
@@ -2162,18 +2174,18 @@ function AppointmentForm() {
                                         children: r
                                     }, r, false, {
                                         fileName: "[project]/components/AppointmentForm.jsx",
-                                        lineNumber: 141,
+                                        lineNumber: 143,
                                         columnNumber: 33
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/AppointmentForm.jsx",
-                                lineNumber: 139,
+                                lineNumber: 141,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/AppointmentForm.jsx",
-                        lineNumber: 119,
+                        lineNumber: 121,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2184,7 +2196,7 @@ function AppointmentForm() {
                                 children: "Condition"
                             }, void 0, false, {
                                 fileName: "[project]/components/AppointmentForm.jsx",
-                                lineNumber: 158,
+                                lineNumber: 160,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2196,13 +2208,13 @@ function AppointmentForm() {
                                         size: 16
                                     }, void 0, false, {
                                         fileName: "[project]/components/AppointmentForm.jsx",
-                                        lineNumber: 169,
+                                        lineNumber: 171,
                                         columnNumber: 25
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/AppointmentForm.jsx",
-                                lineNumber: 162,
+                                lineNumber: 164,
                                 columnNumber: 21
                             }, this),
                             openDropdown === "disease" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DropdownShell, {
@@ -2218,45 +2230,52 @@ function AppointmentForm() {
                                         children: d
                                     }, d, false, {
                                         fileName: "[project]/components/AppointmentForm.jsx",
-                                        lineNumber: 176,
+                                        lineNumber: 178,
                                         columnNumber: 33
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/AppointmentForm.jsx",
-                                lineNumber: 174,
+                                lineNumber: 176,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/AppointmentForm.jsx",
-                        lineNumber: 157,
+                        lineNumber: 159,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/AppointmentForm.jsx",
-                lineNumber: 84,
+                lineNumber: 86,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "mt-6 flex justify-center",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                    className: "px-6 py-3 rounded-xl bg-primary text-primary-foreground shadow-soft hover:bg-primary-dark transition",
-                    children: "Book Appointment"
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    href: "/payment-method",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        className: "px-6 py-3 rounded-xl bg-primary text-primary-foreground shadow-soft hover:bg-primary-dark transition",
+                        children: "Book Appointment"
+                    }, void 0, false, {
+                        fileName: "[project]/components/AppointmentForm.jsx",
+                        lineNumber: 197,
+                        columnNumber: 21
+                    }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/AppointmentForm.jsx",
-                    lineNumber: 194,
+                    lineNumber: 196,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/AppointmentForm.jsx",
-                lineNumber: 193,
+                lineNumber: 195,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/AppointmentForm.jsx",
-        lineNumber: 67,
+        lineNumber: 68,
         columnNumber: 9
     }, this);
 }
@@ -2271,7 +2290,7 @@ _c = AppointmentForm;
                 children: label
             }, void 0, false, {
                 fileName: "[project]/components/AppointmentForm.jsx",
-                lineNumber: 206,
+                lineNumber: 210,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2289,19 +2308,19 @@ _c = AppointmentForm;
                         ...rest
                     }, void 0, false, {
                         fileName: "[project]/components/AppointmentForm.jsx",
-                        lineNumber: 211,
+                        lineNumber: 215,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/AppointmentForm.jsx",
-                lineNumber: 209,
+                lineNumber: 213,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/AppointmentForm.jsx",
-        lineNumber: 205,
+        lineNumber: 209,
         columnNumber: 9
     }, this);
 }
@@ -2324,7 +2343,7 @@ _c1 = InputField;
         children: children
     }, void 0, false, {
         fileName: "[project]/components/AppointmentForm.jsx",
-        lineNumber: 226,
+        lineNumber: 230,
         columnNumber: 9
     }, this);
 }

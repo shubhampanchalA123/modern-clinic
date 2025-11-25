@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -67,9 +68,11 @@ export default function CompactHeroSlider() {
           </p>
 
           <div className="flex gap-3 pt-6 flex-wrap">
-            <button className="px-5 py-3 rounded-xl bg-primary text-primary-foreground hover:opacity-90 transition font-medium">
-              Book Consultation
-            </button>
+            <Link href="#appointment-form">
+              <button className="px-5 py-3 rounded-xl bg-primary text-primary-foreground hover:opacity-90 transition font-medium">
+                Book Consultation
+              </button>
+            </Link>
 
             <button className="px-5 py-3 rounded-xl border border-primary/40 text-primary hover:bg-primary/10 transition font-medium">
               View Conditions

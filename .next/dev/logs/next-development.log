@@ -55,3 +55,277 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [00:02:36.747] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/migraine.jpg" "received" null
 [00:02:36.798] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/sleep.jpg" "received" null
 [00:02:36.802] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/science-scalp.jpg" "received" null
+[00:04:58.967] Browser WARN    Image with src "/images/before-after/male3-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:58.967] Browser WARN    Image with src "/images/before-after/male3-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:09.730] Browser WARN    Image with src "/images/before-after/female1-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:09.730] Browser WARN    Image with src "/images/before-after/female1-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:45.610] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/hairfall.jpg" "received" null
+[00:05:45.614] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/alopecia.jpg" "received" null
+[00:05:45.616] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/dandruff.jpg" "received" null
+[00:05:45.623] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/stress.jpg" "received" null
+[00:05:45.658] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/thyroid.jpg" "received" null
+[00:05:45.662] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/acne.jpg" "received" null
+[00:05:46.389] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/immunity.jpg" "received" null
+[00:05:46.392] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/migraine.jpg" "received" null
+[00:05:46.395] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/sleep.jpg" "received" null
+[00:05:46.405] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/science-scalp.jpg" "received" null
+[00:05:49.961] Browser LOG     Incoming slug: thyroid-hairfall-connection
+[00:05:49.961] Browser LOG     Blog keys: ["how-hair-fall-starts","alopecia-areata-causes-homeopathy","dandruff-vs-dry-scalp","acne-hidden-triggers","thyroid-hairfall-connection","stress-hairfall-cortisol","boost-immunity-naturally","migraine-causes-patterns","sleep-disturbance-hormone-link","healthy-scalp-science"]
+[00:05:49.961] Browser LOG     Incoming slug: thyroid-hairfall-connection
+[00:05:49.961] Browser LOG     Blog keys: ["how-hair-fall-starts","alopecia-areata-causes-homeopathy","dandruff-vs-dry-scalp","acne-hidden-triggers","thyroid-hairfall-connection","stress-hairfall-cortisol","boost-immunity-naturally","migraine-causes-patterns","sleep-disturbance-hormone-link","healthy-scalp-science"]
+[00:05:49.986] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/thyroid.jpg" "received" null
+[00:05:57.530] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/alopecia.jpg" "received" null
+[00:05:57.536] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/hairfall.jpg" "received" null
+[00:05:57.543] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/dandruff.jpg" "received" null
+[00:05:57.550] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/acne.jpg" "received" null
+[00:05:57.554] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/thyroid.jpg" "received" null
+[00:05:57.600] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/stress.jpg" "received" null
+[00:05:58.658] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/sleep.jpg" "received" null
+[00:05:58.665] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/immunity.jpg" "received" null
+[00:05:58.668] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/migraine.jpg" "received" null
+[00:05:58.682] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/images/blog/science-scalp.jpg" "received" null
+[00:17:41.807] Server  LOG      ○ Compiling /doctor ...
+[00:17:49.537] Browser WARN    Image with src "/images/doctor1.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:24.317] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:25.761] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:25.761] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:25.761] Browser WARN    Image with src "/images/conditions/hair.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:25.761] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:25.761] Browser WARN    Image with src "/images/conditions/skin.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:25.761] Browser WARN    Image with src "/images/conditions/respiratory.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:25.761] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:31:25.761] Browser WARN    Image with src "/images/conditions/child.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:25.761] Browser WARN    Image with src "/images/conditions/women.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:25.761] Browser WARN    Image with src "/images/conditions/diabetes.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:25.761] Browser WARN    Image with src "/images/conditions/weight.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:25.761] Browser WARN    Image with src "/images/conditions/mental.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:29.400] Browser WARN    Image with src "/images/before-after/male3-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:31:29.400] Browser WARN    Image with src "/images/before-after/male3-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:55:38.624] Browser WARN    Image with src "/images/before-after/female1-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:55:38.624] Browser WARN    Image with src "/images/before-after/female1-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:55:39.807] Browser WARN    Image with src "/images/before-after/male1-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:55:39.807] Browser WARN    Image with src "/images/before-after/male1-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:55:41.905] Browser WARN    Image with src "/images/before-after/male2-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:55:41.905] Browser WARN    Image with src "/images/before-after/male2-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:56:12.699] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:05:11.614] Browser WARN    Image with src "/images/before-after/female2-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:05:11.614] Browser WARN    Image with src "/images/before-after/female2-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:19:04.823] Server  LOG      ✓ Compiled in 3s
+[01:19:17.085] Server  LOG      ✓ Compiled in 1162ms
+[01:19:59.912] Server  LOG      ✓ Compiled in 403ms
+[01:20:03.260] Server  LOG      ✓ Compiled in 267ms
+[01:20:04.388] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:20:09.361] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:20:11.989] Server  LOG      ✓ Compiled in 261ms
+[01:20:11.994] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:20:12.700] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:20:14.384] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:20:15.839] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:20:15.840] Server  LOG      ✓ Compiled in 368ms
+[01:20:19.566] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:20:21.389] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:20:25.384] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:20:25.398] Server  LOG      ✓ Compiled in 216ms
+[01:20:26.866] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:20:27.933] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:20:27.933] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:20:27.945] Server  LOG      ✓ Compiled in 267ms
+[01:20:29.091] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:20:30.247] Server  LOG      ✓ Compiled in 284ms
+[01:20:30.261] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:20:30.261] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:20:31.308] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:20:32.448] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:20:33.801] Server  LOG      ✓ Compiled in 1133ms
+[01:20:34.383] Browser ERROR   ./components/AppointmentForm.jsx:194:41
+Parsing ecmascript source code failed
+  192 |             {/* CTA BUTTON */}
+  193 |             <div className="mt-6 flex justify-center">
+> 194 |                 <Link href="/"use client";
+      |                                         ^^
+  195 |
+  196 | import { motion } from "framer-motion";
+  197 | import Link from "next/link";
+
+Unterminated string constant
+
+Import traces:
+  Client Component Browser:
+    ./components/AppointmentForm.jsx [Client Component Browser]
+    ./app/page.jsx [Client Component Browser]
+    ./app/page.jsx [Server Component]
+
+  Client Component SSR:
+    ./components/AppointmentForm.jsx [Client Component SSR]
+    ./app/page.jsx [Client Component SSR]
+    ./app/page.jsx [Server Component]
+[01:20:34.729] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:20:34.739] Server  LOG      ✓ Compiled in 238ms
+[01:20:35.116] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:20:36.399] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:20:40.308] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:20:40.325] Server  LOG      ✓ Compiled in 317ms
+[01:20:42.216] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:20:43.164] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:20:58.125] Server  LOG      ✓ Compiled in 338ms
+[01:20:58.130] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:20:59.350] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:20:59.825] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:21:00.080] Server  LOG      ✓ Compiled in 6ms
+[01:21:01.398] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:21:02.366] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:21:02.383] Server  LOG      ✓ Compiled in 186ms
+[01:21:03.367] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:21:04.688] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:21:06.239] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:21:07.060] Server  LOG      ✓ Compiled in 192ms
+[01:21:07.407] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:21:08.392] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:21:10.544] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:21:10.549] Server  LOG      ✓ Compiled in 458ms
+[01:21:11.999] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:21:12.842] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:21:26.510] Server  LOG      ✓ Compiled in 552ms
+[01:21:26.597] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:21:26.624] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:21:28.454] Server  ERROR    ⨯ ReferenceError: i is not defined
+[01:21:28.494] Server  LOG      ✓ Compiled in 2ms
+[01:21:28.504] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:21:28.506] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:21:29.154] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:21:30.396] Browser ERROR   uncaughtError: ReferenceError: impo is not defined
+[01:21:31.246] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:21:31.247] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./components/AppointmentForm.jsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[01:21:31.255] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:21:31.282] Server  LOG      ✓ Compiled in 1273ms
+[01:21:32.773] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:21:34.203] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:21:34.203] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:21:34.203] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:21:34.203] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:21:34.203] Browser WARN    Image with src "/images/conditions/hair.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:21:34.203] Browser WARN    Image with src "/images/conditions/skin.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:21:34.203] Browser WARN    Image with src "/images/conditions/respiratory.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:21:34.203] Browser WARN    Image with src "/images/conditions/child.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:21:34.203] Browser WARN    Image with src "/images/conditions/women.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:21:34.203] Browser WARN    Image with src "/images/conditions/diabetes.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:21:34.203] Browser WARN    Image with src "/images/conditions/weight.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:21:34.203] Browser WARN    Image with src "/images/conditions/mental.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:21:35.558] Browser WARN    Image with src "/images/before-after/male3-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:21:35.558] Browser WARN    Image with src "/images/before-after/male3-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:21:44.072] Server  LOG      ○ Compiling /payment-method ...
+[01:21:47.697] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:22:03.952] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:22:08.073] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:26:30.560] Server  LOG      ✓ Compiled in 500ms
+[01:26:35.287] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:27:21.474] Server  LOG      ✓ Compiled in 1157ms
+[01:27:49.629] Server  LOG      ✓ Compiled in 292ms
+[01:28:00.103] Server  LOG      ✓ Compiled in 294ms
+[01:28:27.438] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:29:43.005] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:29:52.152] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:03.243] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:30:05.849] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:35:43.115] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:35:43.115] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:35:43.115] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:35:43.115] Browser WARN    Image with src "/images/conditions/hair.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:35:43.115] Browser WARN    Image with src "/images/conditions/skin.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:35:43.115] Browser WARN    Image with src "/images/conditions/respiratory.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:35:43.115] Browser WARN    Image with src "/images/conditions/child.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:35:43.115] Browser WARN    Image with src "/images/conditions/diabetes.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:35:43.115] Browser WARN    Image with src "/images/conditions/women.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:35:43.115] Browser WARN    Image with src "/images/conditions/weight.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:35:43.115] Browser WARN    Image with src "/images/conditions/mental.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:36:26.008] Server  LOG      ✓ Compiled in 236ms
+[01:36:28.904] Server  LOG      ✓ Compiled in 355ms
+[01:36:29.687] Server  LOG      ✓ Compiled in 249ms
+[01:36:29.777] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:36:33.477] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:36:33.484] Server  LOG      ✓ Compiled in 307ms
+[01:36:35.285] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:36:35.870] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:36:36.540] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:36:37.409] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:36:37.421] Server  LOG      ✓ Compiled in 204ms
+[01:36:38.553] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:36:39.269] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:36:42.929] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:36:42.941] Server  LOG      ✓ Compiled in 202ms
+[01:36:44.084] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:36:44.733] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:36:50.487] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:36:50.494] Server  LOG      ✓ Compiled in 178ms
+[01:36:51.626] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:36:52.321] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:36:55.457] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:36:56.901] Server  LOG      ✓ Compiled in 461ms
+[01:36:57.301] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:36:58.003] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:37:00.441] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:37:00.458] Server  LOG      ✓ Compiled in 234ms
+[01:37:01.533] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:37:02.200] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:37:06.859] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:37:06.872] Server  LOG      ✓ Compiled in 182ms
+[01:37:07.924] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:37:08.600] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:37:10.604] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:37:10.607] Server  LOG      ✓ Compiled in 332ms
+[01:37:12.140] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:37:12.776] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:37:13.939] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:37:14.840] Server  LOG      ✓ Compiled in 254ms
+[01:37:15.317] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:37:15.852] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:37:24.124] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:37:24.815] Server  LOG      ✓ Compiled in 294ms
+[01:37:25.123] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:37:25.638] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[01:37:27.503] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:37:29.743] Server  LOG      ✓ Compiled in 1762ms
+[01:37:30.174] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:37:31.519] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:31.519] Browser WARN    Image with src "/images/conditions/skin.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:31.519] Browser WARN    Image with src "/images/conditions/hair.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:31.519] Browser WARN    Image with src "/images/conditions/respiratory.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:31.519] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:31.519] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:31.519] Browser WARN    Image with src "/images/conditions/women.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:31.519] Browser WARN    Image with src "/images/conditions/diabetes.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:31.519] Browser WARN    Image with src "/images/conditions/weight.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:31.519] Browser WARN    Image with src "/images/conditions/mental.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:31.519] Browser WARN    Image with src "/images/conditions/child.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:31.519] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:37:34.327] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:37:39.832] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:37:40.607] Browser WARN    Image with src "/images/slider/hair.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:40.607] Browser WARN    Image with src "/images/slider/skin.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:40.607] Browser WARN    Image with src "/images/slider/weight.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:40.607] Browser WARN    Image with src "/images/conditions/hair.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:40.607] Browser WARN    Image with src "/images/conditions/skin.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:40.607] Browser WARN    Image with src "/images/conditions/respiratory.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:40.607] Browser WARN    Image with src "/images/slider/hair.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:37:40.607] Browser WARN    Image with src "/images/conditions/child.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:40.607] Browser WARN    Image with src "/images/conditions/women.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:40.607] Browser WARN    Image with src "/images/conditions/weight.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:40.607] Browser WARN    Image with src "/images/conditions/diabetes.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:40.607] Browser WARN    Image with src "/images/conditions/mental.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:42.114] Browser WARN    Image with src "/images/before-after/male3-after.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:37:42.114] Browser WARN    Image with src "/images/before-after/male3-before.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:38:27.231] Server  LOG      ✓ Compiled in 465ms
+[01:38:28.583] Server  LOG      ✓ Compiled in 271ms
+[01:38:28.655] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
+
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true id id true id
+[01:38:30.914] Server  LOG      ✓ Compiled in 303ms
+[01:38:33.828] Server  LOG      ✓ Compiled in 225ms
+[01:38:51.929] Server  LOG      ✓ Compiled in 236ms
+[01:38:52.929] Server  LOG      ✓ Compiled in 171ms
+[01:38:54.996] Server  LOG      ✓ Compiled in 312ms
+[01:38:58.157] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
