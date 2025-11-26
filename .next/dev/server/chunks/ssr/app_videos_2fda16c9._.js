@@ -186,20 +186,25 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 "use client";
 ;
 ;
-function VideoCard({ id, title }) {
+function VideoCard({ id, title, compact = false }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$motion$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
         whileHover: {
             scale: 1.02,
-            translateY: -4
+            translateY: -3
         },
         transition: {
-            duration: 0.35,
+            duration: 0.25,
             ease: "easeOut"
         },
-        className: "   bg-card/80 backdrop-blur-xl    border border-border rounded-2xl    shadow-[0_8px_24px_rgba(0,0,0,0.08)]   hover:shadow-[0_12px_28px_rgba(0,0,0,0.14)]   overflow-hidden   max-w-md mx-auto   ",
+        className: `
+        bg-card/70 backdrop-blur-xl border border-border 
+        rounded-xl shadow-sm hover:shadow-lg 
+        overflow-hidden transition-all
+        ${compact ? "max-w-sm mx-auto" : "max-w-md mx-auto"}
+      `,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full aspect-video overflow-hidden rounded-b-xl",
+                className: compact ? "aspect-[16/10]" : "aspect-video",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
                     src: `https://www.youtube.com/embed/${id}`,
                     title: title,
@@ -207,27 +212,30 @@ function VideoCard({ id, title }) {
                     allowFullScreen: true
                 }, void 0, false, {
                     fileName: "[project]/app/videos/VideoCard.jsx",
-                    lineNumber: 20,
+                    lineNumber: 18,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/videos/VideoCard.jsx",
-                lineNumber: 19,
+                lineNumber: 17,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "p-4",
+                className: "p-3",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                    className: "text-base md:text-lg font-semibold text-foreground leading-snug",
+                    className: `
+            font-semibold text-foreground 
+            ${compact ? "text-sm" : "text-base md:text-lg"}
+          `,
                     children: title
                 }, void 0, false, {
                     fileName: "[project]/app/videos/VideoCard.jsx",
-                    lineNumber: 30,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/videos/VideoCard.jsx",
-                lineNumber: 29,
+                lineNumber: 27,
                 columnNumber: 7
             }, this)
         ]

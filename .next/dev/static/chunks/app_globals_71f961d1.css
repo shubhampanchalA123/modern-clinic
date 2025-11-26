@@ -1163,6 +1163,10 @@ img, video {
   aspect-ratio: 16 / 9;
 }
 
+.aspect-\[16\/10\] {
+  aspect-ratio: 16 / 10;
+}
+
 .\!h-12 {
   height: 3rem !important;
 }
@@ -2909,6 +2913,12 @@ html {
 .hover\:shadow-xl:hover {
   --tw-shadow: 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:shadow-lg:hover {
+  --tw-shadow: 0 10px 25px #0000002e;
+  --tw-shadow-colored: 0 10px 25px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 

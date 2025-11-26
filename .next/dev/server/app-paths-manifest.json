@@ -2,7 +2,11 @@
   "/_not-found/page": "app/_not-found/page.js",
   "/case-studies/page": "app/case-studies/page.js",
   "/conditions/alopecia/page": "app/conditions/alopecia/page.js",
+  "/conditions/arthritis/page": "app/conditions/arthritis/page.js",
+  "/conditions/behavioral-support/page": "app/conditions/behavioral-support/page.js",
+  "/conditions/dandruff/page": "app/conditions/dandruff/page.js",
   "/conditions/hair-fall/page": "app/conditions/hair-fall/page.js",
+  "/conditions/low-immunity/page": "app/conditions/low-immunity/page.js",
   "/page": "app/page.js",
   "/payment-method/page": "app/payment-method/page.js",
   "/videos/page": "app/videos/page.js"

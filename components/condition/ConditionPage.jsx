@@ -6,6 +6,10 @@ import { Button } from "@/components/ui/button";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import VideoReels from "@/components/VideoReels";
+import { usePathname } from "next/navigation";
+import { videoList } from "@/app/videos/data";
+import VideoCard from "@/app/videos/VideoCard";
+
 
 
 export default function ConditionPage(props) {
@@ -23,6 +27,36 @@ export default function ConditionPage(props) {
   } = props || {};
 
   const fadeUp = { initial: { opacity: 0, y: 12 }, animate: { opacity: 1, y: 0 } };
+
+
+  const pathname = usePathname();
+
+  // Extract the condition slug (ex: /conditions/hair-fall → "hair-fall")
+  const slug = pathname.split("/").pop();
+
+  // Map slugs → video categories
+  const videoCategoryMap = {
+    "hair-fall": "Hair Fall",
+    "alopecia": "Alopecia",
+    "dandruff": "Dandruff",
+    "acne": "Acne",
+    "eczema": "Eczema",
+    "thyroid": "Thyroid",
+    "arthritis": "Arthritis",
+    "sinus": "Sinus",
+    "migraine": "Migraine",
+    "stress": "Stress",
+    "anxiety": "Anxiety",
+    "sleep-disturbance": "Sleep Disturbance",
+    "immunity": "Immunity",
+    "allergies": "Allergies",
+    "low-immunity": "Immunity",
+    "behavioral-support": "Child",
+  };
+
+  // Final category to use
+  const videoCategory = videoCategoryMap[slug];
+
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background via-background-soft to-background-muted">
@@ -71,7 +105,7 @@ export default function ConditionPage(props) {
       {/* HOW IT WORKS / TREATMENT STEPS */}
       <section id="how" className="max-w-7xl mx-auto px-6 py-20">
         <div className="text-center">
-          <h3 className="text-3xl font-bold text-foreground">How Our Treatment Works</h3>
+          <h3 className="text-4xl font-bold text-foreground">How Our <span className="text-primary">Treatment Works</span> </h3>
           <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">A medically guided step-by-step plan tailored for this condition.</p>
         </div>
 
@@ -103,7 +137,7 @@ export default function ConditionPage(props) {
       {/* ROOT CAUSES */}
       <section className="max-w-7xl mx-auto px-6 py-10 md:py-16">
         <div className="text-center">
-          <h3 className="text-3xl font-bold text-foreground">What’s Causing This Condition?</h3>
+          <h3 className="text-4xl font-bold text-foreground"><span className="text-primary">What’s Causing</span> This Condition?</h3>
           <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">We diagnose underlying triggers and address the root causes, not just symptoms.</p>
         </div>
 
@@ -141,7 +175,7 @@ export default function ConditionPage(props) {
       {/* SYMPTOMS */}
       <section className="max-w-7xl mx-auto px-6 py-10 md:py-16">
         <div className="text-center mb-12">
-          <h3 className="text-3xl font-bold text-foreground">Common Symptoms</h3>
+          <h3 className="text-4xl font-bold text-foreground">Common <span className="text-primary">Symptoms</span></h3>
           <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
             Symptoms vary from person to person — here are the most commonly reported ones.
           </p>
@@ -188,10 +222,38 @@ export default function ConditionPage(props) {
       <div className="w-full h-12 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.08)]" />
 
 
+      {/* RELATED VIDEOS SECTION */}
+      {videoCategory && (
+        <section className="py-10">
+          <h3 className="text-4xl font-bold text-center text-foreground mb-10">
+            Related <span className="text-primary">Videos</span>
+          </h3>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {videoList
+              .filter((v) => v.category === videoCategory)
+              .slice(0, 6)
+              .map((v, idx) => (
+                <VideoCard key={idx} id={v.id} title={v.title} compact />
+              ))}
+          </div>
+
+          {videoList.filter((v) => v.category === videoCategory).length === 0 && (
+            <p className="text-muted-foreground text-center mt-3">
+              No related videos available yet.
+            </p>
+          )}
+        </section>
+      )}
+
+{/* Shadow Divider */}
+      <div className="w-full h-12 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.08)]" />
+
+
       {/* BENEFITS */}
       <section className="max-w-7xl mx-auto px-6 py-10 md:py-16">
         <div className="text-center mb-12">
-          <h3 className="text-3xl font-bold text-foreground">Benefits of Our Approach</h3>
+          <h3 className="text-4xl font-bold text-foreground"><span className="text-primary">Benefits</span> of Our Approach</h3>
           <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
             Why patients trust us for long-term healing.
           </p>
@@ -241,17 +303,6 @@ export default function ConditionPage(props) {
       </section>
 
 
-      {/* VIDEOS (optional) */}
-      {videos && videos.length > 0 && (
-        <section className="max-w-7xl mx-auto px-6 py-10">
-          <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold text-foreground">Videos & Case Studies</h3>
-            <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">Watch short reels and case study clips.</p>
-          </div>
-
-          <VideoReels videos={videos} />
-        </section>
-      )}
 
 
       {/* Shadow Divider */}
