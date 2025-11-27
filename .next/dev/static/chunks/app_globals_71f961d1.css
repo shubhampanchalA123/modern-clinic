@@ -261,58 +261,58 @@ img, video {
 }
 
 :root {
-  --background: 156 40% 96%;
-  --foreground: 168 15% 20%;
-  --card: 0 0% 100%;
-  --card-foreground: 168 15% 20%;
-  --popover: 0 0% 100%;
-  --popover-foreground: 168 15% 20%;
-  --primary: 171 47% 42%;
+  --background: 189 75% 96%;
+  --foreground: 236 30% 20%;
+  --card: 189 75% 88%;
+  --card-foreground: 236 30% 20%;
+  --popover: 189 75% 88%;
+  --popover-foreground: 236 30% 20%;
+  --primary: 199 100% 36%;
   --primary-foreground: 0 0% 98%;
-  --secondary: 158 32% 92%;
-  --secondary-foreground: 168 15% 20%;
-  --accent: 43 55% 52%;
-  --accent-foreground: 0 0% 98%;
-  --muted: 160 28% 94%;
-  --muted-foreground: 168 10% 40%;
-  --destructive: 0 70% 55%;
+  --secondary: 190 71% 74%;
+  --secondary-foreground: 236 30% 18%;
+  --accent: 188 100% 42%;
+  --accent-foreground: 0 0% 100%;
+  --muted: 189 75% 92%;
+  --muted-foreground: 236 20% 35%;
+  --destructive: 0 75% 55%;
   --destructive-foreground: 0 0% 98%;
-  --border: 160 15% 82%;
-  --input: 160 15% 78%;
-  --ring: 171 47% 42%;
-  --chart-1: 171 47% 42%;
-  --chart-2: 158 32% 52%;
-  --chart-3: 43 55% 60%;
-  --chart-4: 168 12% 35%;
-  --chart-5: 5 75% 57%;
+  --border: 189 45% 78%;
+  --input: 189 45% 74%;
+  --ring: 199 100% 36%;
+  --chart-1: 199 100% 36%;
+  --chart-2: 190 71% 60%;
+  --chart-3: 188 100% 42%;
+  --chart-4: 236 40% 35%;
+  --chart-5: 0 75% 55%;
   --radius: .5rem;
 }
 
 .dark {
-  --background: 168 40% 8%;
-  --foreground: 158 45% 94%;
-  --card: 168 35% 10%;
-  --card-foreground: 158 45% 95%;
-  --popover: 168 35% 10%;
-  --popover-foreground: 158 45% 95%;
-  --primary: 171 60% 55%;
-  --primary-foreground: 168 40% 8%;
-  --secondary: 168 25% 18%;
-  --secondary-foreground: 158 45% 95%;
-  --accent: 43 50% 55%;
-  --accent-foreground: 168 40% 8%;
-  --muted: 168 25% 18%;
-  --muted-foreground: 158 20% 70%;
-  --destructive: 0 65% 45%;
-  --destructive-foreground: 158 45% 95%;
-  --border: 168 20% 28%;
-  --input: 168 20% 28%;
-  --ring: 171 60% 55%;
-  --chart-1: 171 60% 55%;
-  --chart-2: 158 40% 55%;
-  --chart-3: 43 55% 55%;
-  --chart-4: 168 15% 55%;
-  --chart-5: 5 80% 55%;
+  --background: 236 94% 12%;
+  --foreground: 189 75% 92%;
+  --card: 236 94% 16%;
+  --card-foreground: 189 75% 92%;
+  --popover: 236 94% 16%;
+  --popover-foreground: 189 75% 92%;
+  --primary: 199 100% 55%;
+  --primary-foreground: 236 94% 12%;
+  --secondary: 190 40% 22%;
+  --secondary-foreground: 189 75% 92%;
+  --accent: 188 100% 50%;
+  --accent-foreground: 236 94% 12%;
+  --muted: 236 40% 22%;
+  --muted-foreground: 189 35% 70%;
+  --destructive: 0 70% 55%;
+  --destructive-foreground: 189 75% 92%;
+  --border: 236 40% 28%;
+  --input: 236 40% 28%;
+  --ring: 199 100% 55%;
+  --chart-1: 199 100% 55%;
+  --chart-2: 190 70% 55%;
+  --chart-3: 188 100% 50%;
+  --chart-4: 236 40% 55%;
+  --chart-5: 0 80% 55%;
 }
 
 .border {
@@ -1155,16 +1155,16 @@ img, video {
   display: none;
 }
 
+.aspect-\[16\/10\] {
+  aspect-ratio: 16 / 10;
+}
+
 .aspect-\[4\/3\] {
   aspect-ratio: 4 / 3;
 }
 
 .aspect-video {
   aspect-ratio: 16 / 9;
-}
-
-.aspect-\[16\/10\] {
-  aspect-ratio: 16 / 10;
 }
 
 .\!h-12 {
@@ -1864,10 +1864,6 @@ img, video {
   background-color: hsl(var(--card) / .7);
 }
 
-.bg-card\/80 {
-  background-color: hsl(var(--card) / .8);
-}
-
 .bg-card\/90 {
   background-color: hsl(var(--card) / .9);
 }
@@ -2443,12 +2439,6 @@ img, video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-\[0_8px_24px_rgba\(0\,0\,0\,0\.08\)\] {
-  --tw-shadow: 0 8px 24px #00000014;
-  --tw-shadow-colored: 0 8px 24px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-\[0_8px_30px_rgba\(0\,0\,0\,0\.08\)\] {
   --tw-shadow: 0 8px 30px #00000014;
   --tw-shadow-colored: 0 8px 30px var(--tw-shadow-color);
@@ -2892,9 +2882,9 @@ html {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.hover\:shadow-\[0_12px_28px_rgba\(0\,0\,0\,0\.14\)\]:hover {
-  --tw-shadow: 0 12px 28px #00000024;
-  --tw-shadow-colored: 0 12px 28px var(--tw-shadow-color);
+.hover\:shadow-lg:hover {
+  --tw-shadow: 0 10px 25px #0000002e;
+  --tw-shadow-colored: 0 10px 25px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -2913,12 +2903,6 @@ html {
 .hover\:shadow-xl:hover {
   --tw-shadow: 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.hover\:shadow-lg:hover {
-  --tw-shadow: 0 10px 25px #0000002e;
-  --tw-shadow-colored: 0 10px 25px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -2947,12 +2931,12 @@ html {
   cursor: not-allowed;
 }
 
-.disabled\:opacity-50:disabled {
-  opacity: .5;
-}
-
 .disabled\:opacity-40:disabled {
   opacity: .4;
+}
+
+.disabled\:opacity-50:disabled {
+  opacity: .5;
 }
 
 .group[open] .group-open\:rotate-180 {

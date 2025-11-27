@@ -7,108 +7,118 @@ body {
 }
 
 /* Hide scrollbar */
-.no-scrollbar::-webkit-scrollbar { display: none; }
-.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
 
 @layer base {
   :root {
-    /* 🌿 Calming Wellness – Updated Soft Medical Theme */
+    /* --- NEW PREMIUM BLUE–TEAL THEME --- */
 
-    /* BASE BACKGROUND / TEXT */
-    --background: 156 40% 96%;         /* Soft mint-white */
-    --foreground: 168 15% 20%;         /* Deep teal-gray text */
+    /* BACKGROUNDS */
+    --background: 189 75% 96%;
+    /* softer version of #caf0f8 */
+    --foreground: 236 30% 20%;
+    /* dark twilight text */
 
     /* SURFACES */
-    --card: 0 0% 100%;
-    --card-foreground: 168 15% 20%;
+    --card: 189 75% 88%;
+    /* #caf0f8 */
+    --card-foreground: 236 30% 20%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 168 15% 20%;
+    --popover: 189 75% 88%;
+    --popover-foreground: 236 30% 20%;
 
-    /* PRIMARY — Soft Medical Teal */
-    --primary: 171 47% 42%;            /* #1CA89B */
+    /* PRIMARY — Bright Teal Blue (#0077b6) */
+    --primary: 199 100% 36%;
     --primary-foreground: 0 0% 98%;
 
-    /* SECONDARY — Light Sage */
-    --secondary: 158 32% 92%;          /* #E6F4F1 */
-    --secondary-foreground: 168 15% 20%;
+    /* SECONDARY — Frosted Blue (#90e0ef) */
+    --secondary: 190 71% 74%;
+    --secondary-foreground: 236 30% 18%;
 
-    /* ACCENT — Muted Gold (Premium) */
-    --accent: 43 55% 52%;
-    --accent-foreground: 0 0% 98%;
+    /* ACCENT — Turquoise Surf (#00b4d8) */
+    --accent: 188 100% 42%;
+    --accent-foreground: 0 0% 100%;
 
-    /* MUTED / SUBTLE TEXT */
-    --muted: 160 28% 94%;              /* Very soft mint */
-    --muted-foreground: 168 10% 40%;    /* Gray-green text */
+    /* MUTED TEXT / BACKGROUND */
+    --muted: 189 75% 92%;
+    --muted-foreground: 236 20% 35%;
 
     /* DESTRUCTIVE */
-    --destructive: 0 70% 55%;
+    --destructive: 0 75% 55%;
     --destructive-foreground: 0 0% 98%;
 
-    /* UI BORDERS & INPUTS */
-    --border: 160 15% 82%;              /* Soft border mint-gray */
-    --input: 160 15% 78%;
-    --ring: 171 47% 42%;                /* teal ring */
+    /* BORDERS / INPUT */
+    --border: 189 45% 78%;
+    /* soft frosted border */
+    --input: 189 45% 74%;
+    --ring: 199 100% 36%;
+    /* primary ring */
 
     /* CHART COLORS */
-    --chart-1: 171 47% 42%;
-    --chart-2: 158 32% 52%;
-    --chart-3: 43 55% 60%;
-    --chart-4: 168 12% 35%;
-    --chart-5: 5 75% 57%;
+    --chart-1: 199 100% 36%;
+    --chart-2: 190 71% 60%;
+    --chart-3: 188 100% 42%;
+    --chart-4: 236 40% 35%;
+    --chart-5: 0 75% 55%;
 
-    /* RADIUS */
     --radius: 0.5rem;
   }
 
-  /* 🌙 DARK MODE – Calming Deep Teal Theme */
+  /* DARK MODE — Deep Twilight Theme */
   .dark {
-    --background: 168 40% 8%;           /* Deep teal-black */
-    --foreground: 158 45% 94%;
+    --background: 236 94% 12%;
+    /* #03045e but slightly softened */
+    --foreground: 189 75% 92%;
 
-    --card: 168 35% 10%;
-    --card-foreground: 158 45% 95%;
+    --card: 236 94% 16%;
+    --card-foreground: 189 75% 92%;
 
-    --popover: 168 35% 10%;
-    --popover-foreground: 158 45% 95%;
+    --popover: 236 94% 16%;
+    --popover-foreground: 189 75% 92%;
 
-    /* PRIMARY – brighter teal for dark mode */
-    --primary: 171 60% 55%;
-    --primary-foreground: 168 40% 8%;
+    --primary: 199 100% 55%;
+    /* brighter for dark mode */
+    --primary-foreground: 236 94% 12%;
 
-    /* SECONDARY – soft dark sage */
-    --secondary: 168 25% 18%;
-    --secondary-foreground: 158 45% 95%;
+    --secondary: 190 40% 22%;
+    --secondary-foreground: 189 75% 92%;
 
-    /* ACCENT – warm soft gold */
-    --accent: 43 50% 55%;
-    --accent-foreground: 168 40% 8%;
+    --accent: 188 100% 50%;
+    --accent-foreground: 236 94% 12%;
 
-    --muted: 168 25% 18%;
-    --muted-foreground: 158 20% 70%;
+    --muted: 236 40% 22%;
+    --muted-foreground: 189 35% 70%;
 
-    --destructive: 0 65% 45%;
-    --destructive-foreground: 158 45% 95%;
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 189 75% 92%;
 
-    --border: 168 20% 28%;
-    --input: 168 20% 28%;
-    --ring: 171 60% 55%;
+    --border: 236 40% 28%;
+    --input: 236 40% 28%;
+    --ring: 199 100% 55%;
 
-    /* CHART COLORS */
-    --chart-1: 171 60% 55%;
-    --chart-2: 158 40% 55%;
-    --chart-3: 43 55% 55%;
-    --chart-4: 168 15% 55%;
-    --chart-5: 5 80% 55%;
+    --chart-1: 199 100% 55%;
+    --chart-2: 190 70% 55%;
+    --chart-3: 188 100% 50%;
+    --chart-4: 236 40% 55%;
+    --chart-5: 0 80% 55%;
   }
 }
+
 
 
 @layer base {
   .border {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -120,12 +130,15 @@ body {
 .flip-container {
   transform-style: preserve-3d;
 }
+
 .backface-hidden {
   backface-visibility: hidden;
 }
+
 .rotate-y-180 {
   transform: rotateY(180deg);
 }
+
 .group:hover .flip-container {
   transform: rotateY(180deg);
 }
@@ -134,4 +147,3 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
