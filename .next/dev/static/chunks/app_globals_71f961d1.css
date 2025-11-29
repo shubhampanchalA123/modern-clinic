@@ -1896,6 +1896,10 @@ img, video {
   background-color: hsl(var(--secondary));
 }
 
+.bg-secondary\/20 {
+  background-color: hsl(var(--secondary) / .2);
+}
+
 .bg-secondary\/40 {
   background-color: hsl(var(--secondary) / .4);
 }
@@ -1922,6 +1926,15 @@ img, video {
 
 .bg-white\/40 {
   background-color: #fff6;
+}
+
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity, 1));
+}
+
+.bg-secondary\/30 {
+  background-color: hsl(var(--secondary) / .3);
 }
 
 .bg-gradient-to-b {
@@ -1979,21 +1992,12 @@ img, video {
   --tw-gradient-stops: var(--tw-gradient-from), #0000001a var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
-.via-secondary\/10 {
-  --tw-gradient-to: hsl(var(--secondary) / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), hsl(var(--secondary) / .1) var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
 .to-accent {
   --tw-gradient-to: hsl(var(--accent)) var(--tw-gradient-to-position);
 }
 
 .to-background {
   --tw-gradient-to: hsl(var(--background)) var(--tw-gradient-to-position);
-}
-
-.to-secondary\/30 {
-  --tw-gradient-to: hsl(var(--secondary) / .3) var(--tw-gradient-to-position);
 }
 
 .to-secondary\/40 {
@@ -2812,8 +2816,8 @@ html {
   background-color: hsl(var(--primary) / .9);
 }
 
-.hover\:bg-secondary\/40:hover {
-  background-color: hsl(var(--secondary) / .4);
+.hover\:bg-secondary\/15:hover {
+  background-color: hsl(var(--secondary) / .15);
 }
 
 .hover\:bg-secondary\/50:hover {

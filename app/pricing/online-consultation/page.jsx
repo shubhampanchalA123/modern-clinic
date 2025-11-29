@@ -35,8 +35,8 @@ export default function OnlineConsultation() {
           </div>
 
           <div className="mt-6 flex gap-3 text-sm">
-            <div className="bg-secondary p-3 rounded-lg shadow-soft text-foreground">Secure video calls</div>
-            <div className="bg-secondary p-3 rounded-lg shadow-soft text-foreground">Home delivery of medicines</div>
+            <div className="bg-secondary/40 p-3 rounded-lg shadow-soft text-foreground">Secure video calls</div>
+            <div className="bg-secondary/40 p-3 rounded-lg shadow-soft text-foreground">Home delivery of medicines</div>
           </div>
         </motion.div>
 
@@ -90,7 +90,7 @@ export default function OnlineConsultation() {
       {/* FAQ + Testimonials */}
       <section id="faq" className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="p-6 rounded-2xl bg-secondary/40 border border-border">
+          <div className="p-6 rounded-2xl bg-secondary/20 border border-border">
             <h3 className="text-xl font-semibold text-foreground mb-4">Common Questions</h3>
             <div className="text-sm text-muted-foreground space-y-3">
               <div><strong>How long is a consult?</strong><div>Usually 15–30 minutes depending on the plan.</div></div>

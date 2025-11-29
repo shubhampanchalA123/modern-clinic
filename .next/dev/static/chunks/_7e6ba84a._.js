@@ -799,7 +799,7 @@ function Testimonials() {
                                     transition: {
                                         duration: 0.5
                                     },
-                                    className: "   group    rounded-2xl    p-6    bg-secondary/60    backdrop-blur-xl    border border-border   shadow-lg    hover:shadow-medium    hover:-translate-y-1   transition-all    duration-300   ",
+                                    className: "   group    rounded-2xl    p-6    bg-secondary/20    backdrop-blur-xl    border border-border   shadow-lg    hover:shadow-medium    hover:-translate-y-1   transition-all    duration-300   ",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex items-center justify-center gap-4 mb-5",
@@ -1002,7 +1002,7 @@ function FAQ({ limit }) {
     ];
     const visibleFaqs = limit ? faqs.slice(0, limit) : faqs;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "bg-gradient-to-b from-background to-secondary/30 py-8",
+        className: "bg-background py-8",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
             className: "max-w-5xl mx-auto px-6",
             children: [
@@ -1645,7 +1645,7 @@ function ConditionPage(props) {
                             highlights.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "mt-6 flex gap-3 text-sm",
                                 children: highlights.slice(0, 2).map((h, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "bg-secondary p-3 rounded-lg shadow-soft text-foreground",
+                                        className: "bg-secondary/40 p-3 rounded-lg shadow-soft text-foreground",
                                         children: h
                                     }, i, false, {
                                         fileName: "[project]/components/condition/ConditionPage.jsx",
@@ -1771,7 +1771,7 @@ function ConditionPage(props) {
                                 icon: null
                             }
                         ]).map((step, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "group rounded-2xl p-6 bg-secondary/60 backdrop-blur-xl border border-border shadow-lg transition-all duration-300 hover:-translate-y-1",
+                                className: "group rounded-2xl p-6 bg-background backdrop-blur-xl border border-border shadow-lg transition-all duration-300 hover:-translate-y-1",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-md mx-auto mb-5",
@@ -1906,7 +1906,7 @@ function ConditionPage(props) {
                                 icon: "/images/icons/nutrition.png"
                             }
                         ]).map((item, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "group rounded-2xl p-6 bg-secondary/60 backdrop-blur-xl border border-border shadow-lg transition-all duration-300 hover:-translate-y-1",
+                                className: "group rounded-2xl p-6 bg-background backdrop-blur-xl border border-border shadow-lg transition-all duration-300 hover:-translate-y-1",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "w-20 h-20 rounded-2xl flex items-center justify-center shadow-md mx-auto mb-4",

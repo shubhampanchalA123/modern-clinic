@@ -69,7 +69,7 @@ export default function FAQ({ limit }) {
   const visibleFaqs = limit ? faqs.slice(0, limit) : faqs;
 
   return (
-    <div className="bg-gradient-to-b from-background to-secondary/30 py-8">
+    <div className="bg-background py-8">
       <main className="max-w-5xl mx-auto px-6">
 
         {/* Heading */}

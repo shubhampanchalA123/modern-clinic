@@ -73,7 +73,7 @@ export default function SafetyAndResearch() {
           </div>
 
           <div className="mt-6 grid grid-cols-2 gap-3 max-w-sm">
-            <div className="flex items-center gap-3 bg-secondary p-3 rounded-lg shadow-soft">
+            <div className="flex items-center gap-3 bg-secondary/40 p-3 rounded-lg shadow-soft">
               <ShieldCheck className="text-primary" size={18} />
               <div>
                 <div className="text-xs text-muted-foreground">Safety</div>
@@ -81,7 +81,7 @@ export default function SafetyAndResearch() {
               </div>
             </div>
 
-            <div className="flex items-center gap-3 bg-secondary p-3 rounded-lg shadow-soft">
+            <div className="flex items-center gap-3 bg-secondary/40 p-3 rounded-lg shadow-soft">
               <BookOpen className="text-primary" size={18} />
               <div>
                 <div className="text-xs text-muted-foreground">Research</div>
@@ -181,7 +181,7 @@ export default function SafetyAndResearch() {
           <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
             <h3 className="text-2xl font-bold text-foreground mb-4">Safety Protocols</h3>
 
-            <div className="p-6 rounded-2xl bg-secondary/40 backdrop-blur-xl border border-border">
+            <div className="p-6 rounded-2xl bg-secondary/20 backdrop-blur-xl border border-border">
               <ul className="space-y-3">
                 {safetyPoints.map((p, i) => (
                   <li key={i} className="flex items-start gap-3">

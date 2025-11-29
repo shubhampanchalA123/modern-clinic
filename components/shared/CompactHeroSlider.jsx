@@ -36,7 +36,7 @@ export default function CompactHeroSlider() {
         w-full 
         px-6 md:px-12 lg:px-20
         pt-16 pb-12
-        bg-gradient-to-br from-background via-secondary/10 to-background
+        bg-background
       "
     >
       <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">

@@ -174,7 +174,7 @@ export default function DigitalDiagnosisMethod() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.45, delay: i * 0.08 }}
               viewport={{ once: true }}
-              className="p-6 rounded-2xl bg-secondary/40 border border-border backdrop-blur-xl shadow-sm"
+              className="p-6 rounded-2xl bg-background border border-border backdrop-blur-xl shadow-sm"
             >
               <div className="mb-4">{t.icon}</div>
               <h4 className="text-lg font-semibold text-foreground">{t.title}</h4>

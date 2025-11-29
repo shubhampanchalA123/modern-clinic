@@ -69,7 +69,7 @@ export default function ClinicConsultation() {
 
       <section className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="p-6 rounded-2xl bg-secondary/40 border border-border">
+          <div className="p-6 rounded-2xl bg-secondary/20 border border-border">
             <h3 className="text-lg font-semibold text-foreground">What to expect</h3>
             <p className="text-sm text-muted-foreground mt-3">A thorough physical examination, direct scalp evaluation and on-the-spot advice — we prioritise accuracy and safety.</p>
           </div>

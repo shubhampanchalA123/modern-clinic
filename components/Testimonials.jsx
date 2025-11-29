@@ -160,7 +160,7 @@ export default function Testimonials() {
         group 
         rounded-2xl 
         p-6 
-        bg-secondary/60 
+        bg-background 
         backdrop-blur-xl 
         border border-border
         shadow-lg 

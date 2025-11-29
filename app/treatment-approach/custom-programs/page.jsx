@@ -71,8 +71,8 @@ export default function CustomProgramsPage() {
             </div>
 
             <div className="mt-6 flex gap-3 text-sm">
-              <div className="bg-secondary p-3 rounded-lg shadow-soft text-foreground">Doctor-led plans</div>
-              <div className="bg-secondary p-3 rounded-lg shadow-soft text-foreground">Flexible payment options</div>
+              <div className="bg-secondary/40 p-3 rounded-lg shadow-soft text-foreground">Doctor-led plans</div>
+              <div className="bg-secondary/40 p-3 rounded-lg shadow-soft text-foreground">Flexible payment options</div>
             </div>
           </motion.div>
 
@@ -184,7 +184,7 @@ export default function CustomProgramsPage() {
           </motion.div>
 
           <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
-            <div className="rounded-2xl bg-secondary/50 backdrop-blur-xl p-6 border border-border">
+            <div className="rounded-2xl bg-secondary/20 backdrop-blur-xl p-6 border border-border">
               <h4 className="text-lg font-semibold text-foreground mb-4">Quick Customizer</h4>
 
               <form className="space-y-4">

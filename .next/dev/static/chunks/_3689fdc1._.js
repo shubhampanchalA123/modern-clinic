@@ -286,7 +286,7 @@ function DoctorProfile() {
                                     text: "Holistic Health & Lifestyle Medicine Training"
                                 }
                             ].map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "   group    p-6    rounded-2xl    bg-secondary/60    backdrop-blur-xl    border border-border    shadow-lg    hover:shadow-medium    transition-all    duration-300    hover:-translate-y-1   ",
+                                    className: "   group    p-6    rounded-2xl    bg-background    backdrop-blur-xl    border border-border    shadow-lg    hover:shadow-medium    transition-all    duration-300    hover:-translate-y-1   ",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "   w-12   h-12   rounded-xl   bg-gradient-to-br   from-primary   to-accent   flex   items-center   justify-center   shadow-md   mb-4   ",
@@ -449,7 +449,7 @@ function DoctorProfile() {
                                     desc: "Balancing cortisol, improving sleep & restoring hair growth cycles."
                                 }
                             ].map((step, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "   group    p-6    rounded-2xl    bg-secondary/60    backdrop-blur-xl    border border-border    shadow-lg    hover:shadow-medium    transition-all    duration-300    hover:-translate-y-1   ",
+                                    className: "   group    p-6    rounded-2xl    bg-background    backdrop-blur-xl    border border-border    shadow-lg    hover:shadow-medium    transition-all    duration-300    hover:-translate-y-1   ",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "   w-14    h-14    rounded-xl    bg-gradient-to-br    from-primary    to-accent    flex    items-center    justify-center    shadow-md    mb-5   ",
@@ -531,7 +531,7 @@ function DoctorProfile() {
                                     quote: "The 3-step program was life-changing. My scalp health improved drastically."
                                 }
                             ].map((t, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "   group   p-6    rounded-2xl    bg-secondary/60    backdrop-blur-xl    border border-border    shadow-lg    hover:shadow-medium    transition-all    duration-300    hover:-translate-y-1   ",
+                                    className: "   group   p-6    rounded-2xl    bg-background    backdrop-blur-xl    border border-border    shadow-lg    hover:shadow-medium    transition-all    duration-300    hover:-translate-y-1   ",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "italic text-center text-muted-foreground leading-relaxed",

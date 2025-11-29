@@ -69,7 +69,7 @@ export default function DoctorProfile() {
         group 
         p-6 
         rounded-2xl 
-        bg-secondary/60 
+        bg-background 
         backdrop-blur-xl 
         border border-border 
         shadow-lg 
@@ -172,7 +172,7 @@ export default function DoctorProfile() {
         group 
         p-6 
         rounded-2xl 
-        bg-secondary/60 
+        bg-background 
         backdrop-blur-xl 
         border border-border 
         shadow-lg 
@@ -260,7 +260,7 @@ export default function DoctorProfile() {
         group
         p-6 
         rounded-2xl 
-        bg-secondary/60 
+        bg-background 
         backdrop-blur-xl 
         border border-border 
         shadow-lg 

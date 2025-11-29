@@ -709,7 +709,7 @@ function Testimonials() {
                                     transition: {
                                         duration: 0.5
                                     },
-                                    className: "   group    rounded-2xl    p-6    bg-secondary/60    backdrop-blur-xl    border border-border   shadow-lg    hover:shadow-medium    hover:-translate-y-1   transition-all    duration-300   ",
+                                    className: "   group    rounded-2xl    p-6    bg-secondary/20    backdrop-blur-xl    border border-border   shadow-lg    hover:shadow-medium    hover:-translate-y-1   transition-all    duration-300   ",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex items-center justify-center gap-4 mb-5",
@@ -973,7 +973,7 @@ function CustomProgramsPage() {
                                     className: "mt-6 flex gap-3 text-sm",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "bg-secondary p-3 rounded-lg shadow-soft text-foreground",
+                                            className: "bg-secondary/40 p-3 rounded-lg shadow-soft text-foreground",
                                             children: "Doctor-led plans"
                                         }, void 0, false, {
                                             fileName: "[project]/app/treatment-approach/custom-programs/page.jsx",
@@ -981,7 +981,7 @@ function CustomProgramsPage() {
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "bg-secondary p-3 rounded-lg shadow-soft text-foreground",
+                                            className: "bg-secondary/40 p-3 rounded-lg shadow-soft text-foreground",
                                             children: "Flexible payment options"
                                         }, void 0, false, {
                                             fileName: "[project]/app/treatment-approach/custom-programs/page.jsx",
@@ -1366,7 +1366,7 @@ function CustomProgramsPage() {
                                 duration: 0.6
                             },
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "rounded-2xl bg-secondary/50 backdrop-blur-xl p-6 border border-border",
+                                className: "rounded-2xl bg-secondary/20 backdrop-blur-xl p-6 border border-border",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                         className: "text-lg font-semibold text-foreground mb-4",

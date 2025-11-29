@@ -127,7 +127,7 @@ export default function AppointmentForm() {
                         onClick={() =>
                             setOpenDropdown(openDropdown === "region" ? null : "region")
                         }
-                        className="flex items-center justify-between bg-secondary/50 border border-border px-3 py-2 rounded-xl w-full text-foreground"
+                        className="flex items-center justify-between bg-background border border-border px-3 py-2 rounded-xl w-full text-foreground"
                     >
                         <div className="flex items-center gap-2">
                             <MapPin size={18} className="text-primary" />
@@ -146,7 +146,7 @@ export default function AppointmentForm() {
                                         setForm({ ...form, region: r });
                                         setOpenDropdown(null);
                                     }}
-                                    className="px-3 py-2 hover:bg-secondary/40 rounded-lg cursor-pointer text-sm"
+                                    className="px-3 py-2 hover:bg-secondary/15 rounded-lg cursor-pointer text-sm"
                                 >
                                     {r}
                                 </div>
@@ -165,7 +165,7 @@ export default function AppointmentForm() {
                         onClick={() =>
                             setOpenDropdown(openDropdown === "disease" ? null : "disease")
                         }
-                        className="flex items-center justify-between bg-secondary/50 border border-border px-3 py-3 rounded-xl w-full text-foreground"
+                        className="flex items-center justify-between bg-background border border-border px-3 py-3 rounded-xl w-full text-foreground"
                     >
                         {form.disease || "Select Condition"}
                         <ChevronDown size={16} />
@@ -181,7 +181,7 @@ export default function AppointmentForm() {
                                         setForm({ ...form, disease: d });
                                         setOpenDropdown(null);
                                     }}
-                                    className="px-3 py-2 hover:bg-secondary/40 rounded-lg cursor-pointer text-sm"
+                                    className="px-3 py-2 hover:bg-secondary/15 rounded-lg cursor-pointer text-sm"
                                 >
                                     {d}
                                 </div>
@@ -210,7 +210,7 @@ function InputField({ icon, label, name, setForm, value, ...rest }) {
             <label className="text-sm font-medium text-foreground mb-1">
                 {label}
             </label>
-            <div className="flex items-center gap-2 bg-secondary/50 border border-border px-3 py-2 rounded-xl">
+            <div className="flex items-center gap-2 bg-background border border-border px-3 py-2 rounded-xl">
                 {icon}
                 <input
                     name={name}

@@ -106,7 +106,7 @@ export default function HomeVsClinicCare() {
           {...fadeUp}
           transition={{ duration: 0.6 }}
           className="
-            p-10 rounded-3xl bg-secondary/40 backdrop-blur-xl 
+            p-10 rounded-3xl bg-secondary/20 backdrop-blur-xl 
             border border-border shadow-md
           "
         >
@@ -147,7 +147,7 @@ export default function HomeVsClinicCare() {
                 ],
               },
             ].map((block, i) => (
-              <div key={i} className="p-5 rounded-2xl bg-card/70 backdrop-blur-xl border border-border">
+              <div key={i} className="p-5 rounded-2xl bg-background backdrop-blur-xl border border-border">
                 <h4 className="text-lg font-semibold text-foreground mb-4">{block.title}</h4>
                 <ul className="space-y-2">
                   {block.points.map((p, idx) => (

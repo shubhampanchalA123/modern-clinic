@@ -106,15 +106,15 @@ export default function Footer() {
           <div className="flex items-center gap-4 mt-5">
             <SocialIcon
               href="https://wa.me/919770799998"
-              icon={<FaWhatsapp size={22} />}
+              icon={<FaWhatsapp size={22} color="#25D366" />}
             />
             <SocialIcon
               href="https://www.instagram.com/askdrdevendra"
-              icon={<FaInstagram size={22} />}
+              icon={<FaInstagram size={22} color="#E1306C" />}
             />
             <SocialIcon
               href="https://www.youtube.com/@ModernHealthNutrition"
-              icon={<FaYoutube size={24} />}
+              icon={<FaYoutube size={24} color="#FF0000" />}
             />
           </div>
         </div>
@@ -145,7 +145,7 @@ function SocialIcon({ href, icon }) {
     <a
       href={href}
       target="_blank"
-      className="w-10 h-10 rounded-xl bg-secondary/50 border border-border flex items-center justify-center text-primary hover:bg-secondary/70 transition"
+      className="w-10 h-10 rounded-xl border border-border flex items-center justify-center transition"
     >
       {icon}
     </a>

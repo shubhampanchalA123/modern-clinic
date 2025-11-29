@@ -82,7 +82,7 @@ export default function ConditionPage(props) {
           {highlights.length > 0 && (
             <div className="mt-6 flex gap-3 text-sm">
               {highlights.slice(0, 2).map((h, i) => (
-                <div key={i} className="bg-secondary p-3 rounded-lg shadow-soft text-foreground">{h}</div>
+                <div key={i} className="bg-secondary/40 p-3 rounded-lg shadow-soft text-foreground">{h}</div>
               ))}
             </div>
           )}
@@ -115,7 +115,7 @@ export default function ConditionPage(props) {
             { title: "Personalized Treatment", desc: "Custom homeopathic prescriptions & plan.", icon: null },
             { title: "Nutrition & Lifestyle", desc: "Dietary and lifestyle changes for long-term results.", icon: null }
           ]).map((step, i) => (
-            <div key={i} className="group rounded-2xl p-6 bg-secondary/60 backdrop-blur-xl border border-border shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <div key={i} className="group rounded-2xl p-6 bg-background backdrop-blur-xl border border-border shadow-lg transition-all duration-300 hover:-translate-y-1">
               <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-md mx-auto mb-5">
                 {step.icon ?? <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="white" strokeWidth="1.5" /></svg>}
               </div>
@@ -147,7 +147,7 @@ export default function ConditionPage(props) {
             { title: "Lifestyle", desc: "Diet, sleep and stress play a big role.", icon: "/images/icons/lifestyle.png" },
             { title: "Nutrition", desc: "Deficiencies that weaken recovery.", icon: "/images/icons/nutrition.png" }
           ]).map((item, idx) => (
-            <div key={idx} className="group rounded-2xl p-6 bg-secondary/60 backdrop-blur-xl border border-border shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <div key={idx} className="group rounded-2xl p-6 bg-background backdrop-blur-xl border border-border shadow-lg transition-all duration-300 hover:-translate-y-1">
               <div className="w-20 h-20 rounded-2xl flex items-center justify-center shadow-md mx-auto mb-4">
                 {typeof item.icon === "string" ? (
                   <img src={item.icon} alt={item.title} className="w-20 h-20 rounded-2xl" />

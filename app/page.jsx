@@ -158,7 +158,7 @@ export default function HomePage() {
                         <div
                             key={index}
                             className="
-                            group p-6 rounded-2xl bg-secondary/60 backdrop-blur-xl 
+                            group p-6 rounded-2xl bg-background backdrop-blur-xl 
                             shadow-lg hover:shadow-medium border border-border
                             transition-all hover:-translate-y-1
                             "
@@ -212,7 +212,7 @@ export default function HomePage() {
                             href={item.link}
                             key={index}
                             className="
-                            group p-6 rounded-2xl bg-secondary/60 backdrop-blur-xl 
+                            group p-6 rounded-2xl bg-background backdrop-blur-xl 
                             border border-border shadow-lg hover:shadow-medium
                             transition-all hover:-translate-y-1 block
                             "

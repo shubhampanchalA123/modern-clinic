@@ -1,8 +1,22 @@
 {
   "/HairGrowth/coach/page": "app/HairGrowth/coach/page.js",
   "/HairGrowth/register/page": "app/HairGrowth/register/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/case-studies/page": "app/case-studies/page.js",
+  "/conditions/hair-fall/page": "app/conditions/hair-fall/page.js",
   "/doctor/page": "app/doctor/page.js",
+  "/google-reviews/page": "app/google-reviews/page.js",
   "/page": "app/page.js",
+  "/pricing/clinic-consultation/page": "app/pricing/clinic-consultation/page.js",
+  "/pricing/family-wellness/page": "app/pricing/family-wellness/page.js",
+  "/pricing/monthly-plans/page": "app/pricing/monthly-plans/page.js",
+  "/pricing/online-consultation/page": "app/pricing/online-consultation/page.js",
+  "/testimonials/page": "app/testimonials/page.js",
+  "/treatment-approach/custom-programs/page": "app/treatment-approach/custom-programs/page.js",
+  "/treatment-approach/digital-diagnosis-method/page": "app/treatment-approach/digital-diagnosis-method/page.js",
+  "/treatment-approach/home-vs-clinic-care/page": "app/treatment-approach/home-vs-clinic-care/page.js",
   "/treatment-approach/how-homeopathy-works/page": "app/treatment-approach/how-homeopathy-works/page.js",
+  "/treatment-approach/safety-and-research/page": "app/treatment-approach/safety-and-research/page.js",
   "/videos/page": "app/videos/page.js"
 }

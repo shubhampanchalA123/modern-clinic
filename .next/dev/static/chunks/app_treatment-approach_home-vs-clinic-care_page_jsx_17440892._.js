@@ -249,7 +249,7 @@ function HomeVsClinicCare() {
                     transition: {
                         duration: 0.6
                     },
-                    className: "   p-10 rounded-3xl bg-secondary/40 backdrop-blur-xl    border border-border shadow-md   ",
+                    className: "   p-10 rounded-3xl bg-secondary/20 backdrop-blur-xl    border border-border shadow-md   ",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                             className: "text-2xl font-bold text-foreground text-center mb-6",
@@ -295,7 +295,7 @@ function HomeVsClinicCare() {
                                     ]
                                 }
                             ].map((block, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "p-5 rounded-2xl bg-card/70 backdrop-blur-xl border border-border",
+                                    className: "p-5 rounded-2xl bg-background backdrop-blur-xl border border-border",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                             className: "text-lg font-semibold text-foreground mb-4",
