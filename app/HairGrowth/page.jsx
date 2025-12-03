@@ -48,10 +48,10 @@ export default function Home() {
           </div>
 
           <div className="mt-6 flex gap-3 text-sm">
-            <div className="bg-secondary p-3 rounded-lg shadow-soft text-foreground">
+            <div className="bg-secondary/40 p-3 rounded-lg shadow-soft text-foreground">
               Doctor-led personalised treatment
             </div>
-            <div className="bg-secondary p-3 rounded-lg shadow-soft text-foreground">
+            <div className="bg-secondary/40 p-3 rounded-lg shadow-soft text-foreground">
               Natural, safe & non-invasive
             </div>
           </div>
@@ -104,7 +104,7 @@ export default function Home() {
           ].map((step, index) => (
             <div
               key={index}
-              className="group rounded-2xl p-6 bg-secondary/60 backdrop-blur-xl border border-border 
+              className="group rounded-2xl p-6 bg-background backdrop-blur-xl border border-border 
                    shadow-lg hover:shadow-medium transition-all duration-300 hover:-translate-y-1"
             >
               {/* Gradient Icon Circle */}
@@ -175,7 +175,7 @@ export default function Home() {
           ].map((item, index) => (
             <div
               key={index}
-              className="group rounded-2xl p-6 bg-secondary/60 backdrop-blur-xl border border-border 
+              className="group rounded-2xl p-6 bg-background backdrop-blur-xl border border-border 
                    shadow-lg hover:shadow-medium transition-all duration-300 hover:-translate-y-1"
             >
               <div className="w-20 h-20 rounded-2xl flex items-center justify-center shadow-md 

@@ -379,6 +379,10 @@ function RegisterFlow() {
         internal: {},
         scalpPhoto: null
     });
+    const [otpModalOpen, setOtpModalOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [otpSent, setOtpSent] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [otp, setOtp] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [verificationId, setVerificationId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     // VALIDATION
     function validateStep() {
         let err = {};
@@ -399,6 +403,10 @@ function RegisterFlow() {
     }
     function next() {
         if (!validateStep()) return;
+        if (step === 0) {
+            setOtpModalOpen(true);
+            return;
+        }
         setStep((p)=>p + 1);
         window.scrollTo({
             top: 0,
@@ -566,6 +574,13 @@ function RegisterFlow() {
             className: "max-w-4xl mx-auto px-6",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    id: "recaptcha-container"
+                }, void 0, false, {
+                    fileName: "[project]/app/HairGrowth/register/page.jsx",
+                    lineNumber: 202,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex justify-between mb-4 text-sm text-muted-foreground",
                     children: [
                         step > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -573,11 +588,11 @@ function RegisterFlow() {
                             children: "← Previous"
                         }, void 0, false, {
                             fileName: "[project]/app/HairGrowth/register/page.jsx",
-                            lineNumber: 190,
+                            lineNumber: 206,
                             columnNumber: 23
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {}, void 0, false, {
                             fileName: "[project]/app/HairGrowth/register/page.jsx",
-                            lineNumber: 190,
+                            lineNumber: 206,
                             columnNumber: 68
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -586,20 +601,20 @@ function RegisterFlow() {
                             children: "Exit"
                         }, void 0, false, {
                             fileName: "[project]/app/HairGrowth/register/page.jsx",
-                            lineNumber: 191,
+                            lineNumber: 207,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/HairGrowth/register/page.jsx",
-                    lineNumber: 189,
+                    lineNumber: 205,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Register$2f$ProgressTabs$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     step: step
                 }, void 0, false, {
                     fileName: "[project]/app/HairGrowth/register/page.jsx",
-                    lineNumber: 194,
+                    lineNumber: 210,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -612,7 +627,7 @@ function RegisterFlow() {
                                     children: "Tell us about you"
                                 }, void 0, false, {
                                     fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                    lineNumber: 202,
+                                    lineNumber: 218,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -623,7 +638,7 @@ function RegisterFlow() {
                                             children: "Full Name"
                                         }, void 0, false, {
                                             fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                            lineNumber: 208,
+                                            lineNumber: 224,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -632,7 +647,7 @@ function RegisterFlow() {
                                             onChange: (e)=>updateField("name", e.target.value)
                                         }, void 0, false, {
                                             fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                            lineNumber: 209,
+                                            lineNumber: 225,
                                             columnNumber: 17
                                         }, this),
                                         errors.name && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -640,13 +655,13 @@ function RegisterFlow() {
                                             children: errors.name
                                         }, void 0, false, {
                                             fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                            lineNumber: 215,
+                                            lineNumber: 231,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                    lineNumber: 207,
+                                    lineNumber: 223,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -657,7 +672,7 @@ function RegisterFlow() {
                                             children: "Phone Number"
                                         }, void 0, false, {
                                             fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                            lineNumber: 221,
+                                            lineNumber: 237,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -666,7 +681,7 @@ function RegisterFlow() {
                                             onChange: (e)=>updateField("phone", e.target.value)
                                         }, void 0, false, {
                                             fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                            lineNumber: 222,
+                                            lineNumber: 238,
                                             columnNumber: 17
                                         }, this),
                                         errors.phone && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -674,13 +689,13 @@ function RegisterFlow() {
                                             children: errors.phone
                                         }, void 0, false, {
                                             fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                            lineNumber: 228,
+                                            lineNumber: 244,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                    lineNumber: 220,
+                                    lineNumber: 236,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -691,7 +706,7 @@ function RegisterFlow() {
                                             children: "Age"
                                         }, void 0, false, {
                                             fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                            lineNumber: 234,
+                                            lineNumber: 250,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -701,7 +716,7 @@ function RegisterFlow() {
                                             onChange: (e)=>updateField("age", e.target.value)
                                         }, void 0, false, {
                                             fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                            lineNumber: 235,
+                                            lineNumber: 251,
                                             columnNumber: 17
                                         }, this),
                                         errors.age && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -709,13 +724,13 @@ function RegisterFlow() {
                                             children: errors.age
                                         }, void 0, false, {
                                             fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                            lineNumber: 242,
+                                            lineNumber: 258,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                    lineNumber: 233,
+                                    lineNumber: 249,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -725,7 +740,7 @@ function RegisterFlow() {
                                             children: "Gender"
                                         }, void 0, false, {
                                             fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                            lineNumber: 248,
+                                            lineNumber: 264,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -740,12 +755,12 @@ function RegisterFlow() {
                                                     children: g.toUpperCase()
                                                 }, g, false, {
                                                     fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                                    lineNumber: 252,
+                                                    lineNumber: 268,
                                                     columnNumber: 21
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                            lineNumber: 250,
+                                            lineNumber: 266,
                                             columnNumber: 17
                                         }, this),
                                         errors.gender && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -753,13 +768,13 @@ function RegisterFlow() {
                                             children: errors.gender
                                         }, void 0, false, {
                                             fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                            lineNumber: 268,
+                                            lineNumber: 283,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                    lineNumber: 247,
+                                    lineNumber: 263,
                                     columnNumber: 15
                                 }, this)
                             ]
@@ -771,7 +786,7 @@ function RegisterFlow() {
                                     children: "Hair Health"
                                 }, void 0, false, {
                                     fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                    lineNumber: 277,
+                                    lineNumber: 292,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -786,7 +801,7 @@ function RegisterFlow() {
                                                     className: "w-full mb-3 rounded"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                                    lineNumber: 294,
+                                                    lineNumber: 308,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -794,18 +809,18 @@ function RegisterFlow() {
                                                     children: s.label
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                                    lineNumber: 295,
+                                                    lineNumber: 309,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, s.id, true, {
                                             fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                            lineNumber: 284,
+                                            lineNumber: 299,
                                             columnNumber: 19
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                    lineNumber: 282,
+                                    lineNumber: 297,
                                     columnNumber: 15
                                 }, this),
                                 errors.stage && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -813,7 +828,7 @@ function RegisterFlow() {
                                     children: errors.stage
                                 }, void 0, false, {
                                     fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                    lineNumber: 301,
+                                    lineNumber: 315,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -825,12 +840,12 @@ function RegisterFlow() {
                                             onChange: (v)=>updateNested("hair", q.id, v)
                                         }, q.id, false, {
                                             fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                            lineNumber: 307,
+                                            lineNumber: 321,
                                             columnNumber: 19
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                    lineNumber: 305,
+                                    lineNumber: 319,
                                     columnNumber: 15
                                 }, this)
                             ]
@@ -842,7 +857,7 @@ function RegisterFlow() {
                                     children: "Internal Health"
                                 }, void 0, false, {
                                     fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                    lineNumber: 322,
+                                    lineNumber: 336,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -854,12 +869,12 @@ function RegisterFlow() {
                                             onChange: (v)=>updateNested("internal", q.id, v)
                                         }, q.id, false, {
                                             fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                            lineNumber: 328,
+                                            lineNumber: 342,
                                             columnNumber: 19
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                    lineNumber: 326,
+                                    lineNumber: 340,
                                     columnNumber: 15
                                 }, this)
                             ]
@@ -871,7 +886,7 @@ function RegisterFlow() {
                                     children: "Upload your scalp picture"
                                 }, void 0, false, {
                                     fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                    lineNumber: 343,
+                                    lineNumber: 357,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Register$2f$PhotoUploader$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -879,7 +894,7 @@ function RegisterFlow() {
                                     onChange: (file)=>updateField("scalpPhoto", file)
                                 }, void 0, false, {
                                     fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                    lineNumber: 347,
+                                    lineNumber: 361,
                                     columnNumber: 15
                                 }, this),
                                 errors.scalpPhoto && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -887,7 +902,7 @@ function RegisterFlow() {
                                     children: errors.scalpPhoto
                                 }, void 0, false, {
                                     fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                    lineNumber: 353,
+                                    lineNumber: 367,
                                     columnNumber: 17
                                 }, this)
                             ]
@@ -900,7 +915,7 @@ function RegisterFlow() {
                                 children: "Next →"
                             }, void 0, false, {
                                 fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                lineNumber: 361,
+                                lineNumber: 375,
                                 columnNumber: 15
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: submit,
@@ -908,33 +923,129 @@ function RegisterFlow() {
                                 children: "Submit Assessment"
                             }, void 0, false, {
                                 fileName: "[project]/app/HairGrowth/register/page.jsx",
-                                lineNumber: 368,
+                                lineNumber: 382,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/HairGrowth/register/page.jsx",
-                            lineNumber: 359,
+                            lineNumber: 373,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/HairGrowth/register/page.jsx",
-                    lineNumber: 197,
+                    lineNumber: 213,
                     columnNumber: 9
+                }, this),
+                otpModalOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "fixed inset-0 bg-black/50 flex items-center justify-center z-50",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "bg-white p-6 rounded-xl shadow-xl w-full max-w-md",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                className: "text-xl font-semibold text-center mb-4",
+                                children: "Verify Your Phone"
+                            }, void 0, false, {
+                                fileName: "[project]/app/HairGrowth/register/page.jsx",
+                                lineNumber: 396,
+                                columnNumber: 15
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-center text-gray-600 text-sm mb-2",
+                                children: "OTP will be sent to:"
+                            }, void 0, false, {
+                                fileName: "[project]/app/HairGrowth/register/page.jsx",
+                                lineNumber: 401,
+                                columnNumber: 15
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-center font-medium mb-4",
+                                children: [
+                                    "+91 ",
+                                    form.phone
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/HairGrowth/register/page.jsx",
+                                lineNumber: 404,
+                                columnNumber: 15
+                            }, this),
+                            !otpSent ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        onClick: sendOtp,
+                                        className: "w-full bg-primary text-white py-2 rounded-lg",
+                                        children: "Send OTP"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/HairGrowth/register/page.jsx",
+                                        lineNumber: 410,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "mt-4",
+                                        id: "recaptcha-container"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/HairGrowth/register/page.jsx",
+                                        lineNumber: 418,
+                                        columnNumber: 19
+                                    }, this)
+                                ]
+                            }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "text",
+                                        className: "w-full border px-3 py-2 rounded mb-3",
+                                        placeholder: "Enter OTP",
+                                        value: otp,
+                                        onChange: (e)=>setOtp(e.target.value)
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/HairGrowth/register/page.jsx",
+                                        lineNumber: 423,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        onClick: verifyOtp,
+                                        className: "w-full bg-primary text-white py-2 rounded-lg",
+                                        children: "Verify OTP"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/HairGrowth/register/page.jsx",
+                                        lineNumber: 431,
+                                        columnNumber: 19
+                                    }, this)
+                                ]
+                            }, void 0, true),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                onClick: ()=>setOtpModalOpen(false),
+                                className: "mt-4 w-full text-center text-gray-500 text-sm",
+                                children: "Cancel"
+                            }, void 0, false, {
+                                fileName: "[project]/app/HairGrowth/register/page.jsx",
+                                lineNumber: 440,
+                                columnNumber: 15
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/HairGrowth/register/page.jsx",
+                        lineNumber: 394,
+                        columnNumber: 13
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/app/HairGrowth/register/page.jsx",
+                    lineNumber: 393,
+                    columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/HairGrowth/register/page.jsx",
-            lineNumber: 186,
+            lineNumber: 201,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/HairGrowth/register/page.jsx",
-        lineNumber: 185,
+        lineNumber: 200,
         columnNumber: 5
     }, this);
 }
-_s(RegisterFlow, "99eGk3vSzsWsUxPyyJhvbzTJfpY=", false, function() {
+_s(RegisterFlow, "ajkgm3qPpYKmqg0uISs5RpACxkA=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];
