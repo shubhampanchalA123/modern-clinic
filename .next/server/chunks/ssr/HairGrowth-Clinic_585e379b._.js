@@ -1,0 +1,3 @@
+module.exports=[44186,a=>{"use strict";var b=a.i(55963);function c({children:a,className:c="",variant:d="default",...e}){return(0,b.jsx)("button",{className:`px-4 py-2 rounded-md font-medium ${"ghost"===d?"bg-transparent border":"bg-emerald-600 text-white"} ${c}`,...e,children:a})}a.s(["Button",()=>c])},85301,a=>{"use strict";let b=(0,a.i(98553).default)("chevron-down",[["path",{d:"m6 9 6 6 6-6",key:"qrunsl"}]]);a.s(["ChevronDown",()=>b],85301)}];
+
+//# sourceMappingURL=HairGrowth-Clinic_585e379b._.js.map

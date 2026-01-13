@@ -62,7 +62,7 @@ export const treatmentPlans = [
 
 
 export default function AppointmentSelector({ plans: propPlans, onSelect, selectedPlan }) {
-  const displayPlans = propPlans || appointmentPlans;
+  const displayPlans = propPlans || treatmentPlans;
 
   const handleSelect = (plan) => {
     onSelect(plan);

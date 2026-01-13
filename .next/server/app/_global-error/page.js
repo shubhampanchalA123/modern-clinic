@@ -1,0 +1,10 @@
+var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/_global-error/page.js")
+R.c("server/chunks/ssr/a2a7d_9719a882._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__8d3e91ac._.js")
+R.c("server/chunks/ssr/a2a7d_next_dist_37e11698._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__49c9ec9b._.js")
+R.c("server/chunks/ssr/a2a7d_next_dist_3a1dea25._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__511093b1._.js")
+R.c("server/chunks/ssr/HairGrowth-Clinic__next-internal_server_app__global-error_page_actions_402b1ce7.js")
+R.m(73206)
+module.exports=R.m(73206).exports

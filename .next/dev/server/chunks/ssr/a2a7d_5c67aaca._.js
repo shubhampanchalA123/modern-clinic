@@ -1,0 +1,11187 @@
+module.exports = [
+"[project]/HairGrowth-Clinic/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+function _interop_require_default(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+exports._ = _interop_require_default;
+}),
+"[project]/HairGrowth-Clinic/node_modules/@emotion/memoize/dist/memoize.esm.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+function memoize(fn) {
+    var cache = {};
+    return function(arg) {
+        if (cache[arg] === undefined) cache[arg] = fn(arg);
+        return cache[arg];
+    };
+}
+const __TURBOPACK__default__export__ = memoize;
+}),
+"[project]/HairGrowth-Clinic/node_modules/@emotion/is-prop-valid/dist/is-prop-valid.esm.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$emotion$2f$memoize$2f$dist$2f$memoize$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/@emotion/memoize/dist/memoize.esm.js [app-ssr] (ecmascript)");
+;
+var reactPropsRegex = /^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|suppressHydrationWarning|valueLink|accept|acceptCharset|accessKey|action|allow|allowUserMedia|allowPaymentRequest|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|decoding|default|defer|dir|disabled|disablePictureInPicture|download|draggable|encType|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loading|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|inert|itemProp|itemScope|itemType|itemID|itemRef|on|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class|autofocus)|(([Dd][Aa][Tt][Aa]|[Aa][Rr][Ii][Aa]|x)-.*))$/; // https://esbench.com/bench/5bfee68a4cd7e6009ef61d23
+var index = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$emotion$2f$memoize$2f$dist$2f$memoize$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])(function(prop) {
+    return reactPropsRegex.test(prop) || prop.charCodeAt(0) === 111 && prop.charCodeAt(1) === 110 && prop.charCodeAt(2) < 91;
+});
+const __TURBOPACK__default__export__ = index;
+}),
+"[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/icons/chevron-left.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.553.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>ChevronLeft
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "m15 18-6-6 6-6",
+            key: "1wnfg3"
+        }
+    ]
+];
+const ChevronLeft = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("chevron-left", __iconNode);
+;
+ //# sourceMappingURL=chevron-left.js.map
+}),
+"[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/icons/chevron-left.js [app-ssr] (ecmascript) <export default as ChevronLeft>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ChevronLeft",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/icons/chevron-left.js [app-ssr] (ecmascript)");
+}),
+"[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/icons/chevron-right.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.553.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>ChevronRight
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "m9 18 6-6-6-6",
+            key: "mthhwq"
+        }
+    ]
+];
+const ChevronRight = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("chevron-right", __iconNode);
+;
+ //# sourceMappingURL=chevron-right.js.map
+}),
+"[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/icons/chevron-right.js [app-ssr] (ecmascript) <export default as ChevronRight>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ChevronRight",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/icons/chevron-right.js [app-ssr] (ecmascript)");
+}),
+"[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/icons/grip-vertical.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.553.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>GripVertical
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "circle",
+        {
+            cx: "9",
+            cy: "12",
+            r: "1",
+            key: "1vctgf"
+        }
+    ],
+    [
+        "circle",
+        {
+            cx: "9",
+            cy: "5",
+            r: "1",
+            key: "hp0tcf"
+        }
+    ],
+    [
+        "circle",
+        {
+            cx: "9",
+            cy: "19",
+            r: "1",
+            key: "fkjjf6"
+        }
+    ],
+    [
+        "circle",
+        {
+            cx: "15",
+            cy: "12",
+            r: "1",
+            key: "1tmaij"
+        }
+    ],
+    [
+        "circle",
+        {
+            cx: "15",
+            cy: "5",
+            r: "1",
+            key: "19l28e"
+        }
+    ],
+    [
+        "circle",
+        {
+            cx: "15",
+            cy: "19",
+            r: "1",
+            key: "f4zoj3"
+        }
+    ]
+];
+const GripVertical = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("grip-vertical", __iconNode);
+;
+ //# sourceMappingURL=grip-vertical.js.map
+}),
+"[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/icons/grip-vertical.js [app-ssr] (ecmascript) <export default as GripVerticalIcon>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "GripVerticalIcon",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$grip$2d$vertical$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$grip$2d$vertical$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/icons/grip-vertical.js [app-ssr] (ecmascript)");
+}),
+"[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/icons/quote.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.553.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>Quote
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z",
+            key: "rib7q0"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z",
+            key: "1ymkrd"
+        }
+    ]
+];
+const Quote = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("quote", __iconNode);
+;
+ //# sourceMappingURL=quote.js.map
+}),
+"[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/icons/quote.js [app-ssr] (ecmascript) <export default as Quote>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Quote",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$quote$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$quote$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/icons/quote.js [app-ssr] (ecmascript)");
+}),
+"[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/icons/heart-pulse.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.553.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>HeartPulse
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5",
+            key: "mvr1a0"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27",
+            key: "auskq0"
+        }
+    ]
+];
+const HeartPulse = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("heart-pulse", __iconNode);
+;
+ //# sourceMappingURL=heart-pulse.js.map
+}),
+"[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/icons/heart-pulse.js [app-ssr] (ecmascript) <export default as HeartPulse>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "HeartPulse",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2d$pulse$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2d$pulse$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/icons/heart-pulse.js [app-ssr] (ecmascript)");
+}),
+"[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/icons/chevron-down.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license lucide-react v0.553.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ __turbopack_context__.s([
+    "__iconNode",
+    ()=>__iconNode,
+    "default",
+    ()=>ChevronDown
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/createLucideIcon.js [app-ssr] (ecmascript)");
+;
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "m6 9 6 6 6-6",
+            key: "qrunsl"
+        }
+    ]
+];
+const ChevronDown = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$createLucideIcon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"])("chevron-down", __iconNode);
+;
+ //# sourceMappingURL=chevron-down.js.map
+}),
+"[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/icons/chevron-down.js [app-ssr] (ecmascript) <export default as ChevronDown>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ChevronDown",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/lucide-react/dist/esm/icons/chevron-down.js [app-ssr] (ecmascript)");
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/clamp.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "clamp",
+    ()=>clamp
+]);
+const clamp = (min, max, v)=>{
+    if (v > max) return max;
+    if (v < min) return min;
+    return v;
+};
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/format-error-message.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "formatErrorMessage",
+    ()=>formatErrorMessage
+]);
+function formatErrorMessage(message, errorCode) {
+    return errorCode ? `${message}. For more information and steps for solving, visit https://motion.dev/troubleshooting/${errorCode}` : message;
+}
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/errors.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "invariant",
+    ()=>invariant,
+    "warning",
+    ()=>warning
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$format$2d$error$2d$message$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/format-error-message.mjs [app-ssr] (ecmascript)");
+;
+let warning = ()=>{};
+let invariant = ()=>{};
+if ("TURBOPACK compile-time truthy", 1) {
+    warning = (check, message, errorCode)=>{
+        if (!check && typeof console !== "undefined") {
+            console.warn((0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$format$2d$error$2d$message$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["formatErrorMessage"])(message, errorCode));
+        }
+    };
+    invariant = (check, message, errorCode)=>{
+        if (!check) {
+            throw new Error((0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$format$2d$error$2d$message$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["formatErrorMessage"])(message, errorCode));
+        }
+    };
+}
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/is-numerical-string.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Check if value is a numerical string, ie a string that is purely a number eg "100" or "-100.1"
+ */ __turbopack_context__.s([
+    "isNumericalString",
+    ()=>isNumericalString
+]);
+const isNumericalString = (v)=>/^-?(?:\d+(?:\.\d+)?|\.\d+)$/u.test(v);
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/noop.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/*#__NO_SIDE_EFFECTS__*/ __turbopack_context__.s([
+    "noop",
+    ()=>noop
+]);
+const noop = (any)=>any;
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/global-config.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "MotionGlobalConfig",
+    ()=>MotionGlobalConfig
+]);
+const MotionGlobalConfig = {};
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/is-zero-value-string.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Check if the value is a zero value string like "0px" or "0%"
+ */ __turbopack_context__.s([
+    "isZeroValueString",
+    ()=>isZeroValueString
+]);
+const isZeroValueString = (v)=>/^0[^.\s]+$/u.test(v);
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/warn-once.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "hasWarned",
+    ()=>hasWarned,
+    "warnOnce",
+    ()=>warnOnce
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$format$2d$error$2d$message$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/format-error-message.mjs [app-ssr] (ecmascript)");
+;
+const warned = new Set();
+function hasWarned(message) {
+    return warned.has(message);
+}
+function warnOnce(condition, message, errorCode) {
+    if (condition || warned.has(message)) return;
+    console.warn((0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$format$2d$error$2d$message$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["formatErrorMessage"])(message, errorCode));
+    warned.add(message);
+}
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/array.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "addUniqueItem",
+    ()=>addUniqueItem,
+    "moveItem",
+    ()=>moveItem,
+    "removeItem",
+    ()=>removeItem
+]);
+function addUniqueItem(arr, item) {
+    if (arr.indexOf(item) === -1) arr.push(item);
+}
+function removeItem(arr, item) {
+    const index = arr.indexOf(item);
+    if (index > -1) arr.splice(index, 1);
+}
+// Adapted from array-move
+function moveItem([...arr], fromIndex, toIndex) {
+    const startIndex = fromIndex < 0 ? arr.length + fromIndex : fromIndex;
+    if (startIndex >= 0 && startIndex < arr.length) {
+        const endIndex = toIndex < 0 ? arr.length + toIndex : toIndex;
+        const [item] = arr.splice(fromIndex, 1);
+        arr.splice(endIndex, 0, item);
+    }
+    return arr;
+}
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/subscription-manager.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "SubscriptionManager",
+    ()=>SubscriptionManager
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$array$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/array.mjs [app-ssr] (ecmascript)");
+;
+class SubscriptionManager {
+    constructor(){
+        this.subscriptions = [];
+    }
+    add(handler) {
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$array$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["addUniqueItem"])(this.subscriptions, handler);
+        return ()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$array$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["removeItem"])(this.subscriptions, handler);
+    }
+    notify(a, b, c) {
+        const numSubscriptions = this.subscriptions.length;
+        if (!numSubscriptions) return;
+        if (numSubscriptions === 1) {
+            /**
+             * If there's only a single handler we can just call it without invoking a loop.
+             */ this.subscriptions[0](a, b, c);
+        } else {
+            for(let i = 0; i < numSubscriptions; i++){
+                /**
+                 * Check whether the handler exists before firing as it's possible
+                 * the subscriptions were modified during this loop running.
+                 */ const handler = this.subscriptions[i];
+                handler && handler(a, b, c);
+            }
+        }
+    }
+    getSize() {
+        return this.subscriptions.length;
+    }
+    clear() {
+        this.subscriptions.length = 0;
+    }
+}
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/velocity-per-second.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/*
+  Convert velocity into velocity per second
+
+  @param [number]: Unit per frame
+  @param [number]: Frame duration in ms
+*/ __turbopack_context__.s([
+    "velocityPerSecond",
+    ()=>velocityPerSecond
+]);
+function velocityPerSecond(velocity, frameDuration) {
+    return frameDuration ? velocity * (1000 / frameDuration) : 0;
+}
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/pipe.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Pipe
+ * Compose other transformers to run linearily
+ * pipe(min(20), max(40))
+ * @param  {...functions} transformers
+ * @return {function}
+ */ __turbopack_context__.s([
+    "pipe",
+    ()=>pipe
+]);
+const combineFunctions = (a, b)=>(v)=>b(a(v));
+const pipe = (...transformers)=>transformers.reduce(combineFunctions);
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/time-conversion.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * Converts seconds to milliseconds
+ *
+ * @param seconds - Time in seconds.
+ * @return milliseconds - Converted time in milliseconds.
+ */ /*#__NO_SIDE_EFFECTS__*/ __turbopack_context__.s([
+    "millisecondsToSeconds",
+    ()=>millisecondsToSeconds,
+    "secondsToMilliseconds",
+    ()=>secondsToMilliseconds
+]);
+const secondsToMilliseconds = (seconds)=>seconds * 1000;
+/*#__NO_SIDE_EFFECTS__*/ const millisecondsToSeconds = (milliseconds)=>milliseconds / 1000;
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/cubic-bezier.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "cubicBezier",
+    ()=>cubicBezier
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/noop.mjs [app-ssr] (ecmascript)");
+;
+/*
+  Bezier function generator
+  This has been modified from Gaëtan Renaudeau's BezierEasing
+  https://github.com/gre/bezier-easing/blob/master/src/index.js
+  https://github.com/gre/bezier-easing/blob/master/LICENSE
+  
+  I've removed the newtonRaphsonIterate algo because in benchmarking it
+  wasn't noticeably faster than binarySubdivision, indeed removing it
+  usually improved times, depending on the curve.
+  I also removed the lookup table, as for the added bundle size and loop we're
+  only cutting ~4 or so subdivision iterations. I bumped the max iterations up
+  to 12 to compensate and this still tended to be faster for no perceivable
+  loss in accuracy.
+  Usage
+    const easeOut = cubicBezier(.17,.67,.83,.67);
+    const x = easeOut(0.5); // returns 0.627...
+*/ // Returns x(t) given t, x1, and x2, or y(t) given t, y1, and y2.
+const calcBezier = (t, a1, a2)=>(((1.0 - 3.0 * a2 + 3.0 * a1) * t + (3.0 * a2 - 6.0 * a1)) * t + 3.0 * a1) * t;
+const subdivisionPrecision = 0.0000001;
+const subdivisionMaxIterations = 12;
+function binarySubdivide(x, lowerBound, upperBound, mX1, mX2) {
+    let currentX;
+    let currentT;
+    let i = 0;
+    do {
+        currentT = lowerBound + (upperBound - lowerBound) / 2.0;
+        currentX = calcBezier(currentT, mX1, mX2) - x;
+        if (currentX > 0.0) {
+            upperBound = currentT;
+        } else {
+            lowerBound = currentT;
+        }
+    }while (Math.abs(currentX) > subdivisionPrecision && ++i < subdivisionMaxIterations)
+    return currentT;
+}
+function cubicBezier(mX1, mY1, mX2, mY2) {
+    // If this is a linear gradient, return linear easing
+    if (mX1 === mY1 && mX2 === mY2) return __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"];
+    const getTForX = (aX)=>binarySubdivide(aX, 0, 1, mX1, mX2);
+    // If animation is at start/end, return t without easing
+    return (t)=>t === 0 || t === 1 ? t : calcBezier(getTForX(t), mY1, mY2);
+}
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/ease.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "easeIn",
+    ()=>easeIn,
+    "easeInOut",
+    ()=>easeInOut,
+    "easeOut",
+    ()=>easeOut
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/cubic-bezier.mjs [app-ssr] (ecmascript)");
+;
+const easeIn = /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cubicBezier"])(0.42, 0, 1, 1);
+const easeOut = /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cubicBezier"])(0, 0, 0.58, 1);
+const easeInOut = /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cubicBezier"])(0.42, 0, 0.58, 1);
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/utils/is-easing-array.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isEasingArray",
+    ()=>isEasingArray
+]);
+const isEasingArray = (ease)=>{
+    return Array.isArray(ease) && typeof ease[0] !== "number";
+};
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/modifiers/mirror.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// Accepts an easing function and returns a new one that outputs mirrored values for
+// the second half of the animation. Turns easeIn into easeInOut.
+__turbopack_context__.s([
+    "mirrorEasing",
+    ()=>mirrorEasing
+]);
+const mirrorEasing = (easing)=>(p)=>p <= 0.5 ? easing(2 * p) / 2 : (2 - easing(2 * (1 - p))) / 2;
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/modifiers/reverse.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+// Accepts an easing function and returns a new one that outputs reversed values.
+// Turns easeIn into easeOut.
+__turbopack_context__.s([
+    "reverseEasing",
+    ()=>reverseEasing
+]);
+const reverseEasing = (easing)=>(p)=>1 - easing(1 - p);
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/back.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "backIn",
+    ()=>backIn,
+    "backInOut",
+    ()=>backInOut,
+    "backOut",
+    ()=>backOut
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/cubic-bezier.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$modifiers$2f$mirror$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/modifiers/mirror.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$modifiers$2f$reverse$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/modifiers/reverse.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+const backOut = /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cubicBezier"])(0.33, 1.53, 0.69, 0.99);
+const backIn = /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$modifiers$2f$reverse$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["reverseEasing"])(backOut);
+const backInOut = /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$modifiers$2f$mirror$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mirrorEasing"])(backIn);
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/anticipate.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "anticipate",
+    ()=>anticipate
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$back$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/back.mjs [app-ssr] (ecmascript)");
+;
+const anticipate = (p)=>(p *= 2) < 1 ? 0.5 * (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$back$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["backIn"])(p) : 0.5 * (2 - Math.pow(2, -10 * (p - 1)));
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/circ.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "circIn",
+    ()=>circIn,
+    "circInOut",
+    ()=>circInOut,
+    "circOut",
+    ()=>circOut
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$modifiers$2f$mirror$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/modifiers/mirror.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$modifiers$2f$reverse$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/modifiers/reverse.mjs [app-ssr] (ecmascript)");
+;
+;
+const circIn = (p)=>1 - Math.sin(Math.acos(p));
+const circOut = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$modifiers$2f$reverse$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["reverseEasing"])(circIn);
+const circInOut = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$modifiers$2f$mirror$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["mirrorEasing"])(circIn);
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/utils/is-bezier-definition.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isBezierDefinition",
+    ()=>isBezierDefinition
+]);
+const isBezierDefinition = (easing)=>Array.isArray(easing) && typeof easing[0] === "number";
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/utils/map.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "easingDefinitionToFunction",
+    ()=>easingDefinitionToFunction
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/errors.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/noop.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$anticipate$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/anticipate.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$back$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/back.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$circ$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/circ.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/cubic-bezier.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$ease$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/ease.mjs [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$utils$2f$is$2d$bezier$2d$definition$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/easing/utils/is-bezier-definition.mjs [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+;
+;
+;
+const easingLookup = {
+    linear: __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["noop"],
+    easeIn: __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$ease$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["easeIn"],
+    easeInOut: __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$ease$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["easeInOut"],
+    easeOut: __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$ease$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["easeOut"],
+    circIn: __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$circ$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["circIn"],
+    circInOut: __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$circ$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["circInOut"],
+    circOut: __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$circ$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["circOut"],
+    backIn: __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$back$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["backIn"],
+    backInOut: __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$back$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["backInOut"],
+    backOut: __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$back$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["backOut"],
+    anticipate: __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$anticipate$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["anticipate"]
+};
+const isValidEasing = (easing)=>{
+    return typeof easing === "string";
+};
+const easingDefinitionToFunction = (definition)=>{
+    if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$utils$2f$is$2d$bezier$2d$definition$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isBezierDefinition"])(definition)) {
+        // If cubic bezier definition, create bezier curve
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["invariant"])(definition.length === 4, `Cubic bezier arrays must contain four numerical values.`, "cubic-bezier-length");
+        const [x1, y1, x2, y2] = definition;
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cubicBezier"])(x1, y1, x2, y2);
+    } else if (isValidEasing(definition)) {
+        // Else lookup from table
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["invariant"])(easingLookup[definition] !== undefined, `Invalid easing type '${definition}'`, "invalid-easing-type");
+        return easingLookup[definition];
+    }
+    return definition;
+};
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/progress.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/*
+  Progress within given range
+
+  Given a lower limit and an upper limit, we return the progress
+  (expressed as a number 0-1) represented by the given value, and
+  limit that progress to within 0-1.
+
+  @param [number]: Lower limit
+  @param [number]: Upper limit
+  @param [number]: Value to find progress within given range
+  @return [number]: Progress of value within range as expressed 0-1
+*/ /*#__NO_SIDE_EFFECTS__*/ __turbopack_context__.s([
+    "progress",
+    ()=>progress
+]);
+const progress = (from, to, value)=>{
+    const toFromDifference = to - from;
+    return toFromDifference === 0 ? 1 : (value - from) / toFromDifference;
+};
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/memo.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/*#__NO_SIDE_EFFECTS__*/ __turbopack_context__.s([
+    "memo",
+    ()=>memo
+]);
+function memo(callback) {
+    let result;
+    return ()=>{
+        if (result === undefined) result = callback();
+        return result;
+    };
+}
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/motion-utils/dist/es/is-object.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "isObject",
+    ()=>isObject
+]);
+function isObject(value) {
+    return typeof value === "object" && value !== null;
+}
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/clsx/dist/clsx.m.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "clsx",
+    ()=>clsx,
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+function r(e) {
+    var t, f, n = "";
+    if ("string" == typeof e || "number" == typeof e) n += e;
+    else if ("object" == typeof e) if (Array.isArray(e)) for(t = 0; t < e.length; t++)e[t] && (f = r(e[t])) && (n && (n += " "), n += f);
+    else for(t in e)e[t] && (n && (n += " "), n += t);
+    return n;
+}
+function clsx() {
+    for(var e, t, f = 0, n = ""; f < arguments.length;)(e = arguments[f++]) && (t = r(e)) && (n && (n += " "), n += t);
+    return n;
+}
+const __TURBOPACK__default__export__ = clsx;
+}),
+"[project]/HairGrowth-Clinic/node_modules/@firebase/util/dist/node-esm/index.node.esm.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * @fileoverview Firebase constants.  Some of these (@defines) can be overridden at compile-time.
+ */ __turbopack_context__.s([
+    "CONSTANTS",
+    ()=>CONSTANTS,
+    "DecodeBase64StringError",
+    ()=>DecodeBase64StringError,
+    "Deferred",
+    ()=>Deferred,
+    "ErrorFactory",
+    ()=>ErrorFactory,
+    "FirebaseError",
+    ()=>FirebaseError,
+    "MAX_VALUE_MILLIS",
+    ()=>MAX_VALUE_MILLIS,
+    "RANDOM_FACTOR",
+    ()=>RANDOM_FACTOR,
+    "Sha1",
+    ()=>Sha1,
+    "areCookiesEnabled",
+    ()=>areCookiesEnabled,
+    "assert",
+    ()=>assert,
+    "assertionError",
+    ()=>assertionError,
+    "async",
+    ()=>async,
+    "base64",
+    ()=>base64,
+    "base64Decode",
+    ()=>base64Decode,
+    "base64Encode",
+    ()=>base64Encode,
+    "base64urlEncodeWithoutPadding",
+    ()=>base64urlEncodeWithoutPadding,
+    "calculateBackoffMillis",
+    ()=>calculateBackoffMillis,
+    "contains",
+    ()=>contains,
+    "createMockUserToken",
+    ()=>createMockUserToken,
+    "createSubscribe",
+    ()=>createSubscribe,
+    "decode",
+    ()=>decode,
+    "deepCopy",
+    ()=>deepCopy,
+    "deepEqual",
+    ()=>deepEqual,
+    "deepExtend",
+    ()=>deepExtend,
+    "errorPrefix",
+    ()=>errorPrefix,
+    "extractQuerystring",
+    ()=>extractQuerystring,
+    "getDefaultAppConfig",
+    ()=>getDefaultAppConfig,
+    "getDefaultEmulatorHost",
+    ()=>getDefaultEmulatorHost,
+    "getDefaultEmulatorHostnameAndPort",
+    ()=>getDefaultEmulatorHostnameAndPort,
+    "getDefaults",
+    ()=>getDefaults,
+    "getExperimentalSetting",
+    ()=>getExperimentalSetting,
+    "getGlobal",
+    ()=>getGlobal,
+    "getModularInstance",
+    ()=>getModularInstance,
+    "getUA",
+    ()=>getUA,
+    "isAdmin",
+    ()=>isAdmin,
+    "isBrowser",
+    ()=>isBrowser,
+    "isBrowserExtension",
+    ()=>isBrowserExtension,
+    "isElectron",
+    ()=>isElectron,
+    "isEmpty",
+    ()=>isEmpty,
+    "isIE",
+    ()=>isIE,
+    "isIndexedDBAvailable",
+    ()=>isIndexedDBAvailable,
+    "isMobileCordova",
+    ()=>isMobileCordova,
+    "isNode",
+    ()=>isNode,
+    "isNodeSdk",
+    ()=>isNodeSdk,
+    "isReactNative",
+    ()=>isReactNative,
+    "isSafari",
+    ()=>isSafari,
+    "isUWP",
+    ()=>isUWP,
+    "isValidFormat",
+    ()=>isValidFormat,
+    "isValidTimestamp",
+    ()=>isValidTimestamp,
+    "issuedAtTime",
+    ()=>issuedAtTime,
+    "jsonEval",
+    ()=>jsonEval,
+    "map",
+    ()=>map,
+    "ordinal",
+    ()=>ordinal,
+    "promiseWithTimeout",
+    ()=>promiseWithTimeout,
+    "querystring",
+    ()=>querystring,
+    "querystringDecode",
+    ()=>querystringDecode,
+    "safeGet",
+    ()=>safeGet,
+    "stringLength",
+    ()=>stringLength,
+    "stringToByteArray",
+    ()=>stringToByteArray,
+    "stringify",
+    ()=>stringify,
+    "uuidv4",
+    ()=>uuidv4,
+    "validateArgCount",
+    ()=>validateArgCount,
+    "validateCallback",
+    ()=>validateCallback,
+    "validateContextObject",
+    ()=>validateContextObject,
+    "validateIndexedDBOpenable",
+    ()=>validateIndexedDBOpenable,
+    "validateNamespace",
+    ()=>validateNamespace
+]);
+const CONSTANTS = {
+    /**
+     * @define {boolean} Whether this is the client Node.js SDK.
+     */ NODE_CLIENT: false,
+    /**
+     * @define {boolean} Whether this is the Admin Node.js SDK.
+     */ NODE_ADMIN: false,
+    /**
+     * Firebase SDK Version
+     */ SDK_VERSION: '${JSCORE_VERSION}'
+};
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Throws an error if the provided assertion is falsy
+ */ const assert = function(assertion, message) {
+    if (!assertion) {
+        throw assertionError(message);
+    }
+};
+/**
+ * Returns an Error object suitable for throwing.
+ */ const assertionError = function(message) {
+    return new Error('Firebase Database (' + CONSTANTS.SDK_VERSION + ') INTERNAL ASSERT FAILED: ' + message);
+};
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const stringToByteArray$1 = function(str) {
+    // TODO(user): Use native implementations if/when available
+    const out = [];
+    let p = 0;
+    for(let i = 0; i < str.length; i++){
+        let c = str.charCodeAt(i);
+        if (c < 128) {
+            out[p++] = c;
+        } else if (c < 2048) {
+            out[p++] = c >> 6 | 192;
+            out[p++] = c & 63 | 128;
+        } else if ((c & 0xfc00) === 0xd800 && i + 1 < str.length && (str.charCodeAt(i + 1) & 0xfc00) === 0xdc00) {
+            // Surrogate Pair
+            c = 0x10000 + ((c & 0x03ff) << 10) + (str.charCodeAt(++i) & 0x03ff);
+            out[p++] = c >> 18 | 240;
+            out[p++] = c >> 12 & 63 | 128;
+            out[p++] = c >> 6 & 63 | 128;
+            out[p++] = c & 63 | 128;
+        } else {
+            out[p++] = c >> 12 | 224;
+            out[p++] = c >> 6 & 63 | 128;
+            out[p++] = c & 63 | 128;
+        }
+    }
+    return out;
+};
+/**
+ * Turns an array of numbers into the string given by the concatenation of the
+ * characters to which the numbers correspond.
+ * @param bytes Array of numbers representing characters.
+ * @return Stringification of the array.
+ */ const byteArrayToString = function(bytes) {
+    // TODO(user): Use native implementations if/when available
+    const out = [];
+    let pos = 0, c = 0;
+    while(pos < bytes.length){
+        const c1 = bytes[pos++];
+        if (c1 < 128) {
+            out[c++] = String.fromCharCode(c1);
+        } else if (c1 > 191 && c1 < 224) {
+            const c2 = bytes[pos++];
+            out[c++] = String.fromCharCode((c1 & 31) << 6 | c2 & 63);
+        } else if (c1 > 239 && c1 < 365) {
+            // Surrogate Pair
+            const c2 = bytes[pos++];
+            const c3 = bytes[pos++];
+            const c4 = bytes[pos++];
+            const u = ((c1 & 7) << 18 | (c2 & 63) << 12 | (c3 & 63) << 6 | c4 & 63) - 0x10000;
+            out[c++] = String.fromCharCode(0xd800 + (u >> 10));
+            out[c++] = String.fromCharCode(0xdc00 + (u & 1023));
+        } else {
+            const c2 = bytes[pos++];
+            const c3 = bytes[pos++];
+            out[c++] = String.fromCharCode((c1 & 15) << 12 | (c2 & 63) << 6 | c3 & 63);
+        }
+    }
+    return out.join('');
+};
+// We define it as an object literal instead of a class because a class compiled down to es5 can't
+// be treeshaked. https://github.com/rollup/rollup/issues/1691
+// Static lookup maps, lazily populated by init_()
+const base64 = {
+    /**
+     * Maps bytes to characters.
+     */ byteToCharMap_: null,
+    /**
+     * Maps characters to bytes.
+     */ charToByteMap_: null,
+    /**
+     * Maps bytes to websafe characters.
+     * @private
+     */ byteToCharMapWebSafe_: null,
+    /**
+     * Maps websafe characters to bytes.
+     * @private
+     */ charToByteMapWebSafe_: null,
+    /**
+     * Our default alphabet, shared between
+     * ENCODED_VALS and ENCODED_VALS_WEBSAFE
+     */ ENCODED_VALS_BASE: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' + 'abcdefghijklmnopqrstuvwxyz' + '0123456789',
+    /**
+     * Our default alphabet. Value 64 (=) is special; it means "nothing."
+     */ get ENCODED_VALS () {
+        return this.ENCODED_VALS_BASE + '+/=';
+    },
+    /**
+     * Our websafe alphabet.
+     */ get ENCODED_VALS_WEBSAFE () {
+        return this.ENCODED_VALS_BASE + '-_.';
+    },
+    /**
+     * Whether this browser supports the atob and btoa functions. This extension
+     * started at Mozilla but is now implemented by many browsers. We use the
+     * ASSUME_* variables to avoid pulling in the full useragent detection library
+     * but still allowing the standard per-browser compilations.
+     *
+     */ HAS_NATIVE_SUPPORT: typeof atob === 'function',
+    /**
+     * Base64-encode an array of bytes.
+     *
+     * @param input An array of bytes (numbers with
+     *     value in [0, 255]) to encode.
+     * @param webSafe Boolean indicating we should use the
+     *     alternative alphabet.
+     * @return The base64 encoded string.
+     */ encodeByteArray (input, webSafe) {
+        if (!Array.isArray(input)) {
+            throw Error('encodeByteArray takes an array as a parameter');
+        }
+        this.init_();
+        const byteToCharMap = webSafe ? this.byteToCharMapWebSafe_ : this.byteToCharMap_;
+        const output = [];
+        for(let i = 0; i < input.length; i += 3){
+            const byte1 = input[i];
+            const haveByte2 = i + 1 < input.length;
+            const byte2 = haveByte2 ? input[i + 1] : 0;
+            const haveByte3 = i + 2 < input.length;
+            const byte3 = haveByte3 ? input[i + 2] : 0;
+            const outByte1 = byte1 >> 2;
+            const outByte2 = (byte1 & 0x03) << 4 | byte2 >> 4;
+            let outByte3 = (byte2 & 0x0f) << 2 | byte3 >> 6;
+            let outByte4 = byte3 & 0x3f;
+            if (!haveByte3) {
+                outByte4 = 64;
+                if (!haveByte2) {
+                    outByte3 = 64;
+                }
+            }
+            output.push(byteToCharMap[outByte1], byteToCharMap[outByte2], byteToCharMap[outByte3], byteToCharMap[outByte4]);
+        }
+        return output.join('');
+    },
+    /**
+     * Base64-encode a string.
+     *
+     * @param input A string to encode.
+     * @param webSafe If true, we should use the
+     *     alternative alphabet.
+     * @return The base64 encoded string.
+     */ encodeString (input, webSafe) {
+        // Shortcut for Mozilla browsers that implement
+        // a native base64 encoder in the form of "btoa/atob"
+        if (this.HAS_NATIVE_SUPPORT && !webSafe) {
+            return btoa(input);
+        }
+        return this.encodeByteArray(stringToByteArray$1(input), webSafe);
+    },
+    /**
+     * Base64-decode a string.
+     *
+     * @param input to decode.
+     * @param webSafe True if we should use the
+     *     alternative alphabet.
+     * @return string representing the decoded value.
+     */ decodeString (input, webSafe) {
+        // Shortcut for Mozilla browsers that implement
+        // a native base64 encoder in the form of "btoa/atob"
+        if (this.HAS_NATIVE_SUPPORT && !webSafe) {
+            return atob(input);
+        }
+        return byteArrayToString(this.decodeStringToByteArray(input, webSafe));
+    },
+    /**
+     * Base64-decode a string.
+     *
+     * In base-64 decoding, groups of four characters are converted into three
+     * bytes.  If the encoder did not apply padding, the input length may not
+     * be a multiple of 4.
+     *
+     * In this case, the last group will have fewer than 4 characters, and
+     * padding will be inferred.  If the group has one or two characters, it decodes
+     * to one byte.  If the group has three characters, it decodes to two bytes.
+     *
+     * @param input Input to decode.
+     * @param webSafe True if we should use the web-safe alphabet.
+     * @return bytes representing the decoded value.
+     */ decodeStringToByteArray (input, webSafe) {
+        this.init_();
+        const charToByteMap = webSafe ? this.charToByteMapWebSafe_ : this.charToByteMap_;
+        const output = [];
+        for(let i = 0; i < input.length;){
+            const byte1 = charToByteMap[input.charAt(i++)];
+            const haveByte2 = i < input.length;
+            const byte2 = haveByte2 ? charToByteMap[input.charAt(i)] : 0;
+            ++i;
+            const haveByte3 = i < input.length;
+            const byte3 = haveByte3 ? charToByteMap[input.charAt(i)] : 64;
+            ++i;
+            const haveByte4 = i < input.length;
+            const byte4 = haveByte4 ? charToByteMap[input.charAt(i)] : 64;
+            ++i;
+            if (byte1 == null || byte2 == null || byte3 == null || byte4 == null) {
+                throw new DecodeBase64StringError();
+            }
+            const outByte1 = byte1 << 2 | byte2 >> 4;
+            output.push(outByte1);
+            if (byte3 !== 64) {
+                const outByte2 = byte2 << 4 & 0xf0 | byte3 >> 2;
+                output.push(outByte2);
+                if (byte4 !== 64) {
+                    const outByte3 = byte3 << 6 & 0xc0 | byte4;
+                    output.push(outByte3);
+                }
+            }
+        }
+        return output;
+    },
+    /**
+     * Lazy static initialization function. Called before
+     * accessing any of the static map variables.
+     * @private
+     */ init_ () {
+        if (!this.byteToCharMap_) {
+            this.byteToCharMap_ = {};
+            this.charToByteMap_ = {};
+            this.byteToCharMapWebSafe_ = {};
+            this.charToByteMapWebSafe_ = {};
+            // We want quick mappings back and forth, so we precompute two maps.
+            for(let i = 0; i < this.ENCODED_VALS.length; i++){
+                this.byteToCharMap_[i] = this.ENCODED_VALS.charAt(i);
+                this.charToByteMap_[this.byteToCharMap_[i]] = i;
+                this.byteToCharMapWebSafe_[i] = this.ENCODED_VALS_WEBSAFE.charAt(i);
+                this.charToByteMapWebSafe_[this.byteToCharMapWebSafe_[i]] = i;
+                // Be forgiving when decoding and correctly decode both encodings.
+                if (i >= this.ENCODED_VALS_BASE.length) {
+                    this.charToByteMap_[this.ENCODED_VALS_WEBSAFE.charAt(i)] = i;
+                    this.charToByteMapWebSafe_[this.ENCODED_VALS.charAt(i)] = i;
+                }
+            }
+        }
+    }
+};
+/**
+ * An error encountered while decoding base64 string.
+ */ class DecodeBase64StringError extends Error {
+    constructor(){
+        super(...arguments);
+        this.name = 'DecodeBase64StringError';
+    }
+}
+/**
+ * URL-safe base64 encoding
+ */ const base64Encode = function(str) {
+    const utf8Bytes = stringToByteArray$1(str);
+    return base64.encodeByteArray(utf8Bytes, true);
+};
+/**
+ * URL-safe base64 encoding (without "." padding in the end).
+ * e.g. Used in JSON Web Token (JWT) parts.
+ */ const base64urlEncodeWithoutPadding = function(str) {
+    // Use base64url encoding and remove padding in the end (dot characters).
+    return base64Encode(str).replace(/\./g, '');
+};
+/**
+ * URL-safe base64 decoding
+ *
+ * NOTE: DO NOT use the global atob() function - it does NOT support the
+ * base64Url variant encoding.
+ *
+ * @param str To be decoded
+ * @return Decoded result, if possible
+ */ const base64Decode = function(str) {
+    try {
+        return base64.decodeString(str, true);
+    } catch (e) {
+        console.error('base64Decode failed: ', e);
+    }
+    return null;
+};
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Do a deep-copy of basic JavaScript Objects or Arrays.
+ */ function deepCopy(value) {
+    return deepExtend(undefined, value);
+}
+/**
+ * Copy properties from source to target (recursively allows extension
+ * of Objects and Arrays).  Scalar values in the target are over-written.
+ * If target is undefined, an object of the appropriate type will be created
+ * (and returned).
+ *
+ * We recursively copy all child properties of plain Objects in the source- so
+ * that namespace- like dictionaries are merged.
+ *
+ * Note that the target can be a function, in which case the properties in
+ * the source Object are copied onto it as static properties of the Function.
+ *
+ * Note: we don't merge __proto__ to prevent prototype pollution
+ */ function deepExtend(target, source) {
+    if (!(source instanceof Object)) {
+        return source;
+    }
+    switch(source.constructor){
+        case Date:
+            // Treat Dates like scalars; if the target date object had any child
+            // properties - they will be lost!
+            const dateValue = source;
+            return new Date(dateValue.getTime());
+        case Object:
+            if (target === undefined) {
+                target = {};
+            }
+            break;
+        case Array:
+            // Always copy the array source and overwrite the target.
+            target = [];
+            break;
+        default:
+            // Not a plain Object - treat it as a scalar.
+            return source;
+    }
+    for(const prop in source){
+        // use isValidKey to guard against prototype pollution. See https://snyk.io/vuln/SNYK-JS-LODASH-450202
+        if (!source.hasOwnProperty(prop) || !isValidKey(prop)) {
+            continue;
+        }
+        target[prop] = deepExtend(target[prop], source[prop]);
+    }
+    return target;
+}
+function isValidKey(key) {
+    return key !== '__proto__';
+}
+/**
+ * @license
+ * Copyright 2022 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Polyfill for `globalThis` object.
+ * @returns the `globalThis` object for the given environment.
+ * @public
+ */ function getGlobal() {
+    if (typeof self !== 'undefined') {
+        return self;
+    }
+    if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+    ;
+    if ("TURBOPACK compile-time truthy", 1) {
+        return /*TURBOPACK member replacement*/ __turbopack_context__.g;
+    }
+    //TURBOPACK unreachable
+    ;
+}
+/**
+ * @license
+ * Copyright 2022 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const getDefaultsFromGlobal = ()=>getGlobal().__FIREBASE_DEFAULTS__;
+/**
+ * Attempt to read defaults from a JSON string provided to
+ * process(.)env(.)__FIREBASE_DEFAULTS__ or a JSON file whose path is in
+ * process(.)env(.)__FIREBASE_DEFAULTS_PATH__
+ * The dots are in parens because certain compilers (Vite?) cannot
+ * handle seeing that variable in comments.
+ * See https://github.com/firebase/firebase-js-sdk/issues/6838
+ */ const getDefaultsFromEnvVariable = ()=>{
+    if (typeof process === 'undefined' || typeof process.env === 'undefined') {
+        return;
+    }
+    const defaultsJsonString = process.env.__FIREBASE_DEFAULTS__;
+    if (defaultsJsonString) {
+        return JSON.parse(defaultsJsonString);
+    }
+};
+const getDefaultsFromCookie = ()=>{
+    if (typeof document === 'undefined') {
+        return;
+    }
+    let match;
+    try {
+        match = document.cookie.match(/__FIREBASE_DEFAULTS__=([^;]+)/);
+    } catch (e) {
+        // Some environments such as Angular Universal SSR have a
+        // `document` object but error on accessing `document.cookie`.
+        return;
+    }
+    const decoded = match && base64Decode(match[1]);
+    return decoded && JSON.parse(decoded);
+};
+/**
+ * Get the __FIREBASE_DEFAULTS__ object. It checks in order:
+ * (1) if such an object exists as a property of `globalThis`
+ * (2) if such an object was provided on a shell environment variable
+ * (3) if such an object exists in a cookie
+ * @public
+ */ const getDefaults = ()=>{
+    try {
+        return getDefaultsFromGlobal() || getDefaultsFromEnvVariable() || getDefaultsFromCookie();
+    } catch (e) {
+        /**
+         * Catch-all for being unable to get __FIREBASE_DEFAULTS__ due
+         * to any environment case we have not accounted for. Log to
+         * info instead of swallowing so we can find these unknown cases
+         * and add paths for them if needed.
+         */ console.info(`Unable to get __FIREBASE_DEFAULTS__ due to: ${e}`);
+        return;
+    }
+};
+/**
+ * Returns emulator host stored in the __FIREBASE_DEFAULTS__ object
+ * for the given product.
+ * @returns a URL host formatted like `127.0.0.1:9999` or `[::1]:4000` if available
+ * @public
+ */ const getDefaultEmulatorHost = (productName)=>{
+    var _a, _b;
+    return (_b = (_a = getDefaults()) === null || _a === void 0 ? void 0 : _a.emulatorHosts) === null || _b === void 0 ? void 0 : _b[productName];
+};
+/**
+ * Returns emulator hostname and port stored in the __FIREBASE_DEFAULTS__ object
+ * for the given product.
+ * @returns a pair of hostname and port like `["::1", 4000]` if available
+ * @public
+ */ const getDefaultEmulatorHostnameAndPort = (productName)=>{
+    const host = getDefaultEmulatorHost(productName);
+    if (!host) {
+        return undefined;
+    }
+    const separatorIndex = host.lastIndexOf(':'); // Finding the last since IPv6 addr also has colons.
+    if (separatorIndex <= 0 || separatorIndex + 1 === host.length) {
+        throw new Error(`Invalid host ${host} with no separate hostname and port!`);
+    }
+    // eslint-disable-next-line no-restricted-globals
+    const port = parseInt(host.substring(separatorIndex + 1), 10);
+    if (host[0] === '[') {
+        // Bracket-quoted `[ipv6addr]:port` => return "ipv6addr" (without brackets).
+        return [
+            host.substring(1, separatorIndex - 1),
+            port
+        ];
+    } else {
+        return [
+            host.substring(0, separatorIndex),
+            port
+        ];
+    }
+};
+/**
+ * Returns Firebase app config stored in the __FIREBASE_DEFAULTS__ object.
+ * @public
+ */ const getDefaultAppConfig = ()=>{
+    var _a;
+    return (_a = getDefaults()) === null || _a === void 0 ? void 0 : _a.config;
+};
+/**
+ * Returns an experimental setting on the __FIREBASE_DEFAULTS__ object (properties
+ * prefixed by "_")
+ * @public
+ */ const getExperimentalSetting = (name)=>{
+    var _a;
+    return (_a = getDefaults()) === null || _a === void 0 ? void 0 : _a[`_${name}`];
+};
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ class Deferred {
+    constructor(){
+        this.reject = ()=>{};
+        this.resolve = ()=>{};
+        this.promise = new Promise((resolve, reject)=>{
+            this.resolve = resolve;
+            this.reject = reject;
+        });
+    }
+    /**
+     * Our API internals are not promiseified and cannot because our callback APIs have subtle expectations around
+     * invoking promises inline, which Promises are forbidden to do. This method accepts an optional node-style callback
+     * and returns a node-style callback which will resolve or reject the Deferred's promise.
+     */ wrapCallback(callback) {
+        return (error, value)=>{
+            if (error) {
+                this.reject(error);
+            } else {
+                this.resolve(value);
+            }
+            if (typeof callback === 'function') {
+                // Attaching noop handler just in case developer wasn't expecting
+                // promises
+                this.promise.catch(()=>{});
+                // Some of our callbacks don't expect a value and our own tests
+                // assert that the parameter length is 1
+                if (callback.length === 1) {
+                    callback(error);
+                } else {
+                    callback(error, value);
+                }
+            }
+        };
+    }
+}
+/**
+ * @license
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ function createMockUserToken(token, projectId) {
+    if (token.uid) {
+        throw new Error('The "uid" field is no longer supported by mockUserToken. Please use "sub" instead for Firebase Auth User ID.');
+    }
+    // Unsecured JWTs use "none" as the algorithm.
+    const header = {
+        alg: 'none',
+        type: 'JWT'
+    };
+    const project = projectId || 'demo-project';
+    const iat = token.iat || 0;
+    const sub = token.sub || token.user_id;
+    if (!sub) {
+        throw new Error("mockUserToken must contain 'sub' or 'user_id' field!");
+    }
+    const payload = Object.assign({
+        // Set all required fields to decent defaults
+        iss: `https://securetoken.google.com/${project}`,
+        aud: project,
+        iat,
+        exp: iat + 3600,
+        auth_time: iat,
+        sub,
+        user_id: sub,
+        firebase: {
+            sign_in_provider: 'custom',
+            identities: {}
+        }
+    }, token);
+    // Unsecured JWTs use the empty string as a signature.
+    const signature = '';
+    return [
+        base64urlEncodeWithoutPadding(JSON.stringify(header)),
+        base64urlEncodeWithoutPadding(JSON.stringify(payload)),
+        signature
+    ].join('.');
+}
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Returns navigator.userAgent string or '' if it's not defined.
+ * @return user agent string
+ */ function getUA() {
+    if (typeof navigator !== 'undefined' && typeof navigator['userAgent'] === 'string') {
+        return navigator['userAgent'];
+    } else {
+        return '';
+    }
+}
+/**
+ * Detect Cordova / PhoneGap / Ionic frameworks on a mobile device.
+ *
+ * Deliberately does not rely on checking `file://` URLs (as this fails PhoneGap
+ * in the Ripple emulator) nor Cordova `onDeviceReady`, which would normally
+ * wait for a callback.
+ */ function isMobileCordova() {
+    return ("TURBOPACK compile-time value", "undefined") !== 'undefined' && // @ts-ignore Setting up an broadly applicable index signature for Window
+    // just to deal with this case would probably be a bad idea.
+    !!(window['cordova'] || window['phonegap'] || window['PhoneGap']) && /ios|iphone|ipod|ipad|android|blackberry|iemobile/i.test(getUA());
+}
+/**
+ * Detect Node.js.
+ *
+ * @return true if Node.js environment is detected or specified.
+ */ // Node detection logic from: https://github.com/iliakan/detect-node/
+function isNode() {
+    var _a;
+    const forceEnvironment = (_a = getDefaults()) === null || _a === void 0 ? void 0 : _a.forceEnvironment;
+    if (forceEnvironment === 'node') {
+        return true;
+    } else if (forceEnvironment === 'browser') {
+        return false;
+    }
+    try {
+        return Object.prototype.toString.call(/*TURBOPACK member replacement*/ __turbopack_context__.g.process) === '[object process]';
+    } catch (e) {
+        return false;
+    }
+}
+/**
+ * Detect Browser Environment
+ */ function isBrowser() {
+    return typeof self === 'object' && self.self === self;
+}
+function isBrowserExtension() {
+    const runtime = typeof chrome === 'object' ? chrome.runtime : typeof browser === 'object' ? browser.runtime : undefined;
+    return typeof runtime === 'object' && runtime.id !== undefined;
+}
+/**
+ * Detect React Native.
+ *
+ * @return true if ReactNative environment is detected.
+ */ function isReactNative() {
+    return typeof navigator === 'object' && navigator['product'] === 'ReactNative';
+}
+/** Detects Electron apps. */ function isElectron() {
+    return getUA().indexOf('Electron/') >= 0;
+}
+/** Detects Internet Explorer. */ function isIE() {
+    const ua = getUA();
+    return ua.indexOf('MSIE ') >= 0 || ua.indexOf('Trident/') >= 0;
+}
+/** Detects Universal Windows Platform apps. */ function isUWP() {
+    return getUA().indexOf('MSAppHost/') >= 0;
+}
+/**
+ * Detect whether the current SDK build is the Node version.
+ *
+ * @return true if it's the Node SDK build.
+ */ function isNodeSdk() {
+    return CONSTANTS.NODE_CLIENT === true || CONSTANTS.NODE_ADMIN === true;
+}
+/** Returns true if we are running in Safari. */ function isSafari() {
+    return !isNode() && navigator.userAgent.includes('Safari') && !navigator.userAgent.includes('Chrome');
+}
+/**
+ * This method checks if indexedDB is supported by current browser/service worker context
+ * @return true if indexedDB is supported by current browser/service worker context
+ */ function isIndexedDBAvailable() {
+    try {
+        return typeof indexedDB === 'object';
+    } catch (e) {
+        return false;
+    }
+}
+/**
+ * This method validates browser/sw context for indexedDB by opening a dummy indexedDB database and reject
+ * if errors occur during the database open operation.
+ *
+ * @throws exception if current browser/sw context can't run idb.open (ex: Safari iframe, Firefox
+ * private browsing)
+ */ function validateIndexedDBOpenable() {
+    return new Promise((resolve, reject)=>{
+        try {
+            let preExist = true;
+            const DB_CHECK_NAME = 'validate-browser-context-for-indexeddb-analytics-module';
+            const request = self.indexedDB.open(DB_CHECK_NAME);
+            request.onsuccess = ()=>{
+                request.result.close();
+                // delete database only when it doesn't pre-exist
+                if (!preExist) {
+                    self.indexedDB.deleteDatabase(DB_CHECK_NAME);
+                }
+                resolve(true);
+            };
+            request.onupgradeneeded = ()=>{
+                preExist = false;
+            };
+            request.onerror = ()=>{
+                var _a;
+                reject(((_a = request.error) === null || _a === void 0 ? void 0 : _a.message) || '');
+            };
+        } catch (error) {
+            reject(error);
+        }
+    });
+}
+/**
+ *
+ * This method checks whether cookie is enabled within current browser
+ * @return true if cookie is enabled within current browser
+ */ function areCookiesEnabled() {
+    if (typeof navigator === 'undefined' || !navigator.cookieEnabled) {
+        return false;
+    }
+    return true;
+}
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * @fileoverview Standardized Firebase Error.
+ *
+ * Usage:
+ *
+ *   // Typescript string literals for type-safe codes
+ *   type Err =
+ *     'unknown' |
+ *     'object-not-found'
+ *     ;
+ *
+ *   // Closure enum for type-safe error codes
+ *   // at-enum {string}
+ *   var Err = {
+ *     UNKNOWN: 'unknown',
+ *     OBJECT_NOT_FOUND: 'object-not-found',
+ *   }
+ *
+ *   let errors: Map<Err, string> = {
+ *     'generic-error': "Unknown error",
+ *     'file-not-found': "Could not find file: {$file}",
+ *   };
+ *
+ *   // Type-safe function - must pass a valid error code as param.
+ *   let error = new ErrorFactory<Err>('service', 'Service', errors);
+ *
+ *   ...
+ *   throw error.create(Err.GENERIC);
+ *   ...
+ *   throw error.create(Err.FILE_NOT_FOUND, {'file': fileName});
+ *   ...
+ *   // Service: Could not file file: foo.txt (service/file-not-found).
+ *
+ *   catch (e) {
+ *     assert(e.message === "Could not find file: foo.txt.");
+ *     if ((e as FirebaseError)?.code === 'service/file-not-found') {
+ *       console.log("Could not read file: " + e['file']);
+ *     }
+ *   }
+ */ const ERROR_NAME = 'FirebaseError';
+// Based on code from:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#Custom_Error_Types
+class FirebaseError extends Error {
+    constructor(/** The error code for this error. */ code, message, /** Custom data for this error. */ customData){
+        super(message);
+        this.code = code;
+        this.customData = customData;
+        /** The custom name for all FirebaseErrors. */ this.name = ERROR_NAME;
+        // Fix For ES5
+        // https://github.com/Microsoft/TypeScript-wiki/blob/master/Breaking-Changes.md#extending-built-ins-like-error-array-and-map-may-no-longer-work
+        Object.setPrototypeOf(this, FirebaseError.prototype);
+        // Maintains proper stack trace for where our error was thrown.
+        // Only available on V8.
+        if (Error.captureStackTrace) {
+            Error.captureStackTrace(this, ErrorFactory.prototype.create);
+        }
+    }
+}
+class ErrorFactory {
+    constructor(service, serviceName, errors){
+        this.service = service;
+        this.serviceName = serviceName;
+        this.errors = errors;
+    }
+    create(code, ...data) {
+        const customData = data[0] || {};
+        const fullCode = `${this.service}/${code}`;
+        const template = this.errors[code];
+        const message = template ? replaceTemplate(template, customData) : 'Error';
+        // Service Name: Error message (service/code).
+        const fullMessage = `${this.serviceName}: ${message} (${fullCode}).`;
+        const error = new FirebaseError(fullCode, fullMessage, customData);
+        return error;
+    }
+}
+function replaceTemplate(template, data) {
+    return template.replace(PATTERN, (_, key)=>{
+        const value = data[key];
+        return value != null ? String(value) : `<${key}?>`;
+    });
+}
+const PATTERN = /\{\$([^}]+)}/g;
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Evaluates a JSON string into a javascript object.
+ *
+ * @param {string} str A string containing JSON.
+ * @return {*} The javascript object representing the specified JSON.
+ */ function jsonEval(str) {
+    return JSON.parse(str);
+}
+/**
+ * Returns JSON representing a javascript object.
+ * @param {*} data Javascript object to be stringified.
+ * @return {string} The JSON contents of the object.
+ */ function stringify(data) {
+    return JSON.stringify(data);
+}
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Decodes a Firebase auth. token into constituent parts.
+ *
+ * Notes:
+ * - May return with invalid / incomplete claims if there's no native base64 decoding support.
+ * - Doesn't check if the token is actually valid.
+ */ const decode = function(token) {
+    let header = {}, claims = {}, data = {}, signature = '';
+    try {
+        const parts = token.split('.');
+        header = jsonEval(base64Decode(parts[0]) || '');
+        claims = jsonEval(base64Decode(parts[1]) || '');
+        signature = parts[2];
+        data = claims['d'] || {};
+        delete claims['d'];
+    } catch (e) {}
+    return {
+        header,
+        claims,
+        data,
+        signature
+    };
+};
+/**
+ * Decodes a Firebase auth. token and checks the validity of its time-based claims. Will return true if the
+ * token is within the time window authorized by the 'nbf' (not-before) and 'iat' (issued-at) claims.
+ *
+ * Notes:
+ * - May return a false negative if there's no native base64 decoding support.
+ * - Doesn't check if the token is actually valid.
+ */ const isValidTimestamp = function(token) {
+    const claims = decode(token).claims;
+    const now = Math.floor(new Date().getTime() / 1000);
+    let validSince = 0, validUntil = 0;
+    if (typeof claims === 'object') {
+        if (claims.hasOwnProperty('nbf')) {
+            validSince = claims['nbf'];
+        } else if (claims.hasOwnProperty('iat')) {
+            validSince = claims['iat'];
+        }
+        if (claims.hasOwnProperty('exp')) {
+            validUntil = claims['exp'];
+        } else {
+            // token will expire after 24h by default
+            validUntil = validSince + 86400;
+        }
+    }
+    return !!now && !!validSince && !!validUntil && now >= validSince && now <= validUntil;
+};
+/**
+ * Decodes a Firebase auth. token and returns its issued at time if valid, null otherwise.
+ *
+ * Notes:
+ * - May return null if there's no native base64 decoding support.
+ * - Doesn't check if the token is actually valid.
+ */ const issuedAtTime = function(token) {
+    const claims = decode(token).claims;
+    if (typeof claims === 'object' && claims.hasOwnProperty('iat')) {
+        return claims['iat'];
+    }
+    return null;
+};
+/**
+ * Decodes a Firebase auth. token and checks the validity of its format. Expects a valid issued-at time.
+ *
+ * Notes:
+ * - May return a false negative if there's no native base64 decoding support.
+ * - Doesn't check if the token is actually valid.
+ */ const isValidFormat = function(token) {
+    const decoded = decode(token), claims = decoded.claims;
+    return !!claims && typeof claims === 'object' && claims.hasOwnProperty('iat');
+};
+/**
+ * Attempts to peer into an auth token and determine if it's an admin auth token by looking at the claims portion.
+ *
+ * Notes:
+ * - May return a false negative if there's no native base64 decoding support.
+ * - Doesn't check if the token is actually valid.
+ */ const isAdmin = function(token) {
+    const claims = decode(token).claims;
+    return typeof claims === 'object' && claims['admin'] === true;
+};
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ function contains(obj, key) {
+    return Object.prototype.hasOwnProperty.call(obj, key);
+}
+function safeGet(obj, key) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        return obj[key];
+    } else {
+        return undefined;
+    }
+}
+function isEmpty(obj) {
+    for(const key in obj){
+        if (Object.prototype.hasOwnProperty.call(obj, key)) {
+            return false;
+        }
+    }
+    return true;
+}
+function map(obj, fn, contextObj) {
+    const res = {};
+    for(const key in obj){
+        if (Object.prototype.hasOwnProperty.call(obj, key)) {
+            res[key] = fn.call(contextObj, obj[key], key, obj);
+        }
+    }
+    return res;
+}
+/**
+ * Deep equal two objects. Support Arrays and Objects.
+ */ function deepEqual(a, b) {
+    if (a === b) {
+        return true;
+    }
+    const aKeys = Object.keys(a);
+    const bKeys = Object.keys(b);
+    for (const k of aKeys){
+        if (!bKeys.includes(k)) {
+            return false;
+        }
+        const aProp = a[k];
+        const bProp = b[k];
+        if (isObject(aProp) && isObject(bProp)) {
+            if (!deepEqual(aProp, bProp)) {
+                return false;
+            }
+        } else if (aProp !== bProp) {
+            return false;
+        }
+    }
+    for (const k of bKeys){
+        if (!aKeys.includes(k)) {
+            return false;
+        }
+    }
+    return true;
+}
+function isObject(thing) {
+    return thing !== null && typeof thing === 'object';
+}
+/**
+ * @license
+ * Copyright 2022 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Rejects if the given promise doesn't resolve in timeInMS milliseconds.
+ * @internal
+ */ function promiseWithTimeout(promise, timeInMS = 2000) {
+    const deferredPromise = new Deferred();
+    setTimeout(()=>deferredPromise.reject('timeout!'), timeInMS);
+    promise.then(deferredPromise.resolve, deferredPromise.reject);
+    return deferredPromise.promise;
+}
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Returns a querystring-formatted string (e.g. &arg=val&arg2=val2) from a
+ * params object (e.g. {arg: 'val', arg2: 'val2'})
+ * Note: You must prepend it with ? when adding it to a URL.
+ */ function querystring(querystringParams) {
+    const params = [];
+    for (const [key, value] of Object.entries(querystringParams)){
+        if (Array.isArray(value)) {
+            value.forEach((arrayVal)=>{
+                params.push(encodeURIComponent(key) + '=' + encodeURIComponent(arrayVal));
+            });
+        } else {
+            params.push(encodeURIComponent(key) + '=' + encodeURIComponent(value));
+        }
+    }
+    return params.length ? '&' + params.join('&') : '';
+}
+/**
+ * Decodes a querystring (e.g. ?arg=val&arg2=val2) into a params object
+ * (e.g. {arg: 'val', arg2: 'val2'})
+ */ function querystringDecode(querystring) {
+    const obj = {};
+    const tokens = querystring.replace(/^\?/, '').split('&');
+    tokens.forEach((token)=>{
+        if (token) {
+            const [key, value] = token.split('=');
+            obj[decodeURIComponent(key)] = decodeURIComponent(value);
+        }
+    });
+    return obj;
+}
+/**
+ * Extract the query string part of a URL, including the leading question mark (if present).
+ */ function extractQuerystring(url) {
+    const queryStart = url.indexOf('?');
+    if (!queryStart) {
+        return '';
+    }
+    const fragmentStart = url.indexOf('#', queryStart);
+    return url.substring(queryStart, fragmentStart > 0 ? fragmentStart : undefined);
+}
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * @fileoverview SHA-1 cryptographic hash.
+ * Variable names follow the notation in FIPS PUB 180-3:
+ * http://csrc.nist.gov/publications/fips/fips180-3/fips180-3_final.pdf.
+ *
+ * Usage:
+ *   var sha1 = new sha1();
+ *   sha1.update(bytes);
+ *   var hash = sha1.digest();
+ *
+ * Performance:
+ *   Chrome 23:   ~400 Mbit/s
+ *   Firefox 16:  ~250 Mbit/s
+ *
+ */ /**
+ * SHA-1 cryptographic hash constructor.
+ *
+ * The properties declared here are discussed in the above algorithm document.
+ * @constructor
+ * @final
+ * @struct
+ */ class Sha1 {
+    constructor(){
+        /**
+         * Holds the previous values of accumulated variables a-e in the compress_
+         * function.
+         * @private
+         */ this.chain_ = [];
+        /**
+         * A buffer holding the partially computed hash result.
+         * @private
+         */ this.buf_ = [];
+        /**
+         * An array of 80 bytes, each a part of the message to be hashed.  Referred to
+         * as the message schedule in the docs.
+         * @private
+         */ this.W_ = [];
+        /**
+         * Contains data needed to pad messages less than 64 bytes.
+         * @private
+         */ this.pad_ = [];
+        /**
+         * @private {number}
+         */ this.inbuf_ = 0;
+        /**
+         * @private {number}
+         */ this.total_ = 0;
+        this.blockSize = 512 / 8;
+        this.pad_[0] = 128;
+        for(let i = 1; i < this.blockSize; ++i){
+            this.pad_[i] = 0;
+        }
+        this.reset();
+    }
+    reset() {
+        this.chain_[0] = 0x67452301;
+        this.chain_[1] = 0xefcdab89;
+        this.chain_[2] = 0x98badcfe;
+        this.chain_[3] = 0x10325476;
+        this.chain_[4] = 0xc3d2e1f0;
+        this.inbuf_ = 0;
+        this.total_ = 0;
+    }
+    /**
+     * Internal compress helper function.
+     * @param buf Block to compress.
+     * @param offset Offset of the block in the buffer.
+     * @private
+     */ compress_(buf, offset) {
+        if (!offset) {
+            offset = 0;
+        }
+        const W = this.W_;
+        // get 16 big endian words
+        if (typeof buf === 'string') {
+            for(let i = 0; i < 16; i++){
+                // TODO(user): [bug 8140122] Recent versions of Safari for Mac OS and iOS
+                // have a bug that turns the post-increment ++ operator into pre-increment
+                // during JIT compilation.  We have code that depends heavily on SHA-1 for
+                // correctness and which is affected by this bug, so I've removed all uses
+                // of post-increment ++ in which the result value is used.  We can revert
+                // this change once the Safari bug
+                // (https://bugs.webkit.org/show_bug.cgi?id=109036) has been fixed and
+                // most clients have been updated.
+                W[i] = buf.charCodeAt(offset) << 24 | buf.charCodeAt(offset + 1) << 16 | buf.charCodeAt(offset + 2) << 8 | buf.charCodeAt(offset + 3);
+                offset += 4;
+            }
+        } else {
+            for(let i = 0; i < 16; i++){
+                W[i] = buf[offset] << 24 | buf[offset + 1] << 16 | buf[offset + 2] << 8 | buf[offset + 3];
+                offset += 4;
+            }
+        }
+        // expand to 80 words
+        for(let i = 16; i < 80; i++){
+            const t = W[i - 3] ^ W[i - 8] ^ W[i - 14] ^ W[i - 16];
+            W[i] = (t << 1 | t >>> 31) & 0xffffffff;
+        }
+        let a = this.chain_[0];
+        let b = this.chain_[1];
+        let c = this.chain_[2];
+        let d = this.chain_[3];
+        let e = this.chain_[4];
+        let f, k;
+        // TODO(user): Try to unroll this loop to speed up the computation.
+        for(let i = 0; i < 80; i++){
+            if (i < 40) {
+                if (i < 20) {
+                    f = d ^ b & (c ^ d);
+                    k = 0x5a827999;
+                } else {
+                    f = b ^ c ^ d;
+                    k = 0x6ed9eba1;
+                }
+            } else {
+                if (i < 60) {
+                    f = b & c | d & (b | c);
+                    k = 0x8f1bbcdc;
+                } else {
+                    f = b ^ c ^ d;
+                    k = 0xca62c1d6;
+                }
+            }
+            const t = (a << 5 | a >>> 27) + f + e + k + W[i] & 0xffffffff;
+            e = d;
+            d = c;
+            c = (b << 30 | b >>> 2) & 0xffffffff;
+            b = a;
+            a = t;
+        }
+        this.chain_[0] = this.chain_[0] + a & 0xffffffff;
+        this.chain_[1] = this.chain_[1] + b & 0xffffffff;
+        this.chain_[2] = this.chain_[2] + c & 0xffffffff;
+        this.chain_[3] = this.chain_[3] + d & 0xffffffff;
+        this.chain_[4] = this.chain_[4] + e & 0xffffffff;
+    }
+    update(bytes, length) {
+        // TODO(johnlenz): tighten the function signature and remove this check
+        if (bytes == null) {
+            return;
+        }
+        if (length === undefined) {
+            length = bytes.length;
+        }
+        const lengthMinusBlock = length - this.blockSize;
+        let n = 0;
+        // Using local instead of member variables gives ~5% speedup on Firefox 16.
+        const buf = this.buf_;
+        let inbuf = this.inbuf_;
+        // The outer while loop should execute at most twice.
+        while(n < length){
+            // When we have no data in the block to top up, we can directly process the
+            // input buffer (assuming it contains sufficient data). This gives ~25%
+            // speedup on Chrome 23 and ~15% speedup on Firefox 16, but requires that
+            // the data is provided in large chunks (or in multiples of 64 bytes).
+            if (inbuf === 0) {
+                while(n <= lengthMinusBlock){
+                    this.compress_(bytes, n);
+                    n += this.blockSize;
+                }
+            }
+            if (typeof bytes === 'string') {
+                while(n < length){
+                    buf[inbuf] = bytes.charCodeAt(n);
+                    ++inbuf;
+                    ++n;
+                    if (inbuf === this.blockSize) {
+                        this.compress_(buf);
+                        inbuf = 0;
+                        break;
+                    }
+                }
+            } else {
+                while(n < length){
+                    buf[inbuf] = bytes[n];
+                    ++inbuf;
+                    ++n;
+                    if (inbuf === this.blockSize) {
+                        this.compress_(buf);
+                        inbuf = 0;
+                        break;
+                    }
+                }
+            }
+        }
+        this.inbuf_ = inbuf;
+        this.total_ += length;
+    }
+    /** @override */ digest() {
+        const digest = [];
+        let totalBits = this.total_ * 8;
+        // Add pad 0x80 0x00*.
+        if (this.inbuf_ < 56) {
+            this.update(this.pad_, 56 - this.inbuf_);
+        } else {
+            this.update(this.pad_, this.blockSize - (this.inbuf_ - 56));
+        }
+        // Add # bits.
+        for(let i = this.blockSize - 1; i >= 56; i--){
+            this.buf_[i] = totalBits & 255;
+            totalBits /= 256; // Don't use bit-shifting here!
+        }
+        this.compress_(this.buf_);
+        let n = 0;
+        for(let i = 0; i < 5; i++){
+            for(let j = 24; j >= 0; j -= 8){
+                digest[n] = this.chain_[i] >> j & 255;
+                ++n;
+            }
+        }
+        return digest;
+    }
+}
+/**
+ * Helper to make a Subscribe function (just like Promise helps make a
+ * Thenable).
+ *
+ * @param executor Function which can make calls to a single Observer
+ *     as a proxy.
+ * @param onNoObservers Callback when count of Observers goes to zero.
+ */ function createSubscribe(executor, onNoObservers) {
+    const proxy = new ObserverProxy(executor, onNoObservers);
+    return proxy.subscribe.bind(proxy);
+}
+/**
+ * Implement fan-out for any number of Observers attached via a subscribe
+ * function.
+ */ class ObserverProxy {
+    /**
+     * @param executor Function which can make calls to a single Observer
+     *     as a proxy.
+     * @param onNoObservers Callback when count of Observers goes to zero.
+     */ constructor(executor, onNoObservers){
+        this.observers = [];
+        this.unsubscribes = [];
+        this.observerCount = 0;
+        // Micro-task scheduling by calling task.then().
+        this.task = Promise.resolve();
+        this.finalized = false;
+        this.onNoObservers = onNoObservers;
+        // Call the executor asynchronously so subscribers that are called
+        // synchronously after the creation of the subscribe function
+        // can still receive the very first value generated in the executor.
+        this.task.then(()=>{
+            executor(this);
+        }).catch((e)=>{
+            this.error(e);
+        });
+    }
+    next(value) {
+        this.forEachObserver((observer)=>{
+            observer.next(value);
+        });
+    }
+    error(error) {
+        this.forEachObserver((observer)=>{
+            observer.error(error);
+        });
+        this.close(error);
+    }
+    complete() {
+        this.forEachObserver((observer)=>{
+            observer.complete();
+        });
+        this.close();
+    }
+    /**
+     * Subscribe function that can be used to add an Observer to the fan-out list.
+     *
+     * - We require that no event is sent to a subscriber sychronously to their
+     *   call to subscribe().
+     */ subscribe(nextOrObserver, error, complete) {
+        let observer;
+        if (nextOrObserver === undefined && error === undefined && complete === undefined) {
+            throw new Error('Missing Observer.');
+        }
+        // Assemble an Observer object when passed as callback functions.
+        if (implementsAnyMethods(nextOrObserver, [
+            'next',
+            'error',
+            'complete'
+        ])) {
+            observer = nextOrObserver;
+        } else {
+            observer = {
+                next: nextOrObserver,
+                error,
+                complete
+            };
+        }
+        if (observer.next === undefined) {
+            observer.next = noop;
+        }
+        if (observer.error === undefined) {
+            observer.error = noop;
+        }
+        if (observer.complete === undefined) {
+            observer.complete = noop;
+        }
+        const unsub = this.unsubscribeOne.bind(this, this.observers.length);
+        // Attempt to subscribe to a terminated Observable - we
+        // just respond to the Observer with the final error or complete
+        // event.
+        if (this.finalized) {
+            // eslint-disable-next-line @typescript-eslint/no-floating-promises
+            this.task.then(()=>{
+                try {
+                    if (this.finalError) {
+                        observer.error(this.finalError);
+                    } else {
+                        observer.complete();
+                    }
+                } catch (e) {
+                // nothing
+                }
+                return;
+            });
+        }
+        this.observers.push(observer);
+        return unsub;
+    }
+    // Unsubscribe is synchronous - we guarantee that no events are sent to
+    // any unsubscribed Observer.
+    unsubscribeOne(i) {
+        if (this.observers === undefined || this.observers[i] === undefined) {
+            return;
+        }
+        delete this.observers[i];
+        this.observerCount -= 1;
+        if (this.observerCount === 0 && this.onNoObservers !== undefined) {
+            this.onNoObservers(this);
+        }
+    }
+    forEachObserver(fn) {
+        if (this.finalized) {
+            // Already closed by previous event....just eat the additional values.
+            return;
+        }
+        // Since sendOne calls asynchronously - there is no chance that
+        // this.observers will become undefined.
+        for(let i = 0; i < this.observers.length; i++){
+            this.sendOne(i, fn);
+        }
+    }
+    // Call the Observer via one of it's callback function. We are careful to
+    // confirm that the observe has not been unsubscribed since this asynchronous
+    // function had been queued.
+    sendOne(i, fn) {
+        // Execute the callback asynchronously
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
+        this.task.then(()=>{
+            if (this.observers !== undefined && this.observers[i] !== undefined) {
+                try {
+                    fn(this.observers[i]);
+                } catch (e) {
+                    // Ignore exceptions raised in Observers or missing methods of an
+                    // Observer.
+                    // Log error to console. b/31404806
+                    if (typeof console !== 'undefined' && console.error) {
+                        console.error(e);
+                    }
+                }
+            }
+        });
+    }
+    close(err) {
+        if (this.finalized) {
+            return;
+        }
+        this.finalized = true;
+        if (err !== undefined) {
+            this.finalError = err;
+        }
+        // Proxy is no longer needed - garbage collect references
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises
+        this.task.then(()=>{
+            this.observers = undefined;
+            this.onNoObservers = undefined;
+        });
+    }
+}
+/** Turn synchronous function into one called asynchronously. */ // eslint-disable-next-line @typescript-eslint/ban-types
+function async(fn, onError) {
+    return (...args)=>{
+        Promise.resolve(true).then(()=>{
+            fn(...args);
+        }).catch((error)=>{
+            if (onError) {
+                onError(error);
+            }
+        });
+    };
+}
+/**
+ * Return true if the object passed in implements any of the named methods.
+ */ function implementsAnyMethods(obj, methods) {
+    if (typeof obj !== 'object' || obj === null) {
+        return false;
+    }
+    for (const method of methods){
+        if (method in obj && typeof obj[method] === 'function') {
+            return true;
+        }
+    }
+    return false;
+}
+function noop() {
+// do nothing
+}
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Check to make sure the appropriate number of arguments are provided for a public function.
+ * Throws an error if it fails.
+ *
+ * @param fnName The function name
+ * @param minCount The minimum number of arguments to allow for the function call
+ * @param maxCount The maximum number of argument to allow for the function call
+ * @param argCount The actual number of arguments provided.
+ */ const validateArgCount = function(fnName, minCount, maxCount, argCount) {
+    let argError;
+    if (argCount < minCount) {
+        argError = 'at least ' + minCount;
+    } else if (argCount > maxCount) {
+        argError = maxCount === 0 ? 'none' : 'no more than ' + maxCount;
+    }
+    if (argError) {
+        const error = fnName + ' failed: Was called with ' + argCount + (argCount === 1 ? ' argument.' : ' arguments.') + ' Expects ' + argError + '.';
+        throw new Error(error);
+    }
+};
+/**
+ * Generates a string to prefix an error message about failed argument validation
+ *
+ * @param fnName The function name
+ * @param argName The name of the argument
+ * @return The prefix to add to the error thrown for validation.
+ */ function errorPrefix(fnName, argName) {
+    return `${fnName} failed: ${argName} argument `;
+}
+/**
+ * @param fnName
+ * @param argumentNumber
+ * @param namespace
+ * @param optional
+ */ function validateNamespace(fnName, namespace, optional) {
+    if (optional && !namespace) {
+        return;
+    }
+    if (typeof namespace !== 'string') {
+        //TODO: I should do more validation here. We only allow certain chars in namespaces.
+        throw new Error(errorPrefix(fnName, 'namespace') + 'must be a valid firebase namespace.');
+    }
+}
+function validateCallback(fnName, argumentName, // eslint-disable-next-line @typescript-eslint/ban-types
+callback, optional) {
+    if (optional && !callback) {
+        return;
+    }
+    if (typeof callback !== 'function') {
+        throw new Error(errorPrefix(fnName, argumentName) + 'must be a valid function.');
+    }
+}
+function validateContextObject(fnName, argumentName, context, optional) {
+    if (optional && !context) {
+        return;
+    }
+    if (typeof context !== 'object' || context === null) {
+        throw new Error(errorPrefix(fnName, argumentName) + 'must be a valid context object.');
+    }
+}
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ // Code originally came from goog.crypt.stringToUtf8ByteArray, but for some reason they
+// automatically replaced '\r\n' with '\n', and they didn't handle surrogate pairs,
+// so it's been modified.
+// Note that not all Unicode characters appear as single characters in JavaScript strings.
+// fromCharCode returns the UTF-16 encoding of a character - so some Unicode characters
+// use 2 characters in Javascript.  All 4-byte UTF-8 characters begin with a first
+// character in the range 0xD800 - 0xDBFF (the first character of a so-called surrogate
+// pair).
+// See http://www.ecma-international.org/ecma-262/5.1/#sec-15.1.3
+/**
+ * @param {string} str
+ * @return {Array}
+ */ const stringToByteArray = function(str) {
+    const out = [];
+    let p = 0;
+    for(let i = 0; i < str.length; i++){
+        let c = str.charCodeAt(i);
+        // Is this the lead surrogate in a surrogate pair?
+        if (c >= 0xd800 && c <= 0xdbff) {
+            const high = c - 0xd800; // the high 10 bits.
+            i++;
+            assert(i < str.length, 'Surrogate pair missing trail surrogate.');
+            const low = str.charCodeAt(i) - 0xdc00; // the low 10 bits.
+            c = 0x10000 + (high << 10) + low;
+        }
+        if (c < 128) {
+            out[p++] = c;
+        } else if (c < 2048) {
+            out[p++] = c >> 6 | 192;
+            out[p++] = c & 63 | 128;
+        } else if (c < 65536) {
+            out[p++] = c >> 12 | 224;
+            out[p++] = c >> 6 & 63 | 128;
+            out[p++] = c & 63 | 128;
+        } else {
+            out[p++] = c >> 18 | 240;
+            out[p++] = c >> 12 & 63 | 128;
+            out[p++] = c >> 6 & 63 | 128;
+            out[p++] = c & 63 | 128;
+        }
+    }
+    return out;
+};
+/**
+ * Calculate length without actually converting; useful for doing cheaper validation.
+ * @param {string} str
+ * @return {number}
+ */ const stringLength = function(str) {
+    let p = 0;
+    for(let i = 0; i < str.length; i++){
+        const c = str.charCodeAt(i);
+        if (c < 128) {
+            p++;
+        } else if (c < 2048) {
+            p += 2;
+        } else if (c >= 0xd800 && c <= 0xdbff) {
+            // Lead surrogate of a surrogate pair.  The pair together will take 4 bytes to represent.
+            p += 4;
+            i++; // skip trail surrogate.
+        } else {
+            p += 3;
+        }
+    }
+    return p;
+};
+/**
+ * @license
+ * Copyright 2022 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Copied from https://stackoverflow.com/a/2117523
+ * Generates a new uuid.
+ * @public
+ */ const uuidv4 = function() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c)=>{
+        const r = Math.random() * 16 | 0, v = c === 'x' ? r : r & 0x3 | 0x8;
+        return v.toString(16);
+    });
+};
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * The amount of milliseconds to exponentially increase.
+ */ const DEFAULT_INTERVAL_MILLIS = 1000;
+/**
+ * The factor to backoff by.
+ * Should be a number greater than 1.
+ */ const DEFAULT_BACKOFF_FACTOR = 2;
+/**
+ * The maximum milliseconds to increase to.
+ *
+ * <p>Visible for testing
+ */ const MAX_VALUE_MILLIS = 4 * 60 * 60 * 1000; // Four hours, like iOS and Android.
+/**
+ * The percentage of backoff time to randomize by.
+ * See
+ * http://go/safe-client-behavior#step-1-determine-the-appropriate-retry-interval-to-handle-spike-traffic
+ * for context.
+ *
+ * <p>Visible for testing
+ */ const RANDOM_FACTOR = 0.5;
+/**
+ * Based on the backoff method from
+ * https://github.com/google/closure-library/blob/master/closure/goog/math/exponentialbackoff.js.
+ * Extracted here so we don't need to pass metadata and a stateful ExponentialBackoff object around.
+ */ function calculateBackoffMillis(backoffCount, intervalMillis = DEFAULT_INTERVAL_MILLIS, backoffFactor = DEFAULT_BACKOFF_FACTOR) {
+    // Calculates an exponentially increasing value.
+    // Deviation: calculates value from count and a constant interval, so we only need to save value
+    // and count to restore state.
+    const currBaseValue = intervalMillis * Math.pow(backoffFactor, backoffCount);
+    // A random "fuzz" to avoid waves of retries.
+    // Deviation: randomFactor is required.
+    const randomWait = Math.round(// A fraction of the backoff value to add/subtract.
+    // Deviation: changes multiplication order to improve readability.
+    RANDOM_FACTOR * currBaseValue * // A random float (rounded to int by Math.round above) in the range [-1, 1]. Determines
+    // if we add or subtract.
+    (Math.random() - 0.5) * 2);
+    // Limits backoff to max to avoid effectively permanent backoff.
+    return Math.min(MAX_VALUE_MILLIS, currBaseValue + randomWait);
+}
+/**
+ * @license
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Provide English ordinal letters after a number
+ */ function ordinal(i) {
+    if (!Number.isFinite(i)) {
+        return `${i}`;
+    }
+    return i + indicator(i);
+}
+function indicator(i) {
+    i = Math.abs(i);
+    const cent = i % 100;
+    if (cent >= 10 && cent <= 20) {
+        return 'th';
+    }
+    const dec = i % 10;
+    if (dec === 1) {
+        return 'st';
+    }
+    if (dec === 2) {
+        return 'nd';
+    }
+    if (dec === 3) {
+        return 'rd';
+    }
+    return 'th';
+}
+/**
+ * @license
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ function getModularInstance(service) {
+    if (service && service._delegate) {
+        return service._delegate;
+    } else {
+        return service;
+    }
+}
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ // Overriding the constant (we should be the only ones doing this)
+CONSTANTS.NODE_CLIENT = true;
+;
+ //# sourceMappingURL=index.node.esm.js.map
+}),
+"[project]/HairGrowth-Clinic/node_modules/@firebase/component/dist/esm/index.esm2017.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Component",
+    ()=>Component,
+    "ComponentContainer",
+    ()=>ComponentContainer,
+    "Provider",
+    ()=>Provider
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/@firebase/util/dist/node-esm/index.node.esm.js [app-ssr] (ecmascript)");
+;
+/**
+ * Component for service name T, e.g. `auth`, `auth-internal`
+ */ class Component {
+    /**
+     *
+     * @param name The public service name, e.g. app, auth, firestore, database
+     * @param instanceFactory Service factory responsible for creating the public interface
+     * @param type whether the service provided by the component is public or private
+     */ constructor(name, instanceFactory, type){
+        this.name = name;
+        this.instanceFactory = instanceFactory;
+        this.type = type;
+        this.multipleInstances = false;
+        /**
+         * Properties to be added to the service namespace
+         */ this.serviceProps = {};
+        this.instantiationMode = "LAZY" /* InstantiationMode.LAZY */ ;
+        this.onInstanceCreated = null;
+    }
+    setInstantiationMode(mode) {
+        this.instantiationMode = mode;
+        return this;
+    }
+    setMultipleInstances(multipleInstances) {
+        this.multipleInstances = multipleInstances;
+        return this;
+    }
+    setServiceProps(props) {
+        this.serviceProps = props;
+        return this;
+    }
+    setInstanceCreatedCallback(callback) {
+        this.onInstanceCreated = callback;
+        return this;
+    }
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const DEFAULT_ENTRY_NAME = '[DEFAULT]';
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Provider for instance for service name T, e.g. 'auth', 'auth-internal'
+ * NameServiceMapping[T] is an alias for the type of the instance
+ */ class Provider {
+    constructor(name, container){
+        this.name = name;
+        this.container = container;
+        this.component = null;
+        this.instances = new Map();
+        this.instancesDeferred = new Map();
+        this.instancesOptions = new Map();
+        this.onInitCallbacks = new Map();
+    }
+    /**
+     * @param identifier A provider can provide mulitple instances of a service
+     * if this.component.multipleInstances is true.
+     */ get(identifier) {
+        // if multipleInstances is not supported, use the default name
+        const normalizedIdentifier = this.normalizeInstanceIdentifier(identifier);
+        if (!this.instancesDeferred.has(normalizedIdentifier)) {
+            const deferred = new __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Deferred"]();
+            this.instancesDeferred.set(normalizedIdentifier, deferred);
+            if (this.isInitialized(normalizedIdentifier) || this.shouldAutoInitialize()) {
+                // initialize the service if it can be auto-initialized
+                try {
+                    const instance = this.getOrInitializeService({
+                        instanceIdentifier: normalizedIdentifier
+                    });
+                    if (instance) {
+                        deferred.resolve(instance);
+                    }
+                } catch (e) {
+                // when the instance factory throws an exception during get(), it should not cause
+                // a fatal error. We just return the unresolved promise in this case.
+                }
+            }
+        }
+        return this.instancesDeferred.get(normalizedIdentifier).promise;
+    }
+    getImmediate(options) {
+        var _a;
+        // if multipleInstances is not supported, use the default name
+        const normalizedIdentifier = this.normalizeInstanceIdentifier(options === null || options === void 0 ? void 0 : options.identifier);
+        const optional = (_a = options === null || options === void 0 ? void 0 : options.optional) !== null && _a !== void 0 ? _a : false;
+        if (this.isInitialized(normalizedIdentifier) || this.shouldAutoInitialize()) {
+            try {
+                return this.getOrInitializeService({
+                    instanceIdentifier: normalizedIdentifier
+                });
+            } catch (e) {
+                if (optional) {
+                    return null;
+                } else {
+                    throw e;
+                }
+            }
+        } else {
+            // In case a component is not initialized and should/can not be auto-initialized at the moment, return null if the optional flag is set, or throw
+            if (optional) {
+                return null;
+            } else {
+                throw Error(`Service ${this.name} is not available`);
+            }
+        }
+    }
+    getComponent() {
+        return this.component;
+    }
+    setComponent(component) {
+        if (component.name !== this.name) {
+            throw Error(`Mismatching Component ${component.name} for Provider ${this.name}.`);
+        }
+        if (this.component) {
+            throw Error(`Component for ${this.name} has already been provided`);
+        }
+        this.component = component;
+        // return early without attempting to initialize the component if the component requires explicit initialization (calling `Provider.initialize()`)
+        if (!this.shouldAutoInitialize()) {
+            return;
+        }
+        // if the service is eager, initialize the default instance
+        if (isComponentEager(component)) {
+            try {
+                this.getOrInitializeService({
+                    instanceIdentifier: DEFAULT_ENTRY_NAME
+                });
+            } catch (e) {
+            // when the instance factory for an eager Component throws an exception during the eager
+            // initialization, it should not cause a fatal error.
+            // TODO: Investigate if we need to make it configurable, because some component may want to cause
+            // a fatal error in this case?
+            }
+        }
+        // Create service instances for the pending promises and resolve them
+        // NOTE: if this.multipleInstances is false, only the default instance will be created
+        // and all promises with resolve with it regardless of the identifier.
+        for (const [instanceIdentifier, instanceDeferred] of this.instancesDeferred.entries()){
+            const normalizedIdentifier = this.normalizeInstanceIdentifier(instanceIdentifier);
+            try {
+                // `getOrInitializeService()` should always return a valid instance since a component is guaranteed. use ! to make typescript happy.
+                const instance = this.getOrInitializeService({
+                    instanceIdentifier: normalizedIdentifier
+                });
+                instanceDeferred.resolve(instance);
+            } catch (e) {
+            // when the instance factory throws an exception, it should not cause
+            // a fatal error. We just leave the promise unresolved.
+            }
+        }
+    }
+    clearInstance(identifier = DEFAULT_ENTRY_NAME) {
+        this.instancesDeferred.delete(identifier);
+        this.instancesOptions.delete(identifier);
+        this.instances.delete(identifier);
+    }
+    // app.delete() will call this method on every provider to delete the services
+    // TODO: should we mark the provider as deleted?
+    async delete() {
+        const services = Array.from(this.instances.values());
+        await Promise.all([
+            ...services.filter((service)=>'INTERNAL' in service) // legacy services
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            .map((service)=>service.INTERNAL.delete()),
+            ...services.filter((service)=>'_delete' in service) // modularized services
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            .map((service)=>service._delete())
+        ]);
+    }
+    isComponentSet() {
+        return this.component != null;
+    }
+    isInitialized(identifier = DEFAULT_ENTRY_NAME) {
+        return this.instances.has(identifier);
+    }
+    getOptions(identifier = DEFAULT_ENTRY_NAME) {
+        return this.instancesOptions.get(identifier) || {};
+    }
+    initialize(opts = {}) {
+        const { options = {} } = opts;
+        const normalizedIdentifier = this.normalizeInstanceIdentifier(opts.instanceIdentifier);
+        if (this.isInitialized(normalizedIdentifier)) {
+            throw Error(`${this.name}(${normalizedIdentifier}) has already been initialized`);
+        }
+        if (!this.isComponentSet()) {
+            throw Error(`Component ${this.name} has not been registered yet`);
+        }
+        const instance = this.getOrInitializeService({
+            instanceIdentifier: normalizedIdentifier,
+            options
+        });
+        // resolve any pending promise waiting for the service instance
+        for (const [instanceIdentifier, instanceDeferred] of this.instancesDeferred.entries()){
+            const normalizedDeferredIdentifier = this.normalizeInstanceIdentifier(instanceIdentifier);
+            if (normalizedIdentifier === normalizedDeferredIdentifier) {
+                instanceDeferred.resolve(instance);
+            }
+        }
+        return instance;
+    }
+    /**
+     *
+     * @param callback - a function that will be invoked  after the provider has been initialized by calling provider.initialize().
+     * The function is invoked SYNCHRONOUSLY, so it should not execute any longrunning tasks in order to not block the program.
+     *
+     * @param identifier An optional instance identifier
+     * @returns a function to unregister the callback
+     */ onInit(callback, identifier) {
+        var _a;
+        const normalizedIdentifier = this.normalizeInstanceIdentifier(identifier);
+        const existingCallbacks = (_a = this.onInitCallbacks.get(normalizedIdentifier)) !== null && _a !== void 0 ? _a : new Set();
+        existingCallbacks.add(callback);
+        this.onInitCallbacks.set(normalizedIdentifier, existingCallbacks);
+        const existingInstance = this.instances.get(normalizedIdentifier);
+        if (existingInstance) {
+            callback(existingInstance, normalizedIdentifier);
+        }
+        return ()=>{
+            existingCallbacks.delete(callback);
+        };
+    }
+    /**
+     * Invoke onInit callbacks synchronously
+     * @param instance the service instance`
+     */ invokeOnInitCallbacks(instance, identifier) {
+        const callbacks = this.onInitCallbacks.get(identifier);
+        if (!callbacks) {
+            return;
+        }
+        for (const callback of callbacks){
+            try {
+                callback(instance, identifier);
+            } catch (_a) {
+            // ignore errors in the onInit callback
+            }
+        }
+    }
+    getOrInitializeService({ instanceIdentifier, options = {} }) {
+        let instance = this.instances.get(instanceIdentifier);
+        if (!instance && this.component) {
+            instance = this.component.instanceFactory(this.container, {
+                instanceIdentifier: normalizeIdentifierForFactory(instanceIdentifier),
+                options
+            });
+            this.instances.set(instanceIdentifier, instance);
+            this.instancesOptions.set(instanceIdentifier, options);
+            /**
+             * Invoke onInit listeners.
+             * Note this.component.onInstanceCreated is different, which is used by the component creator,
+             * while onInit listeners are registered by consumers of the provider.
+             */ this.invokeOnInitCallbacks(instance, instanceIdentifier);
+            /**
+             * Order is important
+             * onInstanceCreated() should be called after this.instances.set(instanceIdentifier, instance); which
+             * makes `isInitialized()` return true.
+             */ if (this.component.onInstanceCreated) {
+                try {
+                    this.component.onInstanceCreated(this.container, instanceIdentifier, instance);
+                } catch (_a) {
+                // ignore errors in the onInstanceCreatedCallback
+                }
+            }
+        }
+        return instance || null;
+    }
+    normalizeInstanceIdentifier(identifier = DEFAULT_ENTRY_NAME) {
+        if (this.component) {
+            return this.component.multipleInstances ? identifier : DEFAULT_ENTRY_NAME;
+        } else {
+            return identifier; // assume multiple instances are supported before the component is provided.
+        }
+    }
+    shouldAutoInitialize() {
+        return !!this.component && this.component.instantiationMode !== "EXPLICIT" /* InstantiationMode.EXPLICIT */ ;
+    }
+}
+// undefined should be passed to the service factory for the default instance
+function normalizeIdentifierForFactory(identifier) {
+    return identifier === DEFAULT_ENTRY_NAME ? undefined : identifier;
+}
+function isComponentEager(component) {
+    return component.instantiationMode === "EAGER" /* InstantiationMode.EAGER */ ;
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * ComponentContainer that provides Providers for service name T, e.g. `auth`, `auth-internal`
+ */ class ComponentContainer {
+    constructor(name){
+        this.name = name;
+        this.providers = new Map();
+    }
+    /**
+     *
+     * @param component Component being added
+     * @param overwrite When a component with the same name has already been registered,
+     * if overwrite is true: overwrite the existing component with the new component and create a new
+     * provider with the new component. It can be useful in tests where you want to use different mocks
+     * for different tests.
+     * if overwrite is false: throw an exception
+     */ addComponent(component) {
+        const provider = this.getProvider(component.name);
+        if (provider.isComponentSet()) {
+            throw new Error(`Component ${component.name} has already been registered with ${this.name}`);
+        }
+        provider.setComponent(component);
+    }
+    addOrOverwriteComponent(component) {
+        const provider = this.getProvider(component.name);
+        if (provider.isComponentSet()) {
+            // delete the existing provider from the container, so we can register the new component
+            this.providers.delete(component.name);
+        }
+        this.addComponent(component);
+    }
+    /**
+     * getProvider provides a type safe interface where it can only be called with a field name
+     * present in NameServiceMapping interface.
+     *
+     * Firebase SDKs providing services should extend NameServiceMapping interface to register
+     * themselves.
+     */ getProvider(name) {
+        if (this.providers.has(name)) {
+            return this.providers.get(name);
+        }
+        // create a Provider for a service that hasn't registered with Firebase
+        const provider = new Provider(name, this);
+        this.providers.set(name, provider);
+        return provider;
+    }
+    getProviders() {
+        return Array.from(this.providers.values());
+    }
+}
+;
+ //# sourceMappingURL=index.esm2017.js.map
+}),
+"[project]/HairGrowth-Clinic/node_modules/@firebase/logger/dist/esm/index.esm2017.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * A container for all of the Logger instances
+ */ __turbopack_context__.s([
+    "LogLevel",
+    ()=>LogLevel,
+    "Logger",
+    ()=>Logger,
+    "setLogLevel",
+    ()=>setLogLevel,
+    "setUserLogHandler",
+    ()=>setUserLogHandler
+]);
+const instances = [];
+/**
+ * The JS SDK supports 5 log levels and also allows a user the ability to
+ * silence the logs altogether.
+ *
+ * The order is a follows:
+ * DEBUG < VERBOSE < INFO < WARN < ERROR
+ *
+ * All of the log types above the current log level will be captured (i.e. if
+ * you set the log level to `INFO`, errors will still be logged, but `DEBUG` and
+ * `VERBOSE` logs will not)
+ */ var LogLevel;
+(function(LogLevel) {
+    LogLevel[LogLevel["DEBUG"] = 0] = "DEBUG";
+    LogLevel[LogLevel["VERBOSE"] = 1] = "VERBOSE";
+    LogLevel[LogLevel["INFO"] = 2] = "INFO";
+    LogLevel[LogLevel["WARN"] = 3] = "WARN";
+    LogLevel[LogLevel["ERROR"] = 4] = "ERROR";
+    LogLevel[LogLevel["SILENT"] = 5] = "SILENT";
+})(LogLevel || (LogLevel = {}));
+const levelStringToEnum = {
+    'debug': LogLevel.DEBUG,
+    'verbose': LogLevel.VERBOSE,
+    'info': LogLevel.INFO,
+    'warn': LogLevel.WARN,
+    'error': LogLevel.ERROR,
+    'silent': LogLevel.SILENT
+};
+/**
+ * The default log level
+ */ const defaultLogLevel = LogLevel.INFO;
+/**
+ * By default, `console.debug` is not displayed in the developer console (in
+ * chrome). To avoid forcing users to have to opt-in to these logs twice
+ * (i.e. once for firebase, and once in the console), we are sending `DEBUG`
+ * logs to the `console.log` function.
+ */ const ConsoleMethod = {
+    [LogLevel.DEBUG]: 'log',
+    [LogLevel.VERBOSE]: 'log',
+    [LogLevel.INFO]: 'info',
+    [LogLevel.WARN]: 'warn',
+    [LogLevel.ERROR]: 'error'
+};
+/**
+ * The default log handler will forward DEBUG, VERBOSE, INFO, WARN, and ERROR
+ * messages on to their corresponding console counterparts (if the log method
+ * is supported by the current log level)
+ */ const defaultLogHandler = (instance, logType, ...args)=>{
+    if (logType < instance.logLevel) {
+        return;
+    }
+    const now = new Date().toISOString();
+    const method = ConsoleMethod[logType];
+    if (method) {
+        console[method](`[${now}]  ${instance.name}:`, ...args);
+    } else {
+        throw new Error(`Attempted to log a message with an invalid logType (value: ${logType})`);
+    }
+};
+class Logger {
+    /**
+     * Gives you an instance of a Logger to capture messages according to
+     * Firebase's logging scheme.
+     *
+     * @param name The name that the logs will be associated with
+     */ constructor(name){
+        this.name = name;
+        /**
+         * The log level of the given Logger instance.
+         */ this._logLevel = defaultLogLevel;
+        /**
+         * The main (internal) log handler for the Logger instance.
+         * Can be set to a new function in internal package code but not by user.
+         */ this._logHandler = defaultLogHandler;
+        /**
+         * The optional, additional, user-defined log handler for the Logger instance.
+         */ this._userLogHandler = null;
+        /**
+         * Capture the current instance for later use
+         */ instances.push(this);
+    }
+    get logLevel() {
+        return this._logLevel;
+    }
+    set logLevel(val) {
+        if (!(val in LogLevel)) {
+            throw new TypeError(`Invalid value "${val}" assigned to \`logLevel\``);
+        }
+        this._logLevel = val;
+    }
+    // Workaround for setter/getter having to be the same type.
+    setLogLevel(val) {
+        this._logLevel = typeof val === 'string' ? levelStringToEnum[val] : val;
+    }
+    get logHandler() {
+        return this._logHandler;
+    }
+    set logHandler(val) {
+        if (typeof val !== 'function') {
+            throw new TypeError('Value assigned to `logHandler` must be a function');
+        }
+        this._logHandler = val;
+    }
+    get userLogHandler() {
+        return this._userLogHandler;
+    }
+    set userLogHandler(val) {
+        this._userLogHandler = val;
+    }
+    /**
+     * The functions below are all based on the `console` interface
+     */ debug(...args) {
+        this._userLogHandler && this._userLogHandler(this, LogLevel.DEBUG, ...args);
+        this._logHandler(this, LogLevel.DEBUG, ...args);
+    }
+    log(...args) {
+        this._userLogHandler && this._userLogHandler(this, LogLevel.VERBOSE, ...args);
+        this._logHandler(this, LogLevel.VERBOSE, ...args);
+    }
+    info(...args) {
+        this._userLogHandler && this._userLogHandler(this, LogLevel.INFO, ...args);
+        this._logHandler(this, LogLevel.INFO, ...args);
+    }
+    warn(...args) {
+        this._userLogHandler && this._userLogHandler(this, LogLevel.WARN, ...args);
+        this._logHandler(this, LogLevel.WARN, ...args);
+    }
+    error(...args) {
+        this._userLogHandler && this._userLogHandler(this, LogLevel.ERROR, ...args);
+        this._logHandler(this, LogLevel.ERROR, ...args);
+    }
+}
+function setLogLevel(level) {
+    instances.forEach((inst)=>{
+        inst.setLogLevel(level);
+    });
+}
+function setUserLogHandler(logCallback, options) {
+    for (const instance of instances){
+        let customLogLevel = null;
+        if (options && options.level) {
+            customLogLevel = levelStringToEnum[options.level];
+        }
+        if (logCallback === null) {
+            instance.userLogHandler = null;
+        } else {
+            instance.userLogHandler = (instance, level, ...args)=>{
+                const message = args.map((arg)=>{
+                    if (arg == null) {
+                        return null;
+                    } else if (typeof arg === 'string') {
+                        return arg;
+                    } else if (typeof arg === 'number' || typeof arg === 'boolean') {
+                        return arg.toString();
+                    } else if (arg instanceof Error) {
+                        return arg.message;
+                    } else {
+                        try {
+                            return JSON.stringify(arg);
+                        } catch (ignored) {
+                            return null;
+                        }
+                    }
+                }).filter((arg)=>arg).join(' ');
+                if (level >= (customLogLevel !== null && customLogLevel !== void 0 ? customLogLevel : instance.logLevel)) {
+                    logCallback({
+                        level: LogLevel[level].toLowerCase(),
+                        message,
+                        args,
+                        type: instance.name
+                    });
+                }
+            };
+        }
+    }
+}
+;
+ //# sourceMappingURL=index.esm2017.js.map
+}),
+"[project]/HairGrowth-Clinic/node_modules/idb/build/wrap-idb-value.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "a",
+    ()=>reverseTransformCache,
+    "i",
+    ()=>instanceOfAny,
+    "r",
+    ()=>replaceTraps,
+    "u",
+    ()=>unwrap,
+    "w",
+    ()=>wrap
+]);
+const instanceOfAny = (object, constructors)=>constructors.some((c)=>object instanceof c);
+let idbProxyableTypes;
+let cursorAdvanceMethods;
+// This is a function to prevent it throwing up in node environments.
+function getIdbProxyableTypes() {
+    return idbProxyableTypes || (idbProxyableTypes = [
+        IDBDatabase,
+        IDBObjectStore,
+        IDBIndex,
+        IDBCursor,
+        IDBTransaction
+    ]);
+}
+// This is a function to prevent it throwing up in node environments.
+function getCursorAdvanceMethods() {
+    return cursorAdvanceMethods || (cursorAdvanceMethods = [
+        IDBCursor.prototype.advance,
+        IDBCursor.prototype.continue,
+        IDBCursor.prototype.continuePrimaryKey
+    ]);
+}
+const cursorRequestMap = new WeakMap();
+const transactionDoneMap = new WeakMap();
+const transactionStoreNamesMap = new WeakMap();
+const transformCache = new WeakMap();
+const reverseTransformCache = new WeakMap();
+function promisifyRequest(request) {
+    const promise = new Promise((resolve, reject)=>{
+        const unlisten = ()=>{
+            request.removeEventListener('success', success);
+            request.removeEventListener('error', error);
+        };
+        const success = ()=>{
+            resolve(wrap(request.result));
+            unlisten();
+        };
+        const error = ()=>{
+            reject(request.error);
+            unlisten();
+        };
+        request.addEventListener('success', success);
+        request.addEventListener('error', error);
+    });
+    promise.then((value)=>{
+        // Since cursoring reuses the IDBRequest (*sigh*), we cache it for later retrieval
+        // (see wrapFunction).
+        if (value instanceof IDBCursor) {
+            cursorRequestMap.set(value, request);
+        }
+    // Catching to avoid "Uncaught Promise exceptions"
+    }).catch(()=>{});
+    // This mapping exists in reverseTransformCache but doesn't doesn't exist in transformCache. This
+    // is because we create many promises from a single IDBRequest.
+    reverseTransformCache.set(promise, request);
+    return promise;
+}
+function cacheDonePromiseForTransaction(tx) {
+    // Early bail if we've already created a done promise for this transaction.
+    if (transactionDoneMap.has(tx)) return;
+    const done = new Promise((resolve, reject)=>{
+        const unlisten = ()=>{
+            tx.removeEventListener('complete', complete);
+            tx.removeEventListener('error', error);
+            tx.removeEventListener('abort', error);
+        };
+        const complete = ()=>{
+            resolve();
+            unlisten();
+        };
+        const error = ()=>{
+            reject(tx.error || new DOMException('AbortError', 'AbortError'));
+            unlisten();
+        };
+        tx.addEventListener('complete', complete);
+        tx.addEventListener('error', error);
+        tx.addEventListener('abort', error);
+    });
+    // Cache it for later retrieval.
+    transactionDoneMap.set(tx, done);
+}
+let idbProxyTraps = {
+    get (target, prop, receiver) {
+        if (target instanceof IDBTransaction) {
+            // Special handling for transaction.done.
+            if (prop === 'done') return transactionDoneMap.get(target);
+            // Polyfill for objectStoreNames because of Edge.
+            if (prop === 'objectStoreNames') {
+                return target.objectStoreNames || transactionStoreNamesMap.get(target);
+            }
+            // Make tx.store return the only store in the transaction, or undefined if there are many.
+            if (prop === 'store') {
+                return receiver.objectStoreNames[1] ? undefined : receiver.objectStore(receiver.objectStoreNames[0]);
+            }
+        }
+        // Else transform whatever we get back.
+        return wrap(target[prop]);
+    },
+    set (target, prop, value) {
+        target[prop] = value;
+        return true;
+    },
+    has (target, prop) {
+        if (target instanceof IDBTransaction && (prop === 'done' || prop === 'store')) {
+            return true;
+        }
+        return prop in target;
+    }
+};
+function replaceTraps(callback) {
+    idbProxyTraps = callback(idbProxyTraps);
+}
+function wrapFunction(func) {
+    // Due to expected object equality (which is enforced by the caching in `wrap`), we
+    // only create one new func per func.
+    // Edge doesn't support objectStoreNames (booo), so we polyfill it here.
+    if (func === IDBDatabase.prototype.transaction && !('objectStoreNames' in IDBTransaction.prototype)) {
+        return function(storeNames, ...args) {
+            const tx = func.call(unwrap(this), storeNames, ...args);
+            transactionStoreNamesMap.set(tx, storeNames.sort ? storeNames.sort() : [
+                storeNames
+            ]);
+            return wrap(tx);
+        };
+    }
+    // Cursor methods are special, as the behaviour is a little more different to standard IDB. In
+    // IDB, you advance the cursor and wait for a new 'success' on the IDBRequest that gave you the
+    // cursor. It's kinda like a promise that can resolve with many values. That doesn't make sense
+    // with real promises, so each advance methods returns a new promise for the cursor object, or
+    // undefined if the end of the cursor has been reached.
+    if (getCursorAdvanceMethods().includes(func)) {
+        return function(...args) {
+            // Calling the original function with the proxy as 'this' causes ILLEGAL INVOCATION, so we use
+            // the original object.
+            func.apply(unwrap(this), args);
+            return wrap(cursorRequestMap.get(this));
+        };
+    }
+    return function(...args) {
+        // Calling the original function with the proxy as 'this' causes ILLEGAL INVOCATION, so we use
+        // the original object.
+        return wrap(func.apply(unwrap(this), args));
+    };
+}
+function transformCachableValue(value) {
+    if (typeof value === 'function') return wrapFunction(value);
+    // This doesn't return, it just creates a 'done' promise for the transaction,
+    // which is later returned for transaction.done (see idbObjectHandler).
+    if (value instanceof IDBTransaction) cacheDonePromiseForTransaction(value);
+    if (instanceOfAny(value, getIdbProxyableTypes())) return new Proxy(value, idbProxyTraps);
+    // Return the same value back if we're not going to transform it.
+    return value;
+}
+function wrap(value) {
+    // We sometimes generate multiple promises from a single IDBRequest (eg when cursoring), because
+    // IDB is weird and a single IDBRequest can yield many responses, so these can't be cached.
+    if (value instanceof IDBRequest) return promisifyRequest(value);
+    // If we've already transformed this value before, reuse the transformed value.
+    // This is faster, but it also provides object equality.
+    if (transformCache.has(value)) return transformCache.get(value);
+    const newValue = transformCachableValue(value);
+    // Not all types are transformed.
+    // These may be primitive types, so they can't be WeakMap keys.
+    if (newValue !== value) {
+        transformCache.set(value, newValue);
+        reverseTransformCache.set(newValue, value);
+    }
+    return newValue;
+}
+const unwrap = (value)=>reverseTransformCache.get(value);
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/idb/build/index.js [app-ssr] (ecmascript) <locals>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "deleteDB",
+    ()=>deleteDB,
+    "openDB",
+    ()=>openDB
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$idb$2f$build$2f$wrap$2d$idb$2d$value$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/idb/build/wrap-idb-value.js [app-ssr] (ecmascript)");
+;
+;
+/**
+ * Open a database.
+ *
+ * @param name Name of the database.
+ * @param version Schema version.
+ * @param callbacks Additional callbacks.
+ */ function openDB(name, version, { blocked, upgrade, blocking, terminated } = {}) {
+    const request = indexedDB.open(name, version);
+    const openPromise = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$idb$2f$build$2f$wrap$2d$idb$2d$value$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["w"])(request);
+    if (upgrade) {
+        request.addEventListener('upgradeneeded', (event)=>{
+            upgrade((0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$idb$2f$build$2f$wrap$2d$idb$2d$value$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["w"])(request.result), event.oldVersion, event.newVersion, (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$idb$2f$build$2f$wrap$2d$idb$2d$value$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["w"])(request.transaction), event);
+        });
+    }
+    if (blocked) {
+        request.addEventListener('blocked', (event)=>blocked(// Casting due to https://github.com/microsoft/TypeScript-DOM-lib-generator/pull/1405
+            event.oldVersion, event.newVersion, event));
+    }
+    openPromise.then((db)=>{
+        if (terminated) db.addEventListener('close', ()=>terminated());
+        if (blocking) {
+            db.addEventListener('versionchange', (event)=>blocking(event.oldVersion, event.newVersion, event));
+        }
+    }).catch(()=>{});
+    return openPromise;
+}
+/**
+ * Delete a database.
+ *
+ * @param name Name of the database.
+ */ function deleteDB(name, { blocked } = {}) {
+    const request = indexedDB.deleteDatabase(name);
+    if (blocked) {
+        request.addEventListener('blocked', (event)=>blocked(// Casting due to https://github.com/microsoft/TypeScript-DOM-lib-generator/pull/1405
+            event.oldVersion, event));
+    }
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$idb$2f$build$2f$wrap$2d$idb$2d$value$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["w"])(request).then(()=>undefined);
+}
+const readMethods = [
+    'get',
+    'getKey',
+    'getAll',
+    'getAllKeys',
+    'count'
+];
+const writeMethods = [
+    'put',
+    'add',
+    'delete',
+    'clear'
+];
+const cachedMethods = new Map();
+function getMethod(target, prop) {
+    if (!(target instanceof IDBDatabase && !(prop in target) && typeof prop === 'string')) {
+        return;
+    }
+    if (cachedMethods.get(prop)) return cachedMethods.get(prop);
+    const targetFuncName = prop.replace(/FromIndex$/, '');
+    const useIndex = prop !== targetFuncName;
+    const isWrite = writeMethods.includes(targetFuncName);
+    if (// Bail if the target doesn't exist on the target. Eg, getAll isn't in Edge.
+    !(targetFuncName in (useIndex ? IDBIndex : IDBObjectStore).prototype) || !(isWrite || readMethods.includes(targetFuncName))) {
+        return;
+    }
+    const method = async function(storeName, ...args) {
+        // isWrite ? 'readwrite' : undefined gzipps better, but fails in Edge :(
+        const tx = this.transaction(storeName, isWrite ? 'readwrite' : 'readonly');
+        let target = tx.store;
+        if (useIndex) target = target.index(args.shift());
+        // Must reject if op rejects.
+        // If it's a write operation, must reject if tx.done rejects.
+        // Must reject with op rejection first.
+        // Must resolve with op value.
+        // Must handle both promises (no unhandled rejections)
+        return (await Promise.all([
+            target[targetFuncName](...args),
+            isWrite && tx.done
+        ]))[0];
+    };
+    cachedMethods.set(prop, method);
+    return method;
+}
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$idb$2f$build$2f$wrap$2d$idb$2d$value$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["r"])((oldTraps)=>({
+        ...oldTraps,
+        get: (target, prop, receiver)=>getMethod(target, prop) || oldTraps.get(target, prop, receiver),
+        has: (target, prop)=>!!getMethod(target, prop) || oldTraps.has(target, prop)
+    }));
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/@firebase/installations/node_modules/idb/build/wrap-idb-value.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "a",
+    ()=>reverseTransformCache,
+    "i",
+    ()=>instanceOfAny,
+    "r",
+    ()=>replaceTraps,
+    "u",
+    ()=>unwrap,
+    "w",
+    ()=>wrap
+]);
+const instanceOfAny = (object, constructors)=>constructors.some((c)=>object instanceof c);
+let idbProxyableTypes;
+let cursorAdvanceMethods;
+// This is a function to prevent it throwing up in node environments.
+function getIdbProxyableTypes() {
+    return idbProxyableTypes || (idbProxyableTypes = [
+        IDBDatabase,
+        IDBObjectStore,
+        IDBIndex,
+        IDBCursor,
+        IDBTransaction
+    ]);
+}
+// This is a function to prevent it throwing up in node environments.
+function getCursorAdvanceMethods() {
+    return cursorAdvanceMethods || (cursorAdvanceMethods = [
+        IDBCursor.prototype.advance,
+        IDBCursor.prototype.continue,
+        IDBCursor.prototype.continuePrimaryKey
+    ]);
+}
+const cursorRequestMap = new WeakMap();
+const transactionDoneMap = new WeakMap();
+const transactionStoreNamesMap = new WeakMap();
+const transformCache = new WeakMap();
+const reverseTransformCache = new WeakMap();
+function promisifyRequest(request) {
+    const promise = new Promise((resolve, reject)=>{
+        const unlisten = ()=>{
+            request.removeEventListener('success', success);
+            request.removeEventListener('error', error);
+        };
+        const success = ()=>{
+            resolve(wrap(request.result));
+            unlisten();
+        };
+        const error = ()=>{
+            reject(request.error);
+            unlisten();
+        };
+        request.addEventListener('success', success);
+        request.addEventListener('error', error);
+    });
+    promise.then((value)=>{
+        // Since cursoring reuses the IDBRequest (*sigh*), we cache it for later retrieval
+        // (see wrapFunction).
+        if (value instanceof IDBCursor) {
+            cursorRequestMap.set(value, request);
+        }
+    // Catching to avoid "Uncaught Promise exceptions"
+    }).catch(()=>{});
+    // This mapping exists in reverseTransformCache but doesn't doesn't exist in transformCache. This
+    // is because we create many promises from a single IDBRequest.
+    reverseTransformCache.set(promise, request);
+    return promise;
+}
+function cacheDonePromiseForTransaction(tx) {
+    // Early bail if we've already created a done promise for this transaction.
+    if (transactionDoneMap.has(tx)) return;
+    const done = new Promise((resolve, reject)=>{
+        const unlisten = ()=>{
+            tx.removeEventListener('complete', complete);
+            tx.removeEventListener('error', error);
+            tx.removeEventListener('abort', error);
+        };
+        const complete = ()=>{
+            resolve();
+            unlisten();
+        };
+        const error = ()=>{
+            reject(tx.error || new DOMException('AbortError', 'AbortError'));
+            unlisten();
+        };
+        tx.addEventListener('complete', complete);
+        tx.addEventListener('error', error);
+        tx.addEventListener('abort', error);
+    });
+    // Cache it for later retrieval.
+    transactionDoneMap.set(tx, done);
+}
+let idbProxyTraps = {
+    get (target, prop, receiver) {
+        if (target instanceof IDBTransaction) {
+            // Special handling for transaction.done.
+            if (prop === 'done') return transactionDoneMap.get(target);
+            // Polyfill for objectStoreNames because of Edge.
+            if (prop === 'objectStoreNames') {
+                return target.objectStoreNames || transactionStoreNamesMap.get(target);
+            }
+            // Make tx.store return the only store in the transaction, or undefined if there are many.
+            if (prop === 'store') {
+                return receiver.objectStoreNames[1] ? undefined : receiver.objectStore(receiver.objectStoreNames[0]);
+            }
+        }
+        // Else transform whatever we get back.
+        return wrap(target[prop]);
+    },
+    set (target, prop, value) {
+        target[prop] = value;
+        return true;
+    },
+    has (target, prop) {
+        if (target instanceof IDBTransaction && (prop === 'done' || prop === 'store')) {
+            return true;
+        }
+        return prop in target;
+    }
+};
+function replaceTraps(callback) {
+    idbProxyTraps = callback(idbProxyTraps);
+}
+function wrapFunction(func) {
+    // Due to expected object equality (which is enforced by the caching in `wrap`), we
+    // only create one new func per func.
+    // Edge doesn't support objectStoreNames (booo), so we polyfill it here.
+    if (func === IDBDatabase.prototype.transaction && !('objectStoreNames' in IDBTransaction.prototype)) {
+        return function(storeNames, ...args) {
+            const tx = func.call(unwrap(this), storeNames, ...args);
+            transactionStoreNamesMap.set(tx, storeNames.sort ? storeNames.sort() : [
+                storeNames
+            ]);
+            return wrap(tx);
+        };
+    }
+    // Cursor methods are special, as the behaviour is a little more different to standard IDB. In
+    // IDB, you advance the cursor and wait for a new 'success' on the IDBRequest that gave you the
+    // cursor. It's kinda like a promise that can resolve with many values. That doesn't make sense
+    // with real promises, so each advance methods returns a new promise for the cursor object, or
+    // undefined if the end of the cursor has been reached.
+    if (getCursorAdvanceMethods().includes(func)) {
+        return function(...args) {
+            // Calling the original function with the proxy as 'this' causes ILLEGAL INVOCATION, so we use
+            // the original object.
+            func.apply(unwrap(this), args);
+            return wrap(cursorRequestMap.get(this));
+        };
+    }
+    return function(...args) {
+        // Calling the original function with the proxy as 'this' causes ILLEGAL INVOCATION, so we use
+        // the original object.
+        return wrap(func.apply(unwrap(this), args));
+    };
+}
+function transformCachableValue(value) {
+    if (typeof value === 'function') return wrapFunction(value);
+    // This doesn't return, it just creates a 'done' promise for the transaction,
+    // which is later returned for transaction.done (see idbObjectHandler).
+    if (value instanceof IDBTransaction) cacheDonePromiseForTransaction(value);
+    if (instanceOfAny(value, getIdbProxyableTypes())) return new Proxy(value, idbProxyTraps);
+    // Return the same value back if we're not going to transform it.
+    return value;
+}
+function wrap(value) {
+    // We sometimes generate multiple promises from a single IDBRequest (eg when cursoring), because
+    // IDB is weird and a single IDBRequest can yield many responses, so these can't be cached.
+    if (value instanceof IDBRequest) return promisifyRequest(value);
+    // If we've already transformed this value before, reuse the transformed value.
+    // This is faster, but it also provides object equality.
+    if (transformCache.has(value)) return transformCache.get(value);
+    const newValue = transformCachableValue(value);
+    // Not all types are transformed.
+    // These may be primitive types, so they can't be WeakMap keys.
+    if (newValue !== value) {
+        transformCache.set(value, newValue);
+        reverseTransformCache.set(newValue, value);
+    }
+    return newValue;
+}
+const unwrap = (value)=>reverseTransformCache.get(value);
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/@firebase/installations/node_modules/idb/build/index.js [app-ssr] (ecmascript) <locals>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "deleteDB",
+    ()=>deleteDB,
+    "openDB",
+    ()=>openDB
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$installations$2f$node_modules$2f$idb$2f$build$2f$wrap$2d$idb$2d$value$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/@firebase/installations/node_modules/idb/build/wrap-idb-value.js [app-ssr] (ecmascript)");
+;
+;
+/**
+ * Open a database.
+ *
+ * @param name Name of the database.
+ * @param version Schema version.
+ * @param callbacks Additional callbacks.
+ */ function openDB(name, version, { blocked, upgrade, blocking, terminated } = {}) {
+    const request = indexedDB.open(name, version);
+    const openPromise = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$installations$2f$node_modules$2f$idb$2f$build$2f$wrap$2d$idb$2d$value$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["w"])(request);
+    if (upgrade) {
+        request.addEventListener('upgradeneeded', (event)=>{
+            upgrade((0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$installations$2f$node_modules$2f$idb$2f$build$2f$wrap$2d$idb$2d$value$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["w"])(request.result), event.oldVersion, event.newVersion, (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$installations$2f$node_modules$2f$idb$2f$build$2f$wrap$2d$idb$2d$value$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["w"])(request.transaction));
+        });
+    }
+    if (blocked) request.addEventListener('blocked', ()=>blocked());
+    openPromise.then((db)=>{
+        if (terminated) db.addEventListener('close', ()=>terminated());
+        if (blocking) db.addEventListener('versionchange', ()=>blocking());
+    }).catch(()=>{});
+    return openPromise;
+}
+/**
+ * Delete a database.
+ *
+ * @param name Name of the database.
+ */ function deleteDB(name, { blocked } = {}) {
+    const request = indexedDB.deleteDatabase(name);
+    if (blocked) request.addEventListener('blocked', ()=>blocked());
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$installations$2f$node_modules$2f$idb$2f$build$2f$wrap$2d$idb$2d$value$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["w"])(request).then(()=>undefined);
+}
+const readMethods = [
+    'get',
+    'getKey',
+    'getAll',
+    'getAllKeys',
+    'count'
+];
+const writeMethods = [
+    'put',
+    'add',
+    'delete',
+    'clear'
+];
+const cachedMethods = new Map();
+function getMethod(target, prop) {
+    if (!(target instanceof IDBDatabase && !(prop in target) && typeof prop === 'string')) {
+        return;
+    }
+    if (cachedMethods.get(prop)) return cachedMethods.get(prop);
+    const targetFuncName = prop.replace(/FromIndex$/, '');
+    const useIndex = prop !== targetFuncName;
+    const isWrite = writeMethods.includes(targetFuncName);
+    if (// Bail if the target doesn't exist on the target. Eg, getAll isn't in Edge.
+    !(targetFuncName in (useIndex ? IDBIndex : IDBObjectStore).prototype) || !(isWrite || readMethods.includes(targetFuncName))) {
+        return;
+    }
+    const method = async function(storeName, ...args) {
+        // isWrite ? 'readwrite' : undefined gzipps better, but fails in Edge :(
+        const tx = this.transaction(storeName, isWrite ? 'readwrite' : 'readonly');
+        let target = tx.store;
+        if (useIndex) target = target.index(args.shift());
+        // Must reject if op rejects.
+        // If it's a write operation, must reject if tx.done rejects.
+        // Must reject with op rejection first.
+        // Must resolve with op value.
+        // Must handle both promises (no unhandled rejections)
+        return (await Promise.all([
+            target[targetFuncName](...args),
+            isWrite && tx.done
+        ]))[0];
+    };
+    cachedMethods.set(prop, method);
+    return method;
+}
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$installations$2f$node_modules$2f$idb$2f$build$2f$wrap$2d$idb$2d$value$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["r"])((oldTraps)=>({
+        ...oldTraps,
+        get: (target, prop, receiver)=>getMethod(target, prop) || oldTraps.get(target, prop, receiver),
+        has: (target, prop)=>!!getMethod(target, prop) || oldTraps.has(target, prop)
+    }));
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/@firebase/app/dist/esm/index.esm2017.js [app-ssr] (ecmascript) <locals>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "SDK_VERSION",
+    ()=>SDK_VERSION,
+    "_DEFAULT_ENTRY_NAME",
+    ()=>DEFAULT_ENTRY_NAME,
+    "_addComponent",
+    ()=>_addComponent,
+    "_addOrOverwriteComponent",
+    ()=>_addOrOverwriteComponent,
+    "_apps",
+    ()=>_apps,
+    "_clearComponents",
+    ()=>_clearComponents,
+    "_components",
+    ()=>_components,
+    "_getProvider",
+    ()=>_getProvider,
+    "_registerComponent",
+    ()=>_registerComponent,
+    "_removeServiceInstance",
+    ()=>_removeServiceInstance,
+    "deleteApp",
+    ()=>deleteApp,
+    "getApp",
+    ()=>getApp,
+    "getApps",
+    ()=>getApps,
+    "initializeApp",
+    ()=>initializeApp,
+    "onLog",
+    ()=>onLog,
+    "registerVersion",
+    ()=>registerVersion,
+    "setLogLevel",
+    ()=>setLogLevel
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$component$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/@firebase/component/dist/esm/index.esm2017.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$logger$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/@firebase/logger/dist/esm/index.esm2017.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/@firebase/util/dist/node-esm/index.node.esm.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$idb$2f$build$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/idb/build/index.js [app-ssr] (ecmascript) <locals>");
+;
+;
+;
+;
+;
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ class PlatformLoggerServiceImpl {
+    constructor(container){
+        this.container = container;
+    }
+    // In initial implementation, this will be called by installations on
+    // auth token refresh, and installations will send this string.
+    getPlatformInfoString() {
+        const providers = this.container.getProviders();
+        // Loop through providers and get library/version pairs from any that are
+        // version components.
+        return providers.map((provider)=>{
+            if (isVersionServiceProvider(provider)) {
+                const service = provider.getImmediate();
+                return `${service.library}/${service.version}`;
+            } else {
+                return null;
+            }
+        }).filter((logString)=>logString).join(' ');
+    }
+}
+/**
+ *
+ * @param provider check if this provider provides a VersionService
+ *
+ * NOTE: Using Provider<'app-version'> is a hack to indicate that the provider
+ * provides VersionService. The provider is not necessarily a 'app-version'
+ * provider.
+ */ function isVersionServiceProvider(provider) {
+    const component = provider.getComponent();
+    return (component === null || component === void 0 ? void 0 : component.type) === "VERSION" /* ComponentType.VERSION */ ;
+}
+const name$o = "@firebase/app";
+const version$1 = "0.9.13";
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const logger = new __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$logger$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Logger"]('@firebase/app');
+const name$n = "@firebase/app-compat";
+const name$m = "@firebase/analytics-compat";
+const name$l = "@firebase/analytics";
+const name$k = "@firebase/app-check-compat";
+const name$j = "@firebase/app-check";
+const name$i = "@firebase/auth";
+const name$h = "@firebase/auth-compat";
+const name$g = "@firebase/database";
+const name$f = "@firebase/database-compat";
+const name$e = "@firebase/functions";
+const name$d = "@firebase/functions-compat";
+const name$c = "@firebase/installations";
+const name$b = "@firebase/installations-compat";
+const name$a = "@firebase/messaging";
+const name$9 = "@firebase/messaging-compat";
+const name$8 = "@firebase/performance";
+const name$7 = "@firebase/performance-compat";
+const name$6 = "@firebase/remote-config";
+const name$5 = "@firebase/remote-config-compat";
+const name$4 = "@firebase/storage";
+const name$3 = "@firebase/storage-compat";
+const name$2 = "@firebase/firestore";
+const name$1 = "@firebase/firestore-compat";
+const name = "firebase";
+const version = "9.23.0";
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * The default app name
+ *
+ * @internal
+ */ const DEFAULT_ENTRY_NAME = '[DEFAULT]';
+const PLATFORM_LOG_STRING = {
+    [name$o]: 'fire-core',
+    [name$n]: 'fire-core-compat',
+    [name$l]: 'fire-analytics',
+    [name$m]: 'fire-analytics-compat',
+    [name$j]: 'fire-app-check',
+    [name$k]: 'fire-app-check-compat',
+    [name$i]: 'fire-auth',
+    [name$h]: 'fire-auth-compat',
+    [name$g]: 'fire-rtdb',
+    [name$f]: 'fire-rtdb-compat',
+    [name$e]: 'fire-fn',
+    [name$d]: 'fire-fn-compat',
+    [name$c]: 'fire-iid',
+    [name$b]: 'fire-iid-compat',
+    [name$a]: 'fire-fcm',
+    [name$9]: 'fire-fcm-compat',
+    [name$8]: 'fire-perf',
+    [name$7]: 'fire-perf-compat',
+    [name$6]: 'fire-rc',
+    [name$5]: 'fire-rc-compat',
+    [name$4]: 'fire-gcs',
+    [name$3]: 'fire-gcs-compat',
+    [name$2]: 'fire-fst',
+    [name$1]: 'fire-fst-compat',
+    'fire-js': 'fire-js',
+    [name]: 'fire-js-all'
+};
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * @internal
+ */ const _apps = new Map();
+/**
+ * Registered components.
+ *
+ * @internal
+ */ // eslint-disable-next-line @typescript-eslint/no-explicit-any
+const _components = new Map();
+/**
+ * @param component - the component being added to this app's container
+ *
+ * @internal
+ */ function _addComponent(app, component) {
+    try {
+        app.container.addComponent(component);
+    } catch (e) {
+        logger.debug(`Component ${component.name} failed to register with FirebaseApp ${app.name}`, e);
+    }
+}
+/**
+ *
+ * @internal
+ */ function _addOrOverwriteComponent(app, component) {
+    app.container.addOrOverwriteComponent(component);
+}
+/**
+ *
+ * @param component - the component to register
+ * @returns whether or not the component is registered successfully
+ *
+ * @internal
+ */ function _registerComponent(component) {
+    const componentName = component.name;
+    if (_components.has(componentName)) {
+        logger.debug(`There were multiple attempts to register component ${componentName}.`);
+        return false;
+    }
+    _components.set(componentName, component);
+    // add the component to existing app instances
+    for (const app of _apps.values()){
+        _addComponent(app, component);
+    }
+    return true;
+}
+/**
+ *
+ * @param app - FirebaseApp instance
+ * @param name - service name
+ *
+ * @returns the provider for the service with the matching name
+ *
+ * @internal
+ */ function _getProvider(app, name) {
+    const heartbeatController = app.container.getProvider('heartbeat').getImmediate({
+        optional: true
+    });
+    if (heartbeatController) {
+        void heartbeatController.triggerHeartbeat();
+    }
+    return app.container.getProvider(name);
+}
+/**
+ *
+ * @param app - FirebaseApp instance
+ * @param name - service name
+ * @param instanceIdentifier - service instance identifier in case the service supports multiple instances
+ *
+ * @internal
+ */ function _removeServiceInstance(app, name, instanceIdentifier = DEFAULT_ENTRY_NAME) {
+    _getProvider(app, name).clearInstance(instanceIdentifier);
+}
+/**
+ * Test only
+ *
+ * @internal
+ */ function _clearComponents() {
+    _components.clear();
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const ERRORS = {
+    ["no-app" /* AppError.NO_APP */ ]: "No Firebase App '{$appName}' has been created - " + 'call initializeApp() first',
+    ["bad-app-name" /* AppError.BAD_APP_NAME */ ]: "Illegal App name: '{$appName}",
+    ["duplicate-app" /* AppError.DUPLICATE_APP */ ]: "Firebase App named '{$appName}' already exists with different options or config",
+    ["app-deleted" /* AppError.APP_DELETED */ ]: "Firebase App named '{$appName}' already deleted",
+    ["no-options" /* AppError.NO_OPTIONS */ ]: 'Need to provide options, when not being deployed to hosting via source.',
+    ["invalid-app-argument" /* AppError.INVALID_APP_ARGUMENT */ ]: 'firebase.{$appName}() takes either no argument or a ' + 'Firebase App instance.',
+    ["invalid-log-argument" /* AppError.INVALID_LOG_ARGUMENT */ ]: 'First argument to `onLog` must be null or a function.',
+    ["idb-open" /* AppError.IDB_OPEN */ ]: 'Error thrown when opening IndexedDB. Original error: {$originalErrorMessage}.',
+    ["idb-get" /* AppError.IDB_GET */ ]: 'Error thrown when reading from IndexedDB. Original error: {$originalErrorMessage}.',
+    ["idb-set" /* AppError.IDB_WRITE */ ]: 'Error thrown when writing to IndexedDB. Original error: {$originalErrorMessage}.',
+    ["idb-delete" /* AppError.IDB_DELETE */ ]: 'Error thrown when deleting from IndexedDB. Original error: {$originalErrorMessage}.'
+};
+const ERROR_FACTORY = new __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ErrorFactory"]('app', 'Firebase', ERRORS);
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ class FirebaseAppImpl {
+    constructor(options, config, container){
+        this._isDeleted = false;
+        this._options = Object.assign({}, options);
+        this._config = Object.assign({}, config);
+        this._name = config.name;
+        this._automaticDataCollectionEnabled = config.automaticDataCollectionEnabled;
+        this._container = container;
+        this.container.addComponent(new __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$component$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Component"]('app', ()=>this, "PUBLIC" /* ComponentType.PUBLIC */ ));
+    }
+    get automaticDataCollectionEnabled() {
+        this.checkDestroyed();
+        return this._automaticDataCollectionEnabled;
+    }
+    set automaticDataCollectionEnabled(val) {
+        this.checkDestroyed();
+        this._automaticDataCollectionEnabled = val;
+    }
+    get name() {
+        this.checkDestroyed();
+        return this._name;
+    }
+    get options() {
+        this.checkDestroyed();
+        return this._options;
+    }
+    get config() {
+        this.checkDestroyed();
+        return this._config;
+    }
+    get container() {
+        return this._container;
+    }
+    get isDeleted() {
+        return this._isDeleted;
+    }
+    set isDeleted(val) {
+        this._isDeleted = val;
+    }
+    /**
+     * This function will throw an Error if the App has already been deleted -
+     * use before performing API actions on the App.
+     */ checkDestroyed() {
+        if (this.isDeleted) {
+            throw ERROR_FACTORY.create("app-deleted" /* AppError.APP_DELETED */ , {
+                appName: this._name
+            });
+        }
+    }
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * The current SDK version.
+ *
+ * @public
+ */ const SDK_VERSION = version;
+function initializeApp(_options, rawConfig = {}) {
+    let options = _options;
+    if (typeof rawConfig !== 'object') {
+        const name = rawConfig;
+        rawConfig = {
+            name
+        };
+    }
+    const config = Object.assign({
+        name: DEFAULT_ENTRY_NAME,
+        automaticDataCollectionEnabled: false
+    }, rawConfig);
+    const name = config.name;
+    if (typeof name !== 'string' || !name) {
+        throw ERROR_FACTORY.create("bad-app-name" /* AppError.BAD_APP_NAME */ , {
+            appName: String(name)
+        });
+    }
+    options || (options = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getDefaultAppConfig"])());
+    if (!options) {
+        throw ERROR_FACTORY.create("no-options" /* AppError.NO_OPTIONS */ );
+    }
+    const existingApp = _apps.get(name);
+    if (existingApp) {
+        // return the existing app if options and config deep equal the ones in the existing app.
+        if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["deepEqual"])(options, existingApp.options) && (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["deepEqual"])(config, existingApp.config)) {
+            return existingApp;
+        } else {
+            throw ERROR_FACTORY.create("duplicate-app" /* AppError.DUPLICATE_APP */ , {
+                appName: name
+            });
+        }
+    }
+    const container = new __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$component$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ComponentContainer"](name);
+    for (const component of _components.values()){
+        container.addComponent(component);
+    }
+    const newApp = new FirebaseAppImpl(options, config, container);
+    _apps.set(name, newApp);
+    return newApp;
+}
+/**
+ * Retrieves a {@link @firebase/app#FirebaseApp} instance.
+ *
+ * When called with no arguments, the default app is returned. When an app name
+ * is provided, the app corresponding to that name is returned.
+ *
+ * An exception is thrown if the app being retrieved has not yet been
+ * initialized.
+ *
+ * @example
+ * ```javascript
+ * // Return the default app
+ * const app = getApp();
+ * ```
+ *
+ * @example
+ * ```javascript
+ * // Return a named app
+ * const otherApp = getApp("otherApp");
+ * ```
+ *
+ * @param name - Optional name of the app to return. If no name is
+ *   provided, the default is `"[DEFAULT]"`.
+ *
+ * @returns The app corresponding to the provided app name.
+ *   If no app name is provided, the default app is returned.
+ *
+ * @public
+ */ function getApp(name = DEFAULT_ENTRY_NAME) {
+    const app = _apps.get(name);
+    if (!app && name === DEFAULT_ENTRY_NAME && (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getDefaultAppConfig"])()) {
+        return initializeApp();
+    }
+    if (!app) {
+        throw ERROR_FACTORY.create("no-app" /* AppError.NO_APP */ , {
+            appName: name
+        });
+    }
+    return app;
+}
+/**
+ * A (read-only) array of all initialized apps.
+ * @public
+ */ function getApps() {
+    return Array.from(_apps.values());
+}
+/**
+ * Renders this app unusable and frees the resources of all associated
+ * services.
+ *
+ * @example
+ * ```javascript
+ * deleteApp(app)
+ *   .then(function() {
+ *     console.log("App deleted successfully");
+ *   })
+ *   .catch(function(error) {
+ *     console.log("Error deleting app:", error);
+ *   });
+ * ```
+ *
+ * @public
+ */ async function deleteApp(app) {
+    const name = app.name;
+    if (_apps.has(name)) {
+        _apps.delete(name);
+        await Promise.all(app.container.getProviders().map((provider)=>provider.delete()));
+        app.isDeleted = true;
+    }
+}
+/**
+ * Registers a library's name and version for platform logging purposes.
+ * @param library - Name of 1p or 3p library (e.g. firestore, angularfire)
+ * @param version - Current version of that library.
+ * @param variant - Bundle variant, e.g., node, rn, etc.
+ *
+ * @public
+ */ function registerVersion(libraryKeyOrName, version, variant) {
+    var _a;
+    // TODO: We can use this check to whitelist strings when/if we set up
+    // a good whitelist system.
+    let library = (_a = PLATFORM_LOG_STRING[libraryKeyOrName]) !== null && _a !== void 0 ? _a : libraryKeyOrName;
+    if (variant) {
+        library += `-${variant}`;
+    }
+    const libraryMismatch = library.match(/\s|\//);
+    const versionMismatch = version.match(/\s|\//);
+    if (libraryMismatch || versionMismatch) {
+        const warning = [
+            `Unable to register library "${library}" with version "${version}":`
+        ];
+        if (libraryMismatch) {
+            warning.push(`library name "${library}" contains illegal characters (whitespace or "/")`);
+        }
+        if (libraryMismatch && versionMismatch) {
+            warning.push('and');
+        }
+        if (versionMismatch) {
+            warning.push(`version name "${version}" contains illegal characters (whitespace or "/")`);
+        }
+        logger.warn(warning.join(' '));
+        return;
+    }
+    _registerComponent(new __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$component$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Component"](`${library}-version`, ()=>({
+            library,
+            version
+        }), "VERSION" /* ComponentType.VERSION */ ));
+}
+/**
+ * Sets log handler for all Firebase SDKs.
+ * @param logCallback - An optional custom log handler that executes user code whenever
+ * the Firebase SDK makes a logging call.
+ *
+ * @public
+ */ function onLog(logCallback, options) {
+    if (logCallback !== null && typeof logCallback !== 'function') {
+        throw ERROR_FACTORY.create("invalid-log-argument" /* AppError.INVALID_LOG_ARGUMENT */ );
+    }
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$logger$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["setUserLogHandler"])(logCallback, options);
+}
+/**
+ * Sets log level for all Firebase SDKs.
+ *
+ * All of the log types above the current log level are captured (i.e. if
+ * you set the log level to `info`, errors are logged, but `debug` and
+ * `verbose` logs are not).
+ *
+ * @public
+ */ function setLogLevel(logLevel) {
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$logger$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["setLogLevel"])(logLevel);
+}
+/**
+ * @license
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const DB_NAME = 'firebase-heartbeat-database';
+const DB_VERSION = 1;
+const STORE_NAME = 'firebase-heartbeat-store';
+let dbPromise = null;
+function getDbPromise() {
+    if (!dbPromise) {
+        dbPromise = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$idb$2f$build$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["openDB"])(DB_NAME, DB_VERSION, {
+            upgrade: (db, oldVersion)=>{
+                // We don't use 'break' in this switch statement, the fall-through
+                // behavior is what we want, because if there are multiple versions between
+                // the old version and the current version, we want ALL the migrations
+                // that correspond to those versions to run, not only the last one.
+                // eslint-disable-next-line default-case
+                switch(oldVersion){
+                    case 0:
+                        db.createObjectStore(STORE_NAME);
+                }
+            }
+        }).catch((e)=>{
+            throw ERROR_FACTORY.create("idb-open" /* AppError.IDB_OPEN */ , {
+                originalErrorMessage: e.message
+            });
+        });
+    }
+    return dbPromise;
+}
+async function readHeartbeatsFromIndexedDB(app) {
+    try {
+        const db = await getDbPromise();
+        const result = await db.transaction(STORE_NAME).objectStore(STORE_NAME).get(computeKey(app));
+        return result;
+    } catch (e) {
+        if (e instanceof __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FirebaseError"]) {
+            logger.warn(e.message);
+        } else {
+            const idbGetError = ERROR_FACTORY.create("idb-get" /* AppError.IDB_GET */ , {
+                originalErrorMessage: e === null || e === void 0 ? void 0 : e.message
+            });
+            logger.warn(idbGetError.message);
+        }
+    }
+}
+async function writeHeartbeatsToIndexedDB(app, heartbeatObject) {
+    try {
+        const db = await getDbPromise();
+        const tx = db.transaction(STORE_NAME, 'readwrite');
+        const objectStore = tx.objectStore(STORE_NAME);
+        await objectStore.put(heartbeatObject, computeKey(app));
+        await tx.done;
+    } catch (e) {
+        if (e instanceof __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FirebaseError"]) {
+            logger.warn(e.message);
+        } else {
+            const idbGetError = ERROR_FACTORY.create("idb-set" /* AppError.IDB_WRITE */ , {
+                originalErrorMessage: e === null || e === void 0 ? void 0 : e.message
+            });
+            logger.warn(idbGetError.message);
+        }
+    }
+}
+function computeKey(app) {
+    return `${app.name}!${app.options.appId}`;
+}
+/**
+ * @license
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const MAX_HEADER_BYTES = 1024;
+// 30 days
+const STORED_HEARTBEAT_RETENTION_MAX_MILLIS = 30 * 24 * 60 * 60 * 1000;
+class HeartbeatServiceImpl {
+    constructor(container){
+        this.container = container;
+        /**
+         * In-memory cache for heartbeats, used by getHeartbeatsHeader() to generate
+         * the header string.
+         * Stores one record per date. This will be consolidated into the standard
+         * format of one record per user agent string before being sent as a header.
+         * Populated from indexedDB when the controller is instantiated and should
+         * be kept in sync with indexedDB.
+         * Leave public for easier testing.
+         */ this._heartbeatsCache = null;
+        const app = this.container.getProvider('app').getImmediate();
+        this._storage = new HeartbeatStorageImpl(app);
+        this._heartbeatsCachePromise = this._storage.read().then((result)=>{
+            this._heartbeatsCache = result;
+            return result;
+        });
+    }
+    /**
+     * Called to report a heartbeat. The function will generate
+     * a HeartbeatsByUserAgent object, update heartbeatsCache, and persist it
+     * to IndexedDB.
+     * Note that we only store one heartbeat per day. So if a heartbeat for today is
+     * already logged, subsequent calls to this function in the same day will be ignored.
+     */ async triggerHeartbeat() {
+        const platformLogger = this.container.getProvider('platform-logger').getImmediate();
+        // This is the "Firebase user agent" string from the platform logger
+        // service, not the browser user agent.
+        const agent = platformLogger.getPlatformInfoString();
+        const date = getUTCDateString();
+        if (this._heartbeatsCache === null) {
+            this._heartbeatsCache = await this._heartbeatsCachePromise;
+        }
+        // Do not store a heartbeat if one is already stored for this day
+        // or if a header has already been sent today.
+        if (this._heartbeatsCache.lastSentHeartbeatDate === date || this._heartbeatsCache.heartbeats.some((singleDateHeartbeat)=>singleDateHeartbeat.date === date)) {
+            return;
+        } else {
+            // There is no entry for this date. Create one.
+            this._heartbeatsCache.heartbeats.push({
+                date,
+                agent
+            });
+        }
+        // Remove entries older than 30 days.
+        this._heartbeatsCache.heartbeats = this._heartbeatsCache.heartbeats.filter((singleDateHeartbeat)=>{
+            const hbTimestamp = new Date(singleDateHeartbeat.date).valueOf();
+            const now = Date.now();
+            return now - hbTimestamp <= STORED_HEARTBEAT_RETENTION_MAX_MILLIS;
+        });
+        return this._storage.overwrite(this._heartbeatsCache);
+    }
+    /**
+     * Returns a base64 encoded string which can be attached to the heartbeat-specific header directly.
+     * It also clears all heartbeats from memory as well as in IndexedDB.
+     *
+     * NOTE: Consuming product SDKs should not send the header if this method
+     * returns an empty string.
+     */ async getHeartbeatsHeader() {
+        if (this._heartbeatsCache === null) {
+            await this._heartbeatsCachePromise;
+        }
+        // If it's still null or the array is empty, there is no data to send.
+        if (this._heartbeatsCache === null || this._heartbeatsCache.heartbeats.length === 0) {
+            return '';
+        }
+        const date = getUTCDateString();
+        // Extract as many heartbeats from the cache as will fit under the size limit.
+        const { heartbeatsToSend, unsentEntries } = extractHeartbeatsForHeader(this._heartbeatsCache.heartbeats);
+        const headerString = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["base64urlEncodeWithoutPadding"])(JSON.stringify({
+            version: 2,
+            heartbeats: heartbeatsToSend
+        }));
+        // Store last sent date to prevent another being logged/sent for the same day.
+        this._heartbeatsCache.lastSentHeartbeatDate = date;
+        if (unsentEntries.length > 0) {
+            // Store any unsent entries if they exist.
+            this._heartbeatsCache.heartbeats = unsentEntries;
+            // This seems more likely than emptying the array (below) to lead to some odd state
+            // since the cache isn't empty and this will be called again on the next request,
+            // and is probably safest if we await it.
+            await this._storage.overwrite(this._heartbeatsCache);
+        } else {
+            this._heartbeatsCache.heartbeats = [];
+            // Do not wait for this, to reduce latency.
+            void this._storage.overwrite(this._heartbeatsCache);
+        }
+        return headerString;
+    }
+}
+function getUTCDateString() {
+    const today = new Date();
+    // Returns date format 'YYYY-MM-DD'
+    return today.toISOString().substring(0, 10);
+}
+function extractHeartbeatsForHeader(heartbeatsCache, maxSize = MAX_HEADER_BYTES) {
+    // Heartbeats grouped by user agent in the standard format to be sent in
+    // the header.
+    const heartbeatsToSend = [];
+    // Single date format heartbeats that are not sent.
+    let unsentEntries = heartbeatsCache.slice();
+    for (const singleDateHeartbeat of heartbeatsCache){
+        // Look for an existing entry with the same user agent.
+        const heartbeatEntry = heartbeatsToSend.find((hb)=>hb.agent === singleDateHeartbeat.agent);
+        if (!heartbeatEntry) {
+            // If no entry for this user agent exists, create one.
+            heartbeatsToSend.push({
+                agent: singleDateHeartbeat.agent,
+                dates: [
+                    singleDateHeartbeat.date
+                ]
+            });
+            if (countBytes(heartbeatsToSend) > maxSize) {
+                // If the header would exceed max size, remove the added heartbeat
+                // entry and stop adding to the header.
+                heartbeatsToSend.pop();
+                break;
+            }
+        } else {
+            heartbeatEntry.dates.push(singleDateHeartbeat.date);
+            // If the header would exceed max size, remove the added date
+            // and stop adding to the header.
+            if (countBytes(heartbeatsToSend) > maxSize) {
+                heartbeatEntry.dates.pop();
+                break;
+            }
+        }
+        // Pop unsent entry from queue. (Skipped if adding the entry exceeded
+        // quota and the loop breaks early.)
+        unsentEntries = unsentEntries.slice(1);
+    }
+    return {
+        heartbeatsToSend,
+        unsentEntries
+    };
+}
+class HeartbeatStorageImpl {
+    constructor(app){
+        this.app = app;
+        this._canUseIndexedDBPromise = this.runIndexedDBEnvironmentCheck();
+    }
+    async runIndexedDBEnvironmentCheck() {
+        if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isIndexedDBAvailable"])()) {
+            return false;
+        } else {
+            return (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["validateIndexedDBOpenable"])().then(()=>true).catch(()=>false);
+        }
+    }
+    /**
+     * Read all heartbeats.
+     */ async read() {
+        const canUseIndexedDB = await this._canUseIndexedDBPromise;
+        if (!canUseIndexedDB) {
+            return {
+                heartbeats: []
+            };
+        } else {
+            const idbHeartbeatObject = await readHeartbeatsFromIndexedDB(this.app);
+            return idbHeartbeatObject || {
+                heartbeats: []
+            };
+        }
+    }
+    // overwrite the storage with the provided heartbeats
+    async overwrite(heartbeatsObject) {
+        var _a;
+        const canUseIndexedDB = await this._canUseIndexedDBPromise;
+        if (!canUseIndexedDB) {
+            return;
+        } else {
+            const existingHeartbeatsObject = await this.read();
+            return writeHeartbeatsToIndexedDB(this.app, {
+                lastSentHeartbeatDate: (_a = heartbeatsObject.lastSentHeartbeatDate) !== null && _a !== void 0 ? _a : existingHeartbeatsObject.lastSentHeartbeatDate,
+                heartbeats: heartbeatsObject.heartbeats
+            });
+        }
+    }
+    // add heartbeats
+    async add(heartbeatsObject) {
+        var _a;
+        const canUseIndexedDB = await this._canUseIndexedDBPromise;
+        if (!canUseIndexedDB) {
+            return;
+        } else {
+            const existingHeartbeatsObject = await this.read();
+            return writeHeartbeatsToIndexedDB(this.app, {
+                lastSentHeartbeatDate: (_a = heartbeatsObject.lastSentHeartbeatDate) !== null && _a !== void 0 ? _a : existingHeartbeatsObject.lastSentHeartbeatDate,
+                heartbeats: [
+                    ...existingHeartbeatsObject.heartbeats,
+                    ...heartbeatsObject.heartbeats
+                ]
+            });
+        }
+    }
+}
+/**
+ * Calculate bytes of a HeartbeatsByUserAgent array after being wrapped
+ * in a platform logging header JSON object, stringified, and converted
+ * to base 64.
+ */ function countBytes(heartbeatsCache) {
+    // base64 has a restricted set of characters, all of which should be 1 byte.
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["base64urlEncodeWithoutPadding"])(// heartbeatsCache wrapper properties
+    JSON.stringify({
+        version: 2,
+        heartbeats: heartbeatsCache
+    })).length;
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ function registerCoreComponents(variant) {
+    _registerComponent(new __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$component$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Component"]('platform-logger', (container)=>new PlatformLoggerServiceImpl(container), "PRIVATE" /* ComponentType.PRIVATE */ ));
+    _registerComponent(new __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$component$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Component"]('heartbeat', (container)=>new HeartbeatServiceImpl(container), "PRIVATE" /* ComponentType.PRIVATE */ ));
+    // Register `app` package.
+    registerVersion(name$o, version$1, variant);
+    // BUILD_TARGET will be replaced by values like esm5, esm2017, cjs5, etc during the compilation
+    registerVersion(name$o, version$1, 'esm2017');
+    // Register platform SDK identifier (no version).
+    registerVersion('fire-js', '');
+}
+/**
+ * Firebase App
+ *
+ * @remarks This package coordinates the communication between the different Firebase components
+ * @packageDocumentation
+ */ registerCoreComponents('');
+;
+ //# sourceMappingURL=index.esm2017.js.map
+}),
+"[project]/HairGrowth-Clinic/node_modules/@firebase/app/dist/esm/index.esm2017.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "FirebaseError",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FirebaseError"],
+    "SDK_VERSION",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["SDK_VERSION"],
+    "_DEFAULT_ENTRY_NAME",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["_DEFAULT_ENTRY_NAME"],
+    "_addComponent",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["_addComponent"],
+    "_addOrOverwriteComponent",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["_addOrOverwriteComponent"],
+    "_apps",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["_apps"],
+    "_clearComponents",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["_clearComponents"],
+    "_components",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["_components"],
+    "_getProvider",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["_getProvider"],
+    "_registerComponent",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["_registerComponent"],
+    "_removeServiceInstance",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["_removeServiceInstance"],
+    "deleteApp",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["deleteApp"],
+    "getApp",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["getApp"],
+    "getApps",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["getApps"],
+    "initializeApp",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["initializeApp"],
+    "onLog",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["onLog"],
+    "registerVersion",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["registerVersion"],
+    "setLogLevel",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["setLogLevel"]
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/@firebase/app/dist/esm/index.esm2017.js [app-ssr] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/@firebase/util/dist/node-esm/index.node.esm.js [app-ssr] (ecmascript)");
+}),
+"[project]/HairGrowth-Clinic/node_modules/firebase/app/dist/index.mjs [app-ssr] (ecmascript) <locals>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/@firebase/app/dist/esm/index.esm2017.js [app-ssr] (ecmascript) <locals>");
+;
+;
+var name = "firebase";
+var version = "9.23.0";
+/**
+ * @license
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["registerVersion"])(name, version, 'app'); //# sourceMappingURL=index.mjs.map
+}),
+"[project]/HairGrowth-Clinic/node_modules/firebase/auth/dist/index.mjs [app-ssr] (ecmascript) <locals>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$node$2d$esm$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/@firebase/auth/dist/node-esm/index.js [app-ssr] (ecmascript) <locals>"); //# sourceMappingURL=index.mjs.map
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/firebase/analytics/dist/index.mjs [app-ssr] (ecmascript) <locals>", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$analytics$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/@firebase/analytics/dist/esm/index.esm2017.js [app-ssr] (ecmascript)"); //# sourceMappingURL=index.mjs.map
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/tslib/tslib.es6.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+/******************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */ /* global Reflect, Promise, SuppressedError, Symbol, Iterator */ __turbopack_context__.s([
+    "__addDisposableResource",
+    ()=>__addDisposableResource,
+    "__assign",
+    ()=>__assign,
+    "__asyncDelegator",
+    ()=>__asyncDelegator,
+    "__asyncGenerator",
+    ()=>__asyncGenerator,
+    "__asyncValues",
+    ()=>__asyncValues,
+    "__await",
+    ()=>__await,
+    "__awaiter",
+    ()=>__awaiter,
+    "__classPrivateFieldGet",
+    ()=>__classPrivateFieldGet,
+    "__classPrivateFieldIn",
+    ()=>__classPrivateFieldIn,
+    "__classPrivateFieldSet",
+    ()=>__classPrivateFieldSet,
+    "__createBinding",
+    ()=>__createBinding,
+    "__decorate",
+    ()=>__decorate,
+    "__disposeResources",
+    ()=>__disposeResources,
+    "__esDecorate",
+    ()=>__esDecorate,
+    "__exportStar",
+    ()=>__exportStar,
+    "__extends",
+    ()=>__extends,
+    "__generator",
+    ()=>__generator,
+    "__importDefault",
+    ()=>__importDefault,
+    "__importStar",
+    ()=>__importStar,
+    "__makeTemplateObject",
+    ()=>__makeTemplateObject,
+    "__metadata",
+    ()=>__metadata,
+    "__param",
+    ()=>__param,
+    "__propKey",
+    ()=>__propKey,
+    "__read",
+    ()=>__read,
+    "__rest",
+    ()=>__rest,
+    "__rewriteRelativeImportExtension",
+    ()=>__rewriteRelativeImportExtension,
+    "__runInitializers",
+    ()=>__runInitializers,
+    "__setFunctionName",
+    ()=>__setFunctionName,
+    "__spread",
+    ()=>__spread,
+    "__spreadArray",
+    ()=>__spreadArray,
+    "__spreadArrays",
+    ()=>__spreadArrays,
+    "__values",
+    ()=>__values,
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf || ({
+        __proto__: []
+    }) instanceof Array && function(d, b) {
+        d.__proto__ = b;
+    } || function(d, b) {
+        for(var p in b)if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p];
+    };
+    return extendStatics(d, b);
+};
+function __extends(d, b) {
+    if (typeof b !== "function" && b !== null) throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+    extendStatics(d, b);
+    function __() {
+        this.constructor = d;
+    }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for(var s, i = 1, n = arguments.length; i < n; i++){
+            s = arguments[i];
+            for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+function __rest(s, e) {
+    var t = {};
+    for(var p in s)if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function") for(var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++){
+        if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+    }
+    return t;
+}
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for(var i = decorators.length - 1; i >= 0; i--)if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+function __param(paramIndex, decorator) {
+    return function(target, key) {
+        decorator(target, key, paramIndex);
+    };
+}
+function __esDecorate(ctor, descriptorIn, decorators, contextIn, initializers, extraInitializers) {
+    function accept(f) {
+        if (f !== void 0 && typeof f !== "function") throw new TypeError("Function expected");
+        return f;
+    }
+    var kind = contextIn.kind, key = kind === "getter" ? "get" : kind === "setter" ? "set" : "value";
+    var target = !descriptorIn && ctor ? contextIn["static"] ? ctor : ctor.prototype : null;
+    var descriptor = descriptorIn || (target ? Object.getOwnPropertyDescriptor(target, contextIn.name) : {});
+    var _, done = false;
+    for(var i = decorators.length - 1; i >= 0; i--){
+        var context = {};
+        for(var p in contextIn)context[p] = p === "access" ? {} : contextIn[p];
+        for(var p in contextIn.access)context.access[p] = contextIn.access[p];
+        context.addInitializer = function(f) {
+            if (done) throw new TypeError("Cannot add initializers after decoration has completed");
+            extraInitializers.push(accept(f || null));
+        };
+        var result = (0, decorators[i])(kind === "accessor" ? {
+            get: descriptor.get,
+            set: descriptor.set
+        } : descriptor[key], context);
+        if (kind === "accessor") {
+            if (result === void 0) continue;
+            if (result === null || typeof result !== "object") throw new TypeError("Object expected");
+            if (_ = accept(result.get)) descriptor.get = _;
+            if (_ = accept(result.set)) descriptor.set = _;
+            if (_ = accept(result.init)) initializers.unshift(_);
+        } else if (_ = accept(result)) {
+            if (kind === "field") initializers.unshift(_);
+            else descriptor[key] = _;
+        }
+    }
+    if (target) Object.defineProperty(target, contextIn.name, descriptor);
+    done = true;
+}
+;
+function __runInitializers(thisArg, initializers, value) {
+    var useValue = arguments.length > 2;
+    for(var i = 0; i < initializers.length; i++){
+        value = useValue ? initializers[i].call(thisArg, value) : initializers[i].call(thisArg);
+    }
+    return useValue ? value : void 0;
+}
+;
+function __propKey(x) {
+    return typeof x === "symbol" ? x : "".concat(x);
+}
+;
+function __setFunctionName(f, name, prefix) {
+    if (typeof name === "symbol") name = name.description ? "[".concat(name.description, "]") : "";
+    return Object.defineProperty(f, "name", {
+        configurable: true,
+        value: prefix ? "".concat(prefix, " ", name) : name
+    });
+}
+;
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) {
+        return value instanceof P ? value : new P(function(resolve) {
+            resolve(value);
+        });
+    }
+    return new (P || (P = Promise))(function(resolve, reject) {
+        function fulfilled(value) {
+            try {
+                step(generator.next(value));
+            } catch (e) {
+                reject(e);
+            }
+        }
+        function rejected(value) {
+            try {
+                step(generator["throw"](value));
+            } catch (e) {
+                reject(e);
+            }
+        }
+        function step(result) {
+            result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected);
+        }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+function __generator(thisArg, body) {
+    var _ = {
+        label: 0,
+        sent: function() {
+            if (t[0] & 1) throw t[1];
+            return t[1];
+        },
+        trys: [],
+        ops: []
+    }, f, y, t, g = Object.create((typeof Iterator === "function" ? Iterator : Object).prototype);
+    return g.next = verb(0), g["throw"] = verb(1), g["return"] = verb(2), typeof Symbol === "function" && (g[Symbol.iterator] = function() {
+        return this;
+    }), g;
+    //TURBOPACK unreachable
+    ;
+    function verb(n) {
+        return function(v) {
+            return step([
+                n,
+                v
+            ]);
+        };
+    }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while(g && (g = 0, op[0] && (_ = 0)), _)try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [
+                op[0] & 2,
+                t.value
+            ];
+            switch(op[0]){
+                case 0:
+                case 1:
+                    t = op;
+                    break;
+                case 4:
+                    _.label++;
+                    return {
+                        value: op[1],
+                        done: false
+                    };
+                case 5:
+                    _.label++;
+                    y = op[1];
+                    op = [
+                        0
+                    ];
+                    continue;
+                case 7:
+                    op = _.ops.pop();
+                    _.trys.pop();
+                    continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
+                        _ = 0;
+                        continue;
+                    }
+                    if (op[0] === 3 && (!t || op[1] > t[0] && op[1] < t[3])) {
+                        _.label = op[1];
+                        break;
+                    }
+                    if (op[0] === 6 && _.label < t[1]) {
+                        _.label = t[1];
+                        t = op;
+                        break;
+                    }
+                    if (t && _.label < t[2]) {
+                        _.label = t[2];
+                        _.ops.push(op);
+                        break;
+                    }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop();
+                    continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) {
+            op = [
+                6,
+                e
+            ];
+            y = 0;
+        } finally{
+            f = t = 0;
+        }
+        if (op[0] & 5) throw op[1];
+        return {
+            value: op[0] ? op[1] : void 0,
+            done: true
+        };
+    }
+}
+var __createBinding = Object.create ? function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+        desc = {
+            enumerable: true,
+            get: function() {
+                return m[k];
+            }
+        };
+    }
+    Object.defineProperty(o, k2, desc);
+} : function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+};
+function __exportStar(m, o) {
+    for(var p in m)if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) __createBinding(o, m, p);
+}
+function __values(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function() {
+            if (o && i >= o.length) o = void 0;
+            return {
+                value: o && o[i++],
+                done: !o
+            };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+}
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while((n === void 0 || n-- > 0) && !(r = i.next()).done)ar.push(r.value);
+    } catch (error) {
+        e = {
+            error: error
+        };
+    } finally{
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        } finally{
+            if (e) throw e.error;
+        }
+    }
+    return ar;
+}
+function __spread() {
+    for(var ar = [], i = 0; i < arguments.length; i++)ar = ar.concat(__read(arguments[i]));
+    return ar;
+}
+function __spreadArrays() {
+    for(var s = 0, i = 0, il = arguments.length; i < il; i++)s += arguments[i].length;
+    for(var r = Array(s), k = 0, i = 0; i < il; i++)for(var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)r[k] = a[j];
+    return r;
+}
+function __spreadArray(to, from, pack) {
+    if (pack || arguments.length === 2) for(var i = 0, l = from.length, ar; i < l; i++){
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+}
+function __await(v) {
+    return this instanceof __await ? (this.v = v, this) : new __await(v);
+}
+function __asyncGenerator(thisArg, _arguments, generator) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var g = generator.apply(thisArg, _arguments || []), i, q = [];
+    return i = Object.create((typeof AsyncIterator === "function" ? AsyncIterator : Object).prototype), verb("next"), verb("throw"), verb("return", awaitReturn), i[Symbol.asyncIterator] = function() {
+        return this;
+    }, i;
+    //TURBOPACK unreachable
+    ;
+    function awaitReturn(f) {
+        return function(v) {
+            return Promise.resolve(v).then(f, reject);
+        };
+    }
+    function verb(n, f) {
+        if (g[n]) {
+            i[n] = function(v) {
+                return new Promise(function(a, b) {
+                    q.push([
+                        n,
+                        v,
+                        a,
+                        b
+                    ]) > 1 || resume(n, v);
+                });
+            };
+            if (f) i[n] = f(i[n]);
+        }
+    }
+    function resume(n, v) {
+        try {
+            step(g[n](v));
+        } catch (e) {
+            settle(q[0][3], e);
+        }
+    }
+    function step(r) {
+        r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r);
+    }
+    function fulfill(value) {
+        resume("next", value);
+    }
+    function reject(value) {
+        resume("throw", value);
+    }
+    function settle(f, v) {
+        if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]);
+    }
+}
+function __asyncDelegator(o) {
+    var i, p;
+    return i = {}, verb("next"), verb("throw", function(e) {
+        throw e;
+    }), verb("return"), i[Symbol.iterator] = function() {
+        return this;
+    }, i;
+    //TURBOPACK unreachable
+    ;
+    function verb(n, f) {
+        i[n] = o[n] ? function(v) {
+            return (p = !p) ? {
+                value: __await(o[n](v)),
+                done: false
+            } : f ? f(v) : v;
+        } : f;
+    }
+}
+function __asyncValues(o) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function() {
+        return this;
+    }, i);
+    //TURBOPACK unreachable
+    ;
+    function verb(n) {
+        i[n] = o[n] && function(v) {
+            return new Promise(function(resolve, reject) {
+                v = o[n](v), settle(resolve, reject, v.done, v.value);
+            });
+        };
+    }
+    function settle(resolve, reject, d, v) {
+        Promise.resolve(v).then(function(v) {
+            resolve({
+                value: v,
+                done: d
+            });
+        }, reject);
+    }
+}
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) {
+        Object.defineProperty(cooked, "raw", {
+            value: raw
+        });
+    } else {
+        cooked.raw = raw;
+    }
+    return cooked;
+}
+;
+var __setModuleDefault = Object.create ? function(o, v) {
+    Object.defineProperty(o, "default", {
+        enumerable: true,
+        value: v
+    });
+} : function(o, v) {
+    o["default"] = v;
+};
+var ownKeys = function(o) {
+    ownKeys = Object.getOwnPropertyNames || function(o) {
+        var ar = [];
+        for(var k in o)if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+        return ar;
+    };
+    return ownKeys(o);
+};
+function __importStar(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) {
+        for(var k = ownKeys(mod), i = 0; i < k.length; i++)if (k[i] !== "default") __createBinding(result, mod, k[i]);
+    }
+    __setModuleDefault(result, mod);
+    return result;
+}
+function __importDefault(mod) {
+    return mod && mod.__esModule ? mod : {
+        default: mod
+    };
+}
+function __classPrivateFieldGet(receiver, state, kind, f) {
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
+}
+function __classPrivateFieldSet(receiver, state, value, kind, f) {
+    if (kind === "m") throw new TypeError("Private method is not writable");
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+    return kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value), value;
+}
+function __classPrivateFieldIn(state, receiver) {
+    if (receiver === null || typeof receiver !== "object" && typeof receiver !== "function") throw new TypeError("Cannot use 'in' operator on non-object");
+    return typeof state === "function" ? receiver === state : state.has(receiver);
+}
+function __addDisposableResource(env, value, async) {
+    if (value !== null && value !== void 0) {
+        if (typeof value !== "object" && typeof value !== "function") throw new TypeError("Object expected.");
+        var dispose, inner;
+        if (async) {
+            if (!Symbol.asyncDispose) throw new TypeError("Symbol.asyncDispose is not defined.");
+            dispose = value[Symbol.asyncDispose];
+        }
+        if (dispose === void 0) {
+            if (!Symbol.dispose) throw new TypeError("Symbol.dispose is not defined.");
+            dispose = value[Symbol.dispose];
+            if (async) inner = dispose;
+        }
+        if (typeof dispose !== "function") throw new TypeError("Object not disposable.");
+        if (inner) dispose = function() {
+            try {
+                inner.call(this);
+            } catch (e) {
+                return Promise.reject(e);
+            }
+        };
+        env.stack.push({
+            value: value,
+            dispose: dispose,
+            async: async
+        });
+    } else if (async) {
+        env.stack.push({
+            async: true
+        });
+    }
+    return value;
+}
+var _SuppressedError = typeof SuppressedError === "function" ? SuppressedError : function(error, suppressed, message) {
+    var e = new Error(message);
+    return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
+};
+function __disposeResources(env) {
+    function fail(e) {
+        env.error = env.hasError ? new _SuppressedError(e, env.error, "An error was suppressed during disposal.") : e;
+        env.hasError = true;
+    }
+    var r, s = 0;
+    function next() {
+        while(r = env.stack.pop()){
+            try {
+                if (!r.async && s === 1) return s = 0, env.stack.push(r), Promise.resolve().then(next);
+                if (r.dispose) {
+                    var result = r.dispose.call(r.value);
+                    if (r.async) return s |= 2, Promise.resolve(result).then(next, function(e) {
+                        fail(e);
+                        return next();
+                    });
+                } else s |= 1;
+            } catch (e) {
+                fail(e);
+            }
+        }
+        if (s === 1) return env.hasError ? Promise.reject(env.error) : Promise.resolve();
+        if (env.hasError) throw env.error;
+    }
+    return next();
+}
+function __rewriteRelativeImportExtension(path, preserveJsx) {
+    if (typeof path === "string" && /^\.\.?\//.test(path)) {
+        return path.replace(/\.(tsx)$|((?:\.d)?)((?:\.[^./]+?)?)\.([cm]?)ts$/i, function(m, tsx, d, ext, cm) {
+            return tsx ? preserveJsx ? ".jsx" : ".js" : d && (!ext || !cm) ? m : d + ext + "." + cm.toLowerCase() + "js";
+        });
+    }
+    return path;
+}
+const __TURBOPACK__default__export__ = {
+    __extends,
+    __assign,
+    __rest,
+    __decorate,
+    __param,
+    __esDecorate,
+    __runInitializers,
+    __propKey,
+    __setFunctionName,
+    __metadata,
+    __awaiter,
+    __generator,
+    __createBinding,
+    __exportStar,
+    __values,
+    __read,
+    __spread,
+    __spreadArrays,
+    __spreadArray,
+    __await,
+    __asyncGenerator,
+    __asyncDelegator,
+    __asyncValues,
+    __makeTemplateObject,
+    __importStar,
+    __importDefault,
+    __classPrivateFieldGet,
+    __classPrivateFieldSet,
+    __classPrivateFieldIn,
+    __addDisposableResource,
+    __disposeResources,
+    __rewriteRelativeImportExtension
+};
+}),
+"[project]/HairGrowth-Clinic/node_modules/webidl-conversions/lib/index.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+var conversions = {};
+module.exports = conversions;
+function sign(x) {
+    return x < 0 ? -1 : 1;
+}
+function evenRound(x) {
+    // Round x to the nearest integer, choosing the even integer if it lies halfway between two.
+    if (x % 1 === 0.5 && (x & 1) === 0) {
+        return Math.floor(x);
+    } else {
+        return Math.round(x);
+    }
+}
+function createNumberConversion(bitLength, typeOpts) {
+    if (!typeOpts.unsigned) {
+        --bitLength;
+    }
+    const lowerBound = typeOpts.unsigned ? 0 : -Math.pow(2, bitLength);
+    const upperBound = Math.pow(2, bitLength) - 1;
+    const moduloVal = typeOpts.moduloBitLength ? Math.pow(2, typeOpts.moduloBitLength) : Math.pow(2, bitLength);
+    const moduloBound = typeOpts.moduloBitLength ? Math.pow(2, typeOpts.moduloBitLength - 1) : Math.pow(2, bitLength - 1);
+    return function(V, opts) {
+        if (!opts) opts = {};
+        let x = +V;
+        if (opts.enforceRange) {
+            if (!Number.isFinite(x)) {
+                throw new TypeError("Argument is not a finite number");
+            }
+            x = sign(x) * Math.floor(Math.abs(x));
+            if (x < lowerBound || x > upperBound) {
+                throw new TypeError("Argument is not in byte range");
+            }
+            return x;
+        }
+        if (!isNaN(x) && opts.clamp) {
+            x = evenRound(x);
+            if (x < lowerBound) x = lowerBound;
+            if (x > upperBound) x = upperBound;
+            return x;
+        }
+        if (!Number.isFinite(x) || x === 0) {
+            return 0;
+        }
+        x = sign(x) * Math.floor(Math.abs(x));
+        x = x % moduloVal;
+        if (!typeOpts.unsigned && x >= moduloBound) {
+            return x - moduloVal;
+        } else if (typeOpts.unsigned) {
+            if (x < 0) {
+                x += moduloVal;
+            } else if (x === -0) {
+                return 0;
+            }
+        }
+        return x;
+    };
+}
+conversions["void"] = function() {
+    return undefined;
+};
+conversions["boolean"] = function(val) {
+    return !!val;
+};
+conversions["byte"] = createNumberConversion(8, {
+    unsigned: false
+});
+conversions["octet"] = createNumberConversion(8, {
+    unsigned: true
+});
+conversions["short"] = createNumberConversion(16, {
+    unsigned: false
+});
+conversions["unsigned short"] = createNumberConversion(16, {
+    unsigned: true
+});
+conversions["long"] = createNumberConversion(32, {
+    unsigned: false
+});
+conversions["unsigned long"] = createNumberConversion(32, {
+    unsigned: true
+});
+conversions["long long"] = createNumberConversion(32, {
+    unsigned: false,
+    moduloBitLength: 64
+});
+conversions["unsigned long long"] = createNumberConversion(32, {
+    unsigned: true,
+    moduloBitLength: 64
+});
+conversions["double"] = function(V) {
+    const x = +V;
+    if (!Number.isFinite(x)) {
+        throw new TypeError("Argument is not a finite floating-point value");
+    }
+    return x;
+};
+conversions["unrestricted double"] = function(V) {
+    const x = +V;
+    if (isNaN(x)) {
+        throw new TypeError("Argument is NaN");
+    }
+    return x;
+};
+// not quite valid, but good enough for JS
+conversions["float"] = conversions["double"];
+conversions["unrestricted float"] = conversions["unrestricted double"];
+conversions["DOMString"] = function(V, opts) {
+    if (!opts) opts = {};
+    if (opts.treatNullAsEmptyString && V === null) {
+        return "";
+    }
+    return String(V);
+};
+conversions["ByteString"] = function(V, opts) {
+    const x = String(V);
+    let c = undefined;
+    for(let i = 0; (c = x.codePointAt(i)) !== undefined; ++i){
+        if (c > 255) {
+            throw new TypeError("Argument is not a valid bytestring");
+        }
+    }
+    return x;
+};
+conversions["USVString"] = function(V) {
+    const S = String(V);
+    const n = S.length;
+    const U = [];
+    for(let i = 0; i < n; ++i){
+        const c = S.charCodeAt(i);
+        if (c < 0xD800 || c > 0xDFFF) {
+            U.push(String.fromCodePoint(c));
+        } else if (0xDC00 <= c && c <= 0xDFFF) {
+            U.push(String.fromCodePoint(0xFFFD));
+        } else {
+            if (i === n - 1) {
+                U.push(String.fromCodePoint(0xFFFD));
+            } else {
+                const d = S.charCodeAt(i + 1);
+                if (0xDC00 <= d && d <= 0xDFFF) {
+                    const a = c & 0x3FF;
+                    const b = d & 0x3FF;
+                    U.push(String.fromCodePoint((2 << 15) + (2 << 9) * a + b));
+                    ++i;
+                } else {
+                    U.push(String.fromCodePoint(0xFFFD));
+                }
+            }
+        }
+    }
+    return U.join('');
+};
+conversions["Date"] = function(V, opts) {
+    if (!(V instanceof Date)) {
+        throw new TypeError("Argument is not a Date object");
+    }
+    if (isNaN(V)) {
+        return undefined;
+    }
+    return V;
+};
+conversions["RegExp"] = function(V, opts) {
+    if (!(V instanceof RegExp)) {
+        V = new RegExp(V);
+    }
+    return V;
+};
+}),
+"[project]/HairGrowth-Clinic/node_modules/whatwg-url/lib/utils.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+module.exports.mixin = function mixin(target, source) {
+    const keys = Object.getOwnPropertyNames(source);
+    for(let i = 0; i < keys.length; ++i){
+        Object.defineProperty(target, keys[i], Object.getOwnPropertyDescriptor(source, keys[i]));
+    }
+};
+module.exports.wrapperSymbol = Symbol("wrapper");
+module.exports.implSymbol = Symbol("impl");
+module.exports.wrapperForImpl = function(impl) {
+    return impl[module.exports.wrapperSymbol];
+};
+module.exports.implForWrapper = function(wrapper) {
+    return wrapper[module.exports.implSymbol];
+};
+}),
+"[project]/HairGrowth-Clinic/node_modules/whatwg-url/lib/url-state-machine.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+const punycode = __turbopack_context__.r("[externals]/punycode [external] (punycode, cjs)");
+const tr46 = __turbopack_context__.r("[project]/HairGrowth-Clinic/node_modules/tr46/index.js [app-ssr] (ecmascript)");
+const specialSchemes = {
+    ftp: 21,
+    file: null,
+    gopher: 70,
+    http: 80,
+    https: 443,
+    ws: 80,
+    wss: 443
+};
+const failure = Symbol("failure");
+function countSymbols(str) {
+    return punycode.ucs2.decode(str).length;
+}
+function at(input, idx) {
+    const c = input[idx];
+    return isNaN(c) ? undefined : String.fromCodePoint(c);
+}
+function isASCIIDigit(c) {
+    return c >= 0x30 && c <= 0x39;
+}
+function isASCIIAlpha(c) {
+    return c >= 0x41 && c <= 0x5A || c >= 0x61 && c <= 0x7A;
+}
+function isASCIIAlphanumeric(c) {
+    return isASCIIAlpha(c) || isASCIIDigit(c);
+}
+function isASCIIHex(c) {
+    return isASCIIDigit(c) || c >= 0x41 && c <= 0x46 || c >= 0x61 && c <= 0x66;
+}
+function isSingleDot(buffer) {
+    return buffer === "." || buffer.toLowerCase() === "%2e";
+}
+function isDoubleDot(buffer) {
+    buffer = buffer.toLowerCase();
+    return buffer === ".." || buffer === "%2e." || buffer === ".%2e" || buffer === "%2e%2e";
+}
+function isWindowsDriveLetterCodePoints(cp1, cp2) {
+    return isASCIIAlpha(cp1) && (cp2 === 58 || cp2 === 124);
+}
+function isWindowsDriveLetterString(string) {
+    return string.length === 2 && isASCIIAlpha(string.codePointAt(0)) && (string[1] === ":" || string[1] === "|");
+}
+function isNormalizedWindowsDriveLetterString(string) {
+    return string.length === 2 && isASCIIAlpha(string.codePointAt(0)) && string[1] === ":";
+}
+function containsForbiddenHostCodePoint(string) {
+    return string.search(/\u0000|\u0009|\u000A|\u000D|\u0020|#|%|\/|:|\?|@|\[|\\|\]/) !== -1;
+}
+function containsForbiddenHostCodePointExcludingPercent(string) {
+    return string.search(/\u0000|\u0009|\u000A|\u000D|\u0020|#|\/|:|\?|@|\[|\\|\]/) !== -1;
+}
+function isSpecialScheme(scheme) {
+    return specialSchemes[scheme] !== undefined;
+}
+function isSpecial(url) {
+    return isSpecialScheme(url.scheme);
+}
+function defaultPort(scheme) {
+    return specialSchemes[scheme];
+}
+function percentEncode(c) {
+    let hex = c.toString(16).toUpperCase();
+    if (hex.length === 1) {
+        hex = "0" + hex;
+    }
+    return "%" + hex;
+}
+function utf8PercentEncode(c) {
+    const buf = new Buffer(c);
+    let str = "";
+    for(let i = 0; i < buf.length; ++i){
+        str += percentEncode(buf[i]);
+    }
+    return str;
+}
+function utf8PercentDecode(str) {
+    const input = new Buffer(str);
+    const output = [];
+    for(let i = 0; i < input.length; ++i){
+        if (input[i] !== 37) {
+            output.push(input[i]);
+        } else if (input[i] === 37 && isASCIIHex(input[i + 1]) && isASCIIHex(input[i + 2])) {
+            output.push(parseInt(input.slice(i + 1, i + 3).toString(), 16));
+            i += 2;
+        } else {
+            output.push(input[i]);
+        }
+    }
+    return new Buffer(output).toString();
+}
+function isC0ControlPercentEncode(c) {
+    return c <= 0x1F || c > 0x7E;
+}
+const extraPathPercentEncodeSet = new Set([
+    32,
+    34,
+    35,
+    60,
+    62,
+    63,
+    96,
+    123,
+    125
+]);
+function isPathPercentEncode(c) {
+    return isC0ControlPercentEncode(c) || extraPathPercentEncodeSet.has(c);
+}
+const extraUserinfoPercentEncodeSet = new Set([
+    47,
+    58,
+    59,
+    61,
+    64,
+    91,
+    92,
+    93,
+    94,
+    124
+]);
+function isUserinfoPercentEncode(c) {
+    return isPathPercentEncode(c) || extraUserinfoPercentEncodeSet.has(c);
+}
+function percentEncodeChar(c, encodeSetPredicate) {
+    const cStr = String.fromCodePoint(c);
+    if (encodeSetPredicate(c)) {
+        return utf8PercentEncode(cStr);
+    }
+    return cStr;
+}
+function parseIPv4Number(input) {
+    let R = 10;
+    if (input.length >= 2 && input.charAt(0) === "0" && input.charAt(1).toLowerCase() === "x") {
+        input = input.substring(2);
+        R = 16;
+    } else if (input.length >= 2 && input.charAt(0) === "0") {
+        input = input.substring(1);
+        R = 8;
+    }
+    if (input === "") {
+        return 0;
+    }
+    const regex = R === 10 ? /[^0-9]/ : R === 16 ? /[^0-9A-Fa-f]/ : /[^0-7]/;
+    if (regex.test(input)) {
+        return failure;
+    }
+    return parseInt(input, R);
+}
+function parseIPv4(input) {
+    const parts = input.split(".");
+    if (parts[parts.length - 1] === "") {
+        if (parts.length > 1) {
+            parts.pop();
+        }
+    }
+    if (parts.length > 4) {
+        return input;
+    }
+    const numbers = [];
+    for (const part of parts){
+        if (part === "") {
+            return input;
+        }
+        const n = parseIPv4Number(part);
+        if (n === failure) {
+            return input;
+        }
+        numbers.push(n);
+    }
+    for(let i = 0; i < numbers.length - 1; ++i){
+        if (numbers[i] > 255) {
+            return failure;
+        }
+    }
+    if (numbers[numbers.length - 1] >= Math.pow(256, 5 - numbers.length)) {
+        return failure;
+    }
+    let ipv4 = numbers.pop();
+    let counter = 0;
+    for (const n of numbers){
+        ipv4 += n * Math.pow(256, 3 - counter);
+        ++counter;
+    }
+    return ipv4;
+}
+function serializeIPv4(address) {
+    let output = "";
+    let n = address;
+    for(let i = 1; i <= 4; ++i){
+        output = String(n % 256) + output;
+        if (i !== 4) {
+            output = "." + output;
+        }
+        n = Math.floor(n / 256);
+    }
+    return output;
+}
+function parseIPv6(input) {
+    const address = [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ];
+    let pieceIndex = 0;
+    let compress = null;
+    let pointer = 0;
+    input = punycode.ucs2.decode(input);
+    if (input[pointer] === 58) {
+        if (input[pointer + 1] !== 58) {
+            return failure;
+        }
+        pointer += 2;
+        ++pieceIndex;
+        compress = pieceIndex;
+    }
+    while(pointer < input.length){
+        if (pieceIndex === 8) {
+            return failure;
+        }
+        if (input[pointer] === 58) {
+            if (compress !== null) {
+                return failure;
+            }
+            ++pointer;
+            ++pieceIndex;
+            compress = pieceIndex;
+            continue;
+        }
+        let value = 0;
+        let length = 0;
+        while(length < 4 && isASCIIHex(input[pointer])){
+            value = value * 0x10 + parseInt(at(input, pointer), 16);
+            ++pointer;
+            ++length;
+        }
+        if (input[pointer] === 46) {
+            if (length === 0) {
+                return failure;
+            }
+            pointer -= length;
+            if (pieceIndex > 6) {
+                return failure;
+            }
+            let numbersSeen = 0;
+            while(input[pointer] !== undefined){
+                let ipv4Piece = null;
+                if (numbersSeen > 0) {
+                    if (input[pointer] === 46 && numbersSeen < 4) {
+                        ++pointer;
+                    } else {
+                        return failure;
+                    }
+                }
+                if (!isASCIIDigit(input[pointer])) {
+                    return failure;
+                }
+                while(isASCIIDigit(input[pointer])){
+                    const number = parseInt(at(input, pointer));
+                    if (ipv4Piece === null) {
+                        ipv4Piece = number;
+                    } else if (ipv4Piece === 0) {
+                        return failure;
+                    } else {
+                        ipv4Piece = ipv4Piece * 10 + number;
+                    }
+                    if (ipv4Piece > 255) {
+                        return failure;
+                    }
+                    ++pointer;
+                }
+                address[pieceIndex] = address[pieceIndex] * 0x100 + ipv4Piece;
+                ++numbersSeen;
+                if (numbersSeen === 2 || numbersSeen === 4) {
+                    ++pieceIndex;
+                }
+            }
+            if (numbersSeen !== 4) {
+                return failure;
+            }
+            break;
+        } else if (input[pointer] === 58) {
+            ++pointer;
+            if (input[pointer] === undefined) {
+                return failure;
+            }
+        } else if (input[pointer] !== undefined) {
+            return failure;
+        }
+        address[pieceIndex] = value;
+        ++pieceIndex;
+    }
+    if (compress !== null) {
+        let swaps = pieceIndex - compress;
+        pieceIndex = 7;
+        while(pieceIndex !== 0 && swaps > 0){
+            const temp = address[compress + swaps - 1];
+            address[compress + swaps - 1] = address[pieceIndex];
+            address[pieceIndex] = temp;
+            --pieceIndex;
+            --swaps;
+        }
+    } else if (compress === null && pieceIndex !== 8) {
+        return failure;
+    }
+    return address;
+}
+function serializeIPv6(address) {
+    let output = "";
+    const seqResult = findLongestZeroSequence(address);
+    const compress = seqResult.idx;
+    let ignore0 = false;
+    for(let pieceIndex = 0; pieceIndex <= 7; ++pieceIndex){
+        if (ignore0 && address[pieceIndex] === 0) {
+            continue;
+        } else if (ignore0) {
+            ignore0 = false;
+        }
+        if (compress === pieceIndex) {
+            const separator = pieceIndex === 0 ? "::" : ":";
+            output += separator;
+            ignore0 = true;
+            continue;
+        }
+        output += address[pieceIndex].toString(16);
+        if (pieceIndex !== 7) {
+            output += ":";
+        }
+    }
+    return output;
+}
+function parseHost(input, isSpecialArg) {
+    if (input[0] === "[") {
+        if (input[input.length - 1] !== "]") {
+            return failure;
+        }
+        return parseIPv6(input.substring(1, input.length - 1));
+    }
+    if (!isSpecialArg) {
+        return parseOpaqueHost(input);
+    }
+    const domain = utf8PercentDecode(input);
+    const asciiDomain = tr46.toASCII(domain, false, tr46.PROCESSING_OPTIONS.NONTRANSITIONAL, false);
+    if (asciiDomain === null) {
+        return failure;
+    }
+    if (containsForbiddenHostCodePoint(asciiDomain)) {
+        return failure;
+    }
+    const ipv4Host = parseIPv4(asciiDomain);
+    if (typeof ipv4Host === "number" || ipv4Host === failure) {
+        return ipv4Host;
+    }
+    return asciiDomain;
+}
+function parseOpaqueHost(input) {
+    if (containsForbiddenHostCodePointExcludingPercent(input)) {
+        return failure;
+    }
+    let output = "";
+    const decoded = punycode.ucs2.decode(input);
+    for(let i = 0; i < decoded.length; ++i){
+        output += percentEncodeChar(decoded[i], isC0ControlPercentEncode);
+    }
+    return output;
+}
+function findLongestZeroSequence(arr) {
+    let maxIdx = null;
+    let maxLen = 1; // only find elements > 1
+    let currStart = null;
+    let currLen = 0;
+    for(let i = 0; i < arr.length; ++i){
+        if (arr[i] !== 0) {
+            if (currLen > maxLen) {
+                maxIdx = currStart;
+                maxLen = currLen;
+            }
+            currStart = null;
+            currLen = 0;
+        } else {
+            if (currStart === null) {
+                currStart = i;
+            }
+            ++currLen;
+        }
+    }
+    // if trailing zeros
+    if (currLen > maxLen) {
+        maxIdx = currStart;
+        maxLen = currLen;
+    }
+    return {
+        idx: maxIdx,
+        len: maxLen
+    };
+}
+function serializeHost(host) {
+    if (typeof host === "number") {
+        return serializeIPv4(host);
+    }
+    // IPv6 serializer
+    if (host instanceof Array) {
+        return "[" + serializeIPv6(host) + "]";
+    }
+    return host;
+}
+function trimControlChars(url) {
+    return url.replace(/^[\u0000-\u001F\u0020]+|[\u0000-\u001F\u0020]+$/g, "");
+}
+function trimTabAndNewline(url) {
+    return url.replace(/\u0009|\u000A|\u000D/g, "");
+}
+function shortenPath(url) {
+    const path = url.path;
+    if (path.length === 0) {
+        return;
+    }
+    if (url.scheme === "file" && path.length === 1 && isNormalizedWindowsDriveLetter(path[0])) {
+        return;
+    }
+    path.pop();
+}
+function includesCredentials(url) {
+    return url.username !== "" || url.password !== "";
+}
+function cannotHaveAUsernamePasswordPort(url) {
+    return url.host === null || url.host === "" || url.cannotBeABaseURL || url.scheme === "file";
+}
+function isNormalizedWindowsDriveLetter(string) {
+    return /^[A-Za-z]:$/.test(string);
+}
+function URLStateMachine(input, base, encodingOverride, url, stateOverride) {
+    this.pointer = 0;
+    this.input = input;
+    this.base = base || null;
+    this.encodingOverride = encodingOverride || "utf-8";
+    this.stateOverride = stateOverride;
+    this.url = url;
+    this.failure = false;
+    this.parseError = false;
+    if (!this.url) {
+        this.url = {
+            scheme: "",
+            username: "",
+            password: "",
+            host: null,
+            port: null,
+            path: [],
+            query: null,
+            fragment: null,
+            cannotBeABaseURL: false
+        };
+        const res = trimControlChars(this.input);
+        if (res !== this.input) {
+            this.parseError = true;
+        }
+        this.input = res;
+    }
+    const res = trimTabAndNewline(this.input);
+    if (res !== this.input) {
+        this.parseError = true;
+    }
+    this.input = res;
+    this.state = stateOverride || "scheme start";
+    this.buffer = "";
+    this.atFlag = false;
+    this.arrFlag = false;
+    this.passwordTokenSeenFlag = false;
+    this.input = punycode.ucs2.decode(this.input);
+    for(; this.pointer <= this.input.length; ++this.pointer){
+        const c = this.input[this.pointer];
+        const cStr = isNaN(c) ? undefined : String.fromCodePoint(c);
+        // exec state machine
+        const ret = this["parse " + this.state](c, cStr);
+        if (!ret) {
+            break; // terminate algorithm
+        } else if (ret === failure) {
+            this.failure = true;
+            break;
+        }
+    }
+}
+URLStateMachine.prototype["parse scheme start"] = function parseSchemeStart(c, cStr) {
+    if (isASCIIAlpha(c)) {
+        this.buffer += cStr.toLowerCase();
+        this.state = "scheme";
+    } else if (!this.stateOverride) {
+        this.state = "no scheme";
+        --this.pointer;
+    } else {
+        this.parseError = true;
+        return failure;
+    }
+    return true;
+};
+URLStateMachine.prototype["parse scheme"] = function parseScheme(c, cStr) {
+    if (isASCIIAlphanumeric(c) || c === 43 || c === 45 || c === 46) {
+        this.buffer += cStr.toLowerCase();
+    } else if (c === 58) {
+        if (this.stateOverride) {
+            if (isSpecial(this.url) && !isSpecialScheme(this.buffer)) {
+                return false;
+            }
+            if (!isSpecial(this.url) && isSpecialScheme(this.buffer)) {
+                return false;
+            }
+            if ((includesCredentials(this.url) || this.url.port !== null) && this.buffer === "file") {
+                return false;
+            }
+            if (this.url.scheme === "file" && (this.url.host === "" || this.url.host === null)) {
+                return false;
+            }
+        }
+        this.url.scheme = this.buffer;
+        this.buffer = "";
+        if (this.stateOverride) {
+            return false;
+        }
+        if (this.url.scheme === "file") {
+            if (this.input[this.pointer + 1] !== 47 || this.input[this.pointer + 2] !== 47) {
+                this.parseError = true;
+            }
+            this.state = "file";
+        } else if (isSpecial(this.url) && this.base !== null && this.base.scheme === this.url.scheme) {
+            this.state = "special relative or authority";
+        } else if (isSpecial(this.url)) {
+            this.state = "special authority slashes";
+        } else if (this.input[this.pointer + 1] === 47) {
+            this.state = "path or authority";
+            ++this.pointer;
+        } else {
+            this.url.cannotBeABaseURL = true;
+            this.url.path.push("");
+            this.state = "cannot-be-a-base-URL path";
+        }
+    } else if (!this.stateOverride) {
+        this.buffer = "";
+        this.state = "no scheme";
+        this.pointer = -1;
+    } else {
+        this.parseError = true;
+        return failure;
+    }
+    return true;
+};
+URLStateMachine.prototype["parse no scheme"] = function parseNoScheme(c) {
+    if (this.base === null || this.base.cannotBeABaseURL && c !== 35) {
+        return failure;
+    } else if (this.base.cannotBeABaseURL && c === 35) {
+        this.url.scheme = this.base.scheme;
+        this.url.path = this.base.path.slice();
+        this.url.query = this.base.query;
+        this.url.fragment = "";
+        this.url.cannotBeABaseURL = true;
+        this.state = "fragment";
+    } else if (this.base.scheme === "file") {
+        this.state = "file";
+        --this.pointer;
+    } else {
+        this.state = "relative";
+        --this.pointer;
+    }
+    return true;
+};
+URLStateMachine.prototype["parse special relative or authority"] = function parseSpecialRelativeOrAuthority(c) {
+    if (c === 47 && this.input[this.pointer + 1] === 47) {
+        this.state = "special authority ignore slashes";
+        ++this.pointer;
+    } else {
+        this.parseError = true;
+        this.state = "relative";
+        --this.pointer;
+    }
+    return true;
+};
+URLStateMachine.prototype["parse path or authority"] = function parsePathOrAuthority(c) {
+    if (c === 47) {
+        this.state = "authority";
+    } else {
+        this.state = "path";
+        --this.pointer;
+    }
+    return true;
+};
+URLStateMachine.prototype["parse relative"] = function parseRelative(c) {
+    this.url.scheme = this.base.scheme;
+    if (isNaN(c)) {
+        this.url.username = this.base.username;
+        this.url.password = this.base.password;
+        this.url.host = this.base.host;
+        this.url.port = this.base.port;
+        this.url.path = this.base.path.slice();
+        this.url.query = this.base.query;
+    } else if (c === 47) {
+        this.state = "relative slash";
+    } else if (c === 63) {
+        this.url.username = this.base.username;
+        this.url.password = this.base.password;
+        this.url.host = this.base.host;
+        this.url.port = this.base.port;
+        this.url.path = this.base.path.slice();
+        this.url.query = "";
+        this.state = "query";
+    } else if (c === 35) {
+        this.url.username = this.base.username;
+        this.url.password = this.base.password;
+        this.url.host = this.base.host;
+        this.url.port = this.base.port;
+        this.url.path = this.base.path.slice();
+        this.url.query = this.base.query;
+        this.url.fragment = "";
+        this.state = "fragment";
+    } else if (isSpecial(this.url) && c === 92) {
+        this.parseError = true;
+        this.state = "relative slash";
+    } else {
+        this.url.username = this.base.username;
+        this.url.password = this.base.password;
+        this.url.host = this.base.host;
+        this.url.port = this.base.port;
+        this.url.path = this.base.path.slice(0, this.base.path.length - 1);
+        this.state = "path";
+        --this.pointer;
+    }
+    return true;
+};
+URLStateMachine.prototype["parse relative slash"] = function parseRelativeSlash(c) {
+    if (isSpecial(this.url) && (c === 47 || c === 92)) {
+        if (c === 92) {
+            this.parseError = true;
+        }
+        this.state = "special authority ignore slashes";
+    } else if (c === 47) {
+        this.state = "authority";
+    } else {
+        this.url.username = this.base.username;
+        this.url.password = this.base.password;
+        this.url.host = this.base.host;
+        this.url.port = this.base.port;
+        this.state = "path";
+        --this.pointer;
+    }
+    return true;
+};
+URLStateMachine.prototype["parse special authority slashes"] = function parseSpecialAuthoritySlashes(c) {
+    if (c === 47 && this.input[this.pointer + 1] === 47) {
+        this.state = "special authority ignore slashes";
+        ++this.pointer;
+    } else {
+        this.parseError = true;
+        this.state = "special authority ignore slashes";
+        --this.pointer;
+    }
+    return true;
+};
+URLStateMachine.prototype["parse special authority ignore slashes"] = function parseSpecialAuthorityIgnoreSlashes(c) {
+    if (c !== 47 && c !== 92) {
+        this.state = "authority";
+        --this.pointer;
+    } else {
+        this.parseError = true;
+    }
+    return true;
+};
+URLStateMachine.prototype["parse authority"] = function parseAuthority(c, cStr) {
+    if (c === 64) {
+        this.parseError = true;
+        if (this.atFlag) {
+            this.buffer = "%40" + this.buffer;
+        }
+        this.atFlag = true;
+        // careful, this is based on buffer and has its own pointer (this.pointer != pointer) and inner chars
+        const len = countSymbols(this.buffer);
+        for(let pointer = 0; pointer < len; ++pointer){
+            const codePoint = this.buffer.codePointAt(pointer);
+            if (codePoint === 58 && !this.passwordTokenSeenFlag) {
+                this.passwordTokenSeenFlag = true;
+                continue;
+            }
+            const encodedCodePoints = percentEncodeChar(codePoint, isUserinfoPercentEncode);
+            if (this.passwordTokenSeenFlag) {
+                this.url.password += encodedCodePoints;
+            } else {
+                this.url.username += encodedCodePoints;
+            }
+        }
+        this.buffer = "";
+    } else if (isNaN(c) || c === 47 || c === 63 || c === 35 || isSpecial(this.url) && c === 92) {
+        if (this.atFlag && this.buffer === "") {
+            this.parseError = true;
+            return failure;
+        }
+        this.pointer -= countSymbols(this.buffer) + 1;
+        this.buffer = "";
+        this.state = "host";
+    } else {
+        this.buffer += cStr;
+    }
+    return true;
+};
+URLStateMachine.prototype["parse hostname"] = URLStateMachine.prototype["parse host"] = function parseHostName(c, cStr) {
+    if (this.stateOverride && this.url.scheme === "file") {
+        --this.pointer;
+        this.state = "file host";
+    } else if (c === 58 && !this.arrFlag) {
+        if (this.buffer === "") {
+            this.parseError = true;
+            return failure;
+        }
+        const host = parseHost(this.buffer, isSpecial(this.url));
+        if (host === failure) {
+            return failure;
+        }
+        this.url.host = host;
+        this.buffer = "";
+        this.state = "port";
+        if (this.stateOverride === "hostname") {
+            return false;
+        }
+    } else if (isNaN(c) || c === 47 || c === 63 || c === 35 || isSpecial(this.url) && c === 92) {
+        --this.pointer;
+        if (isSpecial(this.url) && this.buffer === "") {
+            this.parseError = true;
+            return failure;
+        } else if (this.stateOverride && this.buffer === "" && (includesCredentials(this.url) || this.url.port !== null)) {
+            this.parseError = true;
+            return false;
+        }
+        const host = parseHost(this.buffer, isSpecial(this.url));
+        if (host === failure) {
+            return failure;
+        }
+        this.url.host = host;
+        this.buffer = "";
+        this.state = "path start";
+        if (this.stateOverride) {
+            return false;
+        }
+    } else {
+        if (c === 91) {
+            this.arrFlag = true;
+        } else if (c === 93) {
+            this.arrFlag = false;
+        }
+        this.buffer += cStr;
+    }
+    return true;
+};
+URLStateMachine.prototype["parse port"] = function parsePort(c, cStr) {
+    if (isASCIIDigit(c)) {
+        this.buffer += cStr;
+    } else if (isNaN(c) || c === 47 || c === 63 || c === 35 || isSpecial(this.url) && c === 92 || this.stateOverride) {
+        if (this.buffer !== "") {
+            const port = parseInt(this.buffer);
+            if (port > Math.pow(2, 16) - 1) {
+                this.parseError = true;
+                return failure;
+            }
+            this.url.port = port === defaultPort(this.url.scheme) ? null : port;
+            this.buffer = "";
+        }
+        if (this.stateOverride) {
+            return false;
+        }
+        this.state = "path start";
+        --this.pointer;
+    } else {
+        this.parseError = true;
+        return failure;
+    }
+    return true;
+};
+const fileOtherwiseCodePoints = new Set([
+    47,
+    92,
+    63,
+    35
+]);
+URLStateMachine.prototype["parse file"] = function parseFile(c) {
+    this.url.scheme = "file";
+    if (c === 47 || c === 92) {
+        if (c === 92) {
+            this.parseError = true;
+        }
+        this.state = "file slash";
+    } else if (this.base !== null && this.base.scheme === "file") {
+        if (isNaN(c)) {
+            this.url.host = this.base.host;
+            this.url.path = this.base.path.slice();
+            this.url.query = this.base.query;
+        } else if (c === 63) {
+            this.url.host = this.base.host;
+            this.url.path = this.base.path.slice();
+            this.url.query = "";
+            this.state = "query";
+        } else if (c === 35) {
+            this.url.host = this.base.host;
+            this.url.path = this.base.path.slice();
+            this.url.query = this.base.query;
+            this.url.fragment = "";
+            this.state = "fragment";
+        } else {
+            if (this.input.length - this.pointer - 1 === 0 || // remaining consists of 0 code points
+            !isWindowsDriveLetterCodePoints(c, this.input[this.pointer + 1]) || this.input.length - this.pointer - 1 >= 2 && // remaining has at least 2 code points
+            !fileOtherwiseCodePoints.has(this.input[this.pointer + 2])) {
+                this.url.host = this.base.host;
+                this.url.path = this.base.path.slice();
+                shortenPath(this.url);
+            } else {
+                this.parseError = true;
+            }
+            this.state = "path";
+            --this.pointer;
+        }
+    } else {
+        this.state = "path";
+        --this.pointer;
+    }
+    return true;
+};
+URLStateMachine.prototype["parse file slash"] = function parseFileSlash(c) {
+    if (c === 47 || c === 92) {
+        if (c === 92) {
+            this.parseError = true;
+        }
+        this.state = "file host";
+    } else {
+        if (this.base !== null && this.base.scheme === "file") {
+            if (isNormalizedWindowsDriveLetterString(this.base.path[0])) {
+                this.url.path.push(this.base.path[0]);
+            } else {
+                this.url.host = this.base.host;
+            }
+        }
+        this.state = "path";
+        --this.pointer;
+    }
+    return true;
+};
+URLStateMachine.prototype["parse file host"] = function parseFileHost(c, cStr) {
+    if (isNaN(c) || c === 47 || c === 92 || c === 63 || c === 35) {
+        --this.pointer;
+        if (!this.stateOverride && isWindowsDriveLetterString(this.buffer)) {
+            this.parseError = true;
+            this.state = "path";
+        } else if (this.buffer === "") {
+            this.url.host = "";
+            if (this.stateOverride) {
+                return false;
+            }
+            this.state = "path start";
+        } else {
+            let host = parseHost(this.buffer, isSpecial(this.url));
+            if (host === failure) {
+                return failure;
+            }
+            if (host === "localhost") {
+                host = "";
+            }
+            this.url.host = host;
+            if (this.stateOverride) {
+                return false;
+            }
+            this.buffer = "";
+            this.state = "path start";
+        }
+    } else {
+        this.buffer += cStr;
+    }
+    return true;
+};
+URLStateMachine.prototype["parse path start"] = function parsePathStart(c) {
+    if (isSpecial(this.url)) {
+        if (c === 92) {
+            this.parseError = true;
+        }
+        this.state = "path";
+        if (c !== 47 && c !== 92) {
+            --this.pointer;
+        }
+    } else if (!this.stateOverride && c === 63) {
+        this.url.query = "";
+        this.state = "query";
+    } else if (!this.stateOverride && c === 35) {
+        this.url.fragment = "";
+        this.state = "fragment";
+    } else if (c !== undefined) {
+        this.state = "path";
+        if (c !== 47) {
+            --this.pointer;
+        }
+    }
+    return true;
+};
+URLStateMachine.prototype["parse path"] = function parsePath(c) {
+    if (isNaN(c) || c === 47 || isSpecial(this.url) && c === 92 || !this.stateOverride && (c === 63 || c === 35)) {
+        if (isSpecial(this.url) && c === 92) {
+            this.parseError = true;
+        }
+        if (isDoubleDot(this.buffer)) {
+            shortenPath(this.url);
+            if (c !== 47 && !(isSpecial(this.url) && c === 92)) {
+                this.url.path.push("");
+            }
+        } else if (isSingleDot(this.buffer) && c !== 47 && !(isSpecial(this.url) && c === 92)) {
+            this.url.path.push("");
+        } else if (!isSingleDot(this.buffer)) {
+            if (this.url.scheme === "file" && this.url.path.length === 0 && isWindowsDriveLetterString(this.buffer)) {
+                if (this.url.host !== "" && this.url.host !== null) {
+                    this.parseError = true;
+                    this.url.host = "";
+                }
+                this.buffer = this.buffer[0] + ":";
+            }
+            this.url.path.push(this.buffer);
+        }
+        this.buffer = "";
+        if (this.url.scheme === "file" && (c === undefined || c === 63 || c === 35)) {
+            while(this.url.path.length > 1 && this.url.path[0] === ""){
+                this.parseError = true;
+                this.url.path.shift();
+            }
+        }
+        if (c === 63) {
+            this.url.query = "";
+            this.state = "query";
+        }
+        if (c === 35) {
+            this.url.fragment = "";
+            this.state = "fragment";
+        }
+    } else {
+        // TODO: If c is not a URL code point and not "%", parse error.
+        if (c === 37 && (!isASCIIHex(this.input[this.pointer + 1]) || !isASCIIHex(this.input[this.pointer + 2]))) {
+            this.parseError = true;
+        }
+        this.buffer += percentEncodeChar(c, isPathPercentEncode);
+    }
+    return true;
+};
+URLStateMachine.prototype["parse cannot-be-a-base-URL path"] = function parseCannotBeABaseURLPath(c) {
+    if (c === 63) {
+        this.url.query = "";
+        this.state = "query";
+    } else if (c === 35) {
+        this.url.fragment = "";
+        this.state = "fragment";
+    } else {
+        // TODO: Add: not a URL code point
+        if (!isNaN(c) && c !== 37) {
+            this.parseError = true;
+        }
+        if (c === 37 && (!isASCIIHex(this.input[this.pointer + 1]) || !isASCIIHex(this.input[this.pointer + 2]))) {
+            this.parseError = true;
+        }
+        if (!isNaN(c)) {
+            this.url.path[0] = this.url.path[0] + percentEncodeChar(c, isC0ControlPercentEncode);
+        }
+    }
+    return true;
+};
+URLStateMachine.prototype["parse query"] = function parseQuery(c, cStr) {
+    if (isNaN(c) || !this.stateOverride && c === 35) {
+        if (!isSpecial(this.url) || this.url.scheme === "ws" || this.url.scheme === "wss") {
+            this.encodingOverride = "utf-8";
+        }
+        const buffer = new Buffer(this.buffer); // TODO: Use encoding override instead
+        for(let i = 0; i < buffer.length; ++i){
+            if (buffer[i] < 0x21 || buffer[i] > 0x7E || buffer[i] === 0x22 || buffer[i] === 0x23 || buffer[i] === 0x3C || buffer[i] === 0x3E) {
+                this.url.query += percentEncode(buffer[i]);
+            } else {
+                this.url.query += String.fromCodePoint(buffer[i]);
+            }
+        }
+        this.buffer = "";
+        if (c === 35) {
+            this.url.fragment = "";
+            this.state = "fragment";
+        }
+    } else {
+        // TODO: If c is not a URL code point and not "%", parse error.
+        if (c === 37 && (!isASCIIHex(this.input[this.pointer + 1]) || !isASCIIHex(this.input[this.pointer + 2]))) {
+            this.parseError = true;
+        }
+        this.buffer += cStr;
+    }
+    return true;
+};
+URLStateMachine.prototype["parse fragment"] = function parseFragment(c) {
+    if (isNaN(c)) {} else if (c === 0x0) {
+        this.parseError = true;
+    } else {
+        // TODO: If c is not a URL code point and not "%", parse error.
+        if (c === 37 && (!isASCIIHex(this.input[this.pointer + 1]) || !isASCIIHex(this.input[this.pointer + 2]))) {
+            this.parseError = true;
+        }
+        this.url.fragment += percentEncodeChar(c, isC0ControlPercentEncode);
+    }
+    return true;
+};
+function serializeURL(url, excludeFragment) {
+    let output = url.scheme + ":";
+    if (url.host !== null) {
+        output += "//";
+        if (url.username !== "" || url.password !== "") {
+            output += url.username;
+            if (url.password !== "") {
+                output += ":" + url.password;
+            }
+            output += "@";
+        }
+        output += serializeHost(url.host);
+        if (url.port !== null) {
+            output += ":" + url.port;
+        }
+    } else if (url.host === null && url.scheme === "file") {
+        output += "//";
+    }
+    if (url.cannotBeABaseURL) {
+        output += url.path[0];
+    } else {
+        for (const string of url.path){
+            output += "/" + string;
+        }
+    }
+    if (url.query !== null) {
+        output += "?" + url.query;
+    }
+    if (!excludeFragment && url.fragment !== null) {
+        output += "#" + url.fragment;
+    }
+    return output;
+}
+function serializeOrigin(tuple) {
+    let result = tuple.scheme + "://";
+    result += serializeHost(tuple.host);
+    if (tuple.port !== null) {
+        result += ":" + tuple.port;
+    }
+    return result;
+}
+module.exports.serializeURL = serializeURL;
+module.exports.serializeURLOrigin = function(url) {
+    // https://url.spec.whatwg.org/#concept-url-origin
+    switch(url.scheme){
+        case "blob":
+            try {
+                return module.exports.serializeURLOrigin(module.exports.parseURL(url.path[0]));
+            } catch (e) {
+                // serializing an opaque origin returns "null"
+                return "null";
+            }
+        case "ftp":
+        case "gopher":
+        case "http":
+        case "https":
+        case "ws":
+        case "wss":
+            return serializeOrigin({
+                scheme: url.scheme,
+                host: url.host,
+                port: url.port
+            });
+        case "file":
+            // spec says "exercise to the reader", chrome says "file://"
+            return "file://";
+        default:
+            // serializing an opaque origin returns "null"
+            return "null";
+    }
+};
+module.exports.basicURLParse = function(input, options) {
+    if (options === undefined) {
+        options = {};
+    }
+    const usm = new URLStateMachine(input, options.baseURL, options.encodingOverride, options.url, options.stateOverride);
+    if (usm.failure) {
+        return "failure";
+    }
+    return usm.url;
+};
+module.exports.setTheUsername = function(url, username) {
+    url.username = "";
+    const decoded = punycode.ucs2.decode(username);
+    for(let i = 0; i < decoded.length; ++i){
+        url.username += percentEncodeChar(decoded[i], isUserinfoPercentEncode);
+    }
+};
+module.exports.setThePassword = function(url, password) {
+    url.password = "";
+    const decoded = punycode.ucs2.decode(password);
+    for(let i = 0; i < decoded.length; ++i){
+        url.password += percentEncodeChar(decoded[i], isUserinfoPercentEncode);
+    }
+};
+module.exports.serializeHost = serializeHost;
+module.exports.cannotHaveAUsernamePasswordPort = cannotHaveAUsernamePasswordPort;
+module.exports.serializeInteger = function(integer) {
+    return String(integer);
+};
+module.exports.parseURL = function(input, options) {
+    if (options === undefined) {
+        options = {};
+    }
+    // We don't handle blobs, so this just delegates:
+    return module.exports.basicURLParse(input, {
+        baseURL: options.baseURL,
+        encodingOverride: options.encodingOverride
+    });
+};
+}),
+"[project]/HairGrowth-Clinic/node_modules/whatwg-url/lib/URL-impl.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+const usm = __turbopack_context__.r("[project]/HairGrowth-Clinic/node_modules/whatwg-url/lib/url-state-machine.js [app-ssr] (ecmascript)");
+exports.implementation = class URLImpl {
+    constructor(constructorArgs){
+        const url = constructorArgs[0];
+        const base = constructorArgs[1];
+        let parsedBase = null;
+        if (base !== undefined) {
+            parsedBase = usm.basicURLParse(base);
+            if (parsedBase === "failure") {
+                throw new TypeError("Invalid base URL");
+            }
+        }
+        const parsedURL = usm.basicURLParse(url, {
+            baseURL: parsedBase
+        });
+        if (parsedURL === "failure") {
+            throw new TypeError("Invalid URL");
+        }
+        this._url = parsedURL;
+    // TODO: query stuff
+    }
+    get href() {
+        return usm.serializeURL(this._url);
+    }
+    set href(v) {
+        const parsedURL = usm.basicURLParse(v);
+        if (parsedURL === "failure") {
+            throw new TypeError("Invalid URL");
+        }
+        this._url = parsedURL;
+    }
+    get origin() {
+        return usm.serializeURLOrigin(this._url);
+    }
+    get protocol() {
+        return this._url.scheme + ":";
+    }
+    set protocol(v) {
+        usm.basicURLParse(v + ":", {
+            url: this._url,
+            stateOverride: "scheme start"
+        });
+    }
+    get username() {
+        return this._url.username;
+    }
+    set username(v) {
+        if (usm.cannotHaveAUsernamePasswordPort(this._url)) {
+            return;
+        }
+        usm.setTheUsername(this._url, v);
+    }
+    get password() {
+        return this._url.password;
+    }
+    set password(v) {
+        if (usm.cannotHaveAUsernamePasswordPort(this._url)) {
+            return;
+        }
+        usm.setThePassword(this._url, v);
+    }
+    get host() {
+        const url = this._url;
+        if (url.host === null) {
+            return "";
+        }
+        if (url.port === null) {
+            return usm.serializeHost(url.host);
+        }
+        return usm.serializeHost(url.host) + ":" + usm.serializeInteger(url.port);
+    }
+    set host(v) {
+        if (this._url.cannotBeABaseURL) {
+            return;
+        }
+        usm.basicURLParse(v, {
+            url: this._url,
+            stateOverride: "host"
+        });
+    }
+    get hostname() {
+        if (this._url.host === null) {
+            return "";
+        }
+        return usm.serializeHost(this._url.host);
+    }
+    set hostname(v) {
+        if (this._url.cannotBeABaseURL) {
+            return;
+        }
+        usm.basicURLParse(v, {
+            url: this._url,
+            stateOverride: "hostname"
+        });
+    }
+    get port() {
+        if (this._url.port === null) {
+            return "";
+        }
+        return usm.serializeInteger(this._url.port);
+    }
+    set port(v) {
+        if (usm.cannotHaveAUsernamePasswordPort(this._url)) {
+            return;
+        }
+        if (v === "") {
+            this._url.port = null;
+        } else {
+            usm.basicURLParse(v, {
+                url: this._url,
+                stateOverride: "port"
+            });
+        }
+    }
+    get pathname() {
+        if (this._url.cannotBeABaseURL) {
+            return this._url.path[0];
+        }
+        if (this._url.path.length === 0) {
+            return "";
+        }
+        return "/" + this._url.path.join("/");
+    }
+    set pathname(v) {
+        if (this._url.cannotBeABaseURL) {
+            return;
+        }
+        this._url.path = [];
+        usm.basicURLParse(v, {
+            url: this._url,
+            stateOverride: "path start"
+        });
+    }
+    get search() {
+        if (this._url.query === null || this._url.query === "") {
+            return "";
+        }
+        return "?" + this._url.query;
+    }
+    set search(v) {
+        // TODO: query stuff
+        const url = this._url;
+        if (v === "") {
+            url.query = null;
+            return;
+        }
+        const input = v[0] === "?" ? v.substring(1) : v;
+        url.query = "";
+        usm.basicURLParse(input, {
+            url,
+            stateOverride: "query"
+        });
+    }
+    get hash() {
+        if (this._url.fragment === null || this._url.fragment === "") {
+            return "";
+        }
+        return "#" + this._url.fragment;
+    }
+    set hash(v) {
+        if (v === "") {
+            this._url.fragment = null;
+            return;
+        }
+        const input = v[0] === "#" ? v.substring(1) : v;
+        this._url.fragment = "";
+        usm.basicURLParse(input, {
+            url: this._url,
+            stateOverride: "fragment"
+        });
+    }
+    toJSON() {
+        return this.href;
+    }
+};
+}),
+"[project]/HairGrowth-Clinic/node_modules/whatwg-url/lib/URL.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+const conversions = __turbopack_context__.r("[project]/HairGrowth-Clinic/node_modules/webidl-conversions/lib/index.js [app-ssr] (ecmascript)");
+const utils = __turbopack_context__.r("[project]/HairGrowth-Clinic/node_modules/whatwg-url/lib/utils.js [app-ssr] (ecmascript)");
+const Impl = __turbopack_context__.r("[project]/HairGrowth-Clinic/node_modules/whatwg-url/lib/URL-impl.js [app-ssr] (ecmascript)");
+const impl = utils.implSymbol;
+function URL(url) {
+    if (!this || this[impl] || !(this instanceof URL)) {
+        throw new TypeError("Failed to construct 'URL': Please use the 'new' operator, this DOM object constructor cannot be called as a function.");
+    }
+    if (arguments.length < 1) {
+        throw new TypeError("Failed to construct 'URL': 1 argument required, but only " + arguments.length + " present.");
+    }
+    const args = [];
+    for(let i = 0; i < arguments.length && i < 2; ++i){
+        args[i] = arguments[i];
+    }
+    args[0] = conversions["USVString"](args[0]);
+    if (args[1] !== undefined) {
+        args[1] = conversions["USVString"](args[1]);
+    }
+    module.exports.setup(this, args);
+}
+URL.prototype.toJSON = function toJSON() {
+    if (!this || !module.exports.is(this)) {
+        throw new TypeError("Illegal invocation");
+    }
+    const args = [];
+    for(let i = 0; i < arguments.length && i < 0; ++i){
+        args[i] = arguments[i];
+    }
+    return this[impl].toJSON.apply(this[impl], args);
+};
+Object.defineProperty(URL.prototype, "href", {
+    get () {
+        return this[impl].href;
+    },
+    set (V) {
+        V = conversions["USVString"](V);
+        this[impl].href = V;
+    },
+    enumerable: true,
+    configurable: true
+});
+URL.prototype.toString = function() {
+    if (!this || !module.exports.is(this)) {
+        throw new TypeError("Illegal invocation");
+    }
+    return this.href;
+};
+Object.defineProperty(URL.prototype, "origin", {
+    get () {
+        return this[impl].origin;
+    },
+    enumerable: true,
+    configurable: true
+});
+Object.defineProperty(URL.prototype, "protocol", {
+    get () {
+        return this[impl].protocol;
+    },
+    set (V) {
+        V = conversions["USVString"](V);
+        this[impl].protocol = V;
+    },
+    enumerable: true,
+    configurable: true
+});
+Object.defineProperty(URL.prototype, "username", {
+    get () {
+        return this[impl].username;
+    },
+    set (V) {
+        V = conversions["USVString"](V);
+        this[impl].username = V;
+    },
+    enumerable: true,
+    configurable: true
+});
+Object.defineProperty(URL.prototype, "password", {
+    get () {
+        return this[impl].password;
+    },
+    set (V) {
+        V = conversions["USVString"](V);
+        this[impl].password = V;
+    },
+    enumerable: true,
+    configurable: true
+});
+Object.defineProperty(URL.prototype, "host", {
+    get () {
+        return this[impl].host;
+    },
+    set (V) {
+        V = conversions["USVString"](V);
+        this[impl].host = V;
+    },
+    enumerable: true,
+    configurable: true
+});
+Object.defineProperty(URL.prototype, "hostname", {
+    get () {
+        return this[impl].hostname;
+    },
+    set (V) {
+        V = conversions["USVString"](V);
+        this[impl].hostname = V;
+    },
+    enumerable: true,
+    configurable: true
+});
+Object.defineProperty(URL.prototype, "port", {
+    get () {
+        return this[impl].port;
+    },
+    set (V) {
+        V = conversions["USVString"](V);
+        this[impl].port = V;
+    },
+    enumerable: true,
+    configurable: true
+});
+Object.defineProperty(URL.prototype, "pathname", {
+    get () {
+        return this[impl].pathname;
+    },
+    set (V) {
+        V = conversions["USVString"](V);
+        this[impl].pathname = V;
+    },
+    enumerable: true,
+    configurable: true
+});
+Object.defineProperty(URL.prototype, "search", {
+    get () {
+        return this[impl].search;
+    },
+    set (V) {
+        V = conversions["USVString"](V);
+        this[impl].search = V;
+    },
+    enumerable: true,
+    configurable: true
+});
+Object.defineProperty(URL.prototype, "hash", {
+    get () {
+        return this[impl].hash;
+    },
+    set (V) {
+        V = conversions["USVString"](V);
+        this[impl].hash = V;
+    },
+    enumerable: true,
+    configurable: true
+});
+module.exports = {
+    is (obj) {
+        return !!obj && obj[impl] instanceof Impl.implementation;
+    },
+    create (constructorArgs, privateData) {
+        let obj = Object.create(URL.prototype);
+        this.setup(obj, constructorArgs, privateData);
+        return obj;
+    },
+    setup (obj, constructorArgs, privateData) {
+        if (!privateData) privateData = {};
+        privateData.wrapper = obj;
+        obj[impl] = new Impl.implementation(constructorArgs, privateData);
+        obj[impl][utils.wrapperSymbol] = obj;
+    },
+    interface: URL,
+    expose: {
+        Window: {
+            URL: URL
+        },
+        Worker: {
+            URL: URL
+        }
+    }
+};
+}),
+"[project]/HairGrowth-Clinic/node_modules/whatwg-url/lib/public-api.js [app-ssr] (ecmascript)", ((__turbopack_context__, module, exports) => {
+"use strict";
+
+exports.URL = __turbopack_context__.r("[project]/HairGrowth-Clinic/node_modules/whatwg-url/lib/URL.js [app-ssr] (ecmascript)").interface;
+exports.serializeURL = __turbopack_context__.r("[project]/HairGrowth-Clinic/node_modules/whatwg-url/lib/url-state-machine.js [app-ssr] (ecmascript)").serializeURL;
+exports.serializeURLOrigin = __turbopack_context__.r("[project]/HairGrowth-Clinic/node_modules/whatwg-url/lib/url-state-machine.js [app-ssr] (ecmascript)").serializeURLOrigin;
+exports.basicURLParse = __turbopack_context__.r("[project]/HairGrowth-Clinic/node_modules/whatwg-url/lib/url-state-machine.js [app-ssr] (ecmascript)").basicURLParse;
+exports.setTheUsername = __turbopack_context__.r("[project]/HairGrowth-Clinic/node_modules/whatwg-url/lib/url-state-machine.js [app-ssr] (ecmascript)").setTheUsername;
+exports.setThePassword = __turbopack_context__.r("[project]/HairGrowth-Clinic/node_modules/whatwg-url/lib/url-state-machine.js [app-ssr] (ecmascript)").setThePassword;
+exports.serializeHost = __turbopack_context__.r("[project]/HairGrowth-Clinic/node_modules/whatwg-url/lib/url-state-machine.js [app-ssr] (ecmascript)").serializeHost;
+exports.serializeInteger = __turbopack_context__.r("[project]/HairGrowth-Clinic/node_modules/whatwg-url/lib/url-state-machine.js [app-ssr] (ecmascript)").serializeInteger;
+exports.parseURL = __turbopack_context__.r("[project]/HairGrowth-Clinic/node_modules/whatwg-url/lib/url-state-machine.js [app-ssr] (ecmascript)").parseURL;
+}),
+"[project]/HairGrowth-Clinic/node_modules/node-fetch/lib/index.mjs [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "FetchError",
+    ()=>FetchError,
+    "Headers",
+    ()=>Headers,
+    "Request",
+    ()=>Request,
+    "Response",
+    ()=>Response,
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$externals$5d2f$stream__$5b$external$5d$__$28$stream$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/stream [external] (stream, cjs)");
+var __TURBOPACK__imported__module__$5b$externals$5d2f$http__$5b$external$5d$__$28$http$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/http [external] (http, cjs)");
+var __TURBOPACK__imported__module__$5b$externals$5d2f$url__$5b$external$5d$__$28$url$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/url [external] (url, cjs)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$whatwg$2d$url$2f$lib$2f$public$2d$api$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/whatwg-url/lib/public-api.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$externals$5d2f$https__$5b$external$5d$__$28$https$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/https [external] (https, cjs)");
+var __TURBOPACK__imported__module__$5b$externals$5d2f$zlib__$5b$external$5d$__$28$zlib$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/zlib [external] (zlib, cjs)");
+;
+;
+;
+;
+;
+;
+// Based on https://github.com/tmpvar/jsdom/blob/aa85b2abf07766ff7bf5c1f6daafb3726f2f2db5/lib/jsdom/living/blob.js
+// fix for "Readable" isn't a named export issue
+const Readable = __TURBOPACK__imported__module__$5b$externals$5d2f$stream__$5b$external$5d$__$28$stream$2c$__cjs$29$__["default"].Readable;
+const BUFFER = Symbol('buffer');
+const TYPE = Symbol('type');
+class Blob {
+    constructor(){
+        this[TYPE] = '';
+        const blobParts = arguments[0];
+        const options = arguments[1];
+        const buffers = [];
+        let size = 0;
+        if (blobParts) {
+            const a = blobParts;
+            const length = Number(a.length);
+            for(let i = 0; i < length; i++){
+                const element = a[i];
+                let buffer;
+                if (element instanceof Buffer) {
+                    buffer = element;
+                } else if (ArrayBuffer.isView(element)) {
+                    buffer = Buffer.from(element.buffer, element.byteOffset, element.byteLength);
+                } else if (element instanceof ArrayBuffer) {
+                    buffer = Buffer.from(element);
+                } else if (element instanceof Blob) {
+                    buffer = element[BUFFER];
+                } else {
+                    buffer = Buffer.from(typeof element === 'string' ? element : String(element));
+                }
+                size += buffer.length;
+                buffers.push(buffer);
+            }
+        }
+        this[BUFFER] = Buffer.concat(buffers);
+        let type = options && options.type !== undefined && String(options.type).toLowerCase();
+        if (type && !/[^\u0020-\u007E]/.test(type)) {
+            this[TYPE] = type;
+        }
+    }
+    get size() {
+        return this[BUFFER].length;
+    }
+    get type() {
+        return this[TYPE];
+    }
+    text() {
+        return Promise.resolve(this[BUFFER].toString());
+    }
+    arrayBuffer() {
+        const buf = this[BUFFER];
+        const ab = buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.byteLength);
+        return Promise.resolve(ab);
+    }
+    stream() {
+        const readable = new Readable();
+        readable._read = function() {};
+        readable.push(this[BUFFER]);
+        readable.push(null);
+        return readable;
+    }
+    toString() {
+        return '[object Blob]';
+    }
+    slice() {
+        const size = this.size;
+        const start = arguments[0];
+        const end = arguments[1];
+        let relativeStart, relativeEnd;
+        if (start === undefined) {
+            relativeStart = 0;
+        } else if (start < 0) {
+            relativeStart = Math.max(size + start, 0);
+        } else {
+            relativeStart = Math.min(start, size);
+        }
+        if (end === undefined) {
+            relativeEnd = size;
+        } else if (end < 0) {
+            relativeEnd = Math.max(size + end, 0);
+        } else {
+            relativeEnd = Math.min(end, size);
+        }
+        const span = Math.max(relativeEnd - relativeStart, 0);
+        const buffer = this[BUFFER];
+        const slicedBuffer = buffer.slice(relativeStart, relativeStart + span);
+        const blob = new Blob([], {
+            type: arguments[2]
+        });
+        blob[BUFFER] = slicedBuffer;
+        return blob;
+    }
+}
+Object.defineProperties(Blob.prototype, {
+    size: {
+        enumerable: true
+    },
+    type: {
+        enumerable: true
+    },
+    slice: {
+        enumerable: true
+    }
+});
+Object.defineProperty(Blob.prototype, Symbol.toStringTag, {
+    value: 'Blob',
+    writable: false,
+    enumerable: false,
+    configurable: true
+});
+/**
+ * fetch-error.js
+ *
+ * FetchError interface for operational errors
+ */ /**
+ * Create FetchError instance
+ *
+ * @param   String      message      Error message for human
+ * @param   String      type         Error type for machine
+ * @param   String      systemError  For Node.js system error
+ * @return  FetchError
+ */ function FetchError(message, type, systemError) {
+    Error.call(this, message);
+    this.message = message;
+    this.type = type;
+    // when err.type is `system`, err.code contains system error code
+    if (systemError) {
+        this.code = this.errno = systemError.code;
+    }
+    // hide custom error implementation details from end-users
+    Error.captureStackTrace(this, this.constructor);
+}
+FetchError.prototype = Object.create(Error.prototype);
+FetchError.prototype.constructor = FetchError;
+FetchError.prototype.name = 'FetchError';
+let convert;
+try {
+    convert = (()=>{
+        const e = new Error("Cannot find module 'encoding'");
+        e.code = 'MODULE_NOT_FOUND';
+        throw e;
+    })().convert;
+} catch (e) {}
+const INTERNALS = Symbol('Body internals');
+// fix an issue where "PassThrough" isn't a named export for node <10
+const PassThrough = __TURBOPACK__imported__module__$5b$externals$5d2f$stream__$5b$external$5d$__$28$stream$2c$__cjs$29$__["default"].PassThrough;
+/**
+ * Body mixin
+ *
+ * Ref: https://fetch.spec.whatwg.org/#body
+ *
+ * @param   Stream  body  Readable stream
+ * @param   Object  opts  Response options
+ * @return  Void
+ */ function Body(body) {
+    var _this = this;
+    var _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {}, _ref$size = _ref.size;
+    let size = _ref$size === undefined ? 0 : _ref$size;
+    var _ref$timeout = _ref.timeout;
+    let timeout = _ref$timeout === undefined ? 0 : _ref$timeout;
+    if (body == null) {
+        // body is undefined or null
+        body = null;
+    } else if (isURLSearchParams(body)) {
+        // body is a URLSearchParams
+        body = Buffer.from(body.toString());
+    } else if (isBlob(body)) ;
+    else if (Buffer.isBuffer(body)) ;
+    else if (Object.prototype.toString.call(body) === '[object ArrayBuffer]') {
+        // body is ArrayBuffer
+        body = Buffer.from(body);
+    } else if (ArrayBuffer.isView(body)) {
+        // body is ArrayBufferView
+        body = Buffer.from(body.buffer, body.byteOffset, body.byteLength);
+    } else if (body instanceof __TURBOPACK__imported__module__$5b$externals$5d2f$stream__$5b$external$5d$__$28$stream$2c$__cjs$29$__["default"]) ;
+    else {
+        // none of the above
+        // coerce to string then buffer
+        body = Buffer.from(String(body));
+    }
+    this[INTERNALS] = {
+        body,
+        disturbed: false,
+        error: null
+    };
+    this.size = size;
+    this.timeout = timeout;
+    if (body instanceof __TURBOPACK__imported__module__$5b$externals$5d2f$stream__$5b$external$5d$__$28$stream$2c$__cjs$29$__["default"]) {
+        body.on('error', function(err) {
+            const error = err.name === 'AbortError' ? err : new FetchError(`Invalid response body while trying to fetch ${_this.url}: ${err.message}`, 'system', err);
+            _this[INTERNALS].error = error;
+        });
+    }
+}
+Body.prototype = {
+    get body () {
+        return this[INTERNALS].body;
+    },
+    get bodyUsed () {
+        return this[INTERNALS].disturbed;
+    },
+    /**
+  * Decode response as ArrayBuffer
+  *
+  * @return  Promise
+  */ arrayBuffer () {
+        return consumeBody.call(this).then(function(buf) {
+            return buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.byteLength);
+        });
+    },
+    /**
+  * Return raw response as Blob
+  *
+  * @return Promise
+  */ blob () {
+        let ct = this.headers && this.headers.get('content-type') || '';
+        return consumeBody.call(this).then(function(buf) {
+            return Object.assign(// Prevent copying
+            new Blob([], {
+                type: ct.toLowerCase()
+            }), {
+                [BUFFER]: buf
+            });
+        });
+    },
+    /**
+  * Decode response as json
+  *
+  * @return  Promise
+  */ json () {
+        var _this2 = this;
+        return consumeBody.call(this).then(function(buffer) {
+            try {
+                return JSON.parse(buffer.toString());
+            } catch (err) {
+                return Body.Promise.reject(new FetchError(`invalid json response body at ${_this2.url} reason: ${err.message}`, 'invalid-json'));
+            }
+        });
+    },
+    /**
+  * Decode response as text
+  *
+  * @return  Promise
+  */ text () {
+        return consumeBody.call(this).then(function(buffer) {
+            return buffer.toString();
+        });
+    },
+    /**
+  * Decode response as buffer (non-spec api)
+  *
+  * @return  Promise
+  */ buffer () {
+        return consumeBody.call(this);
+    },
+    /**
+  * Decode response as text, while automatically detecting the encoding and
+  * trying to decode to UTF-8 (non-spec api)
+  *
+  * @return  Promise
+  */ textConverted () {
+        var _this3 = this;
+        return consumeBody.call(this).then(function(buffer) {
+            return convertBody(buffer, _this3.headers);
+        });
+    }
+};
+// In browsers, all properties are enumerable.
+Object.defineProperties(Body.prototype, {
+    body: {
+        enumerable: true
+    },
+    bodyUsed: {
+        enumerable: true
+    },
+    arrayBuffer: {
+        enumerable: true
+    },
+    blob: {
+        enumerable: true
+    },
+    json: {
+        enumerable: true
+    },
+    text: {
+        enumerable: true
+    }
+});
+Body.mixIn = function(proto) {
+    for (const name of Object.getOwnPropertyNames(Body.prototype)){
+        // istanbul ignore else: future proof
+        if (!(name in proto)) {
+            const desc = Object.getOwnPropertyDescriptor(Body.prototype, name);
+            Object.defineProperty(proto, name, desc);
+        }
+    }
+};
+/**
+ * Consume and convert an entire Body to a Buffer.
+ *
+ * Ref: https://fetch.spec.whatwg.org/#concept-body-consume-body
+ *
+ * @return  Promise
+ */ function consumeBody() {
+    var _this4 = this;
+    if (this[INTERNALS].disturbed) {
+        return Body.Promise.reject(new TypeError(`body used already for: ${this.url}`));
+    }
+    this[INTERNALS].disturbed = true;
+    if (this[INTERNALS].error) {
+        return Body.Promise.reject(this[INTERNALS].error);
+    }
+    let body = this.body;
+    // body is null
+    if (body === null) {
+        return Body.Promise.resolve(Buffer.alloc(0));
+    }
+    // body is blob
+    if (isBlob(body)) {
+        body = body.stream();
+    }
+    // body is buffer
+    if (Buffer.isBuffer(body)) {
+        return Body.Promise.resolve(body);
+    }
+    // istanbul ignore if: should never happen
+    if (!(body instanceof __TURBOPACK__imported__module__$5b$externals$5d2f$stream__$5b$external$5d$__$28$stream$2c$__cjs$29$__["default"])) {
+        return Body.Promise.resolve(Buffer.alloc(0));
+    }
+    // body is stream
+    // get ready to actually consume the body
+    let accum = [];
+    let accumBytes = 0;
+    let abort = false;
+    return new Body.Promise(function(resolve, reject) {
+        let resTimeout;
+        // allow timeout on slow response body
+        if (_this4.timeout) {
+            resTimeout = setTimeout(function() {
+                abort = true;
+                reject(new FetchError(`Response timeout while trying to fetch ${_this4.url} (over ${_this4.timeout}ms)`, 'body-timeout'));
+            }, _this4.timeout);
+        }
+        // handle stream errors
+        body.on('error', function(err) {
+            if (err.name === 'AbortError') {
+                // if the request was aborted, reject with this Error
+                abort = true;
+                reject(err);
+            } else {
+                // other errors, such as incorrect content-encoding
+                reject(new FetchError(`Invalid response body while trying to fetch ${_this4.url}: ${err.message}`, 'system', err));
+            }
+        });
+        body.on('data', function(chunk) {
+            if (abort || chunk === null) {
+                return;
+            }
+            if (_this4.size && accumBytes + chunk.length > _this4.size) {
+                abort = true;
+                reject(new FetchError(`content size at ${_this4.url} over limit: ${_this4.size}`, 'max-size'));
+                return;
+            }
+            accumBytes += chunk.length;
+            accum.push(chunk);
+        });
+        body.on('end', function() {
+            if (abort) {
+                return;
+            }
+            clearTimeout(resTimeout);
+            try {
+                resolve(Buffer.concat(accum, accumBytes));
+            } catch (err) {
+                // handle streams that have accumulated too much data (issue #414)
+                reject(new FetchError(`Could not create Buffer from response body for ${_this4.url}: ${err.message}`, 'system', err));
+            }
+        });
+    });
+}
+/**
+ * Detect buffer encoding and convert to target encoding
+ * ref: http://www.w3.org/TR/2011/WD-html5-20110113/parsing.html#determining-the-character-encoding
+ *
+ * @param   Buffer  buffer    Incoming buffer
+ * @param   String  encoding  Target encoding
+ * @return  String
+ */ function convertBody(buffer, headers) {
+    if (typeof convert !== 'function') {
+        throw new Error('The package `encoding` must be installed to use the textConverted() function');
+    }
+    const ct = headers.get('content-type');
+    let charset = 'utf-8';
+    let res, str;
+    // header
+    if (ct) {
+        res = /charset=([^;]*)/i.exec(ct);
+    }
+    // no charset in content type, peek at response body for at most 1024 bytes
+    str = buffer.slice(0, 1024).toString();
+    // html5
+    if (!res && str) {
+        res = /<meta.+?charset=(['"])(.+?)\1/i.exec(str);
+    }
+    // html4
+    if (!res && str) {
+        res = /<meta[\s]+?http-equiv=(['"])content-type\1[\s]+?content=(['"])(.+?)\2/i.exec(str);
+        if (!res) {
+            res = /<meta[\s]+?content=(['"])(.+?)\1[\s]+?http-equiv=(['"])content-type\3/i.exec(str);
+            if (res) {
+                res.pop(); // drop last quote
+            }
+        }
+        if (res) {
+            res = /charset=(.*)/i.exec(res.pop());
+        }
+    }
+    // xml
+    if (!res && str) {
+        res = /<\?xml.+?encoding=(['"])(.+?)\1/i.exec(str);
+    }
+    // found charset
+    if (res) {
+        charset = res.pop();
+        // prevent decode issues when sites use incorrect encoding
+        // ref: https://hsivonen.fi/encoding-menu/
+        if (charset === 'gb2312' || charset === 'gbk') {
+            charset = 'gb18030';
+        }
+    }
+    // turn raw buffers into a single utf-8 buffer
+    return convert(buffer, 'UTF-8', charset).toString();
+}
+/**
+ * Detect a URLSearchParams object
+ * ref: https://github.com/bitinn/node-fetch/issues/296#issuecomment-307598143
+ *
+ * @param   Object  obj     Object to detect by type or brand
+ * @return  String
+ */ function isURLSearchParams(obj) {
+    // Duck-typing as a necessary condition.
+    if (typeof obj !== 'object' || typeof obj.append !== 'function' || typeof obj.delete !== 'function' || typeof obj.get !== 'function' || typeof obj.getAll !== 'function' || typeof obj.has !== 'function' || typeof obj.set !== 'function') {
+        return false;
+    }
+    // Brand-checking and more duck-typing as optional condition.
+    return obj.constructor.name === 'URLSearchParams' || Object.prototype.toString.call(obj) === '[object URLSearchParams]' || typeof obj.sort === 'function';
+}
+/**
+ * Check if `obj` is a W3C `Blob` object (which `File` inherits from)
+ * @param  {*} obj
+ * @return {boolean}
+ */ function isBlob(obj) {
+    return typeof obj === 'object' && typeof obj.arrayBuffer === 'function' && typeof obj.type === 'string' && typeof obj.stream === 'function' && typeof obj.constructor === 'function' && typeof obj.constructor.name === 'string' && /^(Blob|File)$/.test(obj.constructor.name) && /^(Blob|File)$/.test(obj[Symbol.toStringTag]);
+}
+/**
+ * Clone body given Res/Req instance
+ *
+ * @param   Mixed  instance  Response or Request instance
+ * @return  Mixed
+ */ function clone(instance) {
+    let p1, p2;
+    let body = instance.body;
+    // don't allow cloning a used body
+    if (instance.bodyUsed) {
+        throw new Error('cannot clone body after it is used');
+    }
+    // check that body is a stream and not form-data object
+    // note: we can't clone the form-data object without having it as a dependency
+    if (body instanceof __TURBOPACK__imported__module__$5b$externals$5d2f$stream__$5b$external$5d$__$28$stream$2c$__cjs$29$__["default"] && typeof body.getBoundary !== 'function') {
+        // tee instance body
+        p1 = new PassThrough();
+        p2 = new PassThrough();
+        body.pipe(p1);
+        body.pipe(p2);
+        // set instance body to teed body and return the other teed body
+        instance[INTERNALS].body = p1;
+        body = p2;
+    }
+    return body;
+}
+/**
+ * Performs the operation "extract a `Content-Type` value from |object|" as
+ * specified in the specification:
+ * https://fetch.spec.whatwg.org/#concept-bodyinit-extract
+ *
+ * This function assumes that instance.body is present.
+ *
+ * @param   Mixed  instance  Any options.body input
+ */ function extractContentType(body) {
+    if (body === null) {
+        // body is null
+        return null;
+    } else if (typeof body === 'string') {
+        // body is string
+        return 'text/plain;charset=UTF-8';
+    } else if (isURLSearchParams(body)) {
+        // body is a URLSearchParams
+        return 'application/x-www-form-urlencoded;charset=UTF-8';
+    } else if (isBlob(body)) {
+        // body is blob
+        return body.type || null;
+    } else if (Buffer.isBuffer(body)) {
+        // body is buffer
+        return null;
+    } else if (Object.prototype.toString.call(body) === '[object ArrayBuffer]') {
+        // body is ArrayBuffer
+        return null;
+    } else if (ArrayBuffer.isView(body)) {
+        // body is ArrayBufferView
+        return null;
+    } else if (typeof body.getBoundary === 'function') {
+        // detect form data input from form-data module
+        return `multipart/form-data;boundary=${body.getBoundary()}`;
+    } else if (body instanceof __TURBOPACK__imported__module__$5b$externals$5d2f$stream__$5b$external$5d$__$28$stream$2c$__cjs$29$__["default"]) {
+        // body is stream
+        // can't really do much about this
+        return null;
+    } else {
+        // Body constructor defaults other things to string
+        return 'text/plain;charset=UTF-8';
+    }
+}
+/**
+ * The Fetch Standard treats this as if "total bytes" is a property on the body.
+ * For us, we have to explicitly get it with a function.
+ *
+ * ref: https://fetch.spec.whatwg.org/#concept-body-total-bytes
+ *
+ * @param   Body    instance   Instance of Body
+ * @return  Number?            Number of bytes, or null if not possible
+ */ function getTotalBytes(instance) {
+    const body = instance.body;
+    if (body === null) {
+        // body is null
+        return 0;
+    } else if (isBlob(body)) {
+        return body.size;
+    } else if (Buffer.isBuffer(body)) {
+        // body is buffer
+        return body.length;
+    } else if (body && typeof body.getLengthSync === 'function') {
+        // detect form data input from form-data module
+        if (body._lengthRetrievers && body._lengthRetrievers.length == 0 || // 1.x
+        body.hasKnownLength && body.hasKnownLength()) {
+            // 2.x
+            return body.getLengthSync();
+        }
+        return null;
+    } else {
+        // body is stream
+        return null;
+    }
+}
+/**
+ * Write a Body to a Node.js WritableStream (e.g. http.Request) object.
+ *
+ * @param   Body    instance   Instance of Body
+ * @return  Void
+ */ function writeToStream(dest, instance) {
+    const body = instance.body;
+    if (body === null) {
+        // body is null
+        dest.end();
+    } else if (isBlob(body)) {
+        body.stream().pipe(dest);
+    } else if (Buffer.isBuffer(body)) {
+        // body is buffer
+        dest.write(body);
+        dest.end();
+    } else {
+        // body is stream
+        body.pipe(dest);
+    }
+}
+// expose Promise
+Body.Promise = /*TURBOPACK member replacement*/ __turbopack_context__.g.Promise;
+/**
+ * headers.js
+ *
+ * Headers class offers convenient helpers
+ */ const invalidTokenRegex = /[^\^_`a-zA-Z\-0-9!#$%&'*+.|~]/;
+const invalidHeaderCharRegex = /[^\t\x20-\x7e\x80-\xff]/;
+function validateName(name) {
+    name = `${name}`;
+    if (invalidTokenRegex.test(name) || name === '') {
+        throw new TypeError(`${name} is not a legal HTTP header name`);
+    }
+}
+function validateValue(value) {
+    value = `${value}`;
+    if (invalidHeaderCharRegex.test(value)) {
+        throw new TypeError(`${value} is not a legal HTTP header value`);
+    }
+}
+/**
+ * Find the key in the map object given a header name.
+ *
+ * Returns undefined if not found.
+ *
+ * @param   String  name  Header name
+ * @return  String|Undefined
+ */ function find(map, name) {
+    name = name.toLowerCase();
+    for(const key in map){
+        if (key.toLowerCase() === name) {
+            return key;
+        }
+    }
+    return undefined;
+}
+const MAP = Symbol('map');
+class Headers {
+    /**
+  * Headers class
+  *
+  * @param   Object  headers  Response headers
+  * @return  Void
+  */ constructor(){
+        let init = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : undefined;
+        this[MAP] = Object.create(null);
+        if (init instanceof Headers) {
+            const rawHeaders = init.raw();
+            const headerNames = Object.keys(rawHeaders);
+            for (const headerName of headerNames){
+                for (const value of rawHeaders[headerName]){
+                    this.append(headerName, value);
+                }
+            }
+            return;
+        }
+        // We don't worry about converting prop to ByteString here as append()
+        // will handle it.
+        if (init == null) ;
+        else if (typeof init === 'object') {
+            const method = init[Symbol.iterator];
+            if (method != null) {
+                if (typeof method !== 'function') {
+                    throw new TypeError('Header pairs must be iterable');
+                }
+                // sequence<sequence<ByteString>>
+                // Note: per spec we have to first exhaust the lists then process them
+                const pairs = [];
+                for (const pair of init){
+                    if (typeof pair !== 'object' || typeof pair[Symbol.iterator] !== 'function') {
+                        throw new TypeError('Each header pair must be iterable');
+                    }
+                    pairs.push(Array.from(pair));
+                }
+                for (const pair of pairs){
+                    if (pair.length !== 2) {
+                        throw new TypeError('Each header pair must be a name/value tuple');
+                    }
+                    this.append(pair[0], pair[1]);
+                }
+            } else {
+                // record<ByteString, ByteString>
+                for (const key of Object.keys(init)){
+                    const value = init[key];
+                    this.append(key, value);
+                }
+            }
+        } else {
+            throw new TypeError('Provided initializer must be an object');
+        }
+    }
+    /**
+  * Return combined header value given name
+  *
+  * @param   String  name  Header name
+  * @return  Mixed
+  */ get(name) {
+        name = `${name}`;
+        validateName(name);
+        const key = find(this[MAP], name);
+        if (key === undefined) {
+            return null;
+        }
+        return this[MAP][key].join(', ');
+    }
+    /**
+  * Iterate over all headers
+  *
+  * @param   Function  callback  Executed for each item with parameters (value, name, thisArg)
+  * @param   Boolean   thisArg   `this` context for callback function
+  * @return  Void
+  */ forEach(callback) {
+        let thisArg = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : undefined;
+        let pairs = getHeaders(this);
+        let i = 0;
+        while(i < pairs.length){
+            var _pairs$i = pairs[i];
+            const name = _pairs$i[0], value = _pairs$i[1];
+            callback.call(thisArg, value, name, this);
+            pairs = getHeaders(this);
+            i++;
+        }
+    }
+    /**
+  * Overwrite header values given name
+  *
+  * @param   String  name   Header name
+  * @param   String  value  Header value
+  * @return  Void
+  */ set(name, value) {
+        name = `${name}`;
+        value = `${value}`;
+        validateName(name);
+        validateValue(value);
+        const key = find(this[MAP], name);
+        this[MAP][key !== undefined ? key : name] = [
+            value
+        ];
+    }
+    /**
+  * Append a value onto existing header
+  *
+  * @param   String  name   Header name
+  * @param   String  value  Header value
+  * @return  Void
+  */ append(name, value) {
+        name = `${name}`;
+        value = `${value}`;
+        validateName(name);
+        validateValue(value);
+        const key = find(this[MAP], name);
+        if (key !== undefined) {
+            this[MAP][key].push(value);
+        } else {
+            this[MAP][name] = [
+                value
+            ];
+        }
+    }
+    /**
+  * Check for header name existence
+  *
+  * @param   String   name  Header name
+  * @return  Boolean
+  */ has(name) {
+        name = `${name}`;
+        validateName(name);
+        return find(this[MAP], name) !== undefined;
+    }
+    /**
+  * Delete all header values given name
+  *
+  * @param   String  name  Header name
+  * @return  Void
+  */ delete(name) {
+        name = `${name}`;
+        validateName(name);
+        const key = find(this[MAP], name);
+        if (key !== undefined) {
+            delete this[MAP][key];
+        }
+    }
+    /**
+  * Return raw headers (non-spec api)
+  *
+  * @return  Object
+  */ raw() {
+        return this[MAP];
+    }
+    /**
+  * Get an iterator on keys.
+  *
+  * @return  Iterator
+  */ keys() {
+        return createHeadersIterator(this, 'key');
+    }
+    /**
+  * Get an iterator on values.
+  *
+  * @return  Iterator
+  */ values() {
+        return createHeadersIterator(this, 'value');
+    }
+    /**
+  * Get an iterator on entries.
+  *
+  * This is the default iterator of the Headers object.
+  *
+  * @return  Iterator
+  */ [Symbol.iterator]() {
+        return createHeadersIterator(this, 'key+value');
+    }
+}
+Headers.prototype.entries = Headers.prototype[Symbol.iterator];
+Object.defineProperty(Headers.prototype, Symbol.toStringTag, {
+    value: 'Headers',
+    writable: false,
+    enumerable: false,
+    configurable: true
+});
+Object.defineProperties(Headers.prototype, {
+    get: {
+        enumerable: true
+    },
+    forEach: {
+        enumerable: true
+    },
+    set: {
+        enumerable: true
+    },
+    append: {
+        enumerable: true
+    },
+    has: {
+        enumerable: true
+    },
+    delete: {
+        enumerable: true
+    },
+    keys: {
+        enumerable: true
+    },
+    values: {
+        enumerable: true
+    },
+    entries: {
+        enumerable: true
+    }
+});
+function getHeaders(headers) {
+    let kind = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'key+value';
+    const keys = Object.keys(headers[MAP]).sort();
+    return keys.map(kind === 'key' ? function(k) {
+        return k.toLowerCase();
+    } : kind === 'value' ? function(k) {
+        return headers[MAP][k].join(', ');
+    } : function(k) {
+        return [
+            k.toLowerCase(),
+            headers[MAP][k].join(', ')
+        ];
+    });
+}
+const INTERNAL = Symbol('internal');
+function createHeadersIterator(target, kind) {
+    const iterator = Object.create(HeadersIteratorPrototype);
+    iterator[INTERNAL] = {
+        target,
+        kind,
+        index: 0
+    };
+    return iterator;
+}
+const HeadersIteratorPrototype = Object.setPrototypeOf({
+    next () {
+        // istanbul ignore if
+        if (!this || Object.getPrototypeOf(this) !== HeadersIteratorPrototype) {
+            throw new TypeError('Value of `this` is not a HeadersIterator');
+        }
+        var _INTERNAL = this[INTERNAL];
+        const target = _INTERNAL.target, kind = _INTERNAL.kind, index = _INTERNAL.index;
+        const values = getHeaders(target, kind);
+        const len = values.length;
+        if (index >= len) {
+            return {
+                value: undefined,
+                done: true
+            };
+        }
+        this[INTERNAL].index = index + 1;
+        return {
+            value: values[index],
+            done: false
+        };
+    }
+}, Object.getPrototypeOf(Object.getPrototypeOf([][Symbol.iterator]())));
+Object.defineProperty(HeadersIteratorPrototype, Symbol.toStringTag, {
+    value: 'HeadersIterator',
+    writable: false,
+    enumerable: false,
+    configurable: true
+});
+/**
+ * Export the Headers object in a form that Node.js can consume.
+ *
+ * @param   Headers  headers
+ * @return  Object
+ */ function exportNodeCompatibleHeaders(headers) {
+    const obj = Object.assign({
+        __proto__: null
+    }, headers[MAP]);
+    // http.request() only supports string as Host header. This hack makes
+    // specifying custom Host header possible.
+    const hostHeaderKey = find(headers[MAP], 'Host');
+    if (hostHeaderKey !== undefined) {
+        obj[hostHeaderKey] = obj[hostHeaderKey][0];
+    }
+    return obj;
+}
+/**
+ * Create a Headers object from an object of headers, ignoring those that do
+ * not conform to HTTP grammar productions.
+ *
+ * @param   Object  obj  Object of headers
+ * @return  Headers
+ */ function createHeadersLenient(obj) {
+    const headers = new Headers();
+    for (const name of Object.keys(obj)){
+        if (invalidTokenRegex.test(name)) {
+            continue;
+        }
+        if (Array.isArray(obj[name])) {
+            for (const val of obj[name]){
+                if (invalidHeaderCharRegex.test(val)) {
+                    continue;
+                }
+                if (headers[MAP][name] === undefined) {
+                    headers[MAP][name] = [
+                        val
+                    ];
+                } else {
+                    headers[MAP][name].push(val);
+                }
+            }
+        } else if (!invalidHeaderCharRegex.test(obj[name])) {
+            headers[MAP][name] = [
+                obj[name]
+            ];
+        }
+    }
+    return headers;
+}
+const INTERNALS$1 = Symbol('Response internals');
+// fix an issue where "STATUS_CODES" aren't a named export for node <10
+const STATUS_CODES = __TURBOPACK__imported__module__$5b$externals$5d2f$http__$5b$external$5d$__$28$http$2c$__cjs$29$__["default"].STATUS_CODES;
+/**
+ * Response class
+ *
+ * @param   Stream  body  Readable stream
+ * @param   Object  opts  Response options
+ * @return  Void
+ */ class Response {
+    constructor(){
+        let body = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+        let opts = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+        Body.call(this, body, opts);
+        const status = opts.status || 200;
+        const headers = new Headers(opts.headers);
+        if (body != null && !headers.has('Content-Type')) {
+            const contentType = extractContentType(body);
+            if (contentType) {
+                headers.append('Content-Type', contentType);
+            }
+        }
+        this[INTERNALS$1] = {
+            url: opts.url,
+            status,
+            statusText: opts.statusText || STATUS_CODES[status],
+            headers,
+            counter: opts.counter
+        };
+    }
+    get url() {
+        return this[INTERNALS$1].url || '';
+    }
+    get status() {
+        return this[INTERNALS$1].status;
+    }
+    /**
+  * Convenience property representing if the request ended normally
+  */ get ok() {
+        return this[INTERNALS$1].status >= 200 && this[INTERNALS$1].status < 300;
+    }
+    get redirected() {
+        return this[INTERNALS$1].counter > 0;
+    }
+    get statusText() {
+        return this[INTERNALS$1].statusText;
+    }
+    get headers() {
+        return this[INTERNALS$1].headers;
+    }
+    /**
+  * Clone this response
+  *
+  * @return  Response
+  */ clone() {
+        return new Response(clone(this), {
+            url: this.url,
+            status: this.status,
+            statusText: this.statusText,
+            headers: this.headers,
+            ok: this.ok,
+            redirected: this.redirected
+        });
+    }
+}
+Body.mixIn(Response.prototype);
+Object.defineProperties(Response.prototype, {
+    url: {
+        enumerable: true
+    },
+    status: {
+        enumerable: true
+    },
+    ok: {
+        enumerable: true
+    },
+    redirected: {
+        enumerable: true
+    },
+    statusText: {
+        enumerable: true
+    },
+    headers: {
+        enumerable: true
+    },
+    clone: {
+        enumerable: true
+    }
+});
+Object.defineProperty(Response.prototype, Symbol.toStringTag, {
+    value: 'Response',
+    writable: false,
+    enumerable: false,
+    configurable: true
+});
+const INTERNALS$2 = Symbol('Request internals');
+const URL = __TURBOPACK__imported__module__$5b$externals$5d2f$url__$5b$external$5d$__$28$url$2c$__cjs$29$__["default"].URL || __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$whatwg$2d$url$2f$lib$2f$public$2d$api$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].URL;
+// fix an issue where "format", "parse" aren't a named export for node <10
+const parse_url = __TURBOPACK__imported__module__$5b$externals$5d2f$url__$5b$external$5d$__$28$url$2c$__cjs$29$__["default"].parse;
+const format_url = __TURBOPACK__imported__module__$5b$externals$5d2f$url__$5b$external$5d$__$28$url$2c$__cjs$29$__["default"].format;
+/**
+ * Wrapper around `new URL` to handle arbitrary URLs
+ *
+ * @param  {string} urlStr
+ * @return {void}
+ */ function parseURL(urlStr) {
+    /*
+ 	Check whether the URL is absolute or not
+ 		Scheme: https://tools.ietf.org/html/rfc3986#section-3.1
+ 	Absolute URL: https://tools.ietf.org/html/rfc3986#section-4.3
+ */ if (/^[a-zA-Z][a-zA-Z\d+\-.]*:/.exec(urlStr)) {
+        urlStr = new URL(urlStr).toString();
+    }
+    // Fallback to old implementation for arbitrary URLs
+    return parse_url(urlStr);
+}
+const streamDestructionSupported = 'destroy' in __TURBOPACK__imported__module__$5b$externals$5d2f$stream__$5b$external$5d$__$28$stream$2c$__cjs$29$__["default"].Readable.prototype;
+/**
+ * Check if a value is an instance of Request.
+ *
+ * @param   Mixed   input
+ * @return  Boolean
+ */ function isRequest(input) {
+    return typeof input === 'object' && typeof input[INTERNALS$2] === 'object';
+}
+function isAbortSignal(signal) {
+    const proto = signal && typeof signal === 'object' && Object.getPrototypeOf(signal);
+    return !!(proto && proto.constructor.name === 'AbortSignal');
+}
+/**
+ * Request class
+ *
+ * @param   Mixed   input  Url or Request instance
+ * @param   Object  init   Custom options
+ * @return  Void
+ */ class Request {
+    constructor(input){
+        let init = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+        let parsedURL;
+        // normalize input
+        if (!isRequest(input)) {
+            if (input && input.href) {
+                // in order to support Node.js' Url objects; though WHATWG's URL objects
+                // will fall into this branch also (since their `toString()` will return
+                // `href` property anyway)
+                parsedURL = parseURL(input.href);
+            } else {
+                // coerce input to a string before attempting to parse
+                parsedURL = parseURL(`${input}`);
+            }
+            input = {};
+        } else {
+            parsedURL = parseURL(input.url);
+        }
+        let method = init.method || input.method || 'GET';
+        method = method.toUpperCase();
+        if ((init.body != null || isRequest(input) && input.body !== null) && (method === 'GET' || method === 'HEAD')) {
+            throw new TypeError('Request with GET/HEAD method cannot have body');
+        }
+        let inputBody = init.body != null ? init.body : isRequest(input) && input.body !== null ? clone(input) : null;
+        Body.call(this, inputBody, {
+            timeout: init.timeout || input.timeout || 0,
+            size: init.size || input.size || 0
+        });
+        const headers = new Headers(init.headers || input.headers || {});
+        if (inputBody != null && !headers.has('Content-Type')) {
+            const contentType = extractContentType(inputBody);
+            if (contentType) {
+                headers.append('Content-Type', contentType);
+            }
+        }
+        let signal = isRequest(input) ? input.signal : null;
+        if ('signal' in init) signal = init.signal;
+        if (signal != null && !isAbortSignal(signal)) {
+            throw new TypeError('Expected signal to be an instanceof AbortSignal');
+        }
+        this[INTERNALS$2] = {
+            method,
+            redirect: init.redirect || input.redirect || 'follow',
+            headers,
+            parsedURL,
+            signal
+        };
+        // node-fetch-only options
+        this.follow = init.follow !== undefined ? init.follow : input.follow !== undefined ? input.follow : 20;
+        this.compress = init.compress !== undefined ? init.compress : input.compress !== undefined ? input.compress : true;
+        this.counter = init.counter || input.counter || 0;
+        this.agent = init.agent || input.agent;
+    }
+    get method() {
+        return this[INTERNALS$2].method;
+    }
+    get url() {
+        return format_url(this[INTERNALS$2].parsedURL);
+    }
+    get headers() {
+        return this[INTERNALS$2].headers;
+    }
+    get redirect() {
+        return this[INTERNALS$2].redirect;
+    }
+    get signal() {
+        return this[INTERNALS$2].signal;
+    }
+    /**
+  * Clone this request
+  *
+  * @return  Request
+  */ clone() {
+        return new Request(this);
+    }
+}
+Body.mixIn(Request.prototype);
+Object.defineProperty(Request.prototype, Symbol.toStringTag, {
+    value: 'Request',
+    writable: false,
+    enumerable: false,
+    configurable: true
+});
+Object.defineProperties(Request.prototype, {
+    method: {
+        enumerable: true
+    },
+    url: {
+        enumerable: true
+    },
+    headers: {
+        enumerable: true
+    },
+    redirect: {
+        enumerable: true
+    },
+    clone: {
+        enumerable: true
+    },
+    signal: {
+        enumerable: true
+    }
+});
+/**
+ * Convert a Request to Node.js http request options.
+ *
+ * @param   Request  A Request instance
+ * @return  Object   The options object to be passed to http.request
+ */ function getNodeRequestOptions(request) {
+    const parsedURL = request[INTERNALS$2].parsedURL;
+    const headers = new Headers(request[INTERNALS$2].headers);
+    // fetch step 1.3
+    if (!headers.has('Accept')) {
+        headers.set('Accept', '*/*');
+    }
+    // Basic fetch
+    if (!parsedURL.protocol || !parsedURL.hostname) {
+        throw new TypeError('Only absolute URLs are supported');
+    }
+    if (!/^https?:$/.test(parsedURL.protocol)) {
+        throw new TypeError('Only HTTP(S) protocols are supported');
+    }
+    if (request.signal && request.body instanceof __TURBOPACK__imported__module__$5b$externals$5d2f$stream__$5b$external$5d$__$28$stream$2c$__cjs$29$__["default"].Readable && !streamDestructionSupported) {
+        throw new Error('Cancellation of streamed requests with AbortSignal is not supported in node < 8');
+    }
+    // HTTP-network-or-cache fetch steps 2.4-2.7
+    let contentLengthValue = null;
+    if (request.body == null && /^(POST|PUT)$/i.test(request.method)) {
+        contentLengthValue = '0';
+    }
+    if (request.body != null) {
+        const totalBytes = getTotalBytes(request);
+        if (typeof totalBytes === 'number') {
+            contentLengthValue = String(totalBytes);
+        }
+    }
+    if (contentLengthValue) {
+        headers.set('Content-Length', contentLengthValue);
+    }
+    // HTTP-network-or-cache fetch step 2.11
+    if (!headers.has('User-Agent')) {
+        headers.set('User-Agent', 'node-fetch/1.0 (+https://github.com/bitinn/node-fetch)');
+    }
+    // HTTP-network-or-cache fetch step 2.15
+    if (request.compress && !headers.has('Accept-Encoding')) {
+        headers.set('Accept-Encoding', 'gzip,deflate');
+    }
+    let agent = request.agent;
+    if (typeof agent === 'function') {
+        agent = agent(parsedURL);
+    }
+    if (!headers.has('Connection') && !agent) {
+        headers.set('Connection', 'close');
+    }
+    // HTTP-network fetch step 4.2
+    // chunked encoding is handled by Node.js
+    return Object.assign({}, parsedURL, {
+        method: request.method,
+        headers: exportNodeCompatibleHeaders(headers),
+        agent
+    });
+}
+/**
+ * abort-error.js
+ *
+ * AbortError interface for cancelled requests
+ */ /**
+ * Create AbortError instance
+ *
+ * @param   String      message      Error message for human
+ * @return  AbortError
+ */ function AbortError(message) {
+    Error.call(this, message);
+    this.type = 'aborted';
+    this.message = message;
+    // hide custom error implementation details from end-users
+    Error.captureStackTrace(this, this.constructor);
+}
+AbortError.prototype = Object.create(Error.prototype);
+AbortError.prototype.constructor = AbortError;
+AbortError.prototype.name = 'AbortError';
+const URL$1 = __TURBOPACK__imported__module__$5b$externals$5d2f$url__$5b$external$5d$__$28$url$2c$__cjs$29$__["default"].URL || __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f$whatwg$2d$url$2f$lib$2f$public$2d$api$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].URL;
+// fix an issue where "PassThrough", "resolve" aren't a named export for node <10
+const PassThrough$1 = __TURBOPACK__imported__module__$5b$externals$5d2f$stream__$5b$external$5d$__$28$stream$2c$__cjs$29$__["default"].PassThrough;
+const isDomainOrSubdomain = function isDomainOrSubdomain(destination, original) {
+    const orig = new URL$1(original).hostname;
+    const dest = new URL$1(destination).hostname;
+    return orig === dest || orig[orig.length - dest.length - 1] === '.' && orig.endsWith(dest);
+};
+/**
+ * Fetch function
+ *
+ * @param   Mixed    url   Absolute url or Request instance
+ * @param   Object   opts  Fetch options
+ * @return  Promise
+ */ function fetch(url, opts) {
+    // allow custom promise
+    if (!fetch.Promise) {
+        throw new Error('native promise missing, set fetch.Promise to your favorite alternative');
+    }
+    Body.Promise = fetch.Promise;
+    // wrap http.request into fetch
+    return new fetch.Promise(function(resolve, reject) {
+        // build request object
+        const request = new Request(url, opts);
+        const options = getNodeRequestOptions(request);
+        const send = (options.protocol === 'https:' ? __TURBOPACK__imported__module__$5b$externals$5d2f$https__$5b$external$5d$__$28$https$2c$__cjs$29$__["default"] : __TURBOPACK__imported__module__$5b$externals$5d2f$http__$5b$external$5d$__$28$http$2c$__cjs$29$__["default"]).request;
+        const signal = request.signal;
+        let response = null;
+        const abort = function abort() {
+            let error = new AbortError('The user aborted a request.');
+            reject(error);
+            if (request.body && request.body instanceof __TURBOPACK__imported__module__$5b$externals$5d2f$stream__$5b$external$5d$__$28$stream$2c$__cjs$29$__["default"].Readable) {
+                request.body.destroy(error);
+            }
+            if (!response || !response.body) return;
+            response.body.emit('error', error);
+        };
+        if (signal && signal.aborted) {
+            abort();
+            return;
+        }
+        const abortAndFinalize = function abortAndFinalize() {
+            abort();
+            finalize();
+        };
+        // send request
+        const req = send(options);
+        let reqTimeout;
+        if (signal) {
+            signal.addEventListener('abort', abortAndFinalize);
+        }
+        function finalize() {
+            req.abort();
+            if (signal) signal.removeEventListener('abort', abortAndFinalize);
+            clearTimeout(reqTimeout);
+        }
+        if (request.timeout) {
+            req.once('socket', function(socket) {
+                reqTimeout = setTimeout(function() {
+                    reject(new FetchError(`network timeout at: ${request.url}`, 'request-timeout'));
+                    finalize();
+                }, request.timeout);
+            });
+        }
+        req.on('error', function(err) {
+            reject(new FetchError(`request to ${request.url} failed, reason: ${err.message}`, 'system', err));
+            finalize();
+        });
+        req.on('response', function(res) {
+            clearTimeout(reqTimeout);
+            const headers = createHeadersLenient(res.headers);
+            // HTTP fetch step 5
+            if (fetch.isRedirect(res.statusCode)) {
+                // HTTP fetch step 5.2
+                const location = headers.get('Location');
+                // HTTP fetch step 5.3
+                let locationURL = null;
+                try {
+                    locationURL = location === null ? null : new URL$1(location, request.url).toString();
+                } catch (err) {
+                    // error here can only be invalid URL in Location: header
+                    // do not throw when options.redirect == manual
+                    // let the user extract the errorneous redirect URL
+                    if (request.redirect !== 'manual') {
+                        reject(new FetchError(`uri requested responds with an invalid redirect URL: ${location}`, 'invalid-redirect'));
+                        finalize();
+                        return;
+                    }
+                }
+                // HTTP fetch step 5.5
+                switch(request.redirect){
+                    case 'error':
+                        reject(new FetchError(`uri requested responds with a redirect, redirect mode is set to error: ${request.url}`, 'no-redirect'));
+                        finalize();
+                        return;
+                    case 'manual':
+                        // node-fetch-specific step: make manual redirect a bit easier to use by setting the Location header value to the resolved URL.
+                        if (locationURL !== null) {
+                            // handle corrupted header
+                            try {
+                                headers.set('Location', locationURL);
+                            } catch (err) {
+                                // istanbul ignore next: nodejs server prevent invalid response headers, we can't test this through normal request
+                                reject(err);
+                            }
+                        }
+                        break;
+                    case 'follow':
+                        // HTTP-redirect fetch step 2
+                        if (locationURL === null) {
+                            break;
+                        }
+                        // HTTP-redirect fetch step 5
+                        if (request.counter >= request.follow) {
+                            reject(new FetchError(`maximum redirect reached at: ${request.url}`, 'max-redirect'));
+                            finalize();
+                            return;
+                        }
+                        // HTTP-redirect fetch step 6 (counter increment)
+                        // Create a new Request object.
+                        const requestOpts = {
+                            headers: new Headers(request.headers),
+                            follow: request.follow,
+                            counter: request.counter + 1,
+                            agent: request.agent,
+                            compress: request.compress,
+                            method: request.method,
+                            body: request.body,
+                            signal: request.signal,
+                            timeout: request.timeout,
+                            size: request.size
+                        };
+                        if (!isDomainOrSubdomain(request.url, locationURL)) {
+                            for (const name of [
+                                'authorization',
+                                'www-authenticate',
+                                'cookie',
+                                'cookie2'
+                            ]){
+                                requestOpts.headers.delete(name);
+                            }
+                        }
+                        // HTTP-redirect fetch step 9
+                        if (res.statusCode !== 303 && request.body && getTotalBytes(request) === null) {
+                            reject(new FetchError('Cannot follow redirect with body being a readable stream', 'unsupported-redirect'));
+                            finalize();
+                            return;
+                        }
+                        // HTTP-redirect fetch step 11
+                        if (res.statusCode === 303 || (res.statusCode === 301 || res.statusCode === 302) && request.method === 'POST') {
+                            requestOpts.method = 'GET';
+                            requestOpts.body = undefined;
+                            requestOpts.headers.delete('content-length');
+                        }
+                        // HTTP-redirect fetch step 15
+                        resolve(fetch(new Request(locationURL, requestOpts)));
+                        finalize();
+                        return;
+                }
+            }
+            // prepare response
+            res.once('end', function() {
+                if (signal) signal.removeEventListener('abort', abortAndFinalize);
+            });
+            let body = res.pipe(new PassThrough$1());
+            const response_options = {
+                url: request.url,
+                status: res.statusCode,
+                statusText: res.statusMessage,
+                headers: headers,
+                size: request.size,
+                timeout: request.timeout,
+                counter: request.counter
+            };
+            // HTTP-network fetch step 12.1.1.3
+            const codings = headers.get('Content-Encoding');
+            // HTTP-network fetch step 12.1.1.4: handle content codings
+            // in following scenarios we ignore compression support
+            // 1. compression support is disabled
+            // 2. HEAD request
+            // 3. no Content-Encoding header
+            // 4. no content response (204)
+            // 5. content not modified response (304)
+            if (!request.compress || request.method === 'HEAD' || codings === null || res.statusCode === 204 || res.statusCode === 304) {
+                response = new Response(body, response_options);
+                resolve(response);
+                return;
+            }
+            // For Node v6+
+            // Be less strict when decoding compressed responses, since sometimes
+            // servers send slightly invalid responses that are still accepted
+            // by common browsers.
+            // Always using Z_SYNC_FLUSH is what cURL does.
+            const zlibOptions = {
+                flush: __TURBOPACK__imported__module__$5b$externals$5d2f$zlib__$5b$external$5d$__$28$zlib$2c$__cjs$29$__["default"].Z_SYNC_FLUSH,
+                finishFlush: __TURBOPACK__imported__module__$5b$externals$5d2f$zlib__$5b$external$5d$__$28$zlib$2c$__cjs$29$__["default"].Z_SYNC_FLUSH
+            };
+            // for gzip
+            if (codings == 'gzip' || codings == 'x-gzip') {
+                body = body.pipe(__TURBOPACK__imported__module__$5b$externals$5d2f$zlib__$5b$external$5d$__$28$zlib$2c$__cjs$29$__["default"].createGunzip(zlibOptions));
+                response = new Response(body, response_options);
+                resolve(response);
+                return;
+            }
+            // for deflate
+            if (codings == 'deflate' || codings == 'x-deflate') {
+                // handle the infamous raw deflate response from old servers
+                // a hack for old IIS and Apache servers
+                const raw = res.pipe(new PassThrough$1());
+                raw.once('data', function(chunk) {
+                    // see http://stackoverflow.com/questions/37519828
+                    if ((chunk[0] & 0x0F) === 0x08) {
+                        body = body.pipe(__TURBOPACK__imported__module__$5b$externals$5d2f$zlib__$5b$external$5d$__$28$zlib$2c$__cjs$29$__["default"].createInflate());
+                    } else {
+                        body = body.pipe(__TURBOPACK__imported__module__$5b$externals$5d2f$zlib__$5b$external$5d$__$28$zlib$2c$__cjs$29$__["default"].createInflateRaw());
+                    }
+                    response = new Response(body, response_options);
+                    resolve(response);
+                });
+                return;
+            }
+            // for br
+            if (codings == 'br' && typeof __TURBOPACK__imported__module__$5b$externals$5d2f$zlib__$5b$external$5d$__$28$zlib$2c$__cjs$29$__["default"].createBrotliDecompress === 'function') {
+                body = body.pipe(__TURBOPACK__imported__module__$5b$externals$5d2f$zlib__$5b$external$5d$__$28$zlib$2c$__cjs$29$__["default"].createBrotliDecompress());
+                response = new Response(body, response_options);
+                resolve(response);
+                return;
+            }
+            // otherwise, use response as-is
+            response = new Response(body, response_options);
+            resolve(response);
+        });
+        writeToStream(req, request);
+    });
+}
+/**
+ * Redirect code matching
+ *
+ * @param   Number   code  Status code
+ * @return  Boolean
+ */ fetch.isRedirect = function(code) {
+    return code === 301 || code === 302 || code === 303 || code === 307 || code === 308;
+};
+// expose Promise
+fetch.Promise = /*TURBOPACK member replacement*/ __turbopack_context__.g.Promise;
+const __TURBOPACK__default__export__ = fetch;
+;
+}),
+"[project]/HairGrowth-Clinic/node_modules/@firebase/installations/dist/esm/index.esm2017.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "deleteInstallations",
+    ()=>deleteInstallations,
+    "getId",
+    ()=>getId,
+    "getInstallations",
+    ()=>getInstallations,
+    "getToken",
+    ()=>getToken,
+    "onIdChange",
+    ()=>onIdChange
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/@firebase/app/dist/esm/index.esm2017.js [app-ssr] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$component$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/@firebase/component/dist/esm/index.esm2017.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/@firebase/util/dist/node-esm/index.node.esm.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$installations$2f$node_modules$2f$idb$2f$build$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/@firebase/installations/node_modules/idb/build/index.js [app-ssr] (ecmascript) <locals>");
+;
+;
+;
+;
+const name = "@firebase/installations";
+const version = "0.6.4";
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const PENDING_TIMEOUT_MS = 10000;
+const PACKAGE_VERSION = `w:${version}`;
+const INTERNAL_AUTH_VERSION = 'FIS_v2';
+const INSTALLATIONS_API_URL = 'https://firebaseinstallations.googleapis.com/v1';
+const TOKEN_EXPIRATION_BUFFER = 60 * 60 * 1000; // One hour
+const SERVICE = 'installations';
+const SERVICE_NAME = 'Installations';
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const ERROR_DESCRIPTION_MAP = {
+    ["missing-app-config-values" /* ErrorCode.MISSING_APP_CONFIG_VALUES */ ]: 'Missing App configuration value: "{$valueName}"',
+    ["not-registered" /* ErrorCode.NOT_REGISTERED */ ]: 'Firebase Installation is not registered.',
+    ["installation-not-found" /* ErrorCode.INSTALLATION_NOT_FOUND */ ]: 'Firebase Installation not found.',
+    ["request-failed" /* ErrorCode.REQUEST_FAILED */ ]: '{$requestName} request failed with error "{$serverCode} {$serverStatus}: {$serverMessage}"',
+    ["app-offline" /* ErrorCode.APP_OFFLINE */ ]: 'Could not process request. Application offline.',
+    ["delete-pending-registration" /* ErrorCode.DELETE_PENDING_REGISTRATION */ ]: "Can't delete installation while there is a pending registration request."
+};
+const ERROR_FACTORY = new __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ErrorFactory"](SERVICE, SERVICE_NAME, ERROR_DESCRIPTION_MAP);
+/** Returns true if error is a FirebaseError that is based on an error from the server. */ function isServerError(error) {
+    return error instanceof __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FirebaseError"] && error.code.includes("request-failed" /* ErrorCode.REQUEST_FAILED */ );
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ function getInstallationsEndpoint({ projectId }) {
+    return `${INSTALLATIONS_API_URL}/projects/${projectId}/installations`;
+}
+function extractAuthTokenInfoFromResponse(response) {
+    return {
+        token: response.token,
+        requestStatus: 2 /* RequestStatus.COMPLETED */ ,
+        expiresIn: getExpiresInFromResponseExpiresIn(response.expiresIn),
+        creationTime: Date.now()
+    };
+}
+async function getErrorFromResponse(requestName, response) {
+    const responseJson = await response.json();
+    const errorData = responseJson.error;
+    return ERROR_FACTORY.create("request-failed" /* ErrorCode.REQUEST_FAILED */ , {
+        requestName,
+        serverCode: errorData.code,
+        serverMessage: errorData.message,
+        serverStatus: errorData.status
+    });
+}
+function getHeaders({ apiKey }) {
+    return new Headers({
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+        'x-goog-api-key': apiKey
+    });
+}
+function getHeadersWithAuth(appConfig, { refreshToken }) {
+    const headers = getHeaders(appConfig);
+    headers.append('Authorization', getAuthorizationHeader(refreshToken));
+    return headers;
+}
+/**
+ * Calls the passed in fetch wrapper and returns the response.
+ * If the returned response has a status of 5xx, re-runs the function once and
+ * returns the response.
+ */ async function retryIfServerError(fn) {
+    const result = await fn();
+    if (result.status >= 500 && result.status < 600) {
+        // Internal Server Error. Retry request.
+        return fn();
+    }
+    return result;
+}
+function getExpiresInFromResponseExpiresIn(responseExpiresIn) {
+    // This works because the server will never respond with fractions of a second.
+    return Number(responseExpiresIn.replace('s', '000'));
+}
+function getAuthorizationHeader(refreshToken) {
+    return `${INTERNAL_AUTH_VERSION} ${refreshToken}`;
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ async function createInstallationRequest({ appConfig, heartbeatServiceProvider }, { fid }) {
+    const endpoint = getInstallationsEndpoint(appConfig);
+    const headers = getHeaders(appConfig);
+    // If heartbeat service exists, add the heartbeat string to the header.
+    const heartbeatService = heartbeatServiceProvider.getImmediate({
+        optional: true
+    });
+    if (heartbeatService) {
+        const heartbeatsHeader = await heartbeatService.getHeartbeatsHeader();
+        if (heartbeatsHeader) {
+            headers.append('x-firebase-client', heartbeatsHeader);
+        }
+    }
+    const body = {
+        fid,
+        authVersion: INTERNAL_AUTH_VERSION,
+        appId: appConfig.appId,
+        sdkVersion: PACKAGE_VERSION
+    };
+    const request = {
+        method: 'POST',
+        headers,
+        body: JSON.stringify(body)
+    };
+    const response = await retryIfServerError(()=>fetch(endpoint, request));
+    if (response.ok) {
+        const responseValue = await response.json();
+        const registeredInstallationEntry = {
+            fid: responseValue.fid || fid,
+            registrationStatus: 2 /* RequestStatus.COMPLETED */ ,
+            refreshToken: responseValue.refreshToken,
+            authToken: extractAuthTokenInfoFromResponse(responseValue.authToken)
+        };
+        return registeredInstallationEntry;
+    } else {
+        throw await getErrorFromResponse('Create Installation', response);
+    }
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /** Returns a promise that resolves after given time passes. */ function sleep(ms) {
+    return new Promise((resolve)=>{
+        setTimeout(resolve, ms);
+    });
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ function bufferToBase64UrlSafe(array) {
+    const b64 = btoa(String.fromCharCode(...array));
+    return b64.replace(/\+/g, '-').replace(/\//g, '_');
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const VALID_FID_PATTERN = /^[cdef][\w-]{21}$/;
+const INVALID_FID = '';
+/**
+ * Generates a new FID using random values from Web Crypto API.
+ * Returns an empty string if FID generation fails for any reason.
+ */ function generateFid() {
+    try {
+        // A valid FID has exactly 22 base64 characters, which is 132 bits, or 16.5
+        // bytes. our implementation generates a 17 byte array instead.
+        const fidByteArray = new Uint8Array(17);
+        const crypto = self.crypto || self.msCrypto;
+        crypto.getRandomValues(fidByteArray);
+        // Replace the first 4 random bits with the constant FID header of 0b0111.
+        fidByteArray[0] = 0b01110000 + fidByteArray[0] % 0b00010000;
+        const fid = encode(fidByteArray);
+        return VALID_FID_PATTERN.test(fid) ? fid : INVALID_FID;
+    } catch (_a) {
+        // FID generation errored
+        return INVALID_FID;
+    }
+}
+/** Converts a FID Uint8Array to a base64 string representation. */ function encode(fidByteArray) {
+    const b64String = bufferToBase64UrlSafe(fidByteArray);
+    // Remove the 23rd character that was added because of the extra 4 bits at the
+    // end of our 17 byte array, and the '=' padding.
+    return b64String.substr(0, 22);
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /** Returns a string key that can be used to identify the app. */ function getKey(appConfig) {
+    return `${appConfig.appName}!${appConfig.appId}`;
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const fidChangeCallbacks = new Map();
+/**
+ * Calls the onIdChange callbacks with the new FID value, and broadcasts the
+ * change to other tabs.
+ */ function fidChanged(appConfig, fid) {
+    const key = getKey(appConfig);
+    callFidChangeCallbacks(key, fid);
+    broadcastFidChange(key, fid);
+}
+function addCallback(appConfig, callback) {
+    // Open the broadcast channel if it's not already open,
+    // to be able to listen to change events from other tabs.
+    getBroadcastChannel();
+    const key = getKey(appConfig);
+    let callbackSet = fidChangeCallbacks.get(key);
+    if (!callbackSet) {
+        callbackSet = new Set();
+        fidChangeCallbacks.set(key, callbackSet);
+    }
+    callbackSet.add(callback);
+}
+function removeCallback(appConfig, callback) {
+    const key = getKey(appConfig);
+    const callbackSet = fidChangeCallbacks.get(key);
+    if (!callbackSet) {
+        return;
+    }
+    callbackSet.delete(callback);
+    if (callbackSet.size === 0) {
+        fidChangeCallbacks.delete(key);
+    }
+    // Close broadcast channel if there are no more callbacks.
+    closeBroadcastChannel();
+}
+function callFidChangeCallbacks(key, fid) {
+    const callbacks = fidChangeCallbacks.get(key);
+    if (!callbacks) {
+        return;
+    }
+    for (const callback of callbacks){
+        callback(fid);
+    }
+}
+function broadcastFidChange(key, fid) {
+    const channel = getBroadcastChannel();
+    if (channel) {
+        channel.postMessage({
+            key,
+            fid
+        });
+    }
+    closeBroadcastChannel();
+}
+let broadcastChannel = null;
+/** Opens and returns a BroadcastChannel if it is supported by the browser. */ function getBroadcastChannel() {
+    if (!broadcastChannel && 'BroadcastChannel' in self) {
+        broadcastChannel = new BroadcastChannel('[Firebase] FID Change');
+        broadcastChannel.onmessage = (e)=>{
+            callFidChangeCallbacks(e.data.key, e.data.fid);
+        };
+    }
+    return broadcastChannel;
+}
+function closeBroadcastChannel() {
+    if (fidChangeCallbacks.size === 0 && broadcastChannel) {
+        broadcastChannel.close();
+        broadcastChannel = null;
+    }
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const DATABASE_NAME = 'firebase-installations-database';
+const DATABASE_VERSION = 1;
+const OBJECT_STORE_NAME = 'firebase-installations-store';
+let dbPromise = null;
+function getDbPromise() {
+    if (!dbPromise) {
+        dbPromise = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$installations$2f$node_modules$2f$idb$2f$build$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["openDB"])(DATABASE_NAME, DATABASE_VERSION, {
+            upgrade: (db, oldVersion)=>{
+                // We don't use 'break' in this switch statement, the fall-through
+                // behavior is what we want, because if there are multiple versions between
+                // the old version and the current version, we want ALL the migrations
+                // that correspond to those versions to run, not only the last one.
+                // eslint-disable-next-line default-case
+                switch(oldVersion){
+                    case 0:
+                        db.createObjectStore(OBJECT_STORE_NAME);
+                }
+            }
+        });
+    }
+    return dbPromise;
+}
+/** Assigns or overwrites the record for the given key with the given value. */ async function set(appConfig, value) {
+    const key = getKey(appConfig);
+    const db = await getDbPromise();
+    const tx = db.transaction(OBJECT_STORE_NAME, 'readwrite');
+    const objectStore = tx.objectStore(OBJECT_STORE_NAME);
+    const oldValue = await objectStore.get(key);
+    await objectStore.put(value, key);
+    await tx.done;
+    if (!oldValue || oldValue.fid !== value.fid) {
+        fidChanged(appConfig, value.fid);
+    }
+    return value;
+}
+/** Removes record(s) from the objectStore that match the given key. */ async function remove(appConfig) {
+    const key = getKey(appConfig);
+    const db = await getDbPromise();
+    const tx = db.transaction(OBJECT_STORE_NAME, 'readwrite');
+    await tx.objectStore(OBJECT_STORE_NAME).delete(key);
+    await tx.done;
+}
+/**
+ * Atomically updates a record with the result of updateFn, which gets
+ * called with the current value. If newValue is undefined, the record is
+ * deleted instead.
+ * @return Updated value
+ */ async function update(appConfig, updateFn) {
+    const key = getKey(appConfig);
+    const db = await getDbPromise();
+    const tx = db.transaction(OBJECT_STORE_NAME, 'readwrite');
+    const store = tx.objectStore(OBJECT_STORE_NAME);
+    const oldValue = await store.get(key);
+    const newValue = updateFn(oldValue);
+    if (newValue === undefined) {
+        await store.delete(key);
+    } else {
+        await store.put(newValue, key);
+    }
+    await tx.done;
+    if (newValue && (!oldValue || oldValue.fid !== newValue.fid)) {
+        fidChanged(appConfig, newValue.fid);
+    }
+    return newValue;
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Updates and returns the InstallationEntry from the database.
+ * Also triggers a registration request if it is necessary and possible.
+ */ async function getInstallationEntry(installations) {
+    let registrationPromise;
+    const installationEntry = await update(installations.appConfig, (oldEntry)=>{
+        const installationEntry = updateOrCreateInstallationEntry(oldEntry);
+        const entryWithPromise = triggerRegistrationIfNecessary(installations, installationEntry);
+        registrationPromise = entryWithPromise.registrationPromise;
+        return entryWithPromise.installationEntry;
+    });
+    if (installationEntry.fid === INVALID_FID) {
+        // FID generation failed. Waiting for the FID from the server.
+        return {
+            installationEntry: await registrationPromise
+        };
+    }
+    return {
+        installationEntry,
+        registrationPromise
+    };
+}
+/**
+ * Creates a new Installation Entry if one does not exist.
+ * Also clears timed out pending requests.
+ */ function updateOrCreateInstallationEntry(oldEntry) {
+    const entry = oldEntry || {
+        fid: generateFid(),
+        registrationStatus: 0 /* RequestStatus.NOT_STARTED */ 
+    };
+    return clearTimedOutRequest(entry);
+}
+/**
+ * If the Firebase Installation is not registered yet, this will trigger the
+ * registration and return an InProgressInstallationEntry.
+ *
+ * If registrationPromise does not exist, the installationEntry is guaranteed
+ * to be registered.
+ */ function triggerRegistrationIfNecessary(installations, installationEntry) {
+    if (installationEntry.registrationStatus === 0 /* RequestStatus.NOT_STARTED */ ) {
+        if (!navigator.onLine) {
+            // Registration required but app is offline.
+            const registrationPromiseWithError = Promise.reject(ERROR_FACTORY.create("app-offline" /* ErrorCode.APP_OFFLINE */ ));
+            return {
+                installationEntry,
+                registrationPromise: registrationPromiseWithError
+            };
+        }
+        // Try registering. Change status to IN_PROGRESS.
+        const inProgressEntry = {
+            fid: installationEntry.fid,
+            registrationStatus: 1 /* RequestStatus.IN_PROGRESS */ ,
+            registrationTime: Date.now()
+        };
+        const registrationPromise = registerInstallation(installations, inProgressEntry);
+        return {
+            installationEntry: inProgressEntry,
+            registrationPromise
+        };
+    } else if (installationEntry.registrationStatus === 1 /* RequestStatus.IN_PROGRESS */ ) {
+        return {
+            installationEntry,
+            registrationPromise: waitUntilFidRegistration(installations)
+        };
+    } else {
+        return {
+            installationEntry
+        };
+    }
+}
+/** This will be executed only once for each new Firebase Installation. */ async function registerInstallation(installations, installationEntry) {
+    try {
+        const registeredInstallationEntry = await createInstallationRequest(installations, installationEntry);
+        return set(installations.appConfig, registeredInstallationEntry);
+    } catch (e) {
+        if (isServerError(e) && e.customData.serverCode === 409) {
+            // Server returned a "FID can not be used" error.
+            // Generate a new ID next time.
+            await remove(installations.appConfig);
+        } else {
+            // Registration failed. Set FID as not registered.
+            await set(installations.appConfig, {
+                fid: installationEntry.fid,
+                registrationStatus: 0 /* RequestStatus.NOT_STARTED */ 
+            });
+        }
+        throw e;
+    }
+}
+/** Call if FID registration is pending in another request. */ async function waitUntilFidRegistration(installations) {
+    // Unfortunately, there is no way of reliably observing when a value in
+    // IndexedDB changes (yet, see https://github.com/WICG/indexed-db-observers),
+    // so we need to poll.
+    let entry = await updateInstallationRequest(installations.appConfig);
+    while(entry.registrationStatus === 1 /* RequestStatus.IN_PROGRESS */ ){
+        // createInstallation request still in progress.
+        await sleep(100);
+        entry = await updateInstallationRequest(installations.appConfig);
+    }
+    if (entry.registrationStatus === 0 /* RequestStatus.NOT_STARTED */ ) {
+        // The request timed out or failed in a different call. Try again.
+        const { installationEntry, registrationPromise } = await getInstallationEntry(installations);
+        if (registrationPromise) {
+            return registrationPromise;
+        } else {
+            // if there is no registrationPromise, entry is registered.
+            return installationEntry;
+        }
+    }
+    return entry;
+}
+/**
+ * Called only if there is a CreateInstallation request in progress.
+ *
+ * Updates the InstallationEntry in the DB based on the status of the
+ * CreateInstallation request.
+ *
+ * Returns the updated InstallationEntry.
+ */ function updateInstallationRequest(appConfig) {
+    return update(appConfig, (oldEntry)=>{
+        if (!oldEntry) {
+            throw ERROR_FACTORY.create("installation-not-found" /* ErrorCode.INSTALLATION_NOT_FOUND */ );
+        }
+        return clearTimedOutRequest(oldEntry);
+    });
+}
+function clearTimedOutRequest(entry) {
+    if (hasInstallationRequestTimedOut(entry)) {
+        return {
+            fid: entry.fid,
+            registrationStatus: 0 /* RequestStatus.NOT_STARTED */ 
+        };
+    }
+    return entry;
+}
+function hasInstallationRequestTimedOut(installationEntry) {
+    return installationEntry.registrationStatus === 1 /* RequestStatus.IN_PROGRESS */  && installationEntry.registrationTime + PENDING_TIMEOUT_MS < Date.now();
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ async function generateAuthTokenRequest({ appConfig, heartbeatServiceProvider }, installationEntry) {
+    const endpoint = getGenerateAuthTokenEndpoint(appConfig, installationEntry);
+    const headers = getHeadersWithAuth(appConfig, installationEntry);
+    // If heartbeat service exists, add the heartbeat string to the header.
+    const heartbeatService = heartbeatServiceProvider.getImmediate({
+        optional: true
+    });
+    if (heartbeatService) {
+        const heartbeatsHeader = await heartbeatService.getHeartbeatsHeader();
+        if (heartbeatsHeader) {
+            headers.append('x-firebase-client', heartbeatsHeader);
+        }
+    }
+    const body = {
+        installation: {
+            sdkVersion: PACKAGE_VERSION,
+            appId: appConfig.appId
+        }
+    };
+    const request = {
+        method: 'POST',
+        headers,
+        body: JSON.stringify(body)
+    };
+    const response = await retryIfServerError(()=>fetch(endpoint, request));
+    if (response.ok) {
+        const responseValue = await response.json();
+        const completedAuthToken = extractAuthTokenInfoFromResponse(responseValue);
+        return completedAuthToken;
+    } else {
+        throw await getErrorFromResponse('Generate Auth Token', response);
+    }
+}
+function getGenerateAuthTokenEndpoint(appConfig, { fid }) {
+    return `${getInstallationsEndpoint(appConfig)}/${fid}/authTokens:generate`;
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Returns a valid authentication token for the installation. Generates a new
+ * token if one doesn't exist, is expired or about to expire.
+ *
+ * Should only be called if the Firebase Installation is registered.
+ */ async function refreshAuthToken(installations, forceRefresh = false) {
+    let tokenPromise;
+    const entry = await update(installations.appConfig, (oldEntry)=>{
+        if (!isEntryRegistered(oldEntry)) {
+            throw ERROR_FACTORY.create("not-registered" /* ErrorCode.NOT_REGISTERED */ );
+        }
+        const oldAuthToken = oldEntry.authToken;
+        if (!forceRefresh && isAuthTokenValid(oldAuthToken)) {
+            // There is a valid token in the DB.
+            return oldEntry;
+        } else if (oldAuthToken.requestStatus === 1 /* RequestStatus.IN_PROGRESS */ ) {
+            // There already is a token request in progress.
+            tokenPromise = waitUntilAuthTokenRequest(installations, forceRefresh);
+            return oldEntry;
+        } else {
+            // No token or token expired.
+            if (!navigator.onLine) {
+                throw ERROR_FACTORY.create("app-offline" /* ErrorCode.APP_OFFLINE */ );
+            }
+            const inProgressEntry = makeAuthTokenRequestInProgressEntry(oldEntry);
+            tokenPromise = fetchAuthTokenFromServer(installations, inProgressEntry);
+            return inProgressEntry;
+        }
+    });
+    const authToken = tokenPromise ? await tokenPromise : entry.authToken;
+    return authToken;
+}
+/**
+ * Call only if FID is registered and Auth Token request is in progress.
+ *
+ * Waits until the current pending request finishes. If the request times out,
+ * tries once in this thread as well.
+ */ async function waitUntilAuthTokenRequest(installations, forceRefresh) {
+    // Unfortunately, there is no way of reliably observing when a value in
+    // IndexedDB changes (yet, see https://github.com/WICG/indexed-db-observers),
+    // so we need to poll.
+    let entry = await updateAuthTokenRequest(installations.appConfig);
+    while(entry.authToken.requestStatus === 1 /* RequestStatus.IN_PROGRESS */ ){
+        // generateAuthToken still in progress.
+        await sleep(100);
+        entry = await updateAuthTokenRequest(installations.appConfig);
+    }
+    const authToken = entry.authToken;
+    if (authToken.requestStatus === 0 /* RequestStatus.NOT_STARTED */ ) {
+        // The request timed out or failed in a different call. Try again.
+        return refreshAuthToken(installations, forceRefresh);
+    } else {
+        return authToken;
+    }
+}
+/**
+ * Called only if there is a GenerateAuthToken request in progress.
+ *
+ * Updates the InstallationEntry in the DB based on the status of the
+ * GenerateAuthToken request.
+ *
+ * Returns the updated InstallationEntry.
+ */ function updateAuthTokenRequest(appConfig) {
+    return update(appConfig, (oldEntry)=>{
+        if (!isEntryRegistered(oldEntry)) {
+            throw ERROR_FACTORY.create("not-registered" /* ErrorCode.NOT_REGISTERED */ );
+        }
+        const oldAuthToken = oldEntry.authToken;
+        if (hasAuthTokenRequestTimedOut(oldAuthToken)) {
+            return Object.assign(Object.assign({}, oldEntry), {
+                authToken: {
+                    requestStatus: 0 /* RequestStatus.NOT_STARTED */ 
+                }
+            });
+        }
+        return oldEntry;
+    });
+}
+async function fetchAuthTokenFromServer(installations, installationEntry) {
+    try {
+        const authToken = await generateAuthTokenRequest(installations, installationEntry);
+        const updatedInstallationEntry = Object.assign(Object.assign({}, installationEntry), {
+            authToken
+        });
+        await set(installations.appConfig, updatedInstallationEntry);
+        return authToken;
+    } catch (e) {
+        if (isServerError(e) && (e.customData.serverCode === 401 || e.customData.serverCode === 404)) {
+            // Server returned a "FID not found" or a "Invalid authentication" error.
+            // Generate a new ID next time.
+            await remove(installations.appConfig);
+        } else {
+            const updatedInstallationEntry = Object.assign(Object.assign({}, installationEntry), {
+                authToken: {
+                    requestStatus: 0 /* RequestStatus.NOT_STARTED */ 
+                }
+            });
+            await set(installations.appConfig, updatedInstallationEntry);
+        }
+        throw e;
+    }
+}
+function isEntryRegistered(installationEntry) {
+    return installationEntry !== undefined && installationEntry.registrationStatus === 2 /* RequestStatus.COMPLETED */ ;
+}
+function isAuthTokenValid(authToken) {
+    return authToken.requestStatus === 2 /* RequestStatus.COMPLETED */  && !isAuthTokenExpired(authToken);
+}
+function isAuthTokenExpired(authToken) {
+    const now = Date.now();
+    return now < authToken.creationTime || authToken.creationTime + authToken.expiresIn < now + TOKEN_EXPIRATION_BUFFER;
+}
+/** Returns an updated InstallationEntry with an InProgressAuthToken. */ function makeAuthTokenRequestInProgressEntry(oldEntry) {
+    const inProgressAuthToken = {
+        requestStatus: 1 /* RequestStatus.IN_PROGRESS */ ,
+        requestTime: Date.now()
+    };
+    return Object.assign(Object.assign({}, oldEntry), {
+        authToken: inProgressAuthToken
+    });
+}
+function hasAuthTokenRequestTimedOut(authToken) {
+    return authToken.requestStatus === 1 /* RequestStatus.IN_PROGRESS */  && authToken.requestTime + PENDING_TIMEOUT_MS < Date.now();
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Creates a Firebase Installation if there isn't one for the app and
+ * returns the Installation ID.
+ * @param installations - The `Installations` instance.
+ *
+ * @public
+ */ async function getId(installations) {
+    const installationsImpl = installations;
+    const { installationEntry, registrationPromise } = await getInstallationEntry(installationsImpl);
+    if (registrationPromise) {
+        registrationPromise.catch(console.error);
+    } else {
+        // If the installation is already registered, update the authentication
+        // token if needed.
+        refreshAuthToken(installationsImpl).catch(console.error);
+    }
+    return installationEntry.fid;
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Returns a Firebase Installations auth token, identifying the current
+ * Firebase Installation.
+ * @param installations - The `Installations` instance.
+ * @param forceRefresh - Force refresh regardless of token expiration.
+ *
+ * @public
+ */ async function getToken(installations, forceRefresh = false) {
+    const installationsImpl = installations;
+    await completeInstallationRegistration(installationsImpl);
+    // At this point we either have a Registered Installation in the DB, or we've
+    // already thrown an error.
+    const authToken = await refreshAuthToken(installationsImpl, forceRefresh);
+    return authToken.token;
+}
+async function completeInstallationRegistration(installations) {
+    const { registrationPromise } = await getInstallationEntry(installations);
+    if (registrationPromise) {
+        // A createInstallation request is in progress. Wait until it finishes.
+        await registrationPromise;
+    }
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ async function deleteInstallationRequest(appConfig, installationEntry) {
+    const endpoint = getDeleteEndpoint(appConfig, installationEntry);
+    const headers = getHeadersWithAuth(appConfig, installationEntry);
+    const request = {
+        method: 'DELETE',
+        headers
+    };
+    const response = await retryIfServerError(()=>fetch(endpoint, request));
+    if (!response.ok) {
+        throw await getErrorFromResponse('Delete Installation', response);
+    }
+}
+function getDeleteEndpoint(appConfig, { fid }) {
+    return `${getInstallationsEndpoint(appConfig)}/${fid}`;
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Deletes the Firebase Installation and all associated data.
+ * @param installations - The `Installations` instance.
+ *
+ * @public
+ */ async function deleteInstallations(installations) {
+    const { appConfig } = installations;
+    const entry = await update(appConfig, (oldEntry)=>{
+        if (oldEntry && oldEntry.registrationStatus === 0 /* RequestStatus.NOT_STARTED */ ) {
+            // Delete the unregistered entry without sending a deleteInstallation request.
+            return undefined;
+        }
+        return oldEntry;
+    });
+    if (entry) {
+        if (entry.registrationStatus === 1 /* RequestStatus.IN_PROGRESS */ ) {
+            // Can't delete while trying to register.
+            throw ERROR_FACTORY.create("delete-pending-registration" /* ErrorCode.DELETE_PENDING_REGISTRATION */ );
+        } else if (entry.registrationStatus === 2 /* RequestStatus.COMPLETED */ ) {
+            if (!navigator.onLine) {
+                throw ERROR_FACTORY.create("app-offline" /* ErrorCode.APP_OFFLINE */ );
+            } else {
+                await deleteInstallationRequest(appConfig, entry);
+                await remove(appConfig);
+            }
+        }
+    }
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Sets a new callback that will get called when Installation ID changes.
+ * Returns an unsubscribe function that will remove the callback when called.
+ * @param installations - The `Installations` instance.
+ * @param callback - The callback function that is invoked when FID changes.
+ * @returns A function that can be called to unsubscribe.
+ *
+ * @public
+ */ function onIdChange(installations, callback) {
+    const { appConfig } = installations;
+    addCallback(appConfig, callback);
+    return ()=>{
+        removeCallback(appConfig, callback);
+    };
+}
+/**
+ * @license
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Returns an instance of {@link Installations} associated with the given
+ * {@link @firebase/app#FirebaseApp} instance.
+ * @param app - The {@link @firebase/app#FirebaseApp} instance.
+ *
+ * @public
+ */ function getInstallations(app = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["getApp"])()) {
+    const installationsImpl = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["_getProvider"])(app, 'installations').getImmediate();
+    return installationsImpl;
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ function extractAppConfig(app) {
+    if (!app || !app.options) {
+        throw getMissingValueError('App Configuration');
+    }
+    if (!app.name) {
+        throw getMissingValueError('App Name');
+    }
+    // Required app config keys
+    const configKeys = [
+        'projectId',
+        'apiKey',
+        'appId'
+    ];
+    for (const keyName of configKeys){
+        if (!app.options[keyName]) {
+            throw getMissingValueError(keyName);
+        }
+    }
+    return {
+        appName: app.name,
+        projectId: app.options.projectId,
+        apiKey: app.options.apiKey,
+        appId: app.options.appId
+    };
+}
+function getMissingValueError(valueName) {
+    return ERROR_FACTORY.create("missing-app-config-values" /* ErrorCode.MISSING_APP_CONFIG_VALUES */ , {
+        valueName
+    });
+}
+/**
+ * @license
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const INSTALLATIONS_NAME = 'installations';
+const INSTALLATIONS_NAME_INTERNAL = 'installations-internal';
+const publicFactory = (container)=>{
+    const app = container.getProvider('app').getImmediate();
+    // Throws if app isn't configured properly.
+    const appConfig = extractAppConfig(app);
+    const heartbeatServiceProvider = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["_getProvider"])(app, 'heartbeat');
+    const installationsImpl = {
+        app,
+        appConfig,
+        heartbeatServiceProvider,
+        _delete: ()=>Promise.resolve()
+    };
+    return installationsImpl;
+};
+const internalFactory = (container)=>{
+    const app = container.getProvider('app').getImmediate();
+    // Internal FIS instance relies on public FIS instance.
+    const installations = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["_getProvider"])(app, INSTALLATIONS_NAME).getImmediate();
+    const installationsInternal = {
+        getId: ()=>getId(installations),
+        getToken: (forceRefresh)=>getToken(installations, forceRefresh)
+    };
+    return installationsInternal;
+};
+function registerInstallations() {
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["_registerComponent"])(new __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$component$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Component"](INSTALLATIONS_NAME, publicFactory, "PUBLIC" /* ComponentType.PUBLIC */ ));
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["_registerComponent"])(new __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$component$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Component"](INSTALLATIONS_NAME_INTERNAL, internalFactory, "PRIVATE" /* ComponentType.PRIVATE */ ));
+}
+/**
+ * Firebase Installations
+ *
+ * @packageDocumentation
+ */ registerInstallations();
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["registerVersion"])(name, version);
+// BUILD_TARGET will be replaced by values like esm5, esm2017, cjs5, etc during the compilation
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["registerVersion"])(name, version, 'esm2017');
+;
+ //# sourceMappingURL=index.esm2017.js.map
+}),
+"[project]/HairGrowth-Clinic/node_modules/@firebase/analytics/dist/esm/index.esm2017.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "getAnalytics",
+    ()=>getAnalytics,
+    "getGoogleAnalyticsClientId",
+    ()=>getGoogleAnalyticsClientId,
+    "initializeAnalytics",
+    ()=>initializeAnalytics,
+    "isSupported",
+    ()=>isSupported,
+    "logEvent",
+    ()=>logEvent,
+    "setAnalyticsCollectionEnabled",
+    ()=>setAnalyticsCollectionEnabled,
+    "setConsent",
+    ()=>setConsent,
+    "setCurrentScreen",
+    ()=>setCurrentScreen,
+    "setDefaultEventParameters",
+    ()=>setDefaultEventParameters,
+    "setUserId",
+    ()=>setUserId,
+    "setUserProperties",
+    ()=>setUserProperties,
+    "settings",
+    ()=>settings
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/@firebase/app/dist/esm/index.esm2017.js [app-ssr] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$logger$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/@firebase/logger/dist/esm/index.esm2017.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/@firebase/util/dist/node-esm/index.node.esm.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$component$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/@firebase/component/dist/esm/index.esm2017.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$installations$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/HairGrowth-Clinic/node_modules/@firebase/installations/dist/esm/index.esm2017.js [app-ssr] (ecmascript)");
+;
+;
+;
+;
+;
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Type constant for Firebase Analytics.
+ */ const ANALYTICS_TYPE = 'analytics';
+// Key to attach FID to in gtag params.
+const GA_FID_KEY = 'firebase_id';
+const ORIGIN_KEY = 'origin';
+const FETCH_TIMEOUT_MILLIS = 60 * 1000;
+const DYNAMIC_CONFIG_URL = 'https://firebase.googleapis.com/v1alpha/projects/-/apps/{app-id}/webConfig';
+const GTAG_URL = 'https://www.googletagmanager.com/gtag/js';
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const logger = new __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$logger$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Logger"]('@firebase/analytics');
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ const ERRORS = {
+    ["already-exists" /* AnalyticsError.ALREADY_EXISTS */ ]: 'A Firebase Analytics instance with the appId {$id} ' + ' already exists. ' + 'Only one Firebase Analytics instance can be created for each appId.',
+    ["already-initialized" /* AnalyticsError.ALREADY_INITIALIZED */ ]: 'initializeAnalytics() cannot be called again with different options than those ' + 'it was initially called with. It can be called again with the same options to ' + 'return the existing instance, or getAnalytics() can be used ' + 'to get a reference to the already-intialized instance.',
+    ["already-initialized-settings" /* AnalyticsError.ALREADY_INITIALIZED_SETTINGS */ ]: 'Firebase Analytics has already been initialized.' + 'settings() must be called before initializing any Analytics instance' + 'or it will have no effect.',
+    ["interop-component-reg-failed" /* AnalyticsError.INTEROP_COMPONENT_REG_FAILED */ ]: 'Firebase Analytics Interop Component failed to instantiate: {$reason}',
+    ["invalid-analytics-context" /* AnalyticsError.INVALID_ANALYTICS_CONTEXT */ ]: 'Firebase Analytics is not supported in this environment. ' + 'Wrap initialization of analytics in analytics.isSupported() ' + 'to prevent initialization in unsupported environments. Details: {$errorInfo}',
+    ["indexeddb-unavailable" /* AnalyticsError.INDEXEDDB_UNAVAILABLE */ ]: 'IndexedDB unavailable or restricted in this environment. ' + 'Wrap initialization of analytics in analytics.isSupported() ' + 'to prevent initialization in unsupported environments. Details: {$errorInfo}',
+    ["fetch-throttle" /* AnalyticsError.FETCH_THROTTLE */ ]: 'The config fetch request timed out while in an exponential backoff state.' + ' Unix timestamp in milliseconds when fetch request throttling ends: {$throttleEndTimeMillis}.',
+    ["config-fetch-failed" /* AnalyticsError.CONFIG_FETCH_FAILED */ ]: 'Dynamic config fetch failed: [{$httpStatus}] {$responseMessage}',
+    ["no-api-key" /* AnalyticsError.NO_API_KEY */ ]: 'The "apiKey" field is empty in the local Firebase config. Firebase Analytics requires this field to' + 'contain a valid API key.',
+    ["no-app-id" /* AnalyticsError.NO_APP_ID */ ]: 'The "appId" field is empty in the local Firebase config. Firebase Analytics requires this field to' + 'contain a valid app ID.',
+    ["no-client-id" /* AnalyticsError.NO_CLIENT_ID */ ]: 'The "client_id" field is empty.',
+    ["invalid-gtag-resource" /* AnalyticsError.INVALID_GTAG_RESOURCE */ ]: 'Trusted Types detected an invalid gtag resource: {$gtagURL}.'
+};
+const ERROR_FACTORY = new __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ErrorFactory"]('analytics', 'Analytics', ERRORS);
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Verifies and creates a TrustedScriptURL.
+ */ function createGtagTrustedTypesScriptURL(url) {
+    if (!url.startsWith(GTAG_URL)) {
+        const err = ERROR_FACTORY.create("invalid-gtag-resource" /* AnalyticsError.INVALID_GTAG_RESOURCE */ , {
+            gtagURL: url
+        });
+        logger.warn(err.message);
+        return '';
+    }
+    return url;
+}
+/**
+ * Makeshift polyfill for Promise.allSettled(). Resolves when all promises
+ * have either resolved or rejected.
+ *
+ * @param promises Array of promises to wait for.
+ */ function promiseAllSettled(promises) {
+    return Promise.all(promises.map((promise)=>promise.catch((e)=>e)));
+}
+/**
+ * Creates a TrustedTypePolicy object that implements the rules passed as policyOptions.
+ *
+ * @param policyName A string containing the name of the policy
+ * @param policyOptions Object containing implementations of instance methods for TrustedTypesPolicy, see {@link https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy#instance_methods
+ * | the TrustedTypePolicy reference documentation}.
+ */ function createTrustedTypesPolicy(policyName, policyOptions) {
+    // Create a TrustedTypes policy that we can use for updating src
+    // properties
+    let trustedTypesPolicy;
+    if (window.trustedTypes) {
+        trustedTypesPolicy = window.trustedTypes.createPolicy(policyName, policyOptions);
+    }
+    return trustedTypesPolicy;
+}
+/**
+ * Inserts gtag script tag into the page to asynchronously download gtag.
+ * @param dataLayerName Name of datalayer (most often the default, "_dataLayer").
+ */ function insertScriptTag(dataLayerName, measurementId) {
+    const trustedTypesPolicy = createTrustedTypesPolicy('firebase-js-sdk-policy', {
+        createScriptURL: createGtagTrustedTypesScriptURL
+    });
+    const script = document.createElement('script');
+    // We are not providing an analyticsId in the URL because it would trigger a `page_view`
+    // without fid. We will initialize ga-id using gtag (config) command together with fid.
+    const gtagScriptURL = `${GTAG_URL}?l=${dataLayerName}&id=${measurementId}`;
+    script.src = trustedTypesPolicy ? trustedTypesPolicy === null || trustedTypesPolicy === void 0 ? void 0 : trustedTypesPolicy.createScriptURL(gtagScriptURL) : gtagScriptURL;
+    script.async = true;
+    document.head.appendChild(script);
+}
+/**
+ * Get reference to, or create, global datalayer.
+ * @param dataLayerName Name of datalayer (most often the default, "_dataLayer").
+ */ function getOrCreateDataLayer(dataLayerName) {
+    // Check for existing dataLayer and create if needed.
+    let dataLayer = [];
+    if (Array.isArray(window[dataLayerName])) {
+        dataLayer = window[dataLayerName];
+    } else {
+        window[dataLayerName] = dataLayer;
+    }
+    return dataLayer;
+}
+/**
+ * Wrapped gtag logic when gtag is called with 'config' command.
+ *
+ * @param gtagCore Basic gtag function that just appends to dataLayer.
+ * @param initializationPromisesMap Map of appIds to their initialization promises.
+ * @param dynamicConfigPromisesList Array of dynamic config fetch promises.
+ * @param measurementIdToAppId Map of GA measurementIDs to corresponding Firebase appId.
+ * @param measurementId GA Measurement ID to set config for.
+ * @param gtagParams Gtag config params to set.
+ */ async function gtagOnConfig(gtagCore, initializationPromisesMap, dynamicConfigPromisesList, measurementIdToAppId, measurementId, gtagParams) {
+    // If config is already fetched, we know the appId and can use it to look up what FID promise we
+    /// are waiting for, and wait only on that one.
+    const correspondingAppId = measurementIdToAppId[measurementId];
+    try {
+        if (correspondingAppId) {
+            await initializationPromisesMap[correspondingAppId];
+        } else {
+            // If config is not fetched yet, wait for all configs (we don't know which one we need) and
+            // find the appId (if any) corresponding to this measurementId. If there is one, wait on
+            // that appId's initialization promise. If there is none, promise resolves and gtag
+            // call goes through.
+            const dynamicConfigResults = await promiseAllSettled(dynamicConfigPromisesList);
+            const foundConfig = dynamicConfigResults.find((config)=>config.measurementId === measurementId);
+            if (foundConfig) {
+                await initializationPromisesMap[foundConfig.appId];
+            }
+        }
+    } catch (e) {
+        logger.error(e);
+    }
+    gtagCore("config" /* GtagCommand.CONFIG */ , measurementId, gtagParams);
+}
+/**
+ * Wrapped gtag logic when gtag is called with 'event' command.
+ *
+ * @param gtagCore Basic gtag function that just appends to dataLayer.
+ * @param initializationPromisesMap Map of appIds to their initialization promises.
+ * @param dynamicConfigPromisesList Array of dynamic config fetch promises.
+ * @param measurementId GA Measurement ID to log event to.
+ * @param gtagParams Params to log with this event.
+ */ async function gtagOnEvent(gtagCore, initializationPromisesMap, dynamicConfigPromisesList, measurementId, gtagParams) {
+    try {
+        let initializationPromisesToWaitFor = [];
+        // If there's a 'send_to' param, check if any ID specified matches
+        // an initializeIds() promise we are waiting for.
+        if (gtagParams && gtagParams['send_to']) {
+            let gaSendToList = gtagParams['send_to'];
+            // Make it an array if is isn't, so it can be dealt with the same way.
+            if (!Array.isArray(gaSendToList)) {
+                gaSendToList = [
+                    gaSendToList
+                ];
+            }
+            // Checking 'send_to' fields requires having all measurement ID results back from
+            // the dynamic config fetch.
+            const dynamicConfigResults = await promiseAllSettled(dynamicConfigPromisesList);
+            for (const sendToId of gaSendToList){
+                // Any fetched dynamic measurement ID that matches this 'send_to' ID
+                const foundConfig = dynamicConfigResults.find((config)=>config.measurementId === sendToId);
+                const initializationPromise = foundConfig && initializationPromisesMap[foundConfig.appId];
+                if (initializationPromise) {
+                    initializationPromisesToWaitFor.push(initializationPromise);
+                } else {
+                    // Found an item in 'send_to' that is not associated
+                    // directly with an FID, possibly a group.  Empty this array,
+                    // exit the loop early, and let it get populated below.
+                    initializationPromisesToWaitFor = [];
+                    break;
+                }
+            }
+        }
+        // This will be unpopulated if there was no 'send_to' field , or
+        // if not all entries in the 'send_to' field could be mapped to
+        // a FID. In these cases, wait on all pending initialization promises.
+        if (initializationPromisesToWaitFor.length === 0) {
+            initializationPromisesToWaitFor = Object.values(initializationPromisesMap);
+        }
+        // Run core gtag function with args after all relevant initialization
+        // promises have been resolved.
+        await Promise.all(initializationPromisesToWaitFor);
+        // Workaround for http://b/141370449 - third argument cannot be undefined.
+        gtagCore("event" /* GtagCommand.EVENT */ , measurementId, gtagParams || {});
+    } catch (e) {
+        logger.error(e);
+    }
+}
+/**
+ * Wraps a standard gtag function with extra code to wait for completion of
+ * relevant initialization promises before sending requests.
+ *
+ * @param gtagCore Basic gtag function that just appends to dataLayer.
+ * @param initializationPromisesMap Map of appIds to their initialization promises.
+ * @param dynamicConfigPromisesList Array of dynamic config fetch promises.
+ * @param measurementIdToAppId Map of GA measurementIDs to corresponding Firebase appId.
+ */ function wrapGtag(gtagCore, /**
+ * Allows wrapped gtag calls to wait on whichever intialization promises are required,
+ * depending on the contents of the gtag params' `send_to` field, if any.
+ */ initializationPromisesMap, /**
+ * Wrapped gtag calls sometimes require all dynamic config fetches to have returned
+ * before determining what initialization promises (which include FIDs) to wait for.
+ */ dynamicConfigPromisesList, /**
+ * Wrapped gtag config calls can narrow down which initialization promise (with FID)
+ * to wait for if the measurementId is already fetched, by getting the corresponding appId,
+ * which is the key for the initialization promises map.
+ */ measurementIdToAppId) {
+    /**
+     * Wrapper around gtag that ensures FID is sent with gtag calls.
+     * @param command Gtag command type.
+     * @param idOrNameOrParams Measurement ID if command is EVENT/CONFIG, params if command is SET.
+     * @param gtagParams Params if event is EVENT/CONFIG.
+     */ async function gtagWrapper(command, ...args) {
+        try {
+            // If event, check that relevant initialization promises have completed.
+            if (command === "event" /* GtagCommand.EVENT */ ) {
+                const [measurementId, gtagParams] = args;
+                // If EVENT, second arg must be measurementId.
+                await gtagOnEvent(gtagCore, initializationPromisesMap, dynamicConfigPromisesList, measurementId, gtagParams);
+            } else if (command === "config" /* GtagCommand.CONFIG */ ) {
+                const [measurementId, gtagParams] = args;
+                // If CONFIG, second arg must be measurementId.
+                await gtagOnConfig(gtagCore, initializationPromisesMap, dynamicConfigPromisesList, measurementIdToAppId, measurementId, gtagParams);
+            } else if (command === "consent" /* GtagCommand.CONSENT */ ) {
+                const [gtagParams] = args;
+                gtagCore("consent" /* GtagCommand.CONSENT */ , 'update', gtagParams);
+            } else if (command === "get" /* GtagCommand.GET */ ) {
+                const [measurementId, fieldName, callback] = args;
+                gtagCore("get" /* GtagCommand.GET */ , measurementId, fieldName, callback);
+            } else if (command === "set" /* GtagCommand.SET */ ) {
+                const [customParams] = args;
+                // If SET, second arg must be params.
+                gtagCore("set" /* GtagCommand.SET */ , customParams);
+            } else {
+                gtagCore(command, ...args);
+            }
+        } catch (e) {
+            logger.error(e);
+        }
+    }
+    return gtagWrapper;
+}
+/**
+ * Creates global gtag function or wraps existing one if found.
+ * This wrapped function attaches Firebase instance ID (FID) to gtag 'config' and
+ * 'event' calls that belong to the GAID associated with this Firebase instance.
+ *
+ * @param initializationPromisesMap Map of appIds to their initialization promises.
+ * @param dynamicConfigPromisesList Array of dynamic config fetch promises.
+ * @param measurementIdToAppId Map of GA measurementIDs to corresponding Firebase appId.
+ * @param dataLayerName Name of global GA datalayer array.
+ * @param gtagFunctionName Name of global gtag function ("gtag" if not user-specified).
+ */ function wrapOrCreateGtag(initializationPromisesMap, dynamicConfigPromisesList, measurementIdToAppId, dataLayerName, gtagFunctionName) {
+    // Create a basic core gtag function
+    let gtagCore = function(..._args) {
+        // Must push IArguments object, not an array.
+        window[dataLayerName].push(arguments);
+    };
+    // Replace it with existing one if found
+    if (window[gtagFunctionName] && typeof window[gtagFunctionName] === 'function') {
+        // @ts-ignore
+        gtagCore = window[gtagFunctionName];
+    }
+    window[gtagFunctionName] = wrapGtag(gtagCore, initializationPromisesMap, dynamicConfigPromisesList, measurementIdToAppId);
+    return {
+        gtagCore,
+        wrappedGtag: window[gtagFunctionName]
+    };
+}
+/**
+ * Returns the script tag in the DOM matching both the gtag url pattern
+ * and the provided data layer name.
+ */ function findGtagScriptOnPage(dataLayerName) {
+    const scriptTags = window.document.getElementsByTagName('script');
+    for (const tag of Object.values(scriptTags)){
+        if (tag.src && tag.src.includes(GTAG_URL) && tag.src.includes(dataLayerName)) {
+            return tag;
+        }
+    }
+    return null;
+}
+/**
+ * @license
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Backoff factor for 503 errors, which we want to be conservative about
+ * to avoid overloading servers. Each retry interval will be
+ * BASE_INTERVAL_MILLIS * LONG_RETRY_FACTOR ^ retryCount, so the second one
+ * will be ~30 seconds (with fuzzing).
+ */ const LONG_RETRY_FACTOR = 30;
+/**
+ * Base wait interval to multiplied by backoffFactor^backoffCount.
+ */ const BASE_INTERVAL_MILLIS = 1000;
+/**
+ * Stubbable retry data storage class.
+ */ class RetryData {
+    constructor(throttleMetadata = {}, intervalMillis = BASE_INTERVAL_MILLIS){
+        this.throttleMetadata = throttleMetadata;
+        this.intervalMillis = intervalMillis;
+    }
+    getThrottleMetadata(appId) {
+        return this.throttleMetadata[appId];
+    }
+    setThrottleMetadata(appId, metadata) {
+        this.throttleMetadata[appId] = metadata;
+    }
+    deleteThrottleMetadata(appId) {
+        delete this.throttleMetadata[appId];
+    }
+}
+const defaultRetryData = new RetryData();
+/**
+ * Set GET request headers.
+ * @param apiKey App API key.
+ */ function getHeaders(apiKey) {
+    return new Headers({
+        Accept: 'application/json',
+        'x-goog-api-key': apiKey
+    });
+}
+/**
+ * Fetches dynamic config from backend.
+ * @param app Firebase app to fetch config for.
+ */ async function fetchDynamicConfig(appFields) {
+    var _a;
+    const { appId, apiKey } = appFields;
+    const request = {
+        method: 'GET',
+        headers: getHeaders(apiKey)
+    };
+    const appUrl = DYNAMIC_CONFIG_URL.replace('{app-id}', appId);
+    const response = await fetch(appUrl, request);
+    if (response.status !== 200 && response.status !== 304) {
+        let errorMessage = '';
+        try {
+            // Try to get any error message text from server response.
+            const jsonResponse = await response.json();
+            if ((_a = jsonResponse.error) === null || _a === void 0 ? void 0 : _a.message) {
+                errorMessage = jsonResponse.error.message;
+            }
+        } catch (_ignored) {}
+        throw ERROR_FACTORY.create("config-fetch-failed" /* AnalyticsError.CONFIG_FETCH_FAILED */ , {
+            httpStatus: response.status,
+            responseMessage: errorMessage
+        });
+    }
+    return response.json();
+}
+/**
+ * Fetches dynamic config from backend, retrying if failed.
+ * @param app Firebase app to fetch config for.
+ */ async function fetchDynamicConfigWithRetry(app, // retryData and timeoutMillis are parameterized to allow passing a different value for testing.
+retryData = defaultRetryData, timeoutMillis) {
+    const { appId, apiKey, measurementId } = app.options;
+    if (!appId) {
+        throw ERROR_FACTORY.create("no-app-id" /* AnalyticsError.NO_APP_ID */ );
+    }
+    if (!apiKey) {
+        if (measurementId) {
+            return {
+                measurementId,
+                appId
+            };
+        }
+        throw ERROR_FACTORY.create("no-api-key" /* AnalyticsError.NO_API_KEY */ );
+    }
+    const throttleMetadata = retryData.getThrottleMetadata(appId) || {
+        backoffCount: 0,
+        throttleEndTimeMillis: Date.now()
+    };
+    const signal = new AnalyticsAbortSignal();
+    setTimeout(async ()=>{
+        // Note a very low delay, eg < 10ms, can elapse before listeners are initialized.
+        signal.abort();
+    }, timeoutMillis !== undefined ? timeoutMillis : FETCH_TIMEOUT_MILLIS);
+    return attemptFetchDynamicConfigWithRetry({
+        appId,
+        apiKey,
+        measurementId
+    }, throttleMetadata, signal, retryData);
+}
+/**
+ * Runs one retry attempt.
+ * @param appFields Necessary app config fields.
+ * @param throttleMetadata Ongoing metadata to determine throttling times.
+ * @param signal Abort signal.
+ */ async function attemptFetchDynamicConfigWithRetry(appFields, { throttleEndTimeMillis, backoffCount }, signal, retryData = defaultRetryData // for testing
+) {
+    var _a;
+    const { appId, measurementId } = appFields;
+    // Starts with a (potentially zero) timeout to support resumption from stored state.
+    // Ensures the throttle end time is honored if the last attempt timed out.
+    // Note the SDK will never make a request if the fetch timeout expires at this point.
+    try {
+        await setAbortableTimeout(signal, throttleEndTimeMillis);
+    } catch (e) {
+        if (measurementId) {
+            logger.warn(`Timed out fetching this Firebase app's measurement ID from the server.` + ` Falling back to the measurement ID ${measurementId}` + ` provided in the "measurementId" field in the local Firebase config. [${e === null || e === void 0 ? void 0 : e.message}]`);
+            return {
+                appId,
+                measurementId
+            };
+        }
+        throw e;
+    }
+    try {
+        const response = await fetchDynamicConfig(appFields);
+        // Note the SDK only clears throttle state if response is success or non-retriable.
+        retryData.deleteThrottleMetadata(appId);
+        return response;
+    } catch (e) {
+        const error = e;
+        if (!isRetriableError(error)) {
+            retryData.deleteThrottleMetadata(appId);
+            if (measurementId) {
+                logger.warn(`Failed to fetch this Firebase app's measurement ID from the server.` + ` Falling back to the measurement ID ${measurementId}` + ` provided in the "measurementId" field in the local Firebase config. [${error === null || error === void 0 ? void 0 : error.message}]`);
+                return {
+                    appId,
+                    measurementId
+                };
+            } else {
+                throw e;
+            }
+        }
+        const backoffMillis = Number((_a = error === null || error === void 0 ? void 0 : error.customData) === null || _a === void 0 ? void 0 : _a.httpStatus) === 503 ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["calculateBackoffMillis"])(backoffCount, retryData.intervalMillis, LONG_RETRY_FACTOR) : (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["calculateBackoffMillis"])(backoffCount, retryData.intervalMillis);
+        // Increments backoff state.
+        const throttleMetadata = {
+            throttleEndTimeMillis: Date.now() + backoffMillis,
+            backoffCount: backoffCount + 1
+        };
+        // Persists state.
+        retryData.setThrottleMetadata(appId, throttleMetadata);
+        logger.debug(`Calling attemptFetch again in ${backoffMillis} millis`);
+        return attemptFetchDynamicConfigWithRetry(appFields, throttleMetadata, signal, retryData);
+    }
+}
+/**
+ * Supports waiting on a backoff by:
+ *
+ * <ul>
+ *   <li>Promisifying setTimeout, so we can set a timeout in our Promise chain</li>
+ *   <li>Listening on a signal bus for abort events, just like the Fetch API</li>
+ *   <li>Failing in the same way the Fetch API fails, so timing out a live request and a throttled
+ *       request appear the same.</li>
+ * </ul>
+ *
+ * <p>Visible for testing.
+ */ function setAbortableTimeout(signal, throttleEndTimeMillis) {
+    return new Promise((resolve, reject)=>{
+        // Derives backoff from given end time, normalizing negative numbers to zero.
+        const backoffMillis = Math.max(throttleEndTimeMillis - Date.now(), 0);
+        const timeout = setTimeout(resolve, backoffMillis);
+        // Adds listener, rather than sets onabort, because signal is a shared object.
+        signal.addEventListener(()=>{
+            clearTimeout(timeout);
+            // If the request completes before this timeout, the rejection has no effect.
+            reject(ERROR_FACTORY.create("fetch-throttle" /* AnalyticsError.FETCH_THROTTLE */ , {
+                throttleEndTimeMillis
+            }));
+        });
+    });
+}
+/**
+ * Returns true if the {@link Error} indicates a fetch request may succeed later.
+ */ function isRetriableError(e) {
+    if (!(e instanceof __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FirebaseError"]) || !e.customData) {
+        return false;
+    }
+    // Uses string index defined by ErrorData, which FirebaseError implements.
+    const httpStatus = Number(e.customData['httpStatus']);
+    return httpStatus === 429 || httpStatus === 500 || httpStatus === 503 || httpStatus === 504;
+}
+/**
+ * Shims a minimal AbortSignal (copied from Remote Config).
+ *
+ * <p>AbortController's AbortSignal conveniently decouples fetch timeout logic from other aspects
+ * of networking, such as retries. Firebase doesn't use AbortController enough to justify a
+ * polyfill recommendation, like we do with the Fetch API, but this minimal shim can easily be
+ * swapped out if/when we do.
+ */ class AnalyticsAbortSignal {
+    constructor(){
+        this.listeners = [];
+    }
+    addEventListener(listener) {
+        this.listeners.push(listener);
+    }
+    abort() {
+        this.listeners.forEach((listener)=>listener());
+    }
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Event parameters to set on 'gtag' during initialization.
+ */ let defaultEventParametersForInit;
+/**
+ * Logs an analytics event through the Firebase SDK.
+ *
+ * @param gtagFunction Wrapped gtag function that waits for fid to be set before sending an event
+ * @param eventName Google Analytics event name, choose from standard list or use a custom string.
+ * @param eventParams Analytics event parameters.
+ */ async function logEvent$1(gtagFunction, initializationPromise, eventName, eventParams, options) {
+    if (options && options.global) {
+        gtagFunction("event" /* GtagCommand.EVENT */ , eventName, eventParams);
+        return;
+    } else {
+        const measurementId = await initializationPromise;
+        const params = Object.assign(Object.assign({}, eventParams), {
+            'send_to': measurementId
+        });
+        gtagFunction("event" /* GtagCommand.EVENT */ , eventName, params);
+    }
+}
+/**
+ * Set screen_name parameter for this Google Analytics ID.
+ *
+ * @deprecated Use {@link logEvent} with `eventName` as 'screen_view' and add relevant `eventParams`.
+ * See {@link https://firebase.google.com/docs/analytics/screenviews | Track Screenviews}.
+ *
+ * @param gtagFunction Wrapped gtag function that waits for fid to be set before sending an event
+ * @param screenName Screen name string to set.
+ */ async function setCurrentScreen$1(gtagFunction, initializationPromise, screenName, options) {
+    if (options && options.global) {
+        gtagFunction("set" /* GtagCommand.SET */ , {
+            'screen_name': screenName
+        });
+        return Promise.resolve();
+    } else {
+        const measurementId = await initializationPromise;
+        gtagFunction("config" /* GtagCommand.CONFIG */ , measurementId, {
+            update: true,
+            'screen_name': screenName
+        });
+    }
+}
+/**
+ * Set user_id parameter for this Google Analytics ID.
+ *
+ * @param gtagFunction Wrapped gtag function that waits for fid to be set before sending an event
+ * @param id User ID string to set
+ */ async function setUserId$1(gtagFunction, initializationPromise, id, options) {
+    if (options && options.global) {
+        gtagFunction("set" /* GtagCommand.SET */ , {
+            'user_id': id
+        });
+        return Promise.resolve();
+    } else {
+        const measurementId = await initializationPromise;
+        gtagFunction("config" /* GtagCommand.CONFIG */ , measurementId, {
+            update: true,
+            'user_id': id
+        });
+    }
+}
+/**
+ * Set all other user properties other than user_id and screen_name.
+ *
+ * @param gtagFunction Wrapped gtag function that waits for fid to be set before sending an event
+ * @param properties Map of user properties to set
+ */ async function setUserProperties$1(gtagFunction, initializationPromise, properties, options) {
+    if (options && options.global) {
+        const flatProperties = {};
+        for (const key of Object.keys(properties)){
+            // use dot notation for merge behavior in gtag.js
+            flatProperties[`user_properties.${key}`] = properties[key];
+        }
+        gtagFunction("set" /* GtagCommand.SET */ , flatProperties);
+        return Promise.resolve();
+    } else {
+        const measurementId = await initializationPromise;
+        gtagFunction("config" /* GtagCommand.CONFIG */ , measurementId, {
+            update: true,
+            'user_properties': properties
+        });
+    }
+}
+/**
+ * Retrieves a unique Google Analytics identifier for the web client.
+ * See {@link https://developers.google.com/analytics/devguides/collection/ga4/reference/config#client_id | client_id}.
+ *
+ * @param gtagFunction Wrapped gtag function that waits for fid to be set before sending an event
+ */ async function internalGetGoogleAnalyticsClientId(gtagFunction, initializationPromise) {
+    const measurementId = await initializationPromise;
+    return new Promise((resolve, reject)=>{
+        gtagFunction("get" /* GtagCommand.GET */ , measurementId, 'client_id', (clientId)=>{
+            if (!clientId) {
+                reject(ERROR_FACTORY.create("no-client-id" /* AnalyticsError.NO_CLIENT_ID */ ));
+            }
+            resolve(clientId);
+        });
+    });
+}
+/**
+ * Set whether collection is enabled for this ID.
+ *
+ * @param enabled If true, collection is enabled for this ID.
+ */ async function setAnalyticsCollectionEnabled$1(initializationPromise, enabled) {
+    const measurementId = await initializationPromise;
+    window[`ga-disable-${measurementId}`] = !enabled;
+}
+/**
+ * Consent parameters to default to during 'gtag' initialization.
+ */ let defaultConsentSettingsForInit;
+/**
+ * Sets the variable {@link defaultConsentSettingsForInit} for use in the initialization of
+ * analytics.
+ *
+ * @param consentSettings Maps the applicable end user consent state for gtag.js.
+ */ function _setConsentDefaultForInit(consentSettings) {
+    defaultConsentSettingsForInit = consentSettings;
+}
+/**
+ * Sets the variable `defaultEventParametersForInit` for use in the initialization of
+ * analytics.
+ *
+ * @param customParams Any custom params the user may pass to gtag.js.
+ */ function _setDefaultEventParametersForInit(customParams) {
+    defaultEventParametersForInit = customParams;
+}
+/**
+ * @license
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ async function validateIndexedDB() {
+    if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isIndexedDBAvailable"])()) {
+        logger.warn(ERROR_FACTORY.create("indexeddb-unavailable" /* AnalyticsError.INDEXEDDB_UNAVAILABLE */ , {
+            errorInfo: 'IndexedDB is not available in this environment.'
+        }).message);
+        return false;
+    } else {
+        try {
+            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["validateIndexedDBOpenable"])();
+        } catch (e) {
+            logger.warn(ERROR_FACTORY.create("indexeddb-unavailable" /* AnalyticsError.INDEXEDDB_UNAVAILABLE */ , {
+                errorInfo: e === null || e === void 0 ? void 0 : e.toString()
+            }).message);
+            return false;
+        }
+    }
+    return true;
+}
+/**
+ * Initialize the analytics instance in gtag.js by calling config command with fid.
+ *
+ * NOTE: We combine analytics initialization and setting fid together because we want fid to be
+ * part of the `page_view` event that's sent during the initialization
+ * @param app Firebase app
+ * @param gtagCore The gtag function that's not wrapped.
+ * @param dynamicConfigPromisesList Array of all dynamic config promises.
+ * @param measurementIdToAppId Maps measurementID to appID.
+ * @param installations _FirebaseInstallationsInternal instance.
+ *
+ * @returns Measurement ID.
+ */ async function _initializeAnalytics(app, dynamicConfigPromisesList, measurementIdToAppId, installations, gtagCore, dataLayerName, options) {
+    var _a;
+    const dynamicConfigPromise = fetchDynamicConfigWithRetry(app);
+    // Once fetched, map measurementIds to appId, for ease of lookup in wrapped gtag function.
+    dynamicConfigPromise.then((config)=>{
+        measurementIdToAppId[config.measurementId] = config.appId;
+        if (app.options.measurementId && config.measurementId !== app.options.measurementId) {
+            logger.warn(`The measurement ID in the local Firebase config (${app.options.measurementId})` + ` does not match the measurement ID fetched from the server (${config.measurementId}).` + ` To ensure analytics events are always sent to the correct Analytics property,` + ` update the` + ` measurement ID field in the local config or remove it from the local config.`);
+        }
+    }).catch((e)=>logger.error(e));
+    // Add to list to track state of all dynamic config promises.
+    dynamicConfigPromisesList.push(dynamicConfigPromise);
+    const fidPromise = validateIndexedDB().then((envIsValid)=>{
+        if (envIsValid) {
+            return installations.getId();
+        } else {
+            return undefined;
+        }
+    });
+    const [dynamicConfig, fid] = await Promise.all([
+        dynamicConfigPromise,
+        fidPromise
+    ]);
+    // Detect if user has already put the gtag <script> tag on this page with the passed in
+    // data layer name.
+    if (!findGtagScriptOnPage(dataLayerName)) {
+        insertScriptTag(dataLayerName, dynamicConfig.measurementId);
+    }
+    // Detects if there are consent settings that need to be configured.
+    if (defaultConsentSettingsForInit) {
+        gtagCore("consent" /* GtagCommand.CONSENT */ , 'default', defaultConsentSettingsForInit);
+        _setConsentDefaultForInit(undefined);
+    }
+    // This command initializes gtag.js and only needs to be called once for the entire web app,
+    // but since it is idempotent, we can call it multiple times.
+    // We keep it together with other initialization logic for better code structure.
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    gtagCore('js', new Date());
+    // User config added first. We don't want users to accidentally overwrite
+    // base Firebase config properties.
+    const configProperties = (_a = options === null || options === void 0 ? void 0 : options.config) !== null && _a !== void 0 ? _a : {};
+    // guard against developers accidentally setting properties with prefix `firebase_`
+    configProperties[ORIGIN_KEY] = 'firebase';
+    configProperties.update = true;
+    if (fid != null) {
+        configProperties[GA_FID_KEY] = fid;
+    }
+    // It should be the first config command called on this GA-ID
+    // Initialize this GA-ID and set FID on it using the gtag config API.
+    // Note: This will trigger a page_view event unless 'send_page_view' is set to false in
+    // `configProperties`.
+    gtagCore("config" /* GtagCommand.CONFIG */ , dynamicConfig.measurementId, configProperties);
+    // Detects if there is data that will be set on every event logged from the SDK.
+    if (defaultEventParametersForInit) {
+        gtagCore("set" /* GtagCommand.SET */ , defaultEventParametersForInit);
+        _setDefaultEventParametersForInit(undefined);
+    }
+    return dynamicConfig.measurementId;
+}
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */ /**
+ * Analytics Service class.
+ */ class AnalyticsService {
+    constructor(app){
+        this.app = app;
+    }
+    _delete() {
+        delete initializationPromisesMap[this.app.options.appId];
+        return Promise.resolve();
+    }
+}
+/**
+ * Maps appId to full initialization promise. Wrapped gtag calls must wait on
+ * all or some of these, depending on the call's `send_to` param and the status
+ * of the dynamic config fetches (see below).
+ */ let initializationPromisesMap = {};
+/**
+ * List of dynamic config fetch promises. In certain cases, wrapped gtag calls
+ * wait on all these to be complete in order to determine if it can selectively
+ * wait for only certain initialization (FID) promises or if it must wait for all.
+ */ let dynamicConfigPromisesList = [];
+/**
+ * Maps fetched measurementIds to appId. Populated when the app's dynamic config
+ * fetch completes. If already populated, gtag config calls can use this to
+ * selectively wait for only this app's initialization promise (FID) instead of all
+ * initialization promises.
+ */ const measurementIdToAppId = {};
+/**
+ * Name for window global data layer array used by GA: defaults to 'dataLayer'.
+ */ let dataLayerName = 'dataLayer';
+/**
+ * Name for window global gtag function used by GA: defaults to 'gtag'.
+ */ let gtagName = 'gtag';
+/**
+ * Reproduction of standard gtag function or reference to existing
+ * gtag function on window object.
+ */ let gtagCoreFunction;
+/**
+ * Wrapper around gtag function that ensures FID is sent with all
+ * relevant event and config calls.
+ */ let wrappedGtagFunction;
+/**
+ * Flag to ensure page initialization steps (creation or wrapping of
+ * dataLayer and gtag script) are only run once per page load.
+ */ let globalInitDone = false;
+/**
+ * Configures Firebase Analytics to use custom `gtag` or `dataLayer` names.
+ * Intended to be used if `gtag.js` script has been installed on
+ * this page independently of Firebase Analytics, and is using non-default
+ * names for either the `gtag` function or for `dataLayer`.
+ * Must be called before calling `getAnalytics()` or it won't
+ * have any effect.
+ *
+ * @public
+ *
+ * @param options - Custom gtag and dataLayer names.
+ */ function settings(options) {
+    if (globalInitDone) {
+        throw ERROR_FACTORY.create("already-initialized" /* AnalyticsError.ALREADY_INITIALIZED */ );
+    }
+    if (options.dataLayerName) {
+        dataLayerName = options.dataLayerName;
+    }
+    if (options.gtagName) {
+        gtagName = options.gtagName;
+    }
+}
+/**
+ * Returns true if no environment mismatch is found.
+ * If environment mismatches are found, throws an INVALID_ANALYTICS_CONTEXT
+ * error that also lists details for each mismatch found.
+ */ function warnOnBrowserContextMismatch() {
+    const mismatchedEnvMessages = [];
+    if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isBrowserExtension"])()) {
+        mismatchedEnvMessages.push('This is a browser extension environment.');
+    }
+    if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["areCookiesEnabled"])()) {
+        mismatchedEnvMessages.push('Cookies are not available.');
+    }
+    if (mismatchedEnvMessages.length > 0) {
+        const details = mismatchedEnvMessages.map((message, index)=>`(${index + 1}) ${message}`).join(' ');
+        const err = ERROR_FACTORY.create("invalid-analytics-context" /* AnalyticsError.INVALID_ANALYTICS_CONTEXT */ , {
+            errorInfo: details
+        });
+        logger.warn(err.message);
+    }
+}
+/**
+ * Analytics instance factory.
+ * @internal
+ */ function factory(app, installations, options) {
+    warnOnBrowserContextMismatch();
+    const appId = app.options.appId;
+    if (!appId) {
+        throw ERROR_FACTORY.create("no-app-id" /* AnalyticsError.NO_APP_ID */ );
+    }
+    if (!app.options.apiKey) {
+        if (app.options.measurementId) {
+            logger.warn(`The "apiKey" field is empty in the local Firebase config. This is needed to fetch the latest` + ` measurement ID for this Firebase app. Falling back to the measurement ID ${app.options.measurementId}` + ` provided in the "measurementId" field in the local Firebase config.`);
+        } else {
+            throw ERROR_FACTORY.create("no-api-key" /* AnalyticsError.NO_API_KEY */ );
+        }
+    }
+    if (initializationPromisesMap[appId] != null) {
+        throw ERROR_FACTORY.create("already-exists" /* AnalyticsError.ALREADY_EXISTS */ , {
+            id: appId
+        });
+    }
+    if (!globalInitDone) {
+        // Steps here should only be done once per page: creation or wrapping
+        // of dataLayer and global gtag function.
+        getOrCreateDataLayer(dataLayerName);
+        const { wrappedGtag, gtagCore } = wrapOrCreateGtag(initializationPromisesMap, dynamicConfigPromisesList, measurementIdToAppId, dataLayerName, gtagName);
+        wrappedGtagFunction = wrappedGtag;
+        gtagCoreFunction = gtagCore;
+        globalInitDone = true;
+    }
+    // Async but non-blocking.
+    // This map reflects the completion state of all promises for each appId.
+    initializationPromisesMap[appId] = _initializeAnalytics(app, dynamicConfigPromisesList, measurementIdToAppId, installations, gtagCoreFunction, dataLayerName, options);
+    const analyticsInstance = new AnalyticsService(app);
+    return analyticsInstance;
+}
+/* eslint-disable @typescript-eslint/no-explicit-any */ /**
+ * Returns an {@link Analytics} instance for the given app.
+ *
+ * @public
+ *
+ * @param app - The {@link @firebase/app#FirebaseApp} to use.
+ */ function getAnalytics(app = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["getApp"])()) {
+    app = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getModularInstance"])(app);
+    // Dependencies
+    const analyticsProvider = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["_getProvider"])(app, ANALYTICS_TYPE);
+    if (analyticsProvider.isInitialized()) {
+        return analyticsProvider.getImmediate();
+    }
+    return initializeAnalytics(app);
+}
+/**
+ * Returns an {@link Analytics} instance for the given app.
+ *
+ * @public
+ *
+ * @param app - The {@link @firebase/app#FirebaseApp} to use.
+ */ function initializeAnalytics(app, options = {}) {
+    // Dependencies
+    const analyticsProvider = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["_getProvider"])(app, ANALYTICS_TYPE);
+    if (analyticsProvider.isInitialized()) {
+        const existingInstance = analyticsProvider.getImmediate();
+        if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["deepEqual"])(options, analyticsProvider.getOptions())) {
+            return existingInstance;
+        } else {
+            throw ERROR_FACTORY.create("already-initialized" /* AnalyticsError.ALREADY_INITIALIZED */ );
+        }
+    }
+    const analyticsInstance = analyticsProvider.initialize({
+        options
+    });
+    return analyticsInstance;
+}
+/**
+ * This is a public static method provided to users that wraps four different checks:
+ *
+ * 1. Check if it's not a browser extension environment.
+ * 2. Check if cookies are enabled in current browser.
+ * 3. Check if IndexedDB is supported by the browser environment.
+ * 4. Check if the current browser context is valid for using `IndexedDB.open()`.
+ *
+ * @public
+ *
+ */ async function isSupported() {
+    if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isBrowserExtension"])()) {
+        return false;
+    }
+    if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["areCookiesEnabled"])()) {
+        return false;
+    }
+    if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["isIndexedDBAvailable"])()) {
+        return false;
+    }
+    try {
+        const isDBOpenable = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["validateIndexedDBOpenable"])();
+        return isDBOpenable;
+    } catch (error) {
+        return false;
+    }
+}
+/**
+ * Use gtag `config` command to set `screen_name`.
+ *
+ * @public
+ *
+ * @deprecated Use {@link logEvent} with `eventName` as 'screen_view' and add relevant `eventParams`.
+ * See {@link https://firebase.google.com/docs/analytics/screenviews | Track Screenviews}.
+ *
+ * @param analyticsInstance - The {@link Analytics} instance.
+ * @param screenName - Screen name to set.
+ */ function setCurrentScreen(analyticsInstance, screenName, options) {
+    analyticsInstance = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getModularInstance"])(analyticsInstance);
+    setCurrentScreen$1(wrappedGtagFunction, initializationPromisesMap[analyticsInstance.app.options.appId], screenName, options).catch((e)=>logger.error(e));
+}
+/**
+ * Retrieves a unique Google Analytics identifier for the web client.
+ * See {@link https://developers.google.com/analytics/devguides/collection/ga4/reference/config#client_id | client_id}.
+ *
+ * @public
+ *
+ * @param app - The {@link @firebase/app#FirebaseApp} to use.
+ */ async function getGoogleAnalyticsClientId(analyticsInstance) {
+    analyticsInstance = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getModularInstance"])(analyticsInstance);
+    return internalGetGoogleAnalyticsClientId(wrappedGtagFunction, initializationPromisesMap[analyticsInstance.app.options.appId]);
+}
+/**
+ * Use gtag `config` command to set `user_id`.
+ *
+ * @public
+ *
+ * @param analyticsInstance - The {@link Analytics} instance.
+ * @param id - User ID to set.
+ */ function setUserId(analyticsInstance, id, options) {
+    analyticsInstance = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getModularInstance"])(analyticsInstance);
+    setUserId$1(wrappedGtagFunction, initializationPromisesMap[analyticsInstance.app.options.appId], id, options).catch((e)=>logger.error(e));
+}
+/**
+ * Use gtag `config` command to set all params specified.
+ *
+ * @public
+ */ function setUserProperties(analyticsInstance, properties, options) {
+    analyticsInstance = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getModularInstance"])(analyticsInstance);
+    setUserProperties$1(wrappedGtagFunction, initializationPromisesMap[analyticsInstance.app.options.appId], properties, options).catch((e)=>logger.error(e));
+}
+/**
+ * Sets whether Google Analytics collection is enabled for this app on this device.
+ * Sets global `window['ga-disable-analyticsId'] = true;`
+ *
+ * @public
+ *
+ * @param analyticsInstance - The {@link Analytics} instance.
+ * @param enabled - If true, enables collection, if false, disables it.
+ */ function setAnalyticsCollectionEnabled(analyticsInstance, enabled) {
+    analyticsInstance = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getModularInstance"])(analyticsInstance);
+    setAnalyticsCollectionEnabled$1(initializationPromisesMap[analyticsInstance.app.options.appId], enabled).catch((e)=>logger.error(e));
+}
+/**
+ * Adds data that will be set on every event logged from the SDK, including automatic ones.
+ * With gtag's "set" command, the values passed persist on the current page and are passed with
+ * all subsequent events.
+ * @public
+ * @param customParams - Any custom params the user may pass to gtag.js.
+ */ function setDefaultEventParameters(customParams) {
+    // Check if reference to existing gtag function on window object exists
+    if (wrappedGtagFunction) {
+        wrappedGtagFunction("set" /* GtagCommand.SET */ , customParams);
+    } else {
+        _setDefaultEventParametersForInit(customParams);
+    }
+}
+/**
+ * Sends a Google Analytics event with given `eventParams`. This method
+ * automatically associates this logged event with this Firebase web
+ * app instance on this device.
+ * List of official event parameters can be found in the gtag.js
+ * reference documentation:
+ * {@link https://developers.google.com/gtagjs/reference/ga4-events
+ * | the GA4 reference documentation}.
+ *
+ * @public
+ */ function logEvent(analyticsInstance, eventName, eventParams, options) {
+    analyticsInstance = (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$util$2f$dist$2f$node$2d$esm$2f$index$2e$node$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getModularInstance"])(analyticsInstance);
+    logEvent$1(wrappedGtagFunction, initializationPromisesMap[analyticsInstance.app.options.appId], eventName, eventParams, options).catch((e)=>logger.error(e));
+}
+/**
+ * Sets the applicable end user consent state for this web app across all gtag references once
+ * Firebase Analytics is initialized.
+ *
+ * Use the {@link ConsentSettings} to specify individual consent type values. By default consent
+ * types are set to "granted".
+ * @public
+ * @param consentSettings - Maps the applicable end user consent state for gtag.js.
+ */ function setConsent(consentSettings) {
+    // Check if reference to existing gtag function on window object exists
+    if (wrappedGtagFunction) {
+        wrappedGtagFunction("consent" /* GtagCommand.CONSENT */ , 'update', consentSettings);
+    } else {
+        _setConsentDefaultForInit(consentSettings);
+    }
+}
+const name = "@firebase/analytics";
+const version = "0.10.0";
+/**
+ * Firebase Analytics
+ *
+ * @packageDocumentation
+ */ function registerAnalytics() {
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["_registerComponent"])(new __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$component$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Component"](ANALYTICS_TYPE, (container, { options: analyticsOptions })=>{
+        // getImmediate for FirebaseApp will always succeed
+        const app = container.getProvider('app').getImmediate();
+        const installations = container.getProvider('installations-internal').getImmediate();
+        return factory(app, installations, analyticsOptions);
+    }, "PUBLIC" /* ComponentType.PUBLIC */ ));
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["_registerComponent"])(new __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$component$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Component"]('analytics-internal', internalFactory, "PRIVATE" /* ComponentType.PRIVATE */ ));
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["registerVersion"])(name, version);
+    // BUILD_TARGET will be replaced by values like esm5, esm2017, cjs5, etc during the compilation
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$HairGrowth$2d$Clinic$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm2017$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["registerVersion"])(name, version, 'esm2017');
+    function internalFactory(container) {
+        try {
+            const analytics = container.getProvider(ANALYTICS_TYPE).getImmediate();
+            return {
+                logEvent: (eventName, eventParams, options)=>logEvent(analytics, eventName, eventParams, options)
+            };
+        } catch (e) {
+            throw ERROR_FACTORY.create("interop-component-reg-failed" /* AnalyticsError.INTEROP_COMPONENT_REG_FAILED */ , {
+                reason: e
+            });
+        }
+    }
+}
+registerAnalytics();
+;
+ //# sourceMappingURL=index.esm2017.js.map
+}),
+];
+
+//# sourceMappingURL=a2a7d_5c67aaca._.js.map
