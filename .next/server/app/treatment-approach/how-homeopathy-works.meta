@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/treatment-approach/layout,_N_T_/treatment-approach/how-homeopathy-works/layout,_N_T_/treatment-approach/how-homeopathy-works/page,_N_T_/treatment-approach/how-homeopathy-works"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/treatment-approach/how-homeopathy-works/__PAGE__",
+    "/treatment-approach/how-homeopathy-works",
+    "/treatment-approach",
+    "/_index"
+  ]
+}

@@ -1,0 +1,373 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/blog/[slug]",
+      "regex": "^/blog/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/blog/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/case-studies/[slug]",
+      "regex": "^/case\\-studies/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/case\\-studies/(?<nxtPslug>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/appointment",
+      "regex": "^/appointment(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/appointment(?:/)?$"
+    },
+    {
+      "page": "/blog",
+      "regex": "^/blog(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/blog(?:/)?$"
+    },
+    {
+      "page": "/case-studies",
+      "regex": "^/case\\-studies(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/case\\-studies(?:/)?$"
+    },
+    {
+      "page": "/conditions/acne",
+      "regex": "^/conditions/acne(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/conditions/acne(?:/)?$"
+    },
+    {
+      "page": "/conditions/allergies",
+      "regex": "^/conditions/allergies(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/conditions/allergies(?:/)?$"
+    },
+    {
+      "page": "/conditions/alopecia",
+      "regex": "^/conditions/alopecia(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/conditions/alopecia(?:/)?$"
+    },
+    {
+      "page": "/conditions/anxiety",
+      "regex": "^/conditions/anxiety(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/conditions/anxiety(?:/)?$"
+    },
+    {
+      "page": "/conditions/arthritis",
+      "regex": "^/conditions/arthritis(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/conditions/arthritis(?:/)?$"
+    },
+    {
+      "page": "/conditions/behavioral-support",
+      "regex": "^/conditions/behavioral\\-support(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/conditions/behavioral\\-support(?:/)?$"
+    },
+    {
+      "page": "/conditions/dandruff",
+      "regex": "^/conditions/dandruff(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/conditions/dandruff(?:/)?$"
+    },
+    {
+      "page": "/conditions/eczema",
+      "regex": "^/conditions/eczema(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/conditions/eczema(?:/)?$"
+    },
+    {
+      "page": "/conditions/hair-fall",
+      "regex": "^/conditions/hair\\-fall(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/conditions/hair\\-fall(?:/)?$"
+    },
+    {
+      "page": "/conditions/immunity",
+      "regex": "^/conditions/immunity(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/conditions/immunity(?:/)?$"
+    },
+    {
+      "page": "/conditions/low-immunity",
+      "regex": "^/conditions/low\\-immunity(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/conditions/low\\-immunity(?:/)?$"
+    },
+    {
+      "page": "/conditions/migraine",
+      "regex": "^/conditions/migraine(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/conditions/migraine(?:/)?$"
+    },
+    {
+      "page": "/conditions/sinus",
+      "regex": "^/conditions/sinus(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/conditions/sinus(?:/)?$"
+    },
+    {
+      "page": "/conditions/sleep-disturbance",
+      "regex": "^/conditions/sleep\\-disturbance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/conditions/sleep\\-disturbance(?:/)?$"
+    },
+    {
+      "page": "/conditions/stress",
+      "regex": "^/conditions/stress(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/conditions/stress(?:/)?$"
+    },
+    {
+      "page": "/conditions/thyroid",
+      "regex": "^/conditions/thyroid(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/conditions/thyroid(?:/)?$"
+    },
+    {
+      "page": "/doctor",
+      "regex": "^/doctor(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/doctor(?:/)?$"
+    },
+    {
+      "page": "/faq",
+      "regex": "^/faq(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/faq(?:/)?$"
+    },
+    {
+      "page": "/google-reviews",
+      "regex": "^/google\\-reviews(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/google\\-reviews(?:/)?$"
+    },
+    {
+      "page": "/HairGrowth",
+      "regex": "^/HairGrowth(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/HairGrowth(?:/)?$"
+    },
+    {
+      "page": "/HairGrowth/coach",
+      "regex": "^/HairGrowth/coach(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/HairGrowth/coach(?:/)?$"
+    },
+    {
+      "page": "/HairGrowth/plans",
+      "regex": "^/HairGrowth/plans(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/HairGrowth/plans(?:/)?$"
+    },
+    {
+      "page": "/HairGrowth/register",
+      "regex": "^/HairGrowth/register(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/HairGrowth/register(?:/)?$"
+    },
+    {
+      "page": "/HairGrowth/stage",
+      "regex": "^/HairGrowth/stage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/HairGrowth/stage(?:/)?$"
+    },
+    {
+      "page": "/payment-method",
+      "regex": "^/payment\\-method(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/payment\\-method(?:/)?$"
+    },
+    {
+      "page": "/payment-method/clinic",
+      "regex": "^/payment\\-method/clinic(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/payment\\-method/clinic(?:/)?$"
+    },
+    {
+      "page": "/payment-method/emi",
+      "regex": "^/payment\\-method/emi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/payment\\-method/emi(?:/)?$"
+    },
+    {
+      "page": "/payment-method/failed",
+      "regex": "^/payment\\-method/failed(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/payment\\-method/failed(?:/)?$"
+    },
+    {
+      "page": "/payment-method/online",
+      "regex": "^/payment\\-method/online(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/payment\\-method/online(?:/)?$"
+    },
+    {
+      "page": "/payment-method/success",
+      "regex": "^/payment\\-method/success(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/payment\\-method/success(?:/)?$"
+    },
+    {
+      "page": "/pricing/clinic-consultation",
+      "regex": "^/pricing/clinic\\-consultation(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/pricing/clinic\\-consultation(?:/)?$"
+    },
+    {
+      "page": "/pricing/family-wellness",
+      "regex": "^/pricing/family\\-wellness(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/pricing/family\\-wellness(?:/)?$"
+    },
+    {
+      "page": "/pricing/monthly-plans",
+      "regex": "^/pricing/monthly\\-plans(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/pricing/monthly\\-plans(?:/)?$"
+    },
+    {
+      "page": "/pricing/online-consultation",
+      "regex": "^/pricing/online\\-consultation(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/pricing/online\\-consultation(?:/)?$"
+    },
+    {
+      "page": "/privacy-policy",
+      "regex": "^/privacy\\-policy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/privacy\\-policy(?:/)?$"
+    },
+    {
+      "page": "/refund-policy",
+      "regex": "^/refund\\-policy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/refund\\-policy(?:/)?$"
+    },
+    {
+      "page": "/SkinCare",
+      "regex": "^/SkinCare(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/SkinCare(?:/)?$"
+    },
+    {
+      "page": "/terms-and-conditions",
+      "regex": "^/terms\\-and\\-conditions(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/terms\\-and\\-conditions(?:/)?$"
+    },
+    {
+      "page": "/testimonials",
+      "regex": "^/testimonials(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/testimonials(?:/)?$"
+    },
+    {
+      "page": "/treatment-approach/custom-programs",
+      "regex": "^/treatment\\-approach/custom\\-programs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/treatment\\-approach/custom\\-programs(?:/)?$"
+    },
+    {
+      "page": "/treatment-approach/digital-diagnosis-method",
+      "regex": "^/treatment\\-approach/digital\\-diagnosis\\-method(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/treatment\\-approach/digital\\-diagnosis\\-method(?:/)?$"
+    },
+    {
+      "page": "/treatment-approach/home-vs-clinic-care",
+      "regex": "^/treatment\\-approach/home\\-vs\\-clinic\\-care(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/treatment\\-approach/home\\-vs\\-clinic\\-care(?:/)?$"
+    },
+    {
+      "page": "/treatment-approach/how-homeopathy-works",
+      "regex": "^/treatment\\-approach/how\\-homeopathy\\-works(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/treatment\\-approach/how\\-homeopathy\\-works(?:/)?$"
+    },
+    {
+      "page": "/treatment-approach/safety-and-research",
+      "regex": "^/treatment\\-approach/safety\\-and\\-research(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/treatment\\-approach/safety\\-and\\-research(?:/)?$"
+    },
+    {
+      "page": "/videos",
+      "regex": "^/videos(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/videos(?:/)?$"
+    },
+    {
+      "page": "/WeightLoss",
+      "regex": "^/WeightLoss(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/WeightLoss(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

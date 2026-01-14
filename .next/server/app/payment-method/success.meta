@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/payment-method/layout,_N_T_/payment-method/success/layout,_N_T_/payment-method/success/page,_N_T_/payment-method/success"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/payment-method/success/__PAGE__",
+    "/payment-method/success",
+    "/payment-method",
+    "/_index"
+  ]
+}

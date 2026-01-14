@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/conditions/layout,_N_T_/conditions/eczema/layout,_N_T_/conditions/eczema/page,_N_T_/conditions/eczema"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/conditions/eczema/__PAGE__",
+    "/conditions/eczema",
+    "/conditions",
+    "/_index"
+  ]
+}

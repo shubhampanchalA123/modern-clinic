@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/treatment-approach/layout,_N_T_/treatment-approach/safety-and-research/layout,_N_T_/treatment-approach/safety-and-research/page,_N_T_/treatment-approach/safety-and-research"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/treatment-approach/safety-and-research/__PAGE__",
+    "/treatment-approach/safety-and-research",
+    "/treatment-approach",
+    "/_index"
+  ]
+}

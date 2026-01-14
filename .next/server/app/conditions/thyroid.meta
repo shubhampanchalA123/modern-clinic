@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/conditions/layout,_N_T_/conditions/thyroid/layout,_N_T_/conditions/thyroid/page,_N_T_/conditions/thyroid"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/conditions/thyroid/__PAGE__",
+    "/conditions/thyroid",
+    "/conditions",
+    "/_index"
+  ]
+}

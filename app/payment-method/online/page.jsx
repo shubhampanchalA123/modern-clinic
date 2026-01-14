@@ -2,12 +2,12 @@
 
 import { motion } from "framer-motion";
 import { useSearchParams, useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { verifyPayment } from "@/redux/slices/registerSlice";
 import { createAppointmentOrder, verifyAppointmentPayment } from "@/redux/slices/appointmentSlice";
 
-export default function OnlinePaymentPage() {
+function OnlinePaymentPageInner() {
   const params = useSearchParams();
   const router = useRouter();
   const dispatch = useDispatch();
@@ -149,5 +149,13 @@ export default function OnlinePaymentPage() {
         </button>
       </motion.div>
     </div>
+  );
+}
+
+export default function OnlinePaymentPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <OnlinePaymentPageInner />
+    </Suspense>
   );
 }

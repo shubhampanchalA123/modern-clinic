@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/conditions/layout,_N_T_/conditions/hair-fall/layout,_N_T_/conditions/hair-fall/page,_N_T_/conditions/hair-fall"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/conditions/hair-fall/__PAGE__",
+    "/conditions/hair-fall",
+    "/conditions",
+    "/_index"
+  ]
+}

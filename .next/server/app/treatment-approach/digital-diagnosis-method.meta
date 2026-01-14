@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/treatment-approach/layout,_N_T_/treatment-approach/digital-diagnosis-method/layout,_N_T_/treatment-approach/digital-diagnosis-method/page,_N_T_/treatment-approach/digital-diagnosis-method"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/treatment-approach/digital-diagnosis-method/__PAGE__",
+    "/treatment-approach/digital-diagnosis-method",
+    "/treatment-approach",
+    "/_index"
+  ]
+}

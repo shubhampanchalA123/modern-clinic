@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/HairGrowth/layout,_N_T_/HairGrowth/coach/layout,_N_T_/HairGrowth/coach/page,_N_T_/HairGrowth/coach"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/HairGrowth/coach/__PAGE__",
+    "/HairGrowth/coach",
+    "/HairGrowth",
+    "/_index"
+  ]
+}
