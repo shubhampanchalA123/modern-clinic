@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///E:/Jai%20Shree%20Ram/Modern%20Technology/Hair%20Transplant/hairgrowth-clinic/HairGrowth-Clinic/components/ui/button.jsx"],"sourcesContent":["export function Button({ children, className = '', variant = 'default', ...props }) {\n  const base = 'px-4 py-2 rounded-md font-medium'\n  const styles = variant === 'ghost' ? 'bg-transparent border' : 'bg-emerald-600 text-white'\n  return <button className={`${base} ${styles} ${className}`} {...props}>{children}</button>\n}\n"],"names":[],"mappings":";;;;;;AAAO,SAAS,OAAO,EAAE,QAAQ,EAAE,YAAY,EAAE,EAAE,UAAU,SAAS,EAAE,GAAG,OAAO;IAChF,MAAM,OAAO;IACb,MAAM,SAAS,YAAY,UAAU,0BAA0B;IAC/D,qBAAO,6LAAC;QAAO,WAAW,GAAG,KAAK,CAAC,EAAE,OAAO,CAAC,EAAE,WAAW;QAAG,GAAG,KAAK;kBAAG;;;;;;AAC1E;KAJgB","debugId":null}}]
-}

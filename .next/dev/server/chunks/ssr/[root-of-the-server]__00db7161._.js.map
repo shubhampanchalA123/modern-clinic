@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///E:/Jai%20Shree%20Ram/Modern%20Technology/Hair%20Transplant/HairGrowth-Clinic/HairGrowth-Clinic/app/blog/%5Bslug%5D/page.jsx"],"sourcesContent":["import BlogArticle from \"@/components/blog/BlogArticle\";\r\n\r\nexport default function BlogPost({ params }) {\r\n  return <BlogArticle slug={params.slug} />;\r\n}\r\n"],"names":[],"mappings":";;;;;;;;;;;;AAEe,SAAS,SAAS,EAAE,MAAM,EAAE;IACzC,qBAAO,8OAAC;QAAY,MAAM,OAAO,IAAI;;;;;;AACvC","debugId":null}}]
-}

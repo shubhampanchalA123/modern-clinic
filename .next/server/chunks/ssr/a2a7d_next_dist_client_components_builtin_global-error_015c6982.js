@@ -1,3 +1,0 @@
-module.exports=[25769,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(96802);a.n(d("[project]/HairGrowth-Clinic/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},38925,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(96802);a.n(d("[project]/HairGrowth-Clinic/node_modules/next/dist/client/components/builtin/global-error.js"))},53199,a=>{"use strict";a.i(25769);var b=a.i(38925);a.n(b)}];
-
-//# sourceMappingURL=a2a7d_next_dist_client_components_builtin_global-error_015c6982.js.map
