@@ -47,6 +47,7 @@ export const createAppointmentOrder = createAsyncThunk(
       const response = await axiosClient.post("payments/appointment/create-order", {
         appointmentId,
         amount
+        
       });
       return response.data;
     } catch (error) {
