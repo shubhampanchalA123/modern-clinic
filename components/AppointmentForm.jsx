@@ -6,8 +6,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useDispatch, useSelector } from "react-redux";
 import { auth } from "@/lib/firebase";
-import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
-import { registerAppointment, verifyAppointmentOtp, clearApiState } from "@/redux/slices/appointmentSlice";
+import { registerAppointment, clearApiState } from "@/redux/slices/appointmentSlice";
 import AppointmentSelector from "@/components/AppointmentSelector";
 import {
     User,
@@ -35,23 +34,15 @@ export default function AppointmentForm() {
     });
 
     const [openDropdown, setOpenDropdown] = useState(null);
-    const [confirmationResult, setConfirmationResult] = useState(null);
-    const [showOtpModal, setShowOtpModal] = useState(false);
-    const [otp, setOtp] = useState("");
-    const [otpSent, setOtpSent] = useState(false);
     const [errors, setErrors] = useState({});
     const [showPlanSelector, setShowPlanSelector] = useState(false);
     const [selectedPlan, setSelectedPlan] = useState(null);
     const dropdownRef = useRef(null);
-    const recaptchaRef = useRef(null);
 
     /* RESET STATE ON MOUNT */
     useEffect(() => {
         setSelectedPlan(null);
         setErrors({});
-        setShowOtpModal(false);
-        setOtp("");
-        setOtpSent(false);
         dispatch(clearApiState());
     }, [dispatch]);
 
@@ -67,106 +58,21 @@ export default function AppointmentForm() {
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
 
-    // Initialize Recaptcha
-    useEffect(() => {
-        if (!recaptchaRef.current) {
-            recaptchaRef.current = new RecaptchaVerifier(
-                "recaptcha-container-appointment",
-                { size: "invisible" },
-                auth
-            );
-        }
-    }, []);
 
 
-    // Handle verify appointment success → close modal, show plan selector
-    useEffect(() => {
-        if (verifyAppointmentSuccess) {
-            setShowOtpModal(false);
-            setShowPlanSelector(true);
-        }
-    }, [verifyAppointmentSuccess]);
 
     // Handle errors
     useEffect(() => {
         if (error) {
             console.log("Appointment error occurred:", error);
-            // Only alert if we are in the appointment flow (showPlanSelector or showOtpModal)
-            if (showPlanSelector || showOtpModal) {
+            // Only alert if we are in the appointment flow (showPlanSelector)
+            if (showPlanSelector) {
                 alert(error);
             }
             dispatch(clearApiState());
         }
-    }, [error, dispatch, showPlanSelector, showOtpModal]);
+    }, [error, dispatch, showPlanSelector]);
 
-    // Send OTP via Firebase
-    async function sendOtp() {
-        console.log("sendOtp called from:", typeof window !== "undefined" ? window.location.pathname : "server");
-        try {
-            if (!registerAppointmentSuccess) {
-                alert("Registration not complete. Please wait.");
-                return;
-            }
-
-            if (!recaptchaRef.current) {
-                alert("Recaptcha not ready! Try again.");
-                return;
-            }
-
-            // Validate phone number
-            const cleanPhone = form.phone.replace(/\D/g, ''); // Remove non-digits
-            if (cleanPhone.length !== 10) {
-                alert("Please enter a valid 10-digit phone number.");
-                return;
-            }
-
-            const phone = "+91" + cleanPhone;
-            console.log("Sending OTP to phone:", phone);
-            const result = await signInWithPhoneNumber(auth, phone, recaptchaRef.current);
-
-            setConfirmationResult(result);
-            setOtpSent(true);
-            console.log("OTP sent successfully");
-        } catch (err) {
-            console.log("SEND OTP ERROR:", err);
-            console.log("Error code:", err.code);
-            console.log("Error message:", err.message);
-            alert("OTP sending failed. Try again.");
-        }
-    }
-
-    // Verify OTP
-    async function verifyOtp() {
-        console.log("verifyOtp called from:", typeof window !== "undefined" ? window.location.pathname : "server");
-        try {
-            if (!confirmationResult) {
-                alert("OTP expired. Please resend.");
-                return;
-            }
-
-            console.log("Verifying OTP:", otp);
-            // Confirm OTP with Firebase
-            await confirmationResult.confirm(otp);
-
-            // Get Firebase ID token
-            const idToken = await auth.currentUser.getIdToken();
-            console.log("Firebase verification successful, dispatching backend verify");
-
-            // Dispatch verify action
-            dispatch(
-                verifyAppointmentOtp({
-                    phone: form.phone,
-                    idToken: idToken,
-                    appointmentId: appointmentId,
-                })
-            );
-        } catch (err) {
-            console.log("VERIFY ERROR", err);
-            console.log("Error code:", err.code);
-            console.log("Error message:", err.message);
-            alert("Invalid OTP");
-        }
-    }
 
     function validateForm() {
         let err = {};
@@ -174,6 +80,7 @@ export default function AppointmentForm() {
         if (!form.name.trim()) err.name = "Name is required";
         if (!form.email.trim()) err.email = "Email is required";
         if (!form.phone.trim()) err.phone = "Phone is required";
+        else if (!/^[6-9]\d{9}$/.test(form.phone)) err.phone = "Please enter a valid 10-digit mobile number starting with 6-9";
         if (!form.region) err.region = "Region is required";
         if (!form.disease) err.disease = "Condition is required";
 
@@ -193,11 +100,11 @@ export default function AppointmentForm() {
             region: form.region,
             condition: form.disease,
         }));
-        setShowOtpModal(true);
+        setShowPlanSelector(true);
     }
 
     const diseaseCategories = [
-        "Hair Fall",
+        "Hair Treatment",
         "Respiratory",
         "Skin Disorders",
         "Gastrointestinal",
@@ -233,7 +140,6 @@ export default function AppointmentForm() {
             className="max-w-3xl mx-auto bg-card/70 backdrop-blur-xl border border-border shadow-lg rounded-3xl p-6 md:p-8 mt-10"
             ref={dropdownRef}
         >
-            <div id="recaptcha-container-appointment"></div>
             {/* HEADER */}
             <div className="text-center mb-6">
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground flex justify-center gap-2">
@@ -292,9 +198,11 @@ export default function AppointmentForm() {
                         placeholder="9999999999"
                         value={form.phone}
                         onChange={(e) => {
-                          setForm((prev) => ({ ...prev, phone: e.target.value }));
+                          const value = e.target.value.replace(/\D/g, '').slice(0,10);
+                          setForm((prev) => ({ ...prev, phone: value }));
                           if (errors.phone) setErrors(prev => ({ ...prev, phone: undefined }));
                         }}
+                        maxLength={10}
                     />
                     {errors.phone && <p className="text-red-600 text-sm mt-1">{errors.phone}</p>}
                 </div>
@@ -426,57 +334,6 @@ export default function AppointmentForm() {
                     </div>
                 )}
 
-            {/* OTP MODAL */}
-            {showOtpModal && (
-                <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-                    <div className="bg-card p-6 rounded-2xl shadow-lg max-w-sm w-full mx-4">
-                        <h3 className="text-lg font-semibold text-center mb-4">Verify Your Phone</h3>
-                        <p className="text-center text-muted-foreground mb-4">
-                            OTP will be sent to +91 {form.phone}
-                        </p>
-                        {!otpSent ? (
-                            <button
-                                onClick={sendOtp}
-                                disabled={loading || !registerAppointmentSuccess}
-                                className="w-full px-4 py-2 rounded-xl bg-primary text-primary-foreground hover:bg-primary/80 transition disabled:opacity-50 mb-4"
-                            >
-                                {loading ? "Sending OTP..." : "Send OTP"}
-                            </button>
-                        ) : (
-                            <>
-                                <input
-                                    type="text"
-                                    className="w-full border border-border bg-background px-3 py-2 rounded text-foreground text-center text-lg mb-4"
-                                    placeholder="Enter 6-digit OTP"
-                                    value={otp}
-                                    onChange={(e) => {
-                                        const value = e.target.value.replace(/\D/g, ''); // Only allow digits
-                                        if (value.length <= 6) {
-                                            setOtp(value);
-                                        }
-                                    }}
-                                    maxLength={6}
-                                />
-                                <div className="flex gap-2">
-                                    <button
-                                        onClick={() => setShowOtpModal(false)}
-                                        className="flex-1 px-4 py-2 rounded-xl border border-border hover:bg-secondary/15 transition"
-                                    >
-                                        Cancel
-                                    </button>
-                                    <button
-                                        onClick={verifyOtp}
-                                        disabled={loading}
-                                        className="flex-1 px-4 py-2 rounded-xl bg-accent text-accent-foreground hover:bg-accent/80 transition disabled:opacity-50"
-                                    >
-                                        {loading ? "Verifying..." : "Verify"}
-                                    </button>
-                                </div>
-                            </>
-                        )}
-                    </div>
-                </div>
-            )}
         </motion.div>
     );
 }

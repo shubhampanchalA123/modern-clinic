@@ -9,7 +9,6 @@ import QuestionCard from "@/components/Register/QuestionCard";
 import PhotoUploader from "@/components/Register/PhotoUploader";
 import PlanSelector from "@/components/PlanSelector";
 import { auth } from "@/lib/firebase";
-import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import useBaseURL from "@/hooks/useBaseURL";
 import { MapPin, ChevronDown } from "lucide-react";
 import { registerUser, verifyUser, submitData, createOrder, clearApiState } from "@/redux/slices/registerSlice";
@@ -32,7 +31,7 @@ export default function RegisterFlow() {
     age: "",
     region: "",
     gender: "",
-    healthIssue: "hair fall",
+    healthIssue: "Hair Treatment",
     stage: null,
     hair: {},
     internal: {},
@@ -42,12 +41,6 @@ export default function RegisterFlow() {
   });
 
   const [openDropdown, setOpenDropdown] = useState(null);
-  const [confirmationResult, setConfirmationResult] = useState(null);
-  const recaptchaRef = useRef(null);
-
-  const [otpModalOpen, setOtpModalOpen] = useState(false);
-  const [otpSent, setOtpSent] = useState(false);
-  const [otp, setOtp] = useState("");
 
   const baseURL = useBaseURL();
 
@@ -60,7 +53,7 @@ export default function RegisterFlow() {
   ];
 
   const healthIssues = [
-    "Hair Fall",
+    "Hair Treatment",
     "Respiratory",
     "Skin Disorders",
     "Gastrointestinal",
@@ -75,36 +68,18 @@ export default function RegisterFlow() {
   ];
 
 
-  // Initialize Recaptcha
-  useEffect(() => {
-    if (!recaptchaRef.current) {
-      recaptchaRef.current = new RecaptchaVerifier(
-        "recaptcha-container",
-        { size: "invisible" },
-        auth
-      );
-    }
-  }, []);
 
-  // Handle registration success → automatically proceed to verify
+  // Handle registration success → proceed to next step
   useEffect(() => {
     if (registerSuccess && consultantId) {
       console.log("Registration successful! ConsultantId:", consultantId);
       localStorage.setItem("consultantId", consultantId);
-      // Now send OTP via Firebase
-      sendOtp();
-    }
-  }, [registerSuccess, consultantId]);
-
-  // Handle verify success → move to step 1 or 4
-  useEffect(() => {
-    if (verifySuccess) {
-      setOtpModalOpen(false);
-      setStep(form.healthIssue === "hair fall" ? 1 : 4);
+      setStep(form.healthIssue === "Hair Treatment" ? 1 : 4);
       window.scrollTo({ top: 0, behavior: "smooth" });
       dispatch(clearApiState());
     }
-  }, [verifySuccess, form.healthIssue]);
+  }, [registerSuccess, consultantId, form.healthIssue]);
+
 
   // Handle submit success → create order
   useEffect(() => {
@@ -141,52 +116,6 @@ export default function RegisterFlow() {
     }
   }, [error]);
 
-  // Send OTP via Firebase
-  async function sendOtp() {
-    try {
-      if (!recaptchaRef.current) {
-        alert("Recaptcha not ready! Try again.");
-        return;
-      }
-
-      const phone = "+91" + form.phone;
-      const result = await signInWithPhoneNumber(auth, phone, recaptchaRef.current);
-
-      setConfirmationResult(result);
-      setOtpSent(true);
-    } catch (err) {
-      console.log("SEND OTP ERROR:", err);
-      alert("OTP sending failed. Try again.");
-    }
-  }
-
-  // Verify OTP and call Redux verify API
-  async function verifyOtp() {
-    try {
-      if (!confirmationResult) {
-        alert("OTP expired. Please resend.");
-        return;
-      }
-
-      // Confirm OTP with Firebase
-      await confirmationResult.confirm(otp);
-
-      // Get Firebase ID token
-      const idToken = await auth.currentUser.getIdToken();
-
-      // Dispatch Redux verify action
-      dispatch(
-        verifyUser({
-          mobile: form.phone,
-          idToken: idToken,
-          consultantId: consultantId,
-        })
-      );
-    } catch (err) {
-      console.log("VERIFY ERROR", err);
-      alert("Invalid OTP");
-    }
-  }
 
   // Validation
   function validateStep() {
@@ -195,6 +124,7 @@ export default function RegisterFlow() {
     if (step === 0) {
       if (!form.name.trim()) err.name = "Name is required";
       if (!form.phone.trim()) err.phone = "Phone is required";
+      else if (!/^[6-9]\d{9}$/.test(form.phone)) err.phone = "Please enter a valid 10-digit mobile number starting with 6-9";
       if (!form.age) err.age = "Age is required";
       if (!form.gender) err.gender = "Gender is required";
       if (!form.region) err.region = "Region is required";
@@ -231,7 +161,6 @@ export default function RegisterFlow() {
           healthIssue: form.healthIssue,
         })
       );
-      setOtpModalOpen(true);
       return;
     }
 
@@ -247,7 +176,7 @@ export default function RegisterFlow() {
     } else if (step === 3) {
       setStep(2);
     } else if (step === 4) {
-      if (form.healthIssue === "hair fall") {
+      if (form.healthIssue === "Hair Treatment") {
         setStep(3);
       } else {
         setStep(0);
@@ -395,7 +324,6 @@ export default function RegisterFlow() {
   return (
     <div className="min-h-screen py-8 bg-background-soft">
       <main className="max-w-4xl mx-auto px-6">
-        <div id="recaptcha-container"></div>
 
         {/* Top Bar */}
         <div className="flex justify-between mb-4 text-sm text-muted-foreground">
@@ -434,7 +362,9 @@ export default function RegisterFlow() {
                 <input
                   className="w-full border border-border bg-background px-3 py-2 rounded mt-1 text-foreground"
                   value={form.phone}
-                  onChange={(e) => updateField("phone", e.target.value)}
+                  onChange={(e) => updateField("phone", e.target.value.replace(/\D/g, '').slice(0,10))}
+                  placeholder="9999999999"
+                  maxLength={10}
                 />
                 {errors.phone && (
                   <p className="text-red-600 text-sm mt-1">{errors.phone}</p>
@@ -558,7 +488,7 @@ export default function RegisterFlow() {
           )}
 
           {/* STEP 1 — HAIR HEALTH */}
-          {step === 1 && form.healthIssue === "hair fall" && (
+          {step === 1 && form.healthIssue === "Hair Treatment" && (
             <>
               <h2 className="text-4xl text-center font-bold mb-8 text-foreground">
                 Hair Health
@@ -602,7 +532,7 @@ export default function RegisterFlow() {
           )}
 
           {/* STEP 2 — INTERNAL HEALTH */}
-          {step === 2 && form.healthIssue === "hair fall" && (
+          {step === 2 && form.healthIssue === "Hair Treatment" && (
             <>
               <h2 className="text-4xl text-center font-bold mb-8 text-foreground">
                 Internal Health
@@ -623,7 +553,7 @@ export default function RegisterFlow() {
           )}
 
           {/* STEP 3 — SCALP PHOTO */}
-          {step === 3 && form.healthIssue === "hair fall" && (
+          {step === 3 && form.healthIssue === "Hair Treatment" && (
             <>
               <h2 className="text-2xl font-semibold text-center mb-4 text-foreground">
                 Upload your scalp picture
@@ -682,58 +612,6 @@ export default function RegisterFlow() {
           </div>
         </div>
 
-        {/* OTP MODAL */}
-        {otpModalOpen && (
-          <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-            <div className="bg-white p-6 rounded-xl shadow-xl w-full max-w-md">
-              <h2 className="text-xl font-semibold text-center mb-4">
-                Verify Your Phone
-              </h2>
-
-              <p className="text-center text-gray-600 text-sm mb-2">
-                OTP will be sent to:
-              </p>
-              <p className="text-center font-medium mb-4">
-                +91 {form.phone}
-              </p>
-
-              {!otpSent ? (
-                <div className="text-center text-gray-500">
-                  Sending OTP...
-                </div>
-              ) : (
-                <>
-                  <input
-                    type="text"
-                    className="w-full border px-3 py-2 rounded mb-3"
-                    placeholder="Enter OTP"
-                    value={otp}
-                    onChange={(e) => setOtp(e.target.value)}
-                  />
-
-                  <button
-                    onClick={verifyOtp}
-                    disabled={loading}
-                    className="w-full bg-primary text-white py-2 rounded-lg disabled:opacity-50"
-                  >
-                    {loading ? "Verifying..." : "Verify OTP"}
-                  </button>
-                </>
-              )}
-
-              <button
-                onClick={() => {
-                  setOtpModalOpen(false);
-                  setOtpSent(false);
-                  setOtp("");
-                }}
-                className="mt-4 w-full text-center text-gray-500 text-sm"
-              >
-                Cancel
-              </button>
-            </div>
-          </div>
-        )}
       </main>
     </div>
   );
