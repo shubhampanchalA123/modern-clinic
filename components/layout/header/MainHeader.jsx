@@ -215,9 +215,9 @@ export default function Navbar() {
 
                     {/* RIGHT — LOGIN + CTA */}
                     <div className="hidden md:flex items-center gap-6">
-                        <Link href="/login" className="flex items-center gap-1 hover:text-primary">
+                        {/* <Link href="/login" className="flex items-center gap-1 hover:text-primary">
                             <User size={18} /> Login
-                        </Link>
+                        </Link> */}
 
                         <Link
                             href="/HairGrowth/register"
