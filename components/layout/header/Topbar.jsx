@@ -11,7 +11,7 @@ export default function TopBar() {
                 {/* LEFT SIDE */}
                 <div className="flex items-center gap-4">
                     <span className="opacity-90">
-                        Trusted Homeopathy Care Since 2000
+                        Trusted Wellness Care Since 2012
                     </span>
 
                     <span className="opacity-90 hidden sm:block">

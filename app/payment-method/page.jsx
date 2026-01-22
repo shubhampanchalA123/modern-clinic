@@ -11,19 +11,7 @@ export default function PaymentMethodPage() {
       desc: "Pay instantly using UPI, Card or Net Banking.",
       icon: <CreditCard className="w-6 h-6 text-primary" />,
       href: "/payment-method/online",
-    },
-    {
-      title: "Pay at Clinic",
-      desc: "Reserve your slot and pay during the clinic visit.",
-      icon: <Wallet className="w-6 h-6 text-primary" />,
-      href: "/payment-method/clinic",
-    },
-    {
-      title: "EMI / Installments",
-      desc: "Flexible monthly payment options.",
-      icon: <Banknote className="w-6 h-6 text-primary" />,
-      href: "/payment-method/emi",
-    },
+    }
   ];
 
   return (

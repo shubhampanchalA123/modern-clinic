@@ -2,9 +2,9 @@
 
 import React from "react";
 
-export default function ProgressTabs({ step = 0, healthIssue = "hair fall" }) {
+export default function ProgressTabs({ step = 0, healthIssue = "Hair Treatment" }) {
   const tabs = ["About You", "Hair Health", "Internal Health", "Scalp Assessment", "Plan Selection"];
-  const percent = healthIssue === "hair fall" ? Math.round((step / 4) * 100) : (step === 0 ? 0 : 100);
+  const percent = healthIssue === "Hair Treatment" ? Math.round((step / 4) * 100) : (step === 0 ? 0 : 100);
 
   return (
     <div className="w-full">
@@ -24,7 +24,7 @@ export default function ProgressTabs({ step = 0, healthIssue = "hair fall" }) {
           "
         >
           {tabs.map((t, i) => {
-            if (healthIssue !== "hair fall" && i > 0 && i < 4) return null;
+            if (healthIssue !== "Hair Treatment" && i > 0 && i < 4) return null;
             return (
               <div
                 key={t}

@@ -40,20 +40,48 @@ function OnlinePaymentPageInner() {
     return null;
   };
 
+  // Get appointment order data
+  const getAppointmentOrderData = () => {
+    const data = localStorage.getItem("appointmentOrderData");
+    if (data) {
+      const parsed = JSON.parse(data);
+      return parsed;
+    }
+    return null;
+  };
+
   const appointmentData = getAppointmentData();
-  const appointmentId = appointmentData?.appointmentId;
+  const appointmentOrderData = getAppointmentOrderData();
+
+  const appointmentId = appointmentData?.appointmentId || appointmentOrderData?.appointmentId;
   const appointmentAmount = appointmentData?.amount;
 
-  // Check if appointment and create order
+  // Function to get currency symbol
+  const getCurrencySymbol = (currency) => {
+    switch (currency) {
+      case "USD":
+        return "$";
+      case "INR":
+        return "₹";
+      case "EUR":
+        return "€";
+      default:
+        return "₹"; // Default to INR
+    }
+  };
+
+  // Check if appointment
   useEffect(() => {
-    if (appointmentId && appointmentAmount && !orderId) {
+    if (appointmentOrderData) {
+      setIsAppointment(true);
+    } else if (appointmentId && appointmentAmount && !orderId) {
       setIsAppointment(true);
       dispatch(createAppointmentOrder({
         appointmentId,
         amount: parseInt(appointmentAmount)
       }));
     }
-  }, [appointmentId, appointmentAmount, orderId, dispatch]);
+  }, [appointmentId, appointmentAmount, orderId, appointmentOrderData, dispatch]);
 
   // Load Razorpay script
   useEffect(() => {
@@ -87,6 +115,7 @@ function OnlinePaymentPageInner() {
           })).then((result) => {
             if (result.meta.requestStatus === "fulfilled") {
               localStorage.removeItem("appointmentData");
+              localStorage.removeItem("appointmentOrderData");
               router.push("/payment-method/success");
             } else {
               router.push("/payment-method/failed");
@@ -138,7 +167,7 @@ function OnlinePaymentPageInner() {
       >
         <div className="mb-4">
           <p className="text-sm text-muted-foreground">Order ID: {orderId}</p>
-          <p className="text-sm text-muted-foreground">Amount: ₹{amount / 100}</p>
+          <p className="text-sm text-muted-foreground">Amount: {getCurrencySymbol(currency)}{amount / 100}</p>
         </div>
         <button
           onClick={handlePayment}

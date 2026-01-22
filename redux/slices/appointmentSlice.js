@@ -42,12 +42,12 @@ export const verifyAppointmentOtp = createAsyncThunk(
 // ------------------- CREATE APPOINTMENT ORDER API -------------------
 export const createAppointmentOrder = createAsyncThunk(
   "appointment/createAppointmentOrder",
-  async ({ appointmentId, amount }, thunkAPI) => {
+  async ({ appointmentId, selectedPlans, userType }, thunkAPI) => {
     try {
       const response = await axiosClient.post("payments/appointment/create-order", {
         appointmentId,
-        amount
-        
+        selectedPlans,
+        userType
       });
       return response.data;
     } catch (error) {

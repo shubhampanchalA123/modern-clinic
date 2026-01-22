@@ -61,8 +61,15 @@ export const treatmentPlans = [
 ];
 
 
-export default function AppointmentSelector({ plans: propPlans, onSelect, selectedPlan }) {
-  const displayPlans = propPlans || treatmentPlans;
+export default function AppointmentSelector({ plans: propPlans, onSelect, selectedPlan, userType }) {
+  console.log("🔍 AppointmentSelector propPlans:", propPlans);
+  const displayPlans = propPlans ? propPlans.map(p => ({
+    id: p._id,
+    title: p.title,
+    price: userType === "india" ? p.prices?.india : p.prices?.foreign,
+    summary: p.description,
+    includes: p.features || []
+  })) : treatmentPlans;
 
   const handleSelect = (plan) => {
     onSelect(plan);
@@ -76,18 +83,18 @@ export default function AppointmentSelector({ plans: propPlans, onSelect, select
       return (
         <div
           key={p.id}
-          className={`relative bg-white rounded-2xl shadow-md border p-6 flex flex-col transition-all ${
-            isSelected ? "border-blue-500 bg-blue-50 shadow-lg" : "border-gray-200"
+          className={`relative bg-card rounded-2xl shadow-md border p-6 flex flex-col transition-all ${
+            isSelected ? "border-primary bg-secondary/20 shadow-lg" : "border-border"
           }`}
         >
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
-            <h3 className="font-semibold text-lg">{p.title}</h3>
-            <span className="text-xl font-bold">₹{p.price}</span>
+           <h3 className="font-semibold text-lg text-foreground">{p.title}</h3>
+           <span className="text-xl font-bold text-foreground">{userType === "india" ? `₹${p.price}` : `$${p.price}`}</span>
           </div>
 
-          <p className="text-sm text-gray-600 mt-2">{p.summary}</p>
+          <p className="text-sm text-muted-foreground mt-2">{p.summary}</p>
 
-          <ul className="mt-4 text-sm text-gray-700 space-y-2 flex-1">
+          <ul className="mt-4 text-sm text-foreground space-y-2 flex-1">
             {p.includes.map((item) => (
               <li key={item} className="flex gap-2">
                 <span>✔</span> {item}
@@ -96,7 +103,7 @@ export default function AppointmentSelector({ plans: propPlans, onSelect, select
           </ul>
 
           <Button
-            className="w-full mt-5 bg-blue-600 hover:bg-blue-700 text-white"
+            className="w-full mt-5"
             onClick={() => handleSelect(p)}
           >
             Add

@@ -8,10 +8,13 @@ import ProgressTabs from "@/components/Register/ProgressTabs";
 import QuestionCard from "@/components/Register/QuestionCard";
 import PhotoUploader from "@/components/Register/PhotoUploader";
 import PlanSelector from "@/components/PlanSelector";
+import OtherTreatmentPlan from "@/components/OtherTreatmentPlan";
 import { auth } from "@/lib/firebase";
 import useBaseURL from "@/hooks/useBaseURL";
 import { MapPin, ChevronDown } from "lucide-react";
 import { registerUser, verifyUser, submitData, createOrder, clearApiState } from "@/redux/slices/registerSlice";
+import { getPlans } from "@/redux/slices/planslice";
+
 
 export default function RegisterFlow() {
   const router = useRouter();
@@ -26,22 +29,25 @@ export default function RegisterFlow() {
   const [step, setStep] = useState(0);
   const [errors, setErrors] = useState({});
   const [form, setForm] = useState({
-    name: "",
-    phone: "",
-    age: "",
-    region: "",
-    gender: "",
-    healthIssue: "Hair Treatment",
-    stage: null,
-    hair: {},
-    internal: {},
-    scalpPhoto: null,
-    plan: "",
-    planPrice: 0,
+      name: "",
+      phone: "",
+      age: "",
+      region: "",
+      gender: "",
+      healthIssue: "Hair Treatment",
+      stage: null,
+      hair: {},
+      internal: {},
+      scalpPhoto: null,
+      selectedPlans: [],
+      planPrice: 0,
+      addons: [], // keep for OtherTreatmentPlan
   });
 
   const [openDropdown, setOpenDropdown] = useState(null);
+  const userType = form.region === "India" ? "india" : "foreign";
 
+  console.log("Form State:", userType);
   const baseURL = useBaseURL();
 
   const regionList = [
@@ -54,17 +60,8 @@ export default function RegisterFlow() {
 
   const healthIssues = [
     "Hair Treatment",
-    "Respiratory",
-    "Skin Disorders",
-    "Gastrointestinal",
-    "Mental & Emotional Health",
-    "Musculoskeletal",
-    "ENT Problems",
-    "Women’s Health",
-    "Children’s Health",
-    "Chronic Conditions",
-    "Lifestyle-Related Problems",
-    "Obesity"
+    "Obesity",
+    "other"
   ];
 
 
@@ -81,14 +78,19 @@ export default function RegisterFlow() {
   }, [registerSuccess, consultantId, form.healthIssue]);
 
 
+
+
   // Handle submit success → create order
   useEffect(() => {
     if (submitSuccess) {
       const currentConsultantId = consultantId || localStorage.getItem("consultantId");
+      const userType = form.region === "India" ? "india" : "foreign";
       dispatch(createOrder({
         consultantId: currentConsultantId,
-        amount: form.planPrice
+        selectedPlans: form.selectedPlans.map(id => ({ planId: id })),
+        userType
       }));
+
       dispatch(clearApiState());
     }
   }, [submitSuccess]);
@@ -117,6 +119,26 @@ export default function RegisterFlow() {
   }, [error]);
 
 
+  useEffect(() => {
+    if (step !== 4) return;
+
+    if (form.healthIssue === "Hair Treatment") {
+      dispatch(
+        getPlans({
+          type: "HAIR_TREATMENT",
+          region: form.region,
+          stage: form.stage
+        })
+      );
+    }
+
+    if (form.healthIssue === "other") {
+      dispatch(getPlans({ type: "GENERAL", region: form.region }));
+      dispatch(getPlans({ type: "ADDON", region: form.region }));
+    }
+  }, [step, form.healthIssue, form.region, form.stage]);
+
+
   // Validation
   function validateStep() {
     let err = {};
@@ -139,7 +161,7 @@ export default function RegisterFlow() {
     }
 
     if (step === 4) {
-      if (!form.plan) err.plan = "Please select a plan";
+      if (!form.selectedPlans || form.selectedPlans.length === 0) err.selectedPlans = "Please select a plan";
     }
 
     setErrors(err);
@@ -218,7 +240,7 @@ export default function RegisterFlow() {
       scalpAssessment: {
         scalpPhoto: form.scalpPhoto?.name || null
       },
-      plan: form.plan
+      selectedPlans: form.selectedPlans
     };
 
     dispatch(submitData({
@@ -301,14 +323,14 @@ export default function RegisterFlow() {
 
   const stageData = {
     male: [
-      { id: 0, label: "Stage 1 (Mild)", img: "/images/stages/male-stage1.png" },
-      { id: 1, label: "Stage 2 (Moderate)", img: "/images/stages/male-stage2.png" },
-      { id: 2, label: "Stage 3 (Severe)", img: "/images/stages/male-stage3.png" },
+      { id: 1, label: "Stage 1 (Mild)", img: "/images/stages/male-stage1.png" },
+      { id: 2, label: "Stage 2 (Moderate)", img: "/images/stages/male-stage2.png" },
+      { id: 3, label: "Stage 3 (Severe)", img: "/images/stages/male-stage3.png" },
     ],
     female: [
-      { id: 0, label: "Stage 1 (Mild)", img: "/images/stages/female-stage1.png" },
-      { id: 1, label: "Stage 2 (Moderate)", img: "/images/stages/female-stage2.png" },
-      { id: 2, label: "Stage 3 (Severe)", img: "/images/stages/female-stage3.png" },
+      { id: 1, label: "Stage 1 (Mild)", img: "/images/stages/female-stage1.png" },
+      { id: 2, label: "Stage 2 (Moderate)", img: "/images/stages/female-stage2.png" },
+      { id: 3, label: "Stage 3 (Severe)", img: "/images/stages/female-stage3.png" },
     ],
   };
 
@@ -362,7 +384,7 @@ export default function RegisterFlow() {
                 <input
                   className="w-full border border-border bg-background px-3 py-2 rounded mt-1 text-foreground"
                   value={form.phone}
-                  onChange={(e) => updateField("phone", e.target.value.replace(/\D/g, '').slice(0,10))}
+                  onChange={(e) => updateField("phone", e.target.value.replace(/\D/g, '').slice(0, 10))}
                   placeholder="9999999999"
                   maxLength={10}
                 />
@@ -434,6 +456,7 @@ export default function RegisterFlow() {
                         key={r}
                         onClick={() => {
                           updateField("region", r);
+                          localStorage.setItem("userRegion", r);
                           setOpenDropdown(null);
                         }}
                         className="px-3 py-2 hover:bg-secondary/15 rounded-lg cursor-pointer text-sm text-foreground"
@@ -473,7 +496,7 @@ export default function RegisterFlow() {
                       <div
                         key={h}
                         onClick={() => {
-                          updateField("healthIssue", h.toLowerCase());
+                          updateField("healthIssue", h);
                           setOpenDropdown(null);
                         }}
                         className="px-3 py-2 hover:bg-secondary/15 rounded-lg cursor-pointer text-sm text-foreground"
@@ -571,25 +594,45 @@ export default function RegisterFlow() {
           )}
 
           {/* STEP 4 — PLAN SELECTION */}
+
           {step === 4 && (
             <>
               <h2 className="text-4xl text-center font-bold mb-8 text-foreground">
                 Choose Your Plan
               </h2>
 
-              <PlanSelector
-                selectedPlan={form.plan}
-                onSelect={(plan) => {
-                  updateField("plan", plan.id);
-                  updateField("planPrice", plan.price);
-                }}
-              />
+              {form.healthIssue === "other" ? (
+                <OtherTreatmentPlan
+                  userType={userType}
+                  selectedAddons={form.addons}
+                  onChange={(addons, total, basePlan) => {
+                    updateField("addons", addons);
+                    const selectedPlans = [basePlan._id, ...addons.map(a => a._id)];
+                    updateField("selectedPlans", selectedPlans);
+                    updateField("planPrice", total);
+                  }}
+                />
+              ) : (
+                <PlanSelector
+                 planType="HAIR_TREATMENT"
+                  selectedPlan={form.selectedPlans[0]}
+                  userType={userType}
+                  onSelect={(plan) => {
+                    updateField("selectedPlans", [plan._id]);
 
-              {errors.plan && (
-                <p className="text-red-600 text-sm mt-4 text-center">{errors.plan}</p>
+                    const price =
+                      userType === "india"
+                        ? plan.prices?.india
+                        : plan.prices?.foreign;
+
+                    updateField("planPrice", price);
+                  }}
+                />
+
               )}
             </>
           )}
+
 
           {/* BUTTONS */}
           <div className="flex justify-end mt-6">

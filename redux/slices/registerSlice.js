@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axiosClient from "./../axiosClient";
 
-// ------------------- VERIFY USER API -------------------
+/* ================= VERIFY USER ================= */
 export const verifyUser = createAsyncThunk(
   "register/verifyUser",
   async (payload, thunkAPI) => {
@@ -19,7 +19,7 @@ export const verifyUser = createAsyncThunk(
   }
 );
 
-// ------------------- REGISTER USER API -------------------
+/* ================= REGISTER USER ================= */
 export const registerUser = createAsyncThunk(
   "register/registerUser",
   async (formData, thunkAPI) => {
@@ -37,24 +37,31 @@ export const registerUser = createAsyncThunk(
   }
 );
 
-// ------------------- SUBMIT DATA API -------------------
+/* ================= SUBMIT DATA ================= */
 export const submitData = createAsyncThunk(
   "register/submitData",
   async ({ consultantId, consultationData, scalpPhoto }, thunkAPI) => {
     try {
-      let data = { consultantId, consultationData: JSON.stringify(consultationData) };
+      let data = {
+        consultantId,
+        consultationData: JSON.stringify(consultationData)
+      };
       let headers = {};
 
       if (scalpPhoto) {
         const formData = new FormData();
-        formData.append('consultantId', consultantId);
-        formData.append('consultationData', JSON.stringify(consultationData));
-        formData.append('scalpPhoto', scalpPhoto);
+        formData.append("consultantId", consultantId);
+        formData.append("consultationData", JSON.stringify(consultationData));
+        formData.append("scalpPhoto", scalpPhoto);
         data = formData;
-        headers['Content-Type'] = 'multipart/form-data';
+        headers["Content-Type"] = "multipart/form-data";
       }
 
-      const response = await axiosClient.post("bookingconsultancy/submit", data, { headers });
+      const response = await axiosClient.post(
+        "bookingconsultancy/submit",
+        data,
+        { headers }
+      );
       return response.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(
@@ -64,14 +71,15 @@ export const submitData = createAsyncThunk(
   }
 );
 
-// ------------------- CREATE ORDER API -------------------
+/* ================= CREATE ORDER ================= */
 export const createOrder = createAsyncThunk(
   "register/createOrder",
-  async ({ consultantId, amount }, thunkAPI) => {
+  async ({ consultantId, selectedPlans, userType }, thunkAPI) => {
     try {
       const response = await axiosClient.post("payments/create-order", {
         consultantId,
-        amount
+        selectedPlans,
+        userType
       });
       return response.data;
     } catch (error) {
@@ -82,10 +90,13 @@ export const createOrder = createAsyncThunk(
   }
 );
 
-// ------------------- VERIFY PAYMENT API -------------------
+/* ================= VERIFY PAYMENT ================= */
 export const verifyPayment = createAsyncThunk(
   "register/verifyPayment",
-  async ({ consultantId, razorpay_payment_id, razorpay_order_id, razorpay_signature }, thunkAPI) => {
+  async (
+    { consultantId, razorpay_payment_id, razorpay_order_id, razorpay_signature },
+    thunkAPI
+  ) => {
     try {
       const response = await axiosClient.post("payments/verify", {
         consultantId,
@@ -102,7 +113,7 @@ export const verifyPayment = createAsyncThunk(
   }
 );
 
-// ------------------- REGISTER APPOINTMENT API -------------------
+/* ================= REGISTER APPOINTMENT ================= */
 export const registerAppointment = createAsyncThunk(
   "register/registerAppointment",
   async (formData, thunkAPI) => {
@@ -117,7 +128,7 @@ export const registerAppointment = createAsyncThunk(
   }
 );
 
-// ------------------- VERIFY APPOINTMENT OTP API -------------------
+/* ================= VERIFY APPOINTMENT OTP ================= */
 export const verifyAppointmentOtp = createAsyncThunk(
   "register/verifyAppointmentOtp",
   async ({ phone, idToken, appointmentId }, thunkAPI) => {
@@ -136,47 +147,54 @@ export const verifyAppointmentOtp = createAsyncThunk(
   }
 );
 
-// ------------------- SLICE -------------------
+
+
+/* ================= SLICE ================= */
 const registerApiSlice = createSlice({
   name: "register",
   initialState: {
     loading: false,
     error: null,
+
     verifySuccess: false,
     registerSuccess: false,
     submitSuccess: false,
     createOrderSuccess: false,
     orderDetails: null,
+
     registerAppointmentSuccess: false,
     verifyAppointmentSuccess: false,
     appointmentId: null,
-    consultantId: null
+    consultantId: null,
   },
   reducers: {
     clearApiState: (state) => {
       state.loading = false;
       state.error = null;
+
       state.verifySuccess = false;
       state.registerSuccess = false;
       state.submitSuccess = false;
       state.createOrderSuccess = false;
       state.orderDetails = null;
+
       state.registerAppointmentSuccess = false;
       state.verifyAppointmentSuccess = false;
       state.appointmentId = null;
       state.consultantId = null;
+
+      
     }
   },
   extraReducers: (builder) => {
     builder
-
-      // VERIFY
+      /* VERIFY USER */
       .addCase(verifyUser.pending, (state) => {
         state.loading = true;
         state.error = null;
         state.verifySuccess = false;
       })
-      .addCase(verifyUser.fulfilled, (state, action) => {
+      .addCase(verifyUser.fulfilled, (state) => {
         state.loading = false;
         state.verifySuccess = true;
       })
@@ -186,7 +204,7 @@ const registerApiSlice = createSlice({
         state.verifySuccess = false;
       })
 
-      // REGISTER
+      /* REGISTER USER */
       .addCase(registerUser.pending, (state) => {
         state.loading = true;
         state.error = null;
@@ -203,7 +221,7 @@ const registerApiSlice = createSlice({
         state.registerSuccess = false;
       })
 
-      // SUBMIT DATA
+      /* SUBMIT DATA */
       .addCase(submitData.pending, (state) => {
         state.loading = true;
         state.error = null;
@@ -219,7 +237,7 @@ const registerApiSlice = createSlice({
         state.submitSuccess = false;
       })
 
-      // CREATE ORDER
+      /* CREATE ORDER */
       .addCase(createOrder.pending, (state) => {
         state.loading = true;
         state.error = null;
@@ -236,7 +254,7 @@ const registerApiSlice = createSlice({
         state.createOrderSuccess = false;
       })
 
-      // REGISTER APPOINTMENT
+      /* REGISTER APPOINTMENT */
       .addCase(registerAppointment.pending, (state) => {
         state.loading = true;
         state.error = null;
@@ -253,7 +271,7 @@ const registerApiSlice = createSlice({
         state.registerAppointmentSuccess = false;
       })
 
-      // VERIFY APPOINTMENT OTP
+      /* VERIFY APPOINTMENT OTP */
       .addCase(verifyAppointmentOtp.pending, (state) => {
         state.loading = true;
         state.error = null;
@@ -267,8 +285,10 @@ const registerApiSlice = createSlice({
         state.loading = false;
         state.error = action.payload;
         state.verifyAppointmentSuccess = false;
-      });
-  },
+      })
+
+      
+  }
 });
 
 export const { clearApiState } = registerApiSlice.actions;

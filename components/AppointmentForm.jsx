@@ -6,8 +6,10 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useDispatch, useSelector } from "react-redux";
 import { auth } from "@/lib/firebase";
-import { registerAppointment, clearApiState } from "@/redux/slices/appointmentSlice";
+import { registerAppointment, clearApiState, createAppointmentOrder } from "@/redux/slices/appointmentSlice";
+import { getPlans } from "@/redux/slices/planslice";
 import AppointmentSelector from "@/components/AppointmentSelector";
+import OtherTreatmentPlan from "@/components/OtherTreatmentPlan";
 import {
     User,
     Mail,
@@ -21,9 +23,11 @@ export default function AppointmentForm() {
     const router = useRouter();
     const dispatch = useDispatch();
 
-    const { loading, error, registerAppointmentSuccess, verifyAppointmentSuccess, appointmentId } = useSelector(
+    const { loading, error, registerAppointmentSuccess, verifyAppointmentSuccess, appointmentId, createAppointmentOrderSuccess, orderDetails } = useSelector(
         (state) => state.appointment
     );
+
+    const { appointmentPlans } = useSelector((state) => state.plans);
 
     const [form, setForm] = useState({
         name: "",
@@ -37,7 +41,12 @@ export default function AppointmentForm() {
     const [errors, setErrors] = useState({});
     const [showPlanSelector, setShowPlanSelector] = useState(false);
     const [selectedPlan, setSelectedPlan] = useState(null);
+    const [otherAddons, setOtherAddons] = useState([]);
+    const [otherTotal, setOtherTotal] = useState(0);
+    const [otherBasePlan, setOtherBasePlan] = useState(null);
     const dropdownRef = useRef(null);
+
+    const userType = form.region === "India" ? "india" : "foreign";
 
     /* RESET STATE ON MOUNT */
     useEffect(() => {
@@ -45,6 +54,26 @@ export default function AppointmentForm() {
         setErrors({});
         dispatch(clearApiState());
     }, [dispatch]);
+
+    /* FETCH PLANS ON APPOINTMENT SUCCESS */
+    useEffect(() => {
+        if (registerAppointmentSuccess && showPlanSelector) {
+            const userType = form.region === "India" ? "india" : "foreign";
+            dispatch(getPlans({ type: "APPOINTMENT", region: form.region }));
+            if (form.disease === "other") {
+                dispatch(getPlans({ type: "GENERAL", region: form.region }));
+                dispatch(getPlans({ type: "ADDON", region: form.region }));
+            }
+        }
+    }, [registerAppointmentSuccess, showPlanSelector, form.region, form.disease, dispatch]);
+
+    /* HANDLE CREATE ORDER SUCCESS */
+    useEffect(() => {
+        if (createAppointmentOrderSuccess && orderDetails) {
+            localStorage.setItem("appointmentOrderData", JSON.stringify({ ...orderDetails, appointmentId }));
+            router.push("/payment-method");
+        }
+    }, [createAppointmentOrderSuccess, orderDetails, appointmentId, router]);
 
     /* HANDLE CLICK OUTSIDE */
     useEffect(() => {
@@ -105,17 +134,18 @@ export default function AppointmentForm() {
 
     const diseaseCategories = [
         "Hair Treatment",
-        "Respiratory",
-        "Skin Disorders",
-        "Gastrointestinal",
-        "Mental & Emotional Health",
-        "Musculoskeletal",
-        "ENT Problems",
-        "Women’s Health",
-        "Children’s Health",
-        "Chronic Conditions",
-        "Lifestyle-Related Problems",
+        // "Respiratory",
+        // "Skin Disorders",
+        // "Gastrointestinal",
+        // "Mental & Emotional Health",
+        // "Musculoskeletal",
+        // "ENT Problems",
+        // "Women’s Health",
+        // "Children’s Health",
+        // "Chronic Conditions",
+        // "Lifestyle-Related Problems",
         "Obesity",
+        "other"
     ];
 
     const regionList = [
@@ -305,32 +335,57 @@ export default function AppointmentForm() {
             {/* PLAN SELECTOR */}
                 {showPlanSelector && (
                     <div className="mt-8">
-                        <h3 className="text-2xl font-bold text-center mb-6">Choose Your Appointment Plan</h3>
-                        <AppointmentSelector
-                            selectedPlan={selectedPlan}
-                            onSelect={(plan) => {
-                                setSelectedPlan(plan.id);
-                                const data = {
-                                    amount: plan.price,
-                                    appointmentId: appointmentId,
-                                    timestamp: Date.now()
-                                };
-                                localStorage.setItem("appointmentData", JSON.stringify(data));
-                            }}
-                        />
-                        {selectedPlan && (
-                            <div className="mt-6 flex justify-center">
+                        <h3 className="text-2xl font-bold text-center mb-6">
+                            {form.disease === "other" ? "Choose Your Treatment Plan" : "Choose Your Appointment Plan"}
+                        </h3>
+                        {form.disease === "other" ? (
+                            <OtherTreatmentPlan
+                                userType={userType}
+                                onChange={(addons, total, basePlan) => {
+                                    setOtherAddons(addons);
+                                    setOtherTotal(total);
+                                    setOtherBasePlan(basePlan);
+                                }}
+                            />
+                        ) : (
+                            <AppointmentSelector
+                                plans={appointmentPlans}
+                                userType={userType}
+                                selectedPlan={selectedPlan}
+                                onSelect={(plan) => {
+                                    setSelectedPlan(plan.id);
+                                }}
+                            />
+                        )}
+                        <div className="mt-6 flex justify-between">
+                            <button
+                                onClick={() => setShowPlanSelector(false)}
+                                className="px-4 py-2 text-muted-foreground hover:text-foreground transition"
+                            >
+                                ← Previous
+                            </button>
+                            {(selectedPlan || (form.disease === "other" && otherBasePlan)) && (
                                 <button
                                     onClick={() => {
-                                        setShowPlanSelector(false);
-                                        router.push("/payment-method");
+                                        const selectedPlans = form.disease === "other"
+                                            ? [
+                                                { planId: otherBasePlan._id },
+                                                ...otherAddons.map(addon => ({ planId: addon._id }))
+                                            ]
+                                            : [{ planId: selectedPlan }];
+                                        dispatch(createAppointmentOrder({
+                                            appointmentId,
+                                            selectedPlans,
+                                            userType
+                                        }));
                                     }}
-                                    className="px-6 py-3 rounded-xl bg-primary text-primary-foreground shadow-soft hover:bg-primary-dark transition"
+                                    disabled={loading}
+                                    className="px-6 py-3 rounded-xl bg-primary text-primary-foreground shadow-soft hover:bg-primary-dark transition disabled:opacity-50"
                                 >
-                                    Proceed to Payment
+                                    {loading ? "Creating Order..." : "Proceed to Payment"}
                                 </button>
-                            </div>
-                        )}
+                            )}
+                        </div>
                     </div>
                 )}
 
