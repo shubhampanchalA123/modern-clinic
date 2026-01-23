@@ -31,6 +31,7 @@ export default function RegisterFlow() {
   const [form, setForm] = useState({
       name: "",
       phone: "",
+      email: "",
       age: "",
       region: "",
       gender: "",
@@ -147,6 +148,8 @@ export default function RegisterFlow() {
       if (!form.name.trim()) err.name = "Name is required";
       if (!form.phone.trim()) err.phone = "Phone is required";
       else if (!/^[6-9]\d{9}$/.test(form.phone)) err.phone = "Please enter a valid 10-digit mobile number starting with 6-9";
+      if (!form.email.trim()) err.email = "Email is required";
+      else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) err.email = "Please enter a valid email address";
       if (!form.age) err.age = "Age is required";
       if (!form.gender) err.gender = "Gender is required";
       if (!form.region) err.region = "Region is required";
@@ -177,6 +180,7 @@ export default function RegisterFlow() {
         registerUser({
           name: form.name,
           mobile: form.phone,
+          email: form.email,
           age: form.age,
           gender: form.gender,
           region: form.region,
@@ -390,6 +394,21 @@ export default function RegisterFlow() {
                 />
                 {errors.phone && (
                   <p className="text-red-600 text-sm mt-1">{errors.phone}</p>
+                )}
+              </div>
+
+              {/* Email */}
+              <div className="mb-4">
+                <label className="font-medium text-foreground">Email</label>
+                <input
+                  type="email"
+                  className="w-full border border-border bg-background px-3 py-2 rounded mt-1 text-foreground"
+                  value={form.email}
+                  onChange={(e) => updateField("email", e.target.value)}
+                  placeholder="your@email.com"
+                />
+                {errors.email && (
+                  <p className="text-red-600 text-sm mt-1">{errors.email}</p>
                 )}
               </div>
 
