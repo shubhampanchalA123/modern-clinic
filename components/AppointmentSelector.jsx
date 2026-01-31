@@ -76,7 +76,7 @@ export default function AppointmentSelector({ plans: propPlans, onSelect, select
   };
 
   return (
-  <div className="mt-6 grid grid-cols-2 gap-6 auto-rows-fr">
+  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
     {displayPlans.map((p) => {
       const isSelected = selectedPlan === p.id;
 

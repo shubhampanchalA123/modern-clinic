@@ -225,7 +225,7 @@ export default function AppointmentForm() {
                         label="Phone"
                         name="phone"
                         type="tel"
-                        placeholder="9999999999"
+                        placeholder="Your phone number"
                         value={form.phone}
                         onChange={(e) => {
                           const value = e.target.value.replace(/\D/g, '').slice(0,10);

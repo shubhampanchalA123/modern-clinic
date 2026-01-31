@@ -376,6 +376,7 @@ export default function RegisterFlow() {
                   className="w-full border border-border bg-background px-3 py-2 rounded mt-1 text-foreground"
                   value={form.name}
                   onChange={(e) => updateField("name", e.target.value)}
+                  placeholder="Enter your full name"
                 />
                 {errors.name && (
                   <p className="text-red-600 text-sm mt-1">{errors.name}</p>
@@ -389,7 +390,7 @@ export default function RegisterFlow() {
                   className="w-full border border-border bg-background px-3 py-2 rounded mt-1 text-foreground"
                   value={form.phone}
                   onChange={(e) => updateField("phone", e.target.value.replace(/\D/g, '').slice(0, 10))}
-                  placeholder="9999999999"
+                  placeholder="Enter phone number"
                   maxLength={10}
                 />
                 {errors.phone && (
@@ -405,7 +406,7 @@ export default function RegisterFlow() {
                   className="w-full border border-border bg-background px-3 py-2 rounded mt-1 text-foreground"
                   value={form.email}
                   onChange={(e) => updateField("email", e.target.value)}
-                  placeholder="your@email.com"
+                  placeholder="Enter email address"
                 />
                 {errors.email && (
                   <p className="text-red-600 text-sm mt-1">{errors.email}</p>
@@ -420,6 +421,7 @@ export default function RegisterFlow() {
                   className="w-full border border-border bg-background px-3 py-2 rounded mt-1 text-foreground"
                   value={form.age}
                   onChange={(e) => updateField("age", e.target.value)}
+                  placeholder="Enter your age"
                 />
                 {errors.age && (
                   <p className="text-red-600 text-sm mt-1">{errors.age}</p>
