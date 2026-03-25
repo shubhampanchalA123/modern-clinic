@@ -33,7 +33,7 @@ export default function TermsAndConditions() {
               1. Medical Disclaimer
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              All homeopathic treatments are based on the information provided by you.
+              All homeopathic treatments are based on the information provided by Dr. Devendra Kumar Rathore.
               Results may vary for each individual depending on medical conditions,
               lifestyle and adherence to treatment.
             </p>

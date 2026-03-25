@@ -42,7 +42,7 @@ export default function Footer() {
         <div>
           <h3 className="text-md font-semibold text-foreground mb-4">Quick Links</h3>
           <ul className="space-y-3 text-sm">
-            <FooterLink href="/doctor" title="About Dr." />
+            <FooterLink href="/doctor" title="About Dr. Devendra Kumar Rathore" />
             <FooterLink href="/HairGrowth/register" title="Book Assessment" />
             <FooterLink href="/testimonials" title="Testimonials" />
             <FooterLink href="/blog" title="Blogs" />
