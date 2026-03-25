@@ -70,7 +70,7 @@ export default function AppointmentForm() {
     /* HANDLE CREATE ORDER SUCCESS */
     useEffect(() => {
         if (createAppointmentOrderSuccess && orderDetails) {
-            localStorage.setItem("appointmentOrderData", JSON.stringify({ ...orderDetails, appointmentId }));
+            localStorage.setItem("appointmentOrderData", JSON.stringify({ ...orderDetails, appointmentId, flow: "appointment" }));
             router.push("/payment-method");
         }
     }, [createAppointmentOrderSuccess, orderDetails, appointmentId, router]);
@@ -373,10 +373,15 @@ export default function AppointmentForm() {
                                                 ...otherAddons.map(addon => ({ planId: addon._id }))
                                             ]
                                             : [{ planId: selectedPlan }];
+                                        const returnUrl =
+                                            typeof window !== "undefined"
+                                                ? `${window.location.origin}/payment-method/online?gateway=cashfree&appointmentId=${appointmentId}`
+                                                : undefined;
                                         dispatch(createAppointmentOrder({
                                             appointmentId,
                                             selectedPlans,
-                                            userType
+                                            userType,
+                                            returnUrl
                                         }));
                                     }}
                                     disabled={loading}

@@ -42,12 +42,13 @@ export const verifyAppointmentOtp = createAsyncThunk(
 // ------------------- CREATE APPOINTMENT ORDER API -------------------
 export const createAppointmentOrder = createAsyncThunk(
   "appointment/createAppointmentOrder",
-  async ({ appointmentId, selectedPlans, userType }, thunkAPI) => {
+  async ({ appointmentId, selectedPlans, userType, returnUrl }, thunkAPI) => {
     try {
       const response = await axiosClient.post("payments/appointment/create-order", {
         appointmentId,
         selectedPlans,
-        userType
+        userType,
+        returnUrl
       });
       return response.data;
     } catch (error) {
@@ -61,13 +62,16 @@ export const createAppointmentOrder = createAsyncThunk(
 // ------------------- VERIFY APPOINTMENT PAYMENT API -------------------
 export const verifyAppointmentPayment = createAsyncThunk(
   "appointment/verifyAppointmentPayment",
-  async ({ appointmentId, razorpay_payment_id, razorpay_order_id, razorpay_signature }, thunkAPI) => {
+  async ({ appointmentId, razorpay_payment_id, razorpay_order_id, razorpay_signature, orderId, cfOrderId, cfPaymentId }, thunkAPI) => {
     try {
       const response = await axiosClient.post("payments/appointment/verify", {
         appointmentId,
         razorpay_payment_id,
         razorpay_order_id,
-        razorpay_signature
+        razorpay_signature,
+        orderId,
+        cfOrderId,
+        cfPaymentId
       });
       return response.data;
     } catch (error) {

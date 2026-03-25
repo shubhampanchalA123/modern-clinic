@@ -86,10 +86,16 @@ export default function RegisterFlow() {
     if (submitSuccess) {
       const currentConsultantId = consultantId || localStorage.getItem("consultantId");
       const userType = form.region === "India" ? "india" : "foreign";
+      const returnUrl =
+        typeof window !== "undefined"
+          ? `${window.location.origin}/payment-method/online?gateway=cashfree&consultantId=${currentConsultantId}`
+          : undefined;
+
       dispatch(createOrder({
         consultantId: currentConsultantId,
         selectedPlans: form.selectedPlans.map(id => ({ planId: id })),
-        userType
+        userType,
+        returnUrl
       }));
 
       dispatch(clearApiState());
@@ -99,13 +105,22 @@ export default function RegisterFlow() {
   // Handle create order success → redirect to payment
   useEffect(() => {
     if (createOrderSuccess && orderDetails) {
+      const currentConsultantId = consultantId || localStorage.getItem("consultantId");
       const params = new URLSearchParams({
         orderId: orderDetails.orderId,
         amount: orderDetails.amount,
         currency: orderDetails.currency,
-        key: orderDetails.key,
-        consultantId: consultantId || localStorage.getItem("consultantId")
+        consultantId: currentConsultantId,
+        flow: "consultation",
+        gateway: orderDetails.gateway || "razorpay",
       });
+
+      if (orderDetails.gateway === "cashfree") {
+        params.set("paymentSessionId", orderDetails.paymentSessionId || "");
+      } else if (orderDetails.key) {
+        params.set("key", orderDetails.key);
+      }
+
       router.push(`/payment-method/online?${params.toString()}`);
       dispatch(clearApiState());
     }

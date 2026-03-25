@@ -74,12 +74,13 @@ export const submitData = createAsyncThunk(
 /* ================= CREATE ORDER ================= */
 export const createOrder = createAsyncThunk(
   "register/createOrder",
-  async ({ consultantId, selectedPlans, userType }, thunkAPI) => {
+  async ({ consultantId, selectedPlans, userType, returnUrl }, thunkAPI) => {
     try {
       const response = await axiosClient.post("payments/create-order", {
         consultantId,
         selectedPlans,
-        userType
+        userType,
+        returnUrl
       });
       return response.data;
     } catch (error) {
@@ -94,7 +95,7 @@ export const createOrder = createAsyncThunk(
 export const verifyPayment = createAsyncThunk(
   "register/verifyPayment",
   async (
-    { consultantId, razorpay_payment_id, razorpay_order_id, razorpay_signature },
+    { consultantId, razorpay_payment_id, razorpay_order_id, razorpay_signature, orderId, cfOrderId, cfPaymentId },
     thunkAPI
   ) => {
     try {
@@ -102,7 +103,10 @@ export const verifyPayment = createAsyncThunk(
         consultantId,
         razorpay_payment_id,
         razorpay_order_id,
-        razorpay_signature
+        razorpay_signature,
+        orderId,
+        cfOrderId,
+        cfPaymentId
       });
       return response.data;
     } catch (error) {
