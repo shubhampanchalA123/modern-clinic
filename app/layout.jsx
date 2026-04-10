@@ -1,11 +1,8 @@
 import "./globals.css";
-import Navbar from "@/components/layout/header/Navbar";
-import Footer from "@/components/layout/Footer";
 import { ThemeProvider } from "next-themes";
-import TopBar from "@/components/layout/header/Topbar";
-import MainHeader from "@/components/layout/header/MainHeader";
 import ScrollToTop from "./scroll-reset";
 import { Providers } from "./providers";   // <-- IMPORTANT
+import RouteChrome from "@/components/layout/RouteChrome";
 
 export const metadata = {
   title: "Hair Growth Clinic - Expert Hair Treatment & Consultation | Modern Clinic",
@@ -66,18 +63,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-         <Providers>   {/* <-- REDUX WRAPPER START */}
+        <Providers>   {/* <-- REDUX WRAPPER START */}
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
           enableSystem={false}
         >
           <ScrollToTop />
-          <TopBar />
-          <MainHeader />
-          {/* <Navbar /> */}
-          {children}
-          <Footer />
+          <RouteChrome>{children}</RouteChrome>
         </ThemeProvider>
         </Providers>   {/* <-- REDUX WRAPPER END */}
       </body>
