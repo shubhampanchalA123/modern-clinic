@@ -264,11 +264,10 @@ export default function AdminCouponManagement() {
             return (
               <div
                 key={coupon._id}
-                className={`rounded-2xl border p-4 backdrop-blur sm:p-6 ${
-                  isExpired
-                    ? "border-red-500/30 bg-red-500/5"
-                    : "border-white/10 bg-white/5"
-                }`}
+                className={`rounded-2xl border p-4 backdrop-blur sm:p-6 ${isExpired
+                  ? "border-red-500/30 bg-red-500/5"
+                  : "border-white/10 bg-white/5"
+                  }`}
               >
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                   <div className="flex-1">
@@ -280,11 +279,10 @@ export default function AdminCouponManagement() {
                       >
                         <Copy className="h-4 w-4" />
                       </button>
-                      <span className={`inline-flex rounded-full px-3 py-1 text-xs font-medium ${
-                        isExpired
-                          ? "bg-red-500/15 text-red-300"
-                          : "bg-emerald-500/15 text-emerald-300"
-                      }`}>
+                      <span className={`inline-flex rounded-full px-3 py-1 text-xs font-medium ${isExpired
+                        ? "bg-red-500/15 text-red-300"
+                        : "bg-emerald-500/15 text-emerald-300"
+                        }`}>
                         {isExpired ? "Expired" : "Active"}
                       </span>
                     </div>
