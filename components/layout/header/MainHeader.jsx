@@ -207,8 +207,8 @@ export default function Navbar() {
                             >
                                 <Link href="/HairGrowth/register" className="block px-3 py-2 hover:bg-card">Book Appointment</Link>
                                 <Link href="#" className="block px-3 py-2 hover:bg-card">Clinic Locator</Link>
-                                <Link href="tel:+919770799998" className="block px-3 py-2 hover:bg-card">Emergency Call</Link>
-                                <Link href="https://wa.me/919770799998" target="_blank" className="block px-3 py-2 hover:bg-card">WhatsApp Chat</Link>
+                                <Link href="tel:+919752031318" className="block px-3 py-2 hover:bg-card">Emergency Call</Link>
+                                <Link href="https://wa.me/919752031318" target="_blank" className="block px-3 py-2 hover:bg-card">WhatsApp Chat</Link>
                             </div>
                         </div>
                     </nav>
@@ -359,8 +359,8 @@ export default function Navbar() {
                                 <div className="ml-4 mt-2 space-y-2 text-muted-foreground">
                                     <Link href="/HairGrowth/register" className="block" >Book Appointment</Link>
                                     <Link href="#" className="block" >Clinic Locator</Link>
-                                    <Link href="tel:+919770799998" className="block" >Emergency Call</Link>
-                                    <Link href="https://wa.me/919770799998" target="_blank" className="block" >WhatsApp Chat</Link>
+                                    <Link href="tel:+919752031318" className="block" >Emergency Call</Link>
+                                    <Link href="https://wa.me/919752031318" target="_blank" className="block" >WhatsApp Chat</Link>
                                 </div>
                             </details>
 
@@ -405,7 +405,7 @@ export default function Navbar() {
 
             {!hideFloating.includes(pathname) && (
                 <a
-                    href="https://wa.me/919770799998"
+                    href="https://wa.me/919752031318"
                     target="_blank"
                     className="
                     fixed bottom-6 right-6 z-50 bg-[#15c34a] text-primary-foreground p-4 rounded-full 

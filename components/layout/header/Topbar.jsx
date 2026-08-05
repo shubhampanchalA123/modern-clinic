@@ -33,7 +33,7 @@ export default function TopBar() {
 
                     {/* Call Support */}
                     <Link
-                        href="tel:+919770799998"
+                        href="tel:+919752031318"
                         className="flex items-center gap-1 hover:text-gray-200 transition">
                         <Phone size={16} />
                         <span>Call Support</span>
@@ -41,7 +41,7 @@ export default function TopBar() {
 
                     {/* WhatsApp */}
                     <a
-                        href="https://wa.me/919770799998"
+                        href="https://wa.me/919752031318"
                         className="
               w-7 h-7 flex items-center justify-center rounded-full 
               bg-white/20 hover:bg-white/30 transition

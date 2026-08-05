@@ -72,7 +72,7 @@ export default function Footer() {
           <ul className="space-y-3 text-sm text-muted-foreground">
             <li className="flex items-center gap-3">
               <Phone size={16} className="text-primary" />
-              +91 9770799998
+              +91 9752031318
             </li>
 
             <li className="flex items-center gap-3">
@@ -105,7 +105,7 @@ export default function Footer() {
           {/* SOCIAL ICONS */}
           <div className="flex items-center gap-4 mt-5">
             <SocialIcon
-              href="https://wa.me/919770799998"
+              href="https://wa.me/919752031318"
               icon={<FaWhatsapp size={22} color="#25D366" />}
             />
             <SocialIcon
