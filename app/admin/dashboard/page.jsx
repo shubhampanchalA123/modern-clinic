@@ -2,14 +2,16 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { BarChart3, CalendarDays, FileText, Users, LogOut } from "lucide-react";
+import { BarChart3, CalendarDays, FileText, Users, LogOut, BookOpen } from "lucide-react";
 import axiosClient from "@/redux/axiosClient";
 import AdminPlanManagement from "@/components/admin/AdminPlanManagement";
 import AdminCouponManagement from "@/components/admin/AdminCouponManagement";
+import AdminBlogManagement from "@/components/admin/AdminBlogManagement";
 import { Button } from "@/components/ui/button";
 
 const TABS = [
   { id: "overview", label: "Overview", icon: BarChart3 },
+  { id: "blogs", label: "Blogs", icon: BookOpen },
   { id: "plans", label: "Plans", icon: FileText },
   { id: "coupons", label: "Coupons", icon: Users },
   { id: "consultant-users", label: "Consultant Users", icon: FileText },
@@ -245,6 +247,7 @@ export default function AdminDashboardPage() {
                     <ul className="mt-4 space-y-2 text-xs text-slate-400">
                       <li>✓ Admin auth setup</li>
                       <li>✓ Token management</li>
+                      <li>→ Blog management</li>
                       <li>→ Plans management</li>
                       <li>→ Coupons management</li>
                     </ul>
@@ -252,6 +255,8 @@ export default function AdminDashboardPage() {
                 </div>
               </>
             )}
+
+            {activeTab === "blogs" && <AdminBlogManagement />}
 
             {activeTab === "plans" && <AdminPlanManagement />}
 

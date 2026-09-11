@@ -4,6 +4,7 @@ import appointmentReducer from "./slices/appointmentSlice";
 import planReducer from "./slices/planslice";
 import adminPlanReducer from "./slices/adminPlanSlice";
 import adminCouponReducer from "./slices/adminCouponSlice";
+import adminBlogReducer from "./slices/adminBlogSlice";
 
 export const store = configureStore({
   reducer: {
@@ -12,5 +13,6 @@ export const store = configureStore({
     plans: planReducer,
     adminPlans: adminPlanReducer,
     adminCoupons: adminCouponReducer,
+    adminBlogs: adminBlogReducer,
   },
 });

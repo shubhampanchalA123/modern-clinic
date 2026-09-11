@@ -1,168 +1,121 @@
 "use client";
 
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
+import { fetchPublicBlogBySlug, clearCurrentBlog } from "@/redux/slices/blogSlice";
+import { ArrowLeft, Calendar, Tag, Loader2 } from "lucide-react";
 
-//   BLOG DATABASE (DUMMY DATA)
-const blogData = {
-  "how-hair-fall-starts": {
-    title: "How Hair Fall Really Starts",
-    date: "March 10, 2025",
-    category: "Hair Health",
-    image: "/images/blog/hairfall.jpg",
-    content: `
-      <p>Hair fall rarely begins suddenly...</p>
-      <h2>The hidden causes behind early-stage hair loss</h2>
-      <ul>
-        <li>Scalp inflammation</li>
-        <li>Stress hormones</li>
-        <li>Nutritional deficiencies</li>
-        <li>Genetic tendency</li>
-      </ul>
-      <p>Early diagnosis is the key...</p>
-    `,
-  },
-
-  "alopecia-areata-causes-homeopathy": {
-    title: "Alopecia Areata: Why It Happens & How Homeopathy Helps",
-    date: "February 28, 2025",
-    category: "Hair Health",
-    image: "/images/blog/alopecia.jpg",
-    content: `
-      <p>Alopecia Areata is an autoimmune condition...</p>
-      <h2>Why does it happen?</h2>
-      <ul><li>Stress</li><li>Immune imbalance</li><li>Genetics</li></ul>
-      <h2>How Homeopathy helps</h2>
-      <p>Homeopathy works by stabilizing...</p>
-    `,
-  },
-
-  "dandruff-vs-dry-scalp": {
-    title: "Dandruff vs. Dry Scalp: The Real Difference",
-    date: "February 12, 2025",
-    category: "Scalp Care",
-    image: "/images/blog/dandruff.jpg",
-    content: `
-      <p>Dandruff and dry scalp look similar...</p>
-      <h2>Dry scalp symptoms</h2>
-      <ul><li>Small white flakes</li><li>Tightness</li></ul>
-      <h2>Dandruff symptoms</h2>
-      <ul><li>Oily flakes</li><li>Redness</li></ul>
-    `,
-  },
-
-  "acne-hidden-triggers": {
-    title: "Acne Triggers You Didn’t Know About",
-    date: "January 29, 2025",
-    category: "Skin Health",
-    image: "/images/blog/acne.jpg",
-    content: `
-      <p>Acne is not caused only by oil...</p>
-      <h2>Common triggers</h2>
-      <ul><li>Stress hormones</li><li>Dairy</li><li>Inflammation</li></ul>
-    `,
-  },
-
-  "thyroid-hairfall-connection": {
-    title: "Thyroid Imbalance & Hair Fall: The Missing Link",
-    date: "January 18, 2025",
-    category: "Chronic Conditions",
-    image: "/images/blog/thyroid.jpg",
-    content: `
-      <p>Thyroid hormones directly regulate...</p>
-      <h2>Signs of thyroid hair fall</h2>
-      <ul><li>Diffuse thinning</li><li>Dry hair</li></ul>
-    `,
-  },
-
-  "stress-hairfall-cortisol": {
-    title: "Stress Hair Fall Is Real — Here’s How It Works",
-    date: "December 20, 2024",
-    category: "Mental Wellness",
-    image: "/images/blog/stress.jpg",
-    content: `
-      <p>Stress pushes follicles into premature shedding...</p>
-      <h2>How to fix stress hair fall</h2>
-      <ul><li>Breathing</li><li>Sleep</li><li>Inflammation control</li></ul>
-    `,
-  },
-
-  "boost-immunity-naturally": {
-    title: "Boosting Immunity Naturally in 2025",
-    date: "December 12, 2024",
-    category: "Immunity",
-    image: "/images/blog/immunity.jpg",
-    content: `
-      <p>True immunity is built from the inside...</p>
-      <h2>Key pillars</h2>
-      <ul><li>Nutrition</li><li>Gut health</li><li>Stress balance</li></ul>
-    `,
-  },
-
-  "migraine-causes-patterns": {
-    title: "Why Migraine Pain Keeps Coming Back",
-    date: "November 30, 2024",
-    category: "Chronic Pain",
-    image: "/images/blog/migraine.jpg",
-    content: `
-      <p>Migraines often follow identifiable patterns...</p>
-      <h2>Common triggers</h2>
-      <ul><li>Lights</li><li>Stress</li><li>Hormones</li></ul>
-    `,
-  },
-
-  "sleep-disturbance-hormone-link": {
-    title: "Sleep Disturbance & Hormones: The Deep Connection",
-    date: "November 22, 2024",
-    category: "Lifestyle",
-    image: "/images/blog/sleep.jpg",
-    content: `
-      <p>Sleep regulates every major hormone...</p>
-      <h2>What poor sleep causes</h2>
-      <ul><li>Stress</li><li>Hair fall</li><li>Skin flare-ups</li></ul>
-    `,
-  },
-
-  "healthy-scalp-science": {
-    title: "Healthy Scalp = Healthy Hair: Here’s the Science",
-    date: "October 15, 2024",
-    category: "Hair Health",
-    image: "/images/blog/science-scalp.jpg",
-    content: `
-      <p>The scalp microbiome controls hair strength...</p>
-      <h2>How to strengthen scalp</h2>
-      <ul><li>Gentle cleansing</li><li>Anti-inflammatory care</li></ul>
-    `,
-  },
+const formatDate = (dateString) => {
+  if (!dateString) return "";
+  try {
+    const d = new Date(dateString);
+    if (isNaN(d.getTime())) return dateString;
+    return d.toLocaleDateString("en-US", {
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+    });
+  } catch {
+    return dateString;
+  }
 };
 
-
 export default function BlogArticle({ slug }) {
-  const blog = blogData[slug];
+  const dispatch = useDispatch();
+  const { currentBlog: blog, articleLoading: loading, articleError: error } = useSelector(
+    (state) => state.blogs
+  );
+  const [imgError, setImgError] = useState(false);
 
-  if (!blog) {
+  useEffect(() => {
+    if (slug) {
+      dispatch(fetchPublicBlogBySlug(slug));
+    }
+    return () => {
+      dispatch(clearCurrentBlog());
+    };
+  }, [dispatch, slug]);
+
+  if (loading) {
     return (
-      <div className="max-w-3xl mx-auto px-6 py-24 text-center text-muted-foreground">
-        Blog not found.
+      <div className="max-w-4xl mx-auto px-6 py-24 space-y-6 animate-pulse">
+        <div className="h-4 bg-muted rounded w-24" />
+        <div className="h-10 bg-muted rounded w-3/4" />
+        <div className="h-4 bg-muted rounded w-40" />
+        <div className="w-full h-80 bg-muted rounded-2xl" />
+        <div className="space-y-3 pt-6">
+          <div className="h-4 bg-muted rounded w-full" />
+          <div className="h-4 bg-muted rounded w-5/6" />
+          <div className="h-4 bg-muted rounded w-4/6" />
+        </div>
       </div>
     );
   }
 
-  console.log("Incoming slug:", slug);
-  console.log("Blog keys:", Object.keys(blogData));
+  if (error || !blog) {
+    return (
+      <div className="max-w-3xl mx-auto px-6 py-28 text-center">
+        <span className="text-5xl">📄</span>
+        <h2 className="text-2xl font-bold text-foreground mt-4">Article Not Found</h2>
+        <p className="text-muted-foreground mt-2 max-w-md mx-auto">
+          The blog article you are looking for might have been moved, unpublished, or does not exist.
+        </p>
+        <Link
+          href="/blog"
+          className="inline-flex items-center gap-2 mt-6 px-5 py-2.5 bg-primary text-primary-foreground text-sm font-medium rounded-xl hover:opacity-90 transition"
+        >
+          <ArrowLeft className="w-4 h-4" />
+          Back to all blogs
+        </Link>
+      </div>
+    );
+  }
 
+  const displayDate = formatDate(blog.publishedAt || blog.createdAt || blog.date);
+  const imageUrl = blog.image && !imgError ? blog.image : null;
 
   return (
     <div className="max-w-4xl mx-auto px-6 py-16">
+      {/* Back Button */}
+      <Link
+        href="/blog"
+        className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition mb-8 group"
+      >
+        <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+        Back to Clinic Blogs
+      </Link>
+
       {/* HEADER */}
       <motion.div
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <span className="text-primary text-sm font-medium">{blog.category}</span>
-        <h1 className="text-4xl font-bold text-foreground mt-2 leading-snug">{blog.title}</h1>
-        <p className="text-muted-foreground mt-2">{blog.date}</p>
+        <div className="flex flex-wrap items-center gap-3">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary border border-primary/20">
+            <Tag className="w-3 h-3" />
+            {blog.category || "Health & Wellness"}
+          </span>
+          {displayDate && (
+            <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground">
+              <Calendar className="w-3.5 h-3.5" />
+              {displayDate}
+            </span>
+          )}
+        </div>
+
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mt-4 leading-tight">
+          {blog.title}
+        </h1>
+
+        {blog.excerpt && (
+          <p className="text-lg text-muted-foreground mt-4 leading-relaxed border-l-2 border-primary/40 pl-4">
+            {blog.excerpt}
+          </p>
+        )}
       </motion.div>
 
       {/* IMAGE */}
@@ -170,28 +123,62 @@ export default function BlogArticle({ slug }) {
         initial={{ opacity: 0, scale: 0.98 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.1 }}
-        className="relative w-full h-80 rounded-2xl overflow-hidden mt-8 shadow-md bg-card"
+        className="relative w-full h-72 sm:h-96 rounded-3xl overflow-hidden mt-8 shadow-md bg-muted flex items-center justify-center border border-border"
       >
-        <Image
-          src={blog.image}
-          alt={blog.title}
-          fill
-          className="object-cover"
-        />
+        {imageUrl ? (
+          <Image
+            src={imageUrl}
+            alt={blog.title || "Blog cover"}
+            fill
+            priority
+            sizes="(max-width: 896px) 100vw, 896px"
+            className="object-cover"
+            onError={() => setImgError(true)}
+          />
+        ) : (
+          <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-emerald-950/40 via-slate-900 to-slate-950 p-6 text-center">
+            <span className="text-5xl mb-2">🌿</span>
+            <p className="text-sm font-medium text-emerald-400">
+              Modern Clinic • {blog.category || "Health & Wellness"}
+            </p>
+          </div>
+        )}
       </motion.div>
 
       {/* CONTENT */}
       <motion.article
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
         className="
-    prose max-w-none mt-10
-    prose-headings:text-foreground
-    prose-h2:text-2xl prose-h2:font-semibold prose-h2:mt-8 prose-h2:mb-4
-    prose-p:text-muted-foreground prose-p:leading-relaxed
-    prose-ul:list-disc prose-ul:pl-6 prose-li:text-muted-foreground
-    dark:prose-invert
-  "
+          prose max-w-none mt-10
+          prose-headings:text-foreground prose-headings:font-bold
+          prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
+          prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-3
+          prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:my-4
+          prose-ul:list-disc prose-ul:pl-6 prose-li:text-muted-foreground prose-li:my-1
+          prose-ol:list-decimal prose-ol:pl-6 prose-li:text-muted-foreground
+          prose-strong:text-foreground
+          prose-a:text-primary prose-a:underline hover:prose-a:opacity-80
+          dark:prose-invert
+        "
         dangerouslySetInnerHTML={{ __html: blog.content }}
       />
+
+      {/* TAGS */}
+      {blog.tags && blog.tags.length > 0 && (
+        <div className="mt-12 pt-6 border-t border-border flex flex-wrap items-center gap-2">
+          <span className="text-xs font-semibold text-muted-foreground mr-2">Tags:</span>
+          {blog.tags.map((tag, idx) => (
+            <span
+              key={idx}
+              className="px-3 py-1 rounded-lg bg-muted text-foreground text-xs font-medium"
+            >
+              #{tag}
+            </span>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
