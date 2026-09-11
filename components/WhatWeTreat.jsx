@@ -62,7 +62,7 @@ export default function WhatWeTreat() {
             {/* Section Heading */}
             <div className="text-center max-w-3xl mx-auto mb-14">
                 <h2 className="text-4xl font-bold text-foreground">
-                    What We <span className="text-primary">Treat?</span>
+                    What We <span className="text-[#D32F3F]">Treat?</span>
                 </h2>
 
                 <p className="mt-4 text-xl font-medium text-foreground">
