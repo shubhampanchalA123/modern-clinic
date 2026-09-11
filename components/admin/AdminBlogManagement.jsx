@@ -4,24 +4,26 @@ import { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   Plus,
+  Edit2,
   Trash2,
-  Edit,
-  Loader2,
   Eye,
-  CheckCircle,
+  Loader2,
+  UploadCloud,
+  CheckCircle2,
   XCircle,
-  Upload,
-  Image as ImageIcon,
+  AlertCircle,
+  FileText,
   Search,
   ExternalLink,
-  Tag,
-  FileText,
+  ToggleLeft,
+  ToggleRight,
+  Image as ImageIcon,
+  Sparkles,
 } from "lucide-react";
 import {
   getAdminBlogs,
   createAdminBlog,
   updateAdminBlog,
-  deleteAdminBlog,
   clearAdminBlogState,
 } from "@/redux/slices/adminBlogSlice";
 import { Button } from "@/components/ui/button";
@@ -30,23 +32,14 @@ import { Label } from "@/components/ui/label";
 
 const CATEGORIES = [
   "Hair Health",
-  "Scalp Care",
   "Skin Health",
-  "Chronic Conditions",
-  "Mental Wellness",
-  "Immunity",
+  "Trichology",
+  "Pediatrics",
+  "Women's Health",
+  "Metabolic Health",
   "Lifestyle",
   "General",
 ];
-
-const slugify = (text = "") =>
-  text
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9\s-]/g, "")
-    .replace(/\s+/g, "-")
-    .replace(/-+/g, "-")
-    .replace(/^-|-$/g, "");
 
 export default function AdminBlogManagement() {
   const dispatch = useDispatch();
@@ -55,10 +48,15 @@ export default function AdminBlogManagement() {
   );
 
   const [showForm, setShowForm] = useState(false);
-  const [editingId, setEditingId] = useState(null);
+  const [editingBlog, setEditingBlog] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
-  const [statusFilter, setStatusFilter] = useState("all");
+  const [filterCategory, setFilterCategory] = useState("ALL");
+  const [formError, setFormError] = useState("");
+  const [notification, setNotification] = useState(null);
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
+  const [selectedBlogForDelete, setSelectedBlogForDelete] = useState(null);
 
+  // Form State
   const [formData, setFormData] = useState({
     title: "",
     slug: "",
@@ -71,28 +69,41 @@ export default function AdminBlogManagement() {
 
   const [imageFile, setImageFile] = useState(null);
   const [imagePreview, setImagePreview] = useState("");
-  const [formError, setFormError] = useState("");
-  const [deletingId, setDeletingId] = useState(null);
-  const [showDeleteModal, setShowDeleteModal] = useState(false);
-  const [blogToDelete, setBlogToDelete] = useState(null);
-
   const fileInputRef = useRef(null);
 
+  // Initial Fetch
   useEffect(() => {
     dispatch(getAdminBlogs());
   }, [dispatch]);
 
+  // Handle Success State
   useEffect(() => {
     if (success) {
-      handleCloseForm();
+      setNotification({
+        type: "success",
+        message: editingBlog
+          ? "Blog updated successfully!"
+          : "Blog created successfully!",
+      });
+      setShowForm(false);
+      resetForm();
       dispatch(clearAdminBlogState());
       dispatch(getAdminBlogs());
-    }
-  }, [success, dispatch]);
 
-  const handleCloseForm = () => {
-    setShowForm(false);
-    setEditingId(null);
+      setTimeout(() => {
+        setNotification(null);
+      }, 4000);
+    }
+  }, [success, dispatch, editingBlog]);
+
+  // Handle Redux Error
+  useEffect(() => {
+    if (error) {
+      setFormError(typeof error === "string" ? error : "An error occurred");
+    }
+  }, [error]);
+
+  const resetForm = () => {
     setFormData({
       title: "",
       slug: "",
@@ -104,22 +115,56 @@ export default function AdminBlogManagement() {
     });
     setImageFile(null);
     setImagePreview("");
+    setEditingBlog(null);
     setFormError("");
-    if (fileInputRef.current) fileInputRef.current.value = "";
+    if (fileInputRef.current) {
+      fileInputRef.current.value = "";
+    }
   };
 
-  const handleInputChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    if (name === "title" && !editingId) {
+  const handleCreateNew = () => {
+    resetForm();
+    setShowForm(true);
+  };
+
+  const handleEdit = (blog) => {
+    setEditingBlog(blog);
+    setFormData({
+      title: blog.title || "",
+      slug: blog.slug || "",
+      category: blog.category || "General",
+      excerpt: blog.excerpt || "",
+      content: blog.content || "",
+      tags: Array.isArray(blog.tags) ? blog.tags.join(", ") : blog.tags || "",
+      isPublished: Boolean(blog.isPublished),
+    });
+    setImageFile(null);
+    setImagePreview(blog.image || "");
+    setFormError("");
+    setShowForm(true);
+  };
+
+  const generateSlug = (text) => {
+    return text
+      .toLowerCase()
+      .trim()
+      .replace(/[^a-z0-9\s-]/g, "")
+      .replace(/\s+/g, "-")
+      .replace(/-+/g, "-");
+  };
+
+  const handleTitleChange = (e) => {
+    const title = e.target.value;
+    if (!editingBlog) {
       setFormData((prev) => ({
         ...prev,
-        title: value,
-        slug: slugify(value),
+        title,
+        slug: generateSlug(title),
       }));
     } else {
       setFormData((prev) => ({
         ...prev,
-        [name]: type === "checkbox" ? checked : value,
+        title,
       }));
     }
   };
@@ -131,8 +176,8 @@ export default function AdminBlogManagement() {
         setFormError("Please select a valid image file (PNG, JPG, WebP)");
         return;
       }
-      if (file.size > 5 * 1024 * 1024) {
-        setFormError("Image size must be under 5MB");
+      if (file.size > 10 * 1024 * 1024) {
+        setFormError("Image file size should be less than 10MB");
         return;
       }
       setImageFile(file);
@@ -141,555 +186,634 @@ export default function AdminBlogManagement() {
     }
   };
 
-  const handleEdit = (blog) => {
-    setEditingId(blog.id || blog._id);
-    setFormData({
-      title: blog.title || "",
-      slug: blog.slug || "",
-      category: blog.category || "Hair Health",
-      excerpt: blog.excerpt || "",
-      content: blog.content || "",
-      tags: Array.isArray(blog.tags) ? blog.tags.join(", ") : blog.tags || "",
-      isPublished: blog.isPublished ?? true,
-    });
-    setImagePreview(blog.image || "");
-    setImageFile(null);
-    setShowForm(true);
-    setFormError("");
-  };
-
-  const handleTogglePublish = async (blog) => {
-    const blogId = blog.id || blog._id;
-    const updateData = new FormData();
-    updateData.append("isPublished", !blog.isPublished);
-
-    try {
-      await dispatch(updateAdminBlog({ id: blogId, formData: updateData })).unwrap();
-      dispatch(getAdminBlogs());
-    } catch (err) {
-      console.error("Failed to toggle publish state:", err);
-    }
-  };
-
   const validateForm = () => {
     setFormError("");
+
     if (!formData.title.trim()) {
-      setFormError("Title is required");
+      setFormError("Blog title is required");
+      return false;
+    }
+    if (!formData.slug.trim()) {
+      setFormError("Blog slug is required");
       return false;
     }
     if (!formData.excerpt.trim()) {
-      setFormError("Excerpt / short summary is required");
+      setFormError("Short description / excerpt is required");
       return false;
     }
     if (!formData.content.trim()) {
       setFormError("Blog content is required");
       return false;
     }
-    if (!editingId && !imageFile && !imagePreview) {
-      setFormError("Blog cover image is required");
+    if (!editingBlog && !imageFile) {
+      setFormError("Featured image is required for new blogs");
       return false;
     }
+
     return true;
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (!validateForm()) return;
 
     const data = new FormData();
     data.append("title", formData.title.trim());
-    data.append("slug", formData.slug.trim() || slugify(formData.title));
+    data.append("slug", formData.slug.trim());
     data.append("category", formData.category);
     data.append("excerpt", formData.excerpt.trim());
     data.append("content", formData.content);
     data.append("tags", formData.tags);
-    data.append("isPublished", formData.isPublished);
+    data.append("isPublished", formData.isPublished ? "true" : "false");
 
+    // Exact field name expected by backend: "image"
     if (imageFile) {
       data.append("image", imageFile);
-    } else if (imagePreview && !imageFile) {
+    } else if (editingBlog && imagePreview) {
       data.append("image", imagePreview);
     }
 
-    try {
-      if (editingId) {
-        await dispatch(updateAdminBlog({ id: editingId, formData: data })).unwrap();
-      } else {
-        await dispatch(createAdminBlog(data)).unwrap();
-      }
-    } catch (err) {
-      setFormError(typeof err === "string" ? err : "Failed to save blog");
+    if (editingBlog) {
+      const blogId = editingBlog.id || editingBlog._id;
+      dispatch(updateAdminBlog({ id: blogId, formData: data }));
+    } else {
+      dispatch(createAdminBlog(data));
     }
   };
 
-  const confirmDelete = async () => {
-    if (!blogToDelete) return;
-    const blogId = blogToDelete.id || blogToDelete._id;
-    setDeletingId(blogId);
-    try {
-      await dispatch(deleteAdminBlog(blogId)).unwrap();
-      setShowDeleteModal(false);
-      setBlogToDelete(null);
-      dispatch(getAdminBlogs());
-    } catch (err) {
-      setFormError(typeof err === "string" ? err : "Failed to delete blog");
-    } finally {
-      setDeletingId(null);
+  const handleTogglePublish = (blog) => {
+    const blogId = blog.id || blog._id;
+    const data = new FormData();
+    data.append("isPublished", blog.isPublished ? "false" : "true");
+    if (blog.image) {
+      data.append("image", blog.image);
     }
+    dispatch(updateAdminBlog({ id: blogId, formData: data }));
   };
 
-  // Filter blogs
-  const filteredBlogs = blogs.filter((b) => {
+  // Filtered Blogs
+  const filteredBlogs = (blogs || []).filter((blog) => {
     const matchesSearch =
-      b.title?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      b.category?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      b.slug?.toLowerCase().includes(searchQuery.toLowerCase());
-
-    if (statusFilter === "published") return matchesSearch && b.isPublished;
-    if (statusFilter === "draft") return matchesSearch && !b.isPublished;
-    return matchesSearch;
+      blog.title?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      blog.slug?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      blog.category?.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesCategory =
+      filterCategory === "ALL" || blog.category === filterCategory;
+    return matchesSearch && matchesCategory;
   });
 
   return (
     <div className="space-y-6">
-      {/* Header & Controls */}
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between rounded-3xl border border-white/10 bg-white/5 p-5">
+      
+      {/* ================= NOTIFICATION BANNER ================= */}
+      {notification && (
+        <div
+          className={`p-4 rounded-2xl flex items-center justify-between border ${
+            notification.type === "success"
+              ? "bg-emerald-500/10 border-emerald-500/30 text-emerald-300"
+              : "bg-red-500/10 border-red-500/30 text-red-300"
+          }`}
+        >
+          <div className="flex items-center gap-2 text-sm font-medium">
+            {notification.type === "success" ? (
+              <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
+            ) : (
+              <AlertCircle className="w-5 h-5 text-red-400 shrink-0" />
+            )}
+            <span>{notification.message}</span>
+          </div>
+          <button
+            onClick={() => setNotification(null)}
+            className="text-xs hover:text-white"
+          >
+            Dismiss
+          </button>
+        </div>
+      )}
+
+      {/* ================= HEADER SECTION ================= */}
+      <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h2 className="text-xl font-semibold text-white flex items-center gap-2">
-            <FileText className="w-5 h-5 text-emerald-400" />
-            Blog Management
-          </h2>
-          <p className="text-xs text-slate-400 mt-1">
-            Create, edit, publish, and manage all clinic health articles and medical blogs.
+          <div className="flex items-center gap-2">
+            <h2 className="text-xl sm:text-2xl font-semibold text-white">
+              Blog Management
+            </h2>
+            <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/15 text-emerald-300 border border-emerald-500/20">
+              {blogs?.length || 0} Articles
+            </span>
+          </div>
+          <p className="mt-1 text-sm text-slate-400">
+            Publish, edit, and manage public health articles and patient wellness blogs.
           </p>
         </div>
 
         <Button
-          onClick={() => {
-            handleCloseForm();
-            setShowForm(true);
-          }}
-          className="gap-2 bg-emerald-500 hover:bg-emerald-600 text-black font-semibold w-fit"
+          onClick={handleCreateNew}
+          className="gap-2 bg-emerald-500 text-black font-semibold hover:bg-emerald-400 transition shadow-md w-fit"
         >
           <Plus className="h-4 w-4" />
-          Create Blog
+          Create New Blog
         </Button>
       </div>
 
-      {/* Filters Bar */}
-      <div className="flex flex-col sm:flex-row gap-3 items-center justify-between">
-        <div className="relative w-full sm:w-80">
-          <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
-          <input
-            type="text"
-            placeholder="Search by title, category, slug..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 rounded-xl bg-slate-900 border border-white/10 text-xs text-white placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-emerald-400"
-          />
-        </div>
-
-        <div className="flex items-center gap-2 w-full sm:w-auto">
-          {["all", "published", "draft"].map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setStatusFilter(tab)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-medium capitalize transition ${
-                statusFilter === tab
-                  ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30"
-                  : "text-slate-400 hover:bg-white/5 hover:text-white"
-              }`}
-            >
-              {tab} ({
-                tab === "all"
-                  ? blogs.length
-                  : tab === "published"
-                  ? blogs.filter((b) => b.isPublished).length
-                  : blogs.filter((b) => !b.isPublished).length
-              })
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* Create / Edit Form Modal */}
+      {/* ================= CREATE / EDIT FORM MODAL / VIEW ================= */}
       {showForm && (
-        <div className="rounded-3xl border border-white/10 bg-slate-900/95 p-6 shadow-2xl space-y-6">
-          <div className="flex items-center justify-between border-b border-white/10 pb-4">
-            <h3 className="text-lg font-semibold text-white flex items-center gap-2">
-              {editingId ? <Edit className="w-5 h-5 text-emerald-400" /> : <Plus className="w-5 h-5 text-emerald-400" />}
-              {editingId ? "Edit Blog Article" : "Create New Blog Article"}
-            </h3>
+        <div className="rounded-3xl border border-white/10 bg-slate-900/90 p-6 sm:p-8 backdrop-blur shadow-xl">
+          <div className="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
+            <div>
+              <h3 className="text-lg font-semibold text-white">
+                {editingBlog ? "Edit Blog Article" : "Create New Blog Article"}
+              </h3>
+              <p className="text-xs text-slate-400 mt-0.5">
+                {editingBlog
+                  ? "Update article details, replace featured image, or modify publication status."
+                  : "Draft a new clinical article. Images are automatically uploaded to secure S3 storage."}
+              </p>
+            </div>
             <button
-              onClick={handleCloseForm}
-              className="text-xs text-slate-400 hover:text-white px-2 py-1 rounded-md hover:bg-white/5"
+              onClick={() => {
+                setShowForm(false);
+                resetForm();
+              }}
+              className="text-sm text-slate-400 hover:text-white px-3 py-1 rounded-lg border border-white/10 hover:bg-white/5"
             >
               Cancel
             </button>
           </div>
 
           {formError && (
-            <div className="p-3 rounded-xl bg-red-500/10 border border-red-500/20 text-xs text-red-300">
-              {formError}
+            <div className="mb-6 p-4 rounded-xl bg-red-500/10 border border-red-500/30 text-red-300 text-sm flex items-center gap-2">
+              <AlertCircle className="w-4 h-4 shrink-0" />
+              <span>{formError}</span>
             </div>
           )}
 
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              
               {/* Title */}
-              <div className="space-y-1.5 md:col-span-2">
-                <Label className="text-xs text-slate-300">Article Title *</Label>
+              <div className="space-y-2">
+                <Label htmlFor="blog-title" className="text-slate-300">
+                  Blog Title <span className="text-red-400">*</span>
+                </Label>
                 <Input
-                  name="title"
+                  id="blog-title"
+                  type="text"
+                  placeholder="e.g. Understanding Hair Loss Triggers & Homeopathy"
                   value={formData.title}
-                  onChange={handleInputChange}
-                  placeholder="e.g., How Hair Fall Really Starts & Homeopathic Care"
-                  className="bg-slate-950 border-white/10 text-white placeholder:text-slate-500 text-sm"
+                  onChange={handleTitleChange}
+                  className="border-white/10 bg-white/5 text-white placeholder:text-slate-500"
                   required
                 />
               </div>
 
               {/* Slug */}
-              <div className="space-y-1.5">
-                <Label className="text-xs text-slate-300">URL Slug (auto-generated)</Label>
+              <div className="space-y-2">
+                <Label htmlFor="blog-slug" className="text-slate-300">
+                  URL Slug <span className="text-red-400">*</span>
+                </Label>
                 <Input
-                  name="slug"
+                  id="blog-slug"
+                  type="text"
+                  placeholder="understanding-hair-loss-triggers"
                   value={formData.slug}
-                  onChange={handleInputChange}
-                  placeholder="e.g., how-hair-fall-starts"
-                  className="bg-slate-950 border-white/10 text-slate-300 placeholder:text-slate-500 text-sm"
+                  onChange={(e) =>
+                    setFormData((prev) => ({ ...prev, slug: generateSlug(e.target.value) }))
+                  }
+                  className="border-white/10 bg-white/5 text-white placeholder:text-slate-500"
+                  required
                 />
+                <p className="text-[11px] text-slate-500">
+                  Public URL: <span className="text-emerald-300/80">/blog/{formData.slug || "slug-preview"}</span>
+                </p>
               </div>
 
               {/* Category */}
-              <div className="space-y-1.5">
-                <Label className="text-xs text-slate-300">Category *</Label>
+              <div className="space-y-2">
+                <Label htmlFor="blog-category" className="text-slate-300">
+                  Category
+                </Label>
                 <select
-                  name="category"
+                  id="blog-category"
                   value={formData.category}
-                  onChange={handleInputChange}
-                  className="w-full h-10 px-3 rounded-md bg-slate-950 border border-white/10 text-slate-200 text-sm focus:outline-none focus:ring-1 focus:ring-emerald-400"
+                  onChange={(e) =>
+                    setFormData((prev) => ({ ...prev, category: e.target.value }))
+                  }
+                  className="w-full rounded-md border border-white/10 bg-slate-900 px-3 py-2 text-sm text-white focus:outline-none focus:ring-1 focus:ring-emerald-400"
                 >
                   {CATEGORIES.map((cat) => (
-                    <option key={cat} value={cat}>
+                    <option key={cat} value={cat} className="bg-slate-900 text-white">
                       {cat}
                     </option>
                   ))}
                 </select>
               </div>
 
-              {/* Cover Image Upload */}
-              <div className="space-y-1.5 md:col-span-2">
-                <Label className="text-xs text-slate-300">Cover Image (AWS S3 Upload) *</Label>
-                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 rounded-xl border border-dashed border-white/15 bg-slate-950/60">
+              {/* Tags */}
+              <div className="space-y-2">
+                <Label htmlFor="blog-tags" className="text-slate-300">
+                  Tags / Keywords (comma separated)
+                </Label>
+                <Input
+                  id="blog-tags"
+                  type="text"
+                  placeholder="hair fall, scalp health, homeopathy, wellness"
+                  value={formData.tags}
+                  onChange={(e) =>
+                    setFormData((prev) => ({ ...prev, tags: e.target.value }))
+                  }
+                  className="border-white/10 bg-white/5 text-white placeholder:text-slate-500"
+                />
+              </div>
+
+            </div>
+
+            {/* Excerpt */}
+            <div className="space-y-2">
+              <Label htmlFor="blog-excerpt" className="text-slate-300">
+                Short Description / Excerpt <span className="text-red-400">*</span>
+              </Label>
+              <textarea
+                id="blog-excerpt"
+                rows={2}
+                placeholder="Brief summary displayed on the blog listing card..."
+                value={formData.excerpt}
+                onChange={(e) =>
+                  setFormData((prev) => ({ ...prev, excerpt: e.target.value }))
+                }
+                className="w-full rounded-md border border-white/10 bg-white/5 p-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-emerald-400"
+                required
+              />
+            </div>
+
+            {/* Featured Image Upload (Field Name: 'image') */}
+            <div className="space-y-2">
+              <Label className="text-slate-300">
+                Featured Image <span className="text-red-400">*</span>
+              </Label>
+              
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 p-4 rounded-2xl border border-white/10 bg-white/5">
+                {/* Image Preview */}
+                <div className="relative w-40 h-28 rounded-xl overflow-hidden bg-slate-950 border border-white/10 shrink-0 flex items-center justify-center">
                   {imagePreview ? (
-                    <div className="relative w-32 h-20 rounded-lg overflow-hidden border border-white/10 bg-slate-900 flex-shrink-0">
-                      <img
-                        src={imagePreview}
-                        alt="Preview"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
+                    <img
+                      src={imagePreview}
+                      alt="Featured Preview"
+                      className="w-full h-full object-cover"
+                    />
                   ) : (
-                    <div className="w-32 h-20 rounded-lg border border-white/10 bg-white/5 flex items-center justify-center flex-shrink-0 text-slate-500">
-                      <ImageIcon className="w-8 h-8 opacity-40" />
+                    <div className="text-center p-2">
+                      <ImageIcon className="w-8 h-8 text-slate-600 mx-auto mb-1" />
+                      <span className="text-[10px] text-slate-500">No Image</span>
                     </div>
                   )}
-
-                  <div className="space-y-1.5">
-                    <input
-                      type="file"
-                      ref={fileInputRef}
-                      onChange={handleImageChange}
-                      accept="image/*"
-                      className="hidden"
-                      id="blog-image-input"
-                    />
-                    <label
-                      htmlFor="blog-image-input"
-                      className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/10 text-white text-xs font-medium cursor-pointer hover:bg-white/15 transition"
-                    >
-                      <Upload className="w-3.5 h-3.5" />
-                      {imagePreview ? "Change Image" : "Upload Image"}
-                    </label>
-                    <p className="text-[11px] text-slate-400">
-                      PNG, JPG, WebP up to 5MB. Uploaded securely to AWS S3.
-                    </p>
-                  </div>
                 </div>
-              </div>
 
-              {/* Excerpt */}
-              <div className="space-y-1.5 md:col-span-2">
-                <Label className="text-xs text-slate-300">Excerpt / Short Description *</Label>
-                <textarea
-                  name="excerpt"
-                  value={formData.excerpt}
-                  onChange={handleInputChange}
-                  rows={2}
-                  placeholder="Brief 1-2 sentence preview that appears on blog cards..."
-                  className="w-full p-3 rounded-md bg-slate-950 border border-white/10 text-slate-200 text-sm focus:outline-none focus:ring-1 focus:ring-emerald-400"
-                  required
-                />
-              </div>
-
-              {/* Content (HTML/Rich Body) */}
-              <div className="space-y-1.5 md:col-span-2">
-                <div className="flex items-center justify-between">
-                  <Label className="text-xs text-slate-300">Full Blog Content (HTML supported) *</Label>
-                  <span className="text-[11px] text-slate-400">
-                    Supports &lt;p&gt;, &lt;h2&gt;, &lt;ul&gt;, &lt;li&gt;, &lt;strong&gt;, etc.
-                  </span>
+                <div className="flex-1 space-y-2">
+                  <input
+                    type="file"
+                    ref={fileInputRef}
+                    onChange={handleImageChange}
+                    accept="image/png, image/jpeg, image/webp"
+                    className="hidden"
+                    id="blog-image-input"
+                  />
+                  <Button
+                    type="button"
+                    variant="outline"
+                    onClick={() => fileInputRef.current?.click()}
+                    className="gap-2 border-white/20 hover:bg-white/10 text-slate-200"
+                  >
+                    <UploadCloud className="w-4 h-4" />
+                    {imagePreview ? "Change Image" : "Upload Featured Image"}
+                  </Button>
+                  <p className="text-xs text-slate-400">
+                    Supports JPG, PNG, WebP up to 10MB. Uploads directly to S3 via backend multipart field <code className="text-emerald-300 font-mono">image</code>.
+                  </p>
                 </div>
-                <textarea
-                  name="content"
-                  value={formData.content}
-                  onChange={handleInputChange}
-                  rows={10}
-                  placeholder="<p>Write or paste your article content here...</p>&#10;<h2>Why Does This Happen?</h2>&#10;<ul>&#10;  <li>Root cause 1</li>&#10;  <li>Root cause 2</li>&#10;</ul>"
-                  className="w-full p-3 font-mono rounded-md bg-slate-950 border border-white/10 text-slate-200 text-xs focus:outline-none focus:ring-1 focus:ring-emerald-400 leading-relaxed"
-                  required
-                />
-              </div>
-
-              {/* Tags */}
-              <div className="space-y-1.5 md:col-span-2">
-                <Label className="text-xs text-slate-300">Tags (comma separated)</Label>
-                <Input
-                  name="tags"
-                  value={formData.tags}
-                  onChange={handleInputChange}
-                  placeholder="hairfall, homeopathy, scalp care, regrowth"
-                  className="bg-slate-950 border-white/10 text-white placeholder:text-slate-500 text-sm"
-                />
-              </div>
-
-              {/* Published Toggle */}
-              <div className="flex items-center gap-3 md:col-span-2 pt-2">
-                <input
-                  type="checkbox"
-                  id="isPublished"
-                  name="isPublished"
-                  checked={formData.isPublished}
-                  onChange={handleInputChange}
-                  className="w-4 h-4 rounded border-white/20 bg-slate-950 text-emerald-500 focus:ring-emerald-400 cursor-pointer"
-                />
-                <Label htmlFor="isPublished" className="text-xs text-slate-300 cursor-pointer">
-                  Publish immediately (Uncheck to save as draft)
-                </Label>
               </div>
             </div>
 
+            {/* Content Body (HTML / Formatted Text) */}
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <Label htmlFor="blog-content" className="text-slate-300">
+                  Article Content (HTML / Text) <span className="text-red-400">*</span>
+                </Label>
+                <span className="text-xs text-slate-500">
+                  Supports HTML tags: &lt;p&gt;, &lt;h2&gt;, &lt;ul&gt;, &lt;li&gt;, &lt;strong&gt;
+                </span>
+              </div>
+              <textarea
+                id="blog-content"
+                rows={10}
+                placeholder="<p>Write your detailed article content here...</p>&#10;<h2>Key Takeaways</h2>&#10;<ul>&#10;  <li>Point 1</li>&#10;</ul>"
+                value={formData.content}
+                onChange={(e) =>
+                  setFormData((prev) => ({ ...prev, content: e.target.value }))
+                }
+                className="w-full rounded-md border border-white/10 bg-white/5 p-4 text-sm font-mono text-slate-200 placeholder:text-slate-600 focus:outline-none focus:ring-1 focus:ring-emerald-400 leading-relaxed"
+                required
+              />
+            </div>
+
+            {/* Publication Status Toggle */}
+            <div className="flex items-center justify-between p-4 rounded-2xl border border-white/10 bg-white/5">
+              <div>
+                <Label className="text-slate-200 font-medium">
+                  Publication Status
+                </Label>
+                <p className="text-xs text-slate-400">
+                  {formData.isPublished
+                    ? "Published — This article is live on the website."
+                    : "Draft — Only visible to admins in this dashboard."}
+                </p>
+              </div>
+
+              <button
+                type="button"
+                onClick={() =>
+                  setFormData((prev) => ({ ...prev, isPublished: !prev.isPublished }))
+                }
+                className="flex items-center gap-2 text-sm font-semibold text-slate-300 hover:text-white"
+              >
+                {formData.isPublished ? (
+                  <span className="flex items-center gap-1.5 text-emerald-400">
+                    <ToggleRight className="w-8 h-8" /> Published
+                  </span>
+                ) : (
+                  <span className="flex items-center gap-1.5 text-slate-400">
+                    <ToggleLeft className="w-8 h-8" /> Draft
+                  </span>
+                )}
+              </button>
+            </div>
+
+            {/* Submit / Action Buttons */}
             <div className="flex items-center justify-end gap-3 pt-4 border-t border-white/10">
               <Button
                 type="button"
                 variant="outline"
-                onClick={handleCloseForm}
-                className="text-xs"
+                onClick={() => {
+                  setShowForm(false);
+                  resetForm();
+                }}
+                className="border-white/10 text-slate-300 hover:bg-white/5"
               >
                 Cancel
               </Button>
               <Button
                 type="submit"
                 disabled={loading}
-                className="gap-2 bg-emerald-500 hover:bg-emerald-600 text-black font-semibold text-xs"
+                className="gap-2 bg-emerald-500 text-black font-semibold hover:bg-emerald-400 transition"
               >
-                {loading && <Loader2 className="h-3.5 w-3.5 animate-spin" />}
-                {editingId ? "Update Article" : "Publish Article"}
+                {loading && <Loader2 className="w-4 h-4 animate-spin" />}
+                {editingBlog ? "Save Changes" : "Publish Article"}
               </Button>
             </div>
           </form>
         </div>
       )}
 
-      {/* Blogs List Table */}
-      <div className="rounded-3xl border border-white/10 bg-white/5 p-5">
-        <div className="mb-4 flex items-center justify-between">
-          <div>
-            <p className="text-sm font-medium text-white">
-              Total Articles ({filteredBlogs.length})
-            </p>
-            <p className="text-xs text-slate-400">
-              Live from MongoDB database and AWS S3
-            </p>
-          </div>
+      {/* ================= SEARCH & FILTER BAR ================= */}
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 rounded-3xl border border-white/10 bg-white/5 p-4">
+        {/* Search */}
+        <div className="relative w-full sm:w-80">
+          <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+          <input
+            type="text"
+            placeholder="Search blogs by title or category..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full pl-10 pr-4 py-2 rounded-xl border border-white/10 bg-white/5 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-emerald-400"
+          />
         </div>
 
-        {loading && blogs.length === 0 ? (
-          <div className="py-12 text-center text-slate-400 flex flex-col items-center gap-2">
-            <Loader2 className="w-6 h-6 animate-spin text-emerald-400" />
-            <p className="text-xs">Loading blog articles...</p>
-          </div>
-        ) : error ? (
-          <div className="py-8 text-center text-red-300 text-xs">
-            {error}
+        {/* Category Filter */}
+        <div className="flex items-center gap-2 w-full sm:w-auto overflow-x-auto">
+          <button
+            onClick={() => setFilterCategory("ALL")}
+            className={`px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition ${
+              filterCategory === "ALL"
+                ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30"
+                : "text-slate-400 hover:text-white bg-white/5"
+            }`}
+          >
+            All Categories
+          </button>
+          {CATEGORIES.slice(0, 4).map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setFilterCategory(cat)}
+              className={`px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition ${
+                filterCategory === cat
+                  ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30"
+                  : "text-slate-400 hover:text-white bg-white/5"
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* ================= BLOG LIST TABLE ================= */}
+      <div className="rounded-3xl border border-white/10 bg-white/5 overflow-hidden">
+        {loading && !showForm ? (
+          <div className="p-12 text-center text-slate-300 flex flex-col items-center justify-center gap-3">
+            <Loader2 className="w-7 h-7 animate-spin text-emerald-400" />
+            <p className="text-sm">Loading blog articles from backend...</p>
           </div>
         ) : filteredBlogs.length === 0 ? (
-          <div className="py-12 text-center text-slate-400 space-y-2">
-            <FileText className="w-8 h-8 opacity-30 mx-auto" />
-            <p className="text-sm font-medium text-slate-300">No blog articles found</p>
-            <p className="text-xs text-slate-500">
-              {searchQuery
-                ? "No articles match your search filter."
-                : "Get started by creating your first clinic blog post."}
+          <div className="p-12 text-center text-slate-400 flex flex-col items-center justify-center">
+            <FileText className="w-12 h-12 text-slate-600 mb-3" />
+            <h4 className="text-base font-semibold text-white">No Blog Articles Found</h4>
+            <p className="text-xs text-slate-400 mt-1 max-w-sm">
+              {searchQuery || filterCategory !== "ALL"
+                ? "No articles match the current search or filter query."
+                : "Get started by creating your first clinic blog article."}
             </p>
+            <Button
+              onClick={handleCreateNew}
+              className="mt-5 gap-2 bg-emerald-500 text-black font-semibold hover:bg-emerald-400"
+            >
+              <Plus className="w-4 h-4" /> Create Blog
+            </Button>
           </div>
         ) : (
           <div className="overflow-x-auto">
-            <table className="min-w-full text-left text-xs text-slate-300">
-              <thead className="border-b border-white/10 uppercase tracking-wider text-slate-400 text-[11px]">
+            <table className="min-w-full text-left text-sm text-slate-300">
+              <thead className="border-b border-white/10 text-xs uppercase tracking-widest text-slate-400 bg-white/5">
                 <tr>
-                  <th className="px-3 py-3">Article</th>
-                  <th className="px-3 py-3">Category</th>
-                  <th className="px-3 py-3">Status</th>
-                  <th className="px-3 py-3">Date</th>
-                  <th className="px-3 py-3 text-right">Actions</th>
+                  <th className="px-4 py-3.5">Article</th>
+                  <th className="px-4 py-3.5">Category</th>
+                  <th className="px-4 py-3.5">Status</th>
+                  <th className="px-4 py-3.5">Date</th>
+                  <th className="px-4 py-3.5 text-right">Actions</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-white/5">
-                {filteredBlogs.map((blog) => (
-                  <tr key={blog.id || blog._id} className="hover:bg-white/[0.02] transition">
-                    {/* Article Thumbnail & Title */}
-                    <td className="px-3 py-3">
-                      <div className="flex items-center gap-3">
-                        <div className="relative w-12 h-10 rounded-lg overflow-hidden bg-slate-900 border border-white/10 flex-shrink-0">
-                          {blog.image ? (
-                            <img
-                              src={blog.image}
-                              alt={blog.title}
-                              className="w-full h-full object-cover"
-                            />
-                          ) : (
-                            <div className="w-full h-full flex items-center justify-center text-slate-600">
-                              <ImageIcon className="w-4 h-4" />
-                            </div>
-                          )}
-                        </div>
-                        <div className="max-w-xs sm:max-w-md">
-                          <p className="font-medium text-white truncate">{blog.title}</p>
-                          <p className="text-[11px] text-slate-400 truncate">/blog/{blog.slug}</p>
-                        </div>
-                      </div>
-                    </td>
-
-                    {/* Category */}
-                    <td className="px-3 py-3">
-                      <span className="px-2 py-0.5 rounded-md bg-white/5 text-slate-300 text-[11px] font-medium">
-                        {blog.category || "General"}
-                      </span>
-                    </td>
-
-                    {/* Status Badge & Toggle */}
-                    <td className="px-3 py-3">
-                      <button
-                        onClick={() => handleTogglePublish(blog)}
-                        title="Click to toggle publish status"
-                        className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-medium transition ${
-                          blog.isPublished
-                            ? "bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/25"
-                            : "bg-amber-500/15 text-amber-300 border border-amber-500/30 hover:bg-amber-500/25"
-                        }`}
-                      >
-                        {blog.isPublished ? (
-                          <>
-                            <CheckCircle className="w-3 h-3" /> Published
-                          </>
-                        ) : (
-                          <>
-                            <XCircle className="w-3 h-3" /> Draft
-                          </>
-                        )}
-                      </button>
-                    </td>
-
-                    {/* Date */}
-                    <td className="px-3 py-3 text-slate-400 whitespace-nowrap text-[11px]">
-                      {new Date(blog.publishedAt || blog.createdAt).toLocaleDateString("en-US", {
+              <tbody className="divide-y divide-white/10">
+                {filteredBlogs.map((blog) => {
+                  const blogId = blog.id || blog._id;
+                  const formattedDate = blog.date || blog.createdAt
+                    ? new Date(blog.date || blog.createdAt).toLocaleDateString("en-US", {
                         month: "short",
                         day: "numeric",
                         year: "numeric",
-                      })}
-                    </td>
+                      })
+                    : "—";
 
-                    {/* Actions */}
-                    <td className="px-3 py-3 text-right whitespace-nowrap">
-                      <div className="flex items-center justify-end gap-1.5">
-                        {blog.isPublished && (
+                  return (
+                    <tr key={blogId} className="hover:bg-white/5 transition-colors">
+                      {/* Thumbnail & Title */}
+                      <td className="px-4 py-3.5">
+                        <div className="flex items-center gap-3">
+                          <div className="relative w-14 h-11 rounded-lg overflow-hidden bg-slate-900 shrink-0 border border-white/10">
+                            {blog.image ? (
+                              <img
+                                src={blog.image}
+                                alt={blog.title}
+                                className="w-full h-full object-cover"
+                              />
+                            ) : (
+                              <div className="w-full h-full flex items-center justify-center">
+                                <ImageIcon className="w-4 h-4 text-slate-600" />
+                              </div>
+                            )}
+                          </div>
+                          <div className="min-w-0 max-w-md">
+                            <h4 className="font-semibold text-white truncate text-sm">
+                              {blog.title}
+                            </h4>
+                            <p className="text-[11px] text-slate-400 truncate">
+                              /blog/{blog.slug}
+                            </p>
+                          </div>
+                        </div>
+                      </td>
+
+                      {/* Category */}
+                      <td className="px-4 py-3.5">
+                        <span className="inline-block px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/15 text-primary border border-primary/20">
+                          {blog.category || "General"}
+                        </span>
+                      </td>
+
+                      {/* Status */}
+                      <td className="px-4 py-3.5">
+                        <button
+                          onClick={() => handleTogglePublish(blog)}
+                          title="Click to toggle status"
+                          className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold border transition ${
+                            blog.isPublished
+                              ? "bg-emerald-500/15 text-emerald-300 border-emerald-500/30 hover:bg-emerald-500/25"
+                              : "bg-amber-500/15 text-amber-300 border-amber-500/30 hover:bg-amber-500/25"
+                          }`}
+                        >
+                          <span
+                            className={`w-1.5 h-1.5 rounded-full ${
+                              blog.isPublished ? "bg-emerald-400" : "bg-amber-400"
+                            }`}
+                          />
+                          <span>{blog.isPublished ? "Published" : "Draft"}</span>
+                        </button>
+                      </td>
+
+                      {/* Date */}
+                      <td className="px-4 py-3.5 text-xs text-slate-400 whitespace-nowrap">
+                        {formattedDate}
+                      </td>
+
+                      {/* Actions */}
+                      <td className="px-4 py-3.5 text-right whitespace-nowrap">
+                        <div className="inline-flex items-center gap-1.5">
+                          {/* View in Public Site */}
                           <a
                             href={`/blog/${blog.slug}`}
                             target="_blank"
-                            rel="noreferrer"
-                            className="p-1.5 rounded-lg bg-white/5 text-slate-300 hover:text-white hover:bg-white/10 transition"
-                            title="View Public Blog"
+                            rel="noopener noreferrer"
+                            className="p-1.5 rounded-lg border border-white/10 bg-white/5 text-slate-300 hover:text-white hover:bg-white/10 transition"
+                            title="View Public Article"
                           >
                             <ExternalLink className="w-3.5 h-3.5" />
                           </a>
-                        )}
 
-                        <button
-                          onClick={() => handleEdit(blog)}
-                          className="p-1.5 rounded-lg bg-emerald-500/10 text-emerald-300 hover:bg-emerald-500/20 transition"
-                          title="Edit Article"
-                        >
-                          <Edit className="w-3.5 h-3.5" />
-                        </button>
+                          {/* Edit */}
+                          <button
+                            onClick={() => handleEdit(blog)}
+                            className="p-1.5 rounded-lg border border-white/10 bg-white/5 text-emerald-400 hover:bg-emerald-500/20 transition"
+                            title="Edit Article"
+                          >
+                            <Edit2 className="w-3.5 h-3.5" />
+                          </button>
 
-                        <button
-                          onClick={() => {
-                            setBlogToDelete(blog);
-                            setShowDeleteModal(true);
-                          }}
-                          className="p-1.5 rounded-lg bg-red-500/10 text-red-300 hover:bg-red-500/20 transition"
-                          title="Delete Article"
-                        >
-                          <Trash2 className="w-3.5 h-3.5" />
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-                ))}
+                          {/* Delete (Pending backend API) */}
+                          <button
+                            onClick={() => {
+                              setSelectedBlogForDelete(blog);
+                              setShowDeleteModal(true);
+                            }}
+                            className="p-1.5 rounded-lg border border-white/10 bg-white/5 text-red-400 hover:bg-red-500/20 transition"
+                            title="Delete Article"
+                          >
+                            <Trash2 className="w-3.5 h-3.5" />
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>
         )}
       </div>
 
-      {/* Delete Confirmation Modal */}
-      {showDeleteModal && blogToDelete && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4">
-          <div className="w-full max-w-md rounded-3xl border border-white/10 bg-slate-900 p-6 shadow-2xl space-y-4">
-            <h3 className="text-base font-semibold text-white flex items-center gap-2">
-              <Trash2 className="w-5 h-5 text-red-400" />
-              Delete Blog Article
-            </h3>
-            <p className="text-xs text-slate-300 leading-relaxed">
-              Are you sure you want to delete <strong className="text-white">"{blogToDelete.title}"</strong>?
-              This action cannot be undone.
+      {/* ================= DELETE ADVISORY MODAL ================= */}
+      {showDeleteModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-xs">
+          <div className="w-full max-w-md rounded-3xl border border-white/10 bg-slate-900 p-6 shadow-2xl">
+            <div className="flex items-center gap-3 text-amber-400 mb-3">
+              <AlertCircle className="w-6 h-6" />
+              <h3 className="text-lg font-semibold text-white">Delete Action Advisory</h3>
+            </div>
+            
+            <p className="text-sm text-slate-300 leading-relaxed">
+              You selected to delete: <strong className="text-white">{selectedBlogForDelete?.title}</strong>.
             </p>
 
-            <div className="flex items-center justify-end gap-3 pt-3">
+            <div className="mt-4 p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs leading-relaxed">
+              <strong>Backend Note:</strong> The backend router currently does not have a registered <code className="font-mono">DELETE /api/admin/blogs/:id</code> endpoint. To safely delete blogs, please add the delete controller/route to the backend. Alternatively, you can set the status to <strong>Draft</strong> to unpublish this article from the public site immediately.
+            </div>
+
+            <div className="mt-6 flex items-center justify-end gap-3">
               <Button
                 variant="outline"
                 onClick={() => {
                   setShowDeleteModal(false);
-                  setBlogToDelete(null);
+                  setSelectedBlogForDelete(null);
                 }}
-                className="text-xs"
+                className="border-white/10 text-slate-300 hover:bg-white/5"
               >
-                Cancel
+                Close
               </Button>
               <Button
-                onClick={confirmDelete}
-                disabled={deletingId === (blogToDelete.id || blogToDelete._id)}
-                className="bg-red-500 hover:bg-red-600 text-white text-xs font-semibold gap-2"
+                onClick={() => {
+                  if (selectedBlogForDelete) {
+                    handleTogglePublish({ ...selectedBlogForDelete, isPublished: true }); // toggle to draft
+                  }
+                  setShowDeleteModal(false);
+                  setSelectedBlogForDelete(null);
+                }}
+                className="bg-amber-500 text-black font-semibold hover:bg-amber-400"
               >
-                {deletingId && <Loader2 className="w-3.5 h-3.5 animate-spin" />}
-                Delete Forever
+                Unpublish Instead
               </Button>
             </div>
           </div>
         </div>
       )}
+
     </div>
   );
 }
