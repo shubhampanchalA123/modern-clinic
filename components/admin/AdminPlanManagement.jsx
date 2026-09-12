@@ -147,8 +147,8 @@ export default function AdminPlanManagement() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-2xl font-semibold text-white">Plans Management</h2>
-          <p className="mt-1 text-sm text-slate-400">Create aur manage karo treatment plans</p>
+          <h2 className="text-2xl font-semibold text-slate-900">Plans Management</h2>
+          <p className="mt-1 text-sm text-slate-500">Create aur manage karo treatment plans</p>
         </div>
         <Button
           onClick={() => {
@@ -166,7 +166,7 @@ export default function AdminPlanManagement() {
               });
             }
           }}
-          className="gap-2"
+          className="gap-2 bg-emerald-500 text-white font-semibold hover:bg-emerald-600"
         >
           <Plus className="h-4 w-4" />
           {showForm ? "Cancel" : "New Plan"}
@@ -175,19 +175,19 @@ export default function AdminPlanManagement() {
 
       {/* Form Section */}
       {showForm && (
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
-          <h3 className="mb-4 text-lg font-semibold text-white">
+        <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-xs">
+          <h3 className="mb-4 text-lg font-semibold text-slate-900">
             {editingId ? "Edit Plan" : "Create New Plan"}
           </h3>
 
           {formError && (
-            <div className="mb-4 rounded-lg border border-red-500/30 bg-red-500/10 p-3 text-sm text-red-300">
+            <div className="mb-4 rounded-lg border border-red-200 bg-red-50 p-3 text-sm text-red-600">
               {formError}
             </div>
           )}
 
           {error && (
-            <div className="mb-4 rounded-lg border border-red-500/30 bg-red-500/10 p-3 text-sm text-red-300">
+            <div className="mb-4 rounded-lg border border-red-200 bg-red-50 p-3 text-sm text-red-600">
               {error}
             </div>
           )}
@@ -195,12 +195,12 @@ export default function AdminPlanManagement() {
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="grid gap-4 sm:grid-cols-2">
               <div>
-                <Label className="text-white">Plan Type</Label>
+                <Label className="text-slate-700">Plan Type</Label>
                 <select
                   name="type"
                   value={formData.type}
                   onChange={handleInputChange}
-                  className="mt-2 w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-white placeholder:text-slate-500"
+                  className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-emerald-400"
                 >
                   {PLAN_TYPES.map((type) => (
                     <option key={type} value={type}>
@@ -211,12 +211,12 @@ export default function AdminPlanManagement() {
               </div>
 
               <div>
-                <Label className="text-white">Duration</Label>
+                <Label className="text-slate-700">Duration</Label>
                 <select
                   name="durationTime"
                   value={formData.durationTime}
                   onChange={handleInputChange}
-                  className="mt-2 w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-white placeholder:text-slate-500"
+                  className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-emerald-400"
                 >
                   {DURATIONS.map((duration) => (
                     <option key={duration} value={duration}>
@@ -228,13 +228,13 @@ export default function AdminPlanManagement() {
 
               {formData.type === "HAIR_TREATMENT" && (
                 <div>
-                  <Label className="text-white">Stage</Label>
+                  <Label className="text-slate-700">Stage</Label>
                   <Input
                     type="number"
                     name="stage"
                     value={formData.stage}
                     onChange={handleInputChange}
-                    className="mt-2 bg-white/5 border-white/10 text-white"
+                    className="mt-2 bg-white border-slate-200 text-slate-900"
                     min="1"
                   />
                 </div>
@@ -242,73 +242,73 @@ export default function AdminPlanManagement() {
             </div>
 
             <div>
-              <Label className="text-white">Plan Title</Label>
+              <Label className="text-slate-700">Plan Title</Label>
               <Input
                 type="text"
                 name="title"
                 value={formData.title}
                 onChange={handleInputChange}
                 placeholder="e.g., Basic Hair Treatment"
-                className="mt-2 bg-white/5 border-white/10 text-white"
+                className="mt-2 bg-white border-slate-200 text-slate-900"
               />
             </div>
 
             <div>
-              <Label className="text-white">Description</Label>
+              <Label className="text-slate-700">Description</Label>
               <textarea
                 name="description"
                 value={formData.description}
                 onChange={handleInputChange}
                 placeholder="Plan description..."
                 rows="3"
-                className="mt-2 w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-white placeholder:text-slate-500"
+                className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-slate-900 placeholder:text-slate-400"
               />
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
               <div>
-                <Label className="text-white">Price (India) - INR</Label>
+                <Label className="text-slate-700">Price (India) - INR</Label>
                 <Input
                   type="number"
                   name="prices.india"
                   value={formData.prices.india}
                   onChange={handleInputChange}
                   placeholder="5000"
-                  className="mt-2 bg-white/5 border-white/10 text-white"
+                  className="mt-2 bg-white border-slate-200 text-slate-900"
                   min="0"
                 />
               </div>
 
               <div>
-                <Label className="text-white">Price (Foreign) - USD</Label>
+                <Label className="text-slate-700">Price (Foreign) - USD</Label>
                 <Input
                   type="number"
                   name="prices.foreign"
                   value={formData.prices.foreign}
                   onChange={handleInputChange}
                   placeholder="100"
-                  className="mt-2 bg-white/5 border-white/10 text-white"
+                  className="mt-2 bg-white border-slate-200 text-slate-900"
                   min="0"
                 />
               </div>
             </div>
 
             <div>
-              <Label className="text-white">Features (comma-separated)</Label>
+              <Label className="text-slate-700">Features (comma-separated)</Label>
               <textarea
                 name="features"
                 value={formData.features}
                 onChange={handleInputChange}
                 placeholder="Feature 1, Feature 2, Feature 3"
                 rows="2"
-                className="mt-2 w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-white placeholder:text-slate-500"
+                className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-slate-900 placeholder:text-slate-400"
               />
             </div>
 
             <Button
               type="submit"
               disabled={loading}
-              className="w-full gap-2"
+              className="w-full gap-2 bg-emerald-500 text-white font-semibold hover:bg-emerald-600"
             >
               {loading ? (
                 <>
@@ -326,58 +326,58 @@ export default function AdminPlanManagement() {
       {/* Plans List */}
       <div className="space-y-3">
         {loading && !plans.length ? (
-          <div className="flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-8">
-            <Loader className="h-5 w-5 animate-spin text-emerald-400" />
-            <span className="ml-2 text-slate-300">Loading plans...</span>
+          <div className="flex items-center justify-center rounded-2xl border border-slate-200 bg-white p-8">
+            <Loader className="h-5 w-5 animate-spin text-emerald-600" />
+            <span className="ml-2 text-slate-500">Loading plans...</span>
           </div>
         ) : plans.length === 0 ? (
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center text-slate-400">
+          <div className="rounded-2xl border border-slate-200 bg-white p-8 text-center text-slate-500">
             Koi plan nahi hai. Pehla plan create karo!
           </div>
         ) : (
           plans.map((plan) => (
             <div
               key={plan._id}
-              className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur sm:p-6"
+              className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-6 shadow-xs"
             >
               <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                 <div className="flex-1">
                   <div className="flex items-center gap-2">
-                    <h3 className="text-lg font-semibold text-white">{plan.title}</h3>
-                    <span className="inline-flex rounded-full bg-emerald-500/15 px-3 py-1 text-xs font-medium text-emerald-300">
+                    <h3 className="text-lg font-semibold text-slate-900">{plan.title}</h3>
+                    <span className="inline-flex rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700 border border-emerald-200">
                       {plan.type}
                     </span>
                     {plan.stage && (
-                      <span className="inline-flex rounded-full bg-blue-500/15 px-3 py-1 text-xs font-medium text-blue-300">
+                      <span className="inline-flex rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700 border border-slate-200">
                         Stage {plan.stage}
                       </span>
                     )}
                   </div>
-                  <p className="mt-1 text-sm text-slate-400">{plan.description}</p>
+                  <p className="mt-1 text-sm text-slate-500">{plan.description}</p>
                   <div className="mt-3 grid gap-2 grid-cols-3 sm:gap-4">
                     <div>
-                      <p className="text-xs text-slate-500">Duration</p>
-                      <p className="text-sm font-medium text-white">{plan.durationTime}</p>
+                      <p className="text-xs text-slate-400">Duration</p>
+                      <p className="text-sm font-medium text-slate-900">{plan.durationTime}</p>
                     </div>
                     <div>
-                      <p className="text-xs text-slate-500">India Price</p>
-                      <p className="text-sm font-medium text-emerald-300">₹ {plan.prices.india}</p>
+                      <p className="text-xs text-slate-400">India Price</p>
+                      <p className="text-sm font-medium text-emerald-600">₹ {plan.prices.india}</p>
                     </div>
                     {plan.prices.foreign && (
                       <div>
-                        <p className="text-xs text-slate-500">Foreign Price</p>
-                        <p className="text-sm font-medium text-blue-300">${ plan.prices.foreign}</p>
+                        <p className="text-xs text-slate-400">Foreign Price</p>
+                        <p className="text-sm font-medium text-slate-700">${ plan.prices.foreign}</p>
                       </div>
                     )}
                   </div>
                   {plan.features?.length > 0 && (
                     <div className="mt-3">
-                      <p className="text-xs text-slate-500">Features</p>
+                      <p className="text-xs text-slate-400">Features</p>
                       <div className="mt-2 flex flex-wrap gap-2">
                         {plan.features.map((feature, idx) => (
                           <span
                             key={idx}
-                            className="inline-block text-xs bg-slate-700/50 text-slate-300 px-2 py-1 rounded"
+                            className="inline-block text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded"
                           >
                             {feature}
                           </span>
@@ -392,7 +392,7 @@ export default function AdminPlanManagement() {
                     onClick={() => handleEdit(plan)}
                     variant="outline"
                     size="sm"
-                    className="gap-2"
+                    className="gap-2 border-slate-200 text-slate-700 hover:bg-slate-50"
                   >
                     <Edit2 className="h-4 w-4" />
                     <span className="hidden sm:inline">Edit</span>
@@ -401,7 +401,7 @@ export default function AdminPlanManagement() {
                     onClick={() => handleDelete(plan._id)}
                     variant="outline"
                     size="sm"
-                    className="gap-2 text-red-400 border-red-400/30 hover:bg-red-400/10"
+                    className="gap-2 text-red-500 border-red-200 hover:bg-red-50"
                   >
                     <Trash2 className="h-4 w-4" />
                     <span className="hidden sm:inline">Delete</span>
@@ -415,3 +415,4 @@ export default function AdminPlanManagement() {
     </div>
   );
 }
+

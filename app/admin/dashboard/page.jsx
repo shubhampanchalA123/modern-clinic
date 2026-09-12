@@ -139,28 +139,28 @@ export default function AdminDashboardPage() {
 
   if (!ready) {
     return (
-      <main className="flex min-h-screen items-center justify-center p-6 text-slate-300">
+      <main className="flex min-h-screen items-center justify-center p-6 text-slate-500 bg-[#F7F9F8]">
         Redirecting...
       </main>
     );
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 p-4 sm:p-6 lg:p-8">
+    <main className="min-h-screen bg-[#F7F9F8] p-4 sm:p-6 lg:p-8">
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <p className="text-sm uppercase tracking-[0.28em] text-emerald-300/80">Admin</p>
-            <h1 className="mt-2 text-3xl font-semibold text-white">Dashboard</h1>
-            <p className="mt-1 text-sm text-slate-400">
+            <p className="text-sm uppercase tracking-[0.28em] text-emerald-600 font-medium">Admin</p>
+            <h1 className="mt-2 text-3xl font-semibold text-slate-900">Dashboard</h1>
+            <p className="mt-1 text-sm text-slate-500">
               {adminUser?.email && `Logged in as ${adminUser.email}`}
             </p>
           </div>
           <Button
             onClick={handleLogout}
             variant="outline"
-            className="gap-2 w-fit"
+            className="gap-2 w-fit bg-white border-slate-200 text-slate-700 hover:bg-slate-50"
           >
             <LogOut className="h-4 w-4" />
             Logout
@@ -168,9 +168,9 @@ export default function AdminDashboardPage() {
         </div>
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-[260px_1fr]">
-          <aside className="rounded-3xl border border-white/10 bg-white/5 p-4">
-            <div className="mb-4 border-b border-white/10 pb-3">
-              <h2 className="text-sm font-semibold uppercase tracking-wider text-slate-300">Dashboard</h2>
+          <aside className="rounded-3xl border border-slate-200 bg-white p-4 shadow-xs">
+            <div className="mb-4 border-b border-slate-100 pb-3">
+              <h2 className="text-sm font-semibold uppercase tracking-wider text-slate-700">Dashboard</h2>
             </div>
             <nav className="space-y-2">
               {TABS.map((tab) => {
@@ -181,8 +181,8 @@ export default function AdminDashboardPage() {
                     onClick={() => setActiveTab(tab.id)}
                     className={`flex w-full items-center gap-2 rounded-xl px-3 py-2 text-left text-sm font-medium transition ${
                       activeTab === tab.id
-                        ? "bg-emerald-500/20 text-emerald-300"
-                        : "text-slate-300 hover:bg-slate-700/40 hover:text-white"
+                        ? "bg-emerald-500 text-white font-semibold"
+                        : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
                     }`}
                   >
                     <Icon className="h-4 w-4" />
@@ -198,55 +198,55 @@ export default function AdminDashboardPage() {
               <>
                 <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
                   {statsLoading ? (
-                    <div className="col-span-full rounded-3xl border border-white/10 bg-white/5 p-6 text-center text-slate-300">
+                    <div className="col-span-full rounded-3xl border border-slate-200 bg-white p-6 text-center text-slate-500">
                       Loading stats...
                     </div>
                   ) : statsError ? (
-                    <div className="col-span-full rounded-3xl border border-red-400/30 bg-red-500/10 p-6 text-center text-red-300">
+                    <div className="col-span-full rounded-3xl border border-red-200 bg-red-50 p-6 text-center text-red-600">
                       {statsError}
                     </div>
                   ) : (
                     overviewCards.map(({ label, value, icon: Icon }) => (
                       <div
                         key={label}
-                        className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur"
+                        className="rounded-3xl border border-slate-200 bg-white p-6 shadow-xs"
                       >
-                        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-500/15 text-emerald-300">
+                        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-600">
                           <Icon className="h-5 w-5" />
                         </div>
-                        <p className="text-sm text-slate-400">{label}</p>
-                        <p className="mt-2 text-3xl font-semibold text-white">{value}</p>
+                        <p className="text-sm text-slate-500">{label}</p>
+                        <p className="mt-2 text-3xl font-semibold text-slate-900">{value}</p>
                       </div>
                     ))
                   )}
                 </div>
 
                 <div className="grid gap-6 lg:grid-cols-[1.4fr_0.6fr]">
-                  <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
-                    <h2 className="text-lg font-semibold text-white">Recent Payments</h2>
+                  <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-xs">
+                    <h2 className="text-lg font-semibold text-slate-900">Recent Payments</h2>
                     {recentPayments.length === 0 ? (
-                      <p className="mt-4 text-sm text-slate-400">No recent completed payments yet.</p>
+                      <p className="mt-4 text-sm text-slate-500">No recent completed payments yet.</p>
                     ) : (
                       <div className="mt-4 space-y-3">
                         {recentPayments.slice(0, 8).map((item, i) => (
-                          <div key={`${item.email}-${i}`} className="rounded-xl bg-slate-900/80 p-3">
+                          <div key={`${item.email}-${i}`} className="rounded-xl bg-slate-50 border border-slate-100 p-3">
                             <div className="flex items-center justify-between">
-                              <p className="text-sm font-medium text-white">{item.name}</p>
-                              <span className="text-xs text-emerald-300">₹ {item.amount?.toFixed(2)}</span>
+                              <p className="text-sm font-medium text-slate-900">{item.name}</p>
+                              <span className="text-xs text-emerald-600 font-semibold">₹ {item.amount?.toFixed(2)}</span>
                             </div>
-                            <p className="text-xs text-slate-400">{item.email}</p>
-                            <p className="mt-1 text-xs text-slate-500">{item.type} • {item.paymentStatus}</p>
+                            <p className="text-xs text-slate-500">{item.email}</p>
+                            <p className="mt-1 text-xs text-slate-400">{item.type} • {item.paymentStatus}</p>
                           </div>
                         ))}
                       </div>
                     )}
                   </div>
 
-                  <div className="rounded-3xl border border-white/10 bg-slate-900/80 p-6">
-                    <h2 className="text-lg font-semibold text-white">Quick setup</h2>
-                    <ul className="mt-4 space-y-2 text-xs text-slate-400">
-                      <li>✓ Admin auth setup</li>
-                      <li>✓ Token management</li>
+                  <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-xs">
+                    <h2 className="text-lg font-semibold text-slate-900">Quick setup</h2>
+                    <ul className="mt-4 space-y-2 text-xs text-slate-600">
+                      <li className="text-emerald-600 font-medium">✓ Admin auth setup</li>
+                      <li className="text-emerald-600 font-medium">✓ Token management</li>
                       <li>→ Blog management</li>
                       <li>→ Plans management</li>
                       <li>→ Coupons management</li>
@@ -264,12 +264,12 @@ export default function AdminDashboardPage() {
 
             {(activeTab === "consultant-users" || activeTab === "appointment-users") && (
               <div className="space-y-4">
-                <div className="flex flex-wrap items-center justify-between gap-3 rounded-3xl border border-white/10 bg-white/5 p-4">
+                <div className="flex flex-wrap items-center justify-between gap-3 rounded-3xl border border-slate-200 bg-white p-4 shadow-xs">
                   <div>
-                    <h2 className="text-lg font-semibold text-white">
+                    <h2 className="text-lg font-semibold text-slate-900">
                       {activeTab === "consultant-users" ? "Consultant Users" : "Appointment Users"}
                     </h2>
-                    <p className="text-sm text-slate-400">
+                    <p className="text-sm text-slate-500">
                       {activeTab === "consultant-users"
                         ? "Sirf userbooking data yahan show hoga."
                         : "Sirf appointment data yahan show hoga."}
@@ -278,27 +278,27 @@ export default function AdminDashboardPage() {
                 </div>
 
                 {usersLoading ? (
-                  <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-center text-slate-300">
+                  <div className="rounded-3xl border border-slate-200 bg-white p-6 text-center text-slate-500">
                     Loading user list...
                   </div>
                 ) : usersError ? (
-                  <div className="rounded-3xl border border-red-400/30 bg-red-500/10 p-6 text-center text-red-300">
+                  <div className="rounded-3xl border border-red-200 bg-red-50 p-6 text-center text-red-600">
                     {usersError}
                   </div>
                 ) : (
                   <>
-                    <div className="rounded-3xl border border-white/10 bg-white/5 p-5">
+                    <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-xs">
                       <div className="mb-3 flex items-center justify-between">
                         <div>
-                          <p className="text-sm text-slate-400">Total users matched</p>
-                          <p className="text-2xl font-semibold text-white">{usersData.length}</p>
+                          <p className="text-sm text-slate-500">Total users matched</p>
+                          <p className="text-2xl font-semibold text-slate-900">{usersData.length}</p>
                         </div>
-                        <p className="text-sm text-slate-400">Paid: {usersData.filter((u) => u.paymentStatus === 'completed').length}</p>
+                        <p className="text-sm text-slate-500">Paid: {usersData.filter((u) => u.paymentStatus === 'completed').length}</p>
                       </div>
 
                       <div className="overflow-x-auto">
-                        <table className="min-w-full text-left text-sm text-slate-300">
-                          <thead className="border-b border-white/10 text-xs uppercase tracking-widest text-slate-400">
+                        <table className="min-w-full text-left text-sm text-slate-600">
+                          <thead className="border-b border-slate-200 text-xs uppercase tracking-widest text-slate-500 bg-slate-50">
                             <tr>
                               <th className="px-3 py-2">Name</th>
                               <th className="px-3 py-2">Email</th>
@@ -312,19 +312,19 @@ export default function AdminDashboardPage() {
                           </thead>
                           <tbody>
                             {usersData.map((user) => (
-                              <tr key={user.id} className="border-b border-white/10">
-                                <td className="px-3 py-2 text-white">{user.name}</td>
+                              <tr key={user.id} className="border-b border-slate-100 hover:bg-slate-50/80">
+                                <td className="px-3 py-2 text-slate-900 font-medium">{user.name}</td>
                                 <td className="px-3 py-2">{user.email}</td>
                                 <td className="px-3 py-2">{user.phone}</td>
                                 <td className="px-3 py-2 capitalize">{user.source}</td>
                                 <td className="px-3 py-2">₹ {user.amount?.toFixed(2) || '0.00'}</td>
-                                <td className={`px-3 py-2 ${user.paymentStatus === 'completed' ? 'text-emerald-300' : 'text-amber-300'}`}>
+                                <td className={`px-3 py-2 font-medium ${user.paymentStatus === 'completed' ? 'text-emerald-600' : 'text-amber-600'}`}>
                                   {user.paymentStatus}
                                 </td>
                                 <td className="px-3 py-2">{new Date(user.createdAt).toLocaleString()}</td>
                                 <td className="px-3 py-2">
                                   <button
-                                    className="rounded-md bg-emerald-500 px-3 py-1 text-xs font-semibold text-black hover:bg-emerald-400"
+                                    className="rounded-md bg-emerald-500 px-3 py-1 text-xs font-semibold text-white hover:bg-emerald-600"
                                     onClick={() => setSelectedUser(user)}
                                   >
                                     View More
@@ -338,17 +338,17 @@ export default function AdminDashboardPage() {
                     </div>
 
                     {selectedUser && (
-                      <div className="rounded-3xl border border-white/10 bg-slate-900/70 p-5">
+                      <div className="rounded-3xl border border-slate-200 bg-white p-5 shadow-md">
                         <div className="mb-2 flex items-center justify-between">
-                          <h3 className="text-lg font-semibold text-white">{selectedUser.name}'s Details</h3>
+                          <h3 className="text-lg font-semibold text-slate-900">{selectedUser.name}'s Details</h3>
                           <button
-                            className="text-xs text-slate-400 hover:text-white"
+                            className="text-xs text-slate-500 hover:text-slate-900"
                             onClick={() => setSelectedUser(null)}
                           >
                             Close
                           </button>
                         </div>
-                        <ul className="space-y-2 text-sm text-slate-200">
+                        <ul className="space-y-2 text-sm text-slate-700">
                           <li><strong>Email:</strong> {selectedUser.email}</li>
                           <li><strong>Phone:</strong> {selectedUser.phone}</li>
                           <li><strong>Source:</strong> {selectedUser.source}</li>
@@ -369,3 +369,4 @@ export default function AdminDashboardPage() {
     </main>
   );
 }
+

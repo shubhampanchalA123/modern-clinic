@@ -5,7 +5,7 @@ export const metadata = {
 
 export default function AdminLayout({ children }) {
   return (
-    <section className="min-h-screen bg-slate-950 text-slate-100">
+    <section className="min-h-screen bg-[#F7F9F8] text-[#1F2937] antialiased">
       {children}
     </section>
   );

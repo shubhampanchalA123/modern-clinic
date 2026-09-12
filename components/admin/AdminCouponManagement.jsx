@@ -122,8 +122,8 @@ export default function AdminCouponManagement() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-2xl font-semibold text-white">Coupons Management</h2>
-          <p className="mt-1 text-sm text-slate-400">Create aur manage karo discount coupons</p>
+          <h2 className="text-2xl font-semibold text-slate-900">Coupons Management</h2>
+          <p className="mt-1 text-sm text-slate-500">Create aur manage karo discount coupons</p>
         </div>
         <Button
           onClick={() => {
@@ -139,7 +139,7 @@ export default function AdminCouponManagement() {
               });
             }
           }}
-          className="gap-2"
+          className="gap-2 bg-emerald-500 text-white font-semibold hover:bg-emerald-600"
         >
           <Plus className="h-4 w-4" />
           {showForm ? "Cancel" : "New Coupon"}
@@ -148,19 +148,19 @@ export default function AdminCouponManagement() {
 
       {/* Form Section */}
       {showForm && (
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
-          <h3 className="mb-4 text-lg font-semibold text-white">
+        <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-xs">
+          <h3 className="mb-4 text-lg font-semibold text-slate-900">
             {editingId ? "Edit Coupon" : "Create New Coupon"}
           </h3>
 
           {formError && (
-            <div className="mb-4 rounded-lg border border-red-500/30 bg-red-500/10 p-3 text-sm text-red-300">
+            <div className="mb-4 rounded-lg border border-red-200 bg-red-50 p-3 text-sm text-red-600">
               {formError}
             </div>
           )}
 
           {error && (
-            <div className="mb-4 rounded-lg border border-red-500/30 bg-red-500/10 p-3 text-sm text-red-300">
+            <div className="mb-4 rounded-lg border border-red-200 bg-red-50 p-3 text-sm text-red-600">
               {error}
             </div>
           )}
@@ -168,24 +168,24 @@ export default function AdminCouponManagement() {
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="grid gap-4 sm:grid-cols-2">
               <div>
-                <Label className="text-white">Coupon Code</Label>
+                <Label className="text-slate-700">Coupon Code</Label>
                 <Input
                   type="text"
                   name="code"
                   value={formData.code}
                   onChange={handleInputChange}
                   placeholder="e.g., SUMMER2024"
-                  className="mt-2 bg-white/5 border-white/10 text-white uppercase"
+                  className="mt-2 bg-white border-slate-200 text-slate-900 uppercase"
                 />
               </div>
 
               <div>
-                <Label className="text-white">Discount Type</Label>
+                <Label className="text-slate-700">Discount Type</Label>
                 <select
                   name="discountType"
                   value={formData.discountType}
                   onChange={handleInputChange}
-                  className="mt-2 w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-white"
+                  className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-slate-900 focus:outline-none focus:ring-1 focus:ring-emerald-400"
                 >
                   <option value="PERCENTAGE">Percentage (%)</option>
                   <option value="FIXED">Fixed Amount (₹)</option>
@@ -195,7 +195,7 @@ export default function AdminCouponManagement() {
 
             <div className="grid gap-4 sm:grid-cols-2">
               <div>
-                <Label className="text-white">
+                <Label className="text-slate-700">
                   {formData.discountType === "PERCENTAGE" ? "Discount %" : "Discount Amount"}
                 </Label>
                 <Input
@@ -204,36 +204,36 @@ export default function AdminCouponManagement() {
                   value={formData.discount}
                   onChange={handleInputChange}
                   placeholder={formData.discountType === "PERCENTAGE" ? "20" : "500"}
-                  className="mt-2 bg-white/5 border-white/10 text-white"
+                  className="mt-2 bg-white border-slate-200 text-slate-900"
                   min="0"
                 />
               </div>
 
               <div>
-                <Label className="text-white">Expiry Date</Label>
+                <Label className="text-slate-700">Expiry Date</Label>
                 <Input
                   type="date"
                   name="expiryDate"
                   value={formData.expiryDate}
                   onChange={handleInputChange}
-                  className="mt-2 bg-white/5 border-white/10 text-white"
+                  className="mt-2 bg-white border-slate-200 text-slate-900"
                 />
               </div>
             </div>
 
             <div>
-              <Label className="text-white">Description</Label>
+              <Label className="text-slate-700">Description</Label>
               <textarea
                 name="description"
                 value={formData.description}
                 onChange={handleInputChange}
                 placeholder="Coupon ke baare mein details..."
                 rows="2"
-                className="mt-2 w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-white placeholder:text-slate-500"
+                className="mt-2 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-slate-900 placeholder:text-slate-400"
               />
             </div>
 
-            <Button type="submit" disabled={loading} className="w-full gap-2">
+            <Button type="submit" disabled={loading} className="w-full gap-2 bg-emerald-500 text-white font-semibold hover:bg-emerald-600">
               {loading ? (
                 <>
                   <Loader className="h-4 w-4 animate-spin" />
@@ -250,12 +250,12 @@ export default function AdminCouponManagement() {
       {/* Coupons List */}
       <div className="space-y-3">
         {loading && !coupons.length ? (
-          <div className="flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-8">
-            <Loader className="h-5 w-5 animate-spin text-emerald-400" />
-            <span className="ml-2 text-slate-300">Loading coupons...</span>
+          <div className="flex items-center justify-center rounded-2xl border border-slate-200 bg-white p-8">
+            <Loader className="h-5 w-5 animate-spin text-emerald-600" />
+            <span className="ml-2 text-slate-500">Loading coupons...</span>
           </div>
         ) : coupons.length === 0 ? (
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-8 text-center text-slate-400">
+          <div className="rounded-2xl border border-slate-200 bg-white p-8 text-center text-slate-500">
             No coupons found. Create your first coupon to get started!
           </div>
         ) : (
@@ -264,47 +264,47 @@ export default function AdminCouponManagement() {
             return (
               <div
                 key={coupon._id}
-                className={`rounded-2xl border p-4 backdrop-blur sm:p-6 ${isExpired
-                  ? "border-red-500/30 bg-red-500/5"
-                  : "border-white/10 bg-white/5"
+                className={`rounded-2xl border p-4 sm:p-6 shadow-xs ${isExpired
+                  ? "border-red-200 bg-red-50/50"
+                  : "border-slate-200 bg-white"
                   }`}
               >
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                   <div className="flex-1">
                     <div className="flex items-center gap-3">
-                      <h3 className="text-lg font-semibold text-white font-mono">{coupon.code}</h3>
+                      <h3 className="text-lg font-semibold text-slate-900 font-mono">{coupon.code}</h3>
                       <button
                         onClick={() => copyCouponCode(coupon.code)}
-                        className="text-slate-400 hover:text-emerald-300 transition-colors"
+                        className="text-slate-400 hover:text-emerald-600 transition-colors"
                       >
                         <Copy className="h-4 w-4" />
                       </button>
                       <span className={`inline-flex rounded-full px-3 py-1 text-xs font-medium ${isExpired
-                        ? "bg-red-500/15 text-red-300"
-                        : "bg-emerald-500/15 text-emerald-300"
+                        ? "bg-red-50 text-red-600 border border-red-200"
+                        : "bg-emerald-50 text-emerald-600 border border-emerald-200"
                         }`}>
                         {isExpired ? "Expired" : "Active"}
                       </span>
                     </div>
-                    <p className="mt-2 text-sm text-slate-400">{coupon.description}</p>
+                    <p className="mt-2 text-sm text-slate-500">{coupon.description}</p>
                     <div className="mt-3 grid gap-2 grid-cols-3 sm:gap-4">
                       <div>
-                        <p className="text-xs text-slate-500">Discount</p>
-                        <p className="text-sm font-medium text-emerald-300">
+                        <p className="text-xs text-slate-400">Discount</p>
+                        <p className="text-sm font-medium text-emerald-600">
                           {coupon.discountType === "PERCENTAGE"
                             ? `${coupon.discount}%`
                             : `₹${coupon.discount}`}
                         </p>
                       </div>
                       <div>
-                        <p className="text-xs text-slate-500">Expires</p>
-                        <p className="text-sm font-medium text-white">
+                        <p className="text-xs text-slate-400">Expires</p>
+                        <p className="text-sm font-medium text-slate-900">
                           {new Date(coupon.expiryDate).toLocaleDateString("en-IN")}
                         </p>
                       </div>
                       <div>
-                        <p className="text-xs text-slate-500">Type</p>
-                        <p className="text-sm font-medium text-blue-300">
+                        <p className="text-xs text-slate-400">Type</p>
+                        <p className="text-sm font-medium text-slate-700">
                           {coupon.discountType}
                         </p>
                       </div>
@@ -316,7 +316,7 @@ export default function AdminCouponManagement() {
                       onClick={() => handleEdit(coupon)}
                       variant="outline"
                       size="sm"
-                      className="gap-2"
+                      className="gap-2 border-slate-200 text-slate-700 hover:bg-slate-50"
                     >
                       <Edit2 className="h-4 w-4" />
                       <span className="hidden sm:inline">Edit</span>
@@ -325,7 +325,7 @@ export default function AdminCouponManagement() {
                       onClick={() => handleDelete(coupon._id)}
                       variant="outline"
                       size="sm"
-                      className="gap-2 text-red-400 border-red-400/30 hover:bg-red-400/10"
+                      className="gap-2 text-red-500 border-red-200 hover:bg-red-50"
                     >
                       <Trash2 className="h-4 w-4" />
                       <span className="hidden sm:inline">Delete</span>
@@ -340,3 +340,4 @@ export default function AdminCouponManagement() {
     </div>
   );
 }
+
