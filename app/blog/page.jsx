@@ -1,10 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
+import { motion } from "framer-motion";
 import { fetchPublicBlogs } from "@/redux/slices/blogSlice";
 import BlogCard from "@/components/blog/BlogCard";
-import { Search, Loader2 } from "lucide-react";
+import { Search, Loader2, ChevronRight, Sparkles, BookOpen } from "lucide-react";
+import { MdVerified } from "react-icons/md";
+import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
 
 const CATEGORIES = [
   "All",
@@ -44,121 +49,127 @@ export default function BlogPage() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-16">
-      {/* Header */}
-      <div className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-foreground mb-3">
-          Clinic <span className="text-primary">Blogs</span>
-        </h1>
-        <p className="text-muted-foreground max-w-2xl mx-auto text-base">
-          Expert insights, science-backed guidance, and holistic treatments for hair, skin, immunity, and chronic wellness.
-        </p>
-      </div>
+    <div className="min-h-screen bg-background text-foreground selection:bg-primary/20 selection:text-primary py-8 sm:py-14 overflow-x-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* ================= BREADCRUMBS ================= */}
+        <nav className="flex items-center gap-2 text-xs font-medium text-muted-foreground mb-8">
+          <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+          <ChevronRight className="w-3.5 h-3.5" />
+          <span className="text-foreground font-semibold">Knowledge Hub</span>
+          <ChevronRight className="w-3.5 h-3.5" />
+          <span className="text-primary font-semibold">Medical Articles & Blogs</span>
+        </nav>
 
-      {/* Search & Category Filter */}
-      <div className="mb-12 space-y-6">
-        <form
-          onSubmit={handleSearchSubmit}
-          className="max-w-md mx-auto relative"
+        {/* ================= HERO SPOTLIGHT SECTION ================= */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="relative rounded-3.5xl p-6 sm:p-10 lg:p-14 bg-gradient-to-br from-card via-card/90 to-primary/5 border border-border/80 shadow-2xl overflow-hidden mb-14 text-center"
         >
-          <input
-            type="text"
-            placeholder="Search articles by topic, symptom or remedy..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-11 pr-24 py-3 rounded-full border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 text-sm shadow-sm transition"
-          />
-          <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-          <button
-            type="submit"
-            className="absolute right-1.5 top-1/2 -translate-y-1/2 px-4 py-1.5 bg-primary text-primary-foreground text-xs font-semibold rounded-full hover:opacity-90 transition"
-          >
-            Search
-          </button>
-        </form>
+          <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
 
-        {/* Category Pills */}
-        <div className="flex flex-wrap items-center justify-center gap-2">
-          {CATEGORIES.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setSelectedCategory(cat)}
-              className={`px-4 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${
-                selectedCategory === cat
-                  ? "bg-primary text-primary-foreground shadow-sm shadow-primary/20 scale-105"
-                  : "bg-muted/70 text-muted-foreground hover:text-foreground hover:bg-muted"
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* Content Section */}
-      {loading ? (
-        <div className="grid md:grid-cols-3 gap-8">
-          {[1, 2, 3, 4, 5, 6].map((i) => (
-            <div
-              key={i}
-              className="rounded-2xl border border-border bg-card/50 p-4 space-y-4 animate-pulse"
-            >
-              <div className="w-full h-48 bg-muted rounded-xl" />
-              <div className="h-4 bg-muted rounded w-1/3" />
-              <div className="h-6 bg-muted rounded w-3/4" />
-              <div className="space-y-2">
-                <div className="h-3 bg-muted rounded w-full" />
-                <div className="h-3 bg-muted rounded w-5/6" />
-              </div>
+          <div className="max-w-3xl mx-auto relative z-10">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold bg-primary/10 text-primary border border-primary/20 shadow-xs mb-5">
+              <BookOpen className="w-3.5 h-3.5 text-teal-500" />
+              <span>Evidence-Backed Healthcare Knowledge</span>
+              <Sparkles className="w-3.5 h-3.5 text-teal-500 ml-1" />
             </div>
-          ))}
-        </div>
-      ) : error ? (
-        <div className="rounded-2xl border border-red-500/20 bg-red-500/10 p-8 text-center max-w-xl mx-auto">
-          <p className="text-red-400 font-medium mb-3">Unable to load blogs at the moment.</p>
-          <button
-            onClick={() =>
-              dispatch(
-                fetchPublicBlogs({
-                  category: selectedCategory === "All" ? "" : selectedCategory,
-                  search: searchQuery.trim(),
-                })
-              )
-            }
-            className="px-4 py-2 bg-red-500/20 text-red-300 rounded-lg text-xs font-semibold hover:bg-red-500/30 transition"
+
+            <h1 className="text-3.5xl sm:text-4xl md:text-5xl lg:text-5.5xl font-extrabold text-foreground tracking-tight leading-[1.15]">
+              Doctor Insights &{" "}
+              <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-teal-500 bg-clip-text text-transparent">
+                Health Articles
+              </span>
+            </h1>
+
+            <p className="mt-5 text-base sm:text-lg text-muted-foreground leading-relaxed font-normal">
+              Expert clinical insights, biological root-cause breakdowns, nutrition guides, and holistic treatment strategies written by medical specialists.
+            </p>
+          </div>
+        </motion.div>
+
+        {/* ================= SEARCH & CATEGORY FILTER ================= */}
+        <div className="mb-14 space-y-6">
+          <form
+            onSubmit={handleSearchSubmit}
+            className="max-w-xl mx-auto flex items-center gap-2 bg-card border border-border rounded-full p-2 shadow-lg hover:border-primary/40 transition"
           >
-            Try Again
-          </button>
-        </div>
-      ) : blogs.length === 0 ? (
-        <div className="text-center py-16 px-4 bg-card/40 rounded-3xl border border-dashed border-border max-w-2xl mx-auto">
-          <span className="text-4xl">📚</span>
-          <h3 className="mt-4 text-lg font-semibold text-foreground">No articles found</h3>
-          <p className="mt-1 text-sm text-muted-foreground">
-            {selectedCategory !== "All" || searchQuery
-              ? "No blogs match your filter. Try adjusting your search query or category."
-              : "New blog articles will be published here soon."}
-          </p>
-          {(selectedCategory !== "All" || searchQuery) && (
+            <div className="pl-4 text-muted-foreground">
+              <Search size={18} />
+            </div>
+            <input
+              type="text"
+              placeholder="Search topics e.g. Hair Fall, PCOS, Acne, Immunity..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="flex-1 bg-transparent px-2 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none"
+            />
             <button
-              onClick={() => {
-                setSelectedCategory("All");
-                setSearchQuery("");
-                dispatch(fetchPublicBlogs({}));
-              }}
-              className="mt-5 px-4 py-2 bg-primary/10 text-primary rounded-xl text-xs font-semibold hover:bg-primary/20 transition"
+              type="submit"
+              className="px-6 py-2.5 rounded-full bg-gradient-to-r from-blue-600 via-indigo-600 to-teal-500 text-white text-xs font-bold shadow-md hover:opacity-95 transition cursor-pointer"
+            >
+              Search
+            </button>
+          </form>
+
+          {/* Category Badges */}
+          <div className="flex flex-wrap justify-center gap-2.5 pt-2">
+            {CATEGORIES.map((cat) => (
+              <button
+                key={cat}
+                type="button"
+                onClick={() => setSelectedCategory(cat)}
+                className={`px-4.5 py-2 rounded-full text-xs font-semibold transition-all cursor-pointer ${
+                  selectedCategory === cat
+                    ? "bg-gradient-to-r from-blue-600 via-indigo-600 to-teal-500 text-white shadow-md shadow-blue-500/25 scale-102"
+                    : "bg-card border border-border text-foreground hover:bg-muted hover:border-primary/30"
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* ================= BLOG POSTS GRID ================= */}
+        {loading ? (
+          <div className="flex flex-col items-center justify-center py-20 text-muted-foreground">
+            <Loader2 className="w-10 h-10 animate-spin text-primary mb-3" />
+            <p className="text-sm font-semibold">Loading medical articles...</p>
+          </div>
+        ) : error ? (
+          <div className="p-8 rounded-3xl bg-red-500/10 border border-red-500/20 text-center max-w-md mx-auto my-12">
+            <p className="text-sm text-red-600 dark:text-red-400 font-semibold">{error}</p>
+          </div>
+        ) : blogs && blogs.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-20">
+            {blogs.map((post) => (
+              <BlogCard key={post._id || post.slug} post={post} />
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-20 p-8 rounded-3.5xl bg-card border border-border shadow-md max-w-lg mx-auto mb-20">
+            <p className="text-lg font-bold text-foreground">No articles found</p>
+            <p className="text-xs text-muted-foreground mt-2">
+              Try searching with different keywords or switch the category filter above.
+            </p>
+            <button
+              onClick={() => { setSelectedCategory("All"); setSearchQuery(""); }}
+              className="mt-5 px-6 py-2 rounded-full bg-primary/10 text-primary text-xs font-bold hover:bg-primary/20 transition"
             >
               Reset Filters
             </button>
-          )}
-        </div>
-      ) : (
-        <div className="grid md:grid-cols-3 gap-8">
-          {blogs.map((post, i) => (
-            <BlogCard key={post.id || post._id || post.slug || i} post={post} />
-          ))}
-        </div>
-      )}
+          </div>
+        )}
+
+      </div>
+
+      <Testimonials />
+      <FAQ limit={4} />
+
     </div>
   );
 }

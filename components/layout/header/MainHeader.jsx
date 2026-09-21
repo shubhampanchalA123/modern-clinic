@@ -122,11 +122,10 @@ export default function Navbar() {
                                 group-hover:visible transition-all duration-200 p-3 z-50
                                 "
                             >
-                                <Link href="/doctor" className="block px-3 py-2 hover:bg-card">Meet Our Specialists</Link>
-                                <Link href="#qualification" className="block px-3 py-2 hover:bg-card">Qualifications & Expertise</Link>
-                                <Link href="#experience" className="block px-3 py-2 hover:bg-card">Years of Experience</Link>
-                                <Link href="#" className="block px-3 py-2 hover:bg-card">Certifications</Link>
-                                <Link href="/videos" className="block px-3 py-2 hover:bg-card">Doctor Videos</Link>
+                                <Link href="/doctor" className="block px-3 py-2 hover:bg-card rounded transition">Meet Our Specialists</Link>
+                                <Link href="/doctor/experience" className="block px-3 py-2 hover:bg-card rounded transition">Years of Experience</Link>
+                                <Link href="/doctor/certificates" className="block px-3 py-2 hover:bg-card rounded transition">Certifications & Accreditations</Link>
+                                <Link href="/videos" className="block px-3 py-2 hover:bg-card rounded transition">Doctor Videos</Link>
                             </div>
                         </div>
 
@@ -302,11 +301,10 @@ export default function Navbar() {
                                     Our Doctors <SlArrowDown className="text-xs" />
                                 </summary>
                                 <div className="ml-4 mt-2 space-y-2 text-muted-foreground">
-                                    <Link href="/doctor" className="block" >Meet Our Specialists</Link>
-                                    <Link href="#qualification" className="block" >Qualifications & Expertise</Link>
-                                    <Link href="#experience" className="block" >Years of Experience</Link>
-                                    <Link href="#" className="block" >Certifications</Link>
-                                    <Link href="/videos" className="block" >Doctor Videos</Link>
+                                    <Link href="/doctor" className="block hover:text-primary transition" onClick={() => setMenuOpen(false)}>Meet Our Specialists</Link>
+                                    <Link href="/doctor/experience" className="block hover:text-primary transition" onClick={() => setMenuOpen(false)}>Years of Experience</Link>
+                                    <Link href="/doctor/certificates" className="block hover:text-primary transition" onClick={() => setMenuOpen(false)}>Certifications & Accreditations</Link>
+                                    <Link href="/videos" className="block hover:text-primary transition" onClick={() => setMenuOpen(false)}>Doctor Videos</Link>
                                 </div>
                             </details>
 

@@ -3,95 +3,215 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle2, ShieldCheck, Sparkles, ChevronRight, MapPin } from "lucide-react";
+import { FaCalendarCheck, FaBuilding } from "react-icons/fa";
+import { MdVerified } from "react-icons/md";
 import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
 
-const heroImage = "/images/hero.png";
+const heroImage = "/images/why-clinic.jpg";
 
 export default function ClinicConsultation() {
   const offerings = [
-    { title: "Initial Clinic Visit", price: "₹999", features: ["Face-to-face exam", "Scalp/skin physical check", "Immediate diagnostics"] },
-    { title: "Clinic + Diagnostics", price: "₹2,499", features: ["Tricho/derm analysis", "Blood test review", "Extended follow-up"], highlight: true },
-    { title: "Clinic Comprehensive", price: "₹7,999", features: ["Full diagnostics", "In-clinic procedures as needed", "Monthly onsite reviews"] }
+    { 
+      title: "Initial Clinic Visit", 
+      price: "₹999", 
+      desc: "Detailed physical doctor consultation + visual diagnosis",
+      features: [
+        "1-on-1 Senior Doctor Physical Exam", 
+        "Scalp / Skin Physical Assessment", 
+        "Root Cause Identification",
+        "Personalized Rx & Lifestyle Guide"
+      ] 
+    },
+    { 
+      title: "Clinic + Digital Diagnostics", 
+      price: "₹2,499", 
+      desc: "Full physical examination + High-res trichoscopy/dermoscopy scans",
+      features: [
+        "High-Magnification Follicle & Skin Scans", 
+        "Comprehensive Blood Panel Analysis", 
+        "German Homeopathic Prescription",
+        "2 Follow-Up In-Clinic Reviews",
+        "Dietary & Cellular Nutrient Roadmap"
+      ], 
+      highlight: true 
+    },
+    { 
+      title: "Comprehensive Clinic Care", 
+      price: "₹7,999", 
+      desc: "Multi-month dedicated onsite care for stubborn chronic cases",
+      features: [
+        "Complete Diagnostic Profiling", 
+        "Periodic Follicle Density Tracking", 
+        "Monthly Onsite Doctor Evaluations",
+        "Priority In-Clinic Support Access",
+        "Custom Nutritional Formulations"
+      ] 
+    }
   ];
 
   return (
-    <div className="bg-gradient-to-b from-background via-background-soft to-background">
-      <header className="max-w-7xl mx-auto px-6 pt-10 pb-10 grid lg:grid-cols-2 gap-10 items-center">
-        <motion.div initial={{ opacity: 0, x: -16 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
-          <p className="text-sm text-primary font-medium">Pricing • Clinic Consultation</p>
-          <h1 className="text-4xl md:text-5xl font-extrabold mt-3 text-foreground"><span className="text-primary">Clinic</span> Consultation & Diagnostics</h1>
-          <p className="text-muted-foreground mt-4 max-w-xl">In-depth physical assessments, advanced diagnostics and hands-on care — recommended for moderate to severe cases.</p>
+    <div className="min-h-screen bg-background text-foreground selection:bg-primary/20 selection:text-primary py-8 sm:py-14 overflow-x-hidden">
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* ================= BREADCRUMBS ================= */}
+        <nav className="flex items-center gap-2 text-xs font-medium text-muted-foreground mb-8">
+          <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+          <ChevronRight className="w-3.5 h-3.5" />
+          <span className="text-foreground font-semibold">Pricing</span>
+          <ChevronRight className="w-3.5 h-3.5" />
+          <span className="text-primary font-semibold">Clinic Consultation</span>
+        </nav>
 
-          <div className="mt-6 flex items-center gap-4">
-            <Link href="#clinic-plans" className="rounded-xl px-5 py-3 bg-primary text-primary-foreground">See Plans</Link>
-            <a className="text-sm text-accent hover:underline" href="#faq">FAQ</a>
+        {/* ================= HERO SPOTLIGHT SECTION ================= */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="relative rounded-3.5xl p-6 sm:p-10 lg:p-14 bg-gradient-to-br from-card via-card/90 to-primary/5 border border-border/80 shadow-2xl overflow-hidden mb-18"
+        >
+          <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
+
+          <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center relative z-10">
+            
+            <div className="lg:col-span-7 flex flex-col items-start text-left">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold bg-primary/10 text-primary border border-primary/20 shadow-xs mb-5">
+                <MdVerified className="text-teal-500 text-sm" />
+                <span>In-Person Clinical Facility & Diagnostics</span>
+                <Sparkles className="w-3.5 h-3.5 text-teal-500 ml-1" />
+              </div>
+
+              <h1 className="text-3.5xl sm:text-4xl md:text-5xl lg:text-5.5xl font-extrabold text-foreground tracking-tight leading-[1.15]">
+                In-Clinic Consultation &{" "}
+                <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-teal-500 bg-clip-text text-transparent">
+                  Diagnostic Packages
+                </span>
+              </h1>
+
+              <p className="mt-5 text-base sm:text-lg text-muted-foreground leading-relaxed font-normal">
+                Hands-on physical examinations, digital trichoscopy scans, and personalized constitutional prescriptions at our modern integrative facility in Indore.
+              </p>
+
+              <div className="flex flex-wrap items-center gap-3.5 sm:gap-4 mt-8">
+                <a
+                  href="#clinic-plans"
+                  className="px-8 py-3.5 rounded-full bg-gradient-to-r from-blue-600 via-indigo-600 to-teal-500 hover:opacity-95 text-white font-bold text-xs sm:text-sm shadow-lg shadow-blue-500/25 hover:scale-102 transition-all flex items-center gap-2 cursor-pointer"
+                >
+                  <span>View Clinic Packages</span>
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+
+                <Link
+                  href="/pricing/online-consultation"
+                  className="px-6 py-3.5 rounded-full bg-card border border-border text-foreground font-semibold text-xs sm:text-sm hover:bg-muted hover:border-primary/40 transition-all cursor-pointer shadow-xs"
+                >
+                  Prefer Online Video Consult? →
+                </Link>
+              </div>
+            </div>
+
+            <div className="lg:col-span-5 flex justify-center lg:justify-end relative">
+              <div className="relative w-full max-w-[360px] sm:max-w-[400px] aspect-[4/3] rounded-3.5xl overflow-hidden border-2 border-primary/25 shadow-2xl bg-card">
+                <Image
+                  src={heroImage}
+                  alt="In-Clinic Visit"
+                  fill
+                  unoptimized
+                  className="object-cover hover:scale-103 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                
+                <div className="absolute bottom-5 left-5 right-5 text-white">
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md text-[11px] font-semibold text-teal-300 border border-white/20 mb-1">
+                    <FaBuilding className="text-xs" />
+                    <span>Indore Modern Facility</span>
+                  </div>
+                  <h3 className="text-lg font-bold">Comprehensive Onsite Care</h3>
+                  <p className="text-xs text-slate-200">High-definition follicle mapping & physical exams</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </motion.div>
 
-        <motion.div className="relative rounded-2xl overflow-hidden shadow-medium bg-card" initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6 }}>
-          <div className="aspect-[4/3] relative">
-            <Image src={heroImage} alt="Clinic Consultation" fill className="object-cover" />
-          </div>
-        </motion.div>
-      </header>
-
-      <section id="clinic-plans" className="max-w-7xl mx-auto px-6 py-12">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-foreground">Clinic Packages</h2>
-          <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">Hands-on diagnostic packages with clear outcomes and follow-ups.</p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-6">
-          {offerings.map((o, i) => (
-            <motion.div key={o.title} initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.45, delay: i * 0.05 }} className={`p-6 rounded-2xl bg-card/70 border border-border backdrop-blur-xl shadow-sm ${o.highlight ? "ring-1 ring-accent/20" : ""}`}>
-              <div className="flex items-center justify-between">
-                <h3 className="text-lg font-semibold text-foreground">{o.title}</h3>
-                <div className="text-xl font-bold">{o.price}</div>
-              </div>
-
-              <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                {o.features.map((f, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
-                    <CheckBoxIcon /> <span>{f}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <div className="mt-6 flex items-center justify-between">
-                <Link href="/contact" className="px-4 py-2 rounded-lg border border-border">Book Visit</Link>
-                <Link href="#" className="text-sm text-accent hover:underline flex items-center gap-2">Details <ArrowRight size={14} /></Link>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
-      <section className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="p-6 rounded-2xl bg-secondary/20 border border-border">
-            <h3 className="text-lg font-semibold text-foreground">What to expect</h3>
-            <p className="text-sm text-muted-foreground mt-3">A thorough physical examination, direct scalp evaluation and on-the-spot advice — we prioritise accuracy and safety.</p>
+        {/* ================= PACKAGES GRID ================= */}
+        <section id="clinic-plans" className="mb-20">
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <h2 className="text-2.5xl sm:text-3.5xl font-extrabold text-foreground tracking-tight">
+              In-Clinic Diagnostic Options
+            </h2>
+            <p className="text-xs sm:text-sm text-muted-foreground mt-2">
+              Transparent packages with in-depth evaluation and clear recovery milestones.
+            </p>
           </div>
 
-          {/* <div className="p-6 rounded-2xl bg-card/70 border border-border">
-            <Testimonials />
-          </div> */}
-        </div>
-      </section>
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+            {offerings.map((o, i) => (
+              <motion.div
+                key={o.title}
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                whileHover={{ y: -6, transition: { duration: 0.2 } }}
+                className={`p-7 sm:p-8 rounded-3.5xl bg-card border transition-all flex flex-col justify-between relative shadow-lg hover:shadow-2xl ${
+                  o.highlight 
+                    ? "border-primary/50 ring-2 ring-primary/30 shadow-primary/10" 
+                    : "border-border hover:border-primary/40"
+                }`}
+              >
+                {o.highlight && (
+                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-blue-600 via-indigo-600 to-teal-500 text-white text-[11px] font-bold shadow-md uppercase tracking-wider">
+                    Recommended Package
+                  </div>
+                )}
 
-      {/* <div style={{ height: 120 }} /> */}
+                <div>
+                  <h3 className="text-xl font-bold text-foreground">{o.title}</h3>
+                  <p className="text-xs text-muted-foreground mt-1 min-h-[32px]">{o.desc}</p>
+                  
+                  <div className="my-6 pb-6 border-b border-border/80">
+                    <span className="text-3.5xl sm:text-4xl font-black text-foreground font-mono">{o.price}</span>
+                    <span className="text-xs text-muted-foreground ml-2">/ clinic visit</span>
+                  </div>
+
+                  <ul className="space-y-3 text-xs sm:text-sm">
+                    {o.features.map((f, idx) => (
+                      <li key={idx} className="flex items-start gap-2.5 text-foreground/90">
+                        <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0 mt-0.5" />
+                        <span>{f}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="mt-8 pt-4">
+                  <Link
+                    href="/HairGrowth/register"
+                    className={`w-full py-3.5 rounded-full font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer ${
+                      o.highlight
+                        ? "bg-gradient-to-r from-blue-600 via-indigo-600 to-teal-500 text-white shadow-md hover:opacity-95 hover:scale-102"
+                        : "bg-muted hover:bg-primary/10 text-foreground border border-border hover:border-primary/30"
+                    }`}
+                  >
+                    <FaCalendarCheck className="text-xs" />
+                    <span>Book {o.title}</span>
+                  </Link>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </section>
+
+      </div>
+
+      <Testimonials />
+      <FAQ limit={4} />
+
     </div>
-  );
-}
-
-/* small inline icon component */
-function CheckBoxIcon() {
-  return (
-    <span className="inline-flex w-6 h-6 items-center justify-center rounded-md bg-primary/10 text-primary">
-      <svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none">
-        <path d="M20 6L9 17l-5-5" />
-      </svg>
-    </span>
   );
 }

@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import BeforeAfterCard from "@/components/BeforeAfterCard";
 import Link from "next/link";
+import { Sparkles, ArrowRight } from "lucide-react";
 
 export default function Testimonials() {
   const pathname = usePathname();
@@ -112,108 +113,110 @@ export default function Testimonials() {
   const showGallery = pathname === "/testimonials";
 
   return (
-    <div className="bg-background py-10">
-      <main className="max-w-7xl mx-auto px-6">
+    <section className="py-18 sm:py-24 px-4 sm:px-6 md:px-12 lg:px-20 bg-background relative overflow-hidden">
+      
+      {/* Background Ambient Glows */}
+      <div className="absolute inset-0 pointer-events-none -z-10 overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[380px] bg-gradient-to-r from-blue-600/8 via-teal-500/5 to-transparent rounded-full blur-3xl" />
+      </div>
 
-        {/* Before & After Detailed Slider Section */}
-        <>
-          <h2 className="text-4xl font-bold text-center mb-10 text-foreground">
-            <span className="text-primary">Before & After</span> Transformations
+      <div className="max-w-7xl mx-auto">
+
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold bg-gradient-to-r from-blue-500/10 via-indigo-500/10 to-teal-500/10 text-primary dark:text-blue-400 border border-primary/20 shadow-xs mb-4">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-gradient-to-r from-blue-600 to-teal-500" />
+            </span>
+            <span>Real Clinical Outcomes</span>
+            <Sparkles className="w-3.5 h-3.5 text-teal-500" />
+          </div>
+
+          <h2 className="text-3.5xl sm:text-4xl md:text-5xl font-extrabold text-foreground tracking-tight leading-[1.14]">
+            <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-teal-500 bg-clip-text text-transparent">
+              Before & After
+            </span>{" "}
+            Transformations
+            <span className="relative inline-block text-foreground ml-1">
+              .
+              <span className="absolute -bottom-1.5 left-0 w-full h-1.5 bg-gradient-to-r from-blue-600 via-teal-400 to-indigo-600 rounded-full opacity-80" />
+            </span>
           </h2>
 
-          <BeforeAfterCard data={patientData} />
-        </>
+          <p className="mt-4 text-base sm:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+            Explore authentic recovery milestones achieved through doctor-guided holistic care and individualized root-cause protocols.
+          </p>
+        </div>
 
-        {/* Show More Button (Only on home page) */}
+        {/* Before & After Interactive Card */}
+        <BeforeAfterCard data={patientData} />
+
+        {/* Show More Button (Only on home page & landing pages) */}
         {(pathname === "/" || pathname === "/HairGrowth") && (
-          <div className="flex justify-center mt-6 ">
+          <div className="flex justify-center mt-12">
             <Link
               href="/testimonials"
-              className="text-primary font-semibold hover:underline flex items-center gap-1"
+              className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-2xl border border-primary/30 bg-primary/5 text-primary hover:bg-primary hover:text-white font-bold text-sm transition-all duration-200 shadow-sm hover:shadow-lg hover:shadow-primary/20 group"
             >
-              Show More Testimonials
-              <span className="text-lg">→</span>
+              <span>Show More Testimonials</span>
+              <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
             </Link>
           </div>
         )}
 
-        {/* Success Stories */}
+        {/* Success Stories Gallery for /testimonials page */}
         {showGallery && (
-          <>
-            <h2 className="text-3xl font-bold text-center mt-10 mb-2 text-foreground">
+          <div className="mt-20 pt-16 border-t border-border">
+            <h2 className="text-2.5xl sm:text-3xl font-bold text-center mb-3 text-foreground">
               Success Stories
             </h2>
 
-            <p className="text-muted-foreground text-center mb-10">
-              Real transformations from people who healed their hair naturally with our program.
+            <p className="text-muted-foreground text-center text-sm max-w-xl mx-auto mb-12">
+              Real transformations from people who healed naturally with our personalized care programs.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-7 sm:gap-8">
               {testimonials.map((t, idx) => (
                 <motion.div
                   key={idx}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.5 }}
-                  className="
-        group 
-        rounded-2xl 
-        p-6 
-        bg-background 
-        backdrop-blur-xl 
-        border border-border
-        shadow-lg 
-        hover:shadow-medium 
-        hover:-translate-y-1
-        transition-all 
-        duration-300
-      "
+                  transition={{ duration: 0.5, delay: idx * 0.1 }}
+                  className="group rounded-3xl p-7 bg-card/90 dark:bg-card/75 backdrop-blur-xl border border-border shadow-lg hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
                 >
-                  {/* BEFORE/AFTER IMAGE WRAPPER */}
-                  <div className="flex items-center justify-center gap-4 mb-5">
-                    <div className="w-24 h-24 rounded-xl overflow-hidden shadow-md border border-border relative">
-                      <Image src={t.before} alt="before" fill className="object-cover" />
+                  <div>
+                    {/* BEFORE/AFTER IMAGE WRAPPER */}
+                    <div className="flex items-center justify-center gap-4 mb-6">
+                      <div className="w-24 h-24 rounded-2xl overflow-hidden shadow-md border border-border relative bg-muted">
+                        <Image src={t.before} alt="before" fill className="object-cover" />
+                        <span className="absolute bottom-1.5 left-1.5 bg-slate-950/70 text-[9px] text-white px-2 py-0.5 rounded font-semibold">Before</span>
+                      </div>
+                      <div className="w-24 h-24 rounded-2xl overflow-hidden shadow-md border border-border relative bg-muted">
+                        <Image src={t.after} alt="after" fill className="object-cover" />
+                        <span className="absolute bottom-1.5 left-1.5 bg-gradient-to-r from-blue-600 to-teal-500 text-[9px] text-white px-2 py-0.5 rounded font-semibold shadow-xs">After</span>
+                      </div>
                     </div>
-                    <div className="w-24 h-24 rounded-xl overflow-hidden shadow-md border border-border relative">
-                      <Image src={t.after} alt="after" fill className="object-cover" />
-                    </div>
-                  </div>
 
-                  {/* QUOTE */}
-                  <p className="text-sm text-center italic text-muted-foreground leading-relaxed">
-                    “{t.quote}”
-                  </p>
+                    {/* QUOTE */}
+                    <p className="text-xs sm:text-sm text-center italic text-muted-foreground leading-relaxed mb-5">
+                      “{t.quote}”
+                    </p>
+                  </div>
 
                   {/* NAME + ROLE */}
-                  <div className="mt-5 text-center">
-                    <p className="font-semibold text-lg text-foreground">{t.name}</p>
-                    <p className="text-xs text-muted-foreground">{t.role}</p>
+                  <div className="pt-4 border-t border-border/70 text-center">
+                    <p className="font-bold text-base text-foreground">{t.name}</p>
+                    <p className="text-xs font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mt-0.5">{t.role}</p>
                   </div>
-
-                  {/* HOVER UNDERLINE ACCENT */}
-                  <div
-                    className="
-          w-0 
-          group-hover:w-full 
-          h-0.5 
-          bg-gradient-to-r 
-          from-primary 
-          to-accent
-          mx-auto 
-          mt-5 
-          transition-all 
-          duration-500
-        "
-                  />
                 </motion.div>
               ))}
             </div>
-          </>
+          </div>
         )}
 
-
-      </main>
-    </div>
+      </div>
+    </section>
   );
 }

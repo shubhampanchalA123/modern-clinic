@@ -1,195 +1,172 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle, Home, Building2, ArrowRight } from "lucide-react";
+import { CheckCircle, Home, Building2, ArrowRight, Sparkles, ChevronRight, CheckCircle2, ShieldCheck } from "lucide-react";
+import { FaCalendarCheck, FaBuilding, FaHome } from "react-icons/fa";
+import { MdVerified } from "react-icons/md";
 import Link from "next/link";
+import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
 
 export default function HomeVsClinicCare() {
-  const fadeUp = {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-  };
-
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background via-background-soft to-background">
+    <div className="min-h-screen bg-background text-foreground selection:bg-primary/20 selection:text-primary py-8 sm:py-14 overflow-x-hidden">
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* ================= BREADCRUMBS ================= */}
+        <nav className="flex items-center gap-2 text-xs font-medium text-muted-foreground mb-8">
+          <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+          <ChevronRight className="w-3.5 h-3.5" />
+          <span className="text-foreground font-semibold">Treatment Approach</span>
+          <ChevronRight className="w-3.5 h-3.5" />
+          <span className="text-primary font-semibold">Home vs Clinic Care</span>
+        </nav>
 
-      {/* HERO SECTION */}
-      <section className="max-w-6xl mx-auto px-6 pt-20 pb-12 text-center">
-        <motion.h1
-          {...fadeUp}
-          transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-bold text-foreground"
-        >
-          Home Care vs Clinic Care
-        </motion.h1>
-
-        <motion.p
-          {...fadeUp}
-          transition={{ duration: 0.7 }}
-          className="text-muted-foreground max-w-2xl mx-auto mt-4"
-        >
-          Understand which treatment mode suits your lifestyle, condition severity,
-          comfort and long-term healing goals.
-        </motion.p>
-      </section>
-
-      {/* COMPARISON SECTION */}
-      <section className="max-w-6xl mx-auto px-6 pb-16">
-        <div className="grid md:grid-cols-2 gap-8">
-
-          {/* HOME CARE */}
-          <motion.div
-            {...fadeUp}
-            transition={{ duration: 0.5 }}
-            className="p-7 rounded-3xl bg-card/60 backdrop-blur-xl border border-border shadow-sm"
-          >
-            <div className="flex items-center gap-3 mb-5">
-              <Home className="text-primary" size={26} />
-              <h2 className="text-xl font-semibold text-foreground">Home Care</h2>
-            </div>
-
-            <ul className="space-y-3">
-              {[
-                "Ideal for mild to moderate conditions",
-                "Doctor consultation via video or phone",
-                "Convenient for busy schedules",
-                "Medicines delivered to your home",
-                "Follow-up monitoring through digital check-ins",
-                "Great for long-term maintenance and lifestyle improvements"
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <CheckCircle className="text-primary mt-1" size={18} />
-                  <span className="text-sm text-foreground leading-relaxed">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-
-          {/* CLINIC CARE */}
-          <motion.div
-            {...fadeUp}
-            transition={{ duration: 0.55 }}
-            className="p-7 rounded-3xl bg-card/60 backdrop-blur-xl border border-border shadow-sm"
-          >
-            <div className="flex items-center gap-3 mb-5">
-              <Building2 className="text-accent" size={26} />
-              <h2 className="text-xl font-semibold text-foreground">Clinic Care</h2>
-            </div>
-
-            <ul className="space-y-3">
-              {[
-                "Recommended for moderate to severe cases",
-                "Face-to-face doctor evaluation",
-                "More accurate scalp/skin/physical assessments",
-                "Advanced diagnostic tools available",
-                "Immediate adjustments to treatment plans",
-                "Higher success rate for complex health issues"
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <CheckCircle className="text-accent mt-1" size={18} />
-                  <span className="text-sm text-foreground leading-relaxed">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-        </div>
-      </section>
-
-
-      {/* Shadow Divider */}
-      <div className="w-full h-12 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.08)]" />
-
-
-      {/* DETAILED SEPARATOR CARD */}
-      <section className="max-w-6xl mx-auto px-6 pb-20">
+        {/* ================= HERO SPOTLIGHT SECTION ================= */}
         <motion.div
-          {...fadeUp}
-          transition={{ duration: 0.6 }}
-          className="
-            p-10 rounded-3xl bg-secondary/20 backdrop-blur-xl 
-            border border-border shadow-md
-          "
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="relative rounded-3.5xl p-6 sm:p-10 lg:p-14 bg-gradient-to-br from-card via-card/90 to-primary/5 border border-border/80 shadow-2xl overflow-hidden mb-18 text-center"
         >
-          <h3 className="text-2xl font-bold text-foreground text-center mb-6">
-            Which One Should You Choose?
-          </h3>
+          <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
 
-          <p className="text-muted-foreground text-center max-w-3xl mx-auto mb-6">
-            Your doctor will guide you based on the intensity of your symptoms,
-            lifestyle, treatment goals, and comfort level. Most patients begin with
-            home-based care and transition to clinic visits if needed.
-          </p>
+          <div className="max-w-3xl mx-auto relative z-10">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold bg-primary/10 text-primary border border-primary/20 shadow-xs mb-5">
+              <ShieldCheck className="w-3.5 h-3.5 text-teal-500" />
+              <span>Comparative Treatment Modes</span>
+              <Sparkles className="w-3.5 h-3.5 text-teal-500 ml-1" />
+            </div>
 
-          <div className="grid md:grid-cols-3 gap-6 mt-8">
-            {[
-              {
-                title: "Choose Home Care If",
-                points: [
-                  "Your symptoms are mild",
-                  "You prefer remote check-ins",
-                  "You want convenience & flexibility",
-                ],
-              },
-              {
-                title: "Choose Clinic Care If",
-                points: [
-                  "Your symptoms are severe",
-                  "You need physical analysis",
-                  "You want faster recovery support",
-                ],
-              },
-              {
-                title: "Hybrid Model",
-                points: [
-                  "Start from home",
-                  "Visit clinic occasionally",
-                  "Best long-term results",
-                ],
-              },
-            ].map((block, i) => (
-              <div key={i} className="p-5 rounded-2xl bg-background backdrop-blur-xl border border-border">
-                <h4 className="text-lg font-semibold text-foreground mb-4">{block.title}</h4>
-                <ul className="space-y-2">
-                  {block.points.map((p, idx) => (
-                    <li key={idx} className="flex items-start gap-2">
-                      <CheckCircle size={16} className="text-primary mt-0.5" />
-                      <span className="text-sm text-muted-foreground">{p}</span>
+            <h1 className="text-3.5xl sm:text-4xl md:text-5xl lg:text-5.5xl font-extrabold text-foreground tracking-tight leading-[1.15]">
+              Home Tele-Care vs{" "}
+              <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-teal-500 bg-clip-text text-transparent">
+                In-Clinic Consultation
+              </span>
+            </h1>
+
+            <p className="mt-5 text-base sm:text-lg text-muted-foreground leading-relaxed font-normal">
+              Understand which clinical pathway suits your lifestyle, condition severity, geographical convenience, and long-term recovery goals.
+            </p>
+          </div>
+        </motion.div>
+
+        {/* ================= COMPARISON DUAL CARDS ================= */}
+        <section className="mb-20">
+          <div className="grid md:grid-cols-2 gap-8 items-stretch">
+
+            {/* HOME CARE CARD */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              whileHover={{ y: -6, transition: { duration: 0.2 } }}
+              className="p-8 sm:p-10 rounded-3.5xl bg-card border border-border shadow-xl hover:shadow-2xl hover:border-primary/40 transition-all flex flex-col justify-between"
+            >
+              <div>
+                <div className="flex items-center justify-between mb-6">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-white shadow-md">
+                    <Home size={26} />
+                  </div>
+                  <span className="text-xs font-mono font-bold text-primary bg-primary/10 px-3 py-1 rounded-full">
+                    DIGITAL CARE
+                  </span>
+                </div>
+
+                <h2 className="text-2xl font-bold text-foreground mb-2">Remote Home Care</h2>
+                <p className="text-xs sm:text-sm text-muted-foreground mb-6">
+                  Best for patients outside Indore, busy professionals, and chronic maintenance cases.
+                </p>
+
+                <ul className="space-y-3.5 text-xs sm:text-sm">
+                  {[
+                    "1-on-1 Doctor consultation via high-definition video or phone",
+                    "High-resolution digital photo & diagnostic report evaluation",
+                    "Custom constitutional remedies delivered directly to your doorstep",
+                    "Weekly progress check-ins and dedicated WhatsApp care support",
+                    "100% Zero travel hassle — accessible across Pan-India and overseas"
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-3 text-foreground/90">
+                      <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0 mt-0.5" />
+                      <span>{item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
-            ))}
+
+              <div className="mt-8 pt-6 border-t border-border">
+                <Link
+                  href="/pricing/online-consultation"
+                  className="w-full py-3.5 rounded-full font-bold text-xs sm:text-sm bg-primary text-white hover:bg-primary/90 flex items-center justify-center gap-2 shadow-md transition"
+                >
+                  <FaCalendarCheck className="text-xs" />
+                  <span>Choose Online Home Care</span>
+                </Link>
+              </div>
+            </motion.div>
+
+            {/* IN-CLINIC CARE CARD */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              whileHover={{ y: -6, transition: { duration: 0.2 } }}
+              className="p-8 sm:p-10 rounded-3.5xl bg-card border border-primary/40 ring-2 ring-primary/20 shadow-xl hover:shadow-2xl transition-all flex flex-col justify-between relative overflow-hidden"
+            >
+              <div>
+                <div className="flex items-center justify-between mb-6">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-teal-500 to-emerald-600 flex items-center justify-center text-white shadow-md">
+                    <Building2 size={26} />
+                  </div>
+                  <span className="text-xs font-mono font-bold text-teal-600 dark:text-teal-400 bg-teal-500/10 px-3 py-1 rounded-full">
+                    INDORE FACILITY
+                  </span>
+                </div>
+
+                <h2 className="text-2xl font-bold text-foreground mb-2">In-Clinic Care</h2>
+                <p className="text-xs sm:text-sm text-muted-foreground mb-6">
+                  Best for severe alopecia patches, stubborn cystic dermatosis, and comprehensive physical exams.
+                </p>
+
+                <ul className="space-y-3.5 text-xs sm:text-sm">
+                  {[
+                    "Face-to-face in-depth physical examination with Dr. Devendra Rathore",
+                    "Onsite high-magnification Digital Trichoscopy & Dermoscopy scans",
+                    "Immediate diagnostic interpretation and personalized prescription",
+                    "Hands-on clinical progress monitoring and follicle density mapping",
+                    "Direct onsite medicine dispensing from clinic pharmacy"
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-3 text-foreground/90">
+                      <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="mt-8 pt-6 border-t border-border">
+                <Link
+                  href="/pricing/clinic-consultation"
+                  className="w-full py-3.5 rounded-full font-bold text-xs sm:text-sm bg-gradient-to-r from-blue-600 via-indigo-600 to-teal-500 text-white shadow-md hover:opacity-95 flex items-center justify-center gap-2 transition"
+                >
+                  <FaCalendarCheck className="text-xs" />
+                  <span>Choose In-Clinic Visit</span>
+                </Link>
+              </div>
+            </motion.div>
+
           </div>
-        </motion.div>
-      </section>
+        </section>
 
+      </div>
 
-      {/* Shadow Divider */}
-      <div className="w-full h-12 shadow-[0_-20px_40px_-15px_rgba(0,0,0,0.08)]" />
+      <Testimonials />
+      <FAQ limit={4} />
 
-
-      {/* CTA SECTION */}
-      <section className="py-10 text-center">
-        <motion.div
-          {...fadeUp}
-          transition={{ duration: 0.7 }}
-          className="max-w-2xl mx-auto"
-        >
-          <h3 className="text-2xl md:text-3xl font-bold text-foreground">
-            Need help choosing the right approach?
-          </h3>
-
-          <p className="text-muted-foreground mt-4">
-            Our doctors can help you decide which plan is best for your health condition.
-          </p>
-
-          <Link href="/HairGrowth/register">
-            <button className="mt-6 px-8 py-3 rounded-xl bg-primary text-primary-foreground hover:bg-primary-dark transition flex items-center mx-auto gap-2">
-              Book Consultation <ArrowRight size={18} />
-            </button>
-          </Link>
-        </motion.div>
-      </section>
     </div>
   );
 }

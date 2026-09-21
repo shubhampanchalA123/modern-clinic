@@ -3,6 +3,9 @@
 import { useState } from "react";
 import { topics } from "./questions";
 import MobileSidebar from "./MobileSidebar";
+import { ChevronRight, HelpCircle, CheckCircle2 } from "lucide-react";
+import Link from "next/link";
+import { FaCalendarCheck } from "react-icons/fa";
 
 export default function HowItWorks() {
   const [active, setActive] = useState(0);
@@ -19,30 +22,34 @@ export default function HowItWorks() {
         setActive={setActive}
       />
 
-      <div className="flex gap-10">
+      <div className="flex flex-col md:flex-row gap-8 lg:gap-10 items-start mb-20">
 
         {/* DESKTOP SIDEBAR */}
         <aside className="
-          hidden md:block w-1/3 
+          hidden md:block w-full md:w-5/12 lg:w-4/12 
           bg-card border border-border 
-          rounded-xl p-6 
-          h-[80vh] overflow-y-auto 
-          sticky top-24
+          rounded-3.5xl p-5 lg:p-6 
+          max-h-[80vh] overflow-y-auto 
+          sticky top-28 shadow-xl
         ">
-          <h3 className="text-xl font-bold mb-4">Topics</h3>
+          <div className="flex items-center gap-2 mb-4 pb-3 border-b border-border">
+            <HelpCircle className="w-4 h-4 text-primary" />
+            <h3 className="text-base font-bold text-foreground">Clinical Topics & Questions</h3>
+          </div>
 
           <ul className="space-y-2">
             {topics.map((item, index) => (
               <li key={index}>
                 <button
                   onClick={() => setActive(index)}
-                  className={`w-full text-left px-4 py-3 rounded-lg transition 
+                  className={`w-full text-left px-4 py-3 rounded-2xl transition-all text-xs sm:text-sm font-semibold flex items-center justify-between gap-2 cursor-pointer
                     ${active === index 
-                      ? "bg-primary text-primary-foreground shadow-sm" 
-                      : "bg-background text-foreground hover:bg-secondary/50"}
+                      ? "bg-gradient-to-r from-blue-600 via-indigo-600 to-teal-500 text-white shadow-md shadow-blue-500/20 scale-101" 
+                      : "bg-muted/60 text-foreground hover:bg-muted border border-border/60 hover:border-primary/30"}
                   `}
                 >
-                  {item.question}
+                  <span className="line-clamp-2">{item.question}</span>
+                  <ChevronRight className="w-3.5 h-3.5 shrink-0 opacity-70" />
                 </button>
               </li>
             ))}
@@ -50,29 +57,46 @@ export default function HowItWorks() {
         </aside>
 
         {/* RIGHT CONTENT */}
-        <article className="flex-1 bg-card border border-border p-8 rounded-xl shadow-sm">
+        <article className="flex-1 w-full bg-card border border-border p-6 sm:p-10 lg:p-12 rounded-3.5xl shadow-xl">
           
           {/* MOBILE OPEN BUTTON */}
           <button 
-            className="md:hidden mb-6 px-4 py-2 bg-primary text-white rounded-lg"
+            className="md:hidden mb-6 px-5 py-2.5 bg-gradient-to-r from-blue-600 to-teal-500 text-white font-bold text-xs rounded-full shadow-md flex items-center gap-2"
             onClick={() => setMobileOpen(true)}
           >
-            Open Topics
+            <HelpCircle className="w-4 h-4" />
+            <span>Browse All Questions ({topics.length})</span>
           </button>
 
-          <h2 className="text-3xl font-bold mb-4">
-            {topics[active].question}
-          </h2>
-
-          <div className="text-muted-foreground leading-relaxed whitespace-pre-line text-lg">
-            {topics[active].answer}
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary border border-primary/20 mb-4">
+            <CheckCircle2 className="w-3.5 h-3.5 text-teal-500" />
+            <span>Topic {active + 1} of {topics.length}</span>
           </div>
 
-          <p className="mt-6 text-sm text-primary">
-            📌 Reference: {topics[active].reference}
-          </p>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-6 leading-tight">
+            {topics[active]?.question}
+          </h2>
+
+          <div className="prose prose-slate dark:prose-invert max-w-none text-muted-foreground text-sm sm:text-base leading-relaxed space-y-4">
+            {topics[active]?.content}
+          </div>
+
+          <div className="mt-10 pt-6 border-t border-border flex flex-wrap items-center justify-between gap-4">
+            <p className="text-xs text-muted-foreground">
+              Have further questions about your specific condition?
+            </p>
+            
+            <Link
+              href="/HairGrowth/register"
+              className="px-6 py-2.5 rounded-full bg-primary text-white text-xs font-bold hover:bg-primary/90 transition shadow-sm flex items-center gap-2"
+            >
+              <FaCalendarCheck />
+              <span>Consult with Doctor</span>
+            </Link>
+          </div>
 
         </article>
+
       </div>
     </>
   );

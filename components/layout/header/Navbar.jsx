@@ -66,18 +66,51 @@ export default function Navbar() {
       p-3
     "
               >
-                <Link href="/" className="block px-3 py-2 hover:bg-card transition">
+                <Link href="/" className="block px-3 py-2 hover:bg-card transition rounded">
                   Home
                 </Link>
-                <Link href="/HairGrowth/doctor" className="block px-3 py-2 hover:bg-card transition">
-                  Dr. Devendra
+                <Link href="/treatment-approach" className="block px-3 py-2 hover:bg-card transition rounded">
+                  Treatment Approach
                 </Link>
-                <Link href="/HairGrowth/faq" className="block px-3 py-2 hover:bg-card transition">
+                <Link href="/google-reviews" className="block px-3 py-2 hover:bg-card transition rounded">
+                  Google Reviews
+                </Link>
+                <Link href="/faq" className="block px-3 py-2 hover:bg-card transition rounded">
                   FAQ
                 </Link>
               </div>
             </div>
 
+            {/* OUR DOCTOR DROPDOWN */}
+            <div className="relative group">
+              <button className="flex items-center gap-1 hover:text-primary transition">
+                Our Doctor
+                <span className="text-xs"><SlArrowDown /></span>
+              </button>
+
+              <div
+                className="
+      absolute left-0 top-full mt-1 w-60 
+      bg-muted border border-border shadow-sm
+      opacity-0 invisible group-hover:opacity-100 group-hover:visible
+      transition-all duration-200 rounded-md
+      p-3
+    "
+              >
+                <Link href="/doctor" className="block px-3 py-2 hover:bg-card transition rounded">
+                  <div className="font-semibold text-foreground">Dr. Devendra Rathore</div>
+                  <div className="text-xs text-muted-foreground">Lead Homeopathy & Trichology</div>
+                </Link>
+                <Link href="/doctor/experience" className="block px-3 py-2 hover:bg-card transition rounded">
+                  <div className="font-semibold text-foreground">Clinical Experience</div>
+                  <div className="text-xs text-muted-foreground">10+ Years & 10,000+ Cases</div>
+                </Link>
+                <Link href="/doctor/certificates" className="block px-3 py-2 hover:bg-card transition rounded">
+                  <div className="font-semibold text-foreground">Certificates & Degrees</div>
+                  <div className="text-xs text-muted-foreground">BHMS, RMP & Accreditations</div>
+                </Link>
+              </div>
+            </div>
 
             {/* SERVICES DROPDOWN */}
             <div className="relative group">
@@ -95,20 +128,20 @@ export default function Navbar() {
       p-3
     "
               >
-                <Link href="/HairGrowth" className="block px-3 py-2 hover:bg-card transition">
+                <Link href="/HairGrowth" className="block px-3 py-2 hover:bg-card transition rounded">
                   Hair Growth
                 </Link>
-                <Link href="/SkinCare" className="block px-3 py-2 hover:bg-card transition">
+                <Link href="/SkinCare" className="block px-3 py-2 hover:bg-card transition rounded">
                   Skin Care
                 </Link>
-                <Link href="/WeightLoss" className="block px-3 py-2 hover:bg-card transition">
+                <Link href="/WeightLoss" className="block px-3 py-2 hover:bg-card transition rounded">
                   Weight Loss
                 </Link>
               </div>
             </div>
 
-
             {/* OTHER DIRECT LINKS */}
+            <Link href="/pricing" className="hover:text-primary transition">Pricing</Link>
             <Link href="/contact" className="hover:text-primary transition">Contact</Link>
 
             <ThemeToggle />
@@ -137,11 +170,33 @@ export default function Navbar() {
                 </summary>
                 <div className="ml-3 mt-2 space-y-2">
                   <Link href="/" onClick={() => setOpen(false)} className="block hover:text-primary">Home</Link>
-                  <Link href="/HairGrowth/doctor" onClick={() => setOpen(false)} className="block hover:text-primary">
-                    Dr. Devendra
+                  <Link href="/treatment-approach" onClick={() => setOpen(false)} className="block hover:text-primary">
+                    Treatment Approach
                   </Link>
-                  <Link href="/HairGrowth/faq" onClick={() => setOpen(false)} className="block hover:text-primary">
+                  <Link href="/google-reviews" onClick={() => setOpen(false)} className="block hover:text-primary">
+                    Google Reviews
+                  </Link>
+                  <Link href="/faq" onClick={() => setOpen(false)} className="block hover:text-primary">
                     FAQ
+                  </Link>
+                </div>
+              </details>
+
+              {/* OUR DOCTOR ACCORDION */}
+              <details className="group">
+                <summary className="cursor-pointer py-2 hover:text-primary flex justify-between font-semibold text-primary">
+                  Our Doctor
+                  <span className="text-xs"><SlArrowDown /></span>
+                </summary>
+                <div className="ml-3 mt-2 space-y-2.5">
+                  <Link href="/doctor" onClick={() => setOpen(false)} className="block hover:text-primary">
+                    Dr. Devendra Rathore (Overview)
+                  </Link>
+                  <Link href="/doctor/experience" onClick={() => setOpen(false)} className="block hover:text-primary">
+                    Clinical Experience (10+ Years)
+                  </Link>
+                  <Link href="/doctor/certificates" onClick={() => setOpen(false)} className="block hover:text-primary">
+                    Certificates & Degrees
                   </Link>
                 </div>
               </details>
@@ -166,6 +221,9 @@ export default function Navbar() {
               </details>
 
               {/* OTHER LINKS */}
+              <Link href="/pricing" onClick={() => setOpen(false)} className="hover:text-primary">
+                Pricing
+              </Link>
               <Link href="/contact" onClick={() => setOpen(false)} className="hover:text-primary">
                 Contact
               </Link>

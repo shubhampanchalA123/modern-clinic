@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { ChevronRight, ShieldCheck, Lock } from "lucide-react";
+
 export const metadata = {
   title: "Privacy Policy | Modern Clinic",
   description:
@@ -6,106 +9,84 @@ export const metadata = {
 
 export default function PrivacyPolicy() {
   return (
-    <section className="bg-background min-h-screen py-16 px-6 md:px-12 lg:px-20">
-      <div className="max-w-3xl mx-auto">
+    <div className="bg-background min-h-screen py-8 sm:py-14 px-4 sm:px-6 lg:px-8 text-foreground selection:bg-primary/20">
+      <div className="max-w-4xl mx-auto">
 
-        {/* HEADER */}
-        <div className="mb-12">
-          <h1 className="text-4xl font-bold text-foreground">
-            Privacy <span className="text-primary">Policy</span>
+        {/* ================= BREADCRUMBS ================= */}
+        <nav className="flex items-center gap-2 text-xs font-medium text-muted-foreground mb-8">
+          <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+          <ChevronRight className="w-3.5 h-3.5" />
+          <span className="text-foreground font-semibold">Legal</span>
+          <ChevronRight className="w-3.5 h-3.5" />
+          <span className="text-primary font-semibold">Privacy Policy</span>
+        </nav>
+
+        {/* ================= HEADER ================= */}
+        <div className="relative rounded-3.5xl p-6 sm:p-10 lg:p-12 bg-gradient-to-br from-card via-card/90 to-primary/5 border border-border/80 shadow-xl overflow-hidden mb-12 text-center">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-teal-500/10 text-teal-600 dark:text-teal-400 border border-teal-500/20 mb-3">
+            <Lock className="w-3.5 h-3.5" />
+            <span>256-Bit Medical Confidentiality</span>
+          </div>
+
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground tracking-tight">
+            Privacy{" "}
+            <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-teal-500 bg-clip-text text-transparent">
+              Policy
+            </span>
           </h1>
-          <p className="text-muted-foreground mt-4 leading-relaxed">
-            Your privacy and medical confidentiality are extremely important to us.
-            This policy explains how we collect, use, share, and protect your data.
+          
+          <p className="text-muted-foreground text-xs sm:text-sm mt-3 max-w-xl mx-auto leading-relaxed">
+            Your medical confidentiality and electronic health data security are our highest clinical priorities.
           </p>
         </div>
 
-        {/* MAIN CARD */}
-        <div className="
-          bg-card border border-border shadow-sm 
-          rounded-3xl p-8 md:p-10 
-          space-y-10
-        ">
+        {/* ================= CONTENT CARD ================= */}
+        <div className="bg-card border border-border shadow-xl rounded-3.5xl p-6 sm:p-10 space-y-8 text-sm leading-relaxed">
 
-          {/* SECTION 1 */}
-          <div>
-            <h2 className="text-2xl font-semibold text-foreground mb-3">
+          <div className="pb-6 border-b border-border/80">
+            <h2 className="text-lg sm:text-xl font-bold text-foreground mb-2">
               1. Information We Collect
             </h2>
-            <p className="text-muted-foreground leading-relaxed">
-              We collect only what is necessary to provide medical services:
+            <p className="text-muted-foreground">
+              We collect only the minimum required clinical information necessary to provide accurate medical diagnoses:
             </p>
-            <ul className="text-muted-foreground list-disc pl-6 mt-2 space-y-1">
-              <li>Your name, age, gender</li>
-              <li>Email & phone number</li>
-              <li>Medical symptoms & history</li>
-              <li>Uploaded reports (if any)</li>
-              <li>Website usage analytics</li>
+            <ul className="text-muted-foreground list-disc pl-5 space-y-1.5 mt-2">
+              <li>Patient name, age, contact information, and delivery address.</li>
+              <li>Medical case history, symptoms, past prescriptions, and allergy notes.</li>
+              <li>Uploaded diagnostic photographs and laboratory blood panel documents.</li>
             </ul>
           </div>
 
-          {/* SECTION 2 */}
-          <div>
-            <h2 className="text-2xl font-semibold text-foreground mb-3">
-              2. How Your Data Is Used
-            </h2>
-            <p className="text-muted-foreground leading-relaxed">
-              We use your data responsibly for:
-            </p>
-            <ul className="text-muted-foreground list-disc pl-6 mt-2 space-y-1">
-              <li>Personalized treatment planning</li>
-              <li>Contacting you for consultations</li>
-              <li>Improving service quality</li>
-              <li>Medical documentation</li>
-            </ul>
-          </div>
-
-          {/* SECTION 3 */}
-          <div>
-            <h2 className="text-2xl font-semibold text-foreground mb-3">
-              3. Data Protection Guarantee
-            </h2>
-            <p className="text-muted-foreground leading-relaxed">
-              Your data is encrypted & securely stored.  
-              We never sell or misuse your personal or medical details.
-            </p>
-          </div>
-
-          {/* SECTION 4 */}
-          <div>
-            <h2 className="text-2xl font-semibold text-foreground mb-3">
-              4. Your Rights
-            </h2>
-            <ul className="text-muted-foreground list-disc pl-6 mt-2 space-y-1">
-              <li>Right to access your data</li>
-              <li>Right to request deletion</li>
-              <li>Right to correct your information</li>
-              <li>Right to withdraw consent</li>
-            </ul>
-          </div>
-
-          {/* SECTION 5 */}
-          <div>
-            <h2 className="text-2xl font-semibold text-foreground mb-3">
-              5. Contact for Privacy Concerns
+          <div className="pb-6 border-b border-border/80">
+            <h2 className="text-lg sm:text-xl font-bold text-foreground mb-2">
+              2. How Your Health Data Is Protected
             </h2>
             <p className="text-muted-foreground">
-              Email us at:{" "}
-              <span className="text-primary font-medium">
-                support@modernclinic.com
-              </span>
+              All electronic records are encrypted and accessible strictly by registered doctors and clinical coordinators directly involved in your care. We never sell or share patient information with third-party advertisers.
+            </p>
+          </div>
+
+          <div className="pb-6 border-b border-border/80">
+            <h2 className="text-lg sm:text-xl font-bold text-foreground mb-2">
+              3. Tele-Consultation Recordings & Records
+            </h2>
+            <p className="text-muted-foreground">
+              Video consultations are conducted over secure, end-to-end encrypted medical communication channels to maintain complete doctor-patient privilege.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-lg sm:text-xl font-bold text-foreground mb-2">
+              4. Data Access & Deletion Requests
+            </h2>
+            <p className="text-muted-foreground">
+              Patients may request a copy or deletion of their digital profile at any time by writing to <span className="text-primary font-semibold">privacy@modernclinic.com</span>.
             </p>
           </div>
 
         </div>
 
-        {/* FOOT NOTE */}
-        <p className="text-muted-foreground mt-10 text-sm text-center">
-          This Privacy Policy was last updated on <span className="text-primary font-medium">
-            {new Date().getFullYear()}
-          </span>
-        </p>
       </div>
-    </section>
+    </div>
   );
 }

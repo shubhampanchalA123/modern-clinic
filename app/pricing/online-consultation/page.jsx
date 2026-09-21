@@ -3,120 +3,215 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, Check, Sparkles, ChevronRight, CheckCircle2, ShieldCheck, HeartPulse } from "lucide-react";
+import { FaCalendarCheck, FaShieldAlt } from "react-icons/fa";
+import { MdVerified } from "react-icons/md";
 import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
 
-const heroImage = "/images/hero.png";
+const heroImage = "/images/why-clinic.jpg";
 
 export default function OnlineConsultation() {
   const plans = [
-    { name: "Quick Consult", price: "₹499", desc: "15 min video consult + basic plan", highlights: ["Doctor review", "1 follow-up chat"] },
-    { name: "Standard Care", price: "₹1,499", desc: "30 min consult + 4-week plan", highlights: ["Personal Rx", "2 follow-ups"], popular: true },
-    { name: "Comprehensive Remote", price: "₹3,999", desc: "Detailed digital diagnosis + 3 month support", highlights: ["AI-assisted report", "Monthly doctor reviews"] }
+    { 
+      name: "Quick Consult", 
+      price: "₹499", 
+      desc: "15 min focused video consult + personalized initial prescription", 
+      highlights: [
+        "Direct Senior Doctor Video Call", 
+        "1 Follow-up Review Chat", 
+        "Digital Prescription in 2 hrs", 
+        "Basic Diet & Lifestyle Guidelines"
+      ] 
+    },
+    { 
+      name: "Standard Care", 
+      price: "₹1,499", 
+      desc: "30 min detailed root-cause consult + 4-week complete protocol", 
+      highlights: [
+        "Comprehensive Constitutional Evaluation", 
+        "Personalized German Homeopathy Rx", 
+        "2 Follow-up Consultations", 
+        "Custom Nutritional & Scalp Roadmap",
+        "Doorstep Medicine Dispatch Support"
+      ], 
+      popular: true 
+    },
+    { 
+      name: "Comprehensive Remote", 
+      price: "₹3,999", 
+      desc: "Complete 3-month digital care for chronic, refractory cases", 
+      highlights: [
+        "In-depth Digital Scalp/Skin Diagnosis", 
+        "Monthly Senior Doctor Reviews", 
+        "Unlimited Dedicated Chat Support", 
+        "Dosage Optimization Tracking",
+        "Free Priority Medicine Deliveries"
+      ] 
+    }
   ];
 
   return (
-    <div className=" bg-gradient-to-b from-background via-background-soft to-background-muted">
-      {/* HERO */}
-      <header className="max-w-7xl mx-auto px-6 pt-20 pb-12 grid lg:grid-cols-2 gap-10 items-center">
-        <motion.div initial={{ opacity: 0, x: -16 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
-          <p className="text-sm text-primary font-medium">Pricing • Online Consultation</p>
-          <h1 className="text-4xl md:text-5xl font-extrabold mt-3 text-foreground"><span className="text-primary">Online</span> Consultation Plans</h1>
-          <p className="text-muted-foreground mt-4 max-w-xl">
-            Fast, secure video consultations with our doctors — personalised plans and follow-ups without leaving home.
-          </p>
+    <div className="min-h-screen bg-background text-foreground selection:bg-primary/20 selection:text-primary py-8 sm:py-14 overflow-x-hidden">
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* ================= BREADCRUMBS ================= */}
+        <nav className="flex items-center gap-2 text-xs font-medium text-muted-foreground mb-8">
+          <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+          <ChevronRight className="w-3.5 h-3.5" />
+          <span className="text-foreground font-semibold">Pricing</span>
+          <ChevronRight className="w-3.5 h-3.5" />
+          <span className="text-primary font-semibold">Online Consultation</span>
+        </nav>
 
-          <div className="mt-6 flex items-center gap-4">
-            <Link href="#plans" className="rounded-xl px-5 py-3 bg-primary text-primary-foreground shadow-soft hover:bg-primary-dark transition">
-              See Plans
-            </Link>
+        {/* ================= HERO SPOTLIGHT SECTION ================= */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="relative rounded-3.5xl p-6 sm:p-10 lg:p-14 bg-gradient-to-br from-card via-card/90 to-primary/5 border border-border/80 shadow-2xl overflow-hidden mb-18"
+        >
+          <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
 
-            <a href="#faq" className="text-sm text-accent font-medium hover:underline">FAQ</a>
-          </div>
-
-          <div className="mt-6 flex gap-3 text-sm">
-            <div className="bg-secondary/40 p-3 rounded-lg shadow-soft text-foreground">Secure video calls</div>
-            <div className="bg-secondary/40 p-3 rounded-lg shadow-soft text-foreground">Home delivery of medicines</div>
-          </div>
-        </motion.div>
-
-        <motion.div initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6 }} className="relative rounded-2xl overflow-hidden shadow-medium bg-card">
-          <div className="aspect-[4/3] relative">
-            <Image src={heroImage} alt="Online Consultation" fill className="object-cover" />
-          </div>
-        </motion.div>
-      </header>
-
-      {/* PLANS */}
-      <section id="plans" className="max-w-7xl mx-auto px-6 py-12">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-foreground">Choose a plan</h2>
-          <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">Transparent pricing for digital-first care.</p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-6">
-          {plans.map((p, i) => (
-            <motion.div key={p.name} initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.45, delay: i * 0.06 }} className={`group relative p-6 rounded-2xl bg-card/70 backdrop-blur-xl border border-border shadow-sm ${p.popular ? "ring-1 ring-primary/20" : ""}`}>
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent opacity-60 rounded-t-2xl"></div>
-
-              <div className="flex items-center justify-between">
-                <h3 className="text-lg font-semibold text-foreground">{p.name}</h3>
-                <div className="text-xl font-bold text-foreground">{p.price}</div>
+          <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center relative z-10">
+            
+            <div className="lg:col-span-7 flex flex-col items-start text-left">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold bg-primary/10 text-primary border border-primary/20 shadow-xs mb-5">
+                <MdVerified className="text-teal-500 text-sm" />
+                <span>Pan-India & International Tele-Medicine</span>
+                <Sparkles className="w-3.5 h-3.5 text-teal-500 ml-1" />
               </div>
 
-              <p className="text-muted-foreground mt-3">{p.desc}</p>
+              <h1 className="text-3.5xl sm:text-4xl md:text-5xl lg:text-5.5xl font-extrabold text-foreground tracking-tight leading-[1.15]">
+                Online Video Consultation{" "}
+                <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-teal-500 bg-clip-text text-transparent">
+                  Pricing Plans
+                </span>
+              </h1>
 
-              <ul className="mt-4 space-y-2 text-sm text-foreground">
-                {p.highlights.map((h, idx) => (
-                  <li key={idx} className="flex items-center gap-3">
-                    <CheckBoxIcon /> <span>{h}</span>
-                  </li>
-                ))}
-              </ul>
+              <p className="mt-5 text-base sm:text-lg text-muted-foreground leading-relaxed font-normal">
+                Fast, secure 1-on-1 video consultations with our senior medical specialists — personalized constitutional plans and doorstep medicine dispatch without leaving your home.
+              </p>
 
-              <div className="mt-6 flex items-center justify-between">
-                <Link href="/HairGrowth/register" className="px-4 py-2 rounded-lg bg-primary text-primary-foreground">
-                  Book
-                </Link>
-                <Link href="#" className="text-sm text-accent hover:underline flex items-center gap-2">
-                  Learn more <ArrowRight size={14} />
+              <div className="flex flex-wrap items-center gap-3.5 sm:gap-4 mt-8">
+                <a
+                  href="#plans"
+                  className="px-8 py-3.5 rounded-full bg-gradient-to-r from-blue-600 via-indigo-600 to-teal-500 hover:opacity-95 text-white font-bold text-xs sm:text-sm shadow-lg shadow-blue-500/25 hover:scale-102 transition-all flex items-center gap-2 cursor-pointer"
+                >
+                  <span>Select Consultation Plan</span>
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+
+                <Link
+                  href="/pricing/clinic-consultation"
+                  className="px-6 py-3.5 rounded-full bg-card border border-border text-foreground font-semibold text-xs sm:text-sm hover:bg-muted hover:border-primary/40 transition-all cursor-pointer shadow-xs"
+                >
+                  Looking for In-Clinic Visits? →
                 </Link>
               </div>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
-      {/* FAQ + Testimonials */}
-      <section id="faq" className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="p-6 rounded-2xl bg-secondary/20 border border-border">
-            <h3 className="text-xl font-semibold text-foreground mb-4">Common Questions</h3>
-            <div className="text-sm text-muted-foreground space-y-3">
-              <div><strong>How long is a consult?</strong><div>Usually 15–30 minutes depending on the plan.</div></div>
-              <div><strong>Are digital reports trusted?</strong><div>Yes — our doctors review AI-assisted findings before finalising the plan.</div></div>
-              <div><strong>Do you deliver medicines?</strong><div>Yes — to your address with secure packaging.</div></div>
             </div>
+
+            <div className="lg:col-span-5 flex justify-center lg:justify-end relative">
+              <div className="relative w-full max-w-[360px] sm:max-w-[400px] aspect-[4/3] rounded-3.5xl overflow-hidden border-2 border-primary/25 shadow-2xl bg-card">
+                <Image
+                  src={heroImage}
+                  alt="Online Consultation"
+                  fill
+                  unoptimized
+                  className="object-cover hover:scale-103 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                
+                <div className="absolute bottom-5 left-5 right-5 text-white">
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md text-[11px] font-semibold text-teal-300 border border-white/20 mb-1">
+                    <ShieldCheck className="w-3.5 h-3.5" />
+                    <span>Certified Video Tele-Health</span>
+                  </div>
+                  <h3 className="text-lg font-bold">100% Confidential Care</h3>
+                  <p className="text-xs text-slate-200">Doctor review • Custom medicine dispatch</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </motion.div>
+
+        {/* ================= PRICING TIERS ================= */}
+        <section id="plans" className="mb-20">
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <h2 className="text-2.5xl sm:text-3.5xl font-extrabold text-foreground tracking-tight">
+              Transparent Consultation Tiers
+            </h2>
+            <p className="text-xs sm:text-sm text-muted-foreground mt-2">
+              Simple, upfront digital care pricing with no hidden charges.
+            </p>
           </div>
 
-          {/* <div className="p-6 rounded-2xl bg-card/70 border border-border">
-            <Testimonials />
-          </div> */}
-        </div>
-      </section>
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+            {plans.map((p, i) => (
+              <motion.div
+                key={p.name}
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                whileHover={{ y: -6, transition: { duration: 0.2 } }}
+                className={`p-7 sm:p-8 rounded-3.5xl bg-card border transition-all flex flex-col justify-between relative shadow-lg hover:shadow-2xl ${
+                  p.popular 
+                    ? "border-primary/50 ring-2 ring-primary/30 shadow-primary/10" 
+                    : "border-border hover:border-primary/40"
+                }`}
+              >
+                {p.popular && (
+                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-blue-600 via-indigo-600 to-teal-500 text-white text-[11px] font-bold shadow-md uppercase tracking-wider">
+                    Most Popular
+                  </div>
+                )}
 
-      {/* <div style={{ height: 120 }} /> */}
+                <div>
+                  <h3 className="text-xl font-bold text-foreground">{p.name}</h3>
+                  <p className="text-xs text-muted-foreground mt-1 min-h-[32px]">{p.desc}</p>
+                  
+                  <div className="my-6 pb-6 border-b border-border/80">
+                    <span className="text-3.5xl sm:text-4xl font-black text-foreground font-mono">{p.price}</span>
+                    <span className="text-xs text-muted-foreground ml-2">/ one-time</span>
+                  </div>
+
+                  <ul className="space-y-3 text-xs sm:text-sm">
+                    {p.highlights.map((h, idx) => (
+                      <li key={idx} className="flex items-start gap-2.5 text-foreground/90">
+                        <CheckCircle2 className="w-4 h-4 text-teal-500 shrink-0 mt-0.5" />
+                        <span>{h}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="mt-8 pt-4">
+                  <Link
+                    href="/HairGrowth/register"
+                    className={`w-full py-3.5 rounded-full font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer ${
+                      p.popular
+                        ? "bg-gradient-to-r from-blue-600 via-indigo-600 to-teal-500 text-white shadow-md hover:opacity-95 hover:scale-102"
+                        : "bg-muted hover:bg-primary/10 text-foreground border border-border hover:border-primary/30"
+                    }`}
+                  >
+                    <FaCalendarCheck className="text-xs" />
+                    <span>Book {p.name}</span>
+                  </Link>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </section>
+
+      </div>
+
+      <Testimonials />
+      <FAQ limit={4} />
+
     </div>
-  );
-}
-
-/* small inline icon component to keep markup tidy */
-function CheckBoxIcon() {
-  return (
-    <span className="inline-flex w-6 h-6 items-center justify-center rounded-md bg-primary/10 text-primary">
-      <svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none">
-        <path d="M20 6L9 17l-5-5" />
-      </svg>
-    </span>
   );
 }
